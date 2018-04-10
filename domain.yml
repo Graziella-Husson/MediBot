@@ -1,14 +1,52 @@
 intents:
  - greet
  - goodbye
+ - health_transition
+ - emotional_well_being
+ - general_health
+ - vitality
+ - body_pain
+ - social_functioning
+ - physical_health
+ - physical_functioning
+
+entities:
+ - Sport
+ - Daily_activity
 
 templates:
   utter_greet:
-    - 'Hello! How can I help?'
+    - 'Hello! How are you?'
+    - 'Hey! Is there something you want to say?'
+    - 'Hi! Are you ok?'
   utter_goodbye:
     - 'Talk to you later.'
     - 'Bye bye :('
+  utter_health_transition:
+    - 'I understand that you*re talking about *health transition*'
+  utter_emotional_well_being:
+    - 'I understand that you*re talking about *emotional well being*'
+  utter_general_health:
+    - 'I understand that you*re talking about *general health*'
+  utter_vitality:
+    - 'I understand that you*re talking about *vitality*'
+  utter_body_pain:
+    - 'I understand that you*re talking about *body pain*'
+  utter_social_functioning:
+    - 'I understand that you*re talking about *social functioning*'
+  utter_physical_health:
+    - 'I understand that you*re talking about *physical health*'
+  utter_physical_functioning:
+    - 'I understand that you*re talking about *physical functioning*'
 
 actions:
  - utter_greet
  - utter_goodbye
+ - utter_health_transition
+ - utter_emotional_well_being
+ - utter_general_health
+ - utter_vitality
+ - utter_body_pain
+ - utter_social_functioning
+ - utter_physical_health
+ - utter_physical_functioning

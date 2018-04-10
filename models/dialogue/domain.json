@@ -2,9 +2,27 @@
   "features": [
     "intent_greet",
     "intent_goodbye",
+    "intent_health_transition",
+    "intent_emotional_well_being",
+    "intent_general_health",
+    "intent_vitality",
+    "intent_body_pain",
+    "intent_social_functioning",
+    "intent_physical_health",
+    "intent_physical_functioning",
+    "entity_Sport",
+    "entity_Daily_activity",
     "prev_action_listen",
     "prev_action_restart",
     "prev_utter_greet",
-    "prev_utter_goodbye"
+    "prev_utter_goodbye",
+    "prev_utter_health_transition",
+    "prev_utter_emotional_well_being",
+    "prev_utter_general_health",
+    "prev_utter_vitality",
+    "prev_utter_body_pain",
+    "prev_utter_social_functioning",
+    "prev_utter_physical_health",
+    "prev_utter_physical_functioning"
   ]
 }

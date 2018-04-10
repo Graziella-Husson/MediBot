@@ -1,73 +1,456 @@
 {
   "rasa_nlu_data": {
+    "entity_synonyms": [],
     "common_examples": [
       {
-        "intent": "greet",
         "entities": [],
-        "text": "Hello"
+        "text": "Hello",
+        "intent": "greet"
       },
       {
-        "intent": "goodbye",
         "entities": [],
-        "text": "goodbye"
+        "text": "goodbye",
+        "intent": "goodbye"
       },
       {
-        "intent": "greet",
         "entities": [],
-        "text": "hey"
+        "text": "hey",
+        "intent": "greet"
       },
       {
-        "intent": "greet",
         "entities": [],
-        "text": "hello"
+        "text": "hello",
+        "intent": "greet"
       },
       {
-        "intent": "greet",
         "entities": [],
-        "text": "hi"
+        "text": "hi",
+        "intent": "greet"
       },
       {
-        "intent": "greet",
         "entities": [],
-        "text": "heya"
+        "text": "heya",
+        "intent": "greet"
       },
       {
-        "intent": "greet",
         "entities": [],
-        "text": "howdy"
+        "text": "howdy",
+        "intent": "greet"
       },
       {
-        "intent": "greet",
         "entities": [],
-        "text": "hey there"
+        "text": "hey there",
+        "intent": "greet"
       },
       {
-        "intent": "goodbye",
         "entities": [],
-        "text": "bye"
+        "text": "bye",
+        "intent": "goodbye"
       },
       {
-        "intent": "goodbye",
         "entities": [],
-        "text": "goodbye"
+        "text": "bye bye",
+        "intent": "goodbye"
       },
       {
-        "intent": "goodbye",
         "entities": [],
-        "text": "bye bye"
+        "text": "see ya",
+        "intent": "goodbye"
       },
       {
-        "intent": "goodbye",
         "entities": [],
-        "text": "see ya"
+        "text": "see you later",
+        "intent": "goodbye"
       },
       {
-        "intent": "goodbye",
+        "entities": [
+          {
+            "start": 6,
+            "value": "running",
+            "end": 13,
+            "entity": "Sport"
+          }
+        ],
+        "text": "I was running",
+        "intent": "physical_functioning"
+      },
+      {
+        "entities": [
+          {
+            "start": 14,
+            "value": "tennis",
+            "end": 20,
+            "entity": "Sport"
+          }
+        ],
+        "text": "I was playing tennis",
+        "intent": "physical_functioning"
+      },
+      {
+        "entities": [
+          {
+            "start": 8,
+            "value": "marathon",
+            "end": 16,
+            "entity": "Sport"
+          }
+        ],
+        "text": "I did a marathon",
+        "intent": "physical_functioning"
+      },
+      {
+        "entities": [
+          {
+            "start": 6,
+            "value": "cycling",
+            "end": 13,
+            "entity": "Sport"
+          }
+        ],
+        "text": "I was cycling",
+        "intent": "physical_functioning"
+      },
+      {
+        "entities": [
+          {
+            "start": 12,
+            "value": "nordic walk",
+            "end": 23,
+            "entity": "Sport"
+          }
+        ],
+        "text": "I came in a nordic walk",
+        "intent": "physical_functioning"
+      },
+      {
+        "entities": [
+          {
+            "start": 8,
+            "value": "run",
+            "end": 11,
+            "entity": "Sport"
+          }
+        ],
+        "text": "i did a run",
+        "intent": "physical_functioning"
+      },
+      {
+        "entities": [
+          {
+            "start": 2,
+            "value": "ride a bike",
+            "end": 13,
+            "entity": "Sport"
+          }
+        ],
+        "text": "i ride a bike",
+        "intent": "physical_functioning"
+      },
+      {
+        "entities": [
+          {
+            "start": 6,
+            "value": "swiming",
+            "end": 13,
+            "entity": "Sport"
+          }
+        ],
+        "text": "i was swiming",
+        "intent": "physical_functioning"
+      },
+      {
+        "entities": [
+          {
+            "start": 10,
+            "value": "vacuum cleaner",
+            "end": 24,
+            "entity": "Daily_activity"
+          }
+        ],
+        "text": "pushing a vacuum cleaner",
+        "intent": "physical_functioning"
+      },
+      {
+        "entities": [
+          {
+            "start": 11,
+            "value": "table",
+            "end": 16,
+            "entity": "Daily_activity"
+          }
+        ],
+        "text": "I moved my table",
+        "intent": "physical_functioning"
+      },
+      {
+        "entities": [
+          {
+            "start": 14,
+            "value": "laundry",
+            "end": 21,
+            "entity": "Daily_activity"
+          }
+        ],
+        "text": "I was hanging laundry on a clothesline",
+        "intent": "physical_functioning"
+      },
+      {
         "entities": [],
-        "text": "see you later"
+        "text": "I am aware of pain only when I pay attention to it",
+        "intent": "physical_health"
+      },
+      {
+        "entities": [],
+        "text": "I can ignore my pain most of the time",
+        "intent": "physical_health"
+      },
+      {
+        "entities": [],
+        "text": "I can continue most of my activities",
+        "intent": "physical_health"
+      },
+      {
+        "entities": [
+          {
+            "start": 2,
+            "value": "sleep",
+            "end": 7,
+            "entity": "Daily_activity"
+          }
+        ],
+        "text": "I sleep well",
+        "intent": "physical_health"
+      },
+      {
+        "entities": [
+          {
+            "start": 12,
+            "value": "housework",
+            "end": 21,
+            "entity": "Daily_activity"
+          }
+        ],
+        "text": "My work and housework is fulfilling",
+        "intent": "physical_health"
+      },
+      {
+        "entities": [],
+        "text": "I can ignore my pain",
+        "intent": "physical_health"
+      },
+      {
+        "entities": [],
+        "text": "I can tolerate the pain",
+        "intent": "physical_health"
+      },
+      {
+        "entities": [],
+        "text": "I can have normal activities",
+        "intent": "physical_health"
+      },
+      {
+        "entities": [],
+        "text": "I can't have normal activities",
+        "intent": "physical_health"
+      },
+      {
+        "entities": [],
+        "text": "I am able to enjoy life",
+        "intent": "social_functioning"
+      },
+      {
+        "entities": [],
+        "text": "I have accepted my illness",
+        "intent": "social_functioning"
+      },
+      {
+        "entities": [],
+        "text": "I am content with the quality of my life right now",
+        "intent": "social_functioning"
+      },
+      {
+        "entities": [],
+        "text": "I enjoy the things I usually do for fun",
+        "intent": "social_functioning"
+      },
+      {
+        "entities": [],
+        "text": "occasional minor twinges",
+        "intent": "body_pain"
+      },
+      {
+        "entities": [],
+        "text": "I may notice the pain",
+        "intent": "body_pain"
+      },
+      {
+        "entities": [],
+        "text": "Good at all",
+        "intent": "body_pain"
+      },
+      {
+        "entities": [],
+        "text": "Not so bad",
+        "intent": "body_pain"
+      },
+      {
+        "entities": [],
+        "text": "I am quite fine",
+        "intent": "body_pain"
+      },
+      {
+        "entities": [],
+        "text": "My pain is noticeable",
+        "intent": "body_pain"
+      },
+      {
+        "entities": [],
+        "text": "I still have some basic issues",
+        "intent": "body_pain"
+      },
+      {
+        "entities": [],
+        "text": "Very minor annoyance",
+        "intent": "body_pain"
+      },
+      {
+        "entities": [],
+        "text": "I may feel some twinges of pain",
+        "intent": "body_pain"
+      },
+      {
+        "entities": [],
+        "text": "I may barely notice the pain",
+        "intent": "body_pain"
+      },
+      {
+        "entities": [],
+        "text": "I have pain more or less",
+        "intent": "body_pain"
+      },
+      {
+        "entities": [],
+        "text": "It hurts a bit",
+        "intent": "body_pain"
+      },
+      {
+        "entities": [],
+        "text": "I am suffering",
+        "intent": "body_pain"
+      },
+      {
+        "entities": [],
+        "text": "I don't feel well",
+        "intent": "body_pain"
+      },
+      {
+        "entities": [],
+        "text": "I don't feel right",
+        "intent": "body_pain"
+      },
+      {
+        "entities": [],
+        "text": "I feel some discomfort",
+        "intent": "body_pain"
+      },
+      {
+        "entities": [],
+        "text": "I cannot do some of the activities I need to do each day",
+        "intent": "general_health"
+      },
+      {
+        "entities": [],
+        "text": "I can continue most of the activities",
+        "intent": "general_health"
+      },
+      {
+        "entities": [
+          {
+            "start": 27,
+            "value": "sleep",
+            "end": 32,
+            "entity": "Daily_activity"
+          }
+        ],
+        "text": "My pain interferes with my sleep",
+        "intent": "general_health"
+      },
+      {
+        "entities": [],
+        "text": "Pain is somewhat bothersome",
+        "intent": "general_health"
+      },
+      {
+        "entities": [],
+        "text": "I am not feeling better",
+        "intent": "vitality"
+      },
+      {
+        "entities": [],
+        "text": "My pain still bothers me",
+        "intent": "vitality"
+      },
+      {
+        "entities": [],
+        "text": "My pain is persistent",
+        "intent": "vitality"
+      },
+      {
+        "entities": [],
+        "text": "I worry about dying",
+        "intent": "emotional_well_being"
+      },
+      {
+        "entities": [],
+        "text": "I am losing hope in the fight against my illness",
+        "intent": "emotional_well_being"
+      },
+      {
+        "entities": [],
+        "text": "I feel sad",
+        "intent": "emotional_well_being"
+      },
+      {
+        "entities": [],
+        "text": "i feel nervous",
+        "intent": "emotional_well_being"
+      },
+      {
+        "entities": [],
+        "text": "I worry that my condition will get worse",
+        "intent": "emotional_well_being"
+      },
+      {
+        "entities": [],
+        "text": "The pain dissapear",
+        "intent": "health_transition"
+      },
+      {
+        "entities": [],
+        "text": "I am not suffering any more",
+        "intent": "health_transition"
+      },
+      {
+        "entities": [],
+        "text": "I have no more trouble",
+        "intent": "health_transition"
+      },
+      {
+        "entities": [],
+        "text": "the painful feeling disappeared",
+        "intent": "health_transition"
+      },
+      {
+        "entities": [],
+        "text": "Everything is ok now",
+        "intent": "health_transition"
+      },
+      {
+        "entities": [],
+        "text": "Back to top form",
+        "intent": "health_transition"
       }
     ],
-    "entity_synonyms": [],
     "regex_features": []
   }
 }

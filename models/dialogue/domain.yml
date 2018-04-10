@@ -2,20 +2,64 @@ action_factory: null
 action_names:
 - utter_greet
 - utter_goodbye
+- utter_health_transition
+- utter_emotional_well_being
+- utter_general_health
+- utter_vitality
+- utter_body_pain
+- utter_social_functioning
+- utter_physical_health
+- utter_physical_functioning
 actions:
 - utter_greet
 - utter_goodbye
+- utter_health_transition
+- utter_emotional_well_being
+- utter_general_health
+- utter_vitality
+- utter_body_pain
+- utter_social_functioning
+- utter_physical_health
+- utter_physical_functioning
 config:
   store_entities_as_slots: true
-entities: []
+entities:
+- Sport
+- Daily_activity
 intents:
 - greet
 - goodbye
+- health_transition
+- emotional_well_being
+- general_health
+- vitality
+- body_pain
+- social_functioning
+- physical_health
+- physical_functioning
 slots: {}
 templates:
+  utter_body_pain:
+  - text: I understand that you*re talking about *body pain*
+  utter_emotional_well_being:
+  - text: I understand that you*re talking about *emotional well being*
+  utter_general_health:
+  - text: I understand that you*re talking about *general health*
   utter_goodbye:
   - text: Talk to you later.
   - text: Bye bye :(
   utter_greet:
-  - text: Hello! How can I help?
+  - text: Hello! How are you?
+  - text: Hey! Is there something you want to say?
+  - text: Hi! Are you ok?
+  utter_health_transition:
+  - text: I understand that you*re talking about *health transition*
+  utter_physical_functioning:
+  - text: I understand that you*re talking about *physical functioning*
+  utter_physical_health:
+  - text: I understand that you*re talking about *physical health*
+  utter_social_functioning:
+  - text: I understand that you*re talking about *social functioning*
+  utter_vitality:
+  - text: I understand that you*re talking about *vitality*
 topics: []
