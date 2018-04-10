@@ -1,0 +1,14 @@
+intents:
+ - greet
+ - goodbye
+
+templates:
+  utter_greet:
+    - 'Hello! How can I help?'
+  utter_goodbye:
+    - 'Talk to you later.'
+    - 'Bye bye :('
+
+actions:
+ - utter_greet
+ - utter_goodbye
