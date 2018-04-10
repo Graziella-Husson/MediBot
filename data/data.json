@@ -11,7 +11,7 @@
         "intent": "goodbye",
         "entities": []
       },
-	  {
+      {
         "text": "hey",
         "intent": "greet",
         "entities": []
@@ -43,11 +43,6 @@
       },
       {
         "text": "bye",
-        "intent": "goodbye",
-        "entities": []
-      },
-      {
-        "text": "goodbye",
         "intent": "goodbye",
         "entities": []
       },
