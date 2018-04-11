@@ -448,6 +448,16 @@
         "text": "Back to top form",
         "intent": "health_transition",
         "entities": []
+      },
+      {
+        "text": "quit",
+        "intent": "quit",
+        "entities": []
+      },
+      {
+        "text": "continue",
+        "intent": "continue",
+        "entities": []
       }
     ]
   }

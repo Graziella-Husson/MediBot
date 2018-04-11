@@ -9,6 +9,8 @@ intents:
  - social_functioning
  - physical_health
  - physical_functioning
+ - continue
+ - quit
 
 entities:
  - Sport
@@ -16,28 +18,36 @@ entities:
 
 templates:
   utter_greet:
-    - 'Hello! How are you?'
-    - 'Hey! Is there something you want to say?'
-    - 'Hi! Are you ok?'
+    - text: "Hello! How are you?"
+    - text: "Hey! Is there something you want to say?"
+    - text: "Hi! Are you ok?"
   utter_goodbye:
-    - 'Talk to you later.'
-    - 'Bye bye :('
+    - text: "Talk to you later."
+      buttons:
+      - title: "continue"
+        payload: "continue"
+      - title: "quit"
+        payload: "quit"
   utter_health_transition:
-    - 'I understand that you*re talking about *health transition*'
+    - text: "I understand that you*re talking about *health transition*"
   utter_emotional_well_being:
-    - 'I understand that you*re talking about *emotional well being*'
+    - text: "I understand that you*re talking about *emotional well being*"
   utter_general_health:
-    - 'I understand that you*re talking about *general health*'
+    - text: "I understand that you*re talking about *general health*"
   utter_vitality:
-    - 'I understand that you*re talking about *vitality*'
+    - text: "I understand that you*re talking about *vitality*"
   utter_body_pain:
-    - 'I understand that you*re talking about *body pain*'
+    - text: "I understand that you*re talking about *body pain*"
   utter_social_functioning:
-    - 'I understand that you*re talking about *social functioning*'
+    - text: "I understand that you*re talking about *social functioning*"
   utter_physical_health:
-    - 'I understand that you*re talking about *physical health*'
+    - text: "I understand that you*re talking about *physical health*"
   utter_physical_functioning:
-    - 'I understand that you*re talking about *physical functioning*'
+    - text: "I understand that you*re talking about *physical functioning*"
+  utter_continue:
+    - text: "Lets continue!"
+  utter_quit:
+    - text: "You quitted"
 
 actions:
  - utter_greet
@@ -50,3 +60,5 @@ actions:
  - utter_social_functioning
  - utter_physical_health
  - utter_physical_functioning
+ - utter_continue
+ - utter_quit

@@ -10,6 +10,8 @@ action_names:
 - utter_social_functioning
 - utter_physical_health
 - utter_physical_functioning
+- utter_continue
+- utter_quit
 actions:
 - utter_greet
 - utter_goodbye
@@ -21,6 +23,8 @@ actions:
 - utter_social_functioning
 - utter_physical_health
 - utter_physical_functioning
+- utter_continue
+- utter_quit
 config:
   store_entities_as_slots: true
 entities:
@@ -37,17 +41,25 @@ intents:
 - social_functioning
 - physical_health
 - physical_functioning
+- continue
+- quit
 slots: {}
 templates:
   utter_body_pain:
   - text: I understand that you*re talking about *body pain*
+  utter_continue:
+  - text: Lets continue!
   utter_emotional_well_being:
   - text: I understand that you*re talking about *emotional well being*
   utter_general_health:
   - text: I understand that you*re talking about *general health*
   utter_goodbye:
-  - text: Talk to you later.
-  - text: Bye bye :(
+  - buttons:
+    - payload: continue
+      title: continue
+    - payload: quit
+      title: quit
+    text: Talk to you later.
   utter_greet:
   - text: Hello! How are you?
   - text: Hey! Is there something you want to say?
@@ -58,6 +70,8 @@ templates:
   - text: I understand that you*re talking about *physical functioning*
   utter_physical_health:
   - text: I understand that you*re talking about *physical health*
+  utter_quit:
+  - text: You quitted
   utter_social_functioning:
   - text: I understand that you*re talking about *social functioning*
   utter_vitality:

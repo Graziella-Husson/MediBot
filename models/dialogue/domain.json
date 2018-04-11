@@ -10,6 +10,8 @@
     "intent_social_functioning",
     "intent_physical_health",
     "intent_physical_functioning",
+    "intent_continue",
+    "intent_quit",
     "entity_Sport",
     "entity_Daily_activity",
     "prev_action_listen",
@@ -23,6 +25,8 @@
     "prev_utter_body_pain",
     "prev_utter_social_functioning",
     "prev_utter_physical_health",
-    "prev_utter_physical_functioning"
+    "prev_utter_physical_functioning",
+    "prev_utter_continue",
+    "prev_utter_quit"
   ]
 }
