@@ -12,6 +12,16 @@ To do so :
 python3 nlu_model.py
 ```
 
+## Evaluate the model
+To evaluate the model :
+```
+python3 -m rasa_nlu.evaluate -d data/data.json -m models/nlu/default/medibotnlu -c config_spacy.json
+```
+Or with cross validation :
+```
+python3 -m rasa_nlu.evaluate -d data/data.json -c config_spacy.json --mode crossvalidation
+```
+
 ## Train bot
 ```
 python3 train_init.py

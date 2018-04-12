@@ -1,29 +1,17 @@
 {
   "action_fingerprints": {
-    "utter_general_health": {
-      "slots": []
-    },
-    "utter_continue": {
-      "slots": []
-    },
-    "utter_quit": {
-      "slots": []
-    },
-    "utter_physical_functioning": {
+    "action_listen": {
       "slots": []
     },
     "utter_goodbye": {
       "slots": []
-    },
-    "action_listen": {
-      "slots": []
     }
   },
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
-  "max_history": 3,
   "policy_names": [
     "rasa_core.policies.memoization.MemoizationPolicy",
     "rasa_core.policies.keras_policy.KerasPolicy"
   ],
+  "max_history": 3,
   "rasa_core": "0.8.5"
 }
