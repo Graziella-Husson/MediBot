@@ -38,6 +38,7 @@ To train 'online' (interactive learning) :
 ```
 python3 train_online.py
 ```
+Creates a file (stories.md by default). You have to add it into the stories.md file in /data
 
 ## Talk to bot :space_invader:
 
