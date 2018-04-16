@@ -1,6 +1,13 @@
 # MediBot
 A little chat bot
 
+## Getting started 
+* Install RASA doing :
+```
+sudo pip3 install -r requirements.txt
+sudo python3 -m spacy download en
+```
+
 ## Train NLU model
 * _data.json_ file have to be filled with examples (text + entities in it + intent).
 To do so :
