@@ -1,30 +1,21 @@
 intents:
- - greet
- - goodbye
- - phyical_activity
+ - activity
  - pain_severe
-
-entities:
- - sport
+ - pain_moderate
+ - pain_mild
 
 templates:
-  utter_greet:
-    - text: "Hello! How are you?"
-    - text: "Hey! Is there something you want to say?"
-    - text: "Hi! Are you ok?"
-  utter_goodbye:
-    - text: "Talk to you later."
   utter_pain_severe:
     - text: "I see that you're in trouble with a severe pain."
   utter_physical_activity:
     - text: "You did a physical activity! Great!"
-  utter_continue:
-    - text: "Lets continue!"
-  utter_quit:
-    - text: "You quitted"
+  utter_pain_moderate:
+    - text: "I see that you have a moderate pain."
+  utter_pain_mild:
+    - text: "I see that you can live with your pain."
 
 actions:
- - utter_greet
- - utter_goodbye
  - utter_pain_severe
  - utter_physical_activity
+ - utter_pain_moderate
+ - utter_pain_mild

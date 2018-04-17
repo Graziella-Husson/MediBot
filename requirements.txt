@@ -33,3 +33,4 @@ rasa_nlu
 pypandoc
 slackclient
 rasa_core
+git+https://github.com/mit-nlp/MITIE.git --user

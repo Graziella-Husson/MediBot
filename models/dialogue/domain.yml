@@ -1,37 +1,30 @@
 action_factory: null
 action_names:
-- utter_greet
-- utter_goodbye
 - utter_pain_severe
 - utter_physical_activity
+- utter_pain_moderate
+- utter_pain_mild
 actions:
-- utter_greet
-- utter_goodbye
 - utter_pain_severe
 - utter_physical_activity
+- utter_pain_moderate
+- utter_pain_mild
 config:
   store_entities_as_slots: true
-entities:
-- sport
+entities: []
 intents:
-- greet
-- goodbye
-- phyical_activity
+- activity
 - pain_severe
+- pain_moderate
+- pain_mild
 slots: {}
 templates:
-  utter_continue:
-  - text: Lets continue!
-  utter_goodbye:
-  - text: Talk to you later.
-  utter_greet:
-  - text: Hello! How are you?
-  - text: Hey! Is there something you want to say?
-  - text: Hi! Are you ok?
+  utter_pain_mild:
+  - text: I see that you can live with your pain.
+  utter_pain_moderate:
+  - text: I see that you have a moderate pain.
   utter_pain_severe:
   - text: I see that you're in trouble with a severe pain.
   utter_physical_activity:
   - text: You did a physical activity! Great!
-  utter_quit:
-  - text: You quitted
 topics: []

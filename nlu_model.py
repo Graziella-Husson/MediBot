@@ -10,9 +10,9 @@ def train_nlu(data, config, model_dir):
 	model_directory = trainer.persist(model_dir, fixed_model_name = 'medibotnlu')
 	
 def run_nlu():
-	interpreter = Interpreter.load('./models/nlu/default/medibotnlu', RasaNLUConfig('config_spacy.json'))
+	interpreter = Interpreter.load('./models/nlu/default/medibotnlu', RasaNLUConfig('config.json'))
 	print(interpreter.parse("I am experiencing big pain"))
 	
 if __name__ == '__main__':
-	train_nlu('./data/data.json', 'config_spacy.json', './models/nlu')
+	train_nlu('./data/data.json', 'config.json', './models/nlu')
 	run_nlu()
