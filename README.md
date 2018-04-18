@@ -12,21 +12,26 @@ sudo python3 -m spacy download en
 * For MITIE:
 	* use this command to install MITIE backend (already in requirement.txt)
 ```
-pip install git+https://github.com/mit-nlp/MITIE.git --user
+sudo pip3 install git+https://github.com/mit-nlp/MITIE.git
+sudo pip3 install rasa_nlu[mitie]
 ```
+
 	* now download MITIE Models
 ```
 wget https://github.com/mit-nlp/MITIE/releases/download/v0.4/MITIE-models-v0.2.tar.bz2
 ```
+
 	* unzip the model
 ```
 tar xvjf MITIE-models-v0.2.tar.bz2
 ```
+
 	* we are interested in total_word_feature_extractor.dat file. This is inside MITIE-models/english folder. Move this file to /data folder
 ```
 cp MITIE-models/english/total_word_feature_extractor.dat ./data/
 rm MITIE-models-v0.2.tar.bz2
 ```
+
 	* In the config.json file, add this where the word 'pipeline' is :
 ```
 ["nlp_mitie", "tokenizer_mitie", "ner_mitie", "ner_synonyms", "intent_entity_featurizer_regex", "intent_classifier_mitie"]
@@ -88,7 +93,7 @@ Creates a file (stories.md by default). You have to add it into the stories.md f
 You can vizualize your stories by using graphviz. 
 ```
 sudo apt-get install graphviz libgraphviz-dev graphviz-dev pkg-config
-pip3 install pygraphviz
+sudo pip3 install git+https://github.com/pygraphviz/pygraphviz
 python3 vizualize.py
 ```
 
