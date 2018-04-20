@@ -1,0 +1,465 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [],
+    "common_examples": [
+      {"text": "running", "intent": "activity", "entities": []},
+      {"text": "lifting heavy stuff", "intent": "activity", "entities": []},
+      {"text": "extrem sports", "intent": "activity", "entities": []},
+      {"text": "tennis", "intent": "activity", "entities": []},
+      {"text": "marathon", "intent": "activity", "entities": []},
+      {"text": "cycling", "intent": "activity", "entities": []},
+      {"text": "nordic walking", "intent": "activity", "entities": []},
+      {"text": "i did a run", "intent": "activity", "entities": []},
+      {"text": "cycle", "intent": "activity", "entities": []},
+      {"text": "bicylcle", "intent": "activity", "entities": []},
+      {"text": "ride a bike", "intent": "activity", "entities": []},
+      {"text": "swiming", "intent": "activity", "entities": []},
+      {"text": "triathlon exercising", "intent": "activity", "entities": []},
+      {"text": "marathon", "intent": "activity", "entities": []},
+      {"text": "urban trail", "intent": "activity", "entities": []},
+      {"text": "a lot of exercising", "intent": "activity", "entities": []},
+      {
+        "text": "climbing brisky up a hill",
+        "intent": "activity",
+        "entities": []
+      },
+      {"text": "basketball", "intent": "activity", "entities": []},
+      {"text": "handball", "intent": "activity", "entities": []},
+      {"text": "soccer game", "intent": "activity", "entities": []},
+      {"text": "ping pong", "intent": "activity", "entities": []},
+      {"text": "tennis single", "intent": "activity", "entities": []},
+      {"text": "heavy shoveling", "intent": "activity", "entities": []},
+      {"text": "digging ditches", "intent": "activity", "entities": []},
+      {"text": "carrying heavy loads", "intent": "activity", "entities": []},
+      {"text": "hiking", "intent": "activity", "entities": []},
+      {"text": "Boxing", "intent": "activity", "entities": []},
+      {"text": "sparring", "intent": "activity", "entities": []},
+      {"text": "Professional ballroom", "intent": "activity", "entities": []},
+      {"text": "dancing energetically", "intent": "activity", "entities": []},
+      {
+        "text": "Square dancing energetically",
+        "intent": "activity",
+        "entities": []
+      },
+      {
+        "text": "Folk dancing energetically",
+        "intent": "activity",
+        "entities": []
+      },
+      {"text": "Wheelchair tennis", "intent": "activity", "entities": []},
+      {"text": "Rugby Kickball", "intent": "activity", "entities": []},
+      {
+        "text": "Kayaking in whitewater rapids",
+        "intent": "activity",
+        "entities": []
+      },
+      {
+        "text": "Horsebackriding trotting",
+        "intent": "activity",
+        "entities": []
+      },
+      {"text": "galloping", "intent": "activity", "entities": []},
+      {"text": "playing polo", "intent": "activity", "entities": []},
+      {"text": "Skipping", "intent": "activity", "entities": []},
+      {"text": "Jumping rope", "intent": "activity", "entities": []},
+      {
+        "text": "Performing jumping jacks",
+        "intent": "activity",
+        "entities": []
+      },
+      {
+        "text": "Playing a heavy musical instrument",
+        "intent": "activity",
+        "entities": []
+      },
+      {
+        "text": "I am aware of pain only when I pay attention to it",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {
+        "text": "I can ignore my pain most of the time",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {
+        "text": "I can continue most of my activities",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {"text": "I sleep well", "intent": "pain_mild", "entities": []},
+      {"text": "I can ignore my pain", "intent": "pain_mild", "entities": []},
+      {
+        "text": "I can have normal activities",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {
+        "text": "I feel the need to lie down",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {"text": "my head is Aching", "intent": "pain_mild", "entities": []},
+      {"text": "my arm feels Heavy", "intent": "pain_mild", "entities": []},
+      {"text": "my stomach is Tender", "intent": "pain_mild", "entities": []},
+      {
+        "text": "the feeling comes and goes",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {"text": "the wound is scratchy", "intent": "pain_mild", "entities": []},
+      {"text": "i don't feel so well", "intent": "pain_mild", "entities": []},
+      {
+        "text": "i sometimes feel pain in my leg",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {
+        "text": "once in a while my leg hurts",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {"text": "i feel some discomfort", "intent": "pain_mild", "entities": []},
+      {"text": "the pain is tolerable", "intent": "pain_mild", "entities": []},
+      {
+        "text": "i have a headache in the evening",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {
+        "text": "i could feel beter but it's ok",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {
+        "text": "i don't feel as bad as yesterday",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {
+        "text": "it is itching a little bit",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {"text": "i have some pain", "intent": "pain_mild", "entities": []},
+      {
+        "text": "i have some strange feeling in my legs",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {"text": "my back tends to hurt", "intent": "pain_mild", "entities": []},
+      {"text": "i have a mild headache", "intent": "pain_mild", "entities": []},
+      {"text": "my stomach is not 100%", "intent": "pain_mild", "entities": []},
+      {
+        "text": "i do not feel comfortable",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {"text": "the pain is noticeable", "intent": "pain_mild", "entities": []},
+      {"text": "i have minor pain", "intent": "pain_mild", "entities": []},
+      {"text": "i feel light pain", "intent": "pain_mild", "entities": []},
+      {
+        "text": "i almost never think about the pain",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {"text": "the pain is not strong", "intent": "pain_mild", "entities": []},
+      {"text": "i get used tot he pain", "intent": "pain_mild", "entities": []},
+      {
+        "text": "i do not notice the pain",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {"text": "i adapted to the pain", "intent": "pain_mild", "entities": []},
+      {"text": "the pain is mild", "intent": "pain_mild", "entities": []},
+      {
+        "text": "the pain gets occasionnaly stronger",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {
+        "text": "the pain is a little bit distracting",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {
+        "text": "i have the pain under control",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {
+        "text": "medication helps easily to lower the pain",
+        "intent": "pain_mild",
+        "entities": []
+      },
+      {
+        "text": "I can tolerate the pain",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {"text": "Pain is upsetting", "intent": "pain_moderate", "entities": []},
+      {"text": "i feel flickering", "intent": "pain_moderate", "entities": []},
+      {
+        "text": "it is Pulsing in my chest",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {"text": "Flashing", "intent": "pain_moderate", "entities": []},
+      {"text": "Pricking", "intent": "pain_moderate", "entities": []},
+      {
+        "text": "the pain is Drilling",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {
+        "text": "i feel Cramps in my leg",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {
+        "text": "my intestines are Crushing",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {
+        "text": "my wound is Pulling",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {"text": "my leg feels Hot", "intent": "pain_moderate", "entities": []},
+      {
+        "text": "my head feels like Burning",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {
+        "text": "my fingers are Tingling",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {"text": "my body is Itchy", "intent": "pain_moderate", "entities": []},
+      {
+        "text": "my wound is stinging",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {"text": "my abs feel Sore", "intent": "pain_moderate", "entities": []},
+      {
+        "text": "all activities are Tiring",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {"text": "it is Vicious", "intent": "pain_moderate", "entities": []},
+      {
+        "text": "the pain in my back is Annoying",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {
+        "text": "my pain is Troublesome in daily activities",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {
+        "text": "the ache is Spreadin",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {
+        "text": "the illness is Radiating",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {
+        "text": "the spasm is Penetrating",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {"text": "Piercing", "intent": "pain_moderate", "entities": []},
+      {"text": "my chest is Tight", "intent": "pain_moderate", "entities": []},
+      {"text": "my toes are Numb", "intent": "pain_moderate", "entities": []},
+      {
+        "text": "my wound is Tearing",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {"text": "my hands are Cool", "intent": "pain_moderate", "entities": []},
+      {
+        "text": "my fingers are Cold",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {
+        "text": "my toes are Freezing",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {"text": "Nagging", "intent": "pain_moderate", "entities": []},
+      {"text": "i feel Nauseating", "intent": "pain_moderate", "entities": []},
+      {"text": "my head is aching", "intent": "pain_moderate", "entities": []},
+      {"text": "biting", "intent": "pain_moderate", "entities": []},
+      {"text": "blunt", "intent": "pain_moderate", "entities": []},
+      {
+        "text": "my throat is burning",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {
+        "text": "the pain is constant",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {
+        "text": "the injury is crushing",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {
+        "text": "the pain is cutting",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {
+        "text": "the sickness is dragging",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {"text": "excruciating", "intent": "pain_moderate", "entities": []},
+      {"text": "frightful", "intent": "pain_moderate", "entities": []},
+      {"text": "gnawing", "intent": "pain_moderate", "entities": []},
+      {
+        "text": "it feels like pins and needles in my intestines",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {
+        "text": "the pain is pricking",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {
+        "text": "the pain is spreading",
+        "intent": "pain_moderate",
+        "entities": []
+      },
+      {"text": "I'm going to di", "intent": "pain_severe", "entities": []},
+      {
+        "text": "Pain makes me pass out",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {
+        "text": "I'm in bed and can't move due of my pain",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {"text": "Pain is so intense", "intent": "pain_severe", "entities": []},
+      {"text": "Pain is so bad", "intent": "pain_severe", "entities": []},
+      {"text": "Pain is horrible", "intent": "pain_severe", "entities": []},
+      {"text": "Pain is agonizing", "intent": "pain_severe", "entities": []},
+      {"text": "pain is dreadful", "intent": "pain_severe", "entities": []},
+      {"text": "Pain is overwhelming", "intent": "pain_severe", "entities": []},
+      {"text": "Pain is crushing", "intent": "pain_severe", "entities": []},
+      {"text": "Pain is devastating", "intent": "pain_severe", "entities": []},
+      {
+        "text": "I think about my pain all the time",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {
+        "text": "My pain is all that I can think about",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {
+        "text": "I can barely talk or move because of my pain",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {
+        "text": "i cannot concentrate because of the pain",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {
+        "text": "my heart is heavily Beating",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {"text": "My pain is so severe", "intent": "pain_severe", "entities": []},
+      {"text": "Shooting", "intent": "pain_severe", "entities": []},
+      {"text": "i feel a Sharp pain", "intent": "pain_severe", "entities": []},
+      {
+        "text": "the pain feels Cutting",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {
+        "text": "the pain is Lacerating my body",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {
+        "text": "the pain is Pressing my chest",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {"text": "it is Hurting", "intent": "pain_severe", "entities": []},
+      {
+        "text": "everything is Exhausting",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {"text": "Sickening", "intent": "pain_severe", "entities": []},
+      {
+        "text": "i feel like Suffocating",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {"text": "i am Fearful", "intent": "pain_severe", "entities": []},
+      {"text": "Frightful", "intent": "pain_severe", "entities": []},
+      {
+        "text": "the disease is Terrifying",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {"text": "Punishing", "intent": "pain_severe", "entities": []},
+      {"text": "life is Cruel", "intent": "pain_severe", "entities": []},
+      {
+        "text": "my pain on the heart is Killing",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {
+        "text": "i always feel Miserable",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {
+        "text": "the irritation is Intense",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {"text": "Unbearable", "intent": "pain_severe", "entities": []},
+      {
+        "text": "my breasts are Squeezing",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {"text": "Drawing", "intent": "pain_severe", "entities": []},
+      {"text": "i'm like Agonizing", "intent": "pain_severe", "entities": []},
+      {"text": "Dreadful", "intent": "pain_severe", "entities": []},
+      {
+        "text": "the sickness is Torturing",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {
+        "text": "the discomfort is high",
+        "intent": "pain_severe",
+        "entities": []
+      }
+    ]
+  }
+}

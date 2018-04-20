@@ -4,6 +4,9 @@ intents:
  - pain_moderate
  - pain_mild
 
+entities:
+ - sport
+
 templates:
   utter_pain_severe:
     - text: "I see that you're in trouble with a severe pain."
