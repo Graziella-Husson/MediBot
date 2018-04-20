@@ -34,3 +34,5 @@ pypandoc
 slackclient
 rasa_core
 git+https://github.com/mit-nlp/MITIE.git
+rasa_nlu[mitie]
+duckling==1.8.0

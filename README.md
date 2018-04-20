@@ -6,20 +6,13 @@ A little chat bot
 ```
 sudo pip3 install -r requirements.txt
 sudo python3 -m spacy download en
+sudo apt-get install python3-tk
 ```
 
 ## Choose your pipeline
 * For MITIE:
 
-Use this command to install MITIE backend (already in requirement.txt)
-
-```
-sudo pip3 install git+https://github.com/mit-nlp/MITIE.git
-sudo pip3 install rasa_nlu[mitie]
-```
-
-
-Now download MITIE Models
+Use this command to download MITIE Models
 
 ```
 wget https://github.com/mit-nlp/MITIE/releases/download/v0.4/MITIE-models-v0.2.tar.bz2
@@ -99,7 +92,6 @@ pipeline:
 * Duckling for entity recognition :
 ```
 sudo apt-get install default-jdk
-sudo pip3 install duckling
 ```
 
 ## Train NLU model
@@ -116,11 +108,11 @@ python3 -m rasa_nlu.train -c conf.yml --fixed_model_name current --data data/dat
 ## Evaluate the model
 To evaluate the model :
 ```
-python3 -m rasa_nlu.evaluate -d data/data.json -m models/nlu/default/medibotnlu -c conf.yml
+python3 -m rasa_nlu.evaluate -d data/data.json -m models/nlu/default/current -c conf.yml
 ```
 Or with cross validation :
 ```
-python3 -m rasa_nlu.evaluate -d data/data.json -c config.json --mode crossvalidation
+python3 -m rasa_nlu.evaluate -d data/data.json -c conf.yml --mode crossvalidation
 ```
 
 ## Train bot
@@ -147,5 +139,5 @@ python3 vizualize.py
 ## Talk to bot :space_invader:
 
 ```
-python3 dialogue_management_model.py
+python3 -m rasa_core.run -d models/dialogue -u models/nlu/default/current
 ```
