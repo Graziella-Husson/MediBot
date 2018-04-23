@@ -3,6 +3,8 @@ intents:
  - pain_severe
  - pain_moderate
  - pain_mild
+ - emotional_sadness
+ - emotional_hapiness
 
 entities:
  - sport
@@ -16,9 +18,15 @@ templates:
     - text: "I see that you have a moderate pain."
   utter_pain_mild:
     - text: "I see that you can live with your pain."
+  utter_emotional_sadness:
+    - text: "It seems that you are in a bad mood..."
+  utter_emotional_hapiness:
+    - text: "Great! You are in a good mood!"
 
 actions:
  - utter_pain_severe
  - utter_physical_activity
  - utter_pain_moderate
  - utter_pain_mild
+ - utter_emotional_sadness
+ - utter_emotional_hapiness

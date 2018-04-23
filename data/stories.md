@@ -14,6 +14,14 @@
 * pain_mild
     - utter_pain_mild
 
+## Story 06
+* emotional_sadness
+    - utter_emotional_sadness
+
+## Story 07
+* emotional_hapiness
+    - utter_emotional_hapiness
+
 ## Generated Story 5447922641351515929
 * pain_severe
     - utter_pain_severe

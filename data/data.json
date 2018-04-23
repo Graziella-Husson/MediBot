@@ -818,7 +818,7 @@
       },
       {"text": "my life sucks", "intent": "emotional_sadness", "entities": []},
       {
-        "text": "I have no firends",
+        "text": "I have no friends",
         "intent": "emotional_sadness",
         "entities": []
       },

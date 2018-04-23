@@ -110,9 +110,9 @@ To evaluate the model :
 ```
 python3 -m rasa_nlu.evaluate -d data/data.json -m models/nlu/default/current -c conf.yml
 ```
-Or with cross validation :
+Or with cross validation (f=10 folds):
 ```
-python3 -m rasa_nlu.evaluate -d data/data.json -c conf.yml --mode crossvalidation
+python3 -m rasa_nlu.evaluate -d data/data.json -c conf.yml --mode crossvalidation -f 10
 ```
 
 ## Train bot
