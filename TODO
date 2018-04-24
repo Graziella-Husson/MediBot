@@ -183,22 +183,20 @@ _________________
     I am aware of pain only when I pay attention to it
     I can ignore my pain most of the time
     I can continue most of my activities
-    I sleep well 
     I can ignore my pain
     I can have normal activities
     I feel the need to lie down
-    my head is Aching
-    my arm feels Heavy
-    my stomach is Tender
+    my head is aching
+    my arm feels heavy
+    my stomach is tender
     the feeling comes and goes
     the wound is scratchy
-    i don't feel so well
     i sometimes feel pain in my leg
     once in a while my leg hurts    
     i feel some discomfort
     the pain is tolerable
     i have a headache in the evening
-    i could feel beter but it's ok
+    i could feel better but it's ok
     i don't feel as bad as yesterday
     it is itching a little bit
     i have some pain
@@ -220,40 +218,39 @@ _________________
     the pain is a little bit distracting 
     i have the pain under control 
     medication helps easily to lower the pain 
+    My leg hurts a bit
 
 %[pain_moderate]
-    I can tolerate the pain
     Pain is upsetting
     i feel flickering
     it is Pulsing in my chest
     Flashing
     Pricking
-    the pain is Drilling
-    i feel Cramps in my leg
-    my intestines are Crushing
-    my wound is Pulling
-    my leg feels Hot
-    my head feels like Burning
-    my fingers are Tingling
-    my body is Itchy
+    the pain is drilling
+    i feel cramps in my leg
+    my intestines are crushing
+    my wound is pulling
+    my leg feels hot
+    my head feels like burning
+    my fingers are tingling
+    my body is itchy
     my wound is stinging
-    my abs feel Sore
-    all activities are Tiring 
-    it is Vicious    
-    the pain in my back is Annoying
-    my pain is Troublesome in daily activities
-    the ache is Spreadin
-    the illness is  Radiating
-    the spasm is Penetrating
+    my abs feel sore
+    all activities are tiring 
+    it is vicious    
+    the pain in my back is annoying
+    my pain is troublesome in daily activities
+    the ache is spreadin
+    the illness is radiating
+    the spasm is penetrating
     Piercing
-    my chest is Tight
-    my toes are Numb
-    my wound is Tearing
-    my hands are Cool
-    my fingers are  Cold
-    my toes are  Freezing
+    my chest is tight
+    my toes are numb
+    my wound is tearing
+    my fingers are cold
+    my toes are freezing
     Nagging 
-    i feel Nauseating
+    i feel nauseating
     my head is aching
     biting
     blunt
@@ -270,7 +267,7 @@ _________________
     the pain is spreading 
 
 %[pain_severe]
-    I'm going to di
+    I'm going to die
     Pain makes me pass out
     I'm in bed and can't move due of my pain
     Pain is so intense
@@ -284,35 +281,35 @@ _________________
     I think about my pain all the time
     My pain is all that I can think about
     I can barely talk or move because of my pain
-    i cannot concentrate because of the pain
-    my heart is heavily Beating
+    i cannot concentrate
+    my heart is heavily beating
     My pain is so severe 
     Shooting 
-    i feel a Sharp pain
-    the pain feels Cutting
-    the pain is Lacerating my body
-    the pain is Pressing my chest
+    i feel a sharp pain
+    the pain feels cutting
+    the pain is lacerating my body
+    the pain is pressing my chest
     it is Hurting
     everything is Exhausting
     Sickening
     i feel like Suffocating
-    i am Fearful
     Frightful
     the disease is Terrifying
     Punishing
     life is  Cruel    
     my pain on the heart is Killing 
-    i always feel Miserable
-    the irritation is  Intense
+    the irritation is intense
     Unbearable
-    my breasts are  Squeezing
+    my breasts are squeezing
     Drawing
-    i'm like Agonizing
+    i'm like agonizing
     Dreadful
-    the sickness is Torturing
+    the sickness is torturing
     the discomfort is high 
 
 %[emotional_sadness]
+    i always feel Miserable
+    i am fearful
     I have no energy
     I feel down
     I feel super tired
@@ -344,7 +341,7 @@ _________________
     my mind is paralyzed
     Every day is a struggle
     i hate myself
-    my heart, just, sank
+    my heart just sank
     I feel off
     I'm out of sorts today
     I just don't feel well
@@ -360,11 +357,11 @@ _________________
     I am on a bit of a downer
 
 %[emotional_hapiness]
+    I sleep well 
     I feel energetic
     I feel like dancing all the time
     my life is top
     I love my life
-    I can brake walls
     the sky is the limit
     I am happy
     I am surrounded by faily and friends
@@ -381,7 +378,6 @@ _________________
     i am satisfied with my life
     i am in love
     i am amused
-    i am on cloud nine
     having a whale of a time
     I am tickled pink
     I am feeling wonderful
@@ -392,7 +388,7 @@ _________________
     I am such a happy camper at the moment
     I am full of the joys of spring today
     I enjoy a happy evening
-    I  feel wonderful
+    I feel wonderful
     I am full of energy
     I found contentment in living a simple life
     It is about peace of mind
