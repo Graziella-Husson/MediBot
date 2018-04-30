@@ -1,3 +1,7 @@
+slots:
+  sport:
+    type: text
+
 intents:
  - activity
  - pain_severe
@@ -13,7 +17,7 @@ templates:
   utter_pain_severe:
     - text: "I see that you're in trouble with a severe pain."
   utter_physical_activity:
-    - text: "You did a physical activity! Great!"
+    - text: "You did a physical activity! Great! But I did not see any entity sport in your sentence. Maybe I missed something."
   utter_pain_moderate:
     - text: "I see that you have a moderate pain."
   utter_pain_mild:
@@ -22,10 +26,13 @@ templates:
     - text: "It seems that you are in a bad mood..."
   utter_emotional_hapiness:
     - text: "Great! You are in a good mood!"
+  utter_physical_activity_entity:
+    - text: "You did a physical activity! Great! I detected {sport} as an entity"
 
 actions:
  - utter_pain_severe
  - utter_physical_activity
+ - utter_physical_activity_entity
  - utter_pain_moderate
  - utter_pain_mild
  - utter_emotional_sadness

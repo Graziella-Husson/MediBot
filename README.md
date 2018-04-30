@@ -141,3 +141,20 @@ python3 vizualize.py
 ```
 python3 -m rasa_core.run -d models/dialogue -u models/nlu/default/current
 ```
+
+## Link your bot to a slack
+To link your bot to your slack you will need some tokens. You will find them in your api.slack.com app dashboard. Be sure to add a user bot and import the app into your workspace and a channel.
+Add them in the file run_app.py then,
+
+```
+python3 run_app.py
+```
+
+Use ngrok to have the path to link into your api.slack.com app dashboard:
+
+```
+./ngrok http 5004
+```
+
+Then copy-paste the https URL in your api.slack.com app dashboard 'event-subscriptions' and add /slack/events at the end.
+When its saved, you will be able to talk to your bot in slack!

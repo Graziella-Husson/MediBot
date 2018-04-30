@@ -42,3 +42,24 @@
     - utter_pain_mild
 * pain_severe
     - utter_pain_severe
+
+## Generated Story 3320800183399695936
+* activity{"sport": "gym"}
+    - slot{"sport": "gym"}
+    - utter_physical_activity_entity
+
+## Generated Story 3320800183399695937
+* activity{"sport": "marathon"}
+    - slot{"sport": "marathon"}
+    - utter_physical_activity_entity
+* activity{"sport": "tennis"}
+    - slot{"sport": "tennis"}
+    - utter_physical_activity_entity
+
+## Generated Story 3320800183399695938
+* activity{"sport": "basketball"}
+    - slot{"sport": "basketball"}
+    - utter_physical_activity_entity
+* activity
+    - slot{"sport": null}
+    - utter_physical_activity
