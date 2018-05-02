@@ -63,3 +63,16 @@
 * activity
     - slot{"sport": null}
     - utter_physical_activity
+
+## Story X
+* ambiguous_physical_emotionnal
+    - utter_ambiguous_physical_emotionnal
+* emotional_sadness
+    - utter_emotional_sadness
+
+## Story X+1
+* ambiguous_physical_emotionnal
+    - utter_ambiguous_physical_emotionnal
+* pain_severe
+    - utter_pain_severe
+

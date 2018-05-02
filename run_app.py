@@ -1,15 +1,15 @@
 from rasa_core.channels import HttpInputChannel
-from rasa_core.agent import Agent
+from rasa_core.channels.slack import SlackInput
 from rasa_core.interpreter import RasaNLUInterpreter
-from rasa_slack_connector import SlackInput
+from rasa_core.agent import Agent
+from rasa_core.interpreter import RegexInterpreter
 
+nlu_interpreter = RasaNLUInterpreter('./projects/default/model_20180502-144109') #PATH TO NLU MODEL
+agent = Agent.load('./models/dialogue', interpreter = nlu_interpreter) #PATH TO DIALOGUE MODEL
 
-nlu_interpreter = RasaNLUInterpreter('./projects/default/model_20180424-053737')
-agent = Agent.load('./models/dialogue', interpreter = nlu_interpreter)
+input_channel = SlackInput(
+   slack_token="",  # this is the `bot_user_o_auth_access_token`
+   slack_channel=""  # the name of your channel to which the bot posts
+)
 
-input_channel = SlackInput('xoxp-...', #app verification token
-							'xoxb-...', # bot verification token
-							'Di...', # slack verification token
-							True)
-
-agent.handle_channel(HttpInputChannel(5004, '/', input_channel))
+agent.handle_channel(HttpInputChannel(5004, "/", input_channel))
