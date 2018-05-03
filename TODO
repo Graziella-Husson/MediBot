@@ -399,7 +399,240 @@ _________________
 
 ----
 
-%[ambiguous_physical_emotionnal]
+%[pain_mild]
+    a little itchy
+    a little pain
+    it sting a bit
+    its ok but
+    sometimes
+    tends to hurt
+    hurting just a little
+    its tolerable
+    it could be worse
+    I am aware of pain only when I pay attention to it
+    I can ignore my pain most of the time
+    I can continue most of my activities
+    I can ignore my pain
+    I can have normal activities
+    I feel the need to lie down
+    my head is aching
+    my arm feels heavy
+    my stomach is tender
+    the feeling comes and goes
+    the wound is scratchy
+    i sometimes feel pain in my leg
+    once in a while my leg hurts    
+    the pain is tolerable
+    i have a headache in the evening
+    i could feel better but it's ok
+    it is itching a little bit
+    i have some strange feeling in my legs
+    my back tends to hurt
+    i have a mild headache
+    my stomach is not 100%
+    i do not feel comfortable
+    the pain is noticeable
+    i have minor pain 
+    i feel light pain 
+    i almost never think about the pain 
+    the pain is not strong 
+    i get used to the pain 
+    i do not notice the pain
+    i adapted to the pain
+    the pain is mild
+    the pain gets occasionnaly stronger
+    the pain is a little bit distracting 
+    i have the pain under control 
+    medication helps easily to lower the pain 
+    My leg hurts a bit
+
+%[pain_moderate]
+    Pain is upsetting
+    i feel flickering
+    it is Pulsing in my chest
+    Flashing
+    Pricking
+    the pain is drilling
+    i feel cramps in my leg
+    my intestines are crushing
+    my wound is pulling
+    my leg feels hot
+    my head feels like burning
+    my fingers are tingling
+    my body is itchy
+    my wound is stinging
+    my abs feel sore
+    all activities are tiring 
+    it is vicious    
+    the pain in my back is annoying
+    my pain is troublesome in daily activities
+    the ache is spreadin
+    the illness is radiating
+    the spasm is penetrating
+    Piercing
+    my chest is tight
+    my toes are numb
+    my wound is tearing
+    my fingers are cold
+    my toes are freezing
+    Nagging 
+    i feel nauseating
+    my head is aching
+    biting
+    blunt
+    my throat is burning
+    the pain is constant
+    the injury is crushing
+    the pain is cutting
+    the sickness is dragging
+    excruciating
+    frightful
+    gnawing 
+    it feels like pins and needles in my intestines
+    the pain is pricking
+    the pain is spreading 
+
+%[pain_severe]
+    I can't live with this
+    The pain is too hard
+    The pain is everything
+    lacerating
+    I'm agonizing
+    Hurts me so bad
+    I can't feel my arm
+    Unbearable
+    I was in terrible pain
+    The pain is unsupportable
+    Pain makes me pass out
+    I'm in bed and can't move due of my pain
+    Pain is so intense
+    Pain is so bad
+    Pain is horrible
+    Pain is agonizing
+    pain is dreadful
+    Pain is overwhelming
+    Pain is crushing
+    Pain is devastating
+    I think about my pain all the time
+    My pain is all that I can think about
+    I can barely talk or move because of my pain
+    my heart is heavily beating
+    My pain is so severe 
+    Shooting 
+    i feel a sharp pain
+    the pain feels cutting
+    the pain is lacerating my body
+    the pain is pressing my chest
+    it is Hurting badly
+    everything is Exhausting
+    Sickening
+    i feel like Suffocating
+    Frightful
+    Punishing
+    life is  Cruel    
+    my pain on the heart is Killing 
+    the irritation is intense
+    Unbearable
+    my breasts are squeezing
+    Drawing
+    i'm like agonizing
+    Dreadful
+    the sickness is torturing
+    It's torture
+
+%[emotional_sadness]
+    i always feel Miserable
+    i am fearful
+    I have no energy
+    I feel down
+    I feel super tired
+    I feel lonely
+    I don't want to see anyone
+    my life sucks
+    I have no friends
+    I am sad
+    sadness is my middlename
+    I miss my family and friends
+    I am depressed
+    I do not laugh anymore
+    i feel sad without you
+    my life does not make sense
+    there seems no end to my situation
+    I didn’t want to wake up
+    it's hopeless
+    my life is a complete chaos of emotions
+    Whatever is happening to me is my own fault
+    I have done something wrong
+    nothing is enjoyable
+    i see no future for me
+    i feel like a ghost
+    i am isolated
+    i feel somber
+    I am  melancholic all day
+    my mind is paralyzed
+    Every day is a struggle
+    i hate myself
+    my heart just sank
+    I feel off
+    I'm out of sorts today
+    I'm in the dumps about the situation
+    I feel gloomy
+    I had a sinking feeling
+    I am beside myself
+    I'm feeling under the weather
+    I have the blues
+    I am bummed out
+    I am in the pits
+    I am in a blue funk
+    I am on a bit of a downer
+
+%[emotional_hapiness]
+    I sleep well 
+    Its fantastic
+    can't be better
+    I'm so good
+    I feel well
+    Very well
+    I feel energetic
+    I feel like dancing all the time
+    my life is top
+    I love my life
+    the sky is the limit
+    I am happy
+    I am surrounded by faily and friends
+    I don't have any depression
+    I am a happy person
+    I am smiling
+    I feel good
+    it's hopeful
+    my mind is in peace
+    i'm optimistic
+    i feel euphoric about life
+    i make a lot of jokes
+    i joke around all day
+    i am satisfied with my life
+    i am in love
+    i am amused
+    having a whale of a time
+    I am tickled pink
+    I am feeling wonderful
+    I am happy as a clam
+    I am over the moon
+    i am in seventh heaven
+    I feel like a dog with two tails
+    I am such a happy camper at the moment
+    I am full of the joys of spring today
+    I enjoy a happy evening
+    I feel wonderful
+    I am full of energy
+    I found contentment in living a simple life
+    It is about peace of mind
+    I am able to find such unusual serenity
+    my emotions stay cool
+    I am is in the zone of quietude
+    I live in tranquillity
+
+%[ambiguous_physical_emotionnal] 28
     I don't feel well
     It hurts
     My heart is breaking
@@ -416,3 +649,19 @@ _________________
     I am gonna die
     I am going to die
     It's hard
+    i don't feel as bad as yesterday
+    i feel some discomfort
+    i cannot concentrate
+    the disease is Terrifying
+    the discomfort is high 
+    I want to die
+    i am distroyed
+    a little struggle inside
+    Something inside
+    I can't take more
+    I can't do anything 
+    I can't continue anymore
+    I will no make it
+    Don't do anything
+    Help me
+    I feel very bad

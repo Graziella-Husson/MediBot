@@ -30,6 +30,18 @@
         ]
       },
       {
+        "text": "I was lifting heavy stuff and it was cool",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 6,
+            "end": 25,
+            "value": "lifting heavy stuff",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
         "text": "I was cycling and it was cool",
         "intent": "activity",
         "entities": [
@@ -53,6 +65,18 @@
         "intent": "activity",
         "entities": [
           {"start": 6, "end": 21, "value": "digging ditches", "entity": "sport"}
+        ]
+      },
+      {
+        "text": "I was carrying heavy loads and it was cool",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 6,
+            "end": 26,
+            "value": "carrying heavy loads",
+            "entity": "sport"
+          }
         ]
       },
       {
@@ -103,6 +127,13 @@
         ]
       },
       {
+        "text": "I did some extrem sports",
+        "intent": "activity",
+        "entities": [
+          {"start": 11, "end": 24, "value": "extrem sports", "entity": "sport"}
+        ]
+      },
+      {
         "text": "I did some nordic walking",
         "intent": "activity",
         "entities": [
@@ -128,6 +159,18 @@
         "intent": "activity",
         "entities": [
           {"start": 11, "end": 19, "value": "aerobics", "entity": "sport"}
+        ]
+      },
+      {
+        "text": "I did some competitive sports",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 11,
+            "end": 29,
+            "value": "competitive sports",
+            "entity": "sport"
+          }
         ]
       },
       {
@@ -172,6 +215,18 @@
           {"start": 11, "end": 20, "value": "ping pong", "entity": "sport"}
         ]
       },
+	{
+        "text": "I was able to Perform jumping jacks",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 14,
+            "end": 35,
+            "value": "Perform jumping jacks",
+            "entity": "sport"
+          }
+        ]
+      },
       {
         "text": "I was able to Use a stair climber machine at a fast pace",
         "intent": "activity",
@@ -192,6 +247,42 @@
             "start": 14,
             "end": 55,
             "value": "Use a rowing machine with vigorous effort",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I was able to Use an arm cycling machine with vigorous effort",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 14,
+            "end": 61,
+            "value": "Use an arm cycling machine with vigorous effort",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I was able to do some triathlon exercising",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 14,
+            "end": 34,
+            "value": "triathlon exercising",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I was able to do a lot of exercising",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 14,
+            "end": 33,
+            "value": "a lot of exercising",
             "entity": "sport"
           }
         ]
@@ -280,6 +371,13 @@
         ]
       },
       {
+        "text": "I came back to do some bowling",
+        "intent": "activity",
+        "entities": [
+          {"start": 23, "end": 30, "value": "bowling", "entity": "sport"}
+        ]
+      },
+      {
         "text": "I came back to do some stairs",
         "intent": "activity",
         "entities": [
@@ -314,7 +412,16 @@
           {"start": 23, "end": 30, "value": "jogging", "entity": "sport"}
         ]
       },
-	{
+	{"text": "a little itchy", "intent": "pain_mild", "entities": []},
+      {"text": "a little pain", "intent": "pain_mild", "entities": []},
+      {"text": "it sting a bit", "intent": "pain_mild", "entities": []},
+      {"text": "its ok but", "intent": "pain_mild", "entities": []},
+      {"text": "sometimes", "intent": "pain_mild", "entities": []},
+      {"text": "tends to hurt", "intent": "pain_mild", "entities": []},
+      {"text": "hurting just a little", "intent": "pain_mild", "entities": []},
+      {"text": "its tolerable", "intent": "pain_mild", "entities": []},
+      {"text": "it could be worse", "intent": "pain_mild", "entities": []},
+      {
         "text": "I am aware of pain only when I pay attention to it",
         "intent": "pain_mild",
         "entities": []
@@ -359,7 +466,6 @@
         "intent": "pain_mild",
         "entities": []
       },
-      {"text": "i feel some discomfort", "intent": "pain_mild", "entities": []},
       {"text": "the pain is tolerable", "intent": "pain_mild", "entities": []},
       {
         "text": "i have a headache in the evening",
@@ -368,11 +474,6 @@
       },
       {
         "text": "i could feel better but it's ok",
-        "intent": "pain_mild",
-        "entities": []
-      },
-      {
-        "text": "i don't feel as bad as yesterday",
         "intent": "pain_mild",
         "entities": []
       },
@@ -403,7 +504,7 @@
         "entities": []
       },
       {"text": "the pain is not strong", "intent": "pain_mild", "entities": []},
-      {"text": "i get used tot he pain", "intent": "pain_mild", "entities": []},
+      {"text": "i get used to the pain", "intent": "pain_mild", "entities": []},
       {
         "text": "i do not notice the pain",
         "intent": "pain_mild",
@@ -577,8 +678,29 @@
         "entities": []
       },
       {
-        "text": "I feel a pain in my leg since yesterday",
-        "intent": "pain_moderate",
+        "text": "I can't live with this",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {"text": "The pain is too hard", "intent": "pain_severe", "entities": []},
+      {
+        "text": "The pain is everything",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {"text": "lacerating", "intent": "pain_severe", "entities": []},
+      {"text": "I'm agonizing", "intent": "pain_severe", "entities": []},
+      {"text": "Hurts me so bad", "intent": "pain_severe", "entities": []},
+      {"text": "I can't feel my arm", "intent": "pain_severe", "entities": []},
+      {"text": "Unbearable", "intent": "pain_severe", "entities": []},
+      {
+        "text": "I was in terrible pain",
+        "intent": "pain_severe",
+        "entities": []
+      },
+      {
+        "text": "The pain is unsupportable",
+        "intent": "pain_severe",
         "entities": []
       },
       {
@@ -614,7 +736,6 @@
         "intent": "pain_severe",
         "entities": []
       },
-      {"text": "i cannot concentrate", "intent": "pain_severe", "entities": []},
       {
         "text": "my heart is heavily beating",
         "intent": "pain_severe",
@@ -638,7 +759,7 @@
         "intent": "pain_severe",
         "entities": []
       },
-      {"text": "it is Hurting", "intent": "pain_severe", "entities": []},
+      {"text": "it is Hurting badly", "intent": "pain_severe", "entities": []},
       {
         "text": "everything is Exhausting",
         "intent": "pain_severe",
@@ -651,11 +772,6 @@
         "entities": []
       },
       {"text": "Frightful", "intent": "pain_severe", "entities": []},
-      {
-        "text": "the disease is Terrifying",
-        "intent": "pain_severe",
-        "entities": []
-      },
       {"text": "Punishing", "intent": "pain_severe", "entities": []},
       {"text": "life is Cruel", "intent": "pain_severe", "entities": []},
       {
@@ -682,17 +798,7 @@
         "intent": "pain_severe",
         "entities": []
       },
-      {
-        "text": "the discomfort is high",
-        "intent": "pain_severe",
-        "entities": []
-      },
-      {
-        "text": "I have such a big pain!",
-        "intent": "pain_severe",
-        "entities": []
-      },
-      {"text": "hurts me so much", "intent": "pain_severe", "entities": []},
+      {"text": "It's torture", "intent": "pain_severe", "entities": []},
       {
         "text": "i always feel Miserable",
         "intent": "emotional_sadness",
@@ -723,7 +829,6 @@
         "entities": []
       },
       {"text": "I am sad", "intent": "emotional_sadness", "entities": []},
-      {"text": "I want to die", "intent": "emotional_sadness", "entities": []},
       {
         "text": "sadness is my middlename",
         "intent": "emotional_sadness",
@@ -792,7 +897,6 @@
         "entities": []
       },
       {"text": "i am isolated", "intent": "emotional_sadness", "entities": []},
-      {"text": "i am distroyed", "intent": "emotional_sadness", "entities": []},
       {"text": "i feel somber", "intent": "emotional_sadness", "entities": []},
       {
         "text": "I am melancholic all day",
@@ -867,8 +971,16 @@
         "intent": "emotional_sadness",
         "entities": []
       },
-      {"text": "I am not happy", "intent": "emotional_sadness", "entities": []},
       {"text": "I sleep well", "intent": "emotional_hapiness", "entities": []},
+      {"text": "Its fantastic", "intent": "emotional_hapiness", "entities": []},
+      {
+        "text": "can't be better",
+        "intent": "emotional_hapiness",
+        "entities": []
+      },
+      {"text": "I'm so good", "intent": "emotional_hapiness", "entities": []},
+      {"text": "I feel well", "intent": "emotional_hapiness", "entities": []},
+      {"text": "Very well", "intent": "emotional_hapiness", "entities": []},
       {
         "text": "I feel energetic",
         "intent": "emotional_hapiness",
@@ -1006,11 +1118,6 @@
         "entities": []
       },
       {
-        "text": "I am ok",
-        "intent": "emotional_hapiness",
-        "entities": []
-      },
-      {
         "text": "I found contentment in living a simple life",
         "intent": "emotional_hapiness",
         "entities": []
@@ -1041,18 +1148,27 @@
         "entities": []
       },
       {
-        "text": "I feel quite well",
-        "intent": "emotional_hapiness",
-        "entities": []
-      },
-      {"text": "I feel well", "intent": "emotional_hapiness", "entities": []},
-      {
         "text": "I don't feel well",
         "intent": "ambiguous_physical_emotionnal",
         "entities": []
       },
       {
         "text": "It hurts",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "I'm not so good",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "Not so well",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "I'm not very well",
         "intent": "ambiguous_physical_emotionnal",
         "entities": []
       },
@@ -1123,6 +1239,86 @@
       },
       {
         "text": "It's hard",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "i don't feel as bad as yesterday",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "i feel some discomfort",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "i cannot concentrate",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "the disease is Terrifying",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "the discomfort is high",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "I want to die",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "i am distroyed",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "a little struggle inside",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "Something inside",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "I can't take more",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "I can't do anything",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "I can't continue anymore",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "I will no make it",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "Don't do anything",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "Help me",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "I feel very bad",
         "intent": "ambiguous_physical_emotionnal",
         "entities": []
       }
