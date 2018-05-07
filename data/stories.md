@@ -46,32 +46,33 @@
 ## Generated Story 3320800183399695936
 * activity{"sport": "gym"}
     - slot{"sport": "gym"}
+    - action_sport_level
     - utter_physical_activity_entity
 
 ## Generated Story 3320800183399695937
 * activity{"sport": "marathon"}
     - slot{"sport": "marathon"}
+    - action_sport_level
     - utter_physical_activity_entity
 * activity{"sport": "tennis"}
     - slot{"sport": "tennis"}
+    - action_sport_level
     - utter_physical_activity_entity
 
 ## Generated Story 3320800183399695938
 * activity{"sport": "basketball"}
     - slot{"sport": "basketball"}
+    - action_sport_level
     - utter_physical_activity_entity
 * activity
     - slot{"sport": null}
     - utter_physical_activity
 
-## Sotry X
-* ambiguous_physical_emotionnal
-    - utter_ambiguous_physical_emotionnal
-* emotional_sadness
-    - utter_emotional_sadness
-
-## Story X+1
-* ambiguous_physical_emotionnal
-    - utter_ambiguous_physical_emotionnal
-* pain_severe
-    - utter_pain_severe
+## Stroy action
+* activity{"sport": "basketball"}
+    - slot{"sport": "basketball"}
+    - action_sport_level
+    - utter_physical_activity_entity
+* activity
+    - slot{"sport": null}
+    - utter_physical_activity

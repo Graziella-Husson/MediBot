@@ -5,7 +5,8 @@ A little chat bot
 * Install RASA 12.01 doing :
 ```
 sudo pip3 install -r requirements.txt
-sudo python3 -m spacy download en
+sudo python3 -m spacy download en_core_web_lg
+sudo python3 -m spacy link en_core_web_lg en
 sudo apt-get install python3-tk
 ```
 

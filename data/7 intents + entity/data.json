@@ -1321,6 +1321,21 @@
         "text": "I feel very bad",
         "intent": "ambiguous_physical_emotionnal",
         "entities": []
+      },
+      {
+        "text": "not well",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "not ok",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
+      },
+      {
+        "text": "quite hard",
+        "intent": "ambiguous_physical_emotionnal",
+        "entities": []
       }
     ]
   }

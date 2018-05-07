@@ -632,9 +632,12 @@ _________________
     I am is in the zone of quietude
     I live in tranquillity
 
-%[ambiguous_physical_emotionnal] 28
+%[ambiguous_physical_emotionnal]
     I don't feel well
     It hurts
+    I'm not so good
+    Not so well
+    I'm not very well
     My heart is breaking
     I will die
     I feel dizzy
@@ -665,3 +668,278 @@ _________________
     Don't do anything
     Help me
     I feel very bad
+
+---------------
+%[pain_mild]
+    a little itchy
+    a little pain
+    sting a bit
+    ok but
+    sometimes
+    tends to 
+    hurting just a little
+    tolerable
+    could be worse
+    aware of pain only when pay attention
+    can ignore pain
+    continue activities
+    need to lie down
+    aching
+    feels heavy
+    tender
+    comes and goes
+    scratchy
+    sometimes feel pain
+    once in a while    
+    tolerable
+    have a headache
+    could feel better 
+    itching 
+    a little bit
+    strange feeling 
+    tends to hurt
+    mild headache
+    not 100%
+    not feel comfortable
+    noticeable
+    minor pain 
+    light pain 
+    ever think about the pain 
+    not strong 
+    used to the pain 
+    not notice the pain
+    adapted to the pain
+    pain mild
+    occasionnaly
+    distracting 
+    under control 
+    medication helps 
+    lower the pain 
+    hurts a bit
+
+%[pain_moderate]
+    upsetting
+    flickering
+    Pulsing in my chest
+    Flashing
+    Pricking
+    drilling
+    cramps in my leg
+    crushing
+    pulling
+    feels hot
+    feels like burning
+    tingling
+    itchy
+    stinging
+    feel sore
+    tiring 
+    vicious    
+    annoying
+    troublesome 
+    spreadin
+    radiating
+    penetrating
+    Piercing
+    tight
+    numb
+    tearing
+    cold
+    freezing
+    Nagging 
+    nauseating
+    aching
+    biting
+    blunt
+    burning
+    constant
+    cutting
+    dragging
+    excruciating
+    frightful
+    gnawing 
+    pins and needles 
+    spreading 
+
+%[pain_severe]
+    can't live with this
+    too hard
+    lacerating
+    agonizing
+    Hurts me so bad
+    I can't feel my arm
+    Unbearable
+    terrible pain
+    unsupportable
+    pass out
+    can't move
+    so intense
+    so bad
+    horrible
+    dreadful
+    overwhelming
+    devastating
+    I think about it all time
+    My pain is all that I can think about
+    barely talk 
+    barely move b
+    heavily beating
+    so severe 
+    Shooting 
+    sharp pain
+    cutting
+    lacerating my body
+    pressing my chest
+    hurting badly
+    exhausting
+    Sickening
+    suffocating
+    Frightful
+    Punishing
+    life is cruel    
+    killing 
+    is intense
+    Unbearable
+    squeezing
+    Drawing
+    torturing
+    torture
+
+%[emotional_sadness]
+    miserable
+    fearful
+    no energy
+    feel down
+    super tired
+    lonely
+    I don't want to see 
+    life sucks
+    no friends
+    sad
+    sadness 
+    miss my family and friends
+    depressed
+    I do not laugh 
+    feel sad without you
+    not make sense
+    no end 
+    didn’t want to wake up
+    hopeless
+    chaos of emotions
+    my own fault
+    something wrong
+    not enjoyable
+    no future for me
+    feel like a ghost
+    isolated
+    somber
+    melancholic 
+    mind paralyzed
+    struggle
+    hate myself
+    heart just sank
+    feel off
+    out of sorts 
+    the dumps about the situation
+    gloomy
+    sinking feeling
+    beside myself
+    under the weather
+    the blues
+    bummed out
+    in the pits
+    in a blue funk
+    on a bit of a downer
+
+%[emotional_hapiness]
+    sleep well 
+    fantastic
+    can't be better
+    so good
+    feel well
+    Very well
+    energetic
+    like dancing all the time
+    top
+    love
+    sky is the limit
+    happy
+    surrounded by faily and friends
+    don't have any depression
+    happy person
+    smiling
+    good
+    hopeful
+    peace
+    optimistic
+    euphoric about life
+    lot of jokes
+    joke around all day
+    satisfied 
+    in love
+    amused
+    whale of a time
+    tickled pink
+    wonderful
+    happy as a clam
+    over the moon
+    seventh heaven
+    a dog with two tails
+    happy camper
+    joys of spring 
+    happy evening
+    full of energy
+    contentment
+    peace of mind
+    serenity
+    stay cool
+    quietude
+    tranquillity
+
+%[activity]
+    @[sport]
+
+@[sport#type]
+    running
+    lifting heavy stuff
+    extrem sports
+    tennis
+    marathon
+    cycling
+    nordic walking
+    run
+    cycle
+    ride a bike
+    swiming
+    triathlon exercising
+    marathon
+    urban trail
+    aerobics
+    competitive sports
+    football
+    volleyball
+    hockey
+    basketball
+    handball
+    soccer game
+    ping pong
+    tennis single
+    heavy shoveling
+    digging ditches
+    carrying heavy loads
+    hiking
+    Backpacking
+    Mountain climbing
+    rock climbing
+    rapelling
+    Step aerobics
+    Water jogging
+    karate
+    judo
+    tae kwon do
+    jujitsu
+    Jumping rope
+    Performing jumping jacks
+    Boxing    
+    dancing energetically
+    Rugby Kickball

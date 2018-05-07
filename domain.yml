@@ -1,6 +1,8 @@
 slots:
   sport:
     type: text
+  sport_level:
+    type: text
 
 intents:
  - activity
@@ -9,7 +11,6 @@ intents:
  - pain_mild
  - emotional_sadness
  - emotional_hapiness
- - ambiguous_physical_emotionnal
 
 entities:
  - sport
@@ -28,14 +29,7 @@ templates:
   utter_emotional_hapiness:
     - text: "Great! You are in a good mood!"
   utter_physical_activity_entity:
-    - text: "You did a physical activity! Great! I detected {sport} as an entity"
-  utter_ambiguous_physical_emotionnal:
-    - text: "Well, are you talking about a physical thing or in an emotionnal way?"
-      buttons:
-      - title: "physical"
-        payload: "severe pain"
-      - title: "emotionnal"
-        payload: "sad"
+    - text: "You did a physical activity! Great! I detected {sport} as an entity and {sport_level} is its level."
 
 actions:
  - utter_pain_severe
@@ -45,4 +39,4 @@ actions:
  - utter_pain_mild
  - utter_emotional_sadness
  - utter_emotional_hapiness
- - utter_ambiguous_physical_emotionnal
+ - actions.ActionSportLevel
