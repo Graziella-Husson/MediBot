@@ -3,40 +3,59 @@ slots:
     type: text
   sport_level:
     type: text
+  sport_duration:
+    type: text
+  body_part:
+    type: text
+  pain_duration:
+    type: text 
+  pain_level:
+    type: text
+  duration:
+    type: text
 
 intents:
  - activity
- - pain_severe
- - pain_moderate
- - pain_mild
+ - pain
  - emotional_sadness
  - emotional_hapiness
 
 entities:
  - sport
+ - body_part
+ - duration
+ - pain_level
 
 templates:
-  utter_pain_severe:
-    - text: "I see that you're in trouble with a severe pain."
-  utter_physical_activity:
-    - text: "You did a physical activity! Great! But I did not see any entity sport in your sentence. Maybe I missed something."
-  utter_pain_moderate:
-    - text: "I see that you have a moderate pain."
-  utter_pain_mild:
-    - text: "I see that you can live with your pain."
-  utter_emotional_sadness:
+  ask_sport:
+    - text: "I did not recognize any sport in what you said. Can you tell me more?"
+  ask_sport_duration:
+    - text: "How long did you do your physical activity?"
+  ask_pain_body_part:
+    - text: "Where is localized this pain?"
+  ask_pain_duration:
+    - text: "How does your pain change with time? (e.g. is it brief, continuous?)."
+  ask_pain_level:
+    - text: "I did not recognize any description of your pain. Can you tell me more about it? (e.g. is it a sharp pain?)."
+  sum_up_pain:
+    - text: "To sum up, you have some {pain_level} pain -> localized at {body_part} with a recurrence of {pain_duration}."
+  sum_up_sport:
+    - text: "To sum up, you did some {sport_level} sport -> {sport} with a duration of {sport_duration}."
+  sum_up_emotionnal_sadness:
     - text: "It seems that you are in a bad mood..."
-  utter_emotional_hapiness:
+  sum_up_emotional_hapiness:
     - text: "Great! You are in a good mood!"
-  utter_physical_activity_entity:
-    - text: "You did a physical activity! Great! I detected {sport} as an entity and {sport_level} is its level."
 
 actions:
- - utter_pain_severe
- - utter_physical_activity
- - utter_physical_activity_entity
- - utter_pain_moderate
- - utter_pain_mild
- - utter_emotional_sadness
- - utter_emotional_hapiness
+ - ask_sport
+ - ask_sport_duration 
+ - ask_pain_body_part
+ - ask_pain_duration 
+ - ask_pain_level
+ - sum_up_emotionnal_sadness
+ - sum_up_emotional_hapiness
  - actions.ActionSportLevel
+ - actions.ActionSportDuration
+ - actions.ActionPainDuration
+ - actions.ActionSumUpPain
+ - actions.ActionSumUpSport
