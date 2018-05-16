@@ -125,10 +125,10 @@ To train 'online' (interactive learning) :
 ```
 python3 train_online.py
 ```
+
 Creates a file (stories.md by default). You have to add it into the stories.md file in the data folder
 
-
-### Vizualize your stories :eyes:
+### Vizualize your stories :eyes:
 
 You can vizualize your stories by using graphviz. 
 ```
