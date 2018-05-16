@@ -37,10 +37,6 @@ templates:
     - text: "How does your pain change with time? (e.g. is it brief, continuous?)."
   ask_pain_level:
     - text: "I did not recognize any description of your pain. Can you tell me more about it? (e.g. is it a sharp pain?)."
-  sum_up_pain:
-    - text: "To sum up, you have some {pain_level} pain -> localized at {body_part} with a recurrence of {pain_duration}."
-  sum_up_sport:
-    - text: "To sum up, you did some {sport_level} sport -> {sport} with a duration of {sport_duration}."
   sum_up_emotionnal_sadness:
     - text: "It seems that you are in a bad mood..."
   sum_up_emotional_hapiness:

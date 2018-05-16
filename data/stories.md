@@ -1,17 +1,3 @@
-## Story 01
-* activity
-	- slot{"sport":null}
-	- ask_sport
-* activity{"sport": "gym"}
-	- slot{"sport": "gym"}
-	- slot{"duration": null}
-	- ask_sport_duration
-* activity{"duration":"3h"}
-	- slot{"duration": "3h"}
-	- action_duration_sport
-	- action_sport_level
-	- sum_up_sport
-
 ## Story 02
 * activity{"sport": "marathon", "duration":"5h"}
 	- slot{"sport": "marathon"}
@@ -27,25 +13,6 @@
 ## Story 04
 * emotional_hapiness
 	- sum_up_emotional_hapiness
-
-## Story 05
-* pain
-	- ask_pain_body_part
-* pain{"body_part":"heart"}
-	- slot{"body_part":"heart"}
-	- slot{"duration": null}
-	- ask_pain_duration
-* pain{"duration":"every day"}
-	- slot{"duration": "every day"}
-	- action_duration_pain
-	- slot{"pain_level": null}
-	- ask_pain_level
-* pain{"pain_level": "sharp"}
-	- slot{"pain_level": "sharp"}
-	- slot{"pain_duration": null}
-	- slot{"pain_level": null}
-	- slot{"body_part": null}
-	- sum_up_pain
 
 ## Generated Story 3461709657624949751
 * pain{"body_part": "chest"}
@@ -466,7 +433,7 @@
 * activity{"sport": "gym"}
     - slot{"sport": "gym"}
     - ask_sport_duration
-* activity:{"sport": "gym", "duration": "4h"}
+* activity{"sport": "gym", "duration": "4h"}
     - slot{"sport": "gym"}
     - slot{"duration": "4h"}
     - slot{"sport_duration": "4h"}
@@ -495,3 +462,310 @@
     - slot{"pain_level": null}
     - slot{"body_part": null}
     - sum_up_pain
+
+## Generated Story 6231152721572523496
+* pain{"duration": "1h", "pain_level": "sharp"}
+    - slot{"duration": "1h"}
+    - slot{"pain_level": "sharp"}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - ask_pain_body_part
+* pain{"body_part": "leg"}
+    - slot{"body_part": "leg"}
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - sum_up_pain
+
+## Generated Story -4999529473494020783
+* pain{"duration": "1h", "body_part": "leg"}
+    - slot{"duration": "1h"}
+    - slot{"body_part": "leg"}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - ask_pain_level
+* pain{"pain_level": "sharp"}
+    - slot{"pain_level": "sharp"}
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - sum_up_pain
+* activity
+    - ask_sport
+* activity{"duration": "2h", "sport": "gym"}
+    - slot{"duration": "2h"}
+    - slot{"sport": "gym"}
+    - slot{"sport_duration": "2h"}
+    - slot{"duration": null}
+    - action_duration_sport
+    - slot{"sport_level": "medium"}
+    - action_sport_level
+    - slot{"sport_duration": null}
+    - slot{"sport_level": null}
+    - slot{"sport": null}
+    - sum_up_sport
+
+## Generated Story -7319386166929517917
+* pain{"body_part": "leg", "duration": "4h"}
+    - slot{"body_part": "leg"}
+    - slot{"duration": "4h"}
+    - slot{"pain_duration": "4h"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - ask_pain_level
+* pain{"pain_level": "sharp"}
+    - slot{"pain_level": "sharp"}
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - sum_up_pain
+* activity{"sport": "gym"}
+    - slot{"sport": "gym"}
+    - ask_sport_duration
+* pain{"body_part": "head", "pain_level": "bad", "duration": "1h"}
+    - slot{"body_part": "head"}
+    - slot{"pain_level": "bad"}
+    - slot{"duration": "1h"}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - sum_up_pain
+* activity
+    - ask_sport_duration
+* activity{"duration": "4h"}
+    - slot{"duration": "4h"}
+    - slot{"sport_duration": "4h"}
+    - slot{"duration": null}
+    - action_duration_sport
+    - slot{"sport_level": "medium"}
+    - action_sport_level
+    - slot{"sport_duration": null}
+    - slot{"sport_level": null}
+    - slot{"sport": null}
+    - sum_up_sport
+
+## Generated Story -3236057256689803056
+* pain{"pain_level": "sharp"}
+    - slot{"pain_level": "sharp"}
+    - ask_pain_duration
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - ask_pain_body_part
+* pain{"body_part": "leg"}
+    - slot{"body_part": "leg"}
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - sum_up_pain
+
+## Generated Story 4822929949674663230
+* pain{"pain_level": "horrible"}
+    - slot{"pain_level": "horrible"}
+    - ask_pain_duration
+* pain{"duration": "4h", "body_part": "head"}
+    - slot{"duration": "4h"}
+    - slot{"body_part": "head"}
+    - slot{"pain_duration": "4h"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - sum_up_pain
+* activity
+    - ask_sport
+* activity{"duration": "4h"}
+    - slot{"duration": "4h"}
+    - slot{"sport_duration": "4h"}
+    - slot{"duration": null}
+    - action_duration_sport
+    - ask_sport
+* activity{"sport": "gym"}
+    - slot{"sport": "gym"}
+    - slot{"sport_level": "medium"}
+    - action_sport_level
+    - slot{"sport_duration": null}
+    - slot{"sport_level": null}
+    - slot{"sport": null}
+    - sum_up_sport
+
+## Generated Story -7356873897205737358
+* activity{"duration": "4h"}
+    - slot{"duration": "4h"}
+    - slot{"sport_duration": "4h"}
+    - slot{"duration": null}
+    - action_duration_sport
+    - ask_sport
+* pain{"duration": "4h"}
+    - slot{"duration": "4h"}
+    - slot{"pain_duration": "4h"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - ask_pain_level
+* pain{"pain_level": "sharp"}
+    - slot{"pain_level": "sharp"}
+    - ask_pain_body_part
+* pain{"body_part": "leg"}
+    - slot{"body_part": "leg"}
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - sum_up_pain
+* activity
+    - ask_sport
+* activity{"sport": "gym"}
+    - slot{"sport": "gym"}
+    - slot{"sport_level": "medium"}
+    - action_sport_level
+    - slot{"sport_duration": null}
+    - slot{"sport_level": null}
+    - slot{"sport": null}
+    - sum_up_sport
+
+## Generated Story 3080493975370578825
+* pain{"body_part": "leg", "duration": "4h"}
+    - slot{"body_part": "leg"}
+    - slot{"duration": "4h"}
+    - slot{"pain_duration": "4h"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - ask_pain_level
+* pain{"pain_level": "sharp"}
+    - slot{"pain_level": "sharp"}
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - sum_up_pain
+* activity
+    - ask_sport
+* activity{"sport": "gym", "duration": "5h"}
+    - slot{"sport": "gym"}
+    - slot{"duration": "5h"}
+    - slot{"sport_duration": "5h"}
+    - slot{"duration": null}
+    - action_duration_sport
+    - slot{"sport_level": "medium"}
+    - action_sport_level
+    - slot{"sport_duration": null}
+    - slot{"sport_level": null}
+    - slot{"sport": null}
+    - sum_up_sport
+
+## Generated Story -9012527780077400858
+* pain{"pain_level": "sharp"}
+    - slot{"pain_level": "sharp"}
+    - ask_pain_duration
+* pain{"duration": "5 minutes"}
+    - slot{"duration": "5 minutes"}
+    - slot{"pain_duration": "5 minutes"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - ask_pain_body_part
+* pain{"body_part": "leg"}
+    - slot{"body_part": "leg"}
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - sum_up_pain
+
+## Generated Story 4783844944825301575
+* pain{"pain_level": "sharp"}
+    - slot{"pain_level": "sharp"}
+    - ask_pain_duration
+* pain
+    - ask_pain_duration
+* pain{"body_part": "leg"}
+    - slot{"body_part": "leg"}
+    - ask_pain_duration
+* pain{"duration": "5 hours"}
+    - slot{"duration": "5 hours"}
+    - slot{"pain_duration": "5 hours"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - sum_up_pain
+
+## Generated Story -449132548146928335
+* pain{"body_part": "leg"}
+    - slot{"body_part": "leg"}
+    - ask_pain_duration
+
+## Generated Story -463284346608836713
+* pain{"duration": "5h"}
+    - slot{"duration": "5h"}
+    - slot{"pain_duration": "5h"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - ask_pain_level
+
+## Generated Story -6935372766664861248
+* pain{"pain_level": "sharp"}
+    - slot{"pain_level": "sharp"}
+    - ask_pain_duration
+
+## Generated Story 1833068823479137496
+* pain{"duration": "5h", "pain_level": "sharp"}
+    - slot{"duration": "5h"}
+    - slot{"pain_level": "sharp"}
+    - slot{"pain_duration": "5h"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - ask_pain_body_part
+
+## Generated Story 4012459906582706517
+* pain{"duration": "5h"}
+    - slot{"duration": "5h"}
+    - slot{"pain_duration": "5h"}
+    - slot{"duration": null}
+    - action_duration_pain
+
+## Generated Story -26553808823028929
+* activity{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - slot{"sport_duration": "1h"}
+    - slot{"duration": null}
+    - action_duration_sport
+
+## Generated Story 1615169301724848250
+* pain{"duration": "4h", "pain_level": "sharp"}
+    - slot{"duration": "4h"}
+    - slot{"pain_level": "sharp"}
+    - slot{"pain_duration": "4h"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - ask_pain_body_part
+* pain{"body_part": "leg"}
+    - slot{"body_part": "leg"}
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - sum_up_pain
+* activity{"sport": "gym", "duration": "4h"}
+    - slot{"sport": "gym"}
+    - slot{"duration": "4h"}
+    - slot{"sport_duration": "4h"}
+    - slot{"duration": null}
+    - action_duration_sport
+    - slot{"sport_level": "medium"}
+    - action_sport_level
+    - slot{"sport_duration": null}
+    - slot{"sport_level": null}
+    - slot{"sport": null}
+    - sum_up_sport
+
+## Generated Story 2611966603176628354
+* pain{"duration": "4h"}
+    - slot{"duration": "4h"}
+    - slot{"pain_duration": "4h"}
+    - slot{"duration": null}
+    - action_duration_pain

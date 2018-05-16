@@ -55,7 +55,7 @@ class ActionSumUpSport(Action):
 		sport_duration = tracker.get_slot("sport_duration")
 		sport_level = tracker.get_slot("sport_level")
 		sport = tracker.get_slot("sport")
-		response = """To sum up, you did some {} sport -> {} with a duration of {}.""".format(sport_level, sport, sport_duration)
+		response = """To sum up, you did some {} sport {} with a duration of {}.""".format(sport_level, sport, sport_duration)
 		dispatcher.utter_message(response)
 		tracker.update(SlotSet("sport_duration",None))
 		tracker.update(SlotSet("sport_level",None))
