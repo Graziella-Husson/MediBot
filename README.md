@@ -1,7 +1,7 @@
-# MediBot
+# MediBot :godmode:
 A little chat bot
 
-## Getting started 
+## Getting started :suspect:
 * Install RASA 12.01 doing :
 ```
 sudo pip3 install -r requirements.txt
@@ -10,7 +10,7 @@ sudo python3 -m spacy link en_core_web_lg en
 sudo apt-get install python3-tk
 ```
 
-## Choose your pipeline
+## Choose your pipeline :wrench:
 * For MITIE:
 
 Use this command to download MITIE Models
@@ -90,12 +90,12 @@ pipeline:
 ```
 	
 
-* Duckling for entity recognition :
+* Duckling for entity recognition : :baby_chick:
 ```
 sudo apt-get install default-jdk
 ```
 
-## Train NLU model
+## Train NLU model :speech_balloon:
 * _data.json_ file have to be filled with examples (text + entities in it + intent).
 To do so :
 	* manually complete json file
@@ -106,7 +106,7 @@ To do so :
 python3 -m rasa_nlu.train -c conf.yml --fixed_model_name current --data data/data.json --path models/nlu
 ```
 
-## Evaluate the model
+## Evaluate the model :hurtrealbad:
 To evaluate the model :
 ```
 python3 -m rasa_nlu.evaluate -d data/data.json -m models/nlu/default/current -c conf.yml
@@ -116,7 +116,7 @@ Or with cross validation (f=10 folds):
 python3 -m rasa_nlu.evaluate -d data/data.json -c conf.yml --mode crossvalidation -f 10
 ```
 
-## Train bot
+## Train bot :books:
 ```
 python3 -m rasa_core.train -s data/stories.md -d domain.yml -o models/dialogue --epochs 300
 ```
@@ -125,10 +125,10 @@ To train 'online' (interactive learning) :
 ```
 python3 train_online.py
 ```
-Creates a file (stories.md by default). You have to add it into the stories.md file in /data
+Creates a file (stories.md by default). You have to add it into the stories.md file in the data folder
 
 
-## Vizualize your stories
+## Vizualize your stories :eyes:
 
 You can vizualize your stories by using graphviz. 
 ```
@@ -143,7 +143,7 @@ python3 vizualize.py
 python3 -m rasa_core.run -d models/dialogue -u models/nlu/default/current
 ```
 
-## Link your bot to a slack
+## Link your bot to a slack :electric_plug:
 To link your bot to your slack you will need some tokens. You will find them in your api.slack.com app dashboard. Be sure to add a user bot and import the app into your workspace and a channel.
 Add them in the file run_app.py then,
 
