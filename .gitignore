@@ -5,3 +5,5 @@ models/
 .json
 ngrok
 new_data
+__pycache__/
+.png

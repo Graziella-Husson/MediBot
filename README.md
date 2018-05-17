@@ -103,17 +103,17 @@ To do so :
 :heavy_exclamation_mark: Use Google Chrome!
 * train the model with _data.json_ file :
 ```
-python3 -m rasa_nlu.train -c conf.yml --fixed_model_name current --data data/data.json --path models/nlu
+python3 -m rasa_nlu.train -c config/conf.yml --fixed_model_name current --data data/data.json --path models/nlu
 ```
 
 ## Evaluate the model :hurtrealbad:
 To evaluate the model :
 ```
-python3 -m rasa_nlu.evaluate -d data/data.json -m models/nlu/default/current -c conf.yml
+python3 -m rasa_nlu.evaluate -d data/data.json -m models/nlu/default/current -c config/conf.yml
 ```
 Or with cross validation (f=10 folds):
 ```
-python3 -m rasa_nlu.evaluate -d data/data.json -c conf.yml --mode crossvalidation -f 10
+python3 -m rasa_nlu.evaluate -d data/data.json -c config/conf.yml --mode crossvalidation -f 10
 ```
 
 ## Train bot :books:
