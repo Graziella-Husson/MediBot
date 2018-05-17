@@ -157,5 +157,8 @@ Use ngrok to have the path to link into your api.slack.com app dashboard:
 ./ngrok http 5004
 ```
 
-Then copy-paste the https URL in your api.slack.com app dashboard 'event-subscriptions' and add /slack/events at the end.
+Then copy-paste the https URL in your api.slack.com app dashboard 'event-subscriptions' and add /webhook at the end.
 When its saved, you will be able to talk to your bot in slack!
+
+If your bot is using buttons, you will have to allow slack to use them. Go to the 'interactive component' part from dashboard on your api.slack.com app then add the https URL you took from ngrok and paste it in the request URL (allow interactive component first) and add /webhook at the end.
+When its saved, you will be able to talk to your bot in slack with buttons!

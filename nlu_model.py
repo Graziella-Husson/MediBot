@@ -11,7 +11,7 @@ def train_nlu(data, config, model_dir):
 	
 def run_nlu():
 	interpreter = Interpreter.load('./models/nlu/default/test', RasaNLUConfig('conf_spacy.json'))
-	print(interpreter.parse("Its a sharp pain. Its in my leg since 5 hours."))
+	print(interpreter.parse("Pain in my leg"))
 	
 if __name__ == '__main__':
 	#train_nlu('./data/data.json', 'config_spacy.json', './models/nlu')

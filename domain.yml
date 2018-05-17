@@ -13,18 +13,28 @@ slots:
     type: text
   duration:
     type: text
+  pain_change:
+    type: text
+  period:
+    type: text
+  distance:
+    type: text
 
 intents:
  - activity
  - pain
  - emotional_sadness
  - emotional_hapiness
+ - fallback
 
 entities:
  - sport
  - body_part
  - duration
  - pain_level
+ - distance
+ - period
+ - pain_change
 
 templates:
   ask_sport:
@@ -34,13 +44,24 @@ templates:
   ask_pain_body_part:
     - text: "Where is localized this pain?"
   ask_pain_duration:
-    - text: "How does your pain change with time? (e.g. is it brief, continuous?)."
+    - text: "How long did you have this pain?"
+  ask_pain_change:
+  - text: "How does your pain change with time?"
+    buttons:
+    - title: "continous"
+      payload: /pain{"pain_change":"continous"}
+    - title: "intermittent"
+      payload: /pain{"pain_change":"intermittent"}
+    - title: "brief"
+      payload: /pain{"pain_change":"brief"}
   ask_pain_level:
     - text: "I did not recognize any description of your pain. Can you tell me more about it? (e.g. is it a sharp pain?)."
   sum_up_emotionnal_sadness:
     - text: "It seems that you are in a bad mood..."
   sum_up_emotional_hapiness:
     - text: "Great! You are in a good mood!"
+  sum_up_fallback:
+    - text: "Sorry, I did not understand what you said..."
 
 actions:
  - ask_sport
@@ -48,8 +69,10 @@ actions:
  - ask_pain_body_part
  - ask_pain_duration 
  - ask_pain_level
+ - ask_pain_change
  - sum_up_emotionnal_sadness
  - sum_up_emotional_hapiness
+ - sum_up_fallback
  - actions.ActionSportLevel
  - actions.ActionSportDuration
  - actions.ActionPainDuration

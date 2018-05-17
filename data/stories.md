@@ -14,6 +14,10 @@
 * emotional_hapiness
 	- sum_up_emotional_hapiness
 
+## Story 05
+* fallback
+	- sum_up_fallback
+
 ## Generated Story 3461709657624949751
 * pain{"body_part": "chest"}
     - slot{"body_part": "chest"}
@@ -29,6 +33,9 @@
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - sum_up_pain
 
 ## Generated Story 5982560951732964699
@@ -41,6 +48,9 @@
     - slot{"sport_duration": "5h"}
     - slot{"pain_duration": "all day"}
     - action_duration_pain
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - sum_up_pain
 
 ## Generated Story 5958237605562049720
@@ -51,6 +61,9 @@
     - slot{"sport_duration": "5h"}
     - slot{"pain_duration": "all day"}
     - action_duration_pain
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - sum_up_pain
 * activity
     - ask_sport
@@ -76,6 +89,9 @@
     - ask_pain_level
 * pain{"pain_level": "sharp"}
     - slot{"pain_level": "sharp"}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - sum_up_pain
 * emotional_sadness
     - sum_up_emotionnal_sadness
@@ -94,6 +110,9 @@
     - ask_pain_level
 * pain{"pain_level": "sharp"}
     - slot{"pain_level": "sharp"}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - sum_up_pain
 
 ## Generated Story 5440313919266642545
@@ -121,6 +140,9 @@
     - slot{"pain_duration": "1h"}
     - slot{"duration": null}
     - action_duration_pain
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - sum_up_pain
 * activity
     - ask_sport
@@ -159,6 +181,9 @@
     - slot{"pain_duration": "every 5 minutes"}
     - slot{"duration": null}
     - action_duration_pain
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - sum_up_pain
 
 ## Generated Story -2474155662173285895
@@ -170,6 +195,9 @@
     - slot{"pain_duration": "brief"}
     - slot{"duration": null}
     - action_duration_pain
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - sum_up_pain
 
 ## Generated Story 8556982460057159560
@@ -187,6 +215,9 @@
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - sum_up_pain
 * activity
     - ask_sport
@@ -203,6 +234,9 @@
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - sum_up_pain
 * activity
     - ask_sport_duration
@@ -230,6 +264,9 @@
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - sum_up_pain
 * pain{"duration": "a week", "body_part": "hand", "pain_level": "bad"}
     - slot{"duration": "a week"}
@@ -241,6 +278,9 @@
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - sum_up_pain
 
 ## Generated Story 5542479029476463482
@@ -257,6 +297,9 @@
     - ask_pain_level
 * pain{"pain_level": "sharp"}
     - slot{"pain_level": "sharp"}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -284,6 +327,9 @@
     - slot{"pain_duration": "1"}
     - slot{"duration": null}
     - action_duration_pain
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -317,6 +363,9 @@
     - ask_pain_level
 * pain{"pain_level": "bad"}
     - slot{"pain_level": "bad"}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -364,6 +413,9 @@
     - ask_pain_level
 * pain{"pain_level": "sharp"}
     - slot{"pain_level": "sharp"}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -387,6 +439,9 @@
     - ask_pain_level
 * pain{"pain_level": "sharp"}
     - slot{"pain_level": "sharp"}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -404,6 +459,9 @@
     - slot{"pain_duration": "10h"}
     - slot{"duration": null}
     - action_duration_pain
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -458,6 +516,9 @@
     - ask_pain_level
 * pain{"pain_level": "sharp"}
     - slot{"pain_level": "sharp"}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -473,6 +534,9 @@
     - ask_pain_body_part
 * pain{"body_part": "leg"}
     - slot{"body_part": "leg"}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -488,6 +552,9 @@
     - ask_pain_level
 * pain{"pain_level": "sharp"}
     - slot{"pain_level": "sharp"}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -531,6 +598,9 @@
     - slot{"pain_duration": "1h"}
     - slot{"duration": null}
     - action_duration_pain
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -561,6 +631,9 @@
     - ask_pain_body_part
 * pain{"body_part": "leg"}
     - slot{"body_part": "leg"}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -576,6 +649,9 @@
     - slot{"pain_duration": "4h"}
     - slot{"duration": null}
     - action_duration_pain
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -615,6 +691,9 @@
     - ask_pain_body_part
 * pain{"body_part": "leg"}
     - slot{"body_part": "leg"}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -640,6 +719,9 @@
     - ask_pain_level
 * pain{"pain_level": "sharp"}
     - slot{"pain_level": "sharp"}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -671,6 +753,9 @@
     - ask_pain_body_part
 * pain{"body_part": "leg"}
     - slot{"body_part": "leg"}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -690,6 +775,9 @@
     - slot{"pain_duration": "5 hours"}
     - slot{"duration": null}
     - action_duration_pain
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -746,6 +834,9 @@
     - ask_pain_body_part
 * pain{"body_part": "leg"}
     - slot{"body_part": "leg"}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
     - slot{"pain_duration": null}
     - slot{"pain_level": null}
     - slot{"body_part": null}
@@ -769,3 +860,82 @@
     - slot{"pain_duration": "4h"}
     - slot{"duration": null}
     - action_duration_pain
+
+## Generated Story 201504012101100443
+* pain
+    - ask_pain_body_part
+* pain{"body_part": "leg"}
+    - slot{"body_part": "leg"}
+    - ask_pain_duration
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - ask_pain_level
+* pain{"pain_level": "sharp"}
+    - slot{"pain_level": "sharp"}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - sum_up_pain
+
+## Generated Story -7707540868173853457
+* pain{"body_part": "leg", "pain_level": "sharp", "duration": "5h"}
+    - slot{"body_part": "leg"}
+    - slot{"duration": "5h"}
+    - slot{"pain_level": "sharp"}
+    - slot{"pain_duration": "5h"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - sum_up_pain
+
+## Generated Story -149960225434677169
+* pain
+    - ask_pain_body_part
+* pain{"body_part": "leg", "pain_level": "sharp"}
+    - slot{"body_part": "leg"}
+    - slot{"pain_level": "sharp"}
+    - ask_pain_duration
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - sum_up_pain
+
+## Generated Story -4992112523773405255
+* pain{"pain_level": "sharp", "period": "every day"}
+    - slot{"period": "every day"}
+    - slot{"pain_level": "sharp"}
+    - ask_pain_duration
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - ask_pain_body_part
+* pain{"body_part": "leg"}
+    - slot{"body_part": "leg"}
+    - ask_pain_change
+* pain{"pain_change": "constant"}
+    - slot{"pain_change": "constant"}
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - sum_up_pain

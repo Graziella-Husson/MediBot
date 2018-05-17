@@ -4,54 +4,13 @@
     "entity_synonyms": [],
     "common_examples": [
       {
-        "text": "it sting a bit in my finger",
+        "text": "my back tends to hurt",
         "intent": "pain",
         "entities": [
-          {
-            "start": 3,
-            "end": 8,
-            "value": "sting",
-            "entity": "pain_level"
-          },
-          {
-            "start": 21,
-            "end": 27,
-            "value": "finger",
-            "entity": "body_part"
-          }
-        ]
-      },
-      {
-        "text": "tends to hurt",
-        "intent": "pain",
-        "entities": []
-      },
-      {
-        "text": "it is tolerable",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 6,
-            "end": 15,
-            "value": "tolerable",
-            "entity": "pain_level"
-          }
-        ]
-      },
-      {
-        "text": "my head is aching",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 11,
-            "end": 17,
-            "value": "aching",
-            "entity": "pain_level"
-          },
           {
             "start": 3,
             "end": 7,
-            "value": "head",
+            "value": "back",
             "entity": "body_part"
           }
         ]
@@ -99,24 +58,6 @@
         ]
       },
       {
-        "text": "i had a headache in the evening during 2h",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 8,
-            "end": 12,
-            "value": "head",
-            "entity": "body_part"
-          },
-          {
-            "start": 39,
-            "end": 41,
-            "value": "2h",
-            "entity": "duration"
-          }
-        ]
-      },
-      {
         "text": "i have some strange feeling in my legs since 10 hours",
         "intent": "pain",
         "entities": [
@@ -159,7 +100,7 @@
         ]
       },
       {
-        "text": "i have a mild headache",
+        "text": "i have a mild head ache",
         "intent": "pain",
         "entities": [
           {
@@ -173,18 +114,6 @@
             "end": 18,
             "value": "head",
             "entity": "body_part"
-          }
-        ]
-      },
-      {
-        "text": "the pain is noticeable",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 12,
-            "end": 22,
-            "value": "noticeable",
-            "entity": "pain_level"
           }
         ]
       },
@@ -219,7 +148,7 @@
         ]
       },
       {
-        "text": "the pain is mild",
+        "text": "the pain is mild since few hours",
         "intent": "pain",
         "entities": [
           {
@@ -227,18 +156,12 @@
             "end": 16,
             "value": "mild",
             "entity": "pain_level"
-          }
-        ]
-      },
-      {
-        "text": "The pain sensation is acceptable",
-        "intent": "pain",
-        "entities": [
+          },
           {
-            "start": 22,
+            "start": 23,
             "end": 32,
-            "value": "acceptable",
-            "entity": "pain_level"
+            "value": "few hours",
+            "entity": "duration"
           }
         ]
       },
@@ -339,7 +262,7 @@
         ]
       },
       {
-        "text": "my wound is pulling",
+        "text": "my wound is pulling every morning",
         "intent": "pain",
         "entities": [
           {
@@ -347,6 +270,12 @@
             "end": 19,
             "value": "pulling",
             "entity": "pain_level"
+          },
+          {
+            "start": 20,
+            "end": 33,
+            "value": "every morning",
+            "entity": "period"
           }
         ]
       },
@@ -447,24 +376,6 @@
         ]
       },
       {
-        "text": "the pain in my back is annoying",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 15,
-            "end": 19,
-            "value": "back",
-            "entity": "body_part"
-          },
-          {
-            "start": 23,
-            "end": 31,
-            "value": "annoying",
-            "entity": "pain_level"
-          }
-        ]
-      },
-      {
         "text": "the illness is radiating",
         "intent": "pain",
         "entities": [
@@ -507,7 +418,7 @@
         ]
       },
       {
-        "text": "my toes are numb",
+        "text": "my toes are numb since a few days",
         "intent": "pain",
         "entities": [
           {
@@ -515,6 +426,12 @@
             "end": 7,
             "value": "toes",
             "entity": "body_part"
+          },
+          {
+            "start": 23,
+            "end": 33,
+            "value": "a few days",
+            "entity": "duration"
           }
         ]
       },
@@ -574,18 +491,6 @@
             "start": 0,
             "end": 7,
             "value": "Nagging",
-            "entity": "pain_level"
-          }
-        ]
-      },
-      {
-        "text": "the pain is constant",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 12,
-            "end": 20,
-            "value": "constant",
             "entity": "pain_level"
           }
         ]
@@ -675,18 +580,6 @@
         ]
       },
       {
-        "text": "discomforting",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 0,
-            "end": 13,
-            "value": "discomforting",
-            "entity": "pain_level"
-          }
-        ]
-      },
-      {
         "text": "The pain is too hard",
         "intent": "pain",
         "entities": [
@@ -718,18 +611,6 @@
             "start": 11,
             "end": 18,
             "value": "intense",
-            "entity": "pain_level"
-          }
-        ]
-      },
-      {
-        "text": "Pain is so bad",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 11,
-            "end": 14,
-            "value": "bad",
             "entity": "pain_level"
           }
         ]
@@ -891,18 +772,6 @@
         ]
       },
       {
-        "text": "it is Hurting badly",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 14,
-            "end": 19,
-            "value": "badly",
-            "entity": "pain_level"
-          }
-        ]
-      },
-      {
         "text": "Sickening",
         "intent": "pain",
         "entities": [
@@ -1041,12 +910,7 @@
         ]
       },
       {
-        "text": "I am about to croak",
-        "intent": "pain",
-        "entities": []
-      },
-      {
-        "text": "I have got a terrible headache",
+        "text": "I have got a terrible head ache",
         "intent": "pain",
         "entities": [
           {
@@ -1113,18 +977,6 @@
             "start": 8,
             "end": 17,
             "value": "screaming",
-            "entity": "pain_level"
-          }
-        ]
-      },
-      {
-        "text": "excruciating",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 0,
-            "end": 12,
-            "value": "excruciating",
             "entity": "pain_level"
           }
         ]
@@ -1990,18 +1842,6 @@
         "entities": []
       },
       {
-        "text": "lifting heavy stuff",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "lifting",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
         "text": "i did some extrem sports",
         "intent": "activity",
         "entities": []
@@ -2072,18 +1912,6 @@
         "entities": []
       },
       {
-        "text": "climbing brisky up a hill",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "climbing",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
         "text": "aerobics",
         "intent": "activity",
         "entities": [
@@ -2094,11 +1922,6 @@
             "entity": "sport"
           }
         ]
-      },
-      {
-        "text": "competitive sports",
-        "intent": "activity",
-        "entities": []
       },
       {
         "text": "football",
@@ -2113,18 +1936,6 @@
         ]
       },
       {
-        "text": "volleyball",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 10,
-            "value": "volleyball",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
         "text": "hockey",
         "intent": "activity",
         "entities": [
@@ -2132,18 +1943,6 @@
             "start": 0,
             "end": 6,
             "value": "hockey",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "basketball",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 10,
-            "value": "basketball",
             "entity": "sport"
           }
         ]
@@ -2228,18 +2027,6 @@
             "start": 0,
             "end": 8,
             "value": "carrying",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "hiking",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "hiking",
             "entity": "sport"
           }
         ]
@@ -2341,18 +2128,6 @@
         ]
       },
       {
-        "text": "tae kwon do",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 11,
-            "value": "tae kwon do",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
         "text": "I play double tennis 3 times per week",
         "intent": "activity",
         "entities": [
@@ -2367,18 +2142,6 @@
             "end": 37,
             "value": "3 times per week",
             "entity": "period"
-          }
-        ]
-      },
-      {
-        "text": "jujitsu",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "jujitsu",
-            "entity": "sport"
           }
         ]
       },
@@ -2426,18 +2189,6 @@
             "start": 0,
             "end": 8,
             "value": "sparring",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Professional ballroom",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 13,
-            "end": 21,
-            "value": "ballroom",
             "entity": "sport"
           }
         ]
@@ -2599,30 +2350,6 @@
         ]
       },
       {
-        "text": "Synchronized swimming",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 21,
-            "value": "Synchronized swimming",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Go to work by foot",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 11,
-            "end": 18,
-            "value": "by foot",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
         "text": "Walk approximately 5 km",
         "intent": "activity",
         "entities": [
@@ -2653,18 +2380,6 @@
         ]
       },
       {
-        "text": "Water polo",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 10,
-            "value": "Water polo",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
         "text": "I jump all the time",
         "intent": "activity",
         "entities": [
@@ -2683,66 +2398,6 @@
         ]
       },
       {
-        "text": "Water basketball",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "Water basketball",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Scuba diving",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 12,
-            "value": "Scuba diving",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Horsebackriding trotting",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 15,
-            "value": "Horsebackriding",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "galloping",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "galloping",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "jumping",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "jumping",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
         "text": "playing polo",
         "intent": "activity",
         "entities": [
@@ -2750,78 +2405,6 @@
             "start": 8,
             "end": 12,
             "value": "polo",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Skipping",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "Skipping",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Jumping rope",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 12,
-            "value": "Jumping rope",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Pushing a car",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 13,
-            "value": "Pushing a car",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "moving stuff",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 12,
-            "value": "moving stuff",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "washing window",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 14,
-            "value": "washing window",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "bowling",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "bowling",
             "entity": "sport"
           }
         ]
@@ -2845,45 +2428,9 @@
         ]
       },
       {
-        "text": "floors",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "floors",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "yog",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 3,
-            "value": "yog",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
         "text": "I did some sport",
         "intent": "activity",
         "entities": []
-      },
-      {
-        "text": "I run every day",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 2,
-            "end": 5,
-            "value": "run",
-            "entity": "sport"
-          }
-        ]
       },
       {
         "text": "I go for 5 km every evening",
@@ -2922,18 +2469,6 @@
         ]
       },
       {
-        "text": "I came to work running",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 15,
-            "end": 22,
-            "value": "running",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
         "text": "I go to the swimming pool every day",
         "intent": "activity",
         "entities": [
@@ -2966,6 +2501,12 @@
             "end": 13,
             "value": "tennis",
             "entity": "sport"
+          },
+          {
+            "start": 17,
+            "end": 25,
+            "value": "week-end",
+            "entity": "period"
           }
         ]
       },
@@ -2988,24 +2529,6 @@
         ]
       },
       {
-        "text": "I do a marathon for 5h",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 20,
-            "end": 22,
-            "value": "5h",
-            "entity": "duration"
-          },
-          {
-            "start": 7,
-            "end": 15,
-            "value": "marathon",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
         "text": "I ride a bike every day for 5 km",
         "intent": "activity",
         "entities": [
@@ -3020,29 +2543,11 @@
             "end": 13,
             "value": "bike",
             "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "I play football for 8h per week",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 7,
-            "end": 15,
-            "value": "football",
-            "entity": "sport"
           },
           {
-            "start": 20,
-            "end": 22,
-            "value": "8h",
-            "entity": "duration"
-          },
-          {
-            "start": 23,
-            "end": 31,
-            "value": "per week",
+            "start": 14,
+            "end": 23,
+            "value": "every day",
             "entity": "period"
           }
         ]
@@ -3134,78 +2639,943 @@
             "end": 33,
             "value": "every vacation",
             "entity": "period"
-          },
-{"text": "ozeofhzoehfozeoh", "intent": "fallback", "entities": []},
-      {"text": "aaaaaaazz", "intent": "fallback", "entities": []},
+          }
+        ]
+      },
+      {
+        "text": "ozeofhzoehfozeoh",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "aaaaaaazz",
+        "intent": "fallback",
+        "entities": []
+      },
       {
         "text": "abcdefghijklmnopqrstuvwxz",
         "intent": "fallback",
         "entities": []
       },
-      {"text": "1234567890", "intent": "fallback", "entities": []},
-      {"text": "4846", "intent": "fallback", "entities": []},
-      {"text": "64", "intent": "fallback", "entities": []},
-      {"text": "saussage", "intent": "fallback", "entities": []},
-      {"text": "orange", "intent": "fallback", "entities": []},
-      {"text": "blue", "intent": "fallback", "entities": []},
-      {"text": "banana", "intent": "fallback", "entities": []},
-      {"text": "chuck norris", "intent": "fallback", "entities": []},
-      {"text": "tell me", "intent": "fallback", "entities": []},
-      {"text": "give me", "intent": "fallback", "entities": []},
-      {"text": "i want you to", "intent": "fallback", "entities": []},
-      {"text": "do something", "intent": "fallback", "entities": []},
-      {"text": "robot", "intent": "fallback", "entities": []},
-      {"text": "you are a stupid robot", "intent": "fallback", "entities": []},
-      {"text": "no, i did not said that", "intent": "fallback", "entities": []},
-      {"text": "stop it", "intent": "fallback", "entities": []},
-      {"text": "fuck you", "intent": "fallback", "entities": []},
-      {"text": "that's enough", "intent": "fallback", "entities": []},
-      {"text": "3343", "intent": "fallback", "entities": []},
-      {"text": "please", "intent": "fallback", "entities": []},
-      {"text": "thanks", "intent": "fallback", "entities": []},
-      {"text": "like i said", "intent": "fallback", "entities": []},
-      {"text": "same", "intent": "fallback", "entities": []},
-      {"text": "idem", "intent": "fallback", "entities": []},
-      {"text": "stop talking", "intent": "fallback", "entities": []},
+      {
+        "text": "1234567890",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "4846",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "64",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "saussage",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "orange",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "blue",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "banana",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "chuck norris",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "tell me",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "give me",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "i want you to",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "do something",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "robot",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "you are a stupid robot",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "no, i did not said that",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "stop it",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "fuck you",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "that's enough",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "3343",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "please",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "thanks",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "like i said",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "same",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "idem",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "stop talking",
+        "intent": "fallback",
+        "entities": []
+      },
       {
         "text": "tell me that you love me",
         "intent": "fallback",
         "entities": []
       },
-      {"text": "please do that", "intent": "fallback", "entities": []},
+      {
+        "text": "please do that",
+        "intent": "fallback",
+        "entities": []
+      },
       {
         "text": "yes, that is what i said",
         "intent": "fallback",
         "entities": []
       },
-      {"text": "give me a chocolate", "intent": "fallback", "entities": []},
-      {"text": "the best one", "intent": "fallback", "entities": []},
-      {"text": "the user", "intent": "fallback", "entities": []},
+      {
+        "text": "give me a chocolate",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "the best one",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "the user",
+        "intent": "fallback",
+        "entities": []
+      },
       {
         "text": "are you going to help me ?",
         "intent": "fallback",
         "entities": []
       },
-      {"text": "I did not say that", "intent": "fallback", "entities": []},
-      {"text": "can you", "intent": "fallback", "entities": []},
-      {"text": "stupid tobot", "intent": "fallback", "entities": []},
-      {"text": "you are just a robot", "intent": "fallback", "entities": []},
-      {"text": "chatbot", "intent": "fallback", "entities": []},
-      {"text": "oihoze", "intent": "fallback", "entities": []},
-      {"text": "oâduÂPRÇR", "intent": "fallback", "entities": []},
-      {"text": "646", "intent": "fallback", "entities": []},
-      {"text": "zejfzji", "intent": "fallback", "entities": []},
-      {"text": "faizofa", "intent": "fallback", "entities": []},
-      {"text": "ADSL", "intent": "fallback", "entities": []},
-      {"text": "chatito", "intent": "fallback", "entities": []},
-      {"text": "generate dataset", "intent": "fallback", "entities": []},
-      {"text": "online chatbot", "intent": "fallback", "entities": []},
-      {"text": "line and column", "intent": "fallback", "entities": []},
+      {
+        "text": "I did not say that",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "can you",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "stupid robot",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "you are just a robot",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "chatbot",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "oihoze",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "oâduÂPRÇR",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "646",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "zejfzji",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "faizofa",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "ADSL",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "chatito",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "generate dataset",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "online chatbot",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "line and column",
+        "intent": "fallback",
+        "entities": []
+      },
       {
         "text": "you did not see that coming",
         "intent": "fallback",
         "entities": []
-      }
+      },
+      {
+        "text": "The pain sensation in my bully is acceptable",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 34,
+            "end": 44,
+            "value": "acceptable",
+            "entity": "pain_level"
+          },
+          {
+            "start": 25,
+            "end": 30,
+            "value": "bully",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "jujitsu in the week-end",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "jujitsu",
+            "entity": "sport"
+          },
+          {
+            "start": 15,
+            "end": 23,
+            "value": "week-end",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "Professional ballroom 5 days per week",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 13,
+            "end": 21,
+            "value": "ballroom",
+            "entity": "sport"
+          },
+          {
+            "start": 22,
+            "end": 37,
+            "value": "5 days per week",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "competitive sports every month",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 19,
+            "end": 30,
+            "value": "every month",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I play volleyball every friday",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 18,
+            "end": 30,
+            "value": "every friday",
+            "entity": "period"
+          },
+          {
+            "start": 7,
+            "end": 17,
+            "value": "volleyball",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "hiking for 30 km",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 11,
+            "end": 16,
+            "value": "30 km",
+            "entity": "distance"
+          },
+          {
+            "start": 0,
+            "end": 6,
+            "value": "hiking",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "bal bla",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "lifting heavy stuff on 50 meters",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 23,
+            "end": 32,
+            "value": "50 meters",
+            "entity": "distance"
+          },
+          {
+            "start": 0,
+            "end": 7,
+            "value": "lifting",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "climbing brisky up a hill of 10 kilometers",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 29,
+            "end": 42,
+            "value": "10 kilometers",
+            "entity": "distance"
+          },
+          {
+            "start": 0,
+            "end": 8,
+            "value": "climbing",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I came to work running on 1 kilometer",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 26,
+            "end": 37,
+            "value": "1 kilometer",
+            "entity": "distance"
+          },
+          {
+            "start": 15,
+            "end": 22,
+            "value": "running",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "Go to work by foot on 100 meters",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 22,
+            "end": 32,
+            "value": "100 meters",
+            "entity": "distance"
+          },
+          {
+            "start": 11,
+            "end": 18,
+            "value": "by foot",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I run every day for 8 km",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 2,
+            "end": 5,
+            "value": "run",
+            "entity": "sport"
+          },
+          {
+            "start": 6,
+            "end": 15,
+            "value": "every day",
+            "entity": "period"
+          },
+          {
+            "start": 20,
+            "end": 24,
+            "value": "8 km",
+            "entity": "distance"
+          }
+        ]
+      },
+      {
+        "text": "basketball for 1 hour",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 15,
+            "end": 21,
+            "value": "1 hour",
+            "entity": "duration"
+          },
+          {
+            "start": 0,
+            "end": 10,
+            "value": "basketball",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I play football for 8 hour per week",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "football",
+            "entity": "sport"
+          },
+          {
+            "start": 20,
+            "end": 26,
+            "value": "8 hour",
+            "entity": "duration"
+          },
+          {
+            "start": 27,
+            "end": 35,
+            "value": "per week",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I do a marathon for 5 hour",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "5 hour",
+            "entity": "duration"
+          },
+          {
+            "start": 7,
+            "end": 15,
+            "value": "marathon",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "my head is aching since 4 hours",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 24,
+            "end": 31,
+            "value": "4 hours",
+            "entity": "duration"
+          },
+          {
+            "start": 11,
+            "end": 17,
+            "value": "aching",
+            "entity": "pain_level"
+          },
+          {
+            "start": 3,
+            "end": 7,
+            "value": "head",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "i had a head ache in the evening during 2 hours",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 40,
+            "end": 47,
+            "value": "2 hours",
+            "entity": "duration"
+          },
+          {
+            "start": 8,
+            "end": 12,
+            "value": "head",
+            "entity": "body_part"
+          },
+          {
+            "start": 18,
+            "end": 32,
+            "value": "in the evening",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "bla bla bla ",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "it sting me a bit in the finger",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 25,
+            "end": 31,
+            "value": "finger",
+            "entity": "body_part"
+          },
+          {
+            "start": 3,
+            "end": 8,
+            "value": "sting",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "I have a sharp pain in the arm since 4 hours",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 9,
+            "end": 14,
+            "value": "sharp",
+            "entity": "pain_level"
+          },
+          {
+            "start": 27,
+            "end": 30,
+            "value": "arm",
+            "entity": "body_part"
+          },
+          {
+            "start": 37,
+            "end": 44,
+            "value": "4 hours",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "The pain in my back is awful",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "awful",
+            "entity": "pain_level"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "value": "back",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "The pain is tolerable",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 12,
+            "end": 21,
+            "value": "tolerable",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "the pain in my shoulders is annoying",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 28,
+            "end": 36,
+            "value": "annoying",
+            "entity": "pain_level"
+          },
+          {
+            "start": 15,
+            "end": 24,
+            "value": "shoulders",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "Pain is so bad every day",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 15,
+            "end": 24,
+            "value": "every day",
+            "entity": "period"
+          },
+          {
+            "start": 11,
+            "end": 14,
+            "value": "bad",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "it is a discomforting pain to live every day with",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 8,
+            "end": 21,
+            "value": "discomforting",
+            "entity": "pain_level"
+          },
+          {
+            "start": 35,
+            "end": 44,
+            "value": "every day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "the pain is noticeable since 4 days",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 29,
+            "end": 35,
+            "value": "4 days",
+            "entity": "duration"
+          },
+          {
+            "start": 12,
+            "end": 22,
+            "value": "noticeable",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "I did some yog during a few hours",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "yog",
+            "entity": "sport"
+          },
+          {
+            "start": 22,
+            "end": 33,
+            "value": "a few hours",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I played baskeball",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 9,
+            "end": 18,
+            "value": "baskeball",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I did some bowling last night",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 19,
+            "end": 29,
+            "value": "last night",
+            "entity": "period"
+          },
+          {
+            "start": 11,
+            "end": 18,
+            "value": "bowling",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I washed the windows in the evening",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 21,
+            "end": 35,
+            "value": "in the evening",
+            "entity": "period"
+          },
+          {
+            "start": 2,
+            "end": 20,
+            "value": "washed the windows",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I was moving stuff around",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 6,
+            "end": 18,
+            "value": "moving stuff",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I was pushing a car",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 6,
+            "end": 19,
+            "value": "pushing a car",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I do jumping rope 5 times per week",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 18,
+            "end": 34,
+            "value": "5 times per week",
+            "entity": "period"
+          },
+          {
+            "start": 5,
+            "end": 12,
+            "value": "jumping",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I like jumping at night",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "jumping",
+            "entity": "sport"
+          },
+          {
+            "start": 15,
+            "end": 23,
+            "value": "at night",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I do some horse galloping around",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 10,
+            "end": 25,
+            "value": "horse galloping",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I was Horsebackriding trotting",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 6,
+            "end": 21,
+            "value": "Horsebackriding",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I love Scuba diving",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 7,
+            "end": 19,
+            "value": "Scuba diving",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I feel something in my leg",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 23,
+            "end": 26,
+            "value": "leg",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "I can't live with this pain anymore",
+        "intent": "pain",
+        "entities": []
+      },
+      {
+        "text": "I did some water polo during the week-end",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 33,
+            "end": 41,
+            "value": "week-end",
+            "entity": "period"
+          },
+          {
+            "start": 11,
+            "end": 21,
+            "value": "water polo",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I do Synchronized swimming",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 5,
+            "end": 26,
+            "value": "Synchronized swimming",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I did some tae kwon do",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 11,
+            "end": 22,
+            "value": "tae kwon do",
+            "entity": "sport"
+          }
         ]
       }
     ]
