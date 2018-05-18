@@ -11,6 +11,8 @@ sudo apt-get install python3-tk
 ```
 
 ## Choose your pipeline :wrench:
+You can follow these informations or directly use the .yml that you want in the config folder (e.g. config_spacy.yml for spacy pipeline).
+
 * For MITIE:
 
 Use this command to download MITIE Models
