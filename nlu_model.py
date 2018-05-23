@@ -1,23 +1,16 @@
-from rasa_nlu.converters import load_data
-from rasa_nlu.config import RasaNLUConfig
-from rasa_nlu.model import Trainer
 from rasa_nlu.model import Metadata, Interpreter
 
-def train_nlu(data, config, model_dir):
-	training_data = load_data(data)
-	trainer = Trainer(RasaNLUConfig(config))
-	trainer.train(training_data)
-	model_directory = trainer.persist(model_dir, fixed_model_name = 'test')
-	
-def run_nlu():
-	interpreter = Interpreter.load('./models/nlu/default/test', RasaNLUConfig('config/conf_spacy.json'))
-	print(interpreter.parse("Pain in my leg"))
-	print(interpreter.parse("The pain is in my leg"))
-	print(interpreter.parse("My leg is aching"))
-	print(interpreter.parse("I feel a sharp pain in the leg"))
-	print(interpreter.parse("Every morning, when I wake up, I feel a sharp pain in the leg"))
-	print(interpreter.parse("My horse is ok"))
-	
-if __name__ == '__main__':
-	#train_nlu('./data/data.json', 'config_spacy.json', './models/nlu')
-	run_nlu()
+# where `model_directory points to the folder the model is persisted in
+interpreter = Interpreter.load('models/nlu/default/current')
+print (interpreter.parse(u"I feel a sharp pain in the leg"))
+# 'pain', 'confidence': 0.985409655949852
+print (interpreter.parse(u"My horse is sharp"))
+# 'fallback', 'confidence': 0.48489013585950913
+print (interpreter.parse(u"The pain in my back is horrible"))
+# 'pain', 'confidence': 0.9635503367430202
+print (interpreter.parse(u"fziqhf"))
+# 'fallback', 'confidence': 0.9189299103884638
+print (interpreter.parse(u"I am not in a good mood"))
+# 'emotional_hapiness', 'confidence': 0.6461365116817862}
+print (interpreter.parse(u"I am not ok"))
+# 'emotional_hapiness', 'confidence': 0.40076629140404485

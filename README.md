@@ -2,7 +2,7 @@
 A little chat bot
 
 ## Getting started :suspect:
-* Install RASA 12.01 doing :
+* Install RASA doing:
 ```
 sudo pip3 install -r requirements.txt
 sudo python3 -m spacy download en_core_web_lg
@@ -10,6 +10,15 @@ sudo python3 -m spacy link en_core_web_lg en
 sudo apt-get install python3-tk
 ```
 
+To know wich version of RASA is currently installed:
+```
+sudo python3 -c "import rasa_nlu;import rasa_core;print(\"RASA NLU version: \"+rasa_nlu.__version__);print(\"RASA core version: \"+rasa_core.__version__)"
+```
+
+Or everything with:
+```
+sudo pip3 list
+```
 ## Choose your pipeline :wrench:
 You can follow these informations or directly use the .yml that you want in the config folder (e.g. config_spacy.yml for spacy pipeline).
 
@@ -36,7 +45,7 @@ rm MITIE-models-v0.2.tar.bz2
 ```
 
 
-In the conf.yml file, add this where the word 'pipeline' is :
+In the conf.yml file, add this where the word 'pipeline' is:
 
 ```
 pipeline:
@@ -51,7 +60,7 @@ pipeline:
 
 
 * For spacy_sklearn:
-	* In the conf.yml file, add this where the word 'pipeline' is :
+	* In the conf.yml file, add this where the word 'pipeline' is:
 ```
 pipeline:
 - name: "nlp_spacy"
@@ -64,7 +73,7 @@ pipeline:
 ```
 
 * For mitie_sklearn:
-	* In the conf.yml file, add this where the word 'pipeline' is :
+	* In the conf.yml file, add this where the word 'pipeline' is:
 ```
 pipeline:
 - name: "nlp_mitie"
@@ -78,7 +87,7 @@ pipeline:
 ```
 
 * For tensorflow_embedding:
-	* In the conf.yml file, add this where the word 'pipeline' is :
+	* In the conf.yml file, add this where the word 'pipeline' is:
 ```
 pipeline:
 - name: "intent_featurizer_count_vectors"
@@ -92,24 +101,24 @@ pipeline:
 ```
 	
 
-* Duckling for entity recognition : :baby_chick:
+* Duckling for entity recognition: :baby_chick:
 ```
 sudo apt-get install default-jdk
 ```
 
 ## Train NLU model :speech_balloon:
 * _data.json_ file have to be filled with examples (text + entities in it + intent).
-To do so :
+To do so:
 	* manually complete json file
-	* use rasa-nlu-trainer : `npm i -g rasa-nlu-trainer` and `rasa-nlu-trainer` in data folder
+	* use rasa-nlu-trainer: `npm i -g rasa-nlu-trainer` and `rasa-nlu-trainer` in data folder
 :heavy_exclamation_mark: Use Google Chrome!
-* train the model with _data.json_ file :
+* train the model with _data.json_ file:
 ```
 python3 -m rasa_nlu.train -c config/conf.yml --fixed_model_name current --data data/data.json --path models/nlu
 ```
 
 ## Evaluate the model :hurtrealbad:
-To evaluate the model :
+To evaluate the model:
 ```
 python3 -m rasa_nlu.evaluate -d data/data.json -m models/nlu/default/current -c config/conf.yml
 ```
@@ -122,7 +131,7 @@ python3 -m rasa_nlu.evaluate -d data/data.json -c config/conf.yml --mode crossva
 ```
 python3 -m rasa_core.train -s data/stories.md -d domain.yml -o models/dialogue --epochs 300
 ```
-To train 'online' (interactive learning) :
+To train 'online' (interactive learning):
 
 ```
 python3 train_online.py

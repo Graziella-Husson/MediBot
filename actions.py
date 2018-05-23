@@ -34,6 +34,15 @@ class ActionSportDuration(Action):
 		tracker.update(SlotSet("sport_duration",duration))
 		tracker.update(SlotSet("duration",None))
 
+class ActionSportPeriod(Action):
+	def name(self):
+		return 'action_period_sport'
+
+	def run(self, dispatcher, tracker, domain):
+		duration = tracker.get_slot("period")
+		tracker.update(SlotSet("sport_period",duration))
+		tracker.update(SlotSet("period",None))
+
 class ActionPainDuration(Action):
 	def name(self):
 		return 'action_duration_pain'
@@ -41,7 +50,16 @@ class ActionPainDuration(Action):
 	def run(self, dispatcher, tracker, domain):
 		duration = tracker.get_slot("duration")
 		tracker.update(SlotSet("pain_duration",duration))
-		tracker.update(SlotSet("duration",None))		
+		tracker.update(SlotSet("duration",None))	
+
+class ActionPainPeriod(Action):
+	def name(self):
+		return 'action_period_pain'
+
+	def run(self, dispatcher, tracker, domain):
+		duration = tracker.get_slot("period")
+		tracker.update(SlotSet("pain_period",duration))
+		tracker.update(SlotSet("period",None))	
 
 class ActionFillSlotsSport(FormAction):
 	RANDOMIZE = True
@@ -63,11 +81,17 @@ class ActionFillSlotsSport(FormAction):
 		sport_duration = tracker.get_slot("sport_duration")
 		sport_level = tracker.get_slot("sport_level")
 		sport = tracker.get_slot("sport")
-		period = tracker.get_slot("period")
+		period = tracker.get_slot("sport_period")
 		distance = tracker.get_slot("distance")
-		response = """To sum up, you did some {} sport: {} with a duration of {}.\nDEBUG : \n\tperiod : {}\n\tdistance : {}""".format(sport_level, sport, sport_duration, period, distance)
-		dispatcher.utter_message(response)
-		return [SlotSet("sport_duration",None), SlotSet("sport_level",None), SlotSet("sport",None)]
+		response = """To sum up, you did some {} sport: {} with a duration of {}""".format(sport_level, sport, sport_duration)
+		
+		if distance != None:
+			response += """ and a distance of {}""".format(distance)
+		if period != None:
+			response +=""" and a period/recurrence of {}""".format(period)
+
+		dispatcher.utter_message(response+".")
+		return [SlotSet("sport_duration",None), SlotSet("sport_level",None), SlotSet("sport",None), SlotSet("distance",None), SlotSet("sport_period", None)]
 
 class ActionFillSlotsPain(FormAction):
 	RANDOMIZE = True
@@ -89,7 +113,10 @@ class ActionFillSlotsPain(FormAction):
 		pain_level = tracker.get_slot("pain_level")
 		body_part = tracker.get_slot("body_part")
 		pain_change = tracker.get_slot("pain_change")
-		period = tracker.get_slot("period")
-		response = """To sum up, you have some {} pain localized at {} with a duration of {}. The pain seems to be {}\nDEBUG : \n\tperiod : {}\n""".format(pain_level, body_part, pain_duration, pain_change, period)
+		period = tracker.get_slot("pain_period")
+		response = """To sum up, you have some {} pain localized at {} with a duration of {}""".format(pain_level, body_part, pain_duration)
+		if period != None:
+			response += """ and a period/recurrence of {}""".format(period)
+		response += """. The pain seems to be {}.""".format(pain_change)
 		dispatcher.utter_message(response)
-		return [SlotSet("pain_duration",None), SlotSet("pain_level",None), SlotSet("body_part",None), SlotSet("pain_change",None), SlotSet("period",None)]
+		return [SlotSet("pain_duration",None), SlotSet("pain_level",None), SlotSet("body_part",None), SlotSet("pain_change",None), SlotSet("pain_period",None)]

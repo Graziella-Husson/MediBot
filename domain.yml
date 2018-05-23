@@ -19,6 +19,10 @@ slots:
     type: text
   distance:
     type: text
+  pain_period:
+    type: text
+  sport_period:
+    type: text
   requested_slot:
     type: unfeaturized
 
@@ -73,3 +77,5 @@ actions:
  - actions.ActionPainDuration
  - actions.ActionFillSlotsPain
  - actions.ActionFillSlotsSport
+ - actions.ActionPainPeriod
+ - actions.ActionSportPeriod

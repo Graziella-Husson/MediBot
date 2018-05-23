@@ -46,18 +46,6 @@
         ]
       },
       {
-        "text": "the wound is scratchy",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 13,
-            "end": 21,
-            "value": "scratchy",
-            "entity": "pain_level"
-          }
-        ]
-      },
-      {
         "text": "i have some strange feeling in my legs since 10 hours",
         "intent": "pain",
         "entities": [
@@ -256,18 +244,18 @@
         ]
       },
       {
-        "text": "my leg feels hot",
+        "text": "my mouth feels hot",
         "intent": "pain",
         "entities": [
           {
             "start": 3,
-            "end": 6,
-            "value": "leg",
+            "end": 8,
+            "value": "mouth",
             "entity": "body_part"
           },
           {
-            "start": 13,
-            "end": 16,
+            "start": 15,
+            "end": 18,
             "value": "hot",
             "entity": "pain_level"
           }
@@ -448,18 +436,6 @@
         ]
       },
       {
-        "text": "Nagging",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "Nagging",
-            "entity": "pain_level"
-          }
-        ]
-      },
-      {
         "text": "the injury is crushing",
         "intent": "pain",
         "entities": [
@@ -479,30 +455,6 @@
             "start": 16,
             "end": 24,
             "value": "dragging",
-            "entity": "pain_level"
-          }
-        ]
-      },
-      {
-        "text": "frightful",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "frightful",
-            "entity": "pain_level"
-          }
-        ]
-      },
-      {
-        "text": "gnawing",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "gnawing",
             "entity": "pain_level"
           }
         ]
@@ -652,18 +604,6 @@
         ]
       },
       {
-        "text": "Shooting",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "Shooting",
-            "entity": "pain_level"
-          }
-        ]
-      },
-      {
         "text": "i feel a sharp pain",
         "intent": "pain",
         "entities": [
@@ -724,18 +664,6 @@
         ]
       },
       {
-        "text": "Sickening",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "Sickening",
-            "entity": "pain_level"
-          }
-        ]
-      },
-      {
         "text": "i feel like Suffocating",
         "intent": "pain",
         "entities": [
@@ -743,30 +671,6 @@
             "start": 12,
             "end": 23,
             "value": "Suffocating",
-            "entity": "pain_level"
-          }
-        ]
-      },
-      {
-        "text": "Punishing",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "Punishing",
-            "entity": "pain_level"
-          }
-        ]
-      },
-      {
-        "text": "Unbearable",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 0,
-            "end": 10,
-            "value": "Unbearable",
             "entity": "pain_level"
           }
         ]
@@ -1811,81 +1715,9 @@
         ]
       },
       {
-        "text": "urban trail",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 11,
-            "value": "urban trail",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
         "text": "a lot of exercising",
         "intent": "activity",
         "entities": []
-      },
-      {
-        "text": "aerobics",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "aerobics",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "hockey",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "hockey",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "ping pong",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "ping pong",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "heavy shoveling",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 6,
-            "end": 15,
-            "value": "shoveling",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "digging ditches",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 7,
-            "value": "digging",
-            "entity": "sport"
-          }
-        ]
       },
       {
         "text": "carrying heavy loads",
@@ -1895,54 +1727,6 @@
             "start": 0,
             "end": 8,
             "value": "carrying",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Backpacking",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 11,
-            "value": "Backpacking",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "rapelling",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 9,
-            "value": "rapelling",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Step aerobics",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 13,
-            "value": "Step aerobics",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Water jogging",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 13,
-            "value": "Water jogging",
             "entity": "sport"
           }
         ]
@@ -1966,18 +1750,6 @@
         ]
       },
       {
-        "text": "Jumping rope",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 12,
-            "value": "Jumping rope",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
         "text": "Performing jumping jacks",
         "intent": "activity",
         "entities": [
@@ -1985,66 +1757,6 @@
             "start": 11,
             "end": 24,
             "value": "jumping jacks",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Boxing",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 6,
-            "value": "Boxing",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "sparring",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "sparring",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Clogging",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "Clogging",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Wheelchair tennis",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 17,
-            "value": "Wheelchair tennis",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Rugby",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 5,
-            "value": "Rugby",
             "entity": "sport"
           }
         ]
@@ -2062,30 +1774,6 @@
         ]
       },
       {
-        "text": "Beach volleyball",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 16,
-            "value": "Beach volleyball",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Racquetball",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 11,
-            "value": "Racquetball",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
         "text": "Downhill skiing",
         "intent": "activity",
         "entities": [
@@ -2098,18 +1786,6 @@
         ]
       },
       {
-        "text": "speedskating",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 12,
-            "value": "speedskating",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
         "text": "Cross-country skiing",
         "intent": "activity",
         "entities": [
@@ -2117,30 +1793,6 @@
             "start": 14,
             "end": 20,
             "value": "skiing",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Sledding",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "Sledding",
-            "entity": "sport"
-          }
-        ]
-      },
-      {
-        "text": "Tobogganing",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 11,
-            "value": "Tobogganing",
             "entity": "sport"
           }
         ]
@@ -2172,18 +1824,6 @@
             "end": 23,
             "value": "5 km",
             "entity": "distance"
-          }
-        ]
-      },
-      {
-        "text": "Treading water",
-        "intent": "activity",
-        "entities": [
-          {
-            "start": 0,
-            "end": 8,
-            "value": "Treading",
-            "entity": "sport"
           }
         ]
       },
@@ -3064,6 +2704,30 @@
         ]
       },
       {
+        "text": "I have a sharp pain in the leg since 4 hours",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 9,
+            "end": 14,
+            "value": "sharp",
+            "entity": "pain_level"
+          },
+          {
+            "start": 27,
+            "end": 30,
+            "value": "leg",
+            "entity": "body_part"
+          },
+          {
+            "start": 37,
+            "end": 44,
+            "value": "4 hours",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
         "text": "The pain in my back is awful",
         "intent": "pain",
         "entities": [
@@ -3310,13 +2974,13 @@
         ]
       },
       {
-        "text": "I feel something in my leg",
+        "text": "I feel something in my foot",
         "intent": "pain",
         "entities": [
           {
             "start": 23,
-            "end": 26,
-            "value": "leg",
+            "end": 27,
+            "value": "foot",
             "entity": "body_part"
           }
         ]
@@ -3584,13 +3248,13 @@
         "entities": []
       },
       {
-        "text": "i have minor pain in the leg",
+        "text": "i have minor pain in the knee",
         "intent": "pain",
         "entities": [
           {
             "start": 25,
-            "end": 28,
-            "value": "leg",
+            "end": 29,
+            "value": "knee",
             "entity": "body_part"
           },
           {
@@ -3794,7 +3458,7 @@
         ]
       },
       {
-        "text": "i have an unsupportable pain in the leg",
+        "text": "i have an unsupportable pain in the neck",
         "intent": "pain",
         "entities": [
           {
@@ -3805,8 +3469,8 @@
           },
           {
             "start": 36,
-            "end": 39,
-            "value": "leg",
+            "end": 40,
+            "value": "neck",
             "entity": "body_part"
           }
         ]
@@ -3857,6 +3521,474 @@
         "text": "my horse is ok",
         "intent": "fallback",
         "entities": []
+      },
+      {
+        "text": "the wound on my knee is scratchy",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "knee",
+            "entity": "body_part"
+          },
+          {
+            "start": 24,
+            "end": 32,
+            "value": "scratchy",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "The pain is nagging since one day",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "nagging",
+            "entity": "pain_level"
+          },
+          {
+            "start": 26,
+            "end": 33,
+            "value": "one day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I've a frightful pain in the finger",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "frightful",
+            "entity": "pain_level"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "value": "finger",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "The ache is gnawing",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "gnawing",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "I felt a shooting pain in my lower back",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "shooting",
+            "entity": "pain_level"
+          },
+          {
+            "start": 29,
+            "end": 39,
+            "value": "lower back",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "I was writhing on the floor in pain, holding my stomach.      ",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "writhing",
+            "entity": "pain_level"
+          },
+          {
+            "start": 48,
+            "end": 55,
+            "value": "stomach",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "I have a sickening back pain",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 9,
+            "end": 18,
+            "value": "sickening",
+            "entity": "pain_level"
+          },
+          {
+            "start": 19,
+            "end": 23,
+            "value": "back",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "I complained of severe pains in the chest",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 16,
+            "end": 22,
+            "value": "severe",
+            "entity": "pain_level"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "value": "chest",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "I have a bone disease that cause unbearable pain   ",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 9,
+            "end": 13,
+            "value": "bone",
+            "entity": "body_part"
+          },
+          {
+            "start": 33,
+            "end": 43,
+            "value": "unbearable",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "I'm going to aerobics tonight",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 13,
+            "end": 21,
+            "value": "aerobics",
+            "entity": "sport"
+          },
+          {
+            "start": 22,
+            "end": 29,
+            "value": "tonight",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I'm going to play hockey",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "hockey",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "me and George played ping pong during lunch for, like, two hours.",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 21,
+            "end": 30,
+            "value": "ping pong",
+            "entity": "sport"
+          },
+          {
+            "start": 31,
+            "end": 43,
+            "value": "during lunch",
+            "entity": "period"
+          },
+          {
+            "start": 55,
+            "end": 64,
+            "value": "two hours",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "in the morning I'm shoveling, it snowed.",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 14,
+            "value": "in the morning",
+            "entity": "period"
+          },
+          {
+            "start": 19,
+            "end": 28,
+            "value": "shoveling",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "Digging ditches, that is a job.",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Digging",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I used my rapelling gear.",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 10,
+            "end": 19,
+            "value": "rapelling",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "We are doing step aerobics every noon time",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 13,
+            "end": 26,
+            "value": "step aerobics",
+            "entity": "sport"
+          },
+          {
+            "start": 33,
+            "end": 42,
+            "value": "noon time",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I'm exhausted from jumping rope like since 5 hours",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 19,
+            "end": 31,
+            "value": "jumping rope",
+            "entity": "sport"
+          },
+          {
+            "start": 43,
+            "end": 50,
+            "value": "5 hours",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I was in a boxing match",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "boxing",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I did a sparring session.",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 8,
+            "end": 16,
+            "value": "sparring",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I am taking part in some activities this week, such as wheelchair tennis.",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 41,
+            "end": 45,
+            "value": "week",
+            "entity": "period"
+          },
+          {
+            "start": 55,
+            "end": 72,
+            "value": "wheelchair tennis",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I am taking part in some activities this day, such as rugby",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 41,
+            "end": 44,
+            "value": "day",
+            "entity": "period"
+          },
+          {
+            "start": 54,
+            "end": 59,
+            "value": "rugby",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I am taking part in some activities, such as beach volley",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 45,
+            "end": 57,
+            "value": "beach volley",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I did go to the skatepark to speedskate",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 29,
+            "end": 39,
+            "value": "speedskate",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I always liked playing racquetball.",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "racquetball",
+            "entity": "sport"
+          },
+          {
+            "start": 2,
+            "end": 8,
+            "value": "always",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "Sledding on that giant hill ",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Sledding",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I was playing baseball",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 14,
+            "end": 22,
+            "value": "baseball",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "Me, I was playing football.",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "football",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I was playing Ping-Pong during lunch.",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 24,
+            "end": 36,
+            "value": "during lunch",
+            "entity": "period"
+          },
+          {
+            "start": 14,
+            "end": 23,
+            "value": "Ping-Pong",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I came for a race through the forest",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 13,
+            "end": 17,
+            "value": "race",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I went for a jog",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 13,
+            "end": 16,
+            "value": "jog",
+            "entity": "sport"
+          }
+        ]
       }
     ]
   }

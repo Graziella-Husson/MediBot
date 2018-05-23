@@ -3989,6 +3989,598 @@
             "entity": "sport"
           }
         ]
+      },
+      {
+        "text": "I see a lot of friends",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I had a drink with my neighboors",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I see my family every weekend",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 16,
+            "end": 29,
+            "value": "every weekend",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I talk to my family a lot",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I enjoy being with my friends",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I play with my friends",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I like to spent time with my friends",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "My family likes my company",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "My friends come over every weekend",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 21,
+            "end": 34,
+            "value": "every weekend",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I often see my friends",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "My friends call me once a week",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 19,
+            "end": 30,
+            "value": "once a week",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I hear my family every now and then",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 17,
+            "end": 35,
+            "value": "every now and then",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I hear my family every other day",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 17,
+            "end": 32,
+            "value": "every other day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I meet with my neighboors every saturday",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 26,
+            "end": 40,
+            "value": "every saturday",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "On saturday i go dancing",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "On saturday",
+            "entity": "period"
+          },
+          {
+            "start": 17,
+            "end": 24,
+            "value": "dancing",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I am busy the whole weekends",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 14,
+            "end": 28,
+            "value": "whole weekends",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "Weekends are made to party",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I see my friends once in a while",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 17,
+            "end": 32,
+            "value": "once in a while",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I miss my family",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "My friends visit me once a month",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 20,
+            "end": 32,
+            "value": "once a month",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "My neighboors ignore me",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I would like to see friends more often",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 33,
+            "end": 38,
+            "value": "often",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I see my friends enough",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I visit my parents every weekend",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 19,
+            "end": 32,
+            "value": "every weekend",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I visit my tant and aunt every quarter",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 25,
+            "end": 38,
+            "value": "every quarter",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I wish I could play with my friends more often",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 41,
+            "end": 46,
+            "value": "often",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "If only I could do fun stuff",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "Once I will feel better, I will meet with my friends again",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I feel lonely",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I don't have friends",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I lost my friends",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "My neighboors do not recognize me anymore",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I will die alone",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I am staying with my friends once a year",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 29,
+            "end": 40,
+            "value": "once a year",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I am calling my parents once a month",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 24,
+            "end": 36,
+            "value": "once a month",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I chat every day",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "every day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "My phone never rings",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "No one misses me",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I stopped playing games",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I am lonely and I don't like it",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I feel isolated",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I spent my evenings by myself",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I spent most of the time in my couch",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I never see anyone else than my doctor",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I never go to the cinema",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I cannot watch an entire movie",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I feel rejected",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "My friends think I am unsocial",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I am never invited",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I feel ignored",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I could go to a party every weekend",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 22,
+            "end": 35,
+            "value": "every weekend",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I have so much friends",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "My family does not speak to my anymore",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I lost my boyfriend",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I divorced",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "We will get married",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I lost my friends",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "It is becoming difficult to go out",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "It is difficult to see friends",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I don't have a social life anymore",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I don't leave home",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I'm always outside",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I am never by myself",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I an surrounded by friends",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "My pet is my only friend",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I am bored in the evening",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I hope I will soon be able to have a normal social life again",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I miss my social life",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I miss our barbecues in the summer",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "We stopped going to wine tastings",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "My wife wants to leave me",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I don't find a girlfriend",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I don't find a boyfriend",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "None likes to spend time with me",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I go to bed every day at 9PM",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I have so much fun that I almost don't sleep in the weekend",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 45,
+            "end": 59,
+            "value": "in the weekend",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I almost never stay awake after 10 in the evening",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 26,
+            "end": 49,
+            "value": "after 10 in the evening",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "My last party was when I was still healthy",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "My last date was 3 years ago",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I am dating every week",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 12,
+            "end": 22,
+            "value": "every week",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I saw my childhood friends this week-end",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 27,
+            "end": 40,
+            "value": "this week-end",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I did a party last night",
+        "intent": "social",
+        "entities": [
+          {
+            "start": 14,
+            "end": 24,
+            "value": "last night",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I do not go out",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I am alone",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I am forgotten by all",
+        "intent": "social",
+        "entities": []
       }
     ]
   }
