@@ -3193,11 +3193,6 @@
         "entities": []
       },
       {
-        "text": "can you",
-        "intent": "fallback",
-        "entities": []
-      },
-      {
         "text": "do that",
         "intent": "fallback",
         "entities": []
@@ -4581,6 +4576,196 @@
         "text": "I am forgotten by all",
         "intent": "social",
         "entities": []
+      },
+      {
+        "text": "The pain is in my leg",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 18,
+            "end": 21,
+            "value": "leg",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "My tooth is bloody killing, not sure I can wait until next week to get it fixed ",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 3,
+            "end": 8,
+            "value": "tooth",
+            "entity": "body_part"
+          },
+          {
+            "start": 12,
+            "end": 26,
+            "value": "bloody killing",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "ohh my tooth is hurts ohh it very hurts",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "tooth",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "My leg hurts",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "leg",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "The left leg hurts me",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 4,
+            "end": 12,
+            "value": "left leg",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "I feel it since 3 hours",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 16,
+            "end": 23,
+            "value": "3 hours",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I ran for 3 hours",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 10,
+            "end": 17,
+            "value": "3 hours",
+            "entity": "duration"
+          },
+          {
+            "start": 2,
+            "end": 5,
+            "value": "ran",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I hurt for two days",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "two days",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I am glad you asked",
+        "intent": "emotional_hapiness",
+        "entities": []
+      },
+      {
+        "text": "rasa",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "it's an intense pain in my arm",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "intense",
+            "entity": "pain_level"
+          },
+          {
+            "start": 27,
+            "end": 30,
+            "value": "arm",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "i have pain in my arm",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 18,
+            "end": 21,
+            "value": "arm",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "i have pain in my leg",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 18,
+            "end": 21,
+            "value": "leg",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "I have cycled for 4 hours",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "4 hours",
+            "entity": "duration"
+          },
+          {
+            "start": 7,
+            "end": 13,
+            "value": "cycled",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "the pain is sharp and does not stop",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "sharp",
+            "entity": "pain_level"
+          }
+        ]
       }
     ]
   }
