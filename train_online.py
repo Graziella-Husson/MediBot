@@ -24,9 +24,9 @@ def run_concertbot_online(input_channel, interpreter,
 
     agent.train_online(training_data_file,
                        input_channel=input_channel,
-                       max_history=2,
+                       max_history=5,
                        batch_size=50,
-                       epochs=200,
+                       epochs=300,
                        max_training_samples=300)
 
     return agent

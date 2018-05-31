@@ -2176,11 +2176,6 @@
         "entities": []
       },
       {
-        "text": "no, i did not said that",
-        "intent": "fallback",
-        "entities": []
-      },
-      {
         "text": "stop it",
         "intent": "fallback",
         "entities": []
@@ -2222,11 +2217,6 @@
       },
       {
         "text": "idem",
-        "intent": "fallback",
-        "entities": []
-      },
-      {
-        "text": "stop talking",
         "intent": "fallback",
         "entities": []
       },
@@ -3144,16 +3134,6 @@
       },
       {
         "text": "sight",
-        "intent": "fallback",
-        "entities": []
-      },
-      {
-        "text": "noooooo",
-        "intent": "fallback",
-        "entities": []
-      },
-      {
-        "text": "please stop",
         "intent": "fallback",
         "entities": []
       },
@@ -4802,6 +4782,1825 @@
             "entity": "sport"
           }
         ]
+      },
+      {
+        "text": "yes",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "of course",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "that sounds good",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "yes I do",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "yes I will",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Let's do this",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Let's talk about it",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Let's go",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Go",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "I affirm",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "affirm",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "affirmative",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "That would be great",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yes ok",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "K",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yea",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yay",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yes I want to talk about it",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yes, I want to",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yes I would",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Kay",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Okay",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Ok'",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "alright",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "absolutely",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Certainly",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "sounds great",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "sure",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "sure thing",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Definitely!",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Will do",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "sure!",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Let's Definitely do that!",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Let's absolutely do that!",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Let's Certainly do that!",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Let's do that!",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "yes of course",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "I will talk, yes",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yeeaah",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Maybe I will",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Maybe agree",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "I'll try yes",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Will try ok?",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Ya",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Sure is",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "I am sure to",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "thats correct",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "check",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yeah ok",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yeah sure",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yes sure",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Affirmative!",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "of course",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "that sounds good",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "yes I do",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "yes I will",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "affirmative",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "That would be great",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yes ok",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "K",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yea",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yay",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yes I want to talk about it",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yes, I want to",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yes I would",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Kay",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Okay",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Ok'",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "sokay",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "ye",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "yea",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "hey yea",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "yes sir",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "yes maam",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "sounds ok",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "sounds perfect",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "no",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "never",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "I don't think so",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "don't like that",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "no way",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "no i will not",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "No I don't want to",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "No, fine for me",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Enough",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Certainly not",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "no thanks",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "I do not want to talk",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "I do not want to",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "don't like to talk about it",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Definitely not",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "sounds bad",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "No i don't",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "no i would not",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Nah",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Never ever",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "no way at all",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "sorry but no",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "No, sorry",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Not possible",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "No that's not what I want",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "No tks",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Nooo",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "no",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "never",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "I don't think so",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "don't like that",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "no way",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "no i will not",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "No I don't want to",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "No, fine for me",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Enough",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Certainly not",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "no thanks",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "I do not want to talk",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "I do not want to",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "don't like to talk about it",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Definitely not",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "sounds bad",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "No i don't",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "no i would not",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Nah",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Never ever",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "no way at all",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "sorry but no",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "No, sorry",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Not possible",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "No that's not what I want",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "No tks",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Nooo",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Impossible",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "N'",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Maybe another day",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Maybe later",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Maybe not",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "sounds not ok",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "just wanted to share, not talk",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "No tk",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Hummm, no",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Impossible",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "N'",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Maybe another day",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Maybe later",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Maybe not",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "sounds not ok",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "just wanted to share, not talk",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "No tk",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Hummm, no",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Niet",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Noway",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Nada",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Niet",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Noway",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Nada",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Nope",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Nope nope",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "no, sorry but thanks",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Nie",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Nope",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "1235zéze5",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "what time is it?",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "Please book a restaurant ",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "ctrl",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "Hello!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hello sir",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hello dear",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hi",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "hey",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "hello there",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "moin",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "let's go",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "goodmorning",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "goodafternoon",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "good afternoon",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "goodevening",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Yo",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Yop!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Poke",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Pst!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Shall we start?",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Let's start!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Shall we?",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "lets go",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Sup!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "What's up?",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hey dear!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hello robot!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Plop",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Yoo!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hola",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hi my friend",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Evening",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Afternoon",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Let's talk",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Can we begin?",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Can we go?",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "I can talk to you now",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hi",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hello!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hello sir",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hello dear",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hi",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "hey",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "hello there",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "moin",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "let's go",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "goodmorning",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "goodafternoon",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "good afternoon",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "goodevening",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Yo",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Yop!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Poke",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Pst!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Shall we start?",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Let's start!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Shall we?",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "lets go",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Sup!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "What's up?",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hey dear!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hello robot!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Plop",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Yoo!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hola",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hi my friend",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Evening",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Afternoon",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Let's talk",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Can we begin?",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Can we go?",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "I can talk to you now",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hi",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hey friend",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "heyyy",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "let s go",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "whatzup?",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "zup?",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "he",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "good morn",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "vning",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "cu",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "good by",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "cee you later",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "good night",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "good afternoon",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "have a nice day",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "see you around",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "bye bye",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "see you later",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "See you",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Talk to you later",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "talk to you asap",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "see you soon",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Talk to you soon",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "see ya",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Bye my friend",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "have a good day",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "talk to you tomorrow",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "see you next time",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "next time",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "have a good one",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "have a good day",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "have a good week",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "stop it now",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "stop here please",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "end of day now!",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "TTYL",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "stahp",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "I will end this here",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Can we restart the day?",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Can we stop here?",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Please stop that now",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "End it",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "cu",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "good by",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "cee you later",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "good night",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "good afternoon",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "have a nice day",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "see you around",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "bye bye",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "see you later",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "See you",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Talk to you later",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "talk to you asap",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "see you soon",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Talk to you soon",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "see ya",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Bye my friend",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "have a good day",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "talk to you tomorrow",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "see you next time",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "next time",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "have a good one",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "have a good day",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "have a good week",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "stop it now",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "stop here please",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "end of day now!",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "TTYL",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "stahp",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "I will end this here",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Can we restart the day?",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Can we stop here?",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Please stop that now",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "End it",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "See you tomorrow",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "goodby",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "godbye",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Ciao",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Byye",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "goodnight",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "later",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "I don't see anyone",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I see anybody",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "Because I don't see anyone",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "Because I feel a pain in my ear",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 28,
+            "end": 31,
+            "value": "ear",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "There is a sharp pain in my ear",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 28,
+            "end": 31,
+            "value": "ear",
+            "entity": "body_part"
+          },
+          {
+            "start": 11,
+            "end": 16,
+            "value": "sharp",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "I feel that sharp pain in the ear",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 12,
+            "end": 17,
+            "value": "sharp",
+            "entity": "pain_level"
+          },
+          {
+            "start": 30,
+            "end": 33,
+            "value": "ear",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "It's in my ear",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "ear",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "The pain is here since a few minutes",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 25,
+            "end": 36,
+            "value": "few minutes",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "This pain is here since a few days",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 26,
+            "end": 34,
+            "value": "few days",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I can't do anything, it hurts too much",
+        "intent": "pain",
+        "entities": []
+      },
+      {
+        "text": "Noope",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Naah",
+        "intent": "disagree",
+        "entities": []
       }
     ]
   }

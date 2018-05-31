@@ -4,7 +4,9 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 from rasa_core.actions.action import Action
-from rasa_core.events import SlotSet
+from rasa_core.events import SlotSet, AllSlotsReset, StoryExported, ReminderScheduled
+from datetime import datetime as dt
+from datetime import timedelta
 
 from rasa_core.actions.forms import (
 EntityFormField,
@@ -27,11 +29,29 @@ class SumUpSLots(Action):
           distance = tracker.get_slot("distance")
           pain_period = tracker.get_slot("pain_period")
           sport_period = tracker.get_slot("sport_period")
-          response = ("""DEBUG: sport = {}, sport_duration = {}, sport_period = {},
-          \npain_duration = {}, pain_level = {}, body_part = {}, pain_change = {}, pain_period = {}, 
-          \ndistance = {}, period = {}, duration = {}""").format(sport, sport_duration, sport_period, pain_duration, pain_level, body_part, pain_change, pain_period, distance, period, duration)
-          dispatcher.utter_message(response+".")
-          
+          response = ("""`DEBUG:`
+`\tsport = {}, sport_duration = {}, sport_period = {},`
+`\tpain_duration = {}, pain_level = {}, body_part = {}, pain_change = {}, pain_period = {}, `
+`\tdistance = {}, period = {}, duration = {}`""").format(sport, sport_duration, sport_period, pain_duration, pain_level, body_part, pain_change, pain_period, distance, period, duration)
+          dispatcher.utter_message(response)
+         
+class ActionBye(Action):
+    def name(self):
+        return 'sum_up_bye'
+        
+    def run(self, dispatcher, tracker, domain):
+          response = ("Goodbye, human friend! :smile:\n`DEBUG:reset slots, your story is saved on the servor, a test reminder will be triggerd in 10 seconds!`")
+          dispatcher.utter_message(response)
+          return [AllSlotsReset(),StoryExported("/home/ex/Desktop/MediBot/history/history.txt"),ReminderScheduled("action_test_reminder", dt.now() + timedelta(seconds=10), kill_on_user_message=False)]
+
+class ActionTestReminder(Action):
+    def name(self):
+        return 'action_test_reminder'
+        
+    def run(self, dispatcher, tracker, domain):
+          response = ("It's been 10 seconds! :smile:")
+          dispatcher.utter_message(response)
+         
 class ActionSportDuration(Action):
     def name(self):
         return 'action_duration_sport'

@@ -2176,11 +2176,6 @@
         "entities": []
       },
       {
-        "text": "no, i did not said that",
-        "intent": "fallback",
-        "entities": []
-      },
-      {
         "text": "stop it",
         "intent": "fallback",
         "entities": []
@@ -2222,11 +2217,6 @@
       },
       {
         "text": "idem",
-        "intent": "fallback",
-        "entities": []
-      },
-      {
-        "text": "stop talking",
         "intent": "fallback",
         "entities": []
       },
@@ -3144,16 +3134,6 @@
       },
       {
         "text": "sight",
-        "intent": "fallback",
-        "entities": []
-      },
-      {
-        "text": "noooooo",
-        "intent": "fallback",
-        "entities": []
-      },
-      {
-        "text": "please stop",
         "intent": "fallback",
         "entities": []
       },
@@ -4802,6 +4782,876 @@
             "entity": "sport"
           }
         ]
+      },
+      {
+        "text": "yes",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "of course",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "that sounds good",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "yes I do",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "yes I will",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Let's do this",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Let's talk about it",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Let's go",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Go",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "I affirm",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "affirm",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "affirmative",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "That would be great",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Yes ok",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "K",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Yea",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Yay",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Yes I want to talk about it",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Yes, I want to",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Yes I would",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Kay",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Okay",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Ok'",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "alright",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "absolutely",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Certainly",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "sounds great",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "sure",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "sure thing",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Definitely!",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Will do",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "sure!",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Let's Definitely do that!",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Let's absolutely do that!",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Let's Certainly do that!",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Let's do that!",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "yes of course",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "I will talk, yes",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Yeeaah",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Maybe I will",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Maybe yes",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "I'll try yes",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Will try ok?",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Ya",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Sure is",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "I am sure to",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "thats correct",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "check",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Yeah ok",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Yeah sure",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Yes sure",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Affirmative!",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "yes",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "of course",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "that sounds good",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "yeah",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "yes I do",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "yes I will",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "affirmative",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "That would be great",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Yes ok",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "K",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Yea",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Yay",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Yes I want to talk about it",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Yes, I want to",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Yes I would",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Kay",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Okay",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "Ok'",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "sokay",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "ye",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "yea",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "hey yea",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "yes sir",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "yes maam",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "sounds ok",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "sounds perfect",
+        "intent": "yes",
+        "entities": []
+      },
+      {
+        "text": "no",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "never",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "I don't think so",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "don't like that",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "no way",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "no i will not",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "No I don't want to",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "No, fine for me",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Enough",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Certainly not",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "no thanks",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "I do not want to talk",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "I do not want to",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "don't like to talk about it",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Definitely not",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "sounds bad",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "No i don't",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "no i would not",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Nah",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Never ever",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "no way at all",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "sorry but no",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "No, sorry",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Not possible",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "No I can't",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "No that's not what I want",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "No tks",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Nooo",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "no",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "never",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "I don't think so",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "don't like that",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "no way",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "no i will not",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "No I don't want to",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "No, fine for me",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Enough",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Certainly not",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "no thanks",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "I do not want to talk",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "I do not want to",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "don't like to talk about it",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Definitely not",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "sounds bad",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "No i don't",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "no i would not",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Nah",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Never ever",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "no way at all",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "sorry but no",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "No, sorry",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Not possible",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "No I can't",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "No that's not what I want",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "No tks",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Nooo",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Impossible",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "N'",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Maybe another day",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Maybe later",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Maybe not",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "sounds not ok",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "just wanted to share, not talk",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "No tk",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Hummm, no",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Impossible",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "N'",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Maybe another day",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Maybe later",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Maybe not",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "sounds not ok",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "just wanted to share, not talk",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "No tk",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Hummm, no",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Niet",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Noway",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Nada",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Niet",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Noway",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Nada",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Nope",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Nope nope",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "no, sorry but thanks",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Nie",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "Nope",
+        "intent": "no",
+        "entities": []
+      },
+      {
+        "text": "1235zéze5",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "what time is it?",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "Please book a restaurant ",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "ctrl",
+        "intent": "fallback",
+        "entities": []
       }
     ]
   }

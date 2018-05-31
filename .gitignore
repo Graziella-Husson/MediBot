@@ -8,3 +8,4 @@ new_data
 __pycache__/
 .png
 .old
+.log

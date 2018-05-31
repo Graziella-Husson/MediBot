@@ -33,6 +33,10 @@ intents:
  - emotional_hapiness
  - fallback
  - social
+ - agree
+ - disagree
+ - hello
+ - bye
 
 entities:
  - sport
@@ -64,19 +68,35 @@ templates:
   utter_ask_pain_level:
     - text: "I did not recognize any description of your pain. Can you tell me more about it? (e.g. is it a sharp pain?)."
   sum_up_emotionnal_sadness:
-    - text: "It seems that you are in a bad mood... Do you want to talk about it, or did you just want to share?\nDEBUG:future feature, allow user to say yes or no."
+    - text: "It seems that you are in a bad mood... Do you want to talk about it in details?"
   sum_up_emotional_hapiness:
-    - text: "Great! You are in a good mood!"
+    - text: "Great! You are in a good mood! :smiley:"
   sum_up_fallback:
-    - text: "Sorry, I did not understand what you said...\nDEBUG:This is a fallback for NLU part (intent fallback)"
+    - text: "Sorry, I did not understand what you said... :visage_triste:\n`DEBUG:This is a fallback for NLU part (intent fallback)`"
   sum_up_social:
-    - text: "It seems that you talked about a social thing."
+    - text: "It seems that you talked about a social thing. :homme::femme:"
+  sum_up_hello:
+    - text: "Hey you!"
+    - text: "Hello!"
+    - text: "Hi :sourire:"
+    - text: "Happy to see you!"
+  sum_up_agree:
+    - text: "Glad you agree! :+1:"
+  sum_up_disagree:
+    - text: "I see, you disagree. I respect that. :silence:"
+  ask_why:
+    - text: "So, why are you in a bad mood?"
 
 actions:
  - sum_up_emotionnal_sadness
  - sum_up_emotional_hapiness
  - sum_up_fallback
  - sum_up_social
+ - sum_up_hello
+ - sum_up_agree
+ - sum_up_disagree
+ - ask_why
+ - actions.ActionBye
  - actions.ActionSportDuration
  - actions.ActionPainDuration
  - actions.ActionFillSlotsPain
@@ -84,3 +104,4 @@ actions:
  - actions.ActionPainPeriod
  - actions.ActionSportPeriod
  - actions.SumUpSLots
+ - actions.ActionTestReminder

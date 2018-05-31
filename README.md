@@ -129,7 +129,7 @@ python3 -m rasa_nlu.evaluate -d data/data.json -c config/conf.yml --mode crossva
 
 ## Train bot :books:
 ```
-python3 -m rasa_core.train -s data/stories.md -d domain.yml -o models/dialogue --epochs 300
+python3 train_init.py
 ```
 To train 'online' (interactive learning):
 
