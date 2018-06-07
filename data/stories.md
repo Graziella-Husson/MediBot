@@ -1,4 +1,5 @@
 ## Story 0
+	- init
 * pain
      - action_check_slots_pain
      - slot{"requested_slot": "pain_duration"}
@@ -29,6 +30,7 @@
      - sum_up_slots
 
 ## Story 00
+	- init
 * agree
 	- sum_up_agree
      - sum_up_slots
@@ -2198,5 +2200,42 @@
     - sum_up_slots
     - action_check_slots_sport
     - slot{"requested_slot": "sport"}
+    - sum_up_slots
+
+## Generated Story 8726022614722082485
+* pain
+    - action_check_slots_pain
+    - slot{"requested_slot": "pain_duration"}
+    - sum_up_slots
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - action_duration_pain
+    - sum_up_slots
+    - action_check_slots_pain
+    - slot{"requested_slot": "pain_change"}
+    - sum_up_slots
+* pain{"pain_change": "continuous"}
+    - slot{"pain_change": "continuous"}
+    - action_check_slots_pain
+    - slot{"pain_change": "continuous"}
+    - slot{"requested_slot": "pain_level"}
+    - sum_up_slots
+* pain{"pain_level": "sharp"}
+    - slot{"pain_level": "sharp"}
+    - action_check_slots_pain
+    - slot{"pain_level": "sharp"}
+    - slot{"requested_slot": "body_part"}
+    - sum_up_slots
+* pain{"body_part": "leg"}
+    - slot{"body_part": "leg"}
+    - action_check_slots_pain
+    - slot{"body_part": "leg"}
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - slot{"pain_change": null}
+    - slot{"pain_period": null}
     - sum_up_slots
 

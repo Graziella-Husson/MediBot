@@ -26,4 +26,5 @@ pipeline:
   # flag if to tokenize intents
   "intent_tokenization_flag": false
   "intent_split_symbol": "_"
+- name: "ner_crf"
 

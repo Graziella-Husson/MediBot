@@ -13,6 +13,67 @@ EntityFormField,
 FormAction
 )
 
+import random
+import yaml
+
+global config, obligatory_sport, obligatory_pain, reminder_time
+obligatory_pain=[]
+obligatory_sport=[]
+reminder_time=30
+config = yaml.load(open('config.yml'))
+
+class InitBot(Action):
+
+    def loadConfig(self,current_session):
+        global config, obligatory_sport, obligatory_pain, reminder_time
+        begin = config['sessions'][current_session]['begin']
+        r=config['sessions'][current_session]['requested_slot']
+        for i in r['pain'].split(','):
+            obligatory_pain.append(EntityFormField(i, i))
+        for i in r['sport'].split(','):
+            obligatory_sport.append(EntityFormField(i, i))
+        reminder_time = config['sessions'][current_session]['reminder_time']
+
+    def get_current_session(self):
+        global config, obligatory_sport, obligatory_pain, reminder_time
+        current_session = None
+        now = dt.now()
+        inter = now-dt(2011, 1, 1)
+        my_date= now
+        begins = dict()
+        for i in config['sessions']:
+            for j in config['sessions'][i]:
+                if j == "begin":
+                    begins[i] = config['sessions'][i][j]
+        for i in begins.values():
+            date_el = i.split(',')
+            date=dt(int(date_el[0]), int(date_el[1]),int(date_el[2]),
+                                      int(date_el[3]),int(date_el[4]), int(date_el[5]))
+            this_inter = now - date
+            if  this_inter < inter:
+                inter = this_inter
+                my_date=date
+        
+        for i in begins.keys():
+            date_el = begins[i].split(',')
+            date=dt(int(date_el[0]), int(date_el[1]),int(date_el[2]),
+                                      int(date_el[3]),int(date_el[4]), int(date_el[5]))
+            if str(date)== str(my_date):
+                current_session = i
+        return current_session    
+    
+    def name(self):
+        return 'init'
+        
+    def run(self, dispatcher, tracker, domain):
+        global config, obligatory_sport, obligatory_pain, reminder_time
+        current_session = self.get_current_session()
+        self.loadConfig(current_session)
+        self.reminderNextSession()
+        print("reminder in"+str(reminder_time)+"s")
+        return ReminderScheduled("action_test_reminder", dt.now() + timedelta(seconds=int(reminder_time)), kill_on_user_message=False)
+
+
 class SumUpSLots(Action):
     def name(self):
         return 'sum_up_slots'
@@ -34,7 +95,25 @@ class SumUpSLots(Action):
 `\tpain_duration = {}, pain_level = {}, body_part = {}, pain_change = {}, pain_period = {}, `
 `\tdistance = {}, period = {}, duration = {}`""").format(sport, sport_duration, sport_period, pain_duration, pain_level, body_part, pain_change, pain_period, distance, period, duration)
           dispatcher.utter_message(response)
-         
+  
+class ActionHello(Action):
+    def name(self):
+        return 'sum_up_hello'
+        
+    def run(self, dispatcher, tracker, domain):
+        choice = random.randint(1, 5)
+        if choice == 1:
+            response="Hello! :smile:"
+        elif choice == 2:
+            response="Hi, human friend! :smile:"
+        elif choice == 3:
+            response="Nice to see you! :smile:"
+        elif choice == 4:
+            response="Hey! :smile:"
+        else:
+            response="Happy to see you! :smile:"
+        dispatcher.utter_message(response)
+        
 class ActionBye(Action):
     def name(self):
         return 'sum_up_bye'
@@ -42,7 +121,7 @@ class ActionBye(Action):
     def run(self, dispatcher, tracker, domain):
           response = ("Goodbye, human friend! :smile:\n`DEBUG:reset slots, your story is saved on the servor, a test reminder will be triggerd in 10 seconds!`")
           dispatcher.utter_message(response)
-          return [AllSlotsReset(),StoryExported("/home/ex/Desktop/MediBot/history/history.txt"),ReminderScheduled("action_test_reminder", dt.now() + timedelta(seconds=10), kill_on_user_message=False)]
+          return [AllSlotsReset(),StoryExported("/home/ex/Desktop/MediBot/history/history.txt"),ReminderScheduled("action_test_reminder", dt.now() + timedelta(seconds=int(reminder_time)), kill_on_user_message=False)]
 
 class ActionTestReminder(Action):
     def name(self):
@@ -93,10 +172,8 @@ class ActionFillSlotsSport(FormAction):
 
     @staticmethod
     def required_fields():
-        return [
-        EntityFormField("sport_duration", "sport_duration"),
-        EntityFormField("sport", "sport")
-        ]
+        return obligatory_sport
+        
     
     def name(self):
         return 'action_check_slots_sport'
@@ -125,12 +202,7 @@ class ActionFillSlotsPain(FormAction):
     
     @staticmethod
     def required_fields():
-        return [
-        EntityFormField("pain_duration", "pain_duration"),
-        EntityFormField("pain_level", "pain_level"),
-        EntityFormField("body_part", "body_part"),
-        EntityFormField("pain_change","pain_change")
-        ]
+        return obligatory_pain
     
     def name(self):
         return 'action_check_slots_pain'

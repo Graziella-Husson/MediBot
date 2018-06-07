@@ -2,11 +2,12 @@ from rasa_nlu.model import Metadata, Interpreter
 
 # where `model_directory points to the folder the model is persisted in
 interpreter = Interpreter.load('models/nlu/default/current')
-print (interpreter.parse(u"I feel a sharp pain in the leg"))
+print (interpreter.parse(u"I had a barbecue with some friends"))
+#print (interpreter.parse(u"I feel a sharp pain in the leg"))
 # 'pain', 'confidence': 0.985409655949852
-print (interpreter.parse(u"My horse is sharp"))
+#print (interpreter.parse(u"My horse is sharp"))
 # 'fallback', 'confidence': 0.48489013585950913
-print (interpreter.parse(u"The pain in my back is horrible"))
+#print (interpreter.parse(u"The pain in my back is horrible"))
 # 'pain', 'confidence': 0.9635503367430202
 #print (interpreter.parse(u"fziqhf"))
 # 'fallback', 'confidence': 0.9189299103884638

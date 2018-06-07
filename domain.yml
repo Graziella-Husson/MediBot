@@ -70,20 +70,15 @@ templates:
   sum_up_emotionnal_sadness:
     - text: "It seems that you are in a bad mood... Do you want to talk about it in details?"
   sum_up_emotional_hapiness:
-    - text: "Great! You are in a good mood! :smiley:"
+    - text: "Great! You are in a good mood!"
   sum_up_fallback:
-    - text: "Sorry, I did not understand what you said... :visage_triste:\n`DEBUG:This is a fallback for NLU part (intent fallback)`"
+    - text: "Sorry, I did not understand what you said...\n`DEBUG:This is a fallback for NLU part (intent fallback)`"
   sum_up_social:
-    - text: "It seems that you talked about a social thing. :homme::femme:"
-  sum_up_hello:
-    - text: "Hey you!"
-    - text: "Hello!"
-    - text: "Hi :sourire:"
-    - text: "Happy to see you!"
+    - text: "It seems that you talked about a social thing."
   sum_up_agree:
-    - text: "Glad you agree! :+1:"
+    - text: "Glad you agree!"
   sum_up_disagree:
-    - text: "I see, you disagree. I respect that. :silence:"
+    - text: "I see, you disagree. I respect that."
   ask_why:
     - text: "So, why are you in a bad mood?"
 
@@ -92,11 +87,11 @@ actions:
  - sum_up_emotional_hapiness
  - sum_up_fallback
  - sum_up_social
- - sum_up_hello
  - sum_up_agree
  - sum_up_disagree
  - ask_why
  - actions.ActionBye
+ - actions.ActionHello
  - actions.ActionSportDuration
  - actions.ActionPainDuration
  - actions.ActionFillSlotsPain
@@ -105,3 +100,4 @@ actions:
  - actions.ActionSportPeriod
  - actions.SumUpSLots
  - actions.ActionTestReminder
+ - actions.InitBot

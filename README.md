@@ -151,7 +151,7 @@ python3 vizualize.py
 ## Talk to bot :space_invader:
 
 ```
-python3 -m rasa_core.run -d models/dialogue -u models/nlu/default/current
+python3 run_dialogue.py
 ```
 
 ## Link your bot to a slack :electric_plug:
