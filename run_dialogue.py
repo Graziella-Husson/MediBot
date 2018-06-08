@@ -21,7 +21,9 @@ def run_bot(serve_forever=True):
 	agent = Agent.load('./models/dialogue', interpreter = interpreter)
 	if serve_forever:
 		agent.handle_channel(ConsoleInputChannel())
+		agent.handle_message("hello", message_preprocessor=None, output_channel=ConsoleInputChannel())
 	return agent
 	
 if __name__ == '__main__':
-	run_bot()
+	agent = run_bot()
+	agent.handle_message("hello")

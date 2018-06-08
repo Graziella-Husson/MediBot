@@ -21,6 +21,13 @@ obligatory_pain=[]
 obligatory_sport=[]
 reminder_time=30
 config = yaml.load(open('config.yml'))
+current_session = "session1"
+r=config['sessions'][current_session]['requested_slot']
+for i in r['pain'].split(','):
+	obligatory_pain.append(EntityFormField(i, i))
+for i in r['sport'].split(','):
+	obligatory_sport.append(EntityFormField(i, i))
+reminder_time = config['sessions'][current_session]['reminder_time']
 
 class InitBot(Action):
 
