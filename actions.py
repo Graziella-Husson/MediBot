@@ -4,7 +4,7 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 from rasa_core.actions.action import Action
-from rasa_core.events import SlotSet, AllSlotsReset, StoryExported, ReminderScheduled
+from rasa_core.events import SlotSet, AllSlotsReset, StoryExported, ReminderScheduled, TopicSet
 from datetime import datetime as dt
 from datetime import timedelta
 
@@ -15,8 +15,9 @@ FormAction
 
 import random
 import yaml
+import os
 
-global config, obligatory_sport, obligatory_pain, reminder_time
+global config, obligatory_sport, obligatory_pain, reminder_time, current_session
 obligatory_pain=[]
 obligatory_sport=[]
 reminder_time=30
@@ -28,6 +29,7 @@ for i in r['pain'].split(','):
 for i in r['sport'].split(','):
 	obligatory_sport.append(EntityFormField(i, i))
 reminder_time = config['sessions'][current_session]['reminder_time']
+
 
 class InitBot(Action):
 
@@ -80,13 +82,78 @@ class InitBot(Action):
         print("reminder in"+str(reminder_time)+"s")
         return ReminderScheduled("action_test_reminder", dt.now() + timedelta(seconds=int(reminder_time)), kill_on_user_message=False)
 
+class PainTopic(Action):
+    def name(self):
+        return 'set_topic_pain'
+        
+    def run(self, dispatcher, tracker, domain):
+        return [SlotSet("topic","pain")]
+        
+class SaveConv(Action):
+    def name(self):
+        return 'save_conv'
+        
+    def run(self, dispatcher, tracker, domain):
+        global current_session
+        id_user = tracker.sender_id
+        idy = "./saves/"+str(id_user)+"/"+current_session
+        try:
+            conv = open(idy, 'a')
+        except:
+            os.mkdir("saves") 
+            os.mkdir("saves/"+str(id_user)+"/") 
+            conv = open(idy, 'a')  
+        date = dt.now()
+        response = tracker.latest_message.text
+        conv.write(str(id_user)+" ["+str(date)+"]: "+response+"\n")
+        conv.close()
+        
+class SportTopic(Action):
+    def name(self):
+        return 'set_topic_sport'
+        
+    def run(self, dispatcher, tracker, domain):
+        return [SlotSet("topic","sport")]
+    
+class SetDuration(Action):
+    def name(self):
+        return 'action_duration'
+    
+    def run(self, dispatcher, tracker, domain):
+        requested_slot = tracker.get_slot("requested_slot")
+        topic = tracker.get_slot("topic")
+        duration = tracker.get_slot("duration")
+        if requested_slot=="pain_duration":
+            tracker.update(SlotSet("pain_duration",duration))
+        elif requested_slot=="sport_duration":
+            tracker.update(SlotSet("sport_duration",duration))
+        else:
+            if topic=="pain":
+                tracker.update(SlotSet("pain_duration",duration))
+            elif topic=="sport":
+                tracker.update(SlotSet("sport_duration",duration))
+        return [SlotSet("duration",None)]
 
 class SumUpSLots(Action):
     def name(self):
         return 'sum_up_slots'
         
     def run(self, dispatcher, tracker, domain):
+          global current_session
+          id_user = tracker.sender_id
+          idy = "./saves/"+str(id_user)+"/"+current_session
+          try:
+              conv = open(idy, 'a')
+          except:
+              os.mkdir("saves") 
+              os.mkdir("saves/"+str(id_user)+"/") 
+              conv = open(idy, 'a')
+          date = dt.now()
+          response = tracker.latest_bot_utterance.text
+          if not response == None:
+              conv.write("BOT ["+str(date)+"]: "+response+"\n")
           sport = tracker.get_slot("sport")
+          requested_slot = tracker.get_slot("requested_slot")
           sport_duration = tracker.get_slot("sport_duration")
           body_part = tracker.get_slot("body_part")
           pain_duration = tracker.get_slot("pain_duration")
@@ -97,11 +164,15 @@ class SumUpSLots(Action):
           distance = tracker.get_slot("distance")
           pain_period = tracker.get_slot("pain_period")
           sport_period = tracker.get_slot("sport_period")
+          topic = tracker.get_slot("topic")
           response = ("""`DEBUG:`
+`\ttopic = {}, requested_slot = {},`
 `\tsport = {}, sport_duration = {}, sport_period = {},`
 `\tpain_duration = {}, pain_level = {}, body_part = {}, pain_change = {}, pain_period = {}, `
-`\tdistance = {}, period = {}, duration = {}`""").format(sport, sport_duration, sport_period, pain_duration, pain_level, body_part, pain_change, pain_period, distance, period, duration)
+`\tdistance = {}, period = {}, duration = {}`""").format(topic,requested_slot,sport, sport_duration, sport_period, pain_duration, pain_level, body_part, pain_change, pain_period, distance, period, duration)
           dispatcher.utter_message(response)
+          conv.write("BOT ["+str(date)+"]: "+response+"\n")
+          conv.close()
   
 class ActionHello(Action):
     def name(self):
@@ -138,15 +209,6 @@ class ActionTestReminder(Action):
           response = ("It's been 10 seconds! :smile:")
           dispatcher.utter_message(response)
          
-class ActionSportDuration(Action):
-    def name(self):
-        return 'action_duration_sport'
-    
-    def run(self, dispatcher, tracker, domain):
-        duration = tracker.get_slot("duration")
-        tracker.update(SlotSet("sport_duration",duration))
-        tracker.update(SlotSet("duration",None))
-
 class ActionSportPeriod(Action):
     def name(self):
         return 'action_period_sport'
@@ -155,15 +217,6 @@ class ActionSportPeriod(Action):
         duration = tracker.get_slot("period")
         tracker.update(SlotSet("sport_period",duration))
         tracker.update(SlotSet("period",None))
-
-class ActionPainDuration(Action):
-    def name(self):
-        return 'action_duration_pain'
-    
-    def run(self, dispatcher, tracker, domain):
-        duration = tracker.get_slot("duration")
-        tracker.update(SlotSet("pain_duration",duration))
-        tracker.update(SlotSet("duration",None))
 
 class ActionPainPeriod(Action):
     def name(self):
@@ -202,7 +255,7 @@ class ActionFillSlotsSport(FormAction):
             response +=""" and a period/recurrence of {}""".format(sport_period)
         
         dispatcher.utter_message(response+".")
-        return [SlotSet("sport_duration",None), SlotSet("sport_level",None), SlotSet("sport",None), SlotSet("distance",None), SlotSet("sport_period", None)]
+        return [SlotSet("sport_duration",None), SlotSet("sport_level",None), SlotSet("sport",None), SlotSet("distance",None), SlotSet("sport_period", None), SlotSet("topic", None)]
 
 class ActionFillSlotsPain(FormAction):
     RANDOMIZE = True
@@ -225,4 +278,4 @@ class ActionFillSlotsPain(FormAction):
             response += """ and a period/recurrence of {}""".format(pain_period)
         response += """. The pain seems to be {}.""".format(pain_change)
         dispatcher.utter_message(response)
-        return [SlotSet("pain_duration",None), SlotSet("pain_level",None), SlotSet("body_part",None), SlotSet("pain_change",None), SlotSet("pain_period",None)]
+        return [SlotSet("pain_duration",None), SlotSet("pain_level",None), SlotSet("body_part",None), SlotSet("pain_change",None), SlotSet("pain_period",None), SlotSet("topic", None)]

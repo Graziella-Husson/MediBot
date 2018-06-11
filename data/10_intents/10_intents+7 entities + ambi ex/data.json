@@ -6733,6 +6733,126 @@
             "entity": "period"
           }
         ]
+      },
+      {
+        "text": "1 hour",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "1 hour",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "four hours",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "four hours",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "Few days",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Few days",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "Since some days",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 6,
+            "end": 15,
+            "value": "some days",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "40 minutes",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 10,
+            "value": "40 minutes",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "Some hours",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "hours",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "two hours",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "two hours",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "A lot of time",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 13,
+            "value": "A lot of time",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "a few weeks",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 6,
+            "end": 11,
+            "value": "weeks",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "Since days",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 6,
+            "end": 10,
+            "value": "days",
+            "entity": "duration"
+          }
+        ]
       }
     ]
   }

@@ -25,6 +25,8 @@ slots:
     type: text
   requested_slot:
     type: unfeaturized
+  topic:
+    type: unfeaturized
 
 intents:
  - activity
@@ -92,8 +94,6 @@ actions:
  - ask_why
  - actions.ActionBye
  - actions.ActionHello
- - actions.ActionSportDuration
- - actions.ActionPainDuration
  - actions.ActionFillSlotsPain
  - actions.ActionFillSlotsSport
  - actions.ActionPainPeriod
@@ -101,3 +101,7 @@ actions:
  - actions.SumUpSLots
  - actions.ActionTestReminder
  - actions.InitBot
+ - actions.PainTopic
+ - actions.SportTopic
+ - actions.SetDuration
+ - actions.SaveConv
