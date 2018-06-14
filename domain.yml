@@ -52,12 +52,20 @@ entities:
 templates:
   utter_ask_sport:
     - text: "I did not recognize any sport in what you said. Can you tell me more?"
+    - text: "Can you tell me which sport you did?"
+    - text: "Wich sport did you do?"
   utter_ask_sport_duration:
     - text: "How long did you do your physical activity?"
+    - text: "For how long?"
+    - text: "How long?"
   utter_ask_body_part:
     - text: "Where is localized this pain?"
+    - text: "Where does it hurts?"
+    - text: "In which part of your body does it hurt?"
   utter_ask_pain_duration:
     - text: "How long did you have this pain?"
+    - text: "For how long?"
+    - text: "How long?"
   utter_ask_pain_change:
   - text: "How does your pain change with time?"
     buttons:
@@ -67,14 +75,24 @@ templates:
       payload: /pain{"pain_change":"intermittent"}
     - title: "brief"
       payload: /pain{"pain_change":"brief"}
+  utter_ask_pain_period:
+  - text: "Does the pain have a period (e.g. every week)?"
+  utter_ask_sport_period:
+  - text: "Do you do your sport with a regular period (e.g. every week)?"
   utter_ask_pain_level:
     - text: "I did not recognize any description of your pain. Can you tell me more about it? (e.g. is it a sharp pain?)."
+    - text: "Can you describe your pain?"
+    - text: "Describe how it hurts"
   sum_up_emotionnal_sadness:
     - text: "It seems that you are in a bad mood... Do you want to talk about it in details?"
+    - text: "Sorry to hear that... Do you want to talk about it in details?"
+    - text: "Sorry to see you feel that way... Do you want to talk about it in details?"
   sum_up_emotional_hapiness:
     - text: "Great! You are in a good mood!"
+    - text: "Happy days!"
+    - text: "What a beautiful way to feel!"
   sum_up_fallback:
-    - text: "Sorry, I did not understand what you said...\n`DEBUG:This is a fallback for NLU part (intent fallback)`"
+    - text: "Sorry, I did not understand what you said...\n`This is a fallback for NLU part (intent fallback)`"
   sum_up_social:
     - text: "It seems that you talked about a social thing."
   sum_up_agree:
@@ -83,6 +101,14 @@ templates:
     - text: "I see, you disagree. I respect that."
   ask_why:
     - text: "So, why are you in a bad mood?"
+  sum_up_bye:
+    - text: "Goodbye, human friend!\n`Reset slots, your story is saved on the servor, a test reminder will be triggerd in 10 seconds!`"
+  sum_up_hello:
+    - text: "Hello!"
+    - text: "Hi, human friend!"
+    - text: "Nice to see you!"
+    - text: "Hey!"
+    - text: "Happy to see you!"
 
 actions:
  - sum_up_emotionnal_sadness
@@ -92,16 +118,21 @@ actions:
  - sum_up_agree
  - sum_up_disagree
  - ask_why
- - actions.ActionBye
- - actions.ActionHello
+ - sum_up_bye
+ - sum_up_hello
+ - actions.AskWhatPain
+ - actions.AskWhatSport
+ - actions.ResetSportSlots
+ - actions.ResetPainSlots
  - actions.ActionFillSlotsPain
  - actions.ActionFillSlotsSport
- - actions.ActionPainPeriod
- - actions.ActionSportPeriod
+ - actions.SetPeriod
  - actions.SumUpSLots
- - actions.ActionTestReminder
+ - actions.ChangeSessionReminder
  - actions.InitBot
  - actions.PainTopic
  - actions.SportTopic
  - actions.SetDuration
  - actions.SaveConv
+ - actions.UserReminder
+ - actions.SessionEndReminder

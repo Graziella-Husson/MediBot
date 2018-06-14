@@ -106,24 +106,6 @@
         ]
       },
       {
-        "text": "i feel light pain in my head",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 7,
-            "end": 12,
-            "value": "light",
-            "entity": "pain_level"
-          },
-          {
-            "start": 24,
-            "end": 28,
-            "value": "head",
-            "entity": "body_part"
-          }
-        ]
-      },
-      {
         "text": "the pain is mild since few hours",
         "intent": "pain",
         "entities": [
@@ -186,24 +168,6 @@
             "end": 33,
             "value": "every 5 minutes",
             "entity": "period"
-          }
-        ]
-      },
-      {
-        "text": "it feels Pricking is the head",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 9,
-            "end": 17,
-            "value": "Pricking",
-            "entity": "pain_level"
-          },
-          {
-            "start": 25,
-            "end": 29,
-            "value": "head",
-            "entity": "body_part"
           }
         ]
       },
@@ -780,24 +744,6 @@
             "end": 26,
             "value": "head",
             "entity": "body_part"
-          }
-        ]
-      },
-      {
-        "text": "My head is just killing me",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 3,
-            "end": 7,
-            "value": "head",
-            "entity": "body_part"
-          },
-          {
-            "start": 16,
-            "end": 23,
-            "value": "killing",
-            "entity": "pain_level"
           }
         ]
       },
@@ -2091,11 +2037,6 @@
         ]
       },
       {
-        "text": "ozeofhzoehfozeoh",
-        "intent": "fallback",
-        "entities": []
-      },
-      {
         "text": "aaaaaaazz",
         "intent": "fallback",
         "entities": []
@@ -2166,11 +2107,6 @@
         "entities": []
       },
       {
-        "text": "robot",
-        "intent": "fallback",
-        "entities": []
-      },
-      {
         "text": "you are a stupid robot",
         "intent": "fallback",
         "entities": []
@@ -2227,11 +2163,6 @@
       },
       {
         "text": "please do that",
-        "intent": "fallback",
-        "entities": []
-      },
-      {
-        "text": "yes, that is what i said",
         "intent": "fallback",
         "entities": []
       },
@@ -2671,30 +2602,6 @@
             "start": 27,
             "end": 30,
             "value": "arm",
-            "entity": "body_part"
-          },
-          {
-            "start": 37,
-            "end": 44,
-            "value": "4 hours",
-            "entity": "duration"
-          }
-        ]
-      },
-      {
-        "text": "I have a sharp pain in the leg since 4 hours",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 9,
-            "end": 14,
-            "value": "sharp",
-            "entity": "pain_level"
-          },
-          {
-            "start": 27,
-            "end": 30,
-            "value": "leg",
             "entity": "body_part"
           },
           {
@@ -3196,11 +3103,6 @@
         "entities": []
       },
       {
-        "text": ";",
-        "intent": "fallback",
-        "entities": []
-      },
-      {
         "text": "$$",
         "intent": "fallback",
         "entities": []
@@ -3484,24 +3386,6 @@
         "text": "my horse is ok",
         "intent": "fallback",
         "entities": []
-      },
-      {
-        "text": "the wound on my knee is scratchy",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 16,
-            "end": 20,
-            "value": "knee",
-            "entity": "body_part"
-          },
-          {
-            "start": 24,
-            "end": 32,
-            "value": "scratchy",
-            "entity": "pain_level"
-          }
-        ]
       },
       {
         "text": "The pain is nagging since one day",
@@ -4546,18 +4430,6 @@
         "entities": []
       },
       {
-        "text": "The pain is in my leg",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 18,
-            "end": 21,
-            "value": "leg",
-            "entity": "body_part"
-          }
-        ]
-      },
-      {
         "text": "My tooth is bloody killing, not sure I can wait until next week to get it fixed ",
         "intent": "pain",
         "entities": [
@@ -4583,18 +4455,6 @@
             "start": 7,
             "end": 12,
             "value": "tooth",
-            "entity": "body_part"
-          }
-        ]
-      },
-      {
-        "text": "My leg hurts",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 3,
-            "end": 6,
-            "value": "leg",
             "entity": "body_part"
           }
         ]
@@ -4662,48 +4522,6 @@
         "text": "rasa",
         "intent": "fallback",
         "entities": []
-      },
-      {
-        "text": "it's an intense pain in my arm",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 8,
-            "end": 15,
-            "value": "intense",
-            "entity": "pain_level"
-          },
-          {
-            "start": 27,
-            "end": 30,
-            "value": "arm",
-            "entity": "body_part"
-          }
-        ]
-      },
-      {
-        "text": "i have pain in my arm",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 18,
-            "end": 21,
-            "value": "arm",
-            "entity": "body_part"
-          }
-        ]
-      },
-      {
-        "text": "i have pain in my leg",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 18,
-            "end": 21,
-            "value": "leg",
-            "entity": "body_part"
-          }
-        ]
       },
       {
         "text": "I have cycled for 4 hours",
@@ -5609,11 +5427,6 @@
       {
         "text": "Nope",
         "intent": "disagree",
-        "entities": []
-      },
-      {
-        "text": "1235zéze5",
-        "intent": "fallback",
         "entities": []
       },
       {
@@ -6688,7 +6501,7 @@
             "start": 12,
             "end": 23,
             "value": "tai kwen do",
-            "entity": ""
+            "entity": "sport"
           }
         ]
       },
@@ -6851,6 +6664,887 @@
             "end": 10,
             "value": "days",
             "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I did tennis",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 6,
+            "end": 12,
+            "value": "tennis",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "In the arm",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "arm",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "Tennis",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Tennis",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "My abdomen hurts",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 3,
+            "end": 10,
+            "value": "abdomen",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "It's in my esophagus",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 11,
+            "end": 20,
+            "value": "esophagus",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "In the liver",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "liver",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "I have a sharp pain in the ankle since 4 hours",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "ankle",
+            "entity": "body_part"
+          },
+          {
+            "start": 39,
+            "end": 46,
+            "value": "4 hours",
+            "entity": "duration"
+          },
+          {
+            "start": 9,
+            "end": 14,
+            "value": "sharp",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "My appendix hurts",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 3,
+            "end": 11,
+            "value": "appendix",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "The pain is in my femur",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "femur",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "i have pain in my forehead",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "forehead",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "i have pain in my sternum",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "sternum",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "it's an intense pain in my thorax",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "intense",
+            "entity": "pain_level"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "value": "thorax",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "My neck is just killing me",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 3,
+            "end": 7,
+            "value": "neck",
+            "entity": "body_part"
+          },
+          {
+            "start": 16,
+            "end": 23,
+            "value": "killing",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "it feels Pricking is the pancreas",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 25,
+            "end": 33,
+            "value": "pancreas",
+            "entity": "body_part"
+          },
+          {
+            "start": 9,
+            "end": 17,
+            "value": "Pricking",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "i feel light pain in my coccyx",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 24,
+            "end": 30,
+            "value": "coccyx",
+            "entity": "body_part"
+          },
+          {
+            "start": 7,
+            "end": 12,
+            "value": "light",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "the wound on my jaw is scratchy",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 16,
+            "end": 19,
+            "value": "jaw",
+            "entity": "body_part"
+          },
+          {
+            "start": 23,
+            "end": 31,
+            "value": "scratchy",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "It's in my clavicle",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 11,
+            "end": 19,
+            "value": "clavicle",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "My uterus is not good, it hurts",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 3,
+            "end": 9,
+            "value": "uterus",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "My ear hurts since a few month",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 3,
+            "end": 6,
+            "value": "ear",
+            "entity": "body_part"
+          },
+          {
+            "start": 21,
+            "end": 30,
+            "value": "few month",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "Duh",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "a",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "b",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "c",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "d",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "e",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "f",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "g",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "h",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "i",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "j",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "k",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "m",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "n",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "o",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "p",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "q",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "r",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "s",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "t",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "u",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "v",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "w",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "x",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "y",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "z",
+        "intent": "fallback",
+        "entities": []
+      },
+      {
+        "text": "Heelloo",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Haay",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Youhou",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hey robot friend!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Yop!",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "hiii",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "CU",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "TTYL",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "bye robot friend!",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "bye bye ",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "ttyl!",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "cia ciao",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "byee",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "CU next time",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "Bye sir",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "later on",
+        "intent": "bye",
+        "entities": []
+      },
+      {
+        "text": "godmorning",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Youhou",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "hiii",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Hay",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "Yooooop",
+        "intent": "hello",
+        "entities": []
+      },
+      {
+        "text": "This is wonderful",
+        "intent": "emotional_hapiness",
+        "entities": []
+      },
+      {
+        "text": "Lovely!",
+        "intent": "emotional_hapiness",
+        "entities": []
+      },
+      {
+        "text": "I am happy!",
+        "intent": "emotional_hapiness",
+        "entities": []
+      },
+      {
+        "text": "Happy days",
+        "intent": "emotional_hapiness",
+        "entities": []
+      },
+      {
+        "text": "This a lovely way to feel!",
+        "intent": "emotional_hapiness",
+        "entities": []
+      },
+      {
+        "text": "I am so good",
+        "intent": "emotional_hapiness",
+        "entities": []
+      },
+      {
+        "text": "I'm so glad",
+        "intent": "emotional_hapiness",
+        "entities": []
+      },
+      {
+        "text": "There's no hope",
+        "intent": "emotional_sadness",
+        "entities": []
+      },
+      {
+        "text": "War never changes",
+        "intent": "emotional_sadness",
+        "entities": []
+      },
+      {
+        "text": "I can't live like this",
+        "intent": "emotional_sadness",
+        "entities": []
+      },
+      {
+        "text": "I want to stop everything",
+        "intent": "emotional_sadness",
+        "entities": []
+      },
+      {
+        "text": "All world is hell",
+        "intent": "emotional_sadness",
+        "entities": []
+      },
+      {
+        "text": "I'm depressed",
+        "intent": "emotional_sadness",
+        "entities": []
+      },
+      {
+        "text": "I feel that I am going to die",
+        "intent": "emotional_sadness",
+        "entities": []
+      },
+      {
+        "text": "So sad :'(",
+        "intent": "emotional_sadness",
+        "entities": []
+      },
+      {
+        "text": "I am crying",
+        "intent": "emotional_sadness",
+        "entities": []
+      },
+      {
+        "text": "I will go to the cinema",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I played video games with my best friend",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "That's because I missed the cinema session",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I did a barbecue",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I ate with my wife",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I ate with my husband",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "I feel abandonned",
+        "intent": "social",
+        "entities": []
+      },
+      {
+        "text": "Yep",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "I agree",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "I totally agree",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yes, I will",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Let's do it",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yes ok",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Yep",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "I agree with that",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "I will",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Will do",
+        "intent": "agree",
+        "entities": []
+      },
+      {
+        "text": "Niet",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "I disagree",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "I totally disagree",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "No, sorry",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Thanks but no",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Definitely NO",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "I disagree with that",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Never tell you that",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "Nein",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "No",
+        "intent": "disagree",
+        "entities": []
+      },
+      {
+        "text": "I feel a pain in my leg",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 20,
+            "end": 23,
+            "value": "leg",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "I feel a high pain in my shoulder",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 9,
+            "end": 13,
+            "value": "high",
+            "entity": "pain_level"
+          },
+          {
+            "start": 25,
+            "end": 33,
+            "value": "shoulder",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "I feel a sharp pain in the leg",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 27,
+            "end": 30,
+            "value": "leg",
+            "entity": "body_part"
+          },
+          {
+            "start": 9,
+            "end": 14,
+            "value": "sharp",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "1 hour",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "1 hour",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I'm not happy",
+        "intent": "emotional_sadness",
+        "entities": []
+      },
+      {
+        "text": "It's like something is burning inside my chest",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "burning",
+            "entity": "pain_level"
+          },
+          {
+            "start": 41,
+            "end": 46,
+            "value": "chest",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "Since yesterday",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 6,
+            "end": 15,
+            "value": "yesterday",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I did some squats",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "squats",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "I lift some weight",
+        "intent": "activity",
+        "entities": [
+          {
+            "start": 2,
+            "end": 18,
+            "value": "lift some weight",
+            "entity": "sport"
+          }
+        ]
+      },
+      {
+        "text": "In my heart",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 6,
+            "end": 11,
+            "value": "heart",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "I feel a pain in my heart",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "heart",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "Its hot",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 4,
+            "end": 7,
+            "value": "hot",
+            "entity": "pain_level"
           }
         ]
       }
