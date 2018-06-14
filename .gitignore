@@ -2,6 +2,7 @@ projects/
 test/
 total_word_feature_extractor.dat
 models/
+saves/
 .json
 ngrok
 new_data

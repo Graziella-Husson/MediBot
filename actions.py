@@ -44,6 +44,7 @@ class InitBot(Action):
 
     def get_current_session(self):
         global current_session
+        old = current_session
         now = dt.now()
         inter = abs(now-dt(2011, 1, 1))
         my_date= now
@@ -67,6 +68,8 @@ class InitBot(Action):
                                       int(date_el[3]),int(date_el[4]), int(date_el[5]))
             if str(date)== str(my_date):
                 current_session = i
+        if current_session == old:
+            print("DEAD")
 
     def get_current_reminder_times(self):
         global reminder_time, reminder_patient, reminder_end_session
