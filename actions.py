@@ -4,7 +4,7 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 from rasa_core.actions.action import Action
-from rasa_core.events import SlotSet, AllSlotsReset, ReminderScheduled, UserUtteranceReverted
+from rasa_core.events import SlotSet, AllSlotsReset, ReminderScheduled, UserUtteranceReverted, ConversationPaused
 from rasa_core.dispatcher import Button
 from datetime import datetime as dt
 from datetime import timedelta
@@ -69,7 +69,8 @@ class InitBot(Action):
             if str(date)== str(my_date):
                 current_session = i
         if current_session == old:
-            print("DEAD")
+            return True
+        return False
 
     def get_current_reminder_times(self):
         global reminder_time, reminder_patient, reminder_end_session
@@ -115,20 +116,23 @@ class InitBot(Action):
         return 'init'
         
     def run(self, dispatcher, tracker, domain):
-        self.get_current_session()
+        last_session = self.get_current_session()
+#        if last_session:
+#            dispatcher.utter_message("It was the last session! Goodbye and thank you! :smile:")
+#            return [AllSlotsReset(), ConversationPaused()]
         self.get_current_reminder_times()
         self.loadConfig()
-        print("Current session is : "+current_session)
+        #print("Current session is : "+current_session)
         #print(reminder_time)
-        end = config['sessions'][current_session]['end']
-        date_el = end.split(',')
-        date=dt(int(date_el[0]), int(date_el[1]),int(date_el[2]),
-                                  int(date_el[3]),int(date_el[4]), int(date_el[5]))
-        print("reminder change session scheduled at "+str(date))
-        print("reminder before change session scheduled at "+str(date - reminder_end_session))
-        return [AllSlotsReset(), 
-                ReminderScheduled("change_session_reminder", date, kill_on_user_message=False),
-                ReminderScheduled("session_end_reminder", date - reminder_end_session, kill_on_user_message=False)]
+#        end = config['sessions'][current_session]['end']
+#        date_el = end.split(',')
+#        date=dt(int(date_el[0]), int(date_el[1]),int(date_el[2]),
+#                                  int(date_el[3]),int(date_el[4]), int(date_el[5]))
+        #print("reminder change session scheduled at "+str(date))
+        #print("reminder before change session scheduled at "+str(date - reminder_end_session))
+        return [AllSlotsReset()] 
+#                ,ReminderScheduled("change_session_reminder", date, kill_on_user_message=False)]
+#                ,ReminderScheduled("session_end_reminder", date - reminder_end_session, kill_on_user_message=False)]
 
 ########################################################
 ###########         COMPLEX ACTIONS          ###########
@@ -141,8 +145,7 @@ class SaveConv(Action):
     def run(self, dispatcher, tracker, domain):
         global first
         if first == True:
-            action = InitBot()
-            tracker.follow_up_action = action
+            InitBot().run(dispatcher, tracker, domain)
             first = False
         id_user = tracker.sender_id
         idy = "./saves/"+str(id_user)+"/"+current_session
@@ -157,7 +160,7 @@ class SaveConv(Action):
         intent = tracker.latest_message.intent
         entities = tracker.latest_message.entities
         #nlu_infos = tracker.latest_message.parse_data
-        conv.write("{ '"+str(date)+"' : [{'intent':"+str(intent)+"}, {'entities':"+str(entities)+"}, {'text':"+str(response)+"}]},\n")
+        conv.write("{ '"+str(date)+"' : [{'intent':"+str(intent)+"}, {'entities':"+str(entities)+"}, {'text':'"+str(response)+"'}]},\n")
         conv.close()
         response1 = ("""`\tIntent : {}`
 `\tEntities : {}`""").format(intent, entities)
@@ -432,10 +435,13 @@ class AskWhatSport(Action):
     def run(self, dispatcher, tracker, domain):
         sport_period = tracker.get_slot("sport_period")
         distance = tracker.get_slot("distance")
-        buttons = [
-                    Button(title="Sport", payload="/activity{\"sport\":null}"),
-                    Button(title="Duration", payload="/activity{\"sport_duration\":null}")
-                ]
+        sport = tracker.get_slot("sport")
+        duration = tracker.get_slot("sport_duration")
+        buttons = []
+        if sport != None:
+            buttons.append(Button(title="Sport", payload="/activity{\"sport\":null}"))
+        if duration != None:
+            buttons.append(Button(title="Duration", payload="/activity{\"sport_duration\":null}"))
         if distance != None:
             buttons.append(Button(title="Distance", payload="/activity{\"distance\":null}"))
         if sport_period != None:
@@ -448,12 +454,19 @@ class AskWhatPain(Action):
         
     def run(self, dispatcher, tracker, domain):
         pain_period = tracker.get_slot("pain_period")
-        buttons = [
-                    Button(title="Level", payload="/pain{\"pain_level\":null}"),
-                    Button(title="Duration", payload="/pain{\"pain_duration\":null}"),
-                    Button(title="Body part", payload="/pain{\"body_part\":null}"),
-                    Button(title="Evolution", payload="/pain{\"pain_change\":null}")
-                ]
+        level = tracker.get_slot("pain_level")
+        duration = tracker.get_slot("pain_duration")
+        body_part = tracker.get_slot("body_part")
+        evolution = tracker.get_slot("pain_change")
+        buttons = []
+        if level != None:
+            buttons.append(Button(title="Level", payload="/pain{\"pain_level\":null}"))
+        if duration != None:
+            buttons.append(Button(title="Duration", payload="/pain{\"pain_duration\":null}"))
+        if body_part != None:
+            buttons.append(Button(title="Body part", payload="/pain{\"body_part\":null}"))
+        if evolution != None:
+            buttons.append(Button(title="Evolution", payload="/pain{\"pain_change\":null}"))
         if pain_period != None:
             buttons.append(Button(title="Period", payload="/pain{\"pain_period\":null}"))
         dispatcher.utter_button_message("Ok. So, tell me what's wrong? Click on a button or tell me above!", buttons)

@@ -102,7 +102,7 @@ templates:
   ask_why:
     - text: "So, why are you in a bad mood?"
   sum_up_bye:
-    - text: "Goodbye, human friend!\n`Reset slots, your story is saved on the servor, a test reminder will be triggerd in 10 seconds!`"
+    - text: "Goodbye, human friend!"
   sum_up_hello:
     - text: "Hello!"
     - text: "Hi, human friend!"

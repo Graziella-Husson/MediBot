@@ -2007,3 +2007,120 @@
     - sum_up_slots
     - action_check_slots_pain
     - sum_up_slots
+
+## Generated Story 5765629662883705030
+* pain{"body_part": "leg"}
+    - slot{"body_part": "leg"}
+    - save_conv
+    - init
+    - reset_slots
+    - reminder{"action": "change_session_reminder", "name": "33cd4866-7082-11e8-86a6-08002700c687", "date_time": "2018-06-14T16:33:00", "kill_on_user_msg": false}
+    - sum_up_slots
+    - action_check_slots_pain
+    - slot{"body_part": "leg"}
+    - slot{"requested_slot": "pain_level"}
+    - sum_up_slots
+* pain{"pain_level": "sharp"}
+    - slot{"pain_level": "sharp"}
+    - save_conv
+    - set_topic_pain
+    - slot{"topic": "pain"}
+    - sum_up_slots
+    - action_check_slots_pain
+    - slot{"pain_level": "sharp"}
+    - sum_up_slots
+* agree
+    - save_conv
+    - reset_slots_pain
+    - slot{"pain_duration": null}
+    - slot{"pain_level": null}
+    - slot{"body_part": null}
+    - slot{"pain_change": null}
+    - slot{"pain_period": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - sum_up_slots
+    - export
+
+## Generated Story -7898190671247152748
+* fallback
+    - save_conv
+    - init
+    - reset_slots
+    - sum_up_slots
+    - sum_up_fallback
+    - sum_up_slots
+    - export
+
+## Generated Story -5107910006725076745
+* activity
+    - save_conv
+    - init
+    - reset_slots
+    - sum_up_slots
+    - set_topic_sport
+    - slot{"topic": "sport"}
+    - sum_up_slots
+    - action_check_slots_sport
+    - slot{"requested_slot": "sport"}
+    - sum_up_slots
+* activity{"sport": "gym"}
+    - slot{"sport": "gym"}
+    - save_conv
+    - set_topic_sport
+    - slot{"topic": "sport"}
+    - sum_up_slots
+    - action_check_slots_sport
+    - slot{"sport": "gym"}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - ask_what_sport
+    - sum_up_slots
+* activity{"sport": null}
+    - slot{"sport": null}
+    - save_conv
+    - set_topic_sport
+    - slot{"topic": "sport"}
+    - sum_up_slots
+    - action_check_slots_sport
+    - slot{"requested_slot": "sport"}
+    - sum_up_slots
+* activity{"sport": "gym"}
+    - slot{"sport": "gym"}
+    - save_conv
+    - set_topic_sport
+    - slot{"topic": "sport"}
+    - sum_up_slots
+    - action_check_slots_sport
+    - slot{"sport": "gym"}
+    - sum_up_slots
+* agree
+    - save_conv
+    - reset_slots_sport
+    - slot{"sport_duration": null}
+    - slot{"sport_level": null}
+    - slot{"sport": null}
+    - slot{"distance": null}
+    - slot{"sport_period": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - sum_up_slots
+    - export
+
+## Generated Story -619997790470098379
+* hello
+    - save_conv
+    - init
+    - reset_slots
+    - sum_up_hello
+    - sum_up_slots
+    - export
+
+## Generated Story 443237145655768818
+* hello
+    - save_conv
+    - init
+    - reset_slots
+    - sum_up_hello
+    - sum_up_slots
