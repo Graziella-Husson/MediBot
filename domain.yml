@@ -27,6 +27,16 @@ slots:
     type: unfeaturized
   topic:
     type: unfeaturized
+  pain:
+      type: unfeaturized
+  activity:
+      type: unfeaturized
+  emotional_sadness:
+      type: unfeaturized
+  emotional_hapiness:
+      type: unfeaturized
+  social:
+      type: unfeaturized
 
 intents:
  - activity
@@ -79,6 +89,16 @@ templates:
   - text: "Does the pain have a period (e.g. every week)?"
   utter_ask_sport_period:
   - text: "Do you do your sport with a regular period (e.g. every week)?"
+  utter_ask_pain:
+  - text: "Can you talk about your pain?"
+  utter_ask_activity:
+  - text: "Can you talk about your physical activity?"
+  utter_ask_social:
+  - text: "Can you talk about something social?"
+  utter_ask_emotionnal_hapiness:
+  - text: "How do you feel? Happy?"
+  utter_ask_emotionnal_sadness:
+  - text: "How do you feel? Sad?"
   utter_ask_pain_level:
     - text: "I did not recognize any description of your pain. Can you tell me more about it? (e.g. is it a sharp pain?)."
     - text: "Can you describe your pain?"
@@ -130,9 +150,8 @@ actions:
  - actions.SumUpSLots
  - actions.ChangeSessionReminder
  - actions.InitBot
- - actions.PainTopic
- - actions.SportTopic
  - actions.SetDuration
  - actions.SaveConv
  - actions.UserReminder
  - actions.SessionEndReminder
+ - actions.CheckRequestedIntents

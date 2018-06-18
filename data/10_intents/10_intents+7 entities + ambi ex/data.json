@@ -7547,6 +7547,94 @@
             "entity": "pain_level"
           }
         ]
+      },
+      {
+        "text": "My heart is beating fast",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 3,
+            "end": 8,
+            "value": "heart",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "I like to tell you that i feel some pain today",
+        "intent": "pain",
+        "entities": []
+      },
+      {
+        "text": "I don 't feel well",
+        "intent": "emotional_sadness",
+        "entities": []
+      },
+      {
+        "text": "They feel heavy and intense",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 10,
+            "end": 15,
+            "value": "heavy",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "Painful sharp",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "sharp",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "Moderate",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 8,
+            "value": "Moderate",
+            "entity": "pain_level"
+          }
+        ]
+      },
+      {
+        "text": "I have pain in my legs . it is intense",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 31,
+            "end": 38,
+            "value": "intense",
+            "entity": "pain_level"
+          },
+          {
+            "start": 18,
+            "end": 22,
+            "value": "legs",
+            "entity": "body_part"
+          }
+        ]
+      },
+      {
+        "text": "sharp",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 0,
+            "end": 5,
+            "value": "sharp",
+            "entity": "pain_level"
+          }
+        ]
       }
     ]
   }

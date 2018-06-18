@@ -17,15 +17,18 @@ FormAction
 import yaml
 import os
 
-global config, obligatory_sport, obligatory_pain, reminder_time, current_session, first, reminder_patient
+global config, obligatory_sport, obligatory_pain, reminder_time, current_session, first, followed_intent, reminder_patient, obligatory_intent
 obligatory_pain=[]
 obligatory_sport=[]
+obligatory_intent=[]
+followed_intent=[]
 reminder_time = timedelta(seconds=0)
 reminder_patient = timedelta(seconds=0)
 reminder_end_session = timedelta(seconds=0)
 first = True
 config = yaml.load(open('config.yml'))
-current_session = "test"
+current_session = -1
+follow_in_current_session_plus = 1
 
 ########################################################
 ###########          INIT & CONFIG           ###########
@@ -33,7 +36,7 @@ current_session = "test"
 class InitBot(Action):
 
     def loadConfig(self):
-        global obligatory_sport, obligatory_pain
+        global obligatory_sport, obligatory_pain, obligatory_intent, followed_intent
         obligatory_pain=[]
         obligatory_sport=[]
         r=config['sessions'][current_session]['requested_slot']
@@ -41,10 +44,17 @@ class InitBot(Action):
             obligatory_pain.append(EntityFormField(i, i))
         for i in r['sport'].split(','):
             obligatory_sport.append(EntityFormField(i, i))
+        r=config['sessions'][current_session]['requested_intent']
+        obligatory_intent=[]
+        for i in r.split(','):
+            obligatory_intent.append(EntityFormField(i, i))
+        followed_intent=[]
+        r=config['sessions'][current_session]['followed_intent']
+        for i in r.split(','):
+            followed_intent.append(i)
 
     def get_current_session(self):
         global current_session
-        old = current_session
         now = dt.now()
         inter = abs(now-dt(2011, 1, 1))
         my_date= now
@@ -68,12 +78,16 @@ class InitBot(Action):
                                       int(date_el[3]),int(date_el[4]), int(date_el[5]))
             if str(date)== str(my_date):
                 current_session = i
-        if current_session == old:
+        try:
+            config['sessions'][int(current_session)+1]
+            current_session=int(current_session)
+            return False
+        except:
+            current_session=int(current_session)
             return True
-        return False
 
     def get_current_reminder_times(self):
-        global reminder_time, reminder_patient, reminder_end_session
+        global reminder_time, reminder_patient, reminder_end_session, follow_in_current_session_plus
         reminder = config['sessions'][current_session]['reminder_time']
         for i in reminder.keys():
             j = reminder[i]
@@ -110,7 +124,8 @@ class InitBot(Action):
             if i == 'days':
                 reminder_end_session+=timedelta(days=int(j))
             if i == 'hours':
-                reminder_end_session+=timedelta(hours=int(j))   
+                reminder_end_session+=timedelta(hours=int(j))  
+        follow_in_current_session_plus = int(config['follow_in_current_session_plus'])
     
     def name(self):
         return 'init'
@@ -122,7 +137,7 @@ class InitBot(Action):
 #            return [AllSlotsReset(), ConversationPaused()]
         self.get_current_reminder_times()
         self.loadConfig()
-        #print("Current session is : "+current_session)
+        print("Current session is : "+str(current_session))
         #print(reminder_time)
 #        end = config['sessions'][current_session]['end']
 #        date_el = end.split(',')
@@ -143,21 +158,36 @@ class SaveConv(Action):
         return 'save_conv'
         
     def run(self, dispatcher, tracker, domain):
-        global first
+        global first, config
         if first == True:
             InitBot().run(dispatcher, tracker, domain)
             first = False
         id_user = tracker.sender_id
-        idy = "./saves/"+str(id_user)+"/"+current_session
+        idy = "./saves/"+str(id_user)+"/"+str(current_session)
         try:
             conv = open(idy, 'a')
         except:
-            os.mkdir("saves") 
-            os.mkdir("saves/"+str(id_user)+"/") 
+            try:
+                os.mkdir("saves") 
+                os.mkdir("saves/"+str(id_user)+"/") 
+            except:
+                os.mkdir("saves/"+str(id_user)+"/") 
             conv = open(idy, 'a')  
         date = dt.now()
         response = tracker.latest_message.text
         intent = tracker.latest_message.intent
+        intent_name = intent['name']
+        if intent_name in followed_intent:
+            new_session = int(current_session)+follow_in_current_session_plus
+            try:
+                old = config['sessions'][new_session]['requested_intent']
+                if intent_name not in old:
+                    config['sessions'][new_session]['requested_intent'] = old+","+intent_name
+                with open('config.yml', 'w') as outfile:
+                    yaml.dump(config, outfile, default_flow_style=False)
+            except:
+                print("last session!")
+        tracker.update(SlotSet("topic",intent_name))
         entities = tracker.latest_message.entities
         #nlu_infos = tracker.latest_message.parse_data
         conv.write("{ '"+str(date)+"' : [{'intent':"+str(intent)+"}, {'entities':"+str(entities)+"}, {'text':'"+str(response)+"'}]},\n")
@@ -178,7 +208,7 @@ class SumUpSLots(Action):
         
     def run(self, dispatcher, tracker, domain):
           id_user = tracker.sender_id
-          idy = "./saves/"+str(id_user)+"/"+current_session
+          idy = "./saves/"+str(id_user)+"/"+str(current_session)
           try:
               conv = open(idy, 'a')
           except:
@@ -333,6 +363,20 @@ class ActionFillSlotsSport(FormAction):
             response += ". Is it right?"
         dispatcher.utter_message(response)
 
+class CheckRequestedIntents(FormAction):
+    RANDOMIZE = True
+    
+    @staticmethod
+    def required_fields():
+        return obligatory_intent
+    
+    def name(self):
+        return 'action_check_intents'
+    
+    def submit(self, dispatcher, tracker, domain):
+        dispatcher.utter_message("We talked about everything we had to!")
+        
+
 ########################################################
 ###########            RESET SLOTS           ###########
 ########################################################        
@@ -343,7 +387,7 @@ class ResetSportSlots(Action):
     def run(self, dispatcher, tracker, domain):
         dispatcher.utter_message("Saved!")
         # TODO: save to DB
-        return[SlotSet("sport_duration",None), SlotSet("sport_level",None), SlotSet("sport",None), SlotSet("distance",None), SlotSet("sport_period", None), SlotSet("topic", None), SlotSet("requested_slot", None)]
+        return[SlotSet("sport_duration",None), SlotSet("sport_level",None), SlotSet("sport",None), SlotSet("distance",None), SlotSet("sport_period", None), SlotSet("topic", None), SlotSet("requested_slot", None), SlotSet("activity",True)]
 
 class ResetPainSlots(Action):
     def name(self):
@@ -352,7 +396,7 @@ class ResetPainSlots(Action):
     def run(self, dispatcher, tracker, domain):
         dispatcher.utter_message("Saved!")
         # TODO: save to DB
-        return [SlotSet("pain_duration",None), SlotSet("pain_level",None), SlotSet("body_part",None), SlotSet("pain_change",None), SlotSet("pain_period",None), SlotSet("topic", None), SlotSet("requested_slot", None)]
+        return [SlotSet("pain_duration",None), SlotSet("pain_level",None), SlotSet("body_part",None), SlotSet("pain_change",None), SlotSet("pain_period",None), SlotSet("topic", None), SlotSet("requested_slot", None),SlotSet("pain",True)]
 
 ########################################################
 ###########           COMPLEX SETS           ###########
@@ -376,7 +420,7 @@ class SetPeriod(Action):
             if topic=="pain":
                 tracker.update(SlotSet("pain_period",period))
                 action = ActionFillSlotsPain()
-            elif topic=="sport":
+            elif topic=="activity":
                 tracker.update(SlotSet("sport_period",period))
                 action = ActionFillSlotsSport()
         tracker.trigger_follow_up_action(action)
@@ -401,29 +445,12 @@ class SetDuration(Action):
             if topic=="pain":
                 tracker.update(SlotSet("pain_duration",duration))
                 action = ActionFillSlotsPain()
-            elif topic=="sport":
+            elif topic=="activity":
                 tracker.update(SlotSet("sport_duration",duration))
                 action = ActionFillSlotsSport()
         #print(action)
         tracker.trigger_follow_up_action(action)
         tracker.update(SlotSet("duration",None))
-
-########################################################
-###########              TOPICS              ###########
-######################################################## 
-class SportTopic(Action):
-    def name(self):
-        return 'set_topic_sport'
-        
-    def run(self, dispatcher, tracker, domain):
-        return [SlotSet("topic","sport")]
-        
-class PainTopic(Action):
-    def name(self):
-        return 'set_topic_pain'
-        
-    def run(self, dispatcher, tracker, domain):
-        return [SlotSet("topic","pain")]
         
 ########################################################
 ###########             ASK WHAT             ###########
