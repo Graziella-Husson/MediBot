@@ -23,7 +23,7 @@
             "start": 14,
             "end": 20,
             "value": "tender",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 3,
@@ -41,7 +41,7 @@
             "start": 12,
             "end": 26,
             "value": "comes and goes",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -53,7 +53,7 @@
             "start": 12,
             "end": 19,
             "value": "strange",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 34,
@@ -83,7 +83,7 @@
             "start": 8,
             "end": 16,
             "value": "tends to",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -95,7 +95,7 @@
             "start": 9,
             "end": 13,
             "value": "mild",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 14,
@@ -113,7 +113,7 @@
             "start": 12,
             "end": 16,
             "value": "mild",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 23,
@@ -131,7 +131,7 @@
             "start": 7,
             "end": 17,
             "value": "flickering",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -143,7 +143,7 @@
             "start": 6,
             "end": 13,
             "value": "Pulsing",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 20,
@@ -161,7 +161,7 @@
             "start": 9,
             "end": 17,
             "value": "Flashing",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 18,
@@ -185,7 +185,7 @@
             "start": 7,
             "end": 13,
             "value": "cramps",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -197,7 +197,7 @@
             "start": 12,
             "end": 19,
             "value": "pulling",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 20,
@@ -221,7 +221,7 @@
             "start": 15,
             "end": 18,
             "value": "hot",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -239,7 +239,7 @@
             "start": 15,
             "end": 23,
             "value": "tingling",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -251,7 +251,7 @@
             "start": 11,
             "end": 16,
             "value": "itchy",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 3,
@@ -275,7 +275,7 @@
             "start": 12,
             "end": 16,
             "value": "sore",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -287,7 +287,7 @@
             "start": 6,
             "end": 13,
             "value": "vicious",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -299,7 +299,7 @@
             "start": 15,
             "end": 24,
             "value": "radiating",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -311,7 +311,7 @@
             "start": 13,
             "end": 24,
             "value": "penetrating",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -329,7 +329,7 @@
             "start": 12,
             "end": 17,
             "value": "tight",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -359,7 +359,7 @@
             "start": 12,
             "end": 19,
             "value": "tearing",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -377,7 +377,7 @@
             "start": 15,
             "end": 19,
             "value": "cold",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -395,7 +395,7 @@
             "start": 12,
             "end": 20,
             "value": "freezing",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -407,7 +407,7 @@
             "start": 14,
             "end": 22,
             "value": "crushing",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -419,7 +419,7 @@
             "start": 16,
             "end": 24,
             "value": "dragging",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -443,7 +443,7 @@
             "start": 0,
             "end": 5,
             "value": "tummy",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -455,7 +455,7 @@
             "start": 0,
             "end": 11,
             "value": "distressing",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -467,7 +467,7 @@
             "start": 16,
             "end": 20,
             "value": "hard",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -479,7 +479,7 @@
             "start": 11,
             "end": 18,
             "value": "intense",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -491,7 +491,7 @@
             "start": 8,
             "end": 16,
             "value": "horrible",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -503,7 +503,7 @@
             "start": 8,
             "end": 17,
             "value": "agonizing",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -515,7 +515,7 @@
             "start": 8,
             "end": 16,
             "value": "dreadful",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -527,7 +527,7 @@
             "start": 8,
             "end": 20,
             "value": "overwhelming",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -539,7 +539,7 @@
             "start": 8,
             "end": 19,
             "value": "devastating",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -563,7 +563,7 @@
             "start": 14,
             "end": 20,
             "value": "severe",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -575,7 +575,7 @@
             "start": 9,
             "end": 14,
             "value": "sharp",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -587,7 +587,7 @@
             "start": 15,
             "end": 22,
             "value": "cutting",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -599,7 +599,7 @@
             "start": 12,
             "end": 22,
             "value": "lacerating",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 26,
@@ -617,7 +617,7 @@
             "start": 12,
             "end": 20,
             "value": "pressing",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 24,
@@ -635,7 +635,7 @@
             "start": 12,
             "end": 23,
             "value": "Suffocating",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -653,7 +653,7 @@
             "start": 15,
             "end": 24,
             "value": "squeezing",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -665,7 +665,7 @@
             "start": 16,
             "end": 25,
             "value": "torturing",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -677,7 +677,7 @@
             "start": 21,
             "end": 25,
             "value": "dull",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -689,7 +689,7 @@
             "start": 6,
             "end": 15,
             "value": "suffering",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -701,7 +701,7 @@
             "start": 0,
             "end": 4,
             "value": "huge",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -713,7 +713,7 @@
             "start": 15,
             "end": 20,
             "value": "agony",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -725,7 +725,7 @@
             "start": 6,
             "end": 11,
             "value": "dying",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -737,7 +737,7 @@
             "start": 13,
             "end": 21,
             "value": "terrible",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 22,
@@ -755,7 +755,7 @@
             "start": 10,
             "end": 20,
             "value": "unbearable",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -767,7 +767,7 @@
             "start": 10,
             "end": 15,
             "value": "acute",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -779,7 +779,7 @@
             "start": 8,
             "end": 17,
             "value": "screaming",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -1954,7 +1954,7 @@
             "start": 9,
             "end": 12,
             "value": "bad",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 25,
@@ -1978,7 +1978,7 @@
             "start": 13,
             "end": 20,
             "value": "burning",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 3,
@@ -2274,7 +2274,7 @@
             "start": 34,
             "end": 44,
             "value": "acceptable",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 25,
@@ -2531,7 +2531,7 @@
             "start": 11,
             "end": 17,
             "value": "aching",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 3,
@@ -2584,7 +2584,7 @@
             "start": 3,
             "end": 8,
             "value": "sting",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -2596,7 +2596,7 @@
             "start": 9,
             "end": 14,
             "value": "sharp",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 27,
@@ -2620,7 +2620,7 @@
             "start": 23,
             "end": 28,
             "value": "awful",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 15,
@@ -2638,7 +2638,7 @@
             "start": 12,
             "end": 21,
             "value": "tolerable",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -2656,7 +2656,7 @@
             "start": 11,
             "end": 14,
             "value": "bad",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -2668,7 +2668,7 @@
             "start": 8,
             "end": 21,
             "value": "discomforting",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 35,
@@ -2692,7 +2692,7 @@
             "start": 12,
             "end": 22,
             "value": "noticeable",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -2925,7 +2925,7 @@
             "start": 32,
             "end": 35,
             "value": "bad",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 48,
@@ -3126,7 +3126,7 @@
             "start": 7,
             "end": 12,
             "value": "minor",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -3144,7 +3144,7 @@
             "start": 12,
             "end": 20,
             "value": "drilling",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -3330,7 +3330,7 @@
             "start": 10,
             "end": 23,
             "value": "unsupportable",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 36,
@@ -3354,7 +3354,7 @@
             "start": 40,
             "end": 45,
             "value": "sharp",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 0,
@@ -3378,7 +3378,7 @@
             "start": 0,
             "end": 8,
             "value": "annoying",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -3395,7 +3395,7 @@
             "start": 12,
             "end": 19,
             "value": "nagging",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 26,
@@ -3413,7 +3413,7 @@
             "start": 7,
             "end": 16,
             "value": "frightful",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 29,
@@ -3431,7 +3431,7 @@
             "start": 12,
             "end": 19,
             "value": "gnawing",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -3443,7 +3443,7 @@
             "start": 9,
             "end": 17,
             "value": "shooting",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 29,
@@ -3461,7 +3461,7 @@
             "start": 6,
             "end": 14,
             "value": "writhing",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 48,
@@ -3479,7 +3479,7 @@
             "start": 9,
             "end": 18,
             "value": "sickening",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 19,
@@ -3497,7 +3497,7 @@
             "start": 16,
             "end": 22,
             "value": "severe",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 36,
@@ -3521,7 +3521,7 @@
             "start": 33,
             "end": 43,
             "value": "unbearable",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -4443,7 +4443,7 @@
             "start": 12,
             "end": 26,
             "value": "bloody killing",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -4549,7 +4549,7 @@
             "start": 12,
             "end": 17,
             "value": "sharp",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -6330,7 +6330,7 @@
             "start": 11,
             "end": 16,
             "value": "sharp",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -6342,7 +6342,7 @@
             "start": 12,
             "end": 17,
             "value": "sharp",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 30,
@@ -6759,7 +6759,7 @@
             "start": 9,
             "end": 14,
             "value": "sharp",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -6819,7 +6819,7 @@
             "start": 8,
             "end": 15,
             "value": "intense",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 27,
@@ -6843,7 +6843,7 @@
             "start": 16,
             "end": 23,
             "value": "killing",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -6861,7 +6861,7 @@
             "start": 9,
             "end": 17,
             "value": "Pricking",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -6879,7 +6879,7 @@
             "start": 7,
             "end": 12,
             "value": "light",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -6897,7 +6897,7 @@
             "start": 23,
             "end": 31,
             "value": "scratchy",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -7413,7 +7413,7 @@
             "start": 9,
             "end": 13,
             "value": "high",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 25,
@@ -7437,7 +7437,7 @@
             "start": 9,
             "end": 14,
             "value": "sharp",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -7466,7 +7466,7 @@
             "start": 23,
             "end": 30,
             "value": "burning",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 41,
@@ -7544,7 +7544,7 @@
             "start": 4,
             "end": 7,
             "value": "hot",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -7578,7 +7578,7 @@
             "start": 10,
             "end": 15,
             "value": "heavy",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -7590,7 +7590,7 @@
             "start": 8,
             "end": 13,
             "value": "sharp",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -7602,7 +7602,7 @@
             "start": 0,
             "end": 8,
             "value": "Moderate",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -7614,7 +7614,7 @@
             "start": 31,
             "end": 38,
             "value": "intense",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           },
           {
             "start": 18,
@@ -7632,7 +7632,7 @@
             "start": 0,
             "end": 5,
             "value": "sharp",
-            "entity": "pain_level"
+            "entity": "pain_desc"
           }
         ]
       }

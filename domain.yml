@@ -11,6 +11,8 @@ slots:
     type: text 
   pain_level:
     type: text
+  pain_desc:
+    type: text
   duration:
     type: text
   pain_change:
@@ -26,17 +28,17 @@ slots:
   requested_slot:
     type: unfeaturized
   topic:
-    type: unfeaturized
+    type: text
   pain:
-      type: unfeaturized
+      type: text
   activity:
-      type: unfeaturized
+      type: text
   emotional_sadness:
-      type: unfeaturized
+      type: text
   emotional_hapiness:
-      type: unfeaturized
+      type: text
   social:
-      type: unfeaturized
+      type: text
 
 intents:
  - activity
@@ -54,7 +56,7 @@ entities:
  - sport
  - body_part
  - duration
- - pain_level
+ - pain_desc
  - distance
  - period
  - pain_change
@@ -99,7 +101,7 @@ templates:
   - text: "How do you feel? Happy?"
   utter_ask_emotionnal_sadness:
   - text: "How do you feel? Sad?"
-  utter_ask_pain_level:
+  utter_ask_pain_desc:
     - text: "I did not recognize any description of your pain. Can you tell me more about it? (e.g. is it a sharp pain?)."
     - text: "Can you describe your pain?"
     - text: "Describe how it hurts"
@@ -111,8 +113,6 @@ templates:
     - text: "Great! You are in a good mood!"
     - text: "Happy days!"
     - text: "What a beautiful way to feel!"
-  sum_up_fallback:
-    - text: "Sorry, I did not understand what you said...\n`This is a fallback for NLU part (intent fallback)`"
   sum_up_social:
     - text: "It seems that you talked about a social thing."
   sum_up_agree:
@@ -133,7 +133,6 @@ templates:
 actions:
  - sum_up_emotionnal_sadness
  - sum_up_emotional_hapiness
- - sum_up_fallback
  - sum_up_social
  - sum_up_agree
  - sum_up_disagree
@@ -155,3 +154,5 @@ actions:
  - actions.UserReminder
  - actions.SessionEndReminder
  - actions.CheckRequestedIntents
+ - actions.Fallback
+ - actions.UserReminderLittle
