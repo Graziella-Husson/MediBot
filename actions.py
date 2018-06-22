@@ -14,18 +14,21 @@ from textblob import TextBlob
 
 from rasa_core.actions.forms import (
 EntityFormField,
-FormAction
+FormAction,
+BooleanFormField
 )
 
 import yaml
 import os
 
-global config, obligatory_sport, obligatory_pain, reminder_time, current_session, first, followed_intent, reminder_patient, obligatory_intent, stopword, emergency, nickname, reminder_patient_little
+global config, obligatory_sport, obligatory_pain, current_session, first, followed_intent, reminder_patient, obligatory_intent, stopword, emergency, nickname, reminder_patient_little, count_user_reminder, obligatory_social, obligatory_happy, obligatory_sadness
 obligatory_pain=[]
 obligatory_sport=[]
 obligatory_intent=[]
 followed_intent=[]
-reminder_time = timedelta(seconds=0)
+obligatory_social =[]
+obligatory_happy =[]
+obligatory_sadness=[]
 reminder_patient = timedelta(seconds=0)
 reminder_patient_little = timedelta(seconds=0)
 reminder_end_session = timedelta(seconds=0)
@@ -37,6 +40,9 @@ stopword = "stop"
 emergency = "help"
 nickname = "bot"
 exitword = "exit"
+count_user_reminder = 0
+count_user_reminder_max = 10
+global_score = 0
 
 ########################################################
 ###########          INIT & CONFIG           ###########
@@ -44,14 +50,20 @@ exitword = "exit"
 class InitBot(Action):
 
     def loadConfig(self):
-        global obligatory_sport, obligatory_pain, obligatory_intent, followed_intent, stopword, emergency, nickname, exitword
+        global obligatory_sport, obligatory_pain, obligatory_intent, followed_intent, stopword, emergency, nickname, exitword, count_user_reminder_max, count_user_reminder
         obligatory_pain=[]
         obligatory_sport=[]
         r=config['sessions'][current_session]['requested_slot']
-        for i in r['pain'].split(','):
-            obligatory_pain.append(EntityFormField(i, i))
-        for i in r['sport'].split(','):
-            obligatory_sport.append(EntityFormField(i, i))
+        try:
+            for i in r['pain'].split(','):
+                obligatory_pain.append(EntityFormField(i, i))
+        except:
+            pass
+        try:
+            for i in r['sport'].split(','):
+                obligatory_sport.append(EntityFormField(i, i))
+        except:
+            pass
         r=config['sessions'][current_session]['requested_intent']
         obligatory_intent=[]
         for i in r.split(','):
@@ -64,6 +76,8 @@ class InitBot(Action):
         emergency=config['emergency']
         nickname=config['nickname']
         exitword=config['exit']
+        count_user_reminder = 0
+        count_user_reminder_max = config['count_user_reminder_max']
 
     def get_current_session(self):
         global current_session
@@ -99,19 +113,7 @@ class InitBot(Action):
             return True
 
     def get_current_reminder_times(self):
-        global reminder_time, reminder_patient, reminder_end_session, follow_in_current_session_plus,reminder_patient_little
-        reminder = config['sessions'][current_session]['reminder_time']
-        for i in reminder.keys():
-            j = reminder[i]
-            if i == 'minutes':
-                reminder_time+=timedelta(minutes=int(j))
-            if i == 'weeks':
-                reminder_time+=timedelta(weeks=int(j))
-            if i == 'days':
-                reminder_time+=timedelta(days=int(j))
-            if i == 'hours':
-                reminder_time+=timedelta(hours=int(j))
-        
+        global reminder_patient, reminder_end_session, follow_in_current_session_plus,reminder_patient_little
         reminder_patient_config = config['reminder_patient']
         reminder_patient = timedelta(seconds=0)
         for i in reminder_patient_config.keys():
@@ -164,7 +166,6 @@ class InitBot(Action):
         self.get_current_reminder_times()
         self.loadConfig()
         print("Current session is : "+str(current_session))
-        #print(reminder_time)
         end = config['sessions'][current_session]['end']
         date_el = end.split(',')
         date=dt(int(date_el[0]), int(date_el[1]),int(date_el[2]),
@@ -185,9 +186,9 @@ class SaveConv(Action):
         return 'save_conv'
         
     def run(self, dispatcher, tracker, domain):
-        global first, config
+        global first, config, count_user_reminder
         if first == True:
-            InitBot().run(dispatcher, tracker, domain)
+            to_return = InitBot().run(dispatcher, tracker, domain)
             dispatcher.utter_message("Nice to meet you! My name is "+nickname)
             first = False
         id_user = tracker.sender_id
@@ -235,12 +236,15 @@ class SaveConv(Action):
         elif response == exitword:
             dispatcher.utter_message("Talk to you later.")            
             tracker.follow_up_action = ActionListen()
-            #return [ReminderScheduled("user_reminder", dt.now() + reminder_patient, kill_on_user_message=True)]
+            count_user_reminder = 0
+            to_return.append(ReminderScheduled("user_reminder", dt.now() + reminder_patient, kill_on_user_message=True))
+            return to_return
         
         else:
-            a=0
-            #return [ReminderScheduled("user_reminder_little", dt.now() + reminder_patient_little,kill_on_user_message=True)]
-            #return [ReminderScheduled("user_reminder", dt.now() + reminder_patient, kill_on_user_message=True)]
+            count_user_reminder = 0
+            to_return.append(ReminderScheduled("user_reminder_little", dt.now() + reminder_patient_little,kill_on_user_message=True))
+            to_return.append(ReminderScheduled("user_reminder", dt.now() + reminder_patient, kill_on_user_message=True))
+            return to_return
         
             
 class SumUpSLots(Action):
@@ -275,11 +279,12 @@ class SumUpSLots(Action):
           distance = tracker.get_slot("distance")
           pain_period = tracker.get_slot("pain_period")
           sport_period = tracker.get_slot("sport_period")
+          activity_hard = tracker.get_slot("activity_hard")
           topic = tracker.get_slot("topic")
           response = ("""`\ttopic = {}, requested_slot = {},`
-`\tactivity = {}, sport = {}, sport_duration = {}, sport_period = {},`
+`\tactivity = {}, sport = {}, sport_duration = {}, sport_period = {}, activity_hard = {},`
 `\tpain = {}, pain_duration = {}, pain_desc = {}, body_part = {}, pain_change = {}, pain_period = {}, pain_level = {},` 
-`\tdistance = {}, period = {}, duration = {}`""").format(topic,requested_slot,activity,sport, sport_duration, sport_period, pain, pain_duration, pain_desc, body_part, pain_change, pain_period, pain_level, distance, period, duration)
+`\tdistance = {}, period = {}, duration = {}`""").format(topic,requested_slot,activity,sport, sport_duration, sport_period, activity_hard, pain, pain_duration, pain_desc, body_part, pain_change, pain_period, pain_level, distance, period, duration)
           dispatcher.utter_message(response)
           conv.write("{ '"+str(date)+"' : [{'text': '"+response+"'}]},\n")
           conv.close()      
@@ -292,30 +297,43 @@ class ChangeSessionReminder(Action):
         return 'change_session_reminder'
         
     def run(self, dispatcher, tracker, domain):
+        global global_score
         #TODO: send a notification instead
-        response = ("We just changed session! :smile:\nNow, let's talk!")
-        dispatcher.utter_message(response)
         unacomplished = []
         for i in obligatory_intent:
             slot_name = i.slot_name
             j = tracker.get_slot(slot_name)
             if j == None:
                 unacomplished.append(slot_name)
-        #TODO: send a notif saying missing intents
-        response = ("The following intents were not broached : ")
-        response+=str(unacomplished)
+        #TODO: save global score in DB
+        response = ("This session score was of "+str(global_score)+" points.")
         dispatcher.utter_message(response)
-        InitBot().run(dispatcher, tracker, domain)
+        global_score = 0
+        #TODO: send a notif saying missing intents
+        if len(unacomplished)>0:
+            response = ("The following intents were not broached : ")
+            response+=str(unacomplished)
+            dispatcher.utter_message(response)
+        to_return = InitBot().run(dispatcher, tracker, domain)
+        response = ("We just changed session! :smile:\nNow, let's talk!")
+        dispatcher.utter_message(response)
+        return to_return
           
 class UserReminder(Action):
     def name(self):
         return 'user_reminder'
         
     def run(self, dispatcher, tracker, domain):
+        global count_user_reminder
         #TODO : Send a notif instead
-          response = ("Hey! It's been a while! We have to talk about you :smile:")
-          dispatcher.utter_message(response)      
-          return [ReminderScheduled("user_reminder", dt.now() + reminder_patient, kill_on_user_message=True)]
+        response = ("Hey! It's been a while! We have to talk about you :smile:")
+        dispatcher.utter_message(response)   
+        count_user_reminder+=1
+        if count_user_reminder > count_user_reminder_max:
+         #TODO : Send a notif instead
+            response = ("It seems that you did not response for "+str(count_user_reminder)+" times. I contacted someone. I hope you're ok.")
+            dispatcher.utter_message(response)   
+        #return [ReminderScheduled("user_reminder", dt.now() + reminder_patient, kill_on_user_message=True)]
         
           
 class SessionEndReminder(Action):
@@ -365,6 +383,7 @@ class ActionFillSlotsPain(FormAction):
         return 'action_check_slots_pain'
     
     def submit(self, dispatcher, tracker, domain):
+        global global_score
         level = tracker.get_slot("pain_level")
         if not level == "Incorrect":
             pain_duration = tracker.get_slot("pain_duration")
@@ -382,6 +401,12 @@ class ActionFillSlotsPain(FormAction):
                     level = get_pain_level(pain_desc)                
                     tracker.update(SlotSet("pain_level",level))
                     #TODO : do something if None
+                    if level=='severe':
+                        global_score+=1
+                    elif level=='moderate':
+                        global_score+=2
+                    elif level=='mild':
+                        global_score+=3
                 response += " you have some {} pain (it's considered has a {} pain)".format(pain_desc, level)
                 something = True
             if body_part != None:
@@ -429,6 +454,7 @@ class ActionFillSlotsSport(FormAction):
         return 'action_check_slots_sport'
     
     def submit(self, dispatcher, tracker, domain): 
+        global global_score
         sport_level = tracker.get_slot("sport_level")
         if not sport_level == "Incorrect":
             sport_duration = tracker.get_slot("sport_duration")
@@ -437,7 +463,7 @@ class ActionFillSlotsSport(FormAction):
             distance = tracker.get_slot("distance")
             sport = (TextBlob(sport).correct())
             tracker.update(SlotSet("sport",sport))
-            
+            activity_hard = tracker.get_slot("activity_hard")
             something= False
             response = "To sum up,"
             if sport != None:
@@ -446,6 +472,12 @@ class ActionFillSlotsSport(FormAction):
                     sport_level = get_physical_activity_level(sport)
                     tracker.update(SlotSet("sport_level",sport_level))
                     #TODO: do something if None
+                    if sport_level=='little':
+                        global_score+=1
+                    elif sport_level=='moderate':
+                        global_score+=2
+                    elif sport_level=='vigorous':
+                        global_score+=3
                 response += " you did some {} physical activity. The sport detected is {}".format(sport_level,sport)
                 something = True
             if sport_duration != None:
@@ -463,6 +495,11 @@ class ActionFillSlotsSport(FormAction):
                 tracker.update(SlotSet("sport_period",sport_period))
                 response +=" the period/recurrence detected is {}".format(sport_period)
                 something = True
+            if activity_hard != None:
+                if activity_hard:
+                    response +=" your activity was hard because of your general health"
+                else:
+                    response +=" your general health did not make your activity harder"
             if not something:
                 response+= " you did some physical activities."
                 # TODO: save in database
@@ -490,6 +527,55 @@ class CheckRequestedIntents(FormAction):
     
     def submit(self, dispatcher, tracker, domain):
         dispatcher.utter_message("We talked about everything we had to!")
+
+class Sadness(FormAction):
+    RANDOMIZE = True
+    
+    @staticmethod
+    def required_fields():
+        return obligatory_sadness
+        
+    def name(self):
+        return 'sum_up_emotionnal_sadness'
+        
+    def submit(self, dispatcher, tracker, domain):
+        global global_score
+        global_score+=1
+        response = "It seems that you are in a bad mood... Do you want to talk about it in details?"
+        dispatcher.utter_message(response)
+      
+class Happy(FormAction):
+    RANDOMIZE = True
+    
+    @staticmethod
+    def required_fields():
+        return obligatory_happy
+        
+    def name(self):
+        return 'sum_up_emotional_hapiness'
+        
+    def submit(self, dispatcher, tracker, domain):
+        global global_score
+        global_score+=3
+        response = "Great! You are in a good mood!"
+        dispatcher.utter_message(response)
+
+class Social(FormAction):
+    RANDOMIZE = True
+    
+    @staticmethod
+    def required_fields():
+        return obligatory_social
+        
+    def name(self):
+        return 'sum_up_social'
+        
+    def submit(self, dispatcher, tracker, domain):
+        global global_score
+        global_score+=2
+        response = "It seems that you talked about a social thing."
+        dispatcher.utter_message(response)
+        
         
 
 ########################################################
@@ -502,7 +588,7 @@ class ResetSportSlots(Action):
     def run(self, dispatcher, tracker, domain):
         dispatcher.utter_message("Saved!")
         # TODO: save to DB
-        return[SlotSet("sport_duration",None), SlotSet("sport_level",None), SlotSet("sport",None), SlotSet("distance",None), SlotSet("sport_period", None), SlotSet("topic", None), SlotSet("requested_slot", None), SlotSet("activity",True)]
+        return[SlotSet("activity_hard",None), SlotSet("sport_duration",None), SlotSet("sport_level",None), SlotSet("sport",None), SlotSet("distance",None), SlotSet("sport_period", None), SlotSet("topic", None), SlotSet("requested_slot", None), SlotSet("activity",True)]
 
 class ResetPainSlots(Action):
     def name(self):
@@ -583,6 +669,7 @@ class AskWhatSport(Action):
         distance = tracker.get_slot("distance")
         sport = tracker.get_slot("sport")
         duration = tracker.get_slot("sport_duration")
+        activity_hard = tracker.get_slot("activity_hard")
         buttons = []
         if sport != None:
             buttons.append(Button(title="Sport", payload="/activity{\"sport\":null}"))
@@ -593,6 +680,8 @@ class AskWhatSport(Action):
             buttons.append(Button(title="Distance", payload="/activity{\"distance\":null}"))
         if sport_period != None:
             buttons.append(Button(title="Period", payload="/activity{\"sport_period\":null}"))
+        if activity_hard != None:
+            buttons.append(Button(title="Hardness", payload="/activity{\"activity_hard\":null}"))            
         dispatcher.utter_button_message("Ok. So, tell me what's wrong? Click on a button or tell me above!", buttons)
         
 class AskWhatPain(Action):

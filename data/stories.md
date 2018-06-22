@@ -2838,7 +2838,178 @@
     - sum_up_slots
     - export
 
+## Generated Story -4638856733112731626
+* activity{"duration": "1h", "sport": "gym"}
+    - slot{"duration": "1h"}
+    - slot{"sport": "gym"}
+    - slot{"topic": "activity"}
+    - save_conv
+    - sum_up_slots
+    - slot{"sport_duration": "1h"}
+    - slot{"duration": null}
+    - action_duration
+    - action_check_slots_sport
+    - slot{"sport": "gym"}
+    - slot{"requested_slot": "activity_hard"}
+    - sum_up_slots
+* activity{"activity_hard": false}
+    - slot{"activity_hard": false}
+    - slot{"topic": "activity"}
+    - save_conv
+    - action_check_slots_sport
+    - slot{"activity_hard": false}
+    - sum_up_slots
+* agree
+    - slot{"topic": "agree"}
+    - save_conv
+    - reset_slots_sport
+    - slot{"activity_hard": null}
+    - slot{"sport_duration": null}
+    - slot{"sport_level": null}
+    - slot{"sport": null}
+    - slot{"distance": null}
+    - slot{"sport_period": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"activity": true}
+    - sum_up_slots
+    - action_check_intents
+    - slot{"requested_slot": "pain"}
+    - sum_up_slots
 
+## Generated Story -7443025511629933735
+* activity{"sport": "gym", "duration": "1h"}
+    - slot{"duration": "1h"}
+    - slot{"sport": "gym"}
+    - slot{"topic": "activity"}
+    - save_conv
+    - sum_up_slots
+    - slot{"sport_duration": "1h"}
+    - slot{"duration": null}
+    - action_duration
+    - action_check_slots_sport
+    - slot{"sport": "gym"}
+    - slot{"requested_slot": "activity_hard"}
+    - sum_up_slots
+* activity{"activity_hard": true}
+    - slot{"activity_hard": true}
+    - slot{"topic": "activity"}
+    - save_conv
+    - action_check_slots_sport
+    - slot{"activity_hard": true}
+    - sum_up_slots
+* agree
+    - slot{"topic": "agree"}
+    - save_conv
+    - reset_slots_sport
+    - slot{"activity_hard": null}
+    - slot{"sport_duration": null}
+    - slot{"sport_level": null}
+    - slot{"sport": null}
+    - slot{"distance": null}
+    - slot{"sport_period": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"activity": true}
+    - sum_up_slots
+    - action_check_intents
+    - slot{"requested_slot": "pain"}
+    - sum_up_slots
+* activity{"sport": "gym", "duration": "1h"}
+    - slot{"duration": "1h"}
+    - slot{"sport": "gym"}
+    - slot{"topic": "activity"}
+    - save_conv
+    - sum_up_slots
+    - slot{"sport_duration": "1h"}
+    - slot{"duration": null}
+    - action_duration
+    - action_check_slots_sport
+    - slot{"sport": "gym"}
+    - slot{"requested_slot": "activity_hard"}
+    - sum_up_slots
+* activity{"activity_hard": false}
+    - slot{"activity_hard": false}
+    - slot{"topic": "activity"}
+    - save_conv
+    - action_check_slots_sport
+    - slot{"activity_hard": false}
+    - sum_up_slots
+* agree
+    - slot{"topic": "agree"}
+    - save_conv
+    - reset_slots_sport
+    - slot{"activity_hard": null}
+    - slot{"sport_duration": null}
+    - slot{"sport_level": null}
+    - slot{"sport": null}
+    - slot{"distance": null}
+    - slot{"sport_period": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"activity": true}
+    - sum_up_slots
+    - action_check_intents
+    - slot{"requested_slot": "pain"}
+    - sum_up_slots
+* activity{"sport": "gym", "duration": "1h"}
+    - slot{"duration": "1h"}
+    - slot{"sport": "gym"}
+    - slot{"topic": "activity"}
+    - save_conv
+    - sum_up_slots
+    - slot{"sport_duration": "1h"}
+    - slot{"duration": null}
+    - action_duration
+    - action_check_slots_sport
+    - slot{"sport": "gym"}
+    - slot{"requested_slot": "activity_hard"}
+    - sum_up_slots
+* activity{"activity_hard": false}
+    - slot{"activity_hard": false}
+    - slot{"topic": "activity"}
+    - save_conv
+    - action_check_slots_sport
+    - slot{"activity_hard": false}
+    - sum_up_slots
+* disagree
+    - slot{"topic": "disagree"}
+    - save_conv
+    - ask_what_sport
+    - sum_up_slots
+* activity{"activity_hard": null}
+    - slot{"activity_hard": null}
+    - slot{"topic": "activity"}
+    - save_conv
+    - sum_up_slots
+    - action_check_slots_sport
+    - slot{"requested_slot": "activity_hard"}
+    - sum_up_slots
+* activity{"activity_hard": true}
+    - slot{"activity_hard": true}
+    - slot{"topic": "activity"}
+    - save_conv
+    - action_check_slots_sport
+    - slot{"activity_hard": true}
+    - sum_up_slots
+* agree
+    - slot{"topic": "agree"}
+    - save_conv
+    - reset_slots_sport
+    - slot{"activity_hard": null}
+    - slot{"sport_duration": null}
+    - slot{"sport_level": null}
+    - slot{"sport": null}
+    - slot{"distance": null}
+    - slot{"sport_period": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"activity": true}
+    - sum_up_slots
+    - action_check_intents
+    - slot{"requested_slot": "pain"}
+    - sum_up_slots
+    - export
 
 
 

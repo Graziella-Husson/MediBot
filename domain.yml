@@ -39,6 +39,8 @@ slots:
       type: text
   social:
       type: text
+  activity_hard:
+      type: bool
 
 intents:
  - activity
@@ -62,6 +64,13 @@ entities:
  - pain_change
 
 templates:
+  utter_ask_boolean_activity_hard:
+  - text: "Was your physical activity hard to perform because of your general health?"
+    buttons:
+    - title: "Yes"
+      payload: /activity{"activity_hard":true}
+    - title: "No"
+      payload: /activity{"activity_hard":false}
   utter_ask_sport:
     - text: "I did not recognize any sport in what you said. Can you tell me more?"
     - text: "Can you tell me which sport you did?"
@@ -105,16 +114,6 @@ templates:
     - text: "I did not recognize any description of your pain. Can you tell me more about it? (e.g. is it a sharp pain?)."
     - text: "Can you describe your pain?"
     - text: "Describe how it hurts"
-  sum_up_emotionnal_sadness:
-    - text: "It seems that you are in a bad mood... Do you want to talk about it in details?"
-    - text: "Sorry to hear that... Do you want to talk about it in details?"
-    - text: "Sorry to see you feel that way... Do you want to talk about it in details?"
-  sum_up_emotional_hapiness:
-    - text: "Great! You are in a good mood!"
-    - text: "Happy days!"
-    - text: "What a beautiful way to feel!"
-  sum_up_social:
-    - text: "It seems that you talked about a social thing."
   sum_up_agree:
     - text: "Glad you agree!"
   sum_up_disagree:
@@ -131,9 +130,6 @@ templates:
     - text: "Happy to see you!"
 
 actions:
- - sum_up_emotionnal_sadness
- - sum_up_emotional_hapiness
- - sum_up_social
  - sum_up_agree
  - sum_up_disagree
  - ask_why
@@ -156,3 +152,6 @@ actions:
  - actions.CheckRequestedIntents
  - actions.Fallback
  - actions.UserReminderLittle
+ - actions.Sadness
+ - actions.Happy
+ - actions.Social
