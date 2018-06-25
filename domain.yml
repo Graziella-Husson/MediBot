@@ -64,7 +64,7 @@ entities:
  - pain_change
 
 templates:
-  utter_ask_boolean_activity_hard:
+  utter_ask_activity_hard:
   - text: "Was your physical activity hard to perform because of your general health?"
     buttons:
     - title: "Yes"
