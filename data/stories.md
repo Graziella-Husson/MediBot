@@ -1932,6 +1932,111 @@
     - action_check_slots_pain
     - sum_up_slots
 
+## ReminderPatient
+    - user_reminder
+    - sum_up_slots
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_slots
+    - slot{"pain_duration": "1h"}
+    - action_duration
+    - slot{"duration": null}
+    - sum_up_slots
+    - action_check_slots_pain
+    - sum_up_slots
+
+## ReminderPatient
+    - user_reminder
+    - sum_up_slots
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_slots
+    - slot{"pain_duration": "1h"}
+    - action_duration
+    - slot{"duration": null}
+    - sum_up_slots
+    - action_check_slots_pain
+    - sum_up_slots
+
+## ReminderPatient
+    - user_reminder
+    - sum_up_slots
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_slots
+    - slot{"pain_duration": "1h"}
+    - action_duration
+    - slot{"duration": null}
+    - sum_up_slots
+    - action_check_slots_pain
+    - sum_up_slots
+
+## ReminderSession
+    - session_end_reminder
+    - sum_up_slots
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_slots
+    - slot{"pain_duration": "1h"}
+    - action_duration
+    - slot{"duration": null}
+    - sum_up_slots
+    - action_check_slots_pain
+    - sum_up_slots
+
+## ReminderSession
+    - session_end_reminder
+    - sum_up_slots
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_slots
+    - slot{"pain_duration": "1h"}
+    - action_duration
+    - slot{"duration": null}
+    - sum_up_slots
+    - action_check_slots_pain
+    - sum_up_slots
+
+## ReminderSession
+    - session_end_reminder
+    - sum_up_slots
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_slots
+    - slot{"pain_duration": "1h"}
+    - action_duration
+    - slot{"duration": null}
+    - sum_up_slots
+    - action_check_slots_pain
+    - sum_up_slots
+
+## ReminderSession
+    - session_end_reminder
+    - sum_up_slots
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_slots
+    - slot{"pain_duration": "1h"}
+    - action_duration
+    - slot{"duration": null}
+    - sum_up_slots
+    - action_check_slots_pain
+    - sum_up_slots
+
 ## ReminderSession
     - session_end_reminder
     - sum_up_slots
@@ -3054,6 +3159,150 @@
     - action_check_intents
     - slot{"requested_slot": "pain"}
     - sum_up_slots
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_slots
+    - slot{"pain_duration": "1h"}
+    - action_duration
+    - slot{"duration": null}
+    - sum_up_slots
+    - action_check_slots_pain
+    - sum_up_slots
+
+## Story 08
+	- change_session_reminder
+    - sum_up_slots 
+    - action_check_intents
+    - slot{"requested_slot": "pain"}
+    - sum_up_slots
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_slots
+    - slot{"pain_duration": "1h"}
+    - action_duration
+    - slot{"duration": null}
+    - sum_up_slots
+    - action_check_slots_pain
+    - sum_up_slots
+
+## Story 08
+	- change_session_reminder
+    - sum_up_slots 
+    - action_check_intents
+    - slot{"requested_slot": "pain"}
+    - sum_up_slots
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_slots
+    - slot{"pain_duration": "1h"}
+    - action_duration
+    - slot{"duration": null}
+    - sum_up_slots
+    - action_check_slots_pain
+    - sum_up_slots
+
+## Story 08
+	- change_session_reminder
+    - sum_up_slots 
+    - action_check_intents
+    - slot{"requested_slot": "pain"}
+    - sum_up_slots
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_slots
+    - slot{"pain_duration": "1h"}
+    - action_duration
+    - slot{"duration": null}
+    - sum_up_slots
+    - action_check_slots_pain
+    - sum_up_slots
+
+## Story 08
+	- change_session_reminder
+    - sum_up_slots 
+    - action_check_intents
+    - slot{"requested_slot": "pain"}
+    - sum_up_slots 
+	- change_session_reminder
+    - sum_up_slots 
+    - action_check_intents
+    - slot{"requested_slot": "pain"}
+    - sum_up_slots 
+
+## Story 08
+	- change_session_reminder
+    - sum_up_slots 
+    - action_check_intents
+    - slot{"requested_slot": "pain"}
+    - sum_up_slots
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_slots
+    - slot{"pain_duration": "1h"}
+    - action_duration
+    - slot{"duration": null}
+    - sum_up_slots
+    - action_check_slots_pain
+    - sum_up_slots
+
+## Story 09
+	- user_reminder_little
+    - sum_up_slots 
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_slots
+    - slot{"pain_duration": "1h"}
+    - action_duration
+    - slot{"duration": null}
+    - sum_up_slots
+    - action_check_slots_pain
+    - sum_up_slots
+
+## Story 09
+	- user_reminder_little
+    - sum_up_slots 
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_slots
+    - slot{"pain_duration": "1h"}
+    - action_duration
+    - slot{"duration": null}
+    - sum_up_slots
+    - action_check_slots_pain
+    - sum_up_slots
+
+## Story 09
+	- user_reminder_little
+    - sum_up_slots 
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_slots
+    - slot{"pain_duration": "1h"}
+    - action_duration
+    - slot{"duration": null}
+    - sum_up_slots
+    - action_check_slots_pain
+    - sum_up_slots
+
+## Story 09
+	- user_reminder_little
+    - sum_up_slots 
 * pain{"duration": "1h"}
     - slot{"duration": "1h"}
     - save_conv
@@ -6320,35 +6569,6 @@
     - action_check_slots_sport
     - sum_up_slots
 
-## Generated Story 6431042170485558443
-* hello
-	- save_conv
-	- slot{"topic": "hello"}
-	- sum_up_fallback
-	- sum_up_slots
-	- action_check_intents
-	- sum_up_slots
-
-
-## Generated Story 6431042170485558443
-* emotional_hapiness
-	- save_conv
-	- slot{"topic": "emotional_hapiness"}
-	- sum_up_fallback
-	- sum_up_slots
-	- action_check_intents
-	- sum_up_slots
-
-
-## Generated Story 6431042170485558443
-* activity
-	- save_conv
-	- slot{"topic": "activity"}
-	- sum_up_fallback
-	- sum_up_slots
-	- action_check_intents
-	- sum_up_slots
-
 ## Generated Story 8475322541561183297
 * pain
     - save_conv
@@ -6398,5 +6618,22 @@
     - sum_up_bye
     - sum_up_slots
 
+## Bug fallback
+	- sum_up_fallback
+    - sum_up_slots
+* bye
+    - save_conv
+    - slot{"topic": "bye"}
+    - sum_up_slots
+    - sum_up_bye
+    - sum_up_slots
 
-
+## Bug fallback
+	- sum_up_fallback
+    - sum_up_slots
+* bye
+    - save_conv
+    - slot{"topic": "bye"}
+    - sum_up_slots
+    - sum_up_bye
+    - sum_up_slots

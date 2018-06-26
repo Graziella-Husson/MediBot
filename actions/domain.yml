@@ -1,0 +1,177 @@
+slots:
+  sport:
+    type: text
+  sport_level:
+    type: text
+  sport_duration:
+    type: text
+  body_part:
+    type: text
+  pain_duration:
+    type: text 
+  pain_level:
+    type: text
+  pain_desc:
+    type: text
+  duration:
+    type: text
+  pain_change:
+    type: text
+  period:
+    type: text
+  distance:
+    type: text
+  pain_period:
+    type: text
+  sport_period:
+    type: text
+  requested_slot:
+    type: unfeaturized
+  topic:
+    type: text
+  pain:
+      type: text
+  activity:
+      type: text
+  emotional_sadness:
+      type: text
+  emotional_hapiness:
+      type: text
+  social:
+      type: text
+  activity_hard:
+      type: bool
+  nickname:
+      type: unfeaturized
+  current_session:
+      type: unfeaturized
+  global_score:
+      type: float
+  count_user_reminder:
+      type: unfeaturized
+  count_user_reminder_max:
+      type: unfeaturized
+  emergency:
+      type: unfeaturized
+  exitword:
+      type: unfeaturized
+  stopword:
+      type: unfeaturized
+  follow_in_current_session_plus:
+      type: unfeaturized
+  followed_intent:
+      type: unfeaturized
+
+intents:
+ - activity
+ - pain
+ - emotional_sadness
+ - emotional_hapiness
+ - fallback
+ - social
+ - agree
+ - disagree
+ - hello
+ - bye
+
+entities:
+ - sport
+ - body_part
+ - duration
+ - pain_desc
+ - distance
+ - period
+ - pain_change
+
+templates:
+  utter_ask_activity_hard:
+  - text: "Was your physical activity hard to perform because of your general health?"
+    buttons:
+    - title: "Yes"
+      payload: /activity{"activity_hard":true}
+    - title: "No"
+      payload: /activity{"activity_hard":false}
+  utter_ask_sport:
+    - text: "I did not recognize any sport in what you said. Can you tell me more?"
+    - text: "Can you tell me which sport you did?"
+    - text: "Wich sport did you do?"
+  utter_ask_sport_duration:
+    - text: "How long did you do your physical activity?"
+    - text: "For how long?"
+    - text: "How long?"
+  utter_ask_body_part:
+    - text: "Where is localized this pain?"
+    - text: "Where does it hurts?"
+    - text: "In which part of your body does it hurt?"
+  utter_ask_pain_duration:
+    - text: "How long did you have this pain?"
+    - text: "For how long?"
+    - text: "How long?"
+  utter_ask_pain_change:
+  - text: "How does your pain change with time?"
+    buttons:
+    - title: "continuous"
+      payload: /pain{"pain_change":"continuous"}
+    - title: "intermittent"
+      payload: /pain{"pain_change":"intermittent"}
+    - title: "brief"
+      payload: /pain{"pain_change":"brief"}
+  utter_ask_pain_period:
+  - text: "Does the pain have a period (e.g. every week)?"
+  utter_ask_sport_period:
+  - text: "Do you do your sport with a regular period (e.g. every week)?"
+  utter_ask_pain:
+  - text: "Can you talk about your pain?"
+  utter_ask_activity:
+  - text: "Can you talk about your physical activity?"
+  utter_ask_social:
+  - text: "Can you talk about something social?"
+  utter_ask_emotionnal_hapiness:
+  - text: "How do you feel? Happy?"
+  utter_ask_emotionnal_sadness:
+  - text: "How do you feel? Sad?"
+  utter_ask_pain_desc:
+    - text: "I did not recognize any description of your pain. Can you tell me more about it? (e.g. is it a sharp pain?)."
+    - text: "Can you describe your pain?"
+    - text: "Describe how it hurts"
+  sum_up_agree:
+    - text: "Glad you agree!"
+  sum_up_disagree:
+    - text: "I see, you disagree. I respect that."
+  ask_why:
+    - text: "So, why are you in a bad mood?"
+  sum_up_bye:
+    - text: "Goodbye, human friend!"
+  sum_up_hello:
+    - text: "Hello!"
+    - text: "Hi, human friend!"
+    - text: "Nice to see you!"
+    - text: "Hey!"
+    - text: "Happy to see you!"
+
+actions:
+ - sum_up_agree
+ - sum_up_disagree
+ - ask_why
+ - sum_up_bye
+ - sum_up_hello
+ - askWhat.AskWhatPain
+ - askWhat.AskWhatSport
+ - resetSlots.ResetSportSlots
+ - resetSlots.ResetPainSlots
+ - formActions.ActionFillSlotsPain
+ - formActions.ActionFillSlotsSport
+ - complexSets.SetPeriod
+ - initAndComplex.SumUpSLots
+ - reminders.ChangeSessionReminder
+ - initAndComplex.InitBot
+ - complexSets.SetDuration
+ - initAndComplex.SaveConv
+ - reminders.UserReminder
+ - reminders.SessionEndReminder
+ - formActions.CheckRequestedIntents
+ - simpleActions.Fallback
+ - reminders.UserReminderLittle
+ - formActions.Sadness
+ - formActions.Happy
+ - formActions.Social

@@ -1,0 +1,66 @@
+## Generated Story 4304335366374712933
+* hello
+    - slot{"follow_in_current_session_plus": 1}
+    - reminder{"kill_on_user_msg": false, "action": "change_session_reminder", "date_time": "2018-06-22T14:53:00", "name": "0456018c-7928-11e8-8859-08002700c687"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"obligatories": {}}
+    - slot{"followed_intent": []}
+    - slot{"current_session": 1}
+    - save_conv
+    - slot{"topic": "hello"}
+    - slot{"count_user_reminder": 0}
+    - export
+
+## Generated Story 8696262715299793424
+* pain
+    - slot{"follow_in_current_session_plus": 1}
+    - reminder{"action": "change_session_reminder", "date_time": "2018-06-22T14:53:00", "name": "ef659f9a-793a-11e8-8859-08002700c687", "kill_on_user_msg": false}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": ["emotional_sadness"]}
+    - slot{"current_session": 1}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"count_user_reminder": 0}
+    - sum_up_slots
+    - action_check_slots_pain
+    - slot{"requested_slot": "pain_change"}
+    - sum_up_slots
+    - export
+
+## Generated Story -4615920665277384910
+* hello
+    - slot{"follow_in_current_session_plus": 1}
+    - reminder{"name": "6be1f216-793c-11e8-8859-08002700c687", "kill_on_user_msg": false, "date_time": "2018-06-22T14:53:00", "action": "change_session_reminder"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": ["emotional_sadness", " social"]}
+    - slot{"current_session": 1}
+    - save_conv
+    - slot{"topic": "hello"}
+    - slot{"count_user_reminder": 0}
+    - sum_up_hello
+    - sum_up_slots
+* pain
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"count_user_reminder": 0}
+    - sum_up_slots
+    - action_check_slots_pain
+    - slot{"requested_slot": "pain_desc"}
+    - sum_up_slots
+    - export
+
