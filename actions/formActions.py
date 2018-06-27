@@ -35,7 +35,6 @@ class ActionFillSlotsPain(FormAction):
         if not level == "Incorrect":
             pain_duration = tracker.get_slot("pain_duration")
             pain_desc = tracker.get_slot("pain_desc")
-                tracker.update(SlotSet("pain_desc",pain_desc))
             body_part = tracker.get_slot("body_part")
             pain_change = tracker.get_slot("pain_change")
             pain_period = tracker.get_slot("pain_period")

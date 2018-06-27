@@ -7,4 +7,7 @@ pipeline:
 - name: "intent_featurizer_spacy"
 - name: "ner_crf"
 - name: "ner_synonyms"
+- name: "ner_duckling"
+  dimensions:
+  - "time"
 - name: "intent_classifier_sklearn"

@@ -177,10 +177,10 @@ class SaveConv(Action):
                 tracker.update(i)
             nickname = tracker.get_slot("nickname")
             to_return = []
-            print("reminder change session scheduled at "+str(date_end))
-            to_return.append(ReminderScheduled("change_session_reminder", date_end, kill_on_user_message=False))  
-            print("reminder before change session scheduled at "+str(date_end - reminder_end_session))
-            to_return.append(ReminderScheduled("session_end_reminder", date_end - reminder_end_session, kill_on_user_message=False)) 
+            #print("reminder change session scheduled at "+str(date_end))
+            #to_return.append(ReminderScheduled("change_session_reminder", date_end, kill_on_user_message=False))  
+            #print("reminder before change session scheduled at "+str(date_end - reminder_end_session))
+            #to_return.append(ReminderScheduled("session_end_reminder", date_end - reminder_end_session, kill_on_user_message=False)) 
             dispatcher.utter_message("Nice to meet you! My name is "+nickname)
         nickname = tracker.get_slot("nickname")
         current_session = tracker.get_slot("current_session")
@@ -249,17 +249,17 @@ class SaveConv(Action):
                 tracker.trigger_follow_up_action(action)
                 count_user_reminder = 0
                 to_return.append(SlotSet("count_user_reminder",count_user_reminder))
-                print("reminder user scheduled at "+str(dt.now() + reminder_patient))
-                to_return.append(ReminderScheduled("user_reminder", dt.now() + reminder_patient, kill_on_user_message=True))
+#                print("reminder user scheduled at "+str(dt.now() + reminder_patient))
+#                to_return.append(ReminderScheduled("user_reminder", dt.now() + reminder_patient, kill_on_user_message=True))
                 return to_return
             
             else:
                 count_user_reminder = 0
-                to_return.append(SlotSet("count_user_reminder",count_user_reminder))
-                print("reminder user little scheduled at "+str(dt.now() + reminder_patient_little))
-                to_return.append(ReminderScheduled("user_reminder_little", dt.now() + reminder_patient_little,kill_on_user_message=True))
-                print("reminder user scheduled at "+str(dt.now() + reminder_patient))
-                to_return.append(ReminderScheduled("user_reminder", dt.now() + reminder_patient, kill_on_user_message=True))
+#                to_return.append(SlotSet("count_user_reminder",count_user_reminder))
+#                print("reminder user little scheduled at "+str(dt.now() + reminder_patient_little))
+#                to_return.append(ReminderScheduled("user_reminder_little", dt.now() + reminder_patient_little,kill_on_user_message=True))
+#                print("reminder user scheduled at "+str(dt.now() + reminder_patient))
+#                to_return.append(ReminderScheduled("user_reminder", dt.now() + reminder_patient, kill_on_user_message=True))
                 return to_return
         
             
@@ -292,6 +292,7 @@ class SumUpSLots(Action):
           pain_level = tracker.get_slot("pain_level")
           duration = tracker.get_slot("duration")
           pain_change = tracker.get_slot("pain_change")
+          pain_time = tracker.get_slot("time")
           period = tracker.get_slot("period")
           distance = tracker.get_slot("distance")
           pain_period = tracker.get_slot("pain_period")
@@ -303,13 +304,13 @@ class SumUpSLots(Action):
           topic = tracker.get_slot("topic")
           response = ("""`\ttopic = {}, requested_slot = {},`
 `\tactivity = {}, sport = {}, sport_duration = {}, sport_period = {}, activity_hard = {},`
-`\tpain = {}, pain_duration = {}, pain_desc = {}, body_part = {}, pain_change = {}, pain_period = {}, pain_level = {},` 
+`\tpain = {}, pain_duration = {}, pain_desc = {}, body_part = {}, pain_change = {}, pain_period = {}, pain_level = {}, pain_time = {}` 
 `\tsadness = {},`
 `\thappy = {},`
 `\tsocial = {},`
 `\tdistance = {}, period = {}, duration = {}`""").format(topic,requested_slot,
 activity,sport, sport_duration, sport_period, activity_hard, pain, pain_duration, 
-pain_desc, body_part, pain_change, pain_period, pain_level, emotional_sadness,
+pain_desc, body_part, pain_change, pain_period, pain_level, pain_time,emotional_sadness,
 emotional_hapiness,social,distance, period, duration)
           dispatcher.utter_message(response)
           conv.write("{ '"+str(date)+"' : [{'text': '"+response+"'}]},\n")
