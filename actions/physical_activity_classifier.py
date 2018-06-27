@@ -114,6 +114,8 @@ def get_physical_activity_level(text):
     print(prob_vig,prob_lit,prob_mod)    
     best = max(prob_vig,prob_lit,prob_mod)
     
+    if best <= 0.5:
+        return save_None(text) 
     if prob_lit == best:
         return 'little'
     elif prob_mod == best:
@@ -121,7 +123,12 @@ def get_physical_activity_level(text):
     elif prob_vig == best:
         return 'vigorous'
     else:
-        return None
+        return save_None(text) 
+
+def save_None(text):
+    file = open('save_classif_activity.txt', 'a+')
+    file.write(str(text)+"\n")
+    file.close()
         
 if __name__ == '__main__':
     text =TextBlob("evrey day")

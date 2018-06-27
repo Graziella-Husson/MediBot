@@ -7,7 +7,6 @@ from rasa_core.events import SlotSet
 from rasa_core.dispatcher import Button
 from pain_classifier import get_pain_level
 from physical_activity_classifier import get_physical_activity_level
-from textblob import TextBlob
 
 from rasa_core.actions.forms import (
 EntityFormField,
@@ -36,8 +35,6 @@ class ActionFillSlotsPain(FormAction):
         if not level == "Incorrect":
             pain_duration = tracker.get_slot("pain_duration")
             pain_desc = tracker.get_slot("pain_desc")
-            if pain_desc!=None:
-                pain_desc = TextBlob(pain_desc).correct()
                 tracker.update(SlotSet("pain_desc",pain_desc))
             body_part = tracker.get_slot("body_part")
             pain_change = tracker.get_slot("pain_change")
@@ -54,16 +51,10 @@ class ActionFillSlotsPain(FormAction):
                         #TODO : do something if None
                     response += "\tYou have some {} pain (it's considered has a {} pain).\n".format(pain_desc, level)
                 if body_part != None:
-                    body_part = TextBlob(body_part).correct()
-                    tracker.update(SlotSet("body_part",body_part))
                     response += "\tThe pain is localized at {}.\n".format(body_part)
                 if pain_duration != None:
-                    pain_duration = TextBlob(pain_duration).correct()
-                    tracker.update(SlotSet("pain_duration",pain_duration))
                     response += "\tThe duration of this pain is of {}.\n".format(pain_duration)
                 if pain_period != None:
-                    pain_period = TextBlob(pain_period).correct()
-                    tracker.update(SlotSet("pain_period",pain_period))
                     response += "\tThe period/recurrence is {}.\n".format(pain_period)
                 if pain_change != None:
                     response += "\tThe pain seems to be {}.\n".format(pain_change)
@@ -102,9 +93,6 @@ class ActionFillSlotsSport(FormAction):
             sport = tracker.get_slot("sport")
             sport_period = tracker.get_slot("sport_period")
             distance = tracker.get_slot("distance")
-            if sport!=None:
-                sport = (TextBlob(sport).correct())
-                tracker.update(SlotSet("sport",sport))
             activity_hard = tracker.get_slot("activity_hard")
             try:
                 obligatories = get_obligatories()
@@ -124,16 +112,10 @@ class ActionFillSlotsSport(FormAction):
                             MET = "> 6 MET"
                     response += "\tYou did some {} physical activity ({}). The sport detected is {}.\n".format(sport_level, MET, sport)
                 if sport_duration != None:
-                    sport_duration = TextBlob(sport_duration).correct()
-                    tracker.update(SlotSet("sport_duration",sport_duration))
                     response += "\tThe duration is of {}.\n".format(sport_duration)
                 if distance != None:
-                    distance = TextBlob(distance).correct()
-                    tracker.update(SlotSet("distance",distance))
                     response += "\tThe distance you did is of {}.\n".format(distance)
                 if sport_period != None:
-                    sport_period = TextBlob(sport_period).correct()
-                    tracker.update(SlotSet("sport_period",sport_period))
                     response +="\tThe period/recurrence detected is {}.\n".format(sport_period)
                 if activity_hard != None:
                     if activity_hard:

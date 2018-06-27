@@ -1,15 +1,23 @@
 from nltk.classify import PositiveNaiveBayesClassifier
+from textblob import TextBlob
 
 def classifier(positive_featuresets, unlabeled_featuresets,text):
     classifier = PositiveNaiveBayesClassifier.train(positive_featuresets,
                                                      unlabeled_featuresets)
-    return (classifier.classify(features(text)))
+    return classifier.prob_classify(features(text))
+    #return (classifier.classify(features(text)))
 
 def features(sentence):
     words = sentence.lower().split()
-    return dict(('contains(%s)' % w, True) for w in words)                       
+    return dict(('contains(%s)' % w, True) for w in words) 
+
+def score(positive_words, text):
+    raw_words = text.lower().split(" ")
+    return len([word for word in raw_words if word in positive_words])                         
     
 def get_pain_level(text):
+    corrected = (text.correct())
+    print(corrected)
     mild = ['tender','scratchy','unsmooth', 'abrasive','rough','discomforting',
             'malaise','incommodious','inconvenient','unease','uncomfortable',
             'passable','tolerable','satisfactory','supportable','endurable',
@@ -68,19 +76,29 @@ def get_pain_level(text):
     not_mild = severe +  moderate
     not_severe = mild +  moderate
     not_moderate = severe +  mild
-           
-    if(classifier(list(map(features, mild)),list(map(features, not_mild)),text)):
+    
+    prob_sev = (classifier(list(map(features, severe)),list(map(features, not_severe)),corrected).prob(True)) 
+    prob_mild = (classifier(list(map(features, mild)),list(map(features, not_mild)),corrected).prob(True))     
+    prob_mod = (classifier(list(map(features, moderate)),list(map(features, not_moderate)),corrected).prob(True)) 
+    print(prob_sev,prob_mild,prob_mod)    
+    best = max(prob_sev,prob_mild,prob_mod)
+    if best <= 0.5:
+        return save_None(corrected,text) 
+    if prob_mild == best:
         return 'mild'
-    elif (classifier(list(map(features, moderate)),list(map(features, not_moderate)),text)):
+    elif prob_mod == best:
         return 'moderate'
-    elif (classifier(list(map(features, severe)),list(map(features, not_severe)),text)):
+    elif prob_sev == best:
         return 'severe'
     else:
-        return 'None'
-        
+        return save_None(corrected,text) 
+
+def save_None(corrected,text):
+    file = open('save_classif_pain.txt', 'a+')
+    file.write(str(corrected)+"\n"+str(text)+"\n")
+    file.close()
+    
 if __name__ == '__main__':
-    text = "brutal"
+    text =TextBlob("sbrdeh")
     res = get_pain_level(text)
-    print(res)
- 
-                       
+    print(res)  

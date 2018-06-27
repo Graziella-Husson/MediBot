@@ -220,7 +220,6 @@ class SaveConv(Action):
 `\tEntities : {}`""").format(intent, entities)
         dispatcher.utter_message(response1)
         if intent['confidence']<0.5:
-            dispatcher.utter_message("Sorry, I did not understand what you said...\n`This is a fallback for NLU part (intent fallback)`")
             action = Fallback()
             tracker.trigger_follow_up_action(action)
             return to_return
