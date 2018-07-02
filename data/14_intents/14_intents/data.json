@@ -15881,10 +15881,17 @@
         "intent": "emotional_hapiness",
         "entities": []
       },
-	{
+      {
         "text": "my doctor gave me progesterone pills",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 18,
+            "end": 30,
+            "value": "progesterone",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i was under influence of drug",
@@ -15892,154 +15899,244 @@
         "entities": []
       },
       {
-        "text": "i have tried cutting down on the hydroxy placquenil but pains seems too bad so just continue",
+        "text": "i have tried cutting down on the hydroxy placquenil",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 33,
+            "end": 51,
+            "value": "hydroxy placquenil",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i have take more dose of excedrin migraine",
         "intent": "treatment",
-        "entities": []
-      },
-      {
-        "text": "i stopped taking my lupus medication but i am fine",
-        "intent": "treatment",
-        "entities": []
-      },
-      {
-        "text": "I'm worried about all the drugs I'm taking",
-        "intent": "treatment",
-        "entities": []
-      },
-      {
-        "text": "my medical prescription is getting worse",
-        "intent": "treatment",
-        "entities": []
-      },
-      {
-        "text": "i have take doses of miralax",
-        "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 25,
+            "end": 42,
+            "value": "excedrin migraine",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "I am taking 25mg of Amitriptyline for PHN (shingles) and to help me sleep",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 20,
+            "end": 33,
+            "value": "Amitriptyline",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "my pills are not digesting",
-        "intent": "treatment",
-        "entities": []
+        "intent": "pathology",
+        "entities": [
+          {
+            "start": 13,
+            "end": 26,
+            "value": "not digesting",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
         "text": "i ended up with steroid psychosis",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 16,
+            "end": 33,
+            "value": "steroid psychosis",
+            "entity": "drug"
+          }
+        ]
       },
       {
-        "text": "i am taking too many pills",
-        "intent": "treatment",
-        "entities": []
+        "text": "i am newly diagnosed with Parkinson’s Disease",
+        "intent": "pathology",
+        "entities": [
+          {
+            "start": 26,
+            "end": 45,
+            "value": "Parkinson’s Disease",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
-        "text": "i am newly diagnosed with Parkinson’s Disease and was prescribed Sinemet 3 times a day at 25/100 tabs",
+        "text": "i'm on hydroxychloroqine ",
         "intent": "treatment",
-        "entities": []
-      },
-      {
-        "text": "i'm on hydroxychloroqine because I have Hughes syndrome",
-        "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 7,
+            "end": 24,
+            "value": "hydroxychloroqine",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i have taken a extra dose of lisinopril",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 29,
+            "end": 39,
+            "value": "lisinopril",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i take my 7 mtx on a sunday night",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "mtx",
+            "entity": "drug"
+          },
+          {
+            "start": 21,
+            "end": 33,
+            "value": "sunday night",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "my medicine is making me itch",
-        "intent": "treatment",
-        "entities": []
-      },
-      {
-        "text": "Calcium koalaitisbare in addition to VitD is not such a good idea",
-        "intent": "treatment",
-        "entities": []
-      },
-      {
-        "text": "i am taking too many prescription medications",
-        "intent": "treatment",
-        "entities": []
+        "intent": "pathology",
+        "entities": [
+          {
+            "start": 25,
+            "end": 29,
+            "value": "itch",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
         "text": "i have one drug for underactive thyroid",
-        "intent": "treatment",
-        "entities": []
-      },
-      {
-        "text": "now I haven't taken medication regularly for 2 years",
-        "intent": "treatment",
-        "entities": []
-      },
-      {
-        "text": "i have been on lots of medicine plus Infusion",
-        "intent": "treatment",
-        "entities": []
+        "intent": "pathology",
+        "entities": [
+          {
+            "start": 20,
+            "end": 39,
+            "value": "underactive thyroid",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
         "text": "i have to be on prednisolone replacement therapy for the rest of my life",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 16,
+            "end": 40,
+            "value": "prednisolone replacement",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i took B1 injections for almost four months",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 7,
+            "end": 20,
+            "value": "B1 injections",
+            "entity": "drug"
+          },
+          {
+            "start": 32,
+            "end": 43,
+            "value": "four months",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "my doctor prescribed 5000 units of vitamin d",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 35,
+            "end": 44,
+            "value": "vitamin d",
+            "entity": "drug"
+          }
+        ]
       },
       {
-        "text": "i have too many medications",
+        "text": "i take opioids ",
         "intent": "treatment",
-        "entities": []
-      },
-      {
-        "text": "i take opioids to treat chronic pain",
-        "intent": "treatment",
-        "entities": []
-      },
-      {
-        "text": "i tried just lowering my dose by one third",
-        "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "opioids",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "when I was taking MTX I used to suck on a sweet straight after",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 18,
+            "end": 21,
+            "value": "MTX",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i am fairly supportive of methadone maintenance",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 26,
+            "end": 35,
+            "value": "methadone",
+            "entity": "drug"
+          }
+        ]
       },
       {
-        "text": "i would like to try Serrapeptase for my endometriosis",
+        "text": "i would like to try Serrapeptase ",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 20,
+            "end": 32,
+            "value": "Serrapeptase",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i had a bad reaction to prednisolone",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 24,
+            "end": 36,
+            "value": "prednisolone",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i am currently undergoing medical treatment",
@@ -16049,42 +16146,104 @@
       {
         "text": "i take mesalazine, herbal remedies and supplements",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 7,
+            "end": 17,
+            "value": "mesalazine",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i have take a dose aspirin daily",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "daily",
+            "entity": "period"
+          },
+          {
+            "start": 19,
+            "end": 26,
+            "value": "aspirin",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i have take a dose of fluconazole",
         "intent": "treatment",
-        "entities": []
-      },
-      {
-        "text": "my medicine is stuck in my throat",
-        "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 22,
+            "end": 33,
+            "value": "fluconazole",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "my medicine is making me constipated",
-        "intent": "treatment",
-        "entities": []
+        "intent": "pathology",
+        "entities": [
+          {
+            "start": 25,
+            "end": 36,
+            "value": "constipated",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
         "text": "i was diagnosed 4 years ago and my consultant put me on methotrexate.",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 56,
+            "end": 68,
+            "value": "methotrexate",
+            "entity": "drug"
+          },
+          {
+            "start": 16,
+            "end": 27,
+            "value": "4 years ago",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "i get a prescription for adderall",
-        "intent": "treatment",
-        "entities": []
+        "intent": "pathology",
+        "entities": [
+          {
+            "start": 25,
+            "end": 33,
+            "value": "adderall",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
         "text": "i’ve been on Methotrexate for 5 years and haven’t had any problems",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 13,
+            "end": 25,
+            "value": "Methotrexate",
+            "entity": "drug"
+          },
+          {
+            "start": 26,
+            "end": 37,
+            "value": "for 5 years",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "i've recently had a severe flare of UC and was in hospital for a week on hydrocortisone shots",
@@ -16117,39 +16276,106 @@
         "entities": []
       },
       {
-        "text": "i take Tylenol or Advil every day",
+        "text": "i take Tylenol every day",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 7,
+            "end": 14,
+            "value": "Tylenol",
+            "entity": "drug"
+          },
+          {
+            "start": 15,
+            "end": 24,
+            "value": "every day",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "i have tried cutting down on the hydroxy placquenil but aches seems too bad so just continue",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 33,
+            "end": 51,
+            "value": "hydroxy placquenil",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "GP gave me 5mg x 6 a day of Pred",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 28,
+            "end": 32,
+            "value": "Pred",
+            "entity": "drug"
+          },
+          {
+            "start": 17,
+            "end": 24,
+            "value": "6 a day",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "i am taking testosterone",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 12,
+            "end": 24,
+            "value": "testosterone",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i am taking metronidazole and drink alcohol",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 12,
+            "end": 25,
+            "value": "metronidazole",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i have tried cutting down on the hydroxy placquenil but fatigue seems too bad so just continue",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 33,
+            "end": 51,
+            "value": "hydroxy placquenil",
+            "entity": "drug"
+          }
+        ]
       },
       {
-        "text": "i did try infliximab and was on it for about 6 yrs but because of drug-induced lupus I was switched to Humira.",
+        "text": "i did try infliximab and was on it for about 6 yrs",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 10,
+            "end": 20,
+            "value": "infliximab",
+            "entity": "drug"
+          },
+          {
+            "start": 35,
+            "end": 50,
+            "value": "for about 6 yrs",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "i'm being treated for some medical problems",
@@ -16164,12 +16390,26 @@
       {
         "text": "i accidentally took a double dose of sertraline",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 37,
+            "end": 47,
+            "value": "sertraline",
+            "entity": "drug"
+          }
+        ]
       },
       {
-        "text": "my doctor gave me antibiotics for bronchitis",
+        "text": "my doctor gave me antibiotics ",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 18,
+            "end": 29,
+            "value": "antibiotics",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i was under medical treatment",
@@ -16179,57 +16419,104 @@
       {
         "text": "i took double dose of metoprolol",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 22,
+            "end": 32,
+            "value": "metoprolol",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i have been on Hydroxychloroquine for the past 6 years",
         "intent": "treatment",
-        "entities": []
-      },
-      {
-        "text": "i stopped taking the meds for a couple of years",
-        "intent": "treatment",
-        "entities": []
-      },
-      {
-        "text": "my medicine is making me gain weight",
-        "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 15,
+            "end": 33,
+            "value": "Hydroxychloroquine",
+            "entity": "drug"
+          },
+          {
+            "start": 34,
+            "end": 54,
+            "value": "for the past 6 years",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "recently my rheumy has put me on steroids",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 33,
+            "end": 41,
+            "value": "steroids",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i have taken pills of ibuprofen",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 22,
+            "end": 31,
+            "value": "ibuprofen",
+            "entity": "drug"
+          }
+        ]
       },
       {
-        "text": "pills are not dissolving in my stomach",
+        "text": "i am currently on Remicade infusions for 3 years",
         "intent": "treatment",
-        "entities": []
-      },
-      {
-        "text": "i am currently on Remicade infusions for 3 years and also take Azathioprine",
-        "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 17,
+            "end": 36,
+            "value": " Remicade infusions",
+            "entity": "drug"
+          },
+          {
+            "start": 37,
+            "end": 48,
+            "value": "for 3 years",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "my meds list containing aspirin",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 24,
+            "end": 31,
+            "value": "aspirin",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i was on sulfasaiazin at first for 8 weeks",
         "intent": "treatment",
-        "entities": []
-      },
-      {
-        "text": "to be able to continue my long-term treatment, I have to go every three months to the general practitioner",
-        "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 9,
+            "end": 21,
+            "value": "sulfasaiazin",
+            "entity": "drug"
+          },
+          {
+            "start": 31,
+            "end": 42,
+            "value": "for 8 weeks",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "i am receiving a medical treatment",
@@ -16239,7 +16526,14 @@
       {
         "text": "well today I take my first dose of methotrexate",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 35,
+            "end": 47,
+            "value": "methotrexate",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "my medication treatment is not working",
@@ -16247,14 +16541,34 @@
         "entities": []
       },
       {
-        "text": "i forget to take duloxetine (Cymbalta®) yesterday",
+        "text": "i forget to take duloxetine yesterday",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 17,
+            "end": 27,
+            "value": "duloxetine",
+            "entity": "drug"
+          },
+          {
+            "start": 28,
+            "end": 37,
+            "value": "yesterday",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "my medication containing ibuprofen",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 25,
+            "end": 34,
+            "value": "ibuprofen",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "the doc said to try lowering my dose",
@@ -16262,19 +16576,46 @@
         "entities": []
       },
       {
-        "text": "i had 3 prostap injections after being diagnosed with endo through a lap in oct of last year",
+        "text": "i had 3 prostap injections in oct of last year",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 6,
+            "end": 26,
+            "value": "3 prostap injections",
+            "entity": "drug"
+          },
+          {
+            "start": 30,
+            "end": 46,
+            "value": "oct of last year",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "my doctor prescribed me tramadol",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 24,
+            "end": 32,
+            "value": "tramadol",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "I'd finished my therapy of prozac",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 27,
+            "end": 33,
+            "value": "prozac",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "my doctor gave me the wrong prescription",
@@ -16284,35 +16625,130 @@
       {
         "text": "i stopped taking plaquenil at the end of December",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 17,
+            "end": 26,
+            "value": "plaquenil",
+            "entity": "drug"
+          },
+          {
+            "start": 33,
+            "end": 49,
+            "value": " end of December",
+            "entity": "time"
+          }
+        ]
       },
       {
-        "text": "i was on sulfasaiazine and hydroxychoroquine it did not work",
+        "text": "i was on sulfasaiazine it did not work",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 9,
+            "end": 22,
+            "value": "sulfasaiazine",
+            "entity": "drug"
+          }
+        ]
       },
       {
-        "text": "started taking hydroxychloroquine about 2 weeks ago and since Tuesday I’ve had the most horrific rash",
+        "text": "started taking hydroxychloroquine about 2 weeks ago ",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 15,
+            "end": 33,
+            "value": "hydroxychloroquine",
+            "entity": "drug"
+          },
+          {
+            "start": 40,
+            "end": 52,
+            "value": "2 weeks ago ",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "i took double dose of flecainide",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 22,
+            "end": 32,
+            "value": "flecainide",
+            "entity": "drug"
+          }
+        ]
       },
       {
-        "text": "i am soon to start humria treatment for crohns. just a little worried",
+        "text": "i am soon to start humria treatment",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "humria",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "i used bioidentical testosterone replacement therapy for almost a year",
         "intent": "treatment",
-        "entities": []
+        "entities": [
+          {
+            "start": 7,
+            "end": 32,
+            "value": "bioidentical testosterone",
+            "entity": "drug"
+          },
+          {
+            "start": 53,
+            "end": 70,
+            "value": "for almost a year",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "i stopped taking the drug because of bad effects",
+        "intent": "treatment",
+        "entities": []
+      },
+      {
+        "text": "I was prescribed Sinemet 3 times a day at 25/100 tabs",
+        "intent": "treatment",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "Sinemet",
+            "entity": "drug"
+          },
+          {
+            "start": 25,
+            "end": 38,
+            "value": "3 times a day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I have Hughes syndrome",
+        "intent": "pathology",
+        "entities": [
+          {
+            "start": 7,
+            "end": 22,
+            "value": "Hughes syndrome",
+            "entity": "symtoms"
+          }
+        ]
+      },
+      {
+        "text": "I have been on a lot of medecine",
         "intent": "treatment",
         "entities": []
       }
