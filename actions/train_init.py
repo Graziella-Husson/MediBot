@@ -18,7 +18,7 @@ if __name__ == '__main__':
 	#fallback = FallbackPolicy(fallback_action_name="sum_up_fallback",core_threshold=0.4,nlu_threshold=0.4)
 	
 	featurizer = MaxHistoryTrackerFeaturizer(BinarySingleStateFeaturizer(),
-                                         max_history=10)
+                                         max_history=30)
                                          
 	#agent = Agent('domain.yml', policies = [MemoizationPolicy(), KerasPolicy(featurizer), fallback])
 	agent = Agent('domain.yml', policies = [MemoizationPolicy(), KerasPolicy(featurizer)])

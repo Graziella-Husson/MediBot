@@ -9,27 +9,14 @@ sessions:
   1:
     begin: 2018,6,26,15,35,1
     end: 2018,6,26,16,12,0
-    followed_intent: emotional_sadness, social
-    requested_intent: pain,activity
+    followed_intent: emotional_sadness,social
+    requested_intent: pain,activity,pathology,treatment,infoPatient
     requested_slot:
-      pain: pain_desc,body_part,pain_duration,pain_change
-      activity: sport,sport_duration,activity_hard
-  2:
-    begin: 2018,6,26,16,12,1
-    end: 2018,6,26,16,14,0
-    followed_intent: emotional_sadness, social
-    requested_intent: pain,activity
-    requested_slot:
-      pain: pain_desc,body_part,pain_duration,pain_change
-      activity: sport,sport_duration,activity_hard
-  3:
-    begin: 2018,6,26,16,14,1
-    end: 2018,6,26,16,16,0
-    followed_intent: emotional_sadness, social
-    requested_intent: pain,activity
-    requested_slot:
-      pain: pain_desc,body_part,pain_duration,pain_change
-      activity: sport,sport_duration,activity_hard
+      pain: pain_desc,pain_body_part,pain_duration,pain_change,pain_time,pain_period
+      activity: sport,activity_duration,activity_hard,activity_time,activity_period,activity_distance
+      pathology: symtoms,pathology_body_part
+      treatment: medicinal,drug
+      infoPatient: weight,infoPatient_distance,heart_rate,temperature,gender,blood_pressure,addiction,infoPatient_time
 stopword: stop
 emergency : help
 nickname : Ailixir

@@ -16,7 +16,7 @@ def score(positive_words, text):
     return len([word for word in raw_words if word in positive_words])                         
     
 def get_pain_level(text):
-    corrected = (text.correct())
+    corrected =TextBlob(text).correct()
     print(corrected)
     mild = ['tender','scratchy','unsmooth', 'abrasive','rough','discomforting',
             'malaise','incommodious','inconvenient','unease','uncomfortable',

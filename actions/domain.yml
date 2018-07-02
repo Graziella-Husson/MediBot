@@ -3,9 +3,9 @@ slots:
     type: text
   sport_level:
     type: text
-  sport_duration:
+  activity_duration:
     type: text
-  body_part:
+  pain_body_part:
     type: text
   pain_duration:
     type: text 
@@ -19,11 +19,13 @@ slots:
     type: text
   period:
     type: text
+  activity_distance:
+    type: text
   distance:
     type: text
   pain_period:
     type: text
-  sport_period:
+  activity_period:
     type: text
   requested_slot:
     type: unfeaturized
@@ -61,6 +63,46 @@ slots:
       type: unfeaturized
   followed_intent:
       type: unfeaturized
+  time:
+    type: text
+  medicinal:
+      type: bool
+  symtoms:
+      type: text
+  drug:
+      type: text
+  addiction:
+      type: text
+  weight:
+      type: text
+  infoPatient_distance:
+      type: text
+  gender:
+      type: text
+  temperature:
+      type: text
+  heart_rate:
+      type: text
+  blood_pressure:
+      type: text
+  infoPatient_time:
+      type: text
+  pain_time:
+      type: text
+  activity_time:
+      type: text
+  pathology:
+      type: text
+  incomprehension:
+      type: text
+  treatment:
+      type: text
+  infoPatient:
+      type: text
+  pathology_body_part:
+    type: text
+  body_part:
+    type: text
 
 intents:
  - activity
@@ -73,6 +115,10 @@ intents:
  - disagree
  - hello
  - bye
+ - pathology
+ - incomprehension
+ - treatment
+ - infoPatient
 
 entities:
  - sport
@@ -82,6 +128,15 @@ entities:
  - distance
  - period
  - pain_change
+ - time
+ - symtoms
+ - drug
+ - addiction
+ - weight
+ - gender
+ - temperature
+ - heart_rate
+ - blood_pressure
 
 templates:
   utter_ask_activity_hard:
@@ -95,14 +150,16 @@ templates:
     - text: "I did not recognize any sport in what you said. Can you tell me more?"
     - text: "Can you tell me which sport you did?"
     - text: "Wich sport did you do?"
-  utter_ask_sport_duration:
+  utter_ask_activity_duration:
     - text: "How long did you do your physical activity?"
     - text: "For how long?"
     - text: "How long?"
-  utter_ask_body_part:
+  utter_ask_pain_body_part:
     - text: "Where is localized this pain?"
     - text: "Where does it hurts?"
     - text: "In which part of your body does it hurt?"
+  utter_ask_pathology_body_part:
+    - text: "Where is localized this pathology or symptoms?"
   utter_ask_pain_duration:
     - text: "How long did you have this pain?"
     - text: "For how long?"
@@ -118,7 +175,7 @@ templates:
       payload: /pain{"pain_change":"brief"}
   utter_ask_pain_period:
   - text: "Does the pain have a period (e.g. every week)?"
-  utter_ask_sport_period:
+  utter_ask_activity_period:
   - text: "Do you do your sport with a regular period (e.g. every week)?"
   utter_ask_pain:
   - text: "Can you talk about your pain?"
@@ -142,12 +199,49 @@ templates:
     - text: "So, why are you in a bad mood?"
   sum_up_bye:
     - text: "Goodbye, human friend!"
+    - text: "Bye!"
+    - text: "See you soon!"
+    - text: "Goodbye!"
   sum_up_hello:
     - text: "Hello!"
     - text: "Hi, human friend!"
     - text: "Nice to see you!"
     - text: "Hey!"
     - text: "Happy to see you!"
+  utter_ask_symtoms:
+    - text: "I did not recognize any symtom in what you said. Can you tell me more?"
+  utter_ask_medicinal:
+  - text: "Is your treatment medicinal or not?"
+    buttons:
+    - title: "Yes"
+      payload: /treatment{"medicinal":true}
+    - title: "No"
+      payload: /treatment{"medicinal":false, "drug":"no_drug"}
+  utter_ask_drug:
+    - text: "I did not recognize any drug in what you said. Can you tell me more?"
+  utter_ask_pain_time:
+    - text: "When did your pain begin?"
+  utter_ask_activity_time:
+    - text: "When did you begin your physical activity?"
+  utter_ask_activity_distance:
+    - text: "Can you talk about the distance you did during your physical activity?"
+  utter_ask_weight:
+    - text: "How much do you weigh, if it is not indiscreet?"
+  utter_ask_infoPatient_distance:
+    - text: "What is your size?"
+    - text: "How tall are you?"
+  utter_ask_heart_rate:
+    - text: "Can you give me the measure of your heart rate?"
+  utter_ask_temperature:
+    - text: "What is your temperature?"
+  utter_ask_gender:
+    - text: "What is your gender now?"
+  utter_ask_blood_pressure:
+    - text: "Can you give me the measure of your blood pressure?"
+  utter_ask_addiction:
+    - text: "Do you have any addiction?"
+  utter_ask_infoPatient_time:
+    - text: "When did you last see medical staff?"
 
 actions:
  - sum_up_agree
@@ -155,23 +249,31 @@ actions:
  - ask_why
  - sum_up_bye
  - sum_up_hello
- - askWhat.AskWhatPain
- - askWhat.AskWhatSport
- - resetSlots.ResetSportSlots
- - resetSlots.ResetPainSlots
- - formActions.ActionFillSlotsPain
- - formActions.ActionFillSlotsSport
- - complexSets.SetPeriod
  - initAndComplex.SumUpSLots
- - reminders.ChangeSessionReminder
  - initAndComplex.InitBot
- - complexSets.SetDuration
  - initAndComplex.SaveConv
  - reminders.UserReminder
  - reminders.SessionEndReminder
- - formActions.CheckRequestedIntents
- - simpleActions.Fallback
+ - reminders.ChangeSessionReminder
  - reminders.UserReminderLittle
+ - simpleActions.Fallback
+ - formActions.ActionFillSlotsPain
+ - formActions.ActionFillSlotsSport
  - formActions.Sadness
  - formActions.Happy
  - formActions.Social
+ - formActions.Pathology
+ - formActions.Treatment
+ - formActions.InfoPatient
+ - formActions.CheckRequestedIntents
+ - complexSets.SetMultiple
+ - askWhat.AskWhatPathology
+ - askWhat.AskWhatPain
+ - askWhat.AskWhatSport
+ - askWhat.AskWhatTreatment
+ - askWhat.AskWhatInfoPatient
+ - resetSlots.ResetPathologySlots
+ - resetSlots.ResetTreatmentSlots
+ - resetSlots.ResetInfoPatientSlots
+ - resetSlots.ResetSportSlots
+ - resetSlots.ResetPainSlots

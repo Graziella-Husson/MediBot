@@ -24,7 +24,7 @@ def run_bot_online(input_channel, interpreter,
 
     agent.train_online(training_data_file,
                        input_channel=input_channel,
-                       max_history=10,
+                       max_history=30,
                        batch_size=50,
                        epochs=300,
                        max_training_samples=300)

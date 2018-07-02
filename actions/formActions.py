@@ -35,7 +35,7 @@ class ActionFillSlotsPain(FormAction):
         if not level == "Incorrect":
             pain_duration = tracker.get_slot("pain_duration")
             pain_desc = tracker.get_slot("pain_desc")
-            body_part = tracker.get_slot("body_part")
+            pain_body_part = tracker.get_slot("pain_body_part")
             pain_change = tracker.get_slot("pain_change")
             pain_period = tracker.get_slot("pain_period")
             obligatories = get_obligatories()
@@ -49,8 +49,8 @@ class ActionFillSlotsPain(FormAction):
                         tracker.update(SlotSet("pain_level",level))
                         #TODO : do something if None
                     response += "\tYou have some {} pain (it's considered has a {} pain).\n".format(pain_desc, level)
-                if body_part != None:
-                    response += "\tThe pain is localized at {}.\n".format(body_part)
+                if pain_body_part != None:
+                    response += "\tThe pain is localized at {}.\n".format(pain_body_part)
                 if pain_duration != None:
                     response += "\tThe duration of this pain is of {}.\n".format(pain_duration)
                 if pain_period != None:
@@ -88,10 +88,10 @@ class ActionFillSlotsSport(FormAction):
     def submit(self, dispatcher, tracker, domain):
         sport_level = tracker.get_slot("sport_level")
         if not sport_level == "Incorrect":
-            sport_duration = tracker.get_slot("sport_duration")
+            sport_duration = tracker.get_slot("activity_duration")
             sport = tracker.get_slot("sport")
-            sport_period = tracker.get_slot("sport_period")
-            distance = tracker.get_slot("distance")
+            sport_period = tracker.get_slot("activity_period")
+            distance = tracker.get_slot("activity_distance")
             activity_hard = tracker.get_slot("activity_hard")
             try:
                 obligatories = get_obligatories()
@@ -220,3 +220,126 @@ class Social(FormAction):
         dispatcher.utter_message(response)
         tracker.update(SlotSet("social",True))
         tracker.update(SlotSet("global_score",global_score))
+        
+class Pathology(FormAction):
+    RANDOMIZE = True
+    
+    @staticmethod
+    def required_fields():
+        obligatories = get_obligatories()
+        try:
+            return obligatories['pathology']
+        except:
+            return []
+        
+    def name(self):
+        return 'sum_up_pathology'
+        
+    def submit(self, dispatcher, tracker, domain):
+        global_score = tracker.get_slot('global_score')
+        global_score+=2
+        #TODO: save score
+        symtoms = tracker.get_slot("symtoms")
+        pathology_body_part = tracker.get_slot("pathology_body_part")
+        try:
+            obligatories = get_obligatories()
+            len(obligatories['pathology'])>0
+            response = "To sum up,"
+            if symtoms != None:
+                response += "\n\tYou have some symptoms : {}".format(symtoms)
+            if pathology_body_part != None:
+                response += "\n\tThis symptom is localized at {}".format(pathology_body_part)
+            response+="\nIs it right?"
+        except:
+            response = "It seems that you talked about a pathology."
+        dispatcher.utter_message(response)
+        tracker.update(SlotSet("pathology",True))
+        tracker.update(SlotSet("global_score",global_score))
+        
+class Treatment(FormAction):
+    RANDOMIZE = False
+    
+    @staticmethod
+    def required_fields():
+        obligatories = get_obligatories()
+        try:
+            return obligatories['treatment']
+        except:
+            return []
+        
+    def name(self):
+        return 'sum_up_treatment'
+        
+    def submit(self, dispatcher, tracker, domain):
+        global_score = tracker.get_slot('global_score')
+        global_score+=2
+        #TODO: save score
+        medicinal = tracker.get_slot("medicinal")
+        drug = tracker.get_slot("drug")
+        try:
+            obligatories = get_obligatories()
+            len(obligatories['treatment'])>0
+            response = "To sum up,"        
+            if medicinal != None:
+                if medicinal :
+                    response += "\n\tYour traitment is medicinal"
+                else:
+                    response += "\n\tYour traitment is not medicinal"
+            if drug != None and drug != "no_drug":
+                response += "\n\tYou take: {}".format(drug)
+            response+="\nIs it right?"
+        except:
+            response = "It seems that you talked about a treatment."        
+        dispatcher.utter_message(response)
+        tracker.update(SlotSet("treatment",True))
+        tracker.update(SlotSet("global_score",global_score))
+        
+class InfoPatient(FormAction):
+    RANDOMIZE = True
+    
+    @staticmethod
+    def required_fields():
+        obligatories = get_obligatories()
+        try:
+            return obligatories['infoPatient']
+        except:
+            return []
+        
+    def name(self):
+        return 'sum_up_info_patient'
+        
+    def submit(self, dispatcher, tracker, domain):
+        #TODO: save score
+        addiction = tracker.get_slot("addiction")
+        weight = tracker.get_slot("weight")
+        size = tracker.get_slot("infoPatient_distance")
+        gender = tracker.get_slot("gender")
+        temperature = tracker.get_slot("temperature")
+        heart_rate = tracker.get_slot("heart_rate")
+        blood_pressure = tracker.get_slot("blood_pressure")
+        date_check_up = tracker.get_slot("infoPatient_time")
+        try:
+            obligatories = get_obligatories()
+            len(obligatories['infoPatient'])>0
+            response = "To sum up,"        
+            if addiction != None:
+                response+= "\n\tYou have some addiction: {}".format(addiction)
+            if weight != None:
+                response+= "\n\tYour weight is of {}".format(weight)
+            if size != None:
+                response+= "\n\tYou're {} tall".format(size)
+            if gender != None:
+                response+= "\n\tYou're a {}".format(gender)
+            if temperature != None:
+                response+= "\n\tYour temperature is of {}".format(temperature)
+            if heart_rate != None:
+                response+= "\n\tYour heart rate is of {}".format(heart_rate)
+            if blood_pressure != None:
+                response+= "\n\tYour blood pressure is of {}".format(blood_pressure)
+            if date_check_up != None:
+                response+= "\n\tYou saw some caregivers on : {}".format(date_check_up)
+            response+= "\nIs it right?"
+        except:
+            response = "It seems that you talked about some personal informations."
+        dispatcher.utter_message(response)
+        tracker.update(SlotSet("infoPatient",True))

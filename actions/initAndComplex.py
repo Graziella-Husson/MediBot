@@ -162,27 +162,35 @@ class InitBot(Action):
         to_return = self.get_current_reminder_times(current_session,to_return)
         to_return = self.loadConfig(current_session,to_return)
         to_return.append(SlotSet("current_session",current_session))
+        to_return.append(SlotSet("global_score",0))
         return to_return
 
 class SaveConv(Action):
-    def name(self):
-        return 'save_conv'
+    def duckling_set_slots(self,data,to_return):
+        possible = ['time','distance','duration','period']
+        to_set= None
+        value = None
+        try:
+            for i in data:
+                if i['extractor'] !=  'ner_crf':
+                    try:
+                        unit = i['additional_info']['unit']
+                        if unit != None:
+                            to_set = i['entity']
+                            value = i['value']
+                    except:
+                        value = i['additional_info']['value']
+            if to_set == None:
+                to_set = 'time'
+            to_return.append(SlotSet(str(to_set),value))
+            for i in possible:
+                if i != to_set:
+                    to_return.append(SlotSet(str(i),None))
+        except:
+            pass
+        return to_return
         
-    def run(self, dispatcher, tracker, domain):
-        global first
-        to_return = []
-        if first:
-            to_return = InitBot().run(dispatcher, tracker, domain)
-            for i in to_return:
-                tracker.update(i)
-            nickname = tracker.get_slot("nickname")
-            to_return = []
-            #print("reminder change session scheduled at "+str(date_end))
-            #to_return.append(ReminderScheduled("change_session_reminder", date_end, kill_on_user_message=False))  
-            #print("reminder before change session scheduled at "+str(date_end - reminder_end_session))
-            #to_return.append(ReminderScheduled("session_end_reminder", date_end - reminder_end_session, kill_on_user_message=False)) 
-            dispatcher.utter_message("Nice to meet you! My name is "+nickname)
-        nickname = tracker.get_slot("nickname")
+    def save(self,tracker,to_return):
         current_session = tracker.get_slot("current_session")
         id_user = tracker.sender_id
         idy = "./saves/"+str(id_user)+"/"+str(current_session)
@@ -216,6 +224,9 @@ class SaveConv(Action):
         #nlu_infos = tracker.latest_message.parse_data
         conv.write("{ '"+str(date)+"' : [{'intent':"+str(intent)+"}, {'entities':"+str(entities)+"}, {'text':'"+str(response)+"'}]},\n")
         conv.close()
+        return [intent, entities,to_return,response]
+    
+    def check(self,to_return,intent,entities,tracker,dispatcher,response,domain):
         response1 = ("""`\tIntent : {}`
 `\tEntities : {}`""").format(intent, entities)
         dispatcher.utter_message(response1)
@@ -262,6 +273,27 @@ class SaveConv(Action):
 #                to_return.append(ReminderScheduled("user_reminder", dt.now() + reminder_patient, kill_on_user_message=True))
                 return to_return
         
+    def name(self):
+        return 'save_conv'
+        
+    def run(self, dispatcher, tracker, domain):
+        global first
+        to_return = []
+        if first:
+            to_return = InitBot().run(dispatcher, tracker, domain)
+            for i in to_return:
+                tracker.update(i)
+            nickname = tracker.get_slot("nickname")
+            to_return = []
+            #print("reminder change session scheduled at "+str(date_end))
+            #to_return.append(ReminderScheduled("change_session_reminder", date_end, kill_on_user_message=False))  
+            #print("reminder before change session scheduled at "+str(date_end - reminder_end_session))
+            #to_return.append(ReminderScheduled("session_end_reminder", date_end - reminder_end_session, kill_on_user_message=False)) 
+            dispatcher.utter_message("Nice to meet you! My name is "+nickname)
+        [intent, entities,to_return,response] = self.save(tracker,to_return)
+        to_return = self.duckling_set_slots(entities,to_return)
+        to_return = self.check(to_return,intent,entities,tracker,dispatcher,response,domain)
+        return to_return
             
 class SumUpSLots(Action):
     def name(self):
@@ -281,37 +313,26 @@ class SumUpSLots(Action):
           response = tracker.latest_bot_utterance.text
           if not response == None:
               conv.write("{ '"+str(date)+"' : [{'text': '"+response+"'}]],\n")
-          sport = tracker.get_slot("sport")
-          requested_slot = tracker.get_slot("requested_slot")
-          sport_duration = tracker.get_slot("sport_duration")
-          activity = tracker.get_slot("activity")
-          pain = tracker.get_slot("pain")
-          body_part = tracker.get_slot("body_part")
-          pain_duration = tracker.get_slot("pain_duration")
-          pain_desc = tracker.get_slot("pain_desc")
-          pain_level = tracker.get_slot("pain_level")
-          duration = tracker.get_slot("duration")
-          pain_change = tracker.get_slot("pain_change")
-          pain_time = tracker.get_slot("time")
-          period = tracker.get_slot("period")
-          distance = tracker.get_slot("distance")
-          pain_period = tracker.get_slot("pain_period")
-          sport_period = tracker.get_slot("sport_period")
-          activity_hard = tracker.get_slot("activity_hard")
-          emotional_sadness = tracker.get_slot("emotional_sadness")
-          emotional_hapiness = tracker.get_slot("emotional_hapiness")
-          social = tracker.get_slot("social")
-          topic = tracker.get_slot("topic")
           response = ("""`\ttopic = {}, requested_slot = {},`
-`\tactivity = {}, sport = {}, sport_duration = {}, sport_period = {}, activity_hard = {},`
-`\tpain = {}, pain_duration = {}, pain_desc = {}, body_part = {}, pain_change = {}, pain_period = {}, pain_level = {}, pain_time = {}` 
+`\tactivity = {}, sport = {}, activity_duration = {}, activity_period = {}, activity_hard = {}, activity_time = {}, activity_distance = {},`
+`\tpain = {}, pain_duration = {}, pain_desc = {}, pain_body_part = {}, pain_change = {}, pain_period = {}, pain_level = {}, pain_time = {},` 
+`\tpathology = {}, symtoms = {}, pathology_body_part = {},`
+`\ttreatment = {}, medicinal = {}, drug = {},`
+`\tinfoPatient = {}, addiction = {}, weight = {}, infoPatient_distance = {}, gender = {}, temperature = {}, heart_rate = {}, blood_pressure = {}, infoPatient_time= {},`
 `\tsadness = {},`
 `\thappy = {},`
 `\tsocial = {},`
-`\tdistance = {}, period = {}, duration = {}`""").format(topic,requested_slot,
-activity,sport, sport_duration, sport_period, activity_hard, pain, pain_duration, 
-pain_desc, body_part, pain_change, pain_period, pain_level, pain_time,emotional_sadness,
-emotional_hapiness,social,distance, period, duration)
+`\tdistance = {}, period = {}, duration = {}, time = {}, body_part = {}`""").format(
+tracker.get_slot("topic"), tracker.get_slot("requested_slot"),
+tracker.get_slot("activity"), tracker.get_slot("sport"), tracker.get_slot("activity_duration"), tracker.get_slot("activity_period"), tracker.get_slot("activity_hard"), tracker.get_slot("activity_time"),tracker.get_slot("activity_distance"),
+tracker.get_slot("pain"), tracker.get_slot("pain_duration"), tracker.get_slot("pain_desc"), tracker.get_slot("pain_body_part"), tracker.get_slot("pain_change"), tracker.get_slot("pain_period"), tracker.get_slot("pain_level"), tracker.get_slot("pain_time"),
+tracker.get_slot("pathology"), tracker.get_slot("symtoms"),tracker.get_slot("pathology_body_part"),
+tracker.get_slot("treatment"), tracker.get_slot("medicinal"), tracker.get_slot("drug"),
+tracker.get_slot("infoPatient"), tracker.get_slot("addiction"), tracker.get_slot("weight"), tracker.get_slot("infoPatient_distance"), tracker.get_slot("gender"), tracker.get_slot("temperature"), tracker.get_slot("heart_rate"), tracker.get_slot("blood_pressure"), tracker.get_slot("infoPatient_time"),
+tracker.get_slot("emotional_sadness"),
+tracker.get_slot("emotional_hapiness"),
+tracker.get_slot("social"),
+tracker.get_slot("distance"), tracker.get_slot("period"), tracker.get_slot("duration"), tracker.get_slot("time"), tracker.get_slot("body_part"))
           dispatcher.utter_message(response)
           conv.write("{ '"+str(date)+"' : [{'text': '"+response+"'}]},\n")
           conv.close() 

@@ -16,6 +16,8 @@ def score(positive_words, text):
     return len([word for word in raw_words if word in positive_words])                      
     
 def get_physical_activity_level(text):
+    corrected =TextBlob(text).correct()
+    print(corrected)
     vigorous = ["running","lifting heavy stuff","extrem sports","tennis","marathon",
             "cycling","nordic walking","cycling","run","cycle","bicylcle",
             "ride a bike","swiming","triathlon","marathon","urban trail",
@@ -115,7 +117,7 @@ def get_physical_activity_level(text):
     best = max(prob_vig,prob_lit,prob_mod)
     
     if best <= 0.5:
-        return save_None(text) 
+        return save_None(corrected,text) 
     if prob_lit == best:
         return 'little'
     elif prob_mod == best:
@@ -123,11 +125,11 @@ def get_physical_activity_level(text):
     elif prob_vig == best:
         return 'vigorous'
     else:
-        return save_None(text) 
-
-def save_None(text):
+        return save_None(corrected,text) 
+        
+def save_None(corrected,text):
     file = open('save_classif_activity.txt', 'a+')
-    file.write(str(text)+"\n")
+    file.write(str(corrected)+"\n"+str(text)+"\n")
     file.close()
         
 if __name__ == '__main__':
