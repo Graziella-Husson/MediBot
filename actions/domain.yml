@@ -79,7 +79,7 @@ slots:
       type: text
   gender:
       type: text
-  temperature:
+  infoPatient_temperature:
       type: text
   heart_rate:
       type: text
@@ -102,6 +102,8 @@ slots:
   pathology_body_part:
     type: text
   body_part:
+    type: text
+  temperature:
     type: text
 
 intents:
@@ -232,7 +234,7 @@ templates:
     - text: "How tall are you?"
   utter_ask_heart_rate:
     - text: "Can you give me the measure of your heart rate?"
-  utter_ask_temperature:
+  utter_ask_infoPatient_temperature:
     - text: "What is your temperature?"
   utter_ask_gender:
     - text: "What is your gender now?"

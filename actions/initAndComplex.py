@@ -167,27 +167,31 @@ class InitBot(Action):
 
 class SaveConv(Action):
     def duckling_set_slots(self,data,to_return):
-        possible = ['time','distance','duration','period']
-        to_set= None
-        value = None
-        try:
-            for i in data:
-                if i['extractor'] !=  'ner_crf':
-                    try:
+        #try:
+        to_set = {'time':None,'distance':None,'duration':None,'temperature':None}
+        for i in data:
+            entity = i['entity']
+            if entity in to_set.keys():
+                if i['extractor'] == 'ner_duckling':
+                    if entity != 'time':
                         unit = i['additional_info']['unit']
                         if unit != None:
-                            to_set = i['entity']
-                            value = i['value']
-                    except:
-                        value = i['additional_info']['value']
-            if to_set == None:
-                to_set = 'time'
-            to_return.append(SlotSet(str(to_set),value))
-            for i in possible:
-                if i != to_set:
-                    to_return.append(SlotSet(str(i),None))
-        except:
-            pass
+                            value = str(i['additional_info']['value'])+" "+str(i['additional_info']['unit'])
+                            to_set[entity]=value
+                    else:
+                        value = str(i['additional_info']['value'])
+                        to_set[entity]=value
+        for i in to_set.keys():
+            if i != 'time' and to_set[i] != None:
+                to_set['time']=None
+        print(to_set)
+        for i in to_set.keys():
+            if to_set[i] != None:
+                to_return.append(SlotSet(i,to_set[i]))
+            else:
+                to_return.append(SlotSet(i,None))
+        #except:
+        #    pass
         return to_return
         
     def save(self,tracker,to_return):
@@ -318,21 +322,21 @@ class SumUpSLots(Action):
 `\tpain = {}, pain_duration = {}, pain_desc = {}, pain_body_part = {}, pain_change = {}, pain_period = {}, pain_level = {}, pain_time = {},` 
 `\tpathology = {}, symtoms = {}, pathology_body_part = {},`
 `\ttreatment = {}, medicinal = {}, drug = {},`
-`\tinfoPatient = {}, addiction = {}, weight = {}, infoPatient_distance = {}, gender = {}, temperature = {}, heart_rate = {}, blood_pressure = {}, infoPatient_time= {},`
+`\tinfoPatient = {}, addiction = {}, weight = {}, infoPatient_distance = {}, gender = {}, infoPatient_temperature = {}, heart_rate = {}, blood_pressure = {}, infoPatient_time= {},`
 `\tsadness = {},`
 `\thappy = {},`
 `\tsocial = {},`
-`\tdistance = {}, period = {}, duration = {}, time = {}, body_part = {}`""").format(
+`\tdistance = {}, period = {}, duration = {}, time = {}, body_part = {},temperature = {}`""").format(
 tracker.get_slot("topic"), tracker.get_slot("requested_slot"),
 tracker.get_slot("activity"), tracker.get_slot("sport"), tracker.get_slot("activity_duration"), tracker.get_slot("activity_period"), tracker.get_slot("activity_hard"), tracker.get_slot("activity_time"),tracker.get_slot("activity_distance"),
 tracker.get_slot("pain"), tracker.get_slot("pain_duration"), tracker.get_slot("pain_desc"), tracker.get_slot("pain_body_part"), tracker.get_slot("pain_change"), tracker.get_slot("pain_period"), tracker.get_slot("pain_level"), tracker.get_slot("pain_time"),
 tracker.get_slot("pathology"), tracker.get_slot("symtoms"),tracker.get_slot("pathology_body_part"),
 tracker.get_slot("treatment"), tracker.get_slot("medicinal"), tracker.get_slot("drug"),
-tracker.get_slot("infoPatient"), tracker.get_slot("addiction"), tracker.get_slot("weight"), tracker.get_slot("infoPatient_distance"), tracker.get_slot("gender"), tracker.get_slot("temperature"), tracker.get_slot("heart_rate"), tracker.get_slot("blood_pressure"), tracker.get_slot("infoPatient_time"),
+tracker.get_slot("infoPatient"), tracker.get_slot("addiction"), tracker.get_slot("weight"), tracker.get_slot("infoPatient_distance"), tracker.get_slot("gender"), tracker.get_slot("infoPatient_temperature"), tracker.get_slot("heart_rate"), tracker.get_slot("blood_pressure"), tracker.get_slot("infoPatient_time"),
 tracker.get_slot("emotional_sadness"),
 tracker.get_slot("emotional_hapiness"),
 tracker.get_slot("social"),
-tracker.get_slot("distance"), tracker.get_slot("period"), tracker.get_slot("duration"), tracker.get_slot("time"), tracker.get_slot("body_part"))
+tracker.get_slot("distance"), tracker.get_slot("period"), tracker.get_slot("duration"), tracker.get_slot("time"), tracker.get_slot("body_part"), tracker.get_slot("temperature"))
           dispatcher.utter_message(response)
           conv.write("{ '"+str(date)+"' : [{'text': '"+response+"'}]},\n")
           conv.close() 

@@ -314,7 +314,7 @@ class InfoPatient(FormAction):
         weight = tracker.get_slot("weight")
         size = tracker.get_slot("infoPatient_distance")
         gender = tracker.get_slot("gender")
-        temperature = tracker.get_slot("temperature")
+        temperature = tracker.get_slot("infoPatient_temperature")
         heart_rate = tracker.get_slot("heart_rate")
         blood_pressure = tracker.get_slot("blood_pressure")
         date_check_up = tracker.get_slot("infoPatient_time")

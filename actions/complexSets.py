@@ -16,14 +16,6 @@ class SetMultiple(Action):
             head, *tail = requested_slot.split('_')
             topic = head
         return topic
-        
-    def get_value(self,data,entity):
-        for i in data:
-            if i['entity']==entity:
-                try:
-                    return(i['additional_info'])
-                except:
-                    return(i['value'])
 
     def get_next_action(self,topic):
         return {
@@ -37,12 +29,13 @@ class SetMultiple(Action):
         return 'action_multiple_set_complex'
     
     def run(self, dispatcher, tracker, domain):
-        every = ["time", "body_part","distance","duration","period"]
-        entities = tracker.latest_message.entities
+        every = ["time", "body_part","distance","duration","period", "temperature"]
         topic = self.get_topic(tracker)
         for i in every:
             if tracker.get_slot(str(i)) != None:
-                value = self.get_value(entities,i)
+                value = tracker.get_slot(i)
+                print(topic+"_"+str(i))
+                print(value)
                 tracker.update(SlotSet(topic+"_"+str(i),value))
                 tracker.update(SlotSet(str(i),None))
         action = self.get_next_action(topic)

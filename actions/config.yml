@@ -7,8 +7,8 @@ reminder_patient_little:
   minutes: '1'
 sessions:
   1:
-    begin: 2018,6,26,15,35,1
-    end: 2018,6,26,16,12,0
+    begin: 2018,6,1,8,0,0
+    end: 2018,7,1,7,59,59
     followed_intent: emotional_sadness,social
     requested_intent: pain,activity,pathology,treatment,infoPatient
     requested_slot:
@@ -17,6 +17,14 @@ sessions:
       pathology: symtoms,pathology_body_part
       treatment: medicinal,drug
       infoPatient: weight,infoPatient_distance,heart_rate,temperature,gender,blood_pressure,addiction,infoPatient_time
+  2:
+    begin: 2018,7,1,8,0,0
+    end: 2018,8,1,7,59,59
+    followed_intent: emotional_sadness
+    requested_intent: pain,activity
+    requested_slot:
+      pain: pain_desc,pain_body_part
+      activity: sport,activity_duration,activity_hard
 stopword: stop
 emergency : help
 nickname : Ailixir

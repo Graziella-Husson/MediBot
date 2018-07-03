@@ -108,7 +108,7 @@ class ResetInfoPatientSlots(Action):
                 SlotSet("weight",None),
                 SlotSet("infoPatient_distance",None),
                 SlotSet("gender",None),
-                SlotSet("temperature",None),
+                SlotSet("infoPatient_temperature",None),
                 SlotSet("heart_rate",None),
                 SlotSet("blood_pressure",None),
                 SlotSet("infoPatient_time",None),
