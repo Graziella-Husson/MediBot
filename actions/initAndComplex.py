@@ -16,8 +16,9 @@ import yaml
 import os
 
 from simpleActions import Fallback
+from duckling import DucklingWrapper
 
-global config,first,obligatories,reminder_patient,reminder_end_session,reminder_patient_little,last_session
+global config,first,obligatories,reminder_patient,reminder_end_session,reminder_patient_little,last_session, d
 config = yaml.load(open('config.yml'))
 first = True
 obligatories = dict()
@@ -26,6 +27,8 @@ reminder_end_session=timedelta(seconds=0)
 reminder_patient_little=timedelta(seconds=0)
 date_end=timedelta(seconds=0)
 last_session=False
+d = DucklingWrapper()
+print(d)
 
 def get_obligatories():
     return obligatories
@@ -167,31 +170,66 @@ class InitBot(Action):
 
 class SaveConv(Action):
     def duckling_set_slots(self,data,to_return):
-        #try:
-        to_set = {'time':None,'distance':None,'duration':None,'temperature':None}
-        for i in data:
-            entity = i['entity']
-            if entity in to_set.keys():
-                if i['extractor'] == 'ner_duckling':
-                    if entity != 'time':
-                        unit = i['additional_info']['unit']
-                        if unit != None:
-                            value = str(i['additional_info']['value'])+" "+str(i['additional_info']['unit'])
-                            to_set[entity]=value
+        try:
+            to_set = {'time':[],'distance':None,'duration':None,'temperature':None}
+            time = None
+            to_return_time=None
+            for i in data:
+                entity = i['entity']
+                if entity in to_set.keys():
+                    if i['extractor'] == 'ner_duckling':
+                        if entity != 'time':
+                            unit = i['additional_info']['unit']
+                            if unit != None:
+                                value = str(i['additional_info']['value'])+" "+str(i['additional_info']['unit'])
+                                to_set[entity]=value
+                        else:
+                            value = str(i['additional_info']['value'])
+                            to_set[entity].append(value)
                     else:
-                        value = str(i['additional_info']['value'])
-                        to_set[entity]=value
-        for i in to_set.keys():
-            if i != 'time' and to_set[i] != None:
-                to_set['time']=None
-        print(to_set)
-        for i in to_set.keys():
-            if to_set[i] != None:
-                to_return.append(SlotSet(i,to_set[i]))
+                        if i['entity']=='time':
+                            time = i['value']
+            print(to_set)
+            count = 0
+            for i in to_set.keys():
+                if to_set[i] != None:
+                    if i != 'time':
+                        to_return.append(SlotSet(i,to_set[i]))
+                        count += 1 
+                else:
+                    to_return.append(SlotSet(i,None))
+                    
+            if len(to_set['time']) > count:
+                for i in to_set.keys():
+                    if i != 'time' and to_set[i] != None:
+                        print(to_set[i])
+                        to_check=[]
+                        to_check_list = d.parse_time(to_set[i])
+                        for k in to_check_list:
+                            for j in k['value']['others']:
+                                to_check.append(j['value'])
+                        for j in to_set['time']:
+                            if j.startswith('{'):
+                                dict_to_from = yaml.load(j)               
+                                for to_from in dict_to_from:
+                                    time = dict_to_from[to_from]
+                                    if time != 'None':
+                                        for check in to_check:
+                                            year = int(time[:4])
+                                            if time[:-1] in check or year < 2010:
+                                                to_set['time'].remove(j)
+                                                break
+                            else:
+                                for check in to_check:
+                                    year = int(j[:4])
+                                    if j[:-1] in check or year < 2010:
+                                        to_set['time'].remove(j)
+                                        break
+                to_return.append(SlotSet('time',to_set['time']))
             else:
-                to_return.append(SlotSet(i,None))
-        #except:
-        #    pass
+                to_return.append(SlotSet('time',None))
+        except:
+            pass
         return to_return
         
     def save(self,tracker,to_return):
