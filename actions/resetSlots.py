@@ -26,7 +26,7 @@ class ResetSportSlots(Action):
         elif sport_level=='vigorous':
             global_score+=3
             MET = "> 6 MET"
-        #TODO: save score and MET
+        #TODO: save score and MET warning : save level in language of bot
         return[SlotSet("global_score",global_score),
                SlotSet("activity_hard",None), 
                 SlotSet("activity_duration",None), 
@@ -47,7 +47,7 @@ class ResetPainSlots(Action):
         language = tracker.get_slot("language")
         global_score = tracker.get_slot("global_score")
         dispatcher.utter_message(get_utterance("saved",language))
-        # TODO: save to DB
+        # TODO: save to DB warning : save level in language of bot
         pain_level = tracker.get_slot("pain_level")
         if pain_level=='severe':
             global_score+=1
@@ -55,7 +55,7 @@ class ResetPainSlots(Action):
             global_score+=2
         elif pain_level=='mild':
             global_score+=3
-        #TODO: save score
+        #TODO: save score 
         return [SlotSet("global_score",global_score),
                 SlotSet("pain_duration",None), 
                 SlotSet("pain_desc",None), 

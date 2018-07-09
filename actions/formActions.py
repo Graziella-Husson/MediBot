@@ -49,7 +49,7 @@ class ActionFillSlotsPain(FormAction):
                         #get pain level
                         level = get_pain_level(pain_desc)                
                         tracker.update(SlotSet("pain_level",level))
-                        #TODO : do something if None
+                    level = get_utterance(level,language)
                     response += get_utterance("pain_desc",language).format(pain_desc, level)
                 if pain_body_part != None:
                     response += get_utterance("pain_body_part",language).format(pain_body_part)
@@ -116,6 +116,7 @@ class ActionFillSlotsSport(FormAction):
                             MET = "3-6 MET"
                         elif sport_level=='vigorous':
                             MET = "> 6 MET"
+                    sport_level = get_utterance(sport_level,language)
                     response += get_utterance("sport",language).format(sport_level, MET, sport)
                 if sport_duration != None:
                     response += get_utterance("activity_duration",language).format(sport_duration)

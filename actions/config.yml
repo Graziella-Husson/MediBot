@@ -1,4 +1,4 @@
-language: 'en'
+language: 'fr'
 follow_in_current_session_plus: 1
 reminder_end_session:
   minutes: '1'

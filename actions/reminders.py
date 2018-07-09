@@ -10,6 +10,7 @@ from rasa_core.events import SlotSet,ReminderScheduled, AllSlotsReset, Conversat
 
 from initAndComplex import get_obligatories, get_reminder_patient, get_date_end, get_reminder_end_session, get_last_session
 from ressources import get_utterance
+import os
 
 class ChangeSessionReminder(Action):
     def name(self):
@@ -18,6 +19,22 @@ class ChangeSessionReminder(Action):
     def run(self, dispatcher, tracker, domain):  
         language = tracker.get_slot("language")
         global_score = tracker.get_slot("global_score") 
+        
+        current_session = tracker.get_slot("current_session")
+        id_user = tracker.sender_id
+        idy = "./saves/"+str(id_user)+"/"+str(current_session)
+        try:
+            conv = open(idy, 'a')
+        except:
+            try:
+                os.mkdir("saves") 
+                os.mkdir("saves/"+str(id_user)+"/") 
+            except:
+                os.mkdir("saves/"+str(id_user)+"/") 
+            conv = open(idy, 'a')  
+        conv.write("{}")
+        conv.close()        
+        
         obligatories = get_obligatories()
         #TODO: send a notification instead
         unacomplished = []

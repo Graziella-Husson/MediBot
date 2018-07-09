@@ -142,117 +142,7 @@ entities:
  - heart_rate
  - blood_pressure
 
-templates:
-  utter_ask_activity_hard:
-  - text: "Was your physical activity hard to perform because of your general health?"
-    buttons:
-    - title: "Yes"
-      payload: /activity{"activity_hard":true}
-    - title: "No"
-      payload: /activity{"activity_hard":false}
-  utter_ask_sport:
-    - text: "I did not recognize any sport in what you said. Can you tell me more?"
-    - text: "Can you tell me which sport you did?"
-    - text: "Wich sport did you do?"
-  utter_ask_activity_duration:
-    - text: "How long did you do your physical activity?"
-    - text: "For how long?"
-    - text: "How long?"
-  utter_ask_pain_body_part:
-    - text: "Where is localized this pain?"
-    - text: "Where does it hurts?"
-    - text: "In which part of your body does it hurt?"
-  utter_ask_pathology_body_part:
-    - text: "Where is localized this pathology or symptoms?"
-  utter_ask_pain_duration:
-    - text: "How long did you have this pain?"
-    - text: "For how long?"
-    - text: "How long?"
-  utter_ask_pain_change:
-  - text: "How does your pain change with time?"
-    buttons:
-    - title: "continuous"
-      payload: /pain{"pain_change":"continuous"}
-    - title: "intermittent"
-      payload: /pain{"pain_change":"intermittent"}
-    - title: "brief"
-      payload: /pain{"pain_change":"brief"}
-  utter_ask_pain_period:
-  - text: "Does the pain have a period (e.g. every week)?"
-  utter_ask_activity_period:
-  - text: "Do you do your sport with a regular period (e.g. every week)?"
-  utter_ask_pain:
-  - text: "Can you talk about your pain?"
-  utter_ask_activity:
-  - text: "Can you talk about your physical activity?"
-  utter_ask_social:
-  - text: "Can you talk about something social?"
-  utter_ask_emotionnal_hapiness:
-  - text: "How do you feel? Happy?"
-  utter_ask_emotionnal_sadness:
-  - text: "How do you feel? Sad?"
-  utter_ask_pain_desc:
-    - text: "I did not recognize any description of your pain. Can you tell me more about it? (e.g. is it a sharp pain?)."
-    - text: "Can you describe your pain?"
-    - text: "Describe how it hurts"
-  sum_up_agree:
-    - text: "Glad you agree!"
-  sum_up_disagree:
-    - text: "I see, you disagree. I respect that."
-  ask_why:
-    - text: "So, why are you in a bad mood?"
-  sum_up_bye:
-    - text: "Goodbye, human friend!"
-    - text: "Bye!"
-    - text: "See you soon!"
-    - text: "Goodbye!"
-  sum_up_hello:
-    - text: "Hello!"
-    - text: "Hi, human friend!"
-    - text: "Nice to see you!"
-    - text: "Hey!"
-    - text: "Happy to see you!"
-  utter_ask_symtoms:
-    - text: "I did not recognize any symtom in what you said. Can you tell me more?"
-  utter_ask_medicinal:
-  - text: "Is your treatment medicinal or not?"
-    buttons:
-    - title: "Yes"
-      payload: /treatment{"medicinal":true}
-    - title: "No"
-      payload: /treatment{"medicinal":false, "drug":"no_drug"}
-  utter_ask_drug:
-    - text: "I did not recognize any drug in what you said. Can you tell me more?"
-  utter_ask_pain_time:
-    - text: "When did your pain begin?"
-  utter_ask_activity_time:
-    - text: "When did you begin your physical activity?"
-  utter_ask_activity_distance:
-    - text: "Can you talk about the distance you did during your physical activity?"
-  utter_ask_weight:
-    - text: "How much do you weigh, if it is not indiscreet?"
-  utter_ask_infoPatient_distance:
-    - text: "What is your size?"
-    - text: "How tall are you?"
-  utter_ask_heart_rate:
-    - text: "Can you give me the measure of your heart rate?"
-  utter_ask_infoPatient_temperature:
-    - text: "What is your temperature?"
-  utter_ask_gender:
-    - text: "What is your gender now?"
-  utter_ask_blood_pressure:
-    - text: "Can you give me the measure of your blood pressure?"
-  utter_ask_addiction:
-    - text: "Do you have any addiction?"
-  utter_ask_infoPatient_time:
-    - text: "When did you last see medical staff?"
-
 actions:
- - sum_up_agree
- - sum_up_disagree
- - ask_why
- - sum_up_bye
- - sum_up_hello
  - initAndComplex.SumUpSLots
  - initAndComplex.InitBot
  - initAndComplex.SaveConv
@@ -260,7 +150,6 @@ actions:
  - reminders.SessionEndReminder
  - reminders.ChangeSessionReminder
  - reminders.UserReminderLittle
- - simpleActions.Fallback
  - formActions.ActionFillSlotsPain
  - formActions.ActionFillSlotsSport
  - formActions.Sadness
@@ -281,3 +170,38 @@ actions:
  - resetSlots.ResetInfoPatientSlots
  - resetSlots.ResetSportSlots
  - resetSlots.ResetPainSlots
+ - simpleActions.Fallback
+ - simpleActions.AskActivityHard
+ - simpleActions.AskSport
+ - simpleActions.AskActivityDuration
+ - simpleActions.AskPainBodyPart
+ - simpleActions.AskPathologyBodyPart
+ - simpleActions.AskPainDuration
+ - simpleActions.AskPainChange
+ - simpleActions.AskPainPeriod
+ - simpleActions.AskActivityPeriod
+ - simpleActions.AskPain
+ - simpleActions.AskActivity
+ - simpleActions.AskSocial
+ - simpleActions.AskHappiness
+ - simpleActions.AskSadness
+ - simpleActions.AskPainDesc
+ - simpleActions.Agree
+ - simpleActions.Disagree
+ - simpleActions.AskWhy
+ - simpleActions.Bye
+ - simpleActions.Hello
+ - simpleActions.AskSymptoms
+ - simpleActions.AskMedicinal
+ - simpleActions.AskDrug
+ - simpleActions.AskPainTime
+ - simpleActions.AskActivityTime
+ - simpleActions.AskActivityDistance
+ - simpleActions.AskWeight
+ - simpleActions.AskInfoPatientDistance
+ - simpleActions.AskHeartRate
+ - simpleActions.AskInfoPatientTemperature
+ - simpleActions.AskGender
+ - simpleActions.AskBloodPressure
+ - simpleActions.AskAddiction
+ - simpleActions.AskInfoPatientTime

@@ -1,15 +1,5 @@
 {"utterances" : 
 	{
-	"hello":
-		{
-		"en":"hello",
-		"fr":"bonjour"
-		},
-	"bye":
-		{
-		"en":"bye",
-		"fr":"au revoir"
-		},
 	"fallback":
 		{
 		"en":"Sorry, I did not understand what you said...\n`This is a fallback for NLU part (intent fallback)`",
@@ -253,7 +243,7 @@
 	"sum_up_social":
 		{
 		"en":"It seems that you talked about a social thing.",
-		"fr":"Il semblerait que vous avez parlé d'une activité sociale."
+		"fr":"Il semblerait que vous ayez parlé d'une activité sociale."
 		},
 	"symtoms":
 		{
@@ -439,6 +429,201 @@
 		{
 		"en":"Date last check up",
 		"fr":"Date dernier check up"
+		},
+	"ask_activity_hard":
+		{
+		"en":"Was your physical activity hard to perform because of your general health?",
+		"fr":"Votre activité physique était-elle dure a performer à cause de votre état de santé général ?"
+		},
+	"yes":
+		{
+		"en":"Yes",
+		"fr":"Oui"
+		},
+	"no":
+		{
+		"en":"No",
+		"fr":"Non"
+		},
+	"ask_sport":
+		{
+		"en":"I did not recognize any physical activity in what you said. Can you tell me more?",
+		"fr":"Je n'ai pas détecté d'activité physique dans votre phrase. Pouvez-vous m'en dire plus ?"
+		},
+	"ask_activity_duration":
+		{
+		"en":"How long did you do your physical activity?",
+		"fr":"Combien de temps avez-vous effectué votre activité physique ?"
+		},
+	"ask_pain_body_part":
+		{
+		"en":"Where is localized this pain?",
+		"fr":"Où avez-vous mal ?"
+		},
+	"ask_pathology_body_part":
+		{
+		"en":"Where is localized this pathology or symptoms?",
+		"fr":"Où avez vous vos symptômes ou votre pathologie ?"
+		},
+	"ask_pain_duration":
+		{
+		"en":"How long did you have this pain?",
+		"fr":"Combien de temps avez-vous eu mal ?"
+		},
+	"ask_pain_change":
+		{
+		"en":"How does your pain change with time?",
+		"fr":"Comment évolue votre douleur ?"
+		},
+	"continuous_button":
+		{
+		"en":"Continuous",
+		"fr":"Continue"
+		},
+	"intermittent_button":
+		{
+		"en":"Intermittent",
+		"fr":"Intermittent"
+		},
+	"brief_button":
+		{
+		"en":"Brief",
+		"fr":"Brève"
+		},
+	"ask_pain_period":
+		{
+		"en":"Does the pain have a period (e.g. every week)?",
+		"fr":"Votre douleur a-t-elle une période (par exemple, toutes les semaines) ?"
+		},
+	"ask_activity_period":
+		{
+		"en":"Do you do your physical activity with a regular period (e.g. every week)?",
+		"fr":"Faites vous votre activité physique de manière régulière (chaque semaine, etc.) ?"
+		},
+	"ask_pain":
+		{
+		"en":"Can you talk about your pain?",
+		"fr":"Pouvez-vous parler de votre douleur ?"
+		},
+	"ask_activity":
+		{
+		"en":"Can you talk about your physical activity?",
+		"fr":"Pouvez-vous parler de votre activité physique ?"
+		},
+	"ask_social":
+		{
+		"en":"Can you talk about something social?",
+		"fr":"Pouvez-vous parler de vos intéractions sociales ?"
+		},
+	"ask_happiness":
+		{
+		"en":"How do you feel? Happy?",
+		"fr":"Comment vous sentez-vous ? Heureux ?"
+		},
+	"ask_sadness":
+		{
+		"en":"How do you feel? Sad?",
+		"fr":"Comment vous sentez-vous ? Triste ?"
+		},
+	"ask_pain_desc":
+		{
+		"en":"I did not recognize any description of your pain. Can you tell me more about it? (e.g. is it a sharp pain?).",
+		"fr":"Je n'ai pas reconnu de description de votre douleur. Pouvez-vous m'en dire plus ? (par exemple, est-ce une douleur aigüe ?)"
+		},
+	"agree":
+		{
+		"en":"Glad you agree!",
+		"fr":"Content que vous soyez d'accord !"
+		},
+	"disagree":
+		{
+		"en":"I see, you disagree. I respect that.",
+		"fr":"Je vois, vous n'êtes pas d'accord. Je respecte."
+		},
+	"ask_why":
+		{
+		"en":"So, why are you in a bad mood?",
+		"fr":"Donc, pourquoi êtes vous dans une mauvaise passe ?"
+		},
+	"bye":
+		{
+		"en":"Goodbye, human friend!",
+		"fr":"Au revoir, mon ami !"
+		},
+	"hello":
+		{
+		"en":"Hello!",
+		"fr":"Bonjour !"
+		},
+	"ask_symtoms":
+		{
+		"en":"I did not recognize any symtom in what you said. Can you tell me more?",
+		"fr":"Je n'ai pas reconnu de symptôme dans votre phrase. Pouvez-vous m'en dire plus ?"
+		},
+	"ask_medicinal":
+		{
+		"en":"Is your treatment medicinal or not?",
+		"fr":"Votre traitement est-il médicamenteux ?"
+		},
+	"ask_drug":
+		{
+		"en":"I did not recognize any drug in what you said. Can you tell me more?",
+		"fr":"Je n'ai pas reconnu de médicament dans votre phrase. Pouvez-vous m'en dire plus ?"
+		},
+	"ask_pain_time":
+		{
+		"en":"When did your pain begin?",
+		"fr":"Quand votre douleur a-t-elle commencé ?"
+		},
+	"ask_activity_time":
+		{
+		"en":"When did you begin your physical activity?",
+		"fr":"Quand votre activité physique a-t-elle commencé ?"
+		},
+	"ask_activity_distance":
+		{
+		"en":"Can you talk about the distance you did during your physical activity?",
+		"fr":"Pouvez-vous parler de la distance que vous avez parcourue durant votre activité physique ?"
+		},
+	"ask_weight":
+		{
+		"en":"How much do you weigh, if it is not indiscreet?",
+		"fr":"Combien pesez-vous, si ce n'est pas indiscret ?"
+		},
+	"ask_infoPatient_distance":
+		{
+		"en":"How tall are you?",
+		"fr":"Combien mesurez-vous ?"
+		},
+	"ask_heart_rate":
+		{
+		"en":"Can you give me the measure of your heart rate?",
+		"fr":"Pouvez-vous me donner la mesure de votre rythme cardiaque ?"
+		},
+	"ask_infoPatient_temperature":
+		{
+		"en":"What is your temperature?",
+		"fr":"Quelle est votre température ?"
+		},
+	"ask_gender":
+		{
+		"en":"What is your gender now?",
+		"fr":"Quel est votre genre ?"
+		},
+	"ask_blood_pressure":
+		{
+		"en":"Can you give me the measure of your blood pressure?",
+		"fr":"Pouvez-vous me donner la mesure de votre pression artérielle ?"
+		},
+	"ask_addiction":
+		{
+		"en":"Do you have any addiction?",
+		"fr":"Avez-vous une addiction ?"
+		},
+	"ask_infoPatient_time":
+		{
+		"en":"When did you last see medical staff?",
+		"fr":"Quand avez-vous un personnel médical pour la dernière fois ?"
 		}
 	}
 }

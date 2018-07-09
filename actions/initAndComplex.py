@@ -330,12 +330,13 @@ class SaveConv(Action):
             for i in to_return:
                 tracker.update(i)
             nickname = tracker.get_slot("nickname")
+            language = tracker.get_slot("language")
             to_return = []
             #print("reminder change session scheduled at "+str(date_end))
             #to_return.append(ReminderScheduled("change_session_reminder", date_end, kill_on_user_message=False))  
             #print("reminder before change session scheduled at "+str(date_end - reminder_end_session))
             #to_return.append(ReminderScheduled("session_end_reminder", date_end - reminder_end_session, kill_on_user_message=False)) 
-            dispatcher.utter_message(get_utterance("welcome",language)+nickname)
+            dispatcher.utter_message(get_utterance("welcome",language)+" "+nickname)
         [intent, entities,to_return,response] = self.save(tracker,to_return)
         to_return = self.duckling_set_slots(entities,to_return)
         to_return = self.check(to_return,intent,entities,tracker,dispatcher,response,domain)
