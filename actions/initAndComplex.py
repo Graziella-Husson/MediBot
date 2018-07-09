@@ -17,6 +17,7 @@ import os
 
 from simpleActions import Fallback
 from duckling import DucklingWrapper
+from ressources import get_utterance
 
 global config,first,obligatories,reminder_patient,reminder_end_session,reminder_patient_little,last_session, d
 config = yaml.load(open('config.yml'))
@@ -70,6 +71,7 @@ class InitBot(Action):
         emergency=str(config['emergency'])
         nickname=str(config['nickname'])
         exitword=str(config['exit'])
+        language=str(config['language'])
         count_user_reminder_max = config['count_user_reminder_max']
         to_return.append(SlotSet("stopword",stopword))
         to_return.append(SlotSet("emergency",emergency))
@@ -78,6 +80,7 @@ class InitBot(Action):
         to_return.append(SlotSet("count_user_reminder_max",count_user_reminder_max))
         to_return.append(SlotSet("count_user_reminder",0))
         to_return.append(SlotSet("followed_intent",followed_intent))
+        to_return.append(SlotSet("language",language))
         return to_return
 
     def get_current_session(self):
@@ -173,7 +176,6 @@ class SaveConv(Action):
         try:
             to_set = {'time':[],'distance':None,'duration':None,'temperature':None}
             time = None
-            to_return_time=None
             for i in data:
                 entity = i['entity']
                 if entity in to_set.keys():
@@ -269,6 +271,7 @@ class SaveConv(Action):
         return [intent, entities,to_return,response]
     
     def check(self,to_return,intent,entities,tracker,dispatcher,response,domain):
+        language = tracker.get_slot("language")
         response1 = ("""`\tIntent : {}`
 `\tEntities : {}`""").format(intent, entities)
         dispatcher.utter_message(response1)
@@ -282,7 +285,7 @@ class SaveConv(Action):
             exitword = tracker.get_slot("exitword")
             if response == emergency:
                 #TODO : send a notification instead
-                dispatcher.utter_message("It seems that you have an emeregency. I contacted someone.")
+                dispatcher.utter_message(get_utterance("emergency",language))
                 SumUpSLots().run(dispatcher, tracker, domain)            
                 action = ActionListen()
                 tracker.trigger_follow_up_action(action)
@@ -296,7 +299,7 @@ class SaveConv(Action):
                             to_return.append(UserUtteranceReverted())
                         return to_return
             elif response == exitword:
-                dispatcher.utter_message("Talk to you later.")   
+                dispatcher.utter_message(get_utterance("exit",language))
                 SumUpSLots().run(dispatcher, tracker, domain)   
                 action = ActionListen()
                 tracker.trigger_follow_up_action(action)
@@ -319,7 +322,8 @@ class SaveConv(Action):
         return 'save_conv'
         
     def run(self, dispatcher, tracker, domain):
-        global first
+        global first        
+        language = tracker.get_slot("language")
         to_return = []
         if first:
             to_return = InitBot().run(dispatcher, tracker, domain)
@@ -331,7 +335,7 @@ class SaveConv(Action):
             #to_return.append(ReminderScheduled("change_session_reminder", date_end, kill_on_user_message=False))  
             #print("reminder before change session scheduled at "+str(date_end - reminder_end_session))
             #to_return.append(ReminderScheduled("session_end_reminder", date_end - reminder_end_session, kill_on_user_message=False)) 
-            dispatcher.utter_message("Nice to meet you! My name is "+nickname)
+            dispatcher.utter_message(get_utterance("welcome",language)+nickname)
         [intent, entities,to_return,response] = self.save(tracker,to_return)
         to_return = self.duckling_set_slots(entities,to_return)
         to_return = self.check(to_return,intent,entities,tracker,dispatcher,response,domain)

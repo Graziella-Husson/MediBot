@@ -1,0 +1,445 @@
+{"utterances" : 
+	{
+	"hello":
+		{
+		"en":"hello",
+		"fr":"bonjour"
+		},
+	"bye":
+		{
+		"en":"bye",
+		"fr":"au revoir"
+		},
+	"fallback":
+		{
+		"en":"Sorry, I did not understand what you said...\n`This is a fallback for NLU part (intent fallback)`",
+		"fr":"Désolé, je n'ai pas compris ce que vous avez dit... \n `Ceci est un fallback de la partie NLU (intention fallback)`"
+		},
+	"emergency":
+		{
+		"en":"It seems that you have an emeregency. I contacted someone.",
+		"fr":"Il semblerait que vous ayez une urgence. J'ai contacté quelqu'un."
+		},
+	"exit":
+		{
+		"en":"Talk to you later.",
+		"fr":"A plus tard!"
+		},
+	"welcome":
+		{
+		"en":"Nice to meet you! My name is",
+		"fr":"Ravi de vous rencontrer ! Mon nom est"
+		},
+	"score":
+		{
+		"en":"This session score was of {} points.",
+		"fr":"Le score de cette session est de {} points."
+		},
+	"not_broached":
+		{
+		"en":"The following intents were not broached: ",
+		"fr":"Les intentions suivantes n'ont pas été abordées: "
+		},
+	"change_session":
+		{
+		"en":"We just changed session! :smile:\nNow, let's talk!",
+		"fr":"Nous venons de changer de session ! :smile:\nParlons !"
+		},
+	"last_session":
+		{
+		"en":"It was the last session! Goodbye and thank you! :smile:",
+		"fr":"C'était la dernière session! Au revoir et merci de votre participation ! :smile:"
+		},
+	"user_reminder":
+		{
+		"en":"Hey! It's been a while! We have to talk about you :smile:",
+		"fr":"Hey ! Ca fait un moment qu'on ne s'est pas parlé ! :smile:"
+		},
+	"count_user_reminder":
+		{
+		"en":"It seems that you did not response for {} times. I contacted someone. I hope you're ok.",
+		"fr":"Il semblerait que vous n'avez pas répondu {} fois. J'ai contacté quelqu'un. J'espère que vous allez bien."
+		},
+	"talk":
+		{
+		"en":"Hey! We have to talk about you :smile: \n",
+		"fr":"Hey ! Nous devons parler de vous ! :smile: \n"
+		},
+	"so_far":
+		{
+		"en":"So far, we talked about:\n",
+		"fr":"Jusqu'ici, nous avons parlé de:\n"
+		},
+	"social":
+		{
+		"en":"\tYour socialness\n",
+		"fr":"\tVotre vie sociale\n"
+		},
+	"activity":
+		{
+		"en":"\tYour physical activities\n",
+		"fr":"\tVos activités physiques\n"
+		},
+	"pain":
+		{
+		"en":"\tYour pain\n",
+		"fr":"\tVotre douleur\n"
+		},
+	"emotional_sadness":
+		{
+		"en":"\tYour sadness\n",
+		"fr":"\tVotre tristesse\n"
+		},
+	"emotional_hapiness":
+		{
+		"en":"\tYour happiness\n",
+		"fr":"\tVotre bonheur\n"
+		},
+	"pathology":
+		{
+		"en":"\tYour pathology (or side effects)\n",
+		"fr":"\tVotre pathologie (ou effets secondaires)\n"
+		},
+	"treatment":
+		{
+		"en":"\tYour treatment\n",
+		"fr":"\tVotre traitement\n"
+		},
+	"infoPatient":
+		{
+		"en":"\tYour personal informations\n",
+		"fr":"\tVos informations personnelles\n"
+		},
+	"user_reminder_little":
+		{
+		"en":"Are you still there?",
+		"fr":"Vous êtes toujours là ?"
+		},
+	"saved":
+		{
+		"en":"Saved!",
+		"fr":"Sauvegardé!"
+		},
+	"ask_what":
+		{
+		"en":"Ok. So, tell me what's wrong? Click on a button or tell me above!",
+		"fr":"Ok. Qu'est-ce qui n'est pas correct ? Cliquez sur un bouton ou dites-le en dessous !"
+		},
+	"sum_up":
+		{
+		"en":"To sum up:\n",
+		"fr":"Pour résumer : \n"
+		},
+	"pain_desc":
+		{
+		"en":"\tYou have some {} pain (it's considered has a {} pain).\n",
+		"fr":"\tVous resentez une douleur {} (considérée comme une douleur {}).\n"
+		},
+	"pain_body_part":
+		{
+		"en":"\tThe pain is localized at {}.\n",
+		"fr":"\tLa douleur est localisée à {}.\n"
+		},
+	"pain_duration":
+		{
+		"en":"\tThe duration of this pain is of {}.\n",
+		"fr":"\tLa durée de cette douleur est de {}.\n"
+		},
+	"pain_period":
+		{
+		"en":"\tThe pain period/recurrence is {}.\n",
+		"fr":"\tLa période/récurrence de cette douleur est de {}.\n"
+		},
+	"pain_change":
+		{
+		"en":"\tThe pain seems to be {}.\n",
+		"fr":"\tLa douleur semble {}.\n"
+		},
+	"right":
+		{
+		"en":"Is it right?",
+		"fr":"Est-ce exact ?"
+		},
+	"pain_no_entity":
+		{
+		"en":"So, you feel some pain.",
+		"fr":"Donc, vous ressentez une douleur."
+		},
+	"mild":
+		{
+		"en":"Mild",
+		"fr":"Faible"
+		},
+	"moderate":
+		{
+		"en":"Moderate",
+		"fr":"Modérée"
+		},
+	"severe":
+		{
+		"en":"Severe",
+		"fr":"Sévère"
+		},
+	"ask_level_pain":
+		{
+		"en":"I failed to calculate your pain level. Can you tell me it? Click on one of the buttons above.",
+		"fr":"Je n'ai pas réussi à calculer le niveau de douleur. Pouvez-vous me le dire en cliquant sur le bon bouton ?"
+		},
+	"sport":
+		{
+		"en":"\tYou did some {} physical activity ({}). The physical activity detected is {}.\n",
+		"fr":"\tVous avez fait une activité physique jugée {} ({}). L'activité détectée est {}.\n"
+		},
+	"activity_duration":
+		{
+		"en":"\tThe physical activity duration is of {}.\n",
+		"fr":"\tLa durée de l'activité physique est de {}.\n"
+		},
+	"activity_distance":
+		{
+		"en":"\tThe physical activity distance you did is of {}.\n",
+		"fr":"\tLa distance parcourue est de {}.\n"
+		},
+	"activity_period":
+		{
+		"en":"\tThe physical activity period/recurrence detected is {}.\n",
+		"fr":"\tLa période/récurrence de l'activité physique détectée est de {}.\n"
+		},
+	"activity_hard_true":
+		{
+		"en":"\tYour activity was hard because of your general health.\n",
+		"fr":"\tVotre activité était dure à performer à cause de votre état de santé général.\n"
+		},
+	"activity_hard_false":
+		{
+		"en":"\tYour general health did not make your activity harder.\n",
+		"fr":"\tVotre état de santé général n'a pas fait que votre activité était dure à performer.\n"
+		},
+	"activity_no_entity":
+		{
+		"en":"So, you did some physical activities.",
+		"fr":"Donc, vous avez fait une activité physique"
+		},
+	"little":
+		{
+		"en":"Little",
+		"fr":"Peu intensive"
+		},
+	"vigorous":
+		{
+		"en":"Vigorous",
+		"fr":"Vigoureuse"
+		},
+	"ask_level_activity":
+		{
+		"en":"I failed to calculate your physical activity level. Can you tell me it? Click on one of the buttons above.",
+		"fr":"Je n'ai pas réussi à calculer le niveau de l'activité physique citée. Pouvez-vous me le dire en cliquant sur le bon bouton ?"
+		},
+	"requested_intent":
+		{
+		"en":"We talked about everything we had to! But feel free to talk to me about everything else!",
+		"fr":"Nous avons parlé de tous les sujets que nous devions aborder ! Sentez-vous libre de continuer de discuter !"
+		},
+	"sum_up_sadness":
+		{
+		"en":"It seems that you are in a bad mood... Do you want to talk about it in details?",
+		"fr":"Il semblerait que vous soyez dans une mauvaise passe... Voulez-vous en parler plus en détails ?"
+		},
+	"sum_up_happiness":
+		{
+		"en":"Great! You are in a good mood!",
+		"fr":"Génial ! Vous semblez de bonne humeur !"
+		},
+	"sum_up_social":
+		{
+		"en":"It seems that you talked about a social thing.",
+		"fr":"Il semblerait que vous avez parlé d'une activité sociale."
+		},
+	"symtoms":
+		{
+		"en":"\n\tYou have some symptoms : {}",
+		"fr":"\n\tVous avez le(s) symptôme(s) suivant(s) : {}"
+		},
+	"pathology_body_part":
+		{
+		"en":"\n\tThis symptom is localized at {}",
+		"fr":"\n\tCe(s) symptôme(s) est localisé à {}"
+		},
+	"sum_up_pathology":
+		{
+		"en":"It seems that you talked about a pathology.",
+		"fr":"Il semblerait que vous avez parlé d'une pathologie"
+		},
+	"medicinal_true":
+		{
+		"en":"\n\tYour traitment is medicinal",
+		"fr":"\n\tVotre traitement est médicamenteux"
+		},
+	"medicinal_false":
+		{
+		"en":"\n\tYour traitment is not medicinal",
+		"fr":"\n\tVotre traitement n'est pas médicamenteux"
+		},
+	"drug":
+		{
+		"en":"\n\tYou take: {}",
+		"fr":"\n\tVous prenez : {}"
+		},
+	"sum_up_treatment":
+		{
+		"en":"It seems that you talked about a treatment.",
+		"fr":"Il semblerait que vous avez parlé de votre traitement."
+		},
+	"addiction":
+		{
+		"en":"\n\tYou have some addiction: {}",
+		"fr":"\n\tVous avez une addiction: {}"
+		},
+	"weight":
+		{
+		"en":"\n\tYour weight is of {}",
+		"fr":"\n\tVotre poids est de {}"
+		},
+	"size":
+		{
+		"en":"\n\tYou're {} tall",
+		"fr":"\n\tVous mesurez {}"
+		},
+	"gender":
+		{
+		"en":"\n\tYou're a {}",
+		"fr":"\n\tVous êtes un(e) {}"
+		},
+	"infoPatient_temperature":
+		{
+		"en":"\n\tYour temperature is of {}",
+		"fr":"\n\tVotre température est de {}"
+		},
+	"heart_rate":
+		{
+		"en":"\n\tYour heart rate is of {}",
+		"fr":"\n\tVotre rythme cardiaque est de {}"
+		},
+	"blood_pressure":
+		{
+		"en":"\n\tYour blood pressure is of {}",
+		"fr":"\n\tVotre pression sanguine est de {}"
+		},
+	"infoPatient_time":
+		{
+		"en":"\n\tYou saw some caregivers on: {}",
+		"fr":"\n\tVous avez vu un personnel médical à cette date : {}"
+		},
+	"sum_up_info_patient":
+		{
+		"en":"It seems that you talked about some personal informations.",
+		"fr":"Il semblerait que vous avez parlé de quelques informations personnelles."
+		},
+	"sport_button":
+		{
+		"en":"Sport",
+		"fr":"Sport"
+		},
+	"level_button":
+		{
+		"en":"Level",
+		"fr":"Niveau"
+		},
+	"duration_button":
+		{
+		"en":"Duration",
+		"fr":"Durée"
+		},
+	"distance_button":
+		{
+		"en":"Distance",
+		"fr":"Distance"
+		},
+	"period_button":
+		{
+		"en":"Period",
+		"fr":"Période"
+		},
+	"activity_hard_button":
+		{
+		"en":"Hardness",
+		"fr":"Difficultés"
+		},
+	"time_button":
+		{
+		"en":"Begin date",
+		"fr":"Date de début"
+		},
+	"desc_button":
+		{
+		"en":"Description",
+		"fr":"Description"
+		},
+	"body_part_button":
+		{
+		"en":"Body part",
+		"fr":"Partie du corps"
+		},
+	"evolution_button":
+		{
+		"en":"Evolution",
+		"fr":"Evolution"
+		},
+	"symtoms_button":
+		{
+		"en":"Symptoms",
+		"fr":"Symptômes"
+		},
+	"medicinal_button":
+		{
+		"en":"Medicinal",
+		"fr":"Médicamenteux"
+		},
+	"drug_button":
+		{
+		"en":"Drug",
+		"fr":"Médicament"
+		},
+	"addiction_button":
+		{
+		"en":"Addiction",
+		"fr":"Addiction"
+		},
+	"weight_button":
+		{
+		"en":"Weight",
+		"fr":"Poids"
+		},
+	"size_button":
+		{
+		"en":"Size",
+		"fr":"Taille"
+		},
+	"gender_button":
+		{
+		"en":"Gender",
+		"fr":"Genre"
+		},
+	"temperature_button":
+		{
+		"en":"Temperature",
+		"fr":"Température"
+		},
+	"heart_rate_button":
+		{
+		"en":"Heart rate",
+		"fr":"Rythme cardiaque"
+		},
+	"blood_pressure_button":
+		{
+		"en":"Blood Pressure",
+		"fr":"Pression sanguine"
+		},
+	"date_check_up_button":
+		{
+		"en":"Date last check up",
+		"fr":"Date dernier check up"
+		}
+	}
+}
+

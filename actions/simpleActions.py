@@ -4,14 +4,16 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 from rasa_core.actions.action import Action
+from ressources import get_utterance
 
 class Fallback(Action):
     def name(self):
         return 'sum_up_fallback'
         
-    def run(self, dispatcher, tracker, domain):
-        response = "Sorry, I did not understand what you said...\n`This is a fallback for NLU part (intent fallback)`"
+    def run(self, dispatcher, tracker, domain):  
+        language = tracker.get_slot("language")
+        response = get_utterance("fallback",language)
         dispatcher.utter_message(response)
 
 if __name__ == '__main__':
-    print("aha")
+    print(get_utterance("fallback","en"))

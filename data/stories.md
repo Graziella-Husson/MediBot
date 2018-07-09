@@ -809,6 +809,163 @@
     - action_check_slots_sport
     - slot{"requested_slot": "sport"}
     - sum_up_slots
+
+## Generated Story 2194076682910950593
+* pain{"body_part": "leg", "pain_duration": "1h", "period": "every day", "time": "yesterday", "pain_desc": "sharp"}
+    - slot{"body_part": "leg"}
+    - slot{"pain_desc": "sharp"}
+    - slot{"pain_duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - slot{"follow_in_current_session_plus": 1}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": ["emotional_sadness"]}
+    - slot{"current_session": 2}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"pain_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"pain_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"pain_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - action_check_slots_pain
+    - slot{"pain_desc": "sharp"}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_pain
+    - slot{"global_score": 0}
+    - slot{"pain_duration": null}
+    - slot{"pain_desc": null}
+    - slot{"pain_body_part": null}
+    - slot{"pain_change": null}
+    - slot{"pain_period": null}
+    - slot{"pain_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"pain": true}
+    - slot{"pain_level": null}
+    - sum_up_slots
+* activity
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - action_check_slots_sport
+    - slot{"requested_slot": "sport"}
+    - sum_up_slots
+* activity{"sport": "gym", "duration": "1h", "period": "every day", "time": "yesterday", "distance": "1km"}
+    - slot{"distance": "1km"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"sport": "gym"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"activity_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"activity_distance": "1km"}
+    - slot{"distance": null}
+    - slot{"activity_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"activity_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - action_check_slots_sport
+    - slot{"sport": "gym"}
+    - slot{"requested_slot": "activity_hard"}
+    - sum_up_slots
+* activity{"activity_hard": true}
+    - slot{"activity_hard": true}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - action_check_slots_sport
+    - slot{"activity_hard": true}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_sport
+    - slot{"global_score": 0}
+    - slot{"activity_hard": null}
+    - slot{"activity_duration": null}
+    - slot{"sport_level": null}
+    - slot{"sport": null}
+    - slot{"activity_distance": null}
+    - slot{"activity_period": null}
+    - slot{"activity_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"activity": true}
+    - sum_up_slots
+* pathology{"symtoms": "erupt"}
+    - slot{"symtoms": "erupt"}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_pathology
+    - sum_up_slots
+    - export
+
+## Generated Story 7598399040769412982
+* pathology
+    - slot{"follow_in_current_session_plus": 1}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": ["emotional_sadness", "social"]}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_pathology
+    - slot{"requested_slot": "pathology_body_part"}
+    - sum_up_slots
+* pain
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - action_check_slots_pain
+    - slot{"requested_slot": "pain_period"}
+    - sum_up_slots
     - export
 
 

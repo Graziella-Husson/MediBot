@@ -105,6 +105,8 @@ slots:
     type: text
   temperature:
     type: text
+  language:
+    type: unfeaturized
 
 intents:
  - activity

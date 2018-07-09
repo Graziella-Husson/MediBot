@@ -5,14 +5,16 @@ from __future__ import unicode_literals
 
 from rasa_core.actions.action import Action
 from rasa_core.events import SlotSet
+from ressources import get_utterance
 
 class ResetSportSlots(Action):
     def name(self):
         return 'reset_slots_sport'
     
-    def run(self, dispatcher, tracker, domain):
+    def run(self, dispatcher, tracker, domain):  
+        language = tracker.get_slot("language")
         global_score = tracker.get_slot("global_score")
-        dispatcher.utter_message("Saved!")
+        dispatcher.utter_message(get_utterance("saved",language))
         # TODO: save to DB
         sport_level = tracker.get_slot("sport_level")
         if sport_level=='little':
@@ -41,9 +43,10 @@ class ResetPainSlots(Action):
     def name(self):
         return 'reset_slots_pain'
     
-    def run(self, dispatcher, tracker, domain):
+    def run(self, dispatcher, tracker, domain):  
+        language = tracker.get_slot("language")
         global_score = tracker.get_slot("global_score")
-        dispatcher.utter_message("Saved!")
+        dispatcher.utter_message(get_utterance("saved",language))
         # TODO: save to DB
         pain_level = tracker.get_slot("pain_level")
         if pain_level=='severe':
@@ -69,10 +72,11 @@ class ResetPathologySlots(Action):
     def name(self):
         return 'reset_slots_pathology'
     
-    def run(self, dispatcher, tracker, domain):
+    def run(self, dispatcher, tracker, domain):  
+        language = tracker.get_slot("language")
         global_score = tracker.get_slot("global_score")
-        global_score+=1
-        dispatcher.utter_message("Saved!")
+        global_score+=1        
+        dispatcher.utter_message(get_utterance("saved",language))
         # TODO: save to DB
         return [SlotSet("global_score",global_score),
                 SlotSet("symtoms",None),
@@ -85,10 +89,11 @@ class ResetTreatmentSlots(Action):
     def name(self):
         return 'reset_slots_treatment'
     
-    def run(self, dispatcher, tracker, domain):
+    def run(self, dispatcher, tracker, domain):  
+        language = tracker.get_slot("language")
         global_score = tracker.get_slot("global_score")
         global_score+=2
-        dispatcher.utter_message("Saved!")
+        dispatcher.utter_message(get_utterance("saved",language))
         # TODO: save to DB
         return [SlotSet("global_score",global_score),
                 SlotSet("medicinal",None),
@@ -101,8 +106,9 @@ class ResetInfoPatientSlots(Action):
     def name(self):
         return 'reset_slots_info_patient'
     
-    def run(self, dispatcher, tracker, domain):
-        dispatcher.utter_message("Saved!")
+    def run(self, dispatcher, tracker, domain):  
+        language = tracker.get_slot("language")
+        dispatcher.utter_message(get_utterance("saved",language))
         # TODO: save to DB
         return [SlotSet("addiction",None),
                 SlotSet("weight",None),

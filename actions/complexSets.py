@@ -12,7 +12,7 @@ class SetMultiple(Action):
     def get_topic(self, tracker):
         topic = tracker.get_slot("topic")
         requested_slot = tracker.get_slot("requested_slot")
-        if requested_slot != None:
+        if requested_slot != None and len(requested_slot.split('_'))>1:
             head, *tail = requested_slot.split('_')
             topic = head
         return topic
@@ -31,13 +31,16 @@ class SetMultiple(Action):
     def run(self, dispatcher, tracker, domain):
         every = ["time", "body_part","distance","duration","period", "temperature"]
         topic = self.get_topic(tracker)
+        real_topic = topic
         for i in every:
             if tracker.get_slot(str(i)) != None:
                 value = tracker.get_slot(i)
                 print(topic+"_"+str(i))
                 print(value)
-                tracker.update(SlotSet(topic+"_"+str(i),value))
+                if topic+"_"+str(i) in tracker.slots:
+                    tracker.update(SlotSet(topic+"_"+str(i),value))
                 tracker.update(SlotSet(str(i),None))
+        tracker.update(SlotSet("requested_slot",None))
         action = self.get_next_action(topic)
         if action != None:
             tracker.trigger_follow_up_action(action)
