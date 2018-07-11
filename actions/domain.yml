@@ -59,8 +59,6 @@ slots:
       type: unfeaturized
   stopword:
       type: unfeaturized
-  follow_in_current_session_plus:
-      type: unfeaturized
   followed_intent:
       type: unfeaturized
   time:

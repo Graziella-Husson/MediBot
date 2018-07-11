@@ -6,7 +6,6 @@
 
 ## Generated Story 3306727126556356367
 * pain
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -60,7 +59,6 @@
 ## Generated Story -1168929800633690446
 * pain{"duration": "1h"}
     - slot{"duration": "1h"}
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -100,7 +98,6 @@
 
 ## Generated Story 6452676939433106071
 * activity
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -143,7 +140,6 @@
 
 ## Generated Story 4679001957397524705
 * pain
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -232,7 +228,6 @@
 
 ## Generated Story -7280469206889209180
 * activity
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -326,7 +321,6 @@
 
 ## Generated Story 7855577861615697664
 * social
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -343,7 +337,6 @@
 
 ## Generated Story 1343543725078416549
 * emotional_sadness
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -360,7 +353,6 @@
 
 ## Generated Story 5085525489100949534
 * emotional_hapiness
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -378,7 +370,6 @@
 
 ## Generated Story 5596269372817250986
 * pathology
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -423,7 +414,6 @@
 
 ## Generated Story -1875339855644612428
 * treatment
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -468,7 +458,6 @@
 
 ## Generated Story -207725796308030161
 * infoPatient
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -627,7 +616,6 @@
 
 ## Generated Story -1504926829070170944
 * treatment
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -764,7 +752,6 @@
     - slot{"duration": "1h"}
     - slot{"period": "every day"}
     - slot{"time": "yesterday"}
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -817,7 +804,6 @@
     - slot{"pain_duration": "1h"}
     - slot{"period": "every day"}
     - slot{"time": "yesterday"}
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -937,7 +923,6 @@
 
 ## Generated Story 7598399040769412982
 * pathology
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -970,7 +955,6 @@
 
 ## Generated Story 7943145471150607596
 * pain
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -1025,7 +1009,6 @@
 
 ## Generated Story -884436195164616062
 * activity
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -1322,7 +1305,6 @@
     - slot{"pain_desc": "sharp"}
     - slot{"period": "every day"}
     - slot{"time": "yesterday"}
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}
@@ -1379,7 +1361,6 @@
     - slot{"period": "every day"}
     - slot{"sport": "gym"}
     - slot{"time": "yesterday"}
-    - slot{"follow_in_current_session_plus": 1}
     - slot{"stopword": "stop"}
     - slot{"emergency": "help"}
     - slot{"nickname": "Ailixir"}

@@ -32,6 +32,7 @@ last_session=False
 d = DucklingWrapper()
 language_global = None
 followed_reminders=[]
+follow_intent_trigger_date = timedelta(seconds=0)
 
 def get_followed_reminders():
     return followed_reminders
@@ -130,7 +131,7 @@ class InitBot(Action):
             return True
             
     def get_current_reminder_times(self,current_session,to_return):
-        global reminder_patient,reminder_end_session,reminder_patient_little,date_end
+        global reminder_patient,reminder_end_session,reminder_patient_little,date_end,follow_intent_trigger_date
         reminders = ['reminder_patient','reminder_end_session','reminder_patient_little'] 
         duration_session = timedelta(seconds=0)   
         session = config['sessions'][current_session]
@@ -165,9 +166,32 @@ class InitBot(Action):
                 reminder_end_session=reminder1  
             elif reminder == 'reminder_patient_little':
                 reminder_patient_little=reminder1
+                
         follow_in_current_session_plus = int(config['follow_in_current_session_plus'])
-        to_return.append(SlotSet("follow_in_current_session_plus",follow_in_current_session_plus))   
+        time = timedelta(seconds=5)
+        time = self.get_duration_until(1,current_session, time)
+        time = self.get_duration_until(current_session,follow_in_current_session_plus+current_session, time)
+        follow_intent_trigger_date = begin_date+time
         return to_return
+    
+    def get_duration_until(self,begin,end, time):
+        for i in range(begin,end):
+            try:
+                config['sessions'][i+1]['duration']
+                duration = config['sessions'][i]['duration']
+                for k in duration.keys():
+                    j = duration[k]
+                    if k == 'minutes':
+                        time+=timedelta(minutes=int(j))
+                    if k == 'weeks':
+                        time+=timedelta(weeks=int(j))
+                    if k == 'days':
+                        time+=timedelta(days=int(j))
+                    if k == 'hours':
+                        time+=timedelta(hours=int(j))
+            except:
+                print("This is the last session!")
+        return time
     
     def name(self):
         return 'init'
@@ -271,30 +295,20 @@ class SaveConv(Action):
         response = tracker.latest_message.text
         intent = tracker.latest_message.intent
         intent_name = intent['name']
-#        follow_in_current_session_plus=tracker.get_slot("follow_in_current_session_plus")
         followed_intent = tracker.get_slot("followed_intent")
         if intent_name in followed_intent:
             entities = ""
             for entity in obligatories[intent_name]:
                 entities += entity.entity_name+"."
             entities = entities[:-1]
-            print(entities)
             name = intent_name+"-"+entities
-            reminder = ReminderScheduled("followed_intent_reminder", dt.now(), name, kill_on_user_message=False)
+            print("Reminder scheduled at "+str(follow_intent_trigger_date)+" for following intent: "+intent_name)
+            reminder = ReminderScheduled("followed_intent_reminder", follow_intent_trigger_date, name, kill_on_user_message=False)
             #TODO : add reminder in DB using reminder.as_dict()
             followed_reminders.append(reminder)
             to_return.append(reminder)
             followed_intent.remove(intent_name)
             to_return.append(SlotSet("followed_intent",followed_intent))
-#            new_session = int(current_session)+follow_in_current_session_plus
-#            try:
-#                old = config['sessions'][new_session]['requested_intent']
-#                if intent_name not in old:
-#                    config['sessions'][new_session]['requested_intent'] = old+","+intent_name
-#                with open('config.yml', 'w') as outfile:
-#                    yaml.dump(config, outfile, default_flow_style=False)
-#            except:
-#                print("last session!")
         to_return.append(SlotSet("topic",intent_name))
         entities = tracker.latest_message.entities
         #nlu_infos = tracker.latest_message.parse_data

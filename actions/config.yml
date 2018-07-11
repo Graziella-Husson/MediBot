@@ -9,8 +9,24 @@ reminder_patient_little:
 sessions:
   1:
     duration:
-      minutes: '15'
+      minutes: '2'
     followed_intent: activity
+    requested_intent: pain
+    requested_slot:
+      pain: pain_desc
+      activity: sport,activity_distance
+  2:
+    duration:
+      minutes: '3'
+    followed_intent: None
+    requested_intent: pain
+    requested_slot:
+      pain: pain_desc
+      activity: sport,activity_distance
+  3:
+    duration:
+      minutes: '5'
+    followed_intent: None
     requested_intent: pain
     requested_slot:
       pain: pain_desc
