@@ -150,6 +150,7 @@ actions:
  - reminders.SessionEndReminder
  - reminders.ChangeSessionReminder
  - reminders.UserReminderLittle
+ - reminders.FollowedIntentReminder
  - formActions.ActionFillSlotsPain
  - formActions.ActionFillSlotsSport
  - formActions.Sadness

@@ -19,8 +19,9 @@ from simpleActions import Fallback
 from duckling import DucklingWrapper
 from ressources import get_utterance
 
-global config,first,obligatories,reminder_patient,reminder_end_session,reminder_patient_little,last_session, d
+global config,first,obligatories,reminder_patient,reminder_end_session,reminder_patient_little,last_session, d, begin_date, language_global,followed_intent
 config = yaml.load(open('config.yml'))
+begin_date = None
 first = True
 obligatories = dict()
 reminder_patient=timedelta(seconds=0)
@@ -29,8 +30,19 @@ reminder_patient_little=timedelta(seconds=0)
 date_end=timedelta(seconds=0)
 last_session=False
 d = DucklingWrapper()
-print(d)
+language_global = None
+followed_reminders=[]
 
+def get_followed_reminders():
+    return followed_reminders
+
+def set_followed_reminders(to_set):
+    global followed_reminders
+    followed_reminders = to_set
+    
+def get_language():
+    return language_global
+    
 def get_obligatories():
     return obligatories
 
@@ -47,9 +59,15 @@ def get_last_session():
     return last_session
 
 class InitBot(Action):
-
+    def set_begin_date(self):
+        global begin_date
+        # TODO: get in DB if exists
+        # if not :
+        begin_date = dt.now()
+        # TODO: save in DB
+    
     def loadConfig(self,current_session,to_return):
-        global obligatories
+        global obligatories, language_global
         obligatories = dict()
         r=config['sessions'][current_session]['requested_slot']
         if r!="None":
@@ -62,8 +80,8 @@ class InitBot(Action):
             obligatories['requested_intent']= []
             for i in r.split(','):
                 obligatories['requested_intent'].append(EntityFormField(i, i))
-        followed_intent=[]
         r=config['sessions'][current_session]['followed_intent']
+        followed_intent = []
         if r!="None":
             for i in r.split(','):
                 followed_intent.append(i)
@@ -71,7 +89,7 @@ class InitBot(Action):
         emergency=str(config['emergency'])
         nickname=str(config['nickname'])
         exitword=str(config['exit'])
-        language=str(config['language'])
+        language_global=str(config['language'])
         count_user_reminder_max = config['count_user_reminder_max']
         to_return.append(SlotSet("stopword",stopword))
         to_return.append(SlotSet("emergency",emergency))
@@ -80,37 +98,29 @@ class InitBot(Action):
         to_return.append(SlotSet("count_user_reminder_max",count_user_reminder_max))
         to_return.append(SlotSet("count_user_reminder",0))
         to_return.append(SlotSet("followed_intent",followed_intent))
-        to_return.append(SlotSet("language",language))
+        to_return.append(SlotSet("language",language_global))
         return to_return
 
     def get_current_session(self):
-        now = dt.now()
-        inter = abs(now-dt(2011, 1, 1))
-        my_date= now
-        begins = dict()
+        delta_time = dt.now() - begin_date
+        duration_done = timedelta(seconds=0)
         for i in config['sessions']:
-            for j in config['sessions'][i]:
-                if j == "begin":
-                    begins[i] = config['sessions'][i][j]
-        for i in begins.values():
-            date_el = i.split(',')
-            date=dt(int(date_el[0]), int(date_el[1]),int(date_el[2]),
-                                      int(date_el[3]),int(date_el[4]), int(date_el[5]))
-            this_inter = abs(now - date)
-            if  this_inter < inter:
-                inter = this_inter
-                my_date=date
-        
-        for i in begins.keys():
-            date_el = begins[i].split(',')
-            date=dt(int(date_el[0]), int(date_el[1]),int(date_el[2]),
-                                      int(date_el[3]),int(date_el[4]), int(date_el[5]))
-            if str(date)== str(my_date):
-                current_session = i
-        current_session=int(current_session)
-        return current_session
+            session = config['sessions'][i]
+            duration = session['duration']
+            for k in duration.keys():
+                j = duration[k]
+                if k == 'minutes':
+                    duration_done+=timedelta(minutes=int(j))
+                if k == 'weeks':
+                    duration_done+=timedelta(weeks=int(j))
+                if k == 'days':
+                    duration_done+=timedelta(days=int(j))
+                if k == 'hours':
+                    duration_done+=timedelta(hours=int(j)) 
+                if duration_done > delta_time:
+                    return (i)
                 
-    def last_session(self,tracker,current_session):
+    def last_session(self,current_session):
         try:
             config['sessions'][int(current_session)+1]
             current_session=int(current_session)
@@ -122,12 +132,20 @@ class InitBot(Action):
     def get_current_reminder_times(self,current_session,to_return):
         global reminder_patient,reminder_end_session,reminder_patient_little,date_end
         reminders = ['reminder_patient','reminder_end_session','reminder_patient_little'] 
-        end = config['sessions'][current_session]['end']
-        date_el = end.split(',')
-        date_end=dt(int(date_el[0]), int(date_el[1]),int(date_el[2]),
-                                  int(date_el[3]),int(date_el[4]), int(date_el[5]))
-        print(current_session)
-        print(date_end)
+        duration_session = timedelta(seconds=0)   
+        session = config['sessions'][current_session]
+        for i in session['duration'].keys():
+            j = session['duration'][i]
+            if i == 'minutes':
+                duration_session+=timedelta(minutes=int(j))
+            if i == 'weeks':
+                duration_session+=timedelta(weeks=int(j))
+            if i == 'days':
+                duration_session+=timedelta(days=int(j))
+            if i == 'hours':
+                duration_session+=timedelta(hours=int(j)) 
+        date_end = dt.now()+duration_session
+        
         for reminder in reminders:
             reminder_config = config[reminder]
             reminder1 = timedelta(seconds=0)
@@ -155,16 +173,17 @@ class InitBot(Action):
         return 'init'
         
     def run(self, dispatcher, tracker, domain):
-        global first,last_session
+        global first,last_session        
         to_return = []
-        current_session = self.get_current_session()
-        print("Current session is : "+str(current_session))
-        last_session = self.last_session(tracker,current_session)
         if first :
             first = False
+            self.set_begin_date()
         else:
             to_return.append(SlotSet("requested_slot",None))
             to_return.append(AllSlotsReset())
+        current_session = self.get_current_session()
+        print("Current session is : "+str(current_session))
+        last_session = self.last_session(current_session)
         to_return = self.get_current_reminder_times(current_session,to_return)
         to_return = self.loadConfig(current_session,to_return)
         to_return.append(SlotSet("current_session",current_session))
@@ -235,6 +254,7 @@ class SaveConv(Action):
         return to_return
         
     def save(self,tracker,to_return):
+        global followed_reminders
         current_session = tracker.get_slot("current_session")
         id_user = tracker.sender_id
         idy = "./saves/"+str(id_user)+"/"+str(current_session)
@@ -251,18 +271,30 @@ class SaveConv(Action):
         response = tracker.latest_message.text
         intent = tracker.latest_message.intent
         intent_name = intent['name']
-        follow_in_current_session_plus=tracker.get_slot("follow_in_current_session_plus")
+#        follow_in_current_session_plus=tracker.get_slot("follow_in_current_session_plus")
         followed_intent = tracker.get_slot("followed_intent")
         if intent_name in followed_intent:
-            new_session = int(current_session)+follow_in_current_session_plus
-            try:
-                old = config['sessions'][new_session]['requested_intent']
-                if intent_name not in old:
-                    config['sessions'][new_session]['requested_intent'] = old+","+intent_name
-                with open('config.yml', 'w') as outfile:
-                    yaml.dump(config, outfile, default_flow_style=False)
-            except:
-                print("last session!")
+            entities = ""
+            for entity in obligatories[intent_name]:
+                entities += entity.entity_name+"."
+            entities = entities[:-1]
+            print(entities)
+            name = intent_name+"-"+entities
+            reminder = ReminderScheduled("followed_intent_reminder", dt.now(), name, kill_on_user_message=False)
+            #TODO : add reminder in DB using reminder.as_dict()
+            followed_reminders.append(reminder)
+            to_return.append(reminder)
+            followed_intent.remove(intent_name)
+            to_return.append(SlotSet("followed_intent",followed_intent))
+#            new_session = int(current_session)+follow_in_current_session_plus
+#            try:
+#                old = config['sessions'][new_session]['requested_intent']
+#                if intent_name not in old:
+#                    config['sessions'][new_session]['requested_intent'] = old+","+intent_name
+#                with open('config.yml', 'w') as outfile:
+#                    yaml.dump(config, outfile, default_flow_style=False)
+#            except:
+#                print("last session!")
         to_return.append(SlotSet("topic",intent_name))
         entities = tracker.latest_message.entities
         #nlu_infos = tracker.latest_message.parse_data
@@ -331,11 +363,12 @@ class SaveConv(Action):
                 tracker.update(i)
             nickname = tracker.get_slot("nickname")
             language = tracker.get_slot("language")
+            print(language)
             to_return = []
-            #print("reminder change session scheduled at "+str(date_end))
-            #to_return.append(ReminderScheduled("change_session_reminder", date_end, kill_on_user_message=False))  
-            #print("reminder before change session scheduled at "+str(date_end - reminder_end_session))
-            #to_return.append(ReminderScheduled("session_end_reminder", date_end - reminder_end_session, kill_on_user_message=False)) 
+            print("reminder change session scheduled at "+str(date_end))
+            to_return.append(ReminderScheduled("change_session_reminder", date_end, kill_on_user_message=False))  
+            print("reminder before change session scheduled at "+str(date_end - reminder_end_session))
+            to_return.append(ReminderScheduled("session_end_reminder", date_end - reminder_end_session, kill_on_user_message=False)) 
             dispatcher.utter_message(get_utterance("welcome",language)+" "+nickname)
         [intent, entities,to_return,response] = self.save(tracker,to_return)
         to_return = self.duckling_set_slots(entities,to_return)

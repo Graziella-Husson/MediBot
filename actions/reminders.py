@@ -5,10 +5,27 @@ from __future__ import unicode_literals
 
 from rasa_core.actions.action import Action
 from initAndComplex import InitBot
-from datetime import datetime as dt
-from rasa_core.events import SlotSet,ReminderScheduled, AllSlotsReset, ConversationPaused
+from datetime import datetime as dt, timedelta
+from rasa_core.events import (
+SlotSet,
+ReminderScheduled, 
+AllSlotsReset, 
+ConversationPaused
+)
+from rasa_core.actions.forms import (
+EntityFormField
+)
 
-from initAndComplex import get_obligatories, get_reminder_patient, get_date_end, get_reminder_end_session, get_last_session
+from initAndComplex import (
+get_obligatories, 
+get_reminder_patient, 
+get_date_end, 
+get_reminder_end_session, 
+get_last_session, 
+get_language,
+get_followed_reminders,
+set_followed_reminders
+)
 from ressources import get_utterance
 import os
 
@@ -17,7 +34,8 @@ class ChangeSessionReminder(Action):
         return 'change_session_reminder'
         
     def run(self, dispatcher, tracker, domain):  
-        language = tracker.get_slot("language")
+        language = get_language()
+        print(language)
         global_score = tracker.get_slot("global_score") 
         
         current_session = tracker.get_slot("current_session")
@@ -45,7 +63,8 @@ class ChangeSessionReminder(Action):
             if j == None:
                 unacomplished.append(slot_name)
         #TODO: save global score in DB
-        if global_score != None or global_score != 0:
+        print(global_score)
+        if global_score != None and global_score != 0:
             response = get_utterance("score",language).format(global_score)
             dispatcher.utter_message(response)
         global_score = 0
@@ -80,7 +99,7 @@ class UserReminder(Action):
         return 'user_reminder'
         
     def run(self, dispatcher, tracker, domain):  
-        language = tracker.get_slot("language")
+        language = get_language()
         count_user_reminder = tracker.get_slot("count_user_reminder") 
         count_user_reminder_max = tracker.get_slot("count_user_reminder_max") 
         reminder_patient = get_reminder_patient()
@@ -104,7 +123,7 @@ class SessionEndReminder(Action):
         return 'session_end_reminder'
         
     def run(self, dispatcher, tracker, domain):  
-        language = tracker.get_slot("language")
+        language = get_language()
         #TODO : Send a notif instead
         unacomplished = 0
         acomplished = []
@@ -130,7 +149,54 @@ class UserReminderLittle(Action):
         return 'user_reminder_little'
         
     def run(self, dispatcher, tracker, domain):  
-          language = tracker.get_slot("language")
+        language = get_language()
         #TODO : Send a notif instead
-          response = get_utterance("user_reminder_little",language)
-          dispatcher.utter_message(response)      
+        response = get_utterance("user_reminder_little",language)
+        dispatcher.utter_message(response)      
+    
+class FollowedIntentReminder(Action):
+    
+    def get_reminder(self,followed_reminders, now):
+        diff = timedelta(weeks=1000000)
+        to_return = None
+        for reminder in followed_reminders:
+            to_check = abs(reminder.trigger_date_time - now)
+            if to_check<diff:
+                diff = to_check
+                to_return = reminder
+        return to_return
+        
+    def string_in_entity_form_list(self,string, listing):
+        for i in listing:
+            if i.entity_name == string:
+                return True
+        return False
+    
+    def name(self):
+        return 'followed_intent_reminder'
+        
+    def run(self, dispatcher, tracker, domain):
+        now = dt.now()
+        obligatories = get_obligatories()
+        followed_reminders = get_followed_reminders()
+        reminder = self.get_reminder(followed_reminders, now)
+        name = reminder.name
+        intent, *entities = name.split('-')
+        entities = str(entities)[2:-2].split('.')
+        for i in entities:
+            try:
+                if not (self.string_in_entity_form_list(i,obligatories[intent])):
+                    obligatories[intent].append(EntityFormField(i, i))
+            except:
+                obligatories[intent]=[]
+                obligatories[intent].append(EntityFormField(i, i))
+            
+            if not (self.string_in_entity_form_list(intent,obligatories['requested_intent'])):
+                obligatories['requested_intent'].append(EntityFormField(intent, intent))
+        for i in obligatories:
+            print(i)
+            for j in obligatories[i]:
+                print("\t"+j.entity_name)
+        followed_reminders.remove(reminder)
+        
+        
