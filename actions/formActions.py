@@ -17,7 +17,28 @@ BooleanFormField
 from initAndComplex import get_obligatories
 from ressources import get_utterance
 
-class ActionFillSlotsPain(FormAction):
+class CustomFormAction(FormAction):
+
+    def run(self, dispatcher, tracker, domain):
+
+        events = self.get_requested_slot(tracker) + self.get_other_slots(tracker)
+
+        temp_tracker = tracker.copy()
+        for e in events:
+            temp_tracker.update(e)
+
+        for field in self.required_fields():
+            if self.should_request_slot(temp_tracker, field.slot_name):
+                action = domain.action_for_name("utter_ask_{}".format(field.slot_name))
+                tracker.trigger_follow_up_action(action)
+                events.append(SlotSet("requested_slot", field.slot_name))
+                return events
+
+        events_from_submit = self.submit(dispatcher, temp_tracker, domain) or []
+
+        return events + events_from_submit
+
+class ActionFillSlotsPain(CustomFormAction):
     RANDOMIZE = True
     
     @staticmethod
@@ -77,7 +98,7 @@ class ActionFillSlotsPain(FormAction):
             dispatcher.utter_button_message(message, buttons)
         
         
-class ActionFillSlotsSport(FormAction):
+class ActionFillSlotsSport(CustomFormAction):
     RANDOMIZE = True
 
     @staticmethod
@@ -146,7 +167,7 @@ class ActionFillSlotsSport(FormAction):
             message = get_utterance("ask_level_activity",language)
             dispatcher.utter_button_message(message, buttons)  
 
-class CheckRequestedIntents(FormAction):
+class CheckRequestedIntents(CustomFormAction):
     RANDOMIZE = True
     
     @staticmethod
@@ -164,7 +185,7 @@ class CheckRequestedIntents(FormAction):
         language = tracker.get_slot("language")
         dispatcher.utter_message(get_utterance("requested_intent",language))
 
-class Sadness(FormAction):
+class Sadness(CustomFormAction):
     RANDOMIZE = True
     
     @staticmethod
@@ -187,7 +208,7 @@ class Sadness(FormAction):
         tracker.update(SlotSet("emotional_sadness",True))
         tracker.update(SlotSet("global_score",global_score))
       
-class Happy(FormAction):
+class Happy(CustomFormAction):
     RANDOMIZE = True
     
     @staticmethod
@@ -210,7 +231,7 @@ class Happy(FormAction):
         tracker.update(SlotSet("emotional_hapiness",True))
         tracker.update(SlotSet("global_score",global_score))
 
-class Social(FormAction):
+class Social(CustomFormAction):
     RANDOMIZE = True
     
     @staticmethod
@@ -233,7 +254,7 @@ class Social(FormAction):
         tracker.update(SlotSet("social",True))
         tracker.update(SlotSet("global_score",global_score))
         
-class Pathology(FormAction):
+class Pathology(CustomFormAction):
     RANDOMIZE = True
     
     @staticmethod
@@ -266,10 +287,9 @@ class Pathology(FormAction):
         except:
             response = get_utterance("sum_up_pathology",language)
         dispatcher.utter_message(response)
-        tracker.update(SlotSet("pathology",True))
         tracker.update(SlotSet("global_score",global_score))
         
-class Treatment(FormAction):
+class Treatment(CustomFormAction):
     RANDOMIZE = False
     
     @staticmethod
@@ -305,10 +325,9 @@ class Treatment(FormAction):
         except:
             response = get_utterance("sum_up_treatment",language)      
         dispatcher.utter_message(response)
-        tracker.update(SlotSet("treatment",True))
         tracker.update(SlotSet("global_score",global_score))
         
-class InfoPatient(FormAction):
+class InfoPatient(CustomFormAction):
     RANDOMIZE = True
     
     @staticmethod
@@ -357,4 +376,3 @@ class InfoPatient(FormAction):
         except:
             response = get_utterance("sum_up_info_patient",language)
         dispatcher.utter_message(response)
-        tracker.update(SlotSet("infoPatient",True))

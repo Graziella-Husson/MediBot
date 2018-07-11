@@ -296,13 +296,18 @@ class SaveConv(Action):
         intent = tracker.latest_message.intent
         intent_name = intent['name']
         followed_intent = tracker.get_slot("followed_intent")
+        found = False
         if intent_name in followed_intent:
-            obligatories['requested_intent'].append(EntityFormField(intent_name, intent_name))
+            for i in obligatories['requested_intent']:
+                if intent_name in i.entity_name:
+                    found = True
+            if not found:
+                obligatories['requested_intent'].append(EntityFormField(intent_name, intent_name))
             entities = ""
             for entity in obligatories[intent_name]:
                 entities += entity.entity_name+"."
             entities = entities[:-1]
-            name = intent_name+"-"+entities
+            name = intent_name+"-"+entities+"*"+str(current_session)
             print("Reminder scheduled at "+str(follow_intent_trigger_date)+" for following intent: "+intent_name)
             reminder = ReminderScheduled("followed_intent_reminder", follow_intent_trigger_date, name, kill_on_user_message=False)
             #TODO : add reminder in DB using reminder.as_dict()
@@ -310,6 +315,7 @@ class SaveConv(Action):
             to_return.append(reminder)
             followed_intent.remove(intent_name)
             to_return.append(SlotSet("followed_intent",followed_intent))
+                
         to_return.append(SlotSet("topic",intent_name))
         entities = tracker.latest_message.entities
         #nlu_infos = tracker.latest_message.parse_data

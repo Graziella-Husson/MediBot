@@ -181,8 +181,13 @@ class FollowedIntentReminder(Action):
         followed_reminders = get_followed_reminders()
         reminder = self.get_reminder(followed_reminders, now)
         name = reminder.name
+        print(name)
         intent, *entities = name.split('-')
-        entities = str(entities)[2:-2].split('.')
+        print(entities)
+        entities = str(entities)[2:-2].split("*")[0]
+        print(entities)
+        entities = entities.split('.')
+        print(entities)
         for i in entities:
             try:
                 if not (self.string_in_entity_form_list(i,obligatories[intent])):
