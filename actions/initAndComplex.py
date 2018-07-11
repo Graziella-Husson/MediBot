@@ -297,6 +297,7 @@ class SaveConv(Action):
         intent_name = intent['name']
         followed_intent = tracker.get_slot("followed_intent")
         if intent_name in followed_intent:
+            obligatories['requested_intent'].append(EntityFormField(intent_name, intent_name))
             entities = ""
             for entity in obligatories[intent_name]:
                 entities += entity.entity_name+"."
