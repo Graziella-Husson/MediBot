@@ -9,9 +9,27 @@ from ressources import get_utterance
 
 class AskWhatSport(Action):
     def name(self):
+        """
+        @return: the name of the action.
+        """
         return 'ask_what_sport'
         
-    def run(self, dispatcher, tracker, domain):        
+    def run(self, dispatcher, tracker, domain):  
+        """
+        @param tracker: used to get all infos for 'activity' intent from the tracker + language
+        @param dispatcher: used to display buttons with dispatcher.utter_button_message
+        
+        Display a button for all infos the tracker have for the intent 'activity':
+            - activity_period
+            - activity_distance
+            - sport
+            - activity_duration
+            - activity_hard
+            - activity_time
+            
+        sport is linked to sport_level. If the sport is incorrect, sport_level too.
+        When clicked, a button will reset the slot linked to it.            
+        """      
         language = tracker.get_slot("language")
         sport_period = tracker.get_slot("activity_period")
         distance = tracker.get_slot("activity_distance")
@@ -45,9 +63,27 @@ class AskWhatSport(Action):
         
 class AskWhatPain(Action):
     def name(self):
+        """
+        @return: the name of the action.
+        """
         return 'ask_what_pain'
         
-    def run(self, dispatcher, tracker, domain):       
+    def run(self, dispatcher, tracker, domain):  
+        """
+        @param tracker: used to get all infos for 'pain' intent from the tracker + language
+        @param dispatcher: used to display buttons with dispatcher.utter_button_message(message, buttons)
+        
+        Display a button for all infos the tracker have for the intent 'pain':
+            - pain_period
+            - pain_desc
+            - pain_body_part
+            - pain_duration
+            - pain_change
+            - pain_time
+            
+        pain_desc is linked to pain_level. If the pain_desc is incorrect, pain_level too.
+        When clicked, a button will reset the slot linked to it.            
+        """      
         language = tracker.get_slot("language")
         pain_period = tracker.get_slot("pain_period")
         desc = tracker.get_slot("pain_desc")
@@ -81,9 +117,22 @@ class AskWhatPain(Action):
         
 class AskWhatPathology(Action):
     def name(self):
+        """
+        @return: the name of the action.
+        """
         return 'ask_what_pathology'
         
     def run(self, dispatcher, tracker, domain):  
+        """
+        @param tracker: used to get all infos for 'pathology' intent from the tracker + language
+        @param dispatcher: used to display buttons with dispatcher.utter_button_message(message, buttons)
+        
+        Display a button for all infos the tracker have for the intent 'pathology':
+            - symtoms
+            - pathology_body_part
+            
+        When clicked, a button will reset the slot linked to it.            
+        """      
         language = tracker.get_slot("language")
         symtoms = tracker.get_slot("symtoms")
         pathology_body_part = tracker.get_slot("pathology_body_part")
@@ -99,9 +148,23 @@ class AskWhatPathology(Action):
         
 class AskWhatTreatment(Action):
     def name(self):
+        """
+        @return: the name of the action.
+        """
         return 'ask_what_treatment'
         
     def run(self, dispatcher, tracker, domain):  
+        """
+        @param tracker: used to get all infos for 'treatment' intent from the tracker + language
+        @param dispatcher: used to display buttons with dispatcher.utter_button_message(message, buttons)
+        
+        Display a button for all infos the tracker have for the intent 'treatment':
+            - medicinal (boolean)
+            - drug
+            
+        If medicinal button is cliked, set the slot 'medicinal' to the opposite of its value.
+        For others buttons, when clicked, will reset the slot linked to it.            
+        """      
         language = tracker.get_slot("language")
         medicinal = tracker.get_slot("medicinal")
         drug = tracker.get_slot("drug")
@@ -120,9 +183,28 @@ class AskWhatTreatment(Action):
         
 class AskWhatInfoPatient(Action):
     def name(self):
+        """
+        @return: the name of the action.
+        """
         return 'ask_what_info_patient'
         
     def run(self, dispatcher, tracker, domain):  
+        """
+        @param tracker: used to get all infos for 'info_patient' intent from the tracker + language
+        @param dispatcher: used to display buttons with dispatcher.utter_button_message(message, buttons)
+        
+        Display a button for all infos the tracker have for the intent 'info_patient':
+            - addiction
+            - weight
+            - infoPatient_distance
+            - gender
+            - infoPatient_temperature
+            - heart_rate
+            - blood_pressure
+            - infoPatient_time
+            
+        When clicked, the button will reset the slot linked to it.            
+        """      
         language = tracker.get_slot("language")
         addiction = tracker.get_slot("addiction")
         weight = tracker.get_slot("weight")

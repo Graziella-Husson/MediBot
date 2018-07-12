@@ -10,6 +10,13 @@ from formActions import ActionFillSlotsSport, ActionFillSlotsPain, InfoPatient, 
 
 class SetMultiple(Action):
     def get_topic(self, tracker):
+        """
+        @return The topic 
+        
+        If the slot 'requested_slot' is not null and requires something with a topic ('sport' slot has no topic, because it's not a complex slot) 
+        the topic is set to from the topic of 'requested_slot' {topic}_{entity}
+        else, the topic is set with the name of the intent detected.
+        """   
         topic = tracker.get_slot("topic")
         requested_slot = tracker.get_slot("requested_slot")
         if requested_slot != None and len(requested_slot.split('_'))>1:
@@ -18,6 +25,16 @@ class SetMultiple(Action):
         return topic
 
     def get_next_action(self,topic):
+        """
+        @return The next action to do. 
+        @param topic: used to know which action to do.
+        
+        The possibilities are intents that can handle complex entities:
+            - activity
+            - pain
+            - infPatient
+            - pathology
+        """   
         return {
         'activity': ActionFillSlotsSport(),
         'pain': ActionFillSlotsPain(),
@@ -26,9 +43,17 @@ class SetMultiple(Action):
         }.get(topic, Fallback())    # fallback is default if topic not found
     
     def name(self):
+        """
+        @return: the name of the action.
+        """
         return 'action_multiple_set_complex'
     
     def run(self, dispatcher, tracker, domain):
+        """
+        For each possible complex entity, verify if there's a value in the linked slot. If there's one, use the topic to know in which slot to put it.
+        If the slot does not exists, do nothing (e.g 'pain_distance' slot)
+        Trigger the action related to the topic with the method C{get_next_action(topic)}
+        """
         every = ["time", "body_part","distance","duration","period", "temperature"]
         topic = self.get_topic(tracker)
         real_topic = topic

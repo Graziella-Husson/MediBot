@@ -10,4 +10,6 @@ __pycache__/
 .png
 .old
 .log
+rasa_core
 actions/*.txt
+.pyc
