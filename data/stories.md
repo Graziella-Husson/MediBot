@@ -1409,4 +1409,26 @@
     - sum_up_slots
     - export
 
-
+## Generated Story -7589975809010727540
+* pain
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": ["activity"]}
+    - slot{"language": "en"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - action_check_slots_pain
+    - slot{"requested_slot": "pain_desc"}
+    - utter_ask_pain_desc
+    - sum_up_slots
+    - export

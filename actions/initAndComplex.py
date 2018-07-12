@@ -6,6 +6,7 @@ from __future__ import unicode_literals
 from rasa_core.actions.action import Action, ActionListen
 from rasa_core.events import SlotSet, AllSlotsReset, UserUtteranceReverted, ReminderScheduled, ConversationPaused
 from datetime import datetime as dt
+import dateutil
 from datetime import timedelta
 
 from rasa_core.actions.forms import (
@@ -271,6 +272,14 @@ class SaveConv(Action):
                                         to_set['time'].remove(j)
                                         break
                 to_return.append(SlotSet('time',to_set['time']))
+                for i in to_set['time']:
+                    dict_to_from = yaml.load(i)    
+                    if dict_to_from['to'] != None and dict_to_from['from'] != None:
+                        from_date = dateutil.parser.parse(dict_to_from['from'])
+                        to_date = dateutil.parser.parse(dict_to_from['to'])
+                        duration = to_date-from_date
+                        if to_set['duration'] == None:
+                            to_return.append(SlotSet('duration',duration))
             else:
                 to_return.append(SlotSet('time',None))
         except:
@@ -309,7 +318,7 @@ class SaveConv(Action):
             entities = entities[:-1]
             name = intent_name+"-"+entities+"*"+str(current_session)
             print("Reminder scheduled at "+str(follow_intent_trigger_date)+" for following intent: "+intent_name)
-            reminder = ReminderScheduled("followed_intent_reminder", follow_intent_trigger_date, name, kill_on_user_message=False)
+           # reminder = ReminderScheduled("followed_intent_reminder", follow_intent_trigger_date, name, kill_on_user_message=False)
             #TODO : add reminder in DB using reminder.as_dict()
             followed_reminders.append(reminder)
             to_return.append(reminder)
@@ -386,10 +395,10 @@ class SaveConv(Action):
             language = tracker.get_slot("language")
             print(language)
             to_return = []
-            print("reminder change session scheduled at "+str(date_end))
-            to_return.append(ReminderScheduled("change_session_reminder", date_end, kill_on_user_message=False))  
-            print("reminder before change session scheduled at "+str(date_end - reminder_end_session))
-            to_return.append(ReminderScheduled("session_end_reminder", date_end - reminder_end_session, kill_on_user_message=False)) 
+#            print("reminder change session scheduled at "+str(date_end))
+#            to_return.append(ReminderScheduled("change_session_reminder", date_end, kill_on_user_message=False))  
+#            print("reminder before change session scheduled at "+str(date_end - reminder_end_session))
+#            to_return.append(ReminderScheduled("session_end_reminder", date_end - reminder_end_session, kill_on_user_message=False)) 
             dispatcher.utter_message(get_utterance("welcome",language)+" "+nickname)
         [intent, entities,to_return,response] = self.save(tracker,to_return)
         to_return = self.duckling_set_slots(entities,to_return)

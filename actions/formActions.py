@@ -17,7 +17,7 @@ BooleanFormField
 from initAndComplex import get_obligatories
 from ressources import get_utterance
 
-class CustomFormAction(FormAction):
+class FormActionTriggerAction(FormAction):
 
     def run(self, dispatcher, tracker, domain):
 
@@ -38,7 +38,7 @@ class CustomFormAction(FormAction):
 
         return events + events_from_submit
 
-class ActionFillSlotsPain(CustomFormAction):
+class ActionFillSlotsPain(FormActionTriggerAction):
     RANDOMIZE = True
     
     @staticmethod
@@ -98,7 +98,7 @@ class ActionFillSlotsPain(CustomFormAction):
             dispatcher.utter_button_message(message, buttons)
         
         
-class ActionFillSlotsSport(CustomFormAction):
+class ActionFillSlotsSport(FormActionTriggerAction):
     RANDOMIZE = True
 
     @staticmethod
@@ -167,7 +167,7 @@ class ActionFillSlotsSport(CustomFormAction):
             message = get_utterance("ask_level_activity",language)
             dispatcher.utter_button_message(message, buttons)  
 
-class CheckRequestedIntents(CustomFormAction):
+class CheckRequestedIntents(FormActionTriggerAction):
     RANDOMIZE = True
     
     @staticmethod
@@ -185,7 +185,7 @@ class CheckRequestedIntents(CustomFormAction):
         language = tracker.get_slot("language")
         dispatcher.utter_message(get_utterance("requested_intent",language))
 
-class Sadness(CustomFormAction):
+class Sadness(FormActionTriggerAction):
     RANDOMIZE = True
     
     @staticmethod
@@ -208,7 +208,7 @@ class Sadness(CustomFormAction):
         tracker.update(SlotSet("emotional_sadness",True))
         tracker.update(SlotSet("global_score",global_score))
       
-class Happy(CustomFormAction):
+class Happy(FormActionTriggerAction):
     RANDOMIZE = True
     
     @staticmethod
@@ -231,7 +231,7 @@ class Happy(CustomFormAction):
         tracker.update(SlotSet("emotional_hapiness",True))
         tracker.update(SlotSet("global_score",global_score))
 
-class Social(CustomFormAction):
+class Social(FormActionTriggerAction):
     RANDOMIZE = True
     
     @staticmethod
@@ -254,7 +254,7 @@ class Social(CustomFormAction):
         tracker.update(SlotSet("social",True))
         tracker.update(SlotSet("global_score",global_score))
         
-class Pathology(CustomFormAction):
+class Pathology(FormActionTriggerAction):
     RANDOMIZE = True
     
     @staticmethod
@@ -289,7 +289,7 @@ class Pathology(CustomFormAction):
         dispatcher.utter_message(response)
         tracker.update(SlotSet("global_score",global_score))
         
-class Treatment(CustomFormAction):
+class Treatment(FormActionTriggerAction):
     RANDOMIZE = False
     
     @staticmethod
@@ -327,7 +327,7 @@ class Treatment(CustomFormAction):
         dispatcher.utter_message(response)
         tracker.update(SlotSet("global_score",global_score))
         
-class InfoPatient(CustomFormAction):
+class InfoPatient(FormActionTriggerAction):
     RANDOMIZE = True
     
     @staticmethod
