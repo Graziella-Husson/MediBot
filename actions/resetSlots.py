@@ -9,9 +9,24 @@ from ressources import get_utterance
 
 class ResetSportSlots(Action):
     def name(self):
+        """
+        @return: the name of the action.
+        """
         return 'reset_slots_sport'
     
-    def run(self, dispatcher, tracker, domain):  
+    def run(self, dispatcher, tracker, domain):
+        """
+        @return: A list of SlotSet
+        @param tracker: get all infos for intent 'activity'
+        Set all slots for intent 'activity' to None : 
+            - activity_period
+            - activity_distance
+            - sport
+            - activity_duration
+            - activity_hard
+            - activity_time
+        Set slot activity to True
+        """  
         language = tracker.get_slot("language")
         global_score = tracker.get_slot("global_score")
         dispatcher.utter_message(get_utterance("saved",language))
@@ -41,9 +56,24 @@ class ResetSportSlots(Action):
 
 class ResetPainSlots(Action):
     def name(self):
+        """
+        @return: the name of the action.
+        """
         return 'reset_slots_pain'
     
     def run(self, dispatcher, tracker, domain):  
+        """
+        @return: A list of SlotSet
+        @param tracker: get all infos for intent 'pain'
+        Set all slots for intent 'pain' to None:
+            - pain_period
+            - pain_desc
+            - pain_body_part
+            - pain_duration
+            - pain_change
+            - pain_time
+        Set slot pain to True
+        """  
         language = tracker.get_slot("language")
         global_score = tracker.get_slot("global_score")
         dispatcher.utter_message(get_utterance("saved",language))
@@ -70,9 +100,20 @@ class ResetPainSlots(Action):
 
 class ResetPathologySlots(Action):
     def name(self):
+        """
+        @return: the name of the action.
+        """
         return 'reset_slots_pathology'
     
     def run(self, dispatcher, tracker, domain):  
+        """
+        @return: A list of SlotSet
+        @param tracker: get all infos for intent 'pathology'
+        Set all slots for intent 'pathology' to None:
+            - symtoms
+            - pathology_body_part
+        Set slot pathology to True
+        """  
         language = tracker.get_slot("language")
         global_score = tracker.get_slot("global_score")
         global_score+=1        
@@ -87,9 +128,20 @@ class ResetPathologySlots(Action):
 
 class ResetTreatmentSlots(Action):
     def name(self):
+        """
+        @return: the name of the action.
+        """
         return 'reset_slots_treatment'
     
     def run(self, dispatcher, tracker, domain):  
+        """
+        @return: A list of SlotSet
+        @param tracker: get all infos for intent 'treatment'
+        Set all slots for intent 'treatment' to None:
+            - medicinal (boolean)
+            - drug
+        Set slot treatment to True
+        """  
         language = tracker.get_slot("language")
         global_score = tracker.get_slot("global_score")
         global_score+=2
@@ -104,9 +156,26 @@ class ResetTreatmentSlots(Action):
 
 class ResetInfoPatientSlots(Action):
     def name(self):
+        """
+        @return: the name of the action.
+        """
         return 'reset_slots_info_patient'
     
     def run(self, dispatcher, tracker, domain):  
+        """
+        @return: A list of SlotSet
+        @param tracker: get all infos for intent 'info_patient'
+        Set all slots for intent 'info_patient' to None:
+            - addiction
+            - weight
+            - infoPatient_distance
+            - gender
+            - infoPatient_temperature
+            - heart_rate
+            - blood_pressure
+            - infoPatient_time
+        Set slot info_patient to True
+        """  
         language = tracker.get_slot("language")
         dispatcher.utter_message(get_utterance("saved",language))
         # TODO: save to DB

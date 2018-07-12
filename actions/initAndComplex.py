@@ -36,32 +36,61 @@ followed_reminders=[]
 follow_intent_trigger_date = timedelta(seconds=0)
 
 def get_followed_reminders():
+    """
+    Get followed_reminders list
+    """
     return followed_reminders
 
 def set_followed_reminders(to_set):
+    """
+    Set followed_reminders list
+    """
     global followed_reminders
     followed_reminders = to_set
     
 def get_language():
+    """
+    Get language
+    """
     return language_global
     
 def get_obligatories():
+    """
+    Get mandatories dictionnary
+    """
     return obligatories
 
 def get_reminder_patient():
+    """
+    Get get_reminder_patient time
+    """
     return reminder_patient
     
 def get_date_end():
+    """
+    Get date of the ending current session
+    """
     return date_end
     
 def get_reminder_end_session():
+    """
+    Get reminder_end_session time
+    """
     return reminder_end_session
     
 def get_last_session():
+    """
+    Get last session boolean
+    """
     return last_session
 
 class InitBot(Action):
     def set_begin_date(self):
+        """
+        Set the global variable begin_date
+        If the begin_date for this patient is in the DB, get it
+        If not, set it to now
+        """
         global begin_date
         # TODO: get in DB if exists
         # if not :
@@ -69,6 +98,16 @@ class InitBot(Action):
         # TODO: save in DB
     
     def loadConfig(self,current_session,to_return):
+        """
+        Get all requested slots, requested intents, followed intent and add them into a dictionary used by many other actions.
+        Get all config texts:
+            - stopword
+            - emergency word
+            - nickname of the bot
+            - exit word
+            - language
+            - count_user_reminder_max
+        """
         global obligatories, language_global
         obligatories = dict()
         r=config['sessions'][current_session]['requested_slot']
@@ -104,6 +143,9 @@ class InitBot(Action):
         return to_return
 
     def get_current_session(self):
+        """
+        @return current session number using begin_date and current date
+        """
         delta_time = dt.now() - begin_date
         duration_done = timedelta(seconds=0)
         for i in config['sessions']:
@@ -123,6 +165,9 @@ class InitBot(Action):
                     return (i)
                 
     def last_session(self,current_session):
+        """
+        @return True if it's the last session, False otherwise
+        """
         try:
             config['sessions'][int(current_session)+1]
             current_session=int(current_session)
@@ -132,6 +177,14 @@ class InitBot(Action):
             return True
             
     def get_current_reminder_times(self,current_session,to_return):
+        """
+        @return: List of SlotSet
+        Get all reminders times in config file:
+            - reminder_patient
+            - reminder_end_session
+            - reminder_patient_little
+            - follow_intent_trigger_date (time = date of Xst next session beginning, with X follow_in_current_session_plus config parameter)
+        """
         global reminder_patient,reminder_end_session,reminder_patient_little,date_end,follow_intent_trigger_date
         reminders = ['reminder_patient','reminder_end_session','reminder_patient_little'] 
         duration_session = timedelta(seconds=0)   
@@ -176,6 +229,13 @@ class InitBot(Action):
         return to_return
     
     def get_duration_until(self,begin,end, time):
+        """
+        @param begin: number of begin session
+        @param end: number of end session
+        @param time: time (0 or duration already set)
+        @return time past between begin session and end session, add it to time paramter
+        @raise LastSessionException : if the number of session between begin and end includes a non existent session
+        """
         for i in range(begin,end):
             try:
                 config['sessions'][i+1]['duration']
@@ -195,9 +255,21 @@ class InitBot(Action):
         return time
     
     def name(self):
+        """
+        @return: the name of the action.
+        """
         return 'init'
         
     def run(self, dispatcher, tracker, domain):
+        """
+        @return: List of SlotSet
+        If it's the first time we talk, call method C{set_begin_date}
+        Get the current session
+        Check if it's the last session
+        Set the reminders times
+        Do the complex config calling C{loadConfig}
+        Set global score to 0
+        """
         global first,last_session        
         to_return = []
         if first :
@@ -217,6 +289,18 @@ class InitBot(Action):
 
 class SaveConv(Action):
     def duckling_set_slots(self,data,to_return):
+        """
+        @return: List of SlotSet
+        @param data: all entities detected
+        Check all the complex entities detected with duckling to know what slot to set:
+            - time
+            - distance
+            - duration
+            - temperature
+        If distance, duration or temperature have a unit, set them
+        For every times founded, check if it's the traduction of others entiity and, if not set time
+        If time has a 'to' and 'from' date, check the duration and set it.
+        """
         try:
             to_set = {'time':[],'distance':None,'duration':None,'temperature':None}
             time = None
@@ -287,7 +371,15 @@ class SaveConv(Action):
         return to_return
         
     def save(self,tracker,to_return):
-        global followed_reminders
+        """
+        @return: List of : 
+            - intent detected
+            - entities detected
+            - a list of SlotSet
+            - response of the user
+        Save everything the user said in a file named after the current session number in a folder named after the ID of patient
+        Call C{followed_intent_found} method if the intent is followed
+        """
         current_session = tracker.get_slot("current_session")
         id_user = tracker.sender_id
         idy = "./saves/"+str(id_user)+"/"+str(current_session)
@@ -305,26 +397,8 @@ class SaveConv(Action):
         intent = tracker.latest_message.intent
         intent_name = intent['name']
         followed_intent = tracker.get_slot("followed_intent")
-        found = False
         if intent_name in followed_intent:
-            for i in obligatories['requested_intent']:
-                if intent_name in i.entity_name:
-                    found = True
-            if not found:
-                obligatories['requested_intent'].append(EntityFormField(intent_name, intent_name))
-            entities = ""
-            for entity in obligatories[intent_name]:
-                entities += entity.entity_name+"."
-            entities = entities[:-1]
-            name = intent_name+"-"+entities+"*"+str(current_session)
-            print("Reminder scheduled at "+str(follow_intent_trigger_date)+" for following intent: "+intent_name)
-           # reminder = ReminderScheduled("followed_intent_reminder", follow_intent_trigger_date, name, kill_on_user_message=False)
-            #TODO : add reminder in DB using reminder.as_dict()
-            followed_reminders.append(reminder)
-            to_return.append(reminder)
-            followed_intent.remove(intent_name)
-            to_return.append(SlotSet("followed_intent",followed_intent))
-                
+            self.followed_intent_found(to_return,intent_name,current_session,followed_intent)
         to_return.append(SlotSet("topic",intent_name))
         entities = tracker.latest_message.entities
         #nlu_infos = tracker.latest_message.parse_data
@@ -332,7 +406,52 @@ class SaveConv(Action):
         conv.close()
         return [intent, entities,to_return,response]
     
+    def followed_intent_found(self, to_return, intent_name,current_session,followed_intent):
+        """
+        @return: List of SlotSet
+        @param to_return: the list of SlotSet 
+        @param intent_name: the name of the intent followed
+        @param current_session: number of the current session
+        @param followed_intent: list of followed intent
+        Set mandatory for this session the intent and entities linked
+        Send a followed_intent_reminder reminder at the begining of the Xst next session 
+        """
+        global followed_reminders
+        found = False
+        for i in obligatories['requested_intent']:
+            if intent_name in i.entity_name:
+                found = True
+        if not found:
+            obligatories['requested_intent'].append(EntityFormField(intent_name, intent_name))
+        entities = ""
+        for entity in obligatories[intent_name]:
+            entities += entity.entity_name+"."
+        entities = entities[:-1]
+#        name = intent_name+"-"+entities+"*"+str(current_session)
+#        print("Reminder scheduled at "+str(follow_intent_trigger_date)+" for following intent: "+intent_name)
+#        reminder = ReminderScheduled("followed_intent_reminder", follow_intent_trigger_date, name, kill_on_user_message=False)
+#        #TODO : add reminder in DB using reminder.as_dict()
+#        followed_reminders.append(reminder)
+#        to_return.append(reminder)
+        followed_intent.remove(intent_name)
+        to_return.append(SlotSet("followed_intent",followed_intent))
+    
     def check(self,to_return,intent,entities,tracker,dispatcher,response,domain):
+        """
+        @return: List of SlotSet
+        @param to_return: the list of SlotSet 
+        @param intent: intent detected 
+        @param entities: entities detected
+        @param response: response of the user
+        Check the response of the user :
+            - if the confidence of intent detection is under 50%, call C{Fallback} action
+            - if one of specific word is detected:
+                - emergency: send an alert
+                - stopword: tell the bot that he made a mistake
+                - exitword: do not send the reminder_user_little reminder
+            - if none of the above is detected :
+                - Send user_reminder_little and user_reminder
+        """
         language = tracker.get_slot("language")
         response1 = ("""`\tIntent : {}`
 `\tEntities : {}`""").format(intent, entities)
@@ -381,9 +500,19 @@ class SaveConv(Action):
                 return to_return
         
     def name(self):
+        """
+        @return: the name of the action.
+        """
         return 'save_conv'
         
     def run(self, dispatcher, tracker, domain):
+        """
+        @return: List of SlotSet
+        If it's the first time we talk, call the method C{InitBot().run} and send reminders
+        Save conversation
+        Set slots checking complex entities with duckling
+        Check if there's no noticeable word or low confidence
+        """
         global first        
         language = tracker.get_slot("language")
         to_return = []
@@ -407,9 +536,16 @@ class SaveConv(Action):
             
 class SumUpSLots(Action):
     def name(self):
+        """
+        @return: the name of the action.
+        """
         return 'sum_up_slots'
         
     def run(self, dispatcher, tracker, domain):
+          """
+          Sum up slots from the tracker (for debug)
+          Save bot utterances in conversation save file
+          """
           id_user = tracker.sender_id
           current_session = tracker.get_slot("current_session")
           idy = "./saves/"+str(id_user)+"/"+str(current_session)
