@@ -10,6 +10,9 @@ __pycache__/
 .png
 .old
 .log
-rasa_core
+rasa_core/
+jsonpickle/
+nltk/
+textblob/
 actions/*.txt
 .pyc

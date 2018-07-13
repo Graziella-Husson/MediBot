@@ -5,8 +5,7 @@ from __future__ import unicode_literals
 
 from rasa_core.events import SlotSet
 from rasa_core.dispatcher import Button
-from pain_classifier import get_pain_level
-from physical_activity_classifier import get_physical_activity_level
+from level_classifiers import get_pain_level, get_physical_activity_level
 
 from rasa_core.actions.forms import (
 EntityFormField,
