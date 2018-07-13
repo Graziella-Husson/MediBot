@@ -1432,3 +1432,82 @@
     - utter_ask_pain_desc
     - sum_up_slots
     - export
+
+##change_session_reminder
+	- change_session_reminder
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": ["activity"]}
+    - slot{"language": "en"}
+    - slot{"current_session": 2}
+    - slot{"global_score": 0}
+    - sum_up_slots
+* emotional_sadness
+    - save_conv
+    - slot{"topic": "emotional_sadness"}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_emotionnal_sadness
+    - sum_up_slots
+    - export
+
+##user_reminder
+	- user_reminder
+	- slot{"count_user_reminder",1}
+    - sum_up_slots
+* emotional_sadness
+    - save_conv
+    - slot{"topic": "emotional_sadness"}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_emotionnal_sadness
+    - sum_up_slots
+
+##session_end_reminder
+    - session_end_reminder
+    - sum_up_slots
+* emotional_sadness
+    - save_conv
+    - slot{"topic": "emotional_sadness"}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_emotionnal_sadness
+    - sum_up_slots
+
+##user_reminder_little
+	- user_reminder_little
+    - sum_up_slots
+* emotional_sadness
+    - save_conv
+    - slot{"topic": "emotional_sadness"}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_emotionnal_sadness
+    - sum_up_slots
+
+## followed_intent_reminder
+	- followed_intent_reminder
+    - sum_up_slots
+* emotional_sadness
+    - save_conv
+    - slot{"topic": "emotional_sadness"}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_emotionnal_sadness
+    - sum_up_slots
+
+
