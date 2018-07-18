@@ -20,7 +20,7 @@ from simpleActions import Fallback
 from duckling import DucklingWrapper
 from ressources import get_utterance
 
-global config,first,obligatories,reminder_patient,reminder_end_session,reminder_patient_little,last_session, d, begin_date, language_global,followed_intent
+global config,first,obligatories,reminder_patient,reminder_end_session,reminder_patient_little,last_session, d, begin_date, language_global,followed_intent,complex_entities
 config = yaml.load(open('config.yml'))
 begin_date = None
 first = True
@@ -34,7 +34,14 @@ d = DucklingWrapper()
 language_global = None
 followed_reminders=[]
 follow_intent_trigger_date = timedelta(seconds=0)
+complex_entities = ["time", "body_part","distance","duration","period", "temperature"]
 
+def get_complex_entities():
+    """
+    Get complex_entities list
+    """
+    return complex_entities
+    
 def get_followed_reminders():
     """
     Get followed_reminders list

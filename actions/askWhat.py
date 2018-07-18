@@ -6,6 +6,32 @@ from __future__ import unicode_literals
 from rasa_core.actions.action import Action
 from rasa_core.dispatcher import Button
 from ressources import get_utterance
+from initAndComplex import get_complex_entities
+
+def get_buttons_simple(buttons, slot_name, tracker,language,intent_name,other_value=None):
+    slot_value = tracker.get_slot(slot_name)
+    to_search_in_ressources = ""
+    every = get_complex_entities()
+    for i in every:
+        if i in slot_name:
+            to_search_in_ressources = i+"_button"
+    if to_search_in_ressources == "":
+        to_search_in_ressources = slot_name+"_button"
+    if slot_value != None :
+        if other_value == None or (other_value != None and slot_value != other_value):
+            slot_button = get_utterance(to_search_in_ressources,language)
+            buttons.append(Button(title=slot_button, payload="/"+intent_name+"{\""+slot_name+"\":null}"))   
+    return buttons
+
+def get_buttons_boolean(buttons, slot_name, tracker,language,intent_name):
+    slot_value = tracker.get_slot(slot_name)
+    if slot_value != None:
+            slot_button = get_utterance(slot_name+"_button",language)
+            if slot_value:
+                buttons.append(Button(title=slot_button, payload="/"+intent_name+"{\""+slot_name+"\":false}"))
+            else:
+                buttons.append(Button(title=slot_button, payload="/"+intent_name+"{\""+slot_name+"\":true}"))   
+    return buttons
 
 class AskWhatSport(Action):
     def name(self):
@@ -31,33 +57,19 @@ class AskWhatSport(Action):
         When clicked, a button will reset the slot linked to it.            
         """      
         language = tracker.get_slot("language")
-        sport_period = tracker.get_slot("activity_period")
-        distance = tracker.get_slot("activity_distance")
+        intent_name = "activity"
         sport = tracker.get_slot("sport")
-        duration = tracker.get_slot("activity_duration")
-        activity_hard = tracker.get_slot("activity_hard")
-        activity_time = tracker.get_slot("activity_time")
         buttons = []
         if sport != None:
             sport_button = get_utterance("sport_button",language)
             level_button = get_utterance("level_button",language)
             buttons.append(Button(title=sport_button, payload="/activity{\"sport\":null}"))
             buttons.append(Button(title=level_button, payload="/activity{\"sport_level\":\"Incorrect\"}"))
-        if duration != None:
-            duration_button = get_utterance("duration_button",language)
-            buttons.append(Button(title=duration_button, payload="/activity{\"activity_duration\":null}"))
-        if distance != None:
-            distance_button = get_utterance("distance_button",language)
-            buttons.append(Button(title=distance_button, payload="/activity{\"activity_distance\":null}"))
-        if sport_period != None:
-            period_button = get_utterance("period_button",language)
-            buttons.append(Button(title=period_button, payload="/activity{\"activity_period\":null}"))
-        if activity_hard != None:
-            activity_hard_button = get_utterance("activity_hard_button",language)
-            buttons.append(Button(title=activity_hard_button, payload="/activity{\"activity_hard\":null}"))   
-        if activity_time != None:
-            time_button = get_utterance("time_button",language)
-            buttons.append(Button(title=time_button, payload="/activity{\"activity_time\":null}"))       
+        buttons = get_buttons_simple(buttons, "activity_duration", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "activity_distance", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "activity_period", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "activity_hard", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "activity_time", tracker,language,intent_name)
         message = get_utterance("ask_what",language)
         dispatcher.utter_button_message(message, buttons)
         
@@ -85,33 +97,22 @@ class AskWhatPain(Action):
         When clicked, a button will reset the slot linked to it.            
         """      
         language = tracker.get_slot("language")
-        pain_period = tracker.get_slot("pain_period")
+        intent_name = "pain"
         desc = tracker.get_slot("pain_desc")
-        duration = tracker.get_slot("pain_duration")
-        pain_body_part = tracker.get_slot("pain_body_part")
         evolution = tracker.get_slot("pain_change")
-        time = tracker.get_slot("pain_time")
         buttons = []
         if desc != None:
             desc_button = get_utterance("desc_button",language)
             level_button = get_utterance("level_button",language)
             buttons.append(Button(title=desc_button, payload="/pain{\"pain_desc\":null}"))
             buttons.append(Button(title=level_button, payload="/pain{\"pain_level\":\"Incorrect\"}"))
-        if duration != None:
-            duration_button = get_utterance("duration_button",language)
-            buttons.append(Button(title=duration_button, payload="/pain{\"pain_duration\":null}"))
-        if pain_body_part != None:
-            body_part_button = get_utterance("body_part_button",language)
-            buttons.append(Button(title=body_part_button, payload="/pain{\"pain_body_part\":null}"))
         if evolution != None:
             evolution_button = get_utterance("evolution_button",language)
             buttons.append(Button(title=evolution_button, payload="/pain{\"pain_change\":null}"))
-        if pain_period != None:
-            period_button = get_utterance("period_button",language)
-            buttons.append(Button(title=period_button, payload="/pain{\"pain_period\":null}"))
-        if time != None:
-            time_button = get_utterance("time_button",language)
-            buttons.append(Button(title=time_button, payload="/pain{\"pain_time\":null}"))
+        buttons = get_buttons_simple(buttons, "pain_duration", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "pain_body_part", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "pain_period", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "pain_time", tracker,language,intent_name)
         message = get_utterance("ask_what",language)
         dispatcher.utter_button_message(message, buttons)
         
@@ -138,41 +139,17 @@ class AskWhatPathology(Action):
         When clicked, a button will reset the slot linked to it.            
         """      
         language = tracker.get_slot("language")
-        symtoms = tracker.get_slot("symtoms")
-        pathology_body_part = tracker.get_slot("pathology_body_part")
-        pathology_time = tracker.get_slot("pathology_time")
-        pathology_change = tracker.get_slot("pathology_change")
-        pathology_period = tracker.get_slot("pathology_period")
-        pathology_treatment_linked = tracker.get_slot("pathology_treatment_linked")
+        intent_name = "pathology"
         buttons = []
-        if symtoms != None:
-            symtoms_button = get_utterance("symtoms_button",language)
-            buttons.append(Button(title=symtoms_button, payload="/pathology{\"symtoms\":null}"))
-        if pathology_body_part != None:
-            body_part_button = get_utterance("body_part_button",language)
-            buttons.append(Button(title=body_part_button, payload="/pathology{\"pathology_body_part\":null}"))
-        if pathology_time != None:
-            pathology_time_button = get_utterance("time_button",language)
-            buttons.append(Button(title=pathology_time_button, payload="/pathology{\"pathology_time\":null}"))
-        if pathology_period != None:
-            pathology_period_button = get_utterance("period_button",language)
-            buttons.append(Button(title=pathology_period_button, payload="/pathology{\"pathology_period\":null}"))
-        if pathology_change != None:
-            pathology_change_button = get_utterance("evolution_button",language)
-            if pathology_change:
-                buttons.append(Button(title=pathology_change_button, payload="/pathology{\"pathology_change\":false}"))
-            else:
-                buttons.append(Button(title=pathology_change_button, payload="/pathology{\"pathology_change\":true}"))
-        if pathology_treatment_linked != None:
-            pathology_treatment_linked_button = get_utterance("pathology_treatment_linked_button",language)
-            if pathology_treatment_linked:
-                buttons.append(Button(title=pathology_treatment_linked_button, payload="/pathology{\"pathology_treatment_linked\":false}"))
-            else:
-                buttons.append(Button(title=pathology_treatment_linked_button, payload="/pathology{\"pathology_treatment_linked\":true}"))
-            
+        buttons = get_buttons_simple(buttons, "symtoms", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "pathology_body_part", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "pathology_time", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "pathology_period", tracker,language,intent_name)
+        buttons = get_buttons_boolean(buttons, "pathology_change", tracker,language,intent_name)
+        buttons = get_buttons_boolean(buttons, "pathology_treatment_linked", tracker,language,intent_name)
         message = get_utterance("ask_what",language)
         dispatcher.utter_button_message(message, buttons)
-        
+               
 class AskWhatTreatment(Action):
     def name(self):
         """
@@ -202,73 +179,20 @@ class AskWhatTreatment(Action):
         For others buttons, when clicked, will reset the slot linked to it.            
         """      
         language = tracker.get_slot("language")
-        medicinal = tracker.get_slot("medicinal")
-        drug = tracker.get_slot("drug")
-        dosing = tracker.get_slot("dosing")
-        treatment_being_taken = tracker.get_slot("treatment_being_taken")
-        treatment_time = tracker.get_slot("treatment_time")
-        treatment_prescripted = tracker.get_slot("treatment_prescripted")
-        treatment_ok = tracker.get_slot("treatment_ok")
-        treatment_overdosage = tracker.get_slot("treatment_overdosage")
-        treatment_period = tracker.get_slot("treatment_period")
+        intent_name = "treatment"
         buttons = []
-        if medicinal != None:
-            medicinal_button = get_utterance("medicinal_button",language)
-            if medicinal:
-                buttons.append(Button(title=medicinal_button, payload="/treatment{\"medicinal\":false, \"drug\":\"no_drug\", \"dosing\":\"no_drug\", \"treatment_being_taken\":\"no_drug\", \"treatment_period\":\"no_drug\", \"treatment_overdosage\":\"no_drug\"}"))
-            else:
-                buttons.append(Button(title=medicinal_button, payload="/treatment{\"medicinal\":true}")) 
-        if treatment_being_taken != None and treatment_being_taken != "no_drug":
-            treatment_being_taken_button = get_utterance("treatment_being_taken_button",language)
-            buttons.append(Button(title=treatment_being_taken_button, payload="/treatment{\"treatment_being_taken\":null}"))
-        if drug != None and drug != "no_drug":
-            drug_button = get_utterance("drug_button",language)
-            buttons.append(Button(title=drug_button, payload="/treatment{\"drug\":null}"))
-        if dosing != None and dosing != "no_drug":
-            dosing_button = get_utterance("dosing_button",language)
-            buttons.append(Button(title=dosing_button, payload="/treatment{\"dosing\":null}"))
-        if treatment_period != None and treatment_period != "no_drug":
-            treatment_period_button = get_utterance("period_button",language)
-            buttons.append(Button(title=treatment_period_button, payload="/treatment{\"treatment_period\":null}"))
-        if treatment_time != None:
-            treatment_time_button = get_utterance("time_button",language)
-            buttons.append(Button(title=treatment_time_button, payload="/treatment{\"treatment_time\":null}"))
-        if treatment_overdosage != None:
-            treatment_overdosage_button = get_utterance("treatment_overdosage_button",language)
-            buttons.append(Button(title=treatment_overdosage_button, payload="/treatment{\"treatment_overdosage\":null}"))
-        if treatment_prescripted != None:
-            treatment_prescripted_button = get_utterance("treatment_prescripted_button",language)
-            if medicinal:
-                buttons.append(Button(title=treatment_prescripted_button, payload="/treatment{\"treatment_prescripted\":false}"))
-            else:
-                buttons.append(Button(title=treatment_prescripted_button, payload="/treatment{\"treatment_prescripted\":true}"))   
-        if treatment_ok != None:
-            treatment_ok_button = get_utterance("treatment_ok_button",language)
-            if medicinal:
-                buttons.append(Button(title=treatment_ok_button, payload="/treatment{\"treatment_ok\":false}"))
-            else:
-                buttons.append(Button(title=treatment_ok_button, payload="/treatment{\"treatment_ok\":true}"))   
+        buttons = get_buttons_boolean(buttons, "medicinal", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "treatment_being_taken", tracker,language,intent_name,"no_drug")
+        buttons = get_buttons_simple(buttons, "drug", tracker,language,intent_name,"no_drug")
+        buttons = get_buttons_simple(buttons, "dosing", tracker,language,intent_name,"no_drug")
+        buttons = get_buttons_simple(buttons, "treatment_period", tracker,language,intent_name,"no_drug")
+        buttons = get_buttons_simple(buttons, "treatment_time", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "treatment_overdosage", tracker,language,intent_name)
+        buttons = get_buttons_boolean(buttons, "treatment_prescripted", tracker,language,intent_name)
+        buttons = get_buttons_boolean(buttons, "treatment_ok", tracker,language,intent_name)
         message = get_utterance("ask_what",language)
         dispatcher.utter_button_message(message, buttons)
-        
-def get_buttons_simple(buttons, slot_name, tracker,language,intent_name):
-    slot_value = tracker.get_slot(slot_name)
-    if slot_value != None:
-        slot_button = get_utterance(slot_name+"_button",language)
-        buttons.append(Button(title=slot_button, payload="/"+intent_name+"{\""+slot_name+"\":null}"))   
-    return buttons
-
-def get_buttons_boolean(buttons, slot_name, tracker,language,intent_name):
-    slot_value = tracker.get_slot(slot_name)
-    if slot_value != None:
-            slot_button = get_utterance(slot_name+"_button",language)
-            if slot_value:
-                buttons.append(Button(title=slot_button, payload="/"+intent_name+"{\""+slot_name+"\":false}"))
-            else:
-                buttons.append(Button(title=slot_button, payload="/"+intent_name+"{\""+slot_name+"\":true}"))   
-    return buttons
-
-       
+               
 class AskWhatInfoPatient(Action):
     def name(self):
         """
@@ -294,36 +218,16 @@ class AskWhatInfoPatient(Action):
         When clicked, the button will reset the slot linked to it.            
         """      
         language = tracker.get_slot("language")
-        addiction = tracker.get_slot("addiction")
-        weight = tracker.get_slot("weight")
-        size = tracker.get_slot("infoPatient_distance")
-        gender = tracker.get_slot("gender")
-        temperature = tracker.get_slot("infoPatient_temperature")
-        heart_rate = tracker.get_slot("heart_rate")
-        blood_pressure = tracker.get_slot("blood_pressure")
+        intent_name = "infoPatient"
         date_check_up = tracker.get_slot("infoPatient_time")
         buttons = []
-        if addiction != None:
-            addiction_button = get_utterance("addiction_button",language)
-            buttons.append(Button(title=addiction_button, payload="/info_patient{\"addiction\":null}"))
-        if weight != None:
-            weight_button = get_utterance("weight_button",language)
-            buttons.append(Button(title=weight_button, payload="/info_patient{\"weight\":null}"))
-        if size != None:
-            size_button = get_utterance("size_button",language)
-            buttons.append(Button(title=size_button, payload="/info_patient{\"infoPatient_distance\":null}"))
-        if gender != None:
-            gender_button = get_utterance("gender_button",language)
-            buttons.append(Button(title=gender_button, payload="/info_patient{\"gender\":null}"))
-        if temperature != None:
-            temperature_button = get_utterance("temperature_button",language)
-            buttons.append(Button(title=temperature_button, payload="/info_patient{\"infoPatient_temperature\":null}"))
-        if heart_rate != None:
-            heart_rate_button = get_utterance("heart_rate_button",language)
-            buttons.append(Button(title=heart_rate_button, payload="/info_patient{\"heart_rate\":null}"))
-        if blood_pressure != None:
-            blood_pressure_button = get_utterance("blood_pressure_button",language)
-            buttons.append(Button(title=blood_pressure_button, payload="/info_patient{\"blood_pressure\":null}"))
+        buttons = get_buttons_simple(buttons, "addiction", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "weight", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "infoPatient_distance", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "gender", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "infoPatient_temperature", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "heart_rate", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "blood_pressure", tracker,language,intent_name)
         if date_check_up != None:
             date_check_up_button = get_utterance("date_check_up_button",language)
             buttons.append(Button(title=date_check_up_button, payload="/info_patient{\"infoPatient_time\":null}"))

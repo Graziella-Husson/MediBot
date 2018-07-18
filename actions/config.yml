@@ -11,9 +11,11 @@ sessions:
     duration:
       minutes: '15'
     followed_intent: None
-    requested_intent: treatment
+    requested_intent: treatment,infoPatient
     requested_slot:
       treatment: medicinal,treatment_being_taken,drug,treatment_ok,dosing,treatment_time,treatment_overdosage,treatment_prescripted,treatment_period
+      infoPatient: weight,infoPatient_time,infoPatient_distance,infoPatient_temperature,gender,heart_rate,blood_pressure
+
   2:
     duration:
       minutes: '3'
@@ -35,3 +37,5 @@ emergency : help
 nickname : Ailixir
 exit : gone
 count_user_reminder_max : 1
+
+

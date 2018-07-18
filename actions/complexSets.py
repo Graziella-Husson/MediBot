@@ -6,6 +6,7 @@ from __future__ import unicode_literals
 from rasa_core.actions.action import Action
 from rasa_core.events import SlotSet
 from simpleActions import Fallback
+from initAndComplex import get_complex_entities
 from formActions import (
 ActionFillSlotsSport, 
 ActionFillSlotsPain, 
@@ -45,7 +46,7 @@ class SetMultiple(Action):
         return {
         'activity': ActionFillSlotsSport(),
         'pain': ActionFillSlotsPain(),
-        'infPatient': InfoPatient(),
+        'infoPatient': InfoPatient(),
         'pathology': Pathology(),
         'treatment': Treatment()
         }.get(topic, Fallback())    # fallback is default if topic not found
@@ -62,7 +63,7 @@ class SetMultiple(Action):
         If the slot does not exists, do nothing (e.g 'pain_distance' slot)
         Trigger the action related to the topic with the method C{get_next_action(topic)}
         """
-        every = ["time", "body_part","distance","duration","period", "temperature"]
+        every = get_complex_entities()
         topic = self.get_topic(tracker)
         real_topic = topic
         for i in every:
