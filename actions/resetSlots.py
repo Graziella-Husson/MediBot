@@ -147,7 +147,14 @@ class ResetTreatmentSlots(Action):
         @param tracker: get all infos for intent 'treatment'
         Set all slots for intent 'treatment' to None:
             - medicinal (boolean)
+            - treatment_being_taken
             - drug
+            - dosing	
+            - treatment_time
+            - treatment_prescripted(boolean)
+            - treatment_ok(boolean)
+            - treatment_overdosage
+            - treatment_period
         Set slot treatment to True
         """  
         language = tracker.get_slot("language")
@@ -158,6 +165,13 @@ class ResetTreatmentSlots(Action):
         return [SlotSet("global_score",global_score),
                 SlotSet("medicinal",None),
                 SlotSet("drug",None),
+                SlotSet("treatment_being_taken",None),
+                SlotSet("dosing",None),
+                SlotSet("treatment_time",None),
+                SlotSet("treatment_prescripted",None),
+                SlotSet("treatment_ok",None),
+                SlotSet("treatment_overdosage",None),
+                SlotSet("treatment_period",None),
                 SlotSet("topic", None), 
                 SlotSet("requested_slot", None),
                 SlotSet("treatment",True)]

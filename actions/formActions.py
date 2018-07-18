@@ -445,7 +445,15 @@ class Treatment(FormActionTriggerAction):
         @param dispatcher: used to tell the patient that he talked about the intent 'treatment'.
         The entitities linked to this intent are:
             - medicinal (boolean)
+            - treatment_being_taken
             - drug
+            - dosing	
+            - treatment_time
+            - treatment_prescripted(boolean)
+            - treatment_ok(boolean)
+            - treatment_overdosage
+            - treatment_period
+
         This action will sum up these infos. If they're all set to None (no mandatory entity), just say that we talked about a treatment
         Ask if the informations are correct.
         """
@@ -455,6 +463,13 @@ class Treatment(FormActionTriggerAction):
         #TODO: save score
         medicinal = tracker.get_slot("medicinal")
         drug = tracker.get_slot("drug")
+        dosing = tracker.get_slot("dosing")
+        treatment_being_taken = tracker.get_slot("treatment_being_taken")
+        treatment_time = tracker.get_slot("treatment_time")
+        treatment_prescripted = tracker.get_slot("treatment_prescripted")
+        treatment_ok = tracker.get_slot("treatment_ok")
+        treatment_overdosage = tracker.get_slot("treatment_overdosage")
+        treatment_period = tracker.get_slot("treatment_period")
         try:
             obligatories = get_obligatories()
             len(obligatories['treatment'])>0
@@ -464,14 +479,34 @@ class Treatment(FormActionTriggerAction):
                     response += get_utterance("medicinal_true",language)
                 else:
                     response += get_utterance("medicinal_false",language)
+            if treatment_being_taken != None and treatment_being_taken != "no_drug":
+                response += get_utterance("treatment_being_taken",language).format(treatment_being_taken)
             if drug != None and drug != "no_drug":
                 response += get_utterance("drug",language).format(drug)
-            response += get_utterance("right",language)
+            if dosing != None and dosing != "no_drug":
+                response += get_utterance("dosing",language).format(dosing)
+            if treatment_period != None and treatment_period != "no_drug":
+                response += get_utterance("treatment_period",language).format(treatment_period)
+            if treatment_time != None:
+                response += get_utterance("treatment_time",language).format(treatment_time)
+            if treatment_overdosage != None:
+                response += get_utterance("treatment_overdosage",language).format(treatment_overdosage)
+            if treatment_prescripted != None:
+                if treatment_prescripted :
+                    response += get_utterance("treatment_prescripted_true",language)
+                else:
+                    response += get_utterance("treatment_prescripted_false",language)
+            if treatment_ok != None:
+                if treatment_ok :
+                    response += get_utterance("treatment_ok_true",language)
+                else:
+                    response += get_utterance("treatment_ok_false",language)
+            response += "\n"+get_utterance("right",language)
         except:
             response = get_utterance("sum_up_treatment",language)      
         dispatcher.utter_message(response)
         tracker.update(SlotSet("global_score",global_score))
-        
+
 class InfoPatient(FormActionTriggerAction):
     RANDOMIZE = True
     

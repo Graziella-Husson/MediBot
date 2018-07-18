@@ -6,7 +6,13 @@ from __future__ import unicode_literals
 from rasa_core.actions.action import Action
 from rasa_core.events import SlotSet
 from simpleActions import Fallback
-from formActions import ActionFillSlotsSport, ActionFillSlotsPain, InfoPatient, Pathology
+from formActions import (
+ActionFillSlotsSport, 
+ActionFillSlotsPain, 
+InfoPatient, 
+Pathology,
+Treatment
+)
 
 class SetMultiple(Action):
     def get_topic(self, tracker):
@@ -34,12 +40,14 @@ class SetMultiple(Action):
             - pain
             - infPatient
             - pathology
+            - treatment
         """   
         return {
         'activity': ActionFillSlotsSport(),
         'pain': ActionFillSlotsPain(),
         'infPatient': InfoPatient(),
-        'pathology': Pathology()
+        'pathology': Pathology(),
+        'treatment': Treatment()
         }.get(topic, Fallback())    # fallback is default if topic not found
     
     def name(self):

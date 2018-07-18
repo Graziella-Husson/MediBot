@@ -679,6 +679,141 @@
 		{
 		"en":"Link with treatment",
 		"fr":"Lien avec le traitement"
+		},
+	"ask_dosing":
+		{
+		"en":"Can you tell me the dose you're taking for this drug?",
+		"fr":"Pouvez-vous me dire la dose que vous prenez pour ce médicament ?"
+		},
+	"ask_treatment_time":
+		{
+		"en":"When did you begin your treatment?",
+		"fr":"Quand avez-vous commencé votre traitement ?"
+		},
+	"ask_treatment_being_taken":
+		{
+		"en":"Is your treatment well taken, stopped or forgotten?",
+		"fr":"Votre traitement est-il bien suivi, arrêté ou l'oubliez-vous ?"
+		},
+	"taken":
+		{
+		"en":"Taken",
+		"fr":"Pris"
+		},
+	"stopped":
+		{
+		"en":"Stopped",
+		"fr":"Arrêté"
+		},
+	"forgotten":
+		{
+		"en":"Forgotten",
+		"fr":"Oublié"
+		},
+	"ask_treatment_overdosage":
+		{
+		"en":"Do you take the prescribed dose of your treatment, do you take more or less?",
+		"fr":"Prenez-vous la dose prescrite de votre traitement, prenez-vous plus ou moins ?"
+		},
+	"welltaken":
+		{
+		"en":"Non overdosed",
+		"fr":"Non surdosé"
+		},
+	"overdose":
+		{
+		"en":"Overdosed",
+		"fr":"Surdosé"
+		},
+	"underdose":
+		{
+		"en":"Underdosed",
+		"fr":"Sous dosé"
+		},
+	"ask_treatment_period":
+		{
+		"en":"Can you tell me how often you take your medicine? (e.g. 3 times a day)",
+		"fr":"Pouvez-vous me dire la récurrence à laquelle vous prenez votre médicament ? (par exemple, 3 fois par jours)"
+		},
+	"ask_treatment_prescripted":
+		{
+		"en":"Has your treatment been prescribed to you by medical personnel?",
+		"fr":"Votre traitement vous a-t-il été prescrit par un personnel médical ?"
+		},
+	"ask_treatment_ok":
+		{
+		"en":"Do you think your treatment is good for you?",
+		"fr":"Pensez-vous que votre traitement vous soit bénéfique ?"
+		},
+	"treatment_being_taken":
+		{
+		"en":"\n\tYour treatment has been {}",
+		"fr":"\n\tVotre traitement a été {}"
+		},
+	"dosing":
+		{
+		"en":"\n\tThe dose of medication you are taking is {}",
+		"fr":"\n\tLa dose de médicament que vous prenez est de {}"
+		},
+	"treatment_period":
+		{
+		"en":"\n\tThe recurrence you take your medicine is {}",
+		"fr":"\n\tLa récurrence à laquelle vous prenez votre médicament est de {}"
+		},
+	"treatment_time":
+		{
+		"en":"\n\tYou started your treatment {}",
+		"fr":"\n\tVous avez commencé votre traitement {}"
+		},
+	"treatment_overdosage":
+		{
+		"en":"\n\tYour medication is {}",
+		"fr":"\n\tVotre traitement médicamenteux est {}"
+		},
+	"treatment_prescripted_true":
+		{
+		"en":"\n\tYour treatment has been prescribed",
+		"fr":"\n\tVotre traitement vous a été prescrit"
+		},
+	"treatment_prescripted_false":
+		{
+		"en":"\n\tYour treatment has not been prescribed",
+		"fr":"\n\tVotre traitement ne vous a pas été prescrit"
+		},
+	"treatment_ok_true":
+		{
+		"en":"\n\tYou think your treatment is beneficial to you",
+		"fr":"\n\tVous pensez que votre traitement vous est bénéfique"
+		},
+	"treatment_ok_false":
+		{
+		"en":"\n\tYou think your treatment is not beneficial to you",
+		"fr":"\n\tVous pensez que votre traitement ne vous est pas bénéfique"
+		},
+	"treatment_being_taken_button":
+		{
+		"en":"Taking the medicine",
+		"fr":"Prise du médicament"
+		},
+	"dosing_button":
+		{
+		"en":"Dosing",
+		"fr":"Dose"
+		},
+	"treatment_prescripted_button":
+		{
+		"en":"Prescription",
+		"fr":"Prescription"
+		},
+	"treatment_ok_button":
+		{
+		"en":"Beneficial",
+		"fr":"Bénéfique"
+		},
+	"treatment_overdosage_button":
+		{
+		"en":"Overdose",
+		"fr":"Overdose"
 		}
 	}
 }

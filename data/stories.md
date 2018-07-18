@@ -1821,4 +1821,597 @@
     - sum_up_slots
     - export
 
+## Generated Story 1879510231223465700
+* treatment
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "fr"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"requested_slot": "medicinal"}
+    - utter_ask_medicinal
+    - sum_up_slots
+* treatment{"medicinal": true}
+    - slot{"medicinal": true}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"medicinal": true}
+    - slot{"requested_slot": "treatment_being_taken"}
+    - utter_ask_treatment_being_taken
+    - sum_up_slots
+* treatment{"treatment_being_taken": "pris"}
+    - slot{"treatment_being_taken": "pris"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_being_taken": "pris"}
+    - slot{"requested_slot": "drug"}
+    - utter_ask_drug
+    - sum_up_slots
+* treatment{"drug": "drug"}
+    - slot{"drug": "drug"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"drug": "drug"}
+    - slot{"requested_slot": "treatment_ok"}
+    - utter_ask_treatment_ok
+    - sum_up_slots
+* treatment{"treatment_ok": true}
+    - slot{"treatment_ok": true}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_ok": true}
+    - slot{"requested_slot": "dosing"}
+    - utter_ask_dosing
+    - sum_up_slots
+* treatment{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"dosing": "dosing"}
+    - slot{"requested_slot": "treatment_time"}
+    - utter_ask_treatment_time
+    - sum_up_slots
+* treatment{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"treatment_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_treatment
+    - slot{"requested_slot": "treatment_overdosage"}
+    - utter_ask_treatment_overdosage
+    - sum_up_slots
+* treatment{"treatment_overdosage": "pris"}
+    - slot{"treatment_overdosage": "pris"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_overdosage": "pris"}
+    - slot{"requested_slot": "treatment_prescripted"}
+    - utter_ask_treatment_prescripted
+    - sum_up_slots
+* treatment{"treatment_prescripted": true}
+    - slot{"treatment_prescripted": true}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_prescripted": true}
+    - slot{"requested_slot": "treatment_period"}
+    - utter_ask_treatment_period
+    - sum_up_slots
+* treatment{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"treatment_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_treatment
+    - sum_up_slots
+    - export
+
+## Generated Story -5311939058495428836
+* treatment
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "en"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"requested_slot": "medicinal"}
+    - utter_ask_medicinal
+    - sum_up_slots
+* treatment{"medicinal": true}
+    - slot{"medicinal": true}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"medicinal": true}
+    - slot{"requested_slot": "treatment_being_taken"}
+    - utter_ask_treatment_being_taken
+    - sum_up_slots
+* treatment{"treatment_being_taken": "taken"}
+    - slot{"treatment_being_taken": "taken"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_being_taken": "taken"}
+    - slot{"requested_slot": "drug"}
+    - utter_ask_drug
+    - sum_up_slots
+* treatment{"drug": "drug"}
+    - slot{"drug": "drug"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"drug": "drug"}
+    - slot{"requested_slot": "treatment_ok"}
+    - utter_ask_treatment_ok
+    - sum_up_slots
+* treatment{"treatment_ok": true}
+    - slot{"treatment_ok": true}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_ok": true}
+    - slot{"requested_slot": "dosing"}
+    - utter_ask_dosing
+    - sum_up_slots
+* treatment{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"dosing": "dosing"}
+    - slot{"requested_slot": "treatment_time"}
+    - utter_ask_treatment_time
+    - sum_up_slots
+* treatment{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"treatment_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_treatment
+    - slot{"requested_slot": "treatment_overdosage"}
+    - utter_ask_treatment_overdosage
+    - sum_up_slots
+* treatment{"treatment_overdosage": "taken"}
+    - slot{"treatment_overdosage": "taken"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_overdosage": "taken"}
+    - slot{"requested_slot": "treatment_prescripted"}
+    - utter_ask_treatment_prescripted
+    - sum_up_slots
+* treatment{"treatment_prescripted": true}
+    - slot{"treatment_prescripted": true}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_prescripted": true}
+    - slot{"requested_slot": "treatment_period"}
+    - utter_ask_treatment_period
+    - sum_up_slots
+* treatment{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"treatment_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_treatment
+    - sum_up_slots
+    - export
+
+## Generated Story 435050222365266094
+* treatment{"dosing": "dosing", "drug": "drug"}
+    - slot{"dosing": "dosing"}
+    - slot{"drug": "drug"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "en"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"drug": "drug"}
+    - slot{"dosing": "dosing"}
+    - slot{"requested_slot": "medicinal"}
+    - utter_ask_medicinal
+    - sum_up_slots
+* treatment{"medicinal": true}
+    - slot{"medicinal": true}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"medicinal": true}
+    - slot{"requested_slot": "treatment_being_taken"}
+    - utter_ask_treatment_being_taken
+    - sum_up_slots
+* treatment{"treatment_being_taken": "forgotten"}
+    - slot{"treatment_being_taken": "forgotten"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_being_taken": "forgotten"}
+    - slot{"requested_slot": "treatment_ok"}
+    - utter_ask_treatment_ok
+    - sum_up_slots
+* treatment{"treatment_ok": false}
+    - slot{"treatment_ok": false}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_ok": false}
+    - slot{"requested_slot": "treatment_time"}
+    - utter_ask_treatment_time
+    - sum_up_slots
+* treatment{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"treatment_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_treatment
+    - slot{"requested_slot": "treatment_overdosage"}
+    - utter_ask_treatment_overdosage
+    - sum_up_slots
+* treatment{"treatment_overdosage": "overdosed"}
+    - slot{"treatment_overdosage": "overdosed"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_overdosage": "overdosed"}
+    - slot{"requested_slot": "treatment_prescripted"}
+    - utter_ask_treatment_prescripted
+    - sum_up_slots
+* treatment{"treatment_prescripted": false}
+    - slot{"treatment_prescripted": false}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_prescripted": false}
+    - slot{"requested_slot": "treatment_period"}
+    - utter_ask_treatment_period
+    - sum_up_slots
+* treatment{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"treatment_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_treatment
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_treatment
+    - slot{"global_score": 2}
+    - slot{"medicinal": null}
+    - slot{"drug": null}
+    - slot{"treatment_being_taken": null}
+    - slot{"dosing": null}
+    - slot{"treatment_time": null}
+    - slot{"treatment_prescripted": null}
+    - slot{"treatment_ok": null}
+    - slot{"treatment_overdosage": null}
+    - slot{"treatment_period": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"treatment": true}
+    - sum_up_slots
+    - export
+
+## Generated Story 7250209104722528063
+* treatment{"dosing": "dosing", "drug": "drug"}
+    - slot{"dosing": "dosing"}
+    - slot{"drug": "drug"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "en"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"drug": "drug"}
+    - slot{"dosing": "dosing"}
+    - slot{"requested_slot": "medicinal"}
+    - utter_ask_medicinal
+    - sum_up_slots
+* treatment{"medicinal": true}
+    - slot{"medicinal": true}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"medicinal": true}
+    - slot{"requested_slot": "treatment_being_taken"}
+    - utter_ask_treatment_being_taken
+    - sum_up_slots
+* treatment{"treatment_being_taken": "forgotten"}
+    - slot{"treatment_being_taken": "forgotten"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_being_taken": "forgotten"}
+    - slot{"requested_slot": "treatment_ok"}
+    - utter_ask_treatment_ok
+    - sum_up_slots
+* treatment{"treatment_ok": false}
+    - slot{"treatment_ok": false}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_ok": false}
+    - slot{"requested_slot": "treatment_time"}
+    - utter_ask_treatment_time
+    - sum_up_slots
+* treatment{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"treatment_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_treatment
+    - slot{"requested_slot": "treatment_overdosage"}
+    - utter_ask_treatment_overdosage
+    - sum_up_slots
+* treatment{"treatment_overdosage": "underdosed"}
+    - slot{"treatment_overdosage": "underdosed"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_overdosage": "underdosed"}
+    - slot{"requested_slot": "treatment_prescripted"}
+    - utter_ask_treatment_prescripted
+    - sum_up_slots
+* treatment{"treatment_prescripted": true}
+    - slot{"treatment_prescripted": true}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_prescripted": true}
+    - slot{"requested_slot": "treatment_period"}
+    - utter_ask_treatment_period
+    - sum_up_slots
+* treatment{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"treatment_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_treatment
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - ask_what_treatment
+    - sum_up_slots
+* treatment{"dosing": "no_drug", "treatment_overdosage": "no_drug", "treatment_being_taken": "no_drug", "medicinal": false, "treatment_period": "no_drug", "drug": "no_drug"}
+    - slot{"dosing": "no_drug"}
+    - slot{"drug": "no_drug"}
+    - slot{"medicinal": false}
+    - slot{"treatment_being_taken": "no_drug"}
+    - slot{"treatment_overdosage": "no_drug"}
+    - slot{"treatment_period": "no_drug"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"medicinal": false}
+    - slot{"treatment_being_taken": "no_drug"}
+    - slot{"drug": "no_drug"}
+    - slot{"dosing": "no_drug"}
+    - slot{"treatment_overdosage": "no_drug"}
+    - slot{"treatment_period": "no_drug"}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_treatment
+    - slot{"global_score": 2}
+    - slot{"medicinal": null}
+    - slot{"drug": null}
+    - slot{"treatment_being_taken": null}
+    - slot{"dosing": null}
+    - slot{"treatment_time": null}
+    - slot{"treatment_prescripted": null}
+    - slot{"treatment_ok": null}
+    - slot{"treatment_overdosage": null}
+    - slot{"treatment_period": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"treatment": true}
+    - sum_up_slots
+    - export
 

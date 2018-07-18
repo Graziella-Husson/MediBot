@@ -187,27 +187,88 @@ class AskWhatTreatment(Action):
         
         Display a button for all infos the tracker have for the intent 'treatment':
             - medicinal (boolean)
+            - treatment_being_taken
             - drug
+            - dosing	
+            - treatment_time
+            - treatment_prescripted(boolean)
+            - treatment_ok(boolean)
+            - treatment_overdosage
+            - treatment_period
             
         If medicinal button is cliked, set the slot 'medicinal' to the opposite of its value.
+        If medicinal button is cliked, set the slot 'treatment_prescripted' to the opposite of its value.
+        If medicinal button is cliked, set the slot 'treatment_ok' to the opposite of its value.
         For others buttons, when clicked, will reset the slot linked to it.            
         """      
         language = tracker.get_slot("language")
         medicinal = tracker.get_slot("medicinal")
         drug = tracker.get_slot("drug")
+        dosing = tracker.get_slot("dosing")
+        treatment_being_taken = tracker.get_slot("treatment_being_taken")
+        treatment_time = tracker.get_slot("treatment_time")
+        treatment_prescripted = tracker.get_slot("treatment_prescripted")
+        treatment_ok = tracker.get_slot("treatment_ok")
+        treatment_overdosage = tracker.get_slot("treatment_overdosage")
+        treatment_period = tracker.get_slot("treatment_period")
         buttons = []
         if medicinal != None:
             medicinal_button = get_utterance("medicinal_button",language)
             if medicinal:
-                buttons.append(Button(title=medicinal_button, payload="/treatment{\"medicinal\":false, \"drug\":\"no_drug\"}"))
+                buttons.append(Button(title=medicinal_button, payload="/treatment{\"medicinal\":false, \"drug\":\"no_drug\", \"dosing\":\"no_drug\", \"treatment_being_taken\":\"no_drug\", \"treatment_period\":\"no_drug\", \"treatment_overdosage\":\"no_drug\"}"))
             else:
-                buttons.append(Button(title=medicinal_button, payload="/treatment{\"medicinal\":true}"))                
-        if drug != None:
+                buttons.append(Button(title=medicinal_button, payload="/treatment{\"medicinal\":true}")) 
+        if treatment_being_taken != None and treatment_being_taken != "no_drug":
+            treatment_being_taken_button = get_utterance("treatment_being_taken_button",language)
+            buttons.append(Button(title=treatment_being_taken_button, payload="/treatment{\"treatment_being_taken\":null}"))
+        if drug != None and drug != "no_drug":
             drug_button = get_utterance("drug_button",language)
             buttons.append(Button(title=drug_button, payload="/treatment{\"drug\":null}"))
+        if dosing != None and dosing != "no_drug":
+            dosing_button = get_utterance("dosing_button",language)
+            buttons.append(Button(title=dosing_button, payload="/treatment{\"dosing\":null}"))
+        if treatment_period != None and treatment_period != "no_drug":
+            treatment_period_button = get_utterance("period_button",language)
+            buttons.append(Button(title=treatment_period_button, payload="/treatment{\"treatment_period\":null}"))
+        if treatment_time != None:
+            treatment_time_button = get_utterance("time_button",language)
+            buttons.append(Button(title=treatment_time_button, payload="/treatment{\"treatment_time\":null}"))
+        if treatment_overdosage != None:
+            treatment_overdosage_button = get_utterance("treatment_overdosage_button",language)
+            buttons.append(Button(title=treatment_overdosage_button, payload="/treatment{\"treatment_overdosage\":null}"))
+        if treatment_prescripted != None:
+            treatment_prescripted_button = get_utterance("treatment_prescripted_button",language)
+            if medicinal:
+                buttons.append(Button(title=treatment_prescripted_button, payload="/treatment{\"treatment_prescripted\":false}"))
+            else:
+                buttons.append(Button(title=treatment_prescripted_button, payload="/treatment{\"treatment_prescripted\":true}"))   
+        if treatment_ok != None:
+            treatment_ok_button = get_utterance("treatment_ok_button",language)
+            if medicinal:
+                buttons.append(Button(title=treatment_ok_button, payload="/treatment{\"treatment_ok\":false}"))
+            else:
+                buttons.append(Button(title=treatment_ok_button, payload="/treatment{\"treatment_ok\":true}"))   
         message = get_utterance("ask_what",language)
         dispatcher.utter_button_message(message, buttons)
         
+def get_buttons_simple(buttons, slot_name, tracker,language,intent_name):
+    slot_value = tracker.get_slot(slot_name)
+    if slot_value != None:
+        slot_button = get_utterance(slot_name+"_button",language)
+        buttons.append(Button(title=slot_button, payload="/"+intent_name+"{\""+slot_name+"\":null}"))   
+    return buttons
+
+def get_buttons_boolean(buttons, slot_name, tracker,language,intent_name):
+    slot_value = tracker.get_slot(slot_name)
+    if slot_value != None:
+            slot_button = get_utterance(slot_name+"_button",language)
+            if slot_value:
+                buttons.append(Button(title=slot_button, payload="/"+intent_name+"{\""+slot_name+"\":false}"))
+            else:
+                buttons.append(Button(title=slot_button, payload="/"+intent_name+"{\""+slot_name+"\":true}"))   
+    return buttons
+
+       
 class AskWhatInfoPatient(Action):
     def name(self):
         """

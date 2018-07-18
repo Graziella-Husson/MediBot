@@ -133,9 +133,9 @@ class AskPainChange(Action):
         continuous_button = get_utterance("continuous_button",language)
         intermittent_button = get_utterance("intermittent_button",language)
         brief_button = get_utterance("brief_button",language)
-        buttons = [Button(title=continuous_button, payload="/pain{\"pain_change\":\"continuous\"}"),       
-                   Button(title=intermittent_button, payload="/pain{\"pain_change\":\"intermittent\"}"),       
-                   Button(title=brief_button, payload="/pain{\"pain_change\":\"brief\"}")] 
+        buttons = [Button(title=continuous_button, payload="/pain{\"pain_change\":\""+continuous_button.lower()+"\"}"),       
+                   Button(title=intermittent_button, payload="/pain{\"pain_change\":\""+intermittent_button.lower()+"\"}"),       
+                   Button(title=brief_button, payload="/pain{\"pain_change\":\""+brief_button.lower()+"\"}")] 
         dispatcher.utter_button_message(message, buttons)
  
 class AskPainPeriod(Action):
@@ -358,6 +358,13 @@ class AskMedicinal(Action):
     def run(self, dispatcher, tracker, domain):
         """
         Say something to the user : display buttons to tell if the treatment is medicinal or not
+        When the "no" button is clicked, we have to set :
+            - drug 
+            - dosing
+            - treatment_being_taken
+            - treatment_period
+            - treatment_overdosage
+        to something, saying that we won't ask anything about it for this treatment.
         """ 
         language = tracker.get_slot("language")
         message = get_utterance("ask_medicinal",language)
@@ -365,7 +372,7 @@ class AskMedicinal(Action):
         yes_button = get_utterance("yes",language)
         no_button = get_utterance("no",language)
         buttons = [Button(title=yes_button, payload="/treatment{\"medicinal\":true}"),       
-                   Button(title=no_button, payload="/treatment{\"medicinal\":false, \"drug\":\"no_drug\"}")] 
+                   Button(title=no_button, payload="/treatment{\"medicinal\":false, \"drug\":\"no_drug\", \"dosing\":\"no_drug\", \"treatment_being_taken\":\"no_drug\", \"treatment_period\":\"no_drug\", \"treatment_overdosage\":\"no_drug\"}")] 
         dispatcher.utter_button_message(message, buttons)
 
 class AskDrug(Action):
@@ -378,6 +385,7 @@ class AskDrug(Action):
     def run(self, dispatcher, tracker, domain):
         """
         Say something to the user : ask the drug of the treatment
+        We have to talk about that only if the treatment is medicinal
         """ 
         language = tracker.get_slot("language")
         response = get_utterance("ask_drug",language)
@@ -572,7 +580,7 @@ class AskPathologyPeriod(Action):
         
     def run(self, dispatcher, tracker, domain):
         """
-        Say something to the user : ask the the period of pathology/side effect/symptom
+        Say something to the user : ask the period of pathology/side effect/symptom
         """ 
         language = tracker.get_slot("language")
         response = get_utterance("ask_pathology_period",language)
@@ -617,3 +625,135 @@ class AskPathologyTreatmentLinked(Action):
         buttons = [Button(title=yes_button, payload="/pathology{\"pathology_treatment_linked\":true}"),       
                    Button(title=no_button, payload="/pathology{\"pathology_treatment_linked\":false}")] 
         dispatcher.utter_button_message(message, buttons)
+        
+class AskDosing(Action):
+    def name(self):
+        """
+        @return: the name of the action.
+        """
+        return 'utter_ask_dosing'
+        
+    def run(self, dispatcher, tracker, domain):
+        """
+        Say something to the user : ask the dose the patient is taking (not the one prescripted)
+        We have to talk about that only if the treatment is medicinal
+        """ 
+        language = tracker.get_slot("language")
+        response = get_utterance("ask_dosing",language)
+        dispatcher.utter_message(response)
+        
+class AskTreatmentTime(Action):
+    def name(self):
+        """
+        @return: the name of the action.
+        """
+        return 'utter_ask_treatment_time'
+        
+    def run(self, dispatcher, tracker, domain):
+        """
+        Say something to the user : ask the begin date of the treatment taken
+        """ 
+        language = tracker.get_slot("language")
+        response = get_utterance("ask_treatment_time",language)
+        dispatcher.utter_message(response)
+        
+class AskTreatmentBeingTaken(Action):
+    def name(self):
+        """
+        @return: the name of the action.
+        """
+        return 'utter_ask_treatment_being_taken'
+        
+    def run(self, dispatcher, tracker, domain):
+        """
+        Say something to the user : display buttons to tell if the treatment is being well taken or forgotten or stopped
+        When the "stopped" button is clicked, we have to set :
+            - dosing
+        to something, saying that we won't ask anything about it for this treatment.        
+        """ 
+        language = tracker.get_slot("language")
+        message = get_utterance("ask_treatment_being_taken",language)
+        taken_button = get_utterance("taken",language)
+        stopped_button = get_utterance("stopped",language)
+        forgotten_button = get_utterance("forgotten",language)
+        buttons = [Button(title=taken_button, payload="/treatment{\"treatment_being_taken\":\""+taken_button.lower()+"\"}"),       
+                   Button(title=stopped_button, payload="/treatment{\"treatment_being_taken\":\""+stopped_button.lower()+"\", \"dosing\":\"no_drug\"}"),    
+                   Button(title=forgotten_button, payload="/treatment{\"treatment_being_taken\":\""+forgotten_button.lower()+"\"}")] 
+        dispatcher.utter_button_message(message, buttons)
+
+class AskTreatmentOverdosage(Action):
+    def name(self):
+        """
+        @return: the name of the action.
+        """
+        return 'utter_ask_treatment_overdosage'
+        
+    def run(self, dispatcher, tracker, domain):
+        """
+        Say something to the user : display buttons to tell if the treatment dose is well taken or overdose or under dose
+        """ 
+        language = tracker.get_slot("language")
+        message = get_utterance("ask_treatment_overdosage",language)
+        taken_button = get_utterance("welltaken",language)
+        overdose_button = get_utterance("overdose",language)
+        underdose_button = get_utterance("underdose",language)
+        buttons = [Button(title=taken_button, payload="/treatment{\"treatment_overdosage\":\""+taken_button.lower()+"\"}"),       
+                   Button(title=overdose_button, payload="/treatment{\"treatment_overdosage\":\""+overdose_button.lower()+"\"}"),    
+                   Button(title=underdose_button, payload="/treatment{\"treatment_overdosage\":\""+underdose_button.lower()+"\"}")] 
+        dispatcher.utter_button_message(message, buttons)
+        
+class AskTreatmentPeriod(Action):
+    def name(self):
+        """
+        @return: the name of the action.
+        """
+        return 'utter_ask_treatment_period'
+        
+    def run(self, dispatcher, tracker, domain):
+        """
+        Say something to the user : ask the period of the medicinal treatment 
+        """ 
+        language = tracker.get_slot("language")
+        response = get_utterance("ask_treatment_period",language)
+        dispatcher.utter_message(response)
+
+class AskTreatmentPrescripted(Action):
+    def name(self):
+        """
+        @return: the name of the action.
+        """
+        return 'utter_ask_treatment_prescripted'
+        
+    def run(self, dispatcher, tracker, domain):
+        """
+        Say something to the user : display buttons to tell if the treatment is prescripted or not
+        """ 
+        language = tracker.get_slot("language")
+        message = get_utterance("ask_treatment_prescripted",language)
+        
+        yes_button = get_utterance("yes",language)
+        no_button = get_utterance("no",language)
+        buttons = [Button(title=yes_button, payload="/treatment{\"treatment_prescripted\":true}"),       
+                   Button(title=no_button, payload="/treatment{\"treatment_prescripted\":false}")] 
+        dispatcher.utter_button_message(message, buttons)
+
+class AskTreatmentOk(Action):
+    def name(self):
+        """
+        @return: the name of the action.
+        """
+        return 'utter_ask_treatment_ok'
+        
+    def run(self, dispatcher, tracker, domain):
+        """
+        Say something to the user : display buttons to tell if the patient feels ok about his treatment or not
+        """ 
+        language = tracker.get_slot("language")
+        message = get_utterance("ask_treatment_ok",language)
+        
+        yes_button = get_utterance("yes",language)
+        no_button = get_utterance("no",language)
+        buttons = [Button(title=yes_button, payload="/treatment{\"treatment_ok\":true}"),       
+                   Button(title=no_button, payload="/treatment{\"treatment_ok\":false}")] 
+        dispatcher.utter_button_message(message, buttons)
+  

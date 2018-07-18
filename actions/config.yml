@@ -1,4 +1,4 @@
-language: 'fr'
+language: 'en'
 follow_in_current_session_plus: 1
 reminder_end_session:
   minutes: '1'
@@ -11,9 +11,9 @@ sessions:
     duration:
       minutes: '15'
     followed_intent: None
-    requested_intent: None
+    requested_intent: treatment
     requested_slot:
-      pathology: symtoms,pathology_body_part,pathology_time,pathology_change,pathology_period,pathology_treatment_linked
+      treatment: medicinal,treatment_being_taken,drug,treatment_ok,dosing,treatment_time,treatment_overdosage,treatment_prescripted,treatment_period
   2:
     duration:
       minutes: '3'

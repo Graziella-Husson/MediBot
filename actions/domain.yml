@@ -113,6 +113,20 @@ slots:
     type: text
   pathology_treatment_linked:
     type: bool
+  dosing:
+    type: text
+  treatment_time:
+    type: text
+  treatment_being_taken:
+    type: text
+  treatment_prescripted:
+    type: bool
+  treatment_overdosage:
+    type: text
+  treatment_ok:
+    type: bool
+  treatment_period:
+    type: text
 
 intents:
  - activity
@@ -147,6 +161,7 @@ entities:
  - temperature
  - heart_rate
  - blood_pressure
+ - dosing
 
 actions:
  - initAndComplex.SumUpSLots
@@ -216,3 +231,10 @@ actions:
  - simpleActions.AskPathologyPeriod
  - simpleActions.AskPathologyChange
  - simpleActions.AskPathologyTreatmentLinked
+ - simpleActions.AskDosing
+ - simpleActions.AskTreatmentTime
+ - simpleActions.AskTreatmentBeingTaken
+ - simpleActions.AskTreatmentOverdosage
+ - simpleActions.AskTreatmentPeriod
+ - simpleActions.AskTreatmentPrescripted
+ - simpleActions.AskTreatmentOk
