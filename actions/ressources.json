@@ -62,43 +62,43 @@
 		},
 	"social":
 		{
-		"en":"\tYour socialness\n",
-		"fr":"\tVotre vie sociale\n"
+		"en":"\tYour socialness",
+		"fr":"\tVotre vie sociale"
 		},
 	"activity":
 		{
-		"en":"\tYour physical activities\n",
-		"fr":"\tVos activités physiques\n"
+		"en":"\tYour physical activities",
+		"fr":"\tVos activités physiques"
 		},
 	"pain":
 		{
-		"en":"\tYour pain\n",
-		"fr":"\tVotre douleur\n"
+		"en":"\tYour pain",
+		"fr":"\tVotre douleur"
 		},
 	"emotional_sadness":
 		{
-		"en":"\tYour sadness\n",
-		"fr":"\tVotre tristesse\n"
+		"en":"\tYour sadness",
+		"fr":"\tVotre tristesse"
 		},
 	"emotional_hapiness":
 		{
-		"en":"\tYour happiness\n",
-		"fr":"\tVotre bonheur\n"
+		"en":"\tYour happiness",
+		"fr":"\tVotre bonheur"
 		},
 	"pathology":
 		{
-		"en":"\tYour pathology (or side effects)\n",
-		"fr":"\tVotre pathologie (ou effets secondaires)\n"
+		"en":"\tYour pathology (or side effects)",
+		"fr":"\tVotre pathologie (ou effets secondaires)"
 		},
 	"treatment":
 		{
-		"en":"\tYour treatment\n",
-		"fr":"\tVotre traitement\n"
+		"en":"\tYour treatment",
+		"fr":"\tVotre traitement"
 		},
 	"infoPatient":
 		{
-		"en":"\tYour personal informations\n",
-		"fr":"\tVos informations personnelles\n"
+		"en":"\tYour personal informations",
+		"fr":"\tVos informations personnelles"
 		},
 	"user_reminder_little":
 		{
@@ -122,28 +122,28 @@
 		},
 	"pain_desc":
 		{
-		"en":"\tYou have some {} pain (it's considered has a {} pain).\n",
-		"fr":"\tVous resentez une douleur {} (considérée comme une douleur {}).\n"
+		"en":"\tYou have some {} pain (it's considered has a {} pain).",
+		"fr":"\tVous resentez une douleur {} (considérée comme une douleur {})."
 		},
 	"pain_body_part":
 		{
-		"en":"\tThe pain is localized at {}.\n",
-		"fr":"\tLa douleur est localisée à {}.\n"
+		"en":"\tThe pain is localized at {}.",
+		"fr":"\tLa douleur est localisée à {}."
 		},
 	"pain_duration":
 		{
-		"en":"\tThe duration of this pain is of {}.\n",
-		"fr":"\tLa durée de cette douleur est de {}.\n"
+		"en":"\tThe duration of this pain is of {}.",
+		"fr":"\tLa durée de cette douleur est de {}."
 		},
 	"pain_period":
 		{
-		"en":"\tThe pain period/recurrence is {}.\n",
-		"fr":"\tLa période/récurrence de cette douleur est de {}.\n"
+		"en":"\tThe pain period/recurrence is {}.",
+		"fr":"\tLa période/récurrence de cette douleur est de {}."
 		},
 	"pain_change":
 		{
-		"en":"\tThe pain seems to be {}.\n",
-		"fr":"\tLa douleur semble {}.\n"
+		"en":"\tThe pain seems to be {}.",
+		"fr":"\tLa douleur semble {}."
 		},
 	"right":
 		{
@@ -177,33 +177,33 @@
 		},
 	"sport":
 		{
-		"en":"\tYou did some {} physical activity ({}). The physical activity detected is {}.\n",
-		"fr":"\tVous avez fait une activité physique jugée {} ({}). L'activité détectée est {}.\n"
+		"en":"\tYou did some {} physical activity ({}). The physical activity detected is {}.",
+		"fr":"\tVous avez fait une activité physique jugée {} ({}). L'activité détectée est {}."
 		},
 	"activity_duration":
 		{
-		"en":"\tThe physical activity duration is of {}.\n",
-		"fr":"\tLa durée de l'activité physique est de {}.\n"
+		"en":"\tThe physical activity duration is of {}.",
+		"fr":"\tLa durée de l'activité physique est de {}."
 		},
 	"activity_distance":
 		{
-		"en":"\tThe physical activity distance you did is of {}.\n",
-		"fr":"\tLa distance parcourue est de {}.\n"
+		"en":"\tThe physical activity distance you did is of {}.",
+		"fr":"\tLa distance parcourue est de {}."
 		},
 	"activity_period":
 		{
-		"en":"\tThe physical activity period/recurrence detected is {}.\n",
-		"fr":"\tLa période/récurrence de l'activité physique détectée est de {}.\n"
+		"en":"\tThe physical activity period/recurrence detected is {}.",
+		"fr":"\tLa période/récurrence de l'activité physique détectée est de {}."
 		},
 	"activity_hard_true":
 		{
-		"en":"\tYour activity was hard because of your general health.\n",
-		"fr":"\tVotre activité était dure à performer à cause de votre état de santé général.\n"
+		"en":"\tYour activity was hard because of your general health.",
+		"fr":"\tVotre activité était dure à performer à cause de votre état de santé général."
 		},
 	"activity_hard_false":
 		{
-		"en":"\tYour general health did not make your activity harder.\n",
-		"fr":"\tVotre état de santé général n'a pas fait que votre activité était dure à performer.\n"
+		"en":"\tYour general health did not make your activity harder.",
+		"fr":"\tVotre état de santé général n'a pas fait que votre activité était dure à performer."
 		},
 	"activity_no_entity":
 		{
@@ -624,6 +624,61 @@
 		{
 		"en":"When did you last see medical staff?",
 		"fr":"Quand avez-vous un personnel médical pour la dernière fois ?"
+		},
+	"ask_pathology_time":
+		{
+		"en":"Can you tell me when did this pathology / side effect / symptom begin?",
+		"fr":"Pouvez-vous me dire depuis quand vous avez cette pathologie / effet secondaire / symptôme ?"
+		},
+	"ask_pathology_period":
+		{
+		"en":"Can you telle me the period of this pathology / side effect / symptom? Does it comes every day?",
+		"fr":"Pouvez vous me dire si cette pathologie / effet secondaire / symptôme revient de manière périodique ? Par exemple, tous les jours."
+		},
+	"ask_pathology_change":
+		{
+		"en":"Is this pathology / side effect / symptom worse than last time or not?",
+		"fr":"Est-ce que cette pathologie / effet secondaire / symptôme est pire qu'avant ou non ?"
+		},
+	"ask_pathology_treatment_linked":
+		{
+		"en":"Do you think this pathology / side effect / symptom is due to your treatment?",
+		"fr":"Pensez-vous que cette pathologie / effet secondaire / symptôme soit dû à votre traitement ?"
+		},
+	"pathology_time":
+		{
+		"en":"\n\tYou have this pathology / side effect / symptom since {}",
+		"fr":"\n\tVous avez cette pathologie / effet secondaire / symptôme depuis {}"
+		},
+	"pathology_change_true":
+		{
+		"en":"\n\tYou feel that this pathology / side effect / symptom is getting worse",
+		"fr":"\n\tVous pensez que cette pathologie / effet secondaire / symptôme s'aggrave"
+		},
+	"pathology_change_false":
+		{
+		"en":"\n\tYou feel that this pathology / side effect / symptom is not getting worse",
+		"fr":"\n\tVous pensez que cette pathologie / effet secondaire / symptôme ne s'aggrave pas"
+		},
+	"pathology_period":
+		{
+		"en":"\n\tThe pathology / side effect / symptom period/recurrence is {}.",
+		"fr":"\n\tLa période/récurrence de cette pathologie / effet secondaire / symptôme est de {}."
+		},
+	"pathology_treatment_linked_true":
+		{
+		"en":"\n\tAccording to you, this pathology / side effect / symptom is due to your treatment",
+		"fr":"\n\tD'après vous, cette pathologie / effet secondaire / symptôme est dû à votre traitement"
+		},
+	"pathology_treatment_linked_false":
+		{
+		"en":"\n\tAccording to you, this pathology / side effect / symptom is not due to your treatment",
+		"fr":"\n\tD'après vous, cette pathologie / effet secondaire / symptôme n'est pas dû à votre traitement"
+		},
+	"pathology_treatment_linked_button":
+		{
+		"en":"Link with treatment",
+		"fr":"Lien avec le traitement"
 		}
 	}
 }

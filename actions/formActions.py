@@ -372,7 +372,11 @@ class Pathology(FormActionTriggerAction):
         @param dispatcher: used to tell the patient that he talked about the intent 'social'.
         The entitities linked to this intent are:
             - pathology_body_part
-            - sum_up
+            - symtoms
+            - pathology_time
+            - pathology_change (boolean)
+            - pathology_period
+            - pathology_treatment_linked (boolean)
         This action will sum up these infos. If they're all set to None (no mandatory entity), just say that we talked about a pathology
         Ask if the informations are correct.
         """
@@ -382,6 +386,10 @@ class Pathology(FormActionTriggerAction):
         #TODO: save score
         symtoms = tracker.get_slot("symtoms")
         pathology_body_part = tracker.get_slot("pathology_body_part")
+        pathology_time = tracker.get_slot("pathology_time")
+        pathology_change = tracker.get_slot("pathology_change")
+        pathology_period = tracker.get_slot("pathology_period")
+        pathology_treatment_linked = tracker.get_slot("pathology_treatment_linked")
         try:
             obligatories = get_obligatories()
             len(obligatories['pathology'])>0
@@ -390,7 +398,21 @@ class Pathology(FormActionTriggerAction):
                 response += get_utterance("symtoms",language).format(symtoms)
             if pathology_body_part != None:
                 response += get_utterance("pathology_body_part",language).format(pathology_body_part)
-            response += get_utterance("right",language)
+            if pathology_time != None:
+                response += get_utterance("pathology_time",language).format(pathology_time)
+            if pathology_change != None:
+                if pathology_change:
+                    response += get_utterance("pathology_change_true",language)
+                else:
+                    response += get_utterance("pathology_change_false",language)
+            if pathology_period != None:
+                response += get_utterance("pathology_period",language).format(pathology_period)
+            if pathology_treatment_linked != None:
+                if pathology_treatment_linked:
+                    response += get_utterance("pathology_treatment_linked_true",language)
+                else:
+                    response += get_utterance("pathology_treatment_linked_false",language)
+            response += "\n"+get_utterance("right",language)
         except:
             response = get_utterance("sum_up_pathology",language)
         dispatcher.utter_message(response)

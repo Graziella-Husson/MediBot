@@ -128,14 +128,22 @@ class AskWhatPathology(Action):
         @param dispatcher: used to display buttons with dispatcher.utter_button_message(message, buttons)
         
         Display a button for all infos the tracker have for the intent 'pathology':
-            - symtoms
             - pathology_body_part
+            - symtoms
+            - pathology_time
+            - pathology_change (boolean)
+            - pathology_period
+            - pathology_treatment_linked (boolean)
             
         When clicked, a button will reset the slot linked to it.            
         """      
         language = tracker.get_slot("language")
         symtoms = tracker.get_slot("symtoms")
         pathology_body_part = tracker.get_slot("pathology_body_part")
+        pathology_time = tracker.get_slot("pathology_time")
+        pathology_change = tracker.get_slot("pathology_change")
+        pathology_period = tracker.get_slot("pathology_period")
+        pathology_treatment_linked = tracker.get_slot("pathology_treatment_linked")
         buttons = []
         if symtoms != None:
             symtoms_button = get_utterance("symtoms_button",language)
@@ -143,6 +151,25 @@ class AskWhatPathology(Action):
         if pathology_body_part != None:
             body_part_button = get_utterance("body_part_button",language)
             buttons.append(Button(title=body_part_button, payload="/pathology{\"pathology_body_part\":null}"))
+        if pathology_time != None:
+            pathology_time_button = get_utterance("time_button",language)
+            buttons.append(Button(title=pathology_time_button, payload="/pathology{\"pathology_time\":null}"))
+        if pathology_period != None:
+            pathology_period_button = get_utterance("period_button",language)
+            buttons.append(Button(title=pathology_period_button, payload="/pathology{\"pathology_period\":null}"))
+        if pathology_change != None:
+            pathology_change_button = get_utterance("evolution_button",language)
+            if pathology_change:
+                buttons.append(Button(title=pathology_change_button, payload="/pathology{\"pathology_change\":false}"))
+            else:
+                buttons.append(Button(title=pathology_change_button, payload="/pathology{\"pathology_change\":true}"))
+        if pathology_treatment_linked != None:
+            pathology_treatment_linked_button = get_utterance("pathology_treatment_linked_button",language)
+            if pathology_treatment_linked:
+                buttons.append(Button(title=pathology_treatment_linked_button, payload="/pathology{\"pathology_treatment_linked\":false}"))
+            else:
+                buttons.append(Button(title=pathology_treatment_linked_button, payload="/pathology{\"pathology_treatment_linked\":true}"))
+            
         message = get_utterance("ask_what",language)
         dispatcher.utter_button_message(message, buttons)
         

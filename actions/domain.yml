@@ -32,71 +32,71 @@ slots:
   topic:
     type: text
   pain:
-      type: text
+    type: text
   activity:
-      type: text
+    type: text
   emotional_sadness:
-      type: text
+    type: text
   emotional_hapiness:
-      type: text
+    type: text
   social:
-      type: text
+    type: text
   activity_hard:
-      type: bool
+    type: bool
   nickname:
-      type: unfeaturized
+    type: unfeaturized
   current_session:
-      type: unfeaturized
+    type: unfeaturized
   global_score:
-      type: float
+    type: float
   count_user_reminder:
-      type: unfeaturized
+    type: unfeaturized
   count_user_reminder_max:
-      type: unfeaturized
+    type: unfeaturized
   emergency:
-      type: unfeaturized
+    type: unfeaturized
   exitword:
-      type: unfeaturized
+    type: unfeaturized
   stopword:
-      type: unfeaturized
+    type: unfeaturized
   followed_intent:
-      type: unfeaturized
+    type: unfeaturized
   time:
     type: text
   medicinal:
-      type: bool
+    type: bool
   symtoms:
-      type: text
+    type: text
   drug:
-      type: text
+    type: text
   addiction:
-      type: text
+    type: text
   weight:
-      type: text
+    type: text
   infoPatient_distance:
-      type: text
+    type: text
   gender:
-      type: text
+    type: text
   infoPatient_temperature:
-      type: text
+    type: text
   heart_rate:
-      type: text
+    type: text
   blood_pressure:
-      type: text
+    type: text
   infoPatient_time:
-      type: text
+    type: text
   pain_time:
-      type: text
+    type: text
   activity_time:
-      type: text
+    type: text
   pathology:
-      type: text
+    type: text
   incomprehension:
-      type: text
+    type: text
   treatment:
-      type: text
+    type: text
   infoPatient:
-      type: text
+    type: text
   pathology_body_part:
     type: text
   body_part:
@@ -105,6 +105,14 @@ slots:
     type: text
   language:
     type: unfeaturized
+  pathology_time:
+    type: text
+  pathology_change:
+    type: bool
+  pathology_period:
+    type: text
+  pathology_treatment_linked:
+    type: bool
 
 intents:
  - activity
@@ -204,3 +212,7 @@ actions:
  - simpleActions.AskBloodPressure
  - simpleActions.AskAddiction
  - simpleActions.AskInfoPatientTime
+ - simpleActions.AskPathologyTime
+ - simpleActions.AskPathologyPeriod
+ - simpleActions.AskPathologyChange
+ - simpleActions.AskPathologyTreatmentLinked

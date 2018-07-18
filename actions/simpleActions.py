@@ -362,8 +362,8 @@ class AskMedicinal(Action):
         language = tracker.get_slot("language")
         message = get_utterance("ask_medicinal",language)
         
-        yes_button = get_utterance("yes_button",language)
-        no_button = get_utterance("no_button",language)
+        yes_button = get_utterance("yes",language)
+        no_button = get_utterance("no",language)
         buttons = [Button(title=yes_button, payload="/treatment{\"medicinal\":true}"),       
                    Button(title=no_button, payload="/treatment{\"medicinal\":false, \"drug\":\"no_drug\"}")] 
         dispatcher.utter_button_message(message, buttons)
@@ -548,3 +548,72 @@ class AskInfoPatientTime(Action):
         response = get_utterance("ask_infoPatient_time",language)
         dispatcher.utter_message(response) 
         
+class AskPathologyTime(Action):
+    def name(self):
+        """
+        @return: the name of the action.
+        """
+        return 'utter_ask_pathology_time'
+        
+    def run(self, dispatcher, tracker, domain):
+        """
+        Say something to the user : ask the begin time of pathology/side effect/symptom
+        """ 
+        language = tracker.get_slot("language")
+        response = get_utterance("ask_pathology_time",language)
+        dispatcher.utter_message(response) 
+
+class AskPathologyPeriod(Action):
+    def name(self):
+        """
+        @return: the name of the action.
+        """
+        return 'utter_ask_pathology_period'
+        
+    def run(self, dispatcher, tracker, domain):
+        """
+        Say something to the user : ask the the period of pathology/side effect/symptom
+        """ 
+        language = tracker.get_slot("language")
+        response = get_utterance("ask_pathology_period",language)
+        dispatcher.utter_message(response)
+
+class AskPathologyChange(Action):
+    def name(self):
+        """
+        @return: the name of the action.
+        """
+        return 'utter_ask_pathology_change'
+        
+    def run(self, dispatcher, tracker, domain):
+        """
+        Say something to the user : display buttons to tell if the pathology is worst or not
+        """ 
+        language = tracker.get_slot("language")
+        message = get_utterance("ask_pathology_change",language)
+        
+        yes_button = get_utterance("yes",language)
+        no_button = get_utterance("no",language)
+        buttons = [Button(title=yes_button, payload="/pathology{\"pathology_change\":true}"),       
+                   Button(title=no_button, payload="/pathology{\"pathology_change\":false}")] 
+        dispatcher.utter_button_message(message, buttons)
+
+class AskPathologyTreatmentLinked(Action):
+    def name(self):
+        """
+        @return: the name of the action.
+        """
+        return 'utter_ask_pathology_treatment_linked'
+        
+    def run(self, dispatcher, tracker, domain):
+        """
+        Say something to the user : display buttons to tell if the pathology is linked to the treatment or not (according to patient)
+        """ 
+        language = tracker.get_slot("language")
+        message = get_utterance("ask_pathology_treatment_linked",language)
+        
+        yes_button = get_utterance("yes",language)
+        no_button = get_utterance("no",language)
+        buttons = [Button(title=yes_button, payload="/pathology{\"pathology_treatment_linked\":true}"),       
+                   Button(title=no_button, payload="/pathology{\"pathology_treatment_linked\":false}")] 
+        dispatcher.utter_button_message(message, buttons)

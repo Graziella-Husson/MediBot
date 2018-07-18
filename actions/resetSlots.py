@@ -110,8 +110,12 @@ class ResetPathologySlots(Action):
         @return: A list of SlotSet
         @param tracker: get all infos for intent 'pathology'
         Set all slots for intent 'pathology' to None:
-            - symtoms
             - pathology_body_part
+            - symtoms
+            - pathology_time
+            - pathology_change (boolean)
+            - pathology_period
+            - pathology_treatment_linked (boolean)
         Set slot pathology to True
         """  
         language = tracker.get_slot("language")
@@ -122,6 +126,10 @@ class ResetPathologySlots(Action):
         return [SlotSet("global_score",global_score),
                 SlotSet("symtoms",None),
                 SlotSet("pathology_body_part",None),
+                SlotSet("pathology_time",None),
+                SlotSet("pathology_change",None),
+                SlotSet("pathology_period",None),
+                SlotSet("pathology_treatment_linked",None),
                 SlotSet("topic", None), 
                 SlotSet("requested_slot", None),
                 SlotSet("pathology",True)]

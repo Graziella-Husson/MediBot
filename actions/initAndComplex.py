@@ -562,7 +562,7 @@ class SumUpSLots(Action):
           response = ("""`\ttopic = {}, requested_slot = {},`
 `\tactivity = {}, sport = {}, activity_duration = {}, activity_period = {}, activity_hard = {}, activity_time = {}, activity_distance = {},`
 `\tpain = {}, pain_duration = {}, pain_desc = {}, pain_body_part = {}, pain_change = {}, pain_period = {}, pain_level = {}, pain_time = {},` 
-`\tpathology = {}, symtoms = {}, pathology_body_part = {},`
+`\tpathology = {}, symtoms = {}, pathology_body_part = {}, pathology_time = {}, pathology_change = {}, pathology_period = {}, pathology_treatment_linked = {},`
 `\ttreatment = {}, medicinal = {}, drug = {},`
 `\tinfoPatient = {}, addiction = {}, weight = {}, infoPatient_distance = {}, gender = {}, infoPatient_temperature = {}, heart_rate = {}, blood_pressure = {}, infoPatient_time= {},`
 `\tsadness = {},`
@@ -572,7 +572,7 @@ class SumUpSLots(Action):
 tracker.get_slot("topic"), tracker.get_slot("requested_slot"),
 tracker.get_slot("activity"), tracker.get_slot("sport"), tracker.get_slot("activity_duration"), tracker.get_slot("activity_period"), tracker.get_slot("activity_hard"), tracker.get_slot("activity_time"),tracker.get_slot("activity_distance"),
 tracker.get_slot("pain"), tracker.get_slot("pain_duration"), tracker.get_slot("pain_desc"), tracker.get_slot("pain_body_part"), tracker.get_slot("pain_change"), tracker.get_slot("pain_period"), tracker.get_slot("pain_level"), tracker.get_slot("pain_time"),
-tracker.get_slot("pathology"), tracker.get_slot("symtoms"),tracker.get_slot("pathology_body_part"),
+tracker.get_slot("pathology"), tracker.get_slot("symtoms"),tracker.get_slot("pathology_body_part"),tracker.get_slot("pathology_time"),tracker.get_slot("pathology_change"),tracker.get_slot("pathology_period"),tracker.get_slot("pathology_treatment_linked"),
 tracker.get_slot("treatment"), tracker.get_slot("medicinal"), tracker.get_slot("drug"),
 tracker.get_slot("infoPatient"), tracker.get_slot("addiction"), tracker.get_slot("weight"), tracker.get_slot("infoPatient_distance"), tracker.get_slot("gender"), tracker.get_slot("infoPatient_temperature"), tracker.get_slot("heart_rate"), tracker.get_slot("blood_pressure"), tracker.get_slot("infoPatient_time"),
 tracker.get_slot("emotional_sadness"),

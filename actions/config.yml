@@ -1,4 +1,4 @@
-language: 'en'
+language: 'fr'
 follow_in_current_session_plus: 1
 reminder_end_session:
   minutes: '1'
@@ -9,12 +9,11 @@ reminder_patient_little:
 sessions:
   1:
     duration:
-      minutes: '2'
-    followed_intent: activity
-    requested_intent: pain
+      minutes: '15'
+    followed_intent: None
+    requested_intent: None
     requested_slot:
-      pain: pain_desc
-      activity: sport,activity_distance
+      pathology: symtoms,pathology_body_part,pathology_time,pathology_change,pathology_period,pathology_treatment_linked
   2:
     duration:
       minutes: '3'

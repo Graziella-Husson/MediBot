@@ -17,7 +17,7 @@ from rasa_core.interpreter import RasaNLUInterpreter
 logger = logging.getLogger(__name__)
 
 def run_bot(serve_forever=True):
-	interpreter = RasaNLUInterpreter('../models/nlu/default/current')
+	interpreter = RasaNLUInterpreter('../models/nlu/default/fr')
 	agent = Agent.load('../models/dialogue/actionsOK', interpreter = interpreter)
 	if serve_forever:
 		agent.handle_channel(ConsoleInputChannel())
