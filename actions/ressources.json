@@ -177,8 +177,8 @@
 		},
 	"sport":
 		{
-		"en":"\n\tYou did some {} physical activity ({}). The physical activity detected is {}.",
-		"fr":"\n\tVous avez fait une activité physique jugée {} ({}). L'activité détectée est {}."
+		"en":"\n\tYou did some {} physical activity. The physical activity detected is {}.",
+		"fr":"\n\tVous avez fait une activité physique jugée {}. L'activité détectée est {}."
 		},
 	"activity_duration":
 		{

@@ -61,7 +61,7 @@ def get_buttons_multiple(buttons, slot_names, tracker,language,intent_name,to_ch
 def get_buttons_boolean(buttons, slot_name, tracker,language,intent_name):
     """
     @param buttons: list of buttons in which we have to append new ones
-    @param slot_name: name of the slot we want to add a button for
+    @param slot_name: name of the boolean slot we want to add a button for
     @param tracker: used to get all infos for 'slot_name' entity from the tracker
     @param language: language of the bot (for display the right name of button)
     @param intent_name: name of the intent linked to the slot 

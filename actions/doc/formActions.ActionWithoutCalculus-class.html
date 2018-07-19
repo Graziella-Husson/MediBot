@@ -3,7 +3,7 @@
           "DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>reminders.ChangeSessionReminder</title>
+  <title>formActions.ActionWithoutCalculus</title>
   <link rel="stylesheet" href="epydoc.css" type="text/css" />
   <script type="text/javascript" src="epydoc.js"></script>
 </head>
@@ -39,8 +39,8 @@
   <tr valign="top">
     <td width="100%">
       <span class="breadcrumbs">
-        <a href="reminders-module.html">Module&nbsp;reminders</a> ::
-        Class&nbsp;ChangeSessionReminder
+        <a href="formActions-module.html">Module&nbsp;formActions</a> ::
+        Class&nbsp;ActionWithoutCalculus
       </span>
     </td>
     <td>
@@ -50,28 +50,40 @@
     onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
         <tr><td align="right"><span class="options"
             >[<a href="frames.html" target="_top">frames</a
-            >]&nbsp;|&nbsp;<a href="reminders.ChangeSessionReminder-class.html"
+            >]&nbsp;|&nbsp;<a href="formActions.ActionWithoutCalculus-class.html"
             target="_top">no&nbsp;frames</a>]</span></td></tr>
       </table>
     </td>
   </tr>
 </table>
 <!-- ==================== CLASS DESCRIPTION ==================== -->
-<h1 class="epydoc">Class ChangeSessionReminder</h1><p class="nomargin-top"><span class="codelink"><a href="reminders-pysrc.html#ChangeSessionReminder">source&nbsp;code</a></span></p>
+<h1 class="epydoc">Class ActionWithoutCalculus</h1><p class="nomargin-top"><span class="codelink"><a href="formActions-pysrc.html#ActionWithoutCalculus">source&nbsp;code</a></span></p>
 <center>
-<center>  <map id="uml_class_diagram_for_reminder" name="uml_class_diagram_for_reminder">
-<area shape="rect" id="node1_4" href="reminders.ChangeSessionReminder-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="17,135,236,155"/>
-<area shape="rect" id="node1_5" href="reminders.ChangeSessionReminder-class.html#run" title="Display all not broached requested_intents; the global score of the session Call the init method and send reminder ChangeSessionReminder to change &#160;session." alt="" coords="17,155,236,175"/>
-<area shape="rect" id="node1" href="reminders.ChangeSessionReminder-class.html" title="Change session." alt="" coords="5,103,248,181"/>
-<area shape="rect" id="node2_6" href="javascript:void(0);" title="Indicator if this action resets the topic when run." alt="" coords="35,38,219,58"/>
-<area shape="rect" id="node2_7" href="javascript:void(0);" title="str(x)" alt="" coords="35,58,219,78"/>
-<area shape="rect" id="node2" href="javascript:void(0);" title="Next action to be taken in response to a dialogue state." alt="" coords="23,5,231,84"/>
+<center>  <map id="uml_class_diagram_for_formacti_4" name="uml_class_diagram_for_formacti_4">
+<area shape="rect" id="node1_12" href="formActions.ActionWithoutCalculus-class.html#action_core" title="formActions.ActionWithoutCalculus.action_core" alt="" coords="18,405,371,425"/>
+<area shape="rect" id="node1_13" href="formActions.ActionWithoutCalculus-class.html#sum_up_setted_slots" title="formActions.ActionWithoutCalculus.sum_up_setted_slots" alt="" coords="18,425,371,445"/>
+<area shape="rect" id="node1" href="formActions.ActionWithoutCalculus-class.html" title="A custom class heritating from FormActionTriggerAction." alt="" coords="5,372,383,451"/>
+<area shape="rect" id="node2_14" href="formActions.FormActionTriggerAction-class.html#run" title="Trigger a custom action to ask the requested_slot." alt="" coords="86,327,305,347"/>
+<area shape="rect" id="node2" href="formActions.FormActionTriggerAction-class.html" title="A custom class heritating from FormAction." alt="" coords="74,295,317,353"/>
+<area shape="rect" id="node3_15" href="javascript:void(0);" title="Indicator if this action resets the topic when run." alt="" coords="103,37,287,57"/>
+<area shape="rect" id="node3_16" href="javascript:void(0);" title="Unique identifier of this simple action." alt="" coords="103,57,287,77"/>
+<area shape="rect" id="node3_17" href="javascript:void(0);" title="str(x)" alt="" coords="103,77,287,97"/>
+<area shape="rect" id="node3" href="javascript:void(0);" title="Next action to be taken in response to a dialogue state." alt="" coords="91,5,299,104"/>
+<area shape="rect" id="node4_18" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.RANDOMIZE" alt="" coords="62,147,329,167"/>
+<area shape="rect" id="node4_19" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.required_fields" alt="" coords="62,170,329,190"/>
+<area shape="rect" id="node4_20" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.should_request_slot" alt="" coords="62,190,329,210"/>
+<area shape="rect" id="node4_21" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.get_other_slots" alt="" coords="62,210,329,230"/>
+<area shape="rect" id="node4_22" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.get_requested_slot" alt="" coords="62,230,329,250"/>
+<area shape="rect" id="node4_23" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.submit" alt="" coords="62,250,329,270"/>
+<area shape="rect" id="node4" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction" alt="" coords="50,123,341,276"/>
 </map>
-  <img src="uml_class_diagram_for_reminder.gif" alt='' usemap="#uml_class_diagram_for_reminder" ismap="ismap" class="graph-without-title" />
+  <img src="uml_class_diagram_for_formacti_4.gif" alt='' usemap="#uml_class_diagram_for_formacti_4" ismap="ismap" class="graph-without-title" />
 </center>
 </center>
 <hr />
-<p>Change session. Called at the end of the current session.</p>
+<p>A custom class heritating from FormActionTriggerAction. This type of 
+  action is used when the intent is not containing a level calculated but 
+  containing entities</p>
 
 <!-- ==================== INSTANCE METHODS ==================== -->
 <a name="section-InstanceMethods"></a>
@@ -96,11 +108,13 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="reminders.ChangeSessionReminder-class.html#name" class="summary-sig-name">name</a>(<span class="summary-sig-arg">self</span>)</span><br />
-      Returns:
-      the name of the action.</td>
+          <td><span class="summary-sig"><a href="formActions.ActionWithoutCalculus-class.html#action_core" class="summary-sig-name">action_core</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">tracker</span>,
+        <span class="summary-sig-arg">language</span>,
+        <span class="summary-sig-arg">dispatcher</span>,
+        <span class="summary-sig-arg">intentName</span>)</span></td>
           <td align="right" valign="top">
-            <span class="codelink"><a href="reminders-pysrc.html#ChangeSessionReminder.name">source&nbsp;code</a></span>
+            <span class="codelink"><a href="formActions-pysrc.html#ActionWithoutCalculus.action_core">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -114,15 +128,12 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="reminders.ChangeSessionReminder-class.html#run" class="summary-sig-name">run</a>(<span class="summary-sig-arg">self</span>,
-        <span class="summary-sig-arg">dispatcher</span>,
+          <td><span class="summary-sig"><a name="sum_up_setted_slots"></a><span class="summary-sig-name">sum_up_setted_slots</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">response</span>,
         <span class="summary-sig-arg">tracker</span>,
-        <span class="summary-sig-arg">domain</span>)</span><br />
-      Display all not broached requested_intents; the global score of the 
-      session Call the <code>init</code> method and send reminder 
-      <code>ChangeSessionReminder</code> to change session.</td>
+        <span class="summary-sig-arg">language</span>)</span></td>
           <td align="right" valign="top">
-            <span class="codelink"><a href="reminders-pysrc.html#ChangeSessionReminder.run">source&nbsp;code</a></span>
+            <span class="codelink"><a href="formActions-pysrc.html#ActionWithoutCalculus.sum_up_setted_slots">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -132,8 +143,18 @@
   </tr>
   <tr>
     <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="formActions.FormActionTriggerAction-class.html">FormActionTriggerAction</a></code></b>:
+      <code><a href="formActions.FormActionTriggerAction-class.html#run">run</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>rasa_core.actions.forms.FormAction</code></b>:
+      <code>get_other_slots</code>,
+      <code>get_requested_slot</code>,
+      <code>should_request_slot</code>,
+      <code>submit</code>
+      </p>
     <p class="indent-wrapped-lines"><b>Inherited from <code>rasa_core.actions.action.Action</code></b>:
       <code>__str__</code>,
+      <code>name</code>,
       <code>resets_topic</code>
       </p>
     <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
@@ -149,6 +170,56 @@
       <code>__setattr__</code>,
       <code>__sizeof__</code>,
       <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== STATIC METHODS ==================== -->
+<a name="section-StaticMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Static Methods</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-StaticMethods"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>rasa_core.actions.forms.FormAction</code></b>:
+      <code>required_fields</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>rasa_core.actions.forms.FormAction</code></b>:
+      <code>RANDOMIZE</code>
       </p>
     </td>
   </tr>
@@ -196,55 +267,32 @@
   </td>
 </tr>
 </table>
-<a name="name"></a>
+<a name="action_core"></a>
 <div>
 <table class="details" border="1" cellpadding="3"
        cellspacing="0" width="100%" bgcolor="white">
 <tr><td>
   <table width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">name</span>(<span class="sig-arg">self</span>)</span>
-  </h3>
-  </td><td align="right" valign="top"
-    ><span class="codelink"><a href="reminders-pysrc.html#ChangeSessionReminder.name">source&nbsp;code</a></span>&nbsp;
-    </td>
-  </tr></table>
-  
-  <p>Unique identifier of this simple action.</p>
-  <dl class="fields">
-    <dt>Returns:</dt>
-        <dd>the name of the action.</dd>
-    <dt>Overrides:
-        rasa_core.actions.action.Action.name
-    </dt>
-  </dl>
-</td></tr></table>
-</div>
-<a name="run"></a>
-<div>
-<table class="details" border="1" cellpadding="3"
-       cellspacing="0" width="100%" bgcolor="white">
-<tr><td>
-  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-  <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">run</span>(<span class="sig-arg">self</span>,
-        <span class="sig-arg">dispatcher</span>,
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">action_core</span>(<span class="sig-arg">self</span>,
         <span class="sig-arg">tracker</span>,
-        <span class="sig-arg">domain</span>)</span>
+        <span class="sig-arg">language</span>,
+        <span class="sig-arg">dispatcher</span>,
+        <span class="sig-arg">intentName</span>)</span>
   </h3>
   </td><td align="right" valign="top"
-    ><span class="codelink"><a href="reminders-pysrc.html#ChangeSessionReminder.run">source&nbsp;code</a></span>&nbsp;
+    ><span class="codelink"><a href="formActions-pysrc.html#ActionWithoutCalculus.action_core">source&nbsp;code</a></span>&nbsp;
     </td>
   </tr></table>
   
-  <p>Display all not broached requested_intents; the global score of the 
-  session Call the <code>init</code> method and send reminder 
-  <code>ChangeSessionReminder</code> to change session. If it's the last 
-  session, pause the conversation.</p>
+  
   <dl class="fields">
-    <dt>Overrides:
-        rasa_core.actions.action.Action.run
-    </dt>
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>tracker</code></strong> - used to get the language of the bot and get and set global score</li>
+        <li><strong class="pname"><code>language</code></strong> - language used by the bot</li>
+        <li><strong class="pname"><code>dispatcher</code></strong> - used to tell the patient that he talked about the intent</li>
+    </ul></dd>
   </dl>
 </td></tr></table>
 </div>
@@ -277,7 +325,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Thu Jul 19 16:41:21 2018
+    Generated by Epydoc 3.0.1 on Thu Jul 19 16:41:20 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

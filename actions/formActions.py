@@ -7,11 +7,7 @@ from rasa_core.events import SlotSet
 from rasa_core.dispatcher import Button
 from level_classifiers import get_pain_level, get_physical_activity_level
 
-from rasa_core.actions.forms import (
-EntityFormField,
-FormAction,
-BooleanFormField
-)
+from rasa_core.actions.forms import FormAction
 
 from initAndComplex import get_obligatories
 from ressources import get_utterance
@@ -59,28 +55,123 @@ def get_response_boolean(response, slot_name,tracker,language):
     return response        
 
 class FormActionTriggerAction(FormAction):
+    """
+    A custom class heritating from FormAction. The main difference is in what we use to ask requested_slots.
+    In RASA we use the domain templates. Here, we use a custom action named utter_ask_{entity_name}.
+    """
+    def run(self, dispatcher, tracker, domain):
         """
-        A custom class heritating from FormAction. The main difference is in what we use to ask requested_slots.
-        In RASA we use the domain templates. Here, we use a custom action named utter_ask_{entity_name}.
+       Trigger a custom action to ask the requested_slot.
         """
-        def run(self, dispatcher, tracker, domain):
-            """
-           Trigger a custom action to ask the requested_slot.
-            """
-            events = self.get_requested_slot(tracker) + self.get_other_slots(tracker)
-            temp_tracker = tracker.copy()
-            for e in events:
-                temp_tracker.update(e)
-            for field in self.required_fields():
-                if self.should_request_slot(temp_tracker, field.slot_name):
-                    action = domain.action_for_name("utter_ask_{}".format(field.slot_name))
-                    tracker.trigger_follow_up_action(action)
-                    events.append(SlotSet("requested_slot", field.slot_name))
-                    return events
-            events_from_submit = self.submit(dispatcher, temp_tracker, domain) or []
-            return events + events_from_submit
+        events = self.get_requested_slot(tracker) + self.get_other_slots(tracker)
+        temp_tracker = tracker.copy()
+        for e in events:
+            temp_tracker.update(e)
+        for field in self.required_fields():
+            if self.should_request_slot(temp_tracker, field.slot_name):
+                action = domain.action_for_name("utter_ask_{}".format(field.slot_name))
+                tracker.trigger_follow_up_action(action)
+                events.append(SlotSet("requested_slot", field.slot_name))
+                return events
+        events_from_submit = self.submit(dispatcher, temp_tracker, domain) or []
+        return events + events_from_submit
 
-class ActionFillSlotsPain(FormActionTriggerAction):
+class ActionWithCalculus(FormActionTriggerAction):
+    """
+    A custom class heritating from FormActionTriggerAction. 
+    This type of action is used when the intent is containing a level calculated:
+        - pain (mild, moderate,severe)
+        - activity (little, moderate, vigorous)
+    """    
+    def init(self,intent_name,to_calculate_slot,levelsList,classifier_method):
+        """
+        @param intent_name: name of the intent
+        @param to_calculate_slot: name of the slot used to calculate level
+        @param levelsList: list of different levels
+        @param classifier_method: method called to classify level with to_calculate_slot name
+        Set all specific variables for one ActionWithCalculus action 
+        """         
+        self.intentName = intent_name
+        self.mainSlot = to_calculate_slot
+        self.levels = levelsList
+        self.classifier = classifier_method
+        
+    def calculus_action(self, tracker, language, dispatcher): 
+        """
+        @param tracker: used to get the language of the bot and get and set global score
+        @param language: language used by the bot 
+        @param dispatcher: used to tell the patient that he talked about the intent 
+        This action will sum up infos about the intent. If they're all set to None (no mandatory entity), just say that we talked about intent
+        Ask if the informations are correct.
+        If the level is 'Incorrect', that mean the user said that it was incorrect before. If so, display buttons to allow user to tell the level himself
+        """         
+        level = tracker.get_slot(self.intentName+"_level")
+        if not level == "Incorrect":
+            mainSlotValue = tracker.get_slot(self.mainSlot)
+            obligatories = get_obligatories()
+            try:
+                len(obligatories[self.intentName])
+                response = get_utterance("sum_up",language)
+                if mainSlotValue != None:
+                    if level == None:
+                        #get calculated level
+                        level = self.classifier(mainSlotValue)                
+                        tracker.update(SlotSet(self.intentName+"_level",level))
+                    level = get_utterance(level,language)
+                    response += get_utterance(self.mainSlot,language).format(mainSlotValue, level)
+                response = self.sum_up_setted_slots(response,tracker,language)
+                response += get_utterance("right",language)
+            except:
+                response = get_utterance(self.intentName+"_no_entity",language)
+                # TODO: add to database
+            tracker.update(SlotSet("topic",None))
+            tracker.update(SlotSet("requested_slot",None))
+            dispatcher.utter_message(response)
+        else:
+            buttons = []
+            for level in self.levels:
+                level_title = get_utterance(level,language)
+                buttons.append(Button(title=level_title, payload="/"+self.intentName+"{\""+self.intentName+"_level"+"\":\""+level+"\"}"))
+            message = get_utterance("ask_level_"+self.intentName,language)
+            dispatcher.utter_button_message(message, buttons)
+                   
+    def sum_up_setted_slots(self, response,tracker,language):
+        raise NotImplementedError("a FormActionTriggerAction action must implement a sum_up_setted_slots method")
+
+class ActionWithoutCalculus(FormActionTriggerAction):
+    """
+    A custom class heritating from FormActionTriggerAction. 
+    This type of action is used when the intent is not containing a level calculated but containing entities
+    """
+        
+    def action_core(self, tracker, language,dispatcher, intentName): 
+        """
+        @param tracker: used to get the language of the bot and get and set global score
+        @param language: language used by the bot 
+        @param dispatcher: used to tell the patient that he talked about the intent
+        @intentName: name of the intent
+        
+        This action will sum up infos about the intent. If they're all set to None (no mandatory entity), just say that we talked about intent
+        Ask if the informations are correct.
+        """        
+        global_score = tracker.get_slot('global_score')
+        global_score+=2
+        #TODO: save score
+        try:
+            obligatories = get_obligatories()
+            len(obligatories[intentName])>0
+            response = get_utterance("sum_up",language)
+            self.sum_up_setted_slots(response,tracker,language)
+            response += get_utterance("right",language)
+        except:
+            response = get_utterance("sum_up_"+intentName,language)
+        dispatcher.utter_message(response)
+        tracker.update(SlotSet("global_score",global_score))
+                   
+    def sum_up_setted_slots(self, response,tracker,language):
+        raise NotImplementedError("a FormActionTriggerAction action must implement a sum_up_setted_slots method")
+
+class ActionFillSlotsPain(ActionWithCalculus):
     RANDOMIZE = True
     
     @staticmethod
@@ -103,59 +194,33 @@ class ActionFillSlotsPain(FormActionTriggerAction):
     
     def submit(self, dispatcher, tracker, domain):  
         """
-        @param tracker: used to get the language of the bot and get and set global score
-        @param dispatcher: used to tell the patient that he talked about the intent 'pain'.
-        The entitities linked to this intent are:
+        The entities linked to the 'pain' intent are:
             - pain_level
             - pain_duration
             - pain_desc
             - pain_body_part
             - pain_change
             - pain_period
-        This action will sum up these infos. If they're all set to None (no mandatory entity), just say that we talked about a pain
-        Ask if the informations are correct.
-        If the pain level is 'Incorrect', that mean the user said that it was incorrect before. If so, display buttons to allow user to tell the level of his pain
+            - pain_time
         The pain level is calculated with the method C{get_pain_level(pain_desc)}
         If we want the pain level, we have to have the pain_desc slot mandatory.
-        """
-        language = tracker.get_slot("language")
-        level = tracker.get_slot("pain_level")
-        if not level == "Incorrect":
-            pain_desc = tracker.get_slot("pain_desc")
-            obligatories = get_obligatories()
-            try:
-                len(obligatories['pain'])
-                response = get_utterance("sum_up",language)
-                if pain_desc != None:
-                    if level == None:
-                        #get pain level
-                        level = get_pain_level(pain_desc)                
-                        tracker.update(SlotSet("pain_level",level))
-                    level = get_utterance(level,language)
-                    response += get_utterance("pain_desc",language).format(pain_desc, level)
-                response = get_response_simple(response, "pain_body_part",tracker,language)
-                response = get_response_simple(response, "pain_duration",tracker,language)
-                response = get_response_simple(response, "pain_period",tracker,language)
-                response = get_response_simple(response, "pain_change",tracker,language)
-                response = get_response_simple(response, "pain_time",tracker,language)
-                response += get_utterance("right",language)
-            except:
-                response = get_utterance("pain_no_entity",language)
-                # TODO: add to database
-            tracker.update(SlotSet("topic",None))
-            tracker.update(SlotSet("requested_slot",None))
-            dispatcher.utter_message(response)
-        else:
-            mild = get_utterance("mild",language)
-            moderate = get_utterance("moderate",language)
-            severe = get_utterance("severe",language)
-            buttons = [Button(title=mild, payload="/pain{\"pain_level\":\"mild\"}"),
-                       Button(title=moderate, payload="/pain{\"pain_level\":\"moderate\"}"),
-                       Button(title=severe, payload="/pain{\"pain_level\":\"severe\"}")]
-            message = get_utterance("ask_level_pain",language)
-            dispatcher.utter_button_message(message, buttons)
+        """         
+        language = tracker.get_slot("language")        
+        self.init("pain","pain_desc",["mild","moderate","severe"],get_pain_level)
+        self.calculus_action(tracker, language,dispatcher)
         
-class ActionFillSlotsSport(FormActionTriggerAction):
+    def sum_up_setted_slots(self, response,tracker,language):
+        """
+        @return: all infos sum up response
+        """
+        response = get_response_simple(response, "pain_body_part",tracker,language)
+        response = get_response_simple(response, "pain_duration",tracker,language)
+        response = get_response_simple(response, "pain_period",tracker,language)
+        response = get_response_simple(response, "pain_change",tracker,language)
+        response = get_response_simple(response, "pain_time",tracker,language)
+        return response
+                
+class ActionFillSlotsSport(ActionWithCalculus):
     RANDOMIZE = True
 
     @staticmethod
@@ -178,9 +243,7 @@ class ActionFillSlotsSport(FormActionTriggerAction):
     
     def submit(self, dispatcher, tracker, domain):  
         """
-        @param tracker: used to get the language of the bot and get and set global score
-        @param dispatcher: used to tell the patient that he talked about the intent 'activity'.
-        The entitities linked to this intent are:
+        The entities linked to the 'activity' intent are:
             - activity_level
             - activity_duration
             - sport
@@ -188,55 +251,24 @@ class ActionFillSlotsSport(FormActionTriggerAction):
             - activity_distance
             - activity_hard (boolean)
             - activity_time
-        This action will sum up these infos. If they're all set to None (no mandatory entity), just say that we talked about an activity
-        Ask if the informations are correct.
-        If the sport level is 'Incorrect', that mean the user said that it was incorrect before. If so, display buttons to allow user to tell the level of his activity
         The sport level is calculated with the method C{get_physical_activity_level(sport)}
         If we want the sport level, we have to have the sport slot mandatory.
         """
-        language = tracker.get_slot("language")
-        activity_level = tracker.get_slot("activity_level")
-        if not activity_level == "Incorrect":
-            sport = tracker.get_slot("sport")
-            try:
-                obligatories = get_obligatories()
-                len(obligatories['activity'])>0
-                response = get_utterance("sum_up",language)
-                if sport != None:
-                    if activity_level == None:
-                        #get sport level
-                        activity_level = get_physical_activity_level(sport)
-                        tracker.update(SlotSet("activity_level",activity_level))
-                    if activity_level=='little':
-                        MET = "< 3 MET"
-                    elif activity_level=='moderate':
-                        MET = "3-6 MET"
-                    elif activity_level=='vigorous':
-                        MET = "> 6 MET"
-                    activity_level = get_utterance(activity_level,language)
-                    response += get_utterance("sport",language).format(activity_level, MET, sport)
-                response = get_response_simple(response, "activity_duration",tracker,language)
-                response = get_response_simple(response, "activity_distance",tracker,language)
-                response = get_response_simple(response, "activity_period",tracker,language)
-                response = get_response_simple(response, "activity_time",tracker,language)
-                response = get_response_boolean(response, "activity_hard",tracker,language)
-                response += get_utterance("right",language)
-            except:
-                response = get_utterance("activity_no_entity",language)
-                # TODO: save in database
-            tracker.update(SlotSet("topic",None))
-            tracker.update(SlotSet("requested_slot",None))
-            dispatcher.utter_message(response)
-        else:
-            little = get_utterance("little",language)
-            moderate = get_utterance("moderate",language)
-            vigorous = get_utterance("vigorous",language)
-            buttons = [Button(title=little, payload="/activity{\"activity_level\":\"little\"}"),
-                       Button(title=moderate, payload="/activity{\"activity_level\":\"moderate\"}"),
-                       Button(title=vigorous, payload="/activity{\"activity_level\":\"vigorous\"}")]
-            message = get_utterance("ask_level_activity",language)
-            dispatcher.utter_button_message(message, buttons)  
-
+        language = tracker.get_slot("language")        
+        self.init("activity","sport",["little","moderate","vigorous"],get_physical_activity_level)
+        self.calculus_action(tracker, language,dispatcher)
+        
+    def sum_up_setted_slots(self, response,tracker,language):
+        """
+        @return: all infos sum up response
+        """
+        response = get_response_simple(response, "activity_duration",tracker,language)
+        response = get_response_simple(response, "activity_distance",tracker,language)
+        response = get_response_simple(response, "activity_period",tracker,language)
+        response = get_response_simple(response, "activity_time",tracker,language)
+        response = get_response_boolean(response, "activity_hard",tracker,language)
+        return response
+    
 class CheckRequestedIntents(FormActionTriggerAction):
     RANDOMIZE = True
     
@@ -369,7 +401,7 @@ class Social(FormActionTriggerAction):
         tracker.update(SlotSet("social",True))
         tracker.update(SlotSet("global_score",global_score))
         
-class Pathology(FormActionTriggerAction):
+class Pathology(ActionWithoutCalculus):
     RANDOMIZE = True
     
     @staticmethod
@@ -404,27 +436,23 @@ class Pathology(FormActionTriggerAction):
         This action will sum up these infos. If they're all set to None (no mandatory entity), just say that we talked about a pathology
         Ask if the informations are correct.
         """
-        language = tracker.get_slot("language")
-        global_score = tracker.get_slot('global_score')
-        global_score+=2
-        #TODO: save score
-        try:
-            obligatories = get_obligatories()
-            len(obligatories['pathology'])>0
-            response = get_utterance("sum_up",language)
-            response = get_response_simple(response, "symtoms",tracker,language)
-            response = get_response_simple(response, "pathology_body_part",tracker,language)
-            response = get_response_simple(response, "pathology_time",tracker,language)
-            response = get_response_boolean(response, "pathology_change",tracker,language)
-            response = get_response_simple(response, "pathology_period",tracker,language)
-            response = get_response_boolean(response, "pathology_treatment_linked",tracker,language)
-            response += get_utterance("right",language)
-        except:
-            response = get_utterance("sum_up_pathology",language)
-        dispatcher.utter_message(response)
-        tracker.update(SlotSet("global_score",global_score))
+        language = tracker.get_slot("language")   
+        intentName = "pathology"
+        self.action_core(tracker, language,dispatcher, intentName)
+
+    def sum_up_setted_slots(self, response,tracker,language):
+        """
+        @return: all infos sum up response
+        """
+        response = get_response_simple(response, "symtoms",tracker,language)
+        response = get_response_simple(response, "pathology_body_part",tracker,language)
+        response = get_response_simple(response, "pathology_time",tracker,language)
+        response = get_response_boolean(response, "pathology_change",tracker,language)
+        response = get_response_simple(response, "pathology_period",tracker,language)
+        response = get_response_boolean(response, "pathology_treatment_linked",tracker,language)
+        return response
         
-class Treatment(FormActionTriggerAction):
+class Treatment(ActionWithoutCalculus):
     RANDOMIZE = False
     
     @staticmethod
@@ -463,30 +491,26 @@ class Treatment(FormActionTriggerAction):
         This action will sum up these infos. If they're all set to None (no mandatory entity), just say that we talked about a treatment
         Ask if the informations are correct.
         """
-        language = tracker.get_slot("language")
-        global_score = tracker.get_slot('global_score')
-        global_score+=2
-        #TODO: save score
-        try:
-            obligatories = get_obligatories()
-            len(obligatories['treatment'])>0
-            response = get_utterance("sum_up",language)
-            response = get_response_boolean(response, "medicinal",tracker,language)
-            response = get_response_simple(response, "treatment_being_taken",tracker,language,"no_drug")
-            response = get_response_simple(response, "drug",tracker,language,"no_drug")
-            response = get_response_simple(response, "dosing",tracker,language,"no_drug")
-            response = get_response_simple(response, "treatment_period",tracker,language)
-            response = get_response_simple(response, "treatment_time",tracker,language)
-            response = get_response_simple(response, "treatment_overdosage",tracker,language,"no_drug")
-            response = get_response_boolean(response, "treatment_prescripted",tracker,language)
-            response = get_response_boolean(response, "treatment_ok",tracker,language)
-            response += get_utterance("right",language)
-        except:
-            response = get_utterance("sum_up_treatment",language)      
-        dispatcher.utter_message(response)
-        tracker.update(SlotSet("global_score",global_score))
+        language = tracker.get_slot("language")   
+        intentName = "treatment"
+        self.action_core(tracker, language,dispatcher, intentName)
 
-class InfoPatient(FormActionTriggerAction):
+    def sum_up_setted_slots(self, response,tracker,language):
+        """
+        @return: all infos sum up response
+        """
+        response = get_response_boolean(response, "medicinal",tracker,language)
+        response = get_response_simple(response, "treatment_being_taken",tracker,language,"no_drug")
+        response = get_response_simple(response, "drug",tracker,language,"no_drug")
+        response = get_response_simple(response, "dosing",tracker,language,"no_drug")
+        response = get_response_simple(response, "treatment_period",tracker,language)
+        response = get_response_simple(response, "treatment_time",tracker,language)
+        response = get_response_simple(response, "treatment_overdosage",tracker,language,"no_drug")
+        response = get_response_boolean(response, "treatment_prescripted",tracker,language)
+        response = get_response_boolean(response, "treatment_ok",tracker,language)
+        return response
+
+class InfoPatient(ActionWithoutCalculus):
     RANDOMIZE = True
     
     @staticmethod
@@ -523,21 +547,20 @@ class InfoPatient(FormActionTriggerAction):
         This action will sum up these infos. If they're all set to None (no mandatory entity), just say that we talked about a personal info
         Ask if the informations are correct.
         """
-        language = tracker.get_slot("language")
-        #TODO: save score
-        try:
-            obligatories = get_obligatories()
-            len(obligatories['infoPatient'])>0
-            response = get_utterance("sum_up",language)
-            response = get_response_simple(response, "addiction",tracker,language)
-            response = get_response_simple(response, "weight",tracker,language)
-            response = get_response_simple(response, "infoPatient_distance",tracker,language,utt_name="size")
-            response = get_response_simple(response, "gender",tracker,language)
-            response = get_response_simple(response, "infoPatient_temperature",tracker,language)
-            response = get_response_simple(response, "heart_rate",tracker,language)
-            response = get_response_simple(response, "blood_pressure",tracker,language)
-            response = get_response_simple(response, "infoPatient_time",tracker,language)
-            response += get_utterance("right",language)
-        except:
-            response = get_utterance("sum_up_info_patient",language)
-        dispatcher.utter_message(response)
+        language = tracker.get_slot("language")   
+        intentName = "infoPatient"
+        self.action_core(tracker, language,dispatcher, intentName)
+
+    def sum_up_setted_slots(self, response,tracker,language):
+        """
+        @return: all infos sum up response
+        """
+        response = get_response_simple(response, "addiction",tracker,language)
+        response = get_response_simple(response, "weight",tracker,language)
+        response = get_response_simple(response, "infoPatient_distance",tracker,language,utt_name="size")
+        response = get_response_simple(response, "gender",tracker,language)
+        response = get_response_simple(response, "infoPatient_temperature",tracker,language)
+        response = get_response_simple(response, "heart_rate",tracker,language)
+        response = get_response_simple(response, "blood_pressure",tracker,language)
+        response = get_response_simple(response, "infoPatient_time",tracker,language)
+        return response
