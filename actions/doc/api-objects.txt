@@ -4,6 +4,8 @@ askWhat.get_buttons_boolean	askWhat-module.html#get_buttons_boolean
 askWhat.get_buttons_multiple	askWhat-module.html#get_buttons_multiple
 complexSets	complexSets-module.html
 formActions	formActions-module.html
+formActions.get_response_boolean	formActions-module.html#get_response_boolean
+formActions.get_response_simple	formActions-module.html#get_response_simple
 initAndComplex	initAndComplex-module.html
 initAndComplex.language_global	initAndComplex-module.html#language_global
 initAndComplex.reminder_patient	initAndComplex-module.html#reminder_patient

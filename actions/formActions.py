@@ -16,6 +16,48 @@ BooleanFormField
 from initAndComplex import get_obligatories
 from ressources import get_utterance
 
+def get_response_simple(response, slot_name,tracker,language,other_value=None,utt_name=None):
+    """
+    @param response: string of the response the bot will say to the user
+    @param slot_name: name of the slot we want to sum up
+    @param tracker: used to get all infos for 'slot_name' entity from the tracker
+    @param language: language of the bot (for display the right name of button)
+    @param other_value: unrequired, if the slot value is set to this value, do not sum up it
+    @param button_name: unrequired, name of the ressource in json if different to slot_name
+    
+    Add a part in the response of the bot with a sentence to sum up a given slot
+    
+    @return: string of the response the bot will say to the user
+    """
+    if utt_name!=None:
+        to_search_in_ressources = utt_name
+    else:
+        to_search_in_ressources = slot_name
+    slot_value = tracker.get_slot(slot_name)
+    if slot_value != None:
+        if other_value == None or (other_value != None and slot_value != other_value):
+            response += get_utterance(to_search_in_ressources,language).format(slot_value)
+    return response
+
+def get_response_boolean(response, slot_name,tracker,language):
+    """
+    @param response: string of the response the bot will say to the user
+    @param slot_name: name of the boolean slot we want to sum up
+    @param tracker: used to get all infos for 'slot_name' entity from the tracker
+    @param language: language of the bot (for display the right name of button)
+    
+    Add a part in the response of the bot with a sentence to sum up a given boolean slot, depending of its true or false value
+    
+    @return: string of the response the bot will say to the user
+    """
+    slot_value = tracker.get_slot(slot_name)
+    if slot_value != None:
+        if slot_value:
+            response += get_utterance(slot_name+"_true",language)
+        else:
+            response += get_utterance(slot_name+"_false",language)
+    return response        
+
 class FormActionTriggerAction(FormAction):
         """
         A custom class heritating from FormAction. The main difference is in what we use to ask requested_slots.
@@ -79,12 +121,7 @@ class ActionFillSlotsPain(FormActionTriggerAction):
         language = tracker.get_slot("language")
         level = tracker.get_slot("pain_level")
         if not level == "Incorrect":
-            pain_duration = tracker.get_slot("pain_duration")
             pain_desc = tracker.get_slot("pain_desc")
-            pain_body_part = tracker.get_slot("pain_body_part")
-            pain_change = tracker.get_slot("pain_change")
-            pain_period = tracker.get_slot("pain_period")
-            pain_time = tracker.get_slot("pain_time")
             obligatories = get_obligatories()
             try:
                 len(obligatories['pain'])
@@ -96,16 +133,11 @@ class ActionFillSlotsPain(FormActionTriggerAction):
                         tracker.update(SlotSet("pain_level",level))
                     level = get_utterance(level,language)
                     response += get_utterance("pain_desc",language).format(pain_desc, level)
-                if pain_body_part != None:
-                    response += get_utterance("pain_body_part",language).format(pain_body_part)
-                if pain_duration != None:
-                    response += get_utterance("pain_duration",language).format(pain_duration)
-                if pain_period != None:
-                    response += get_utterance("pain_period",language).format(pain_period)
-                if pain_change != None:
-                    response += get_utterance("pain_change",language).format(pain_change)
-                if pain_time != None:
-                    response += get_utterance("pain_time",language).format(pain_time)
+                response = get_response_simple(response, "pain_body_part",tracker,language)
+                response = get_response_simple(response, "pain_duration",tracker,language)
+                response = get_response_simple(response, "pain_period",tracker,language)
+                response = get_response_simple(response, "pain_change",tracker,language)
+                response = get_response_simple(response, "pain_time",tracker,language)
                 response += get_utterance("right",language)
             except:
                 response = get_utterance("pain_no_entity",language)
@@ -122,7 +154,6 @@ class ActionFillSlotsPain(FormActionTriggerAction):
                        Button(title=severe, payload="/pain{\"pain_level\":\"severe\"}")]
             message = get_utterance("ask_level_pain",language)
             dispatcher.utter_button_message(message, buttons)
-        
         
 class ActionFillSlotsSport(FormActionTriggerAction):
     RANDOMIZE = True
@@ -166,12 +197,7 @@ class ActionFillSlotsSport(FormActionTriggerAction):
         language = tracker.get_slot("language")
         activity_level = tracker.get_slot("activity_level")
         if not activity_level == "Incorrect":
-            sport_duration = tracker.get_slot("activity_duration")
             sport = tracker.get_slot("sport")
-            sport_period = tracker.get_slot("activity_period")
-            distance = tracker.get_slot("activity_distance")
-            activity_hard = tracker.get_slot("activity_hard")
-            activity_time = tracker.get_slot("activity_time")
             try:
                 obligatories = get_obligatories()
                 len(obligatories['activity'])>0
@@ -189,19 +215,11 @@ class ActionFillSlotsSport(FormActionTriggerAction):
                         MET = "> 6 MET"
                     activity_level = get_utterance(activity_level,language)
                     response += get_utterance("sport",language).format(activity_level, MET, sport)
-                if sport_duration != None:
-                    response += get_utterance("activity_duration",language).format(sport_duration)
-                if distance != None:
-                    response += get_utterance("activity_distance",language).format(distance)
-                if sport_period != None:
-                    response += get_utterance("activity_period",language).format(sport_period)
-                if activity_time != None:
-                    response += get_utterance("activity_time",language).format(activity_time)
-                if activity_hard != None:
-                    if activity_hard:
-                        response += get_utterance("activity_hard_true",language)
-                    else:
-                        response += get_utterance("activity_hard_false",language)
+                response = get_response_simple(response, "activity_duration",tracker,language)
+                response = get_response_simple(response, "activity_distance",tracker,language)
+                response = get_response_simple(response, "activity_period",tracker,language)
+                response = get_response_simple(response, "activity_time",tracker,language)
+                response = get_response_boolean(response, "activity_hard",tracker,language)
                 response += get_utterance("right",language)
             except:
                 response = get_utterance("activity_no_entity",language)
@@ -390,34 +408,16 @@ class Pathology(FormActionTriggerAction):
         global_score = tracker.get_slot('global_score')
         global_score+=2
         #TODO: save score
-        symtoms = tracker.get_slot("symtoms")
-        pathology_body_part = tracker.get_slot("pathology_body_part")
-        pathology_time = tracker.get_slot("pathology_time")
-        pathology_change = tracker.get_slot("pathology_change")
-        pathology_period = tracker.get_slot("pathology_period")
-        pathology_treatment_linked = tracker.get_slot("pathology_treatment_linked")
         try:
             obligatories = get_obligatories()
             len(obligatories['pathology'])>0
             response = get_utterance("sum_up",language)
-            if symtoms != None:
-                response += get_utterance("symtoms",language).format(symtoms)
-            if pathology_body_part != None:
-                response += get_utterance("pathology_body_part",language).format(pathology_body_part)
-            if pathology_time != None:
-                response += get_utterance("pathology_time",language).format(pathology_time)
-            if pathology_change != None:
-                if pathology_change:
-                    response += get_utterance("pathology_change_true",language)
-                else:
-                    response += get_utterance("pathology_change_false",language)
-            if pathology_period != None:
-                response += get_utterance("pathology_period",language).format(pathology_period)
-            if pathology_treatment_linked != None:
-                if pathology_treatment_linked:
-                    response += get_utterance("pathology_treatment_linked_true",language)
-                else:
-                    response += get_utterance("pathology_treatment_linked_false",language)
+            response = get_response_simple(response, "symtoms",tracker,language)
+            response = get_response_simple(response, "pathology_body_part",tracker,language)
+            response = get_response_simple(response, "pathology_time",tracker,language)
+            response = get_response_boolean(response, "pathology_change",tracker,language)
+            response = get_response_simple(response, "pathology_period",tracker,language)
+            response = get_response_boolean(response, "pathology_treatment_linked",tracker,language)
             response += get_utterance("right",language)
         except:
             response = get_utterance("sum_up_pathology",language)
@@ -467,46 +467,19 @@ class Treatment(FormActionTriggerAction):
         global_score = tracker.get_slot('global_score')
         global_score+=2
         #TODO: save score
-        medicinal = tracker.get_slot("medicinal")
-        drug = tracker.get_slot("drug")
-        dosing = tracker.get_slot("dosing")
-        treatment_being_taken = tracker.get_slot("treatment_being_taken")
-        treatment_time = tracker.get_slot("treatment_time")
-        treatment_prescripted = tracker.get_slot("treatment_prescripted")
-        treatment_ok = tracker.get_slot("treatment_ok")
-        treatment_overdosage = tracker.get_slot("treatment_overdosage")
-        treatment_period = tracker.get_slot("treatment_period")
         try:
             obligatories = get_obligatories()
             len(obligatories['treatment'])>0
             response = get_utterance("sum_up",language)
-            if medicinal != None:
-                if medicinal :
-                    response += get_utterance("medicinal_true",language)
-                else:
-                    response += get_utterance("medicinal_false",language)
-            if treatment_being_taken != None and treatment_being_taken != "no_drug":
-                response += get_utterance("treatment_being_taken",language).format(treatment_being_taken)
-            if drug != None and drug != "no_drug":
-                response += get_utterance("drug",language).format(drug)
-            if dosing != None and dosing != "no_drug":
-                response += get_utterance("dosing",language).format(dosing)
-            if treatment_period != None and treatment_period != "no_drug":
-                response += get_utterance("treatment_period",language).format(treatment_period)
-            if treatment_time != None:
-                response += get_utterance("treatment_time",language).format(treatment_time)
-            if treatment_overdosage != None:
-                response += get_utterance("treatment_overdosage",language).format(treatment_overdosage)
-            if treatment_prescripted != None:
-                if treatment_prescripted :
-                    response += get_utterance("treatment_prescripted_true",language)
-                else:
-                    response += get_utterance("treatment_prescripted_false",language)
-            if treatment_ok != None:
-                if treatment_ok :
-                    response += get_utterance("treatment_ok_true",language)
-                else:
-                    response += get_utterance("treatment_ok_false",language)
+            response = get_response_boolean(response, "medicinal",tracker,language)
+            response = get_response_simple(response, "treatment_being_taken",tracker,language,"no_drug")
+            response = get_response_simple(response, "drug",tracker,language,"no_drug")
+            response = get_response_simple(response, "dosing",tracker,language,"no_drug")
+            response = get_response_simple(response, "treatment_period",tracker,language)
+            response = get_response_simple(response, "treatment_time",tracker,language)
+            response = get_response_simple(response, "treatment_overdosage",tracker,language,"no_drug")
+            response = get_response_boolean(response, "treatment_prescripted",tracker,language)
+            response = get_response_boolean(response, "treatment_ok",tracker,language)
             response += get_utterance("right",language)
         except:
             response = get_utterance("sum_up_treatment",language)      
@@ -552,34 +525,18 @@ class InfoPatient(FormActionTriggerAction):
         """
         language = tracker.get_slot("language")
         #TODO: save score
-        addiction = tracker.get_slot("addiction")
-        weight = tracker.get_slot("weight")
-        size = tracker.get_slot("infoPatient_distance")
-        gender = tracker.get_slot("gender")
-        temperature = tracker.get_slot("infoPatient_temperature")
-        heart_rate = tracker.get_slot("heart_rate")
-        blood_pressure = tracker.get_slot("blood_pressure")
-        date_check_up = tracker.get_slot("infoPatient_time")
         try:
             obligatories = get_obligatories()
             len(obligatories['infoPatient'])>0
             response = get_utterance("sum_up",language)
-            if addiction != None:
-                response += get_utterance("addiction",language).format(addiction)
-            if weight != None:
-                response += get_utterance("weight",language).format(weight)
-            if size != None:
-                response += get_utterance("size",language).format(size)
-            if gender != None:
-                response += get_utterance("gender",language).format(gender)
-            if temperature != None:
-                response += get_utterance("infoPatient_temperature",language).format(temperature)
-            if heart_rate != None:
-                response += get_utterance("heart_rate",language).format(heart_rate)
-            if blood_pressure != None:
-                response += get_utterance("blood_pressure",language).format(blood_pressure)
-            if date_check_up != None:
-                response += get_utterance("infoPatient_time",language).format(date_check_up)
+            response = get_response_simple(response, "addiction",tracker,language)
+            response = get_response_simple(response, "weight",tracker,language)
+            response = get_response_simple(response, "infoPatient_distance",tracker,language,utt_name="size")
+            response = get_response_simple(response, "gender",tracker,language)
+            response = get_response_simple(response, "infoPatient_temperature",tracker,language)
+            response = get_response_simple(response, "heart_rate",tracker,language)
+            response = get_response_simple(response, "blood_pressure",tracker,language)
+            response = get_response_simple(response, "infoPatient_time",tracker,language)
             response += get_utterance("right",language)
         except:
             response = get_utterance("sum_up_info_patient",language)

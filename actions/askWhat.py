@@ -11,7 +11,7 @@ def get_buttons_simple(buttons, slot_name, tracker,language,intent_name,other_va
     """
     @param buttons: list of buttons in which we have to append new ones
     @param slot_name: name of the slot we want to add a button for
-    @param tracker: used to get all infos for 'slot_name' intent from the tracker
+    @param tracker: used to get all infos for 'slot_name' entity from the tracker
     @param language: language of the bot (for display the right name of button)
     @param intent_name: name of the intent linked to the slot 
     @param other_value: unrequired, if the slot value is set to this value, do not add a button
@@ -36,7 +36,7 @@ def get_buttons_multiple(buttons, slot_names, tracker,language,intent_name,to_ch
     """
     @param buttons: list of buttons in which we have to append new ones
     @param slot_names: list of names of the slots we want to add a button for
-    @param tracker: used to get all infos for 'slot_name' intent from the tracker
+    @param tracker: used to get all infos for 'slot_name' entity from the tracker
     @param language: language of the bot (for display the right name of button)
     @param intent_name: name of the intent linked to the slot 
     @param to_check: value to check, if not set, do not display the buttons
@@ -62,7 +62,7 @@ def get_buttons_boolean(buttons, slot_name, tracker,language,intent_name):
     """
     @param buttons: list of buttons in which we have to append new ones
     @param slot_name: name of the slot we want to add a button for
-    @param tracker: used to get all infos for 'slot_name' intent from the tracker
+    @param tracker: used to get all infos for 'slot_name' entity from the tracker
     @param language: language of the bot (for display the right name of button)
     @param intent_name: name of the intent linked to the slot 
     
@@ -220,9 +220,9 @@ class AskWhatTreatment(Action):
         buttons = get_buttons_simple(buttons, "treatment_being_taken", tracker,language,intent_name,"no_drug")
         buttons = get_buttons_simple(buttons, "drug", tracker,language,intent_name,"no_drug")
         buttons = get_buttons_simple(buttons, "dosing", tracker,language,intent_name,"no_drug")
-        buttons = get_buttons_simple(buttons, "treatment_period", tracker,language,intent_name,"no_drug",button_name="period_button")
+        buttons = get_buttons_simple(buttons, "treatment_period", tracker,language,intent_name,button_name="period_button")
         buttons = get_buttons_simple(buttons, "treatment_time", tracker,language,intent_name,button_name="time_button")
-        buttons = get_buttons_simple(buttons, "treatment_overdosage", tracker,language,intent_name)
+        buttons = get_buttons_simple(buttons, "treatment_overdosage", tracker,language,intent_name,"no_drug")
         buttons = get_buttons_boolean(buttons, "treatment_prescripted", tracker,language,intent_name)
         buttons = get_buttons_boolean(buttons, "treatment_ok", tracker,language,intent_name)
         message = get_utterance("ask_what",language)
@@ -257,7 +257,7 @@ class AskWhatInfoPatient(Action):
         buttons = []
         buttons = get_buttons_simple(buttons, "addiction", tracker,language,intent_name)
         buttons = get_buttons_simple(buttons, "weight", tracker,language,intent_name)
-        buttons = get_buttons_simple(buttons, "infoPatient_distance", tracker,language,intent_name,button_name="distance_button")
+        buttons = get_buttons_simple(buttons, "infoPatient_distance", tracker,language,intent_name,button_name="size_button")
         buttons = get_buttons_simple(buttons, "gender", tracker,language,intent_name)
         buttons = get_buttons_simple(buttons, "infoPatient_temperature", tracker,language,intent_name,button_name="temperature_button")
         buttons = get_buttons_simple(buttons, "heart_rate", tracker,language,intent_name)

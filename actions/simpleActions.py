@@ -372,7 +372,7 @@ class AskMedicinal(Action):
         yes_button = get_utterance("yes",language)
         no_button = get_utterance("no",language)
         buttons = [Button(title=yes_button, payload="/treatment{\"medicinal\":true}"),       
-                   Button(title=no_button, payload="/treatment{\"medicinal\":false, \"drug\":\"no_drug\", \"dosing\":\"no_drug\", \"treatment_being_taken\":\"no_drug\", \"treatment_period\":\"no_drug\", \"treatment_overdosage\":\"no_drug\"}")] 
+                   Button(title=no_button, payload="/treatment{\"medicinal\":false, \"drug\":\"no_drug\", \"dosing\":\"no_drug\", \"treatment_being_taken\":\"no_drug\", \"treatment_overdosage\":\"no_drug\"}")] 
         dispatcher.utter_button_message(message, buttons)
 
 class AskDrug(Action):
