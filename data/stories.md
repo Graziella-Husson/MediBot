@@ -309,7 +309,7 @@
     - slot{"global_score": null}
     - slot{"activity_hard": null}
     - slot{"activity_duration": null}
-    - slot{"sport_level": null}
+    - slot{"activity_level": null}
     - slot{"sport": null}
     - slot{"distance": null}
     - slot{"activity_period": null}
@@ -900,7 +900,7 @@
     - slot{"global_score": 0}
     - slot{"activity_hard": null}
     - slot{"activity_duration": null}
-    - slot{"sport_level": null}
+    - slot{"activity_level": null}
     - slot{"sport": null}
     - slot{"activity_distance": null}
     - slot{"activity_period": null}
@@ -1116,7 +1116,7 @@
     - slot{"global_score": 0}
     - slot{"activity_hard": null}
     - slot{"activity_duration": null}
-    - slot{"sport_level": null}
+    - slot{"activity_level": null}
     - slot{"sport": null}
     - slot{"activity_distance": null}
     - slot{"activity_period": null}
@@ -1398,7 +1398,7 @@
     - slot{"global_score": 0}
     - slot{"activity_hard": null}
     - slot{"activity_duration": null}
-    - slot{"sport_level": null}
+    - slot{"activity_level": null}
     - slot{"sport": null}
     - slot{"activity_distance": null}
     - slot{"activity_period": null}
@@ -2598,6 +2598,296 @@
     - slot{"distance": null}
     - slot{"time": null}
     - ask_what_info_patient
+    - sum_up_slots
+    - export
+
+## Generated Story 3559991480008754629
+* activity
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "en"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - action_check_slots_sport
+    - slot{"requested_slot": "sport"}
+    - utter_ask_sport
+    - sum_up_slots
+* activity{"time": "yesterday", "sport": "gym", "duration": "1h", "period": "every day", "distance": "1km"}
+    - slot{"distance": "1km"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"sport": "gym"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"activity_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"activity_distance": "1km"}
+    - slot{"distance": null}
+    - slot{"activity_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"activity_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - action_check_slots_sport
+    - slot{"sport": "gym"}
+    - slot{"requested_slot": "activity_hard"}
+    - utter_ask_activity_hard
+    - sum_up_slots
+* activity{"activity_hard": true}
+    - slot{"activity_hard": true}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - action_check_slots_sport
+    - slot{"activity_hard": true}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - ask_what_sport
+    - sum_up_slots
+* activity{"activity_level": "Incorrect"}
+    - slot{"activity_level": "Incorrect"}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - action_check_slots_sport
+    - sum_up_slots
+* activity{"activity_level": "little"}
+    - slot{"activity_level": "little"}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - action_check_slots_sport
+    - sum_up_slots
+    - export
+
+## Generated Story -7214433405217152850
+* activity
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "en"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - action_check_slots_sport
+    - slot{"requested_slot": "activity_duration"}
+    - utter_ask_activity_duration
+    - sum_up_slots
+* activity{"period": "every day", "duration": "1h", "time": "yesterday", "sport": "gym", "distance": "1km"}
+    - slot{"distance": "1km"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"sport": "gym"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"activity_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"activity_distance": "1km"}
+    - slot{"distance": null}
+    - slot{"activity_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"activity_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - action_check_slots_sport
+    - slot{"sport": "gym"}
+    - slot{"requested_slot": "activity_hard"}
+    - utter_ask_activity_hard
+    - sum_up_slots
+* activity{"activity_hard": true}
+    - slot{"activity_hard": true}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - action_check_slots_sport
+    - slot{"activity_hard": true}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - ask_what_sport
+    - sum_up_slots
+* activity{"activity_level": "Incorrect"}
+    - slot{"activity_level": "Incorrect"}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - action_check_slots_sport
+    - sum_up_slots
+* activity{"activity_level": "little"}
+    - slot{"activity_level": "little"}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - action_check_slots_sport
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - reset_slots_sport
+    - slot{"global_score": 1}
+    - slot{"activity_hard": null}
+    - slot{"activity_duration": null}
+    - slot{"activity_level": null}
+    - slot{"sport": null}
+    - slot{"activity_distance": null}
+    - slot{"activity_period": null}
+    - slot{"activity_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"activity": true}
+    - sum_up_slots
+    - export
+
+## Generated Story -3614428382976190985
+* pain{"body_part": "leg", "period": "every day", "duration": "1h", "pain_desc": "sharp", "time": "yesterday"}
+    - slot{"body_part": "leg"}
+    - slot{"duration": "1h"}
+    - slot{"pain_desc": "sharp"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "en"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"pain_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"pain_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"pain_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - action_check_slots_pain
+    - slot{"pain_desc": "sharp"}
+    - slot{"requested_slot": "pain_change"}
+    - utter_ask_pain_change
+    - sum_up_slots
+* pain{"pain_change": "continuous"}
+    - slot{"pain_change": "continuous"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - action_check_slots_pain
+    - slot{"pain_change": "continuous"}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - ask_what_pain
+    - sum_up_slots
+* pain{"pain_level": "Incorrect"}
+    - slot{"pain_level": "Incorrect"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - action_check_slots_pain
+    - sum_up_slots
+* pain{"pain_level": "mild"}
+    - slot{"pain_level": "mild"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - action_check_slots_pain
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - reset_slots_pain
+    - slot{"global_score": 3}
+    - slot{"pain_duration": null}
+    - slot{"pain_desc": null}
+    - slot{"pain_body_part": null}
+    - slot{"pain_change": null}
+    - slot{"pain_period": null}
+    - slot{"pain_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"pain": true}
+    - slot{"pain_level": null}
     - sum_up_slots
     - export
 

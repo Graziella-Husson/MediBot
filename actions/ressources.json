@@ -62,43 +62,43 @@
 		},
 	"social":
 		{
-		"en":"\tYour socialness",
-		"fr":"\tVotre vie sociale"
+		"en":"\n\tYour socialness",
+		"fr":"\n\tVotre vie sociale"
 		},
 	"activity":
 		{
-		"en":"\tYour physical activities",
-		"fr":"\tVos activités physiques"
+		"en":"\n\tYour physical activities",
+		"fr":"\n\tVos activités physiques"
 		},
 	"pain":
 		{
-		"en":"\tYour pain",
-		"fr":"\tVotre douleur"
+		"en":"\n\tYour pain",
+		"fr":"\n\tVotre douleur"
 		},
 	"emotional_sadness":
 		{
-		"en":"\tYour sadness",
-		"fr":"\tVotre tristesse"
+		"en":"\n\tYour sadness",
+		"fr":"\n\tVotre tristesse"
 		},
 	"emotional_hapiness":
 		{
-		"en":"\tYour happiness",
-		"fr":"\tVotre bonheur"
+		"en":"\n\tYour happiness",
+		"fr":"\n\tVotre bonheur"
 		},
 	"pathology":
 		{
-		"en":"\tYour pathology (or side effects)",
-		"fr":"\tVotre pathologie (ou effets secondaires)"
+		"en":"\n\tYour pathology (or side effects)",
+		"fr":"\n\tVotre pathologie (ou effets secondaires)"
 		},
 	"treatment":
 		{
-		"en":"\tYour treatment",
-		"fr":"\tVotre traitement"
+		"en":"\n\tYour treatment",
+		"fr":"\n\tVotre traitement"
 		},
 	"infoPatient":
 		{
-		"en":"\tYour personal informations",
-		"fr":"\tVos informations personnelles"
+		"en":"\n\tYour personal informations",
+		"fr":"\n\tVos informations personnelles"
 		},
 	"user_reminder_little":
 		{
@@ -122,33 +122,33 @@
 		},
 	"pain_desc":
 		{
-		"en":"\tYou have some {} pain (it's considered has a {} pain).",
-		"fr":"\tVous resentez une douleur {} (considérée comme une douleur {})."
+		"en":"\n\tYou have some {} pain (it's considered has a {} pain).",
+		"fr":"\n\tVous resentez une douleur {} (considérée comme une douleur {})."
 		},
 	"pain_body_part":
 		{
-		"en":"\tThe pain is localized at {}.",
-		"fr":"\tLa douleur est localisée à {}."
+		"en":"\n\tThe pain is localized at {}.",
+		"fr":"\n\tLa douleur est localisée à {}."
 		},
 	"pain_duration":
 		{
-		"en":"\tThe duration of this pain is of {}.",
-		"fr":"\tLa durée de cette douleur est de {}."
+		"en":"\n\tThe duration of this pain is of {}.",
+		"fr":"\n\tLa durée de cette douleur est de {}."
 		},
 	"pain_period":
 		{
-		"en":"\tThe pain period/recurrence is {}.",
-		"fr":"\tLa période/récurrence de cette douleur est de {}."
+		"en":"\n\tThe pain period/recurrence is {}.",
+		"fr":"\n\tLa période/récurrence de cette douleur est de {}."
 		},
 	"pain_change":
 		{
-		"en":"\tThe pain seems to be {}.",
-		"fr":"\tLa douleur semble {}."
+		"en":"\n\tThe pain seems to be {}.",
+		"fr":"\n\tLa douleur semble {}."
 		},
 	"right":
 		{
-		"en":"Is it right?",
-		"fr":"Est-ce exact ?"
+		"en":"\nIs it right?",
+		"fr":"\nEst-ce exact ?"
 		},
 	"pain_no_entity":
 		{
@@ -177,33 +177,33 @@
 		},
 	"sport":
 		{
-		"en":"\tYou did some {} physical activity ({}). The physical activity detected is {}.",
-		"fr":"\tVous avez fait une activité physique jugée {} ({}). L'activité détectée est {}."
+		"en":"\n\tYou did some {} physical activity ({}). The physical activity detected is {}.",
+		"fr":"\n\tVous avez fait une activité physique jugée {} ({}). L'activité détectée est {}."
 		},
 	"activity_duration":
 		{
-		"en":"\tThe physical activity duration is of {}.",
-		"fr":"\tLa durée de l'activité physique est de {}."
+		"en":"\n\tThe physical activity duration is of {}.",
+		"fr":"\n\tLa durée de l'activité physique est de {}."
 		},
 	"activity_distance":
 		{
-		"en":"\tThe physical activity distance you did is of {}.",
-		"fr":"\tLa distance parcourue est de {}."
+		"en":"\n\tThe physical activity distance you did is of {}.",
+		"fr":"\n\tLa distance parcourue est de {}."
 		},
 	"activity_period":
 		{
-		"en":"\tThe physical activity period/recurrence detected is {}.",
-		"fr":"\tLa période/récurrence de l'activité physique détectée est de {}."
+		"en":"\n\tThe physical activity period/recurrence detected is {}.",
+		"fr":"\n\tLa période/récurrence de l'activité physique détectée est de {}."
 		},
 	"activity_hard_true":
 		{
-		"en":"\tYour activity was hard because of your general health.",
-		"fr":"\tVotre activité était dure à performer à cause de votre état de santé général."
+		"en":"\n\tYour activity was hard because of your general health.",
+		"fr":"\n\tVotre activité était dure à performer à cause de votre état de santé général."
 		},
 	"activity_hard_false":
 		{
-		"en":"\tYour general health did not make your activity harder.",
-		"fr":"\tVotre état de santé général n'a pas fait que votre activité était dure à performer."
+		"en":"\n\tYour general health did not make your activity harder.",
+		"fr":"\n\tVotre état de santé général n'a pas fait que votre activité était dure à performer."
 		},
 	"activity_no_entity":
 		{
@@ -360,7 +360,7 @@
 		"en":"Begin date",
 		"fr":"Date de début"
 		},
-	"desc_button":
+	"pain_desc_button":
 		{
 		"en":"Description",
 		"fr":"Description"
@@ -814,7 +814,18 @@
 		{
 		"en":"Overdose",
 		"fr":"Overdose"
+		},
+	"activity_time":
+		{
+		"en":"\n\tYou began your physical activity {}",
+		"fr":"\n\tVous avez commencé votre activité physique {}"
+		},
+	"pain_time":
+		{
+		"en":"\n\tYour pain began {}",
+		"fr":"\n\tVotre douleur a commencé {}"
 		}
+	
 	}
 }
 

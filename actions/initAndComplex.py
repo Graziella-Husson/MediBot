@@ -567,7 +567,7 @@ class SumUpSLots(Action):
           if not response == None:
               conv.write("{ '"+str(date)+"' : [{'text': '"+response+"'}]],\n")
           response = ("""`\ttopic = {}, requested_slot = {},`
-`\tactivity = {}, sport = {}, activity_duration = {}, activity_period = {}, activity_hard = {}, activity_time = {}, activity_distance = {},`
+`\tactivity = {}, sport = {}, activity_level = {}, activity_duration = {}, activity_period = {}, activity_hard = {}, activity_time = {}, activity_distance = {},`
 `\tpain = {}, pain_duration = {}, pain_desc = {}, pain_body_part = {}, pain_change = {}, pain_period = {}, pain_level = {}, pain_time = {},` 
 `\tpathology = {}, symtoms = {}, pathology_body_part = {}, pathology_time = {}, pathology_change = {}, pathology_period = {}, pathology_treatment_linked = {},`
 `\ttreatment = {}, medicinal = {}, treatment_being_taken = {}, drug = {}, dosing = {}, treatment_time = {}, treatment_prescripted = {}, treatment_ok = {}, treatment_overdosage = {}, treatment_period = {}`
@@ -577,7 +577,7 @@ class SumUpSLots(Action):
 `\tsocial = {},`
 `\tdistance = {}, period = {}, duration = {}, time = {}, body_part = {},temperature = {}`""").format(
 tracker.get_slot("topic"), tracker.get_slot("requested_slot"),
-tracker.get_slot("activity"), tracker.get_slot("sport"), tracker.get_slot("activity_duration"), tracker.get_slot("activity_period"), tracker.get_slot("activity_hard"), tracker.get_slot("activity_time"),tracker.get_slot("activity_distance"),
+tracker.get_slot("activity"), tracker.get_slot("sport"), tracker.get_slot("activity_level"), tracker.get_slot("activity_duration"), tracker.get_slot("activity_period"), tracker.get_slot("activity_hard"), tracker.get_slot("activity_time"),tracker.get_slot("activity_distance"),
 tracker.get_slot("pain"), tracker.get_slot("pain_duration"), tracker.get_slot("pain_desc"), tracker.get_slot("pain_body_part"), tracker.get_slot("pain_change"), tracker.get_slot("pain_period"), tracker.get_slot("pain_level"), tracker.get_slot("pain_time"),
 tracker.get_slot("pathology"), tracker.get_slot("symtoms"),tracker.get_slot("pathology_body_part"),tracker.get_slot("pathology_time"),tracker.get_slot("pathology_change"),tracker.get_slot("pathology_period"),tracker.get_slot("pathology_treatment_linked"),
 tracker.get_slot("treatment"), tracker.get_slot("medicinal"), tracker.get_slot("treatment_being_taken"),tracker.get_slot("drug"),tracker.get_slot("dosing"),tracker.get_slot("treatment_time"),tracker.get_slot("treatment_prescripted"),tracker.get_slot("treatment_ok"),tracker.get_slot("treatment_overdosage"),tracker.get_slot("treatment_period"),

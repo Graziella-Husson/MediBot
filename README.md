@@ -173,3 +173,10 @@ When its saved, you will be able to talk to your bot in slack!
 
 If your bot is using buttons, you will have to allow slack to use them. Go to the 'interactive component' part from dashboard on your api.slack.com app then add the https URL you took from ngrok and paste it in the request URL (allow interactive component first) and add /webhook at the end.
 When its saved, you will be able to talk to your bot in slack with buttons!
+
+## Improve the doc 
+In actions folder :
+
+```
+epydoc askWhat.py complexSets.py formActions.py initAndComplex.py level_classifiers.py reminders.py resetSlots.py ressources.py simpleActions.py --config epydoc_config 
+```

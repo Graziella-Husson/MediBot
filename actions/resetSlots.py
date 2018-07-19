@@ -31,21 +31,21 @@ class ResetSportSlots(Action):
         global_score = tracker.get_slot("global_score")
         dispatcher.utter_message(get_utterance("saved",language))
         # TODO: save to DB
-        sport_level = tracker.get_slot("sport_level")
-        if sport_level=='little':
+        activity_level = tracker.get_slot("activity_level")
+        if activity_level=='little':
             global_score+=1
             MET = "< 3 MET"
-        elif sport_level=='moderate':
+        elif activity_level=='moderate':
             global_score+=2
             MET = "3-6 MET"
-        elif sport_level=='vigorous':
+        elif activity_level=='vigorous':
             global_score+=3
             MET = "> 6 MET"
         #TODO: save score and MET warning : save level in language of bot
         return[SlotSet("global_score",global_score),
                SlotSet("activity_hard",None), 
                 SlotSet("activity_duration",None), 
-                SlotSet("sport_level",None), 
+                SlotSet("activity_level",None), 
                 SlotSet("sport",None), 
                 SlotSet("activity_distance",None), 
                 SlotSet("activity_period", None), 

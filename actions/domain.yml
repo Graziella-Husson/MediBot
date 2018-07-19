@@ -1,7 +1,7 @@
 slots:
   sport:
     type: text
-  sport_level:
+  activity_level:
     type: text
   activity_duration:
     type: text

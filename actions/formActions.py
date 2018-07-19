@@ -84,6 +84,7 @@ class ActionFillSlotsPain(FormActionTriggerAction):
             pain_body_part = tracker.get_slot("pain_body_part")
             pain_change = tracker.get_slot("pain_change")
             pain_period = tracker.get_slot("pain_period")
+            pain_time = tracker.get_slot("pain_time")
             obligatories = get_obligatories()
             try:
                 len(obligatories['pain'])
@@ -103,6 +104,8 @@ class ActionFillSlotsPain(FormActionTriggerAction):
                     response += get_utterance("pain_period",language).format(pain_period)
                 if pain_change != None:
                     response += get_utterance("pain_change",language).format(pain_change)
+                if pain_time != None:
+                    response += get_utterance("pain_time",language).format(pain_time)
                 response += get_utterance("right",language)
             except:
                 response = get_utterance("pain_no_entity",language)
@@ -147,12 +150,13 @@ class ActionFillSlotsSport(FormActionTriggerAction):
         @param tracker: used to get the language of the bot and get and set global score
         @param dispatcher: used to tell the patient that he talked about the intent 'activity'.
         The entitities linked to this intent are:
-            - sport_level
+            - activity_level
             - activity_duration
             - sport
             - activity_period
             - activity_distance
             - activity_hard (boolean)
+            - activity_time
         This action will sum up these infos. If they're all set to None (no mandatory entity), just say that we talked about an activity
         Ask if the informations are correct.
         If the sport level is 'Incorrect', that mean the user said that it was incorrect before. If so, display buttons to allow user to tell the level of his activity
@@ -160,37 +164,39 @@ class ActionFillSlotsSport(FormActionTriggerAction):
         If we want the sport level, we have to have the sport slot mandatory.
         """
         language = tracker.get_slot("language")
-        sport_level = tracker.get_slot("sport_level")
-        if not sport_level == "Incorrect":
+        activity_level = tracker.get_slot("activity_level")
+        if not activity_level == "Incorrect":
             sport_duration = tracker.get_slot("activity_duration")
             sport = tracker.get_slot("sport")
             sport_period = tracker.get_slot("activity_period")
             distance = tracker.get_slot("activity_distance")
             activity_hard = tracker.get_slot("activity_hard")
+            activity_time = tracker.get_slot("activity_time")
             try:
                 obligatories = get_obligatories()
                 len(obligatories['activity'])>0
                 response = get_utterance("sum_up",language)
                 if sport != None:
-                    if sport_level == None:
+                    if activity_level == None:
                         #get sport level
-                        sport_level = get_physical_activity_level(sport)
-                        tracker.update(SlotSet("sport_level",sport_level))
-                        #TODO: do something if None
-                        if sport_level=='little':
-                            MET = "< 3 MET"
-                        elif sport_level=='moderate':
-                            MET = "3-6 MET"
-                        elif sport_level=='vigorous':
-                            MET = "> 6 MET"
-                    sport_level = get_utterance(sport_level,language)
-                    response += get_utterance("sport",language).format(sport_level, MET, sport)
+                        activity_level = get_physical_activity_level(sport)
+                        tracker.update(SlotSet("activity_level",activity_level))
+                    if activity_level=='little':
+                        MET = "< 3 MET"
+                    elif activity_level=='moderate':
+                        MET = "3-6 MET"
+                    elif activity_level=='vigorous':
+                        MET = "> 6 MET"
+                    activity_level = get_utterance(activity_level,language)
+                    response += get_utterance("sport",language).format(activity_level, MET, sport)
                 if sport_duration != None:
                     response += get_utterance("activity_duration",language).format(sport_duration)
                 if distance != None:
                     response += get_utterance("activity_distance",language).format(distance)
                 if sport_period != None:
                     response += get_utterance("activity_period",language).format(sport_period)
+                if activity_time != None:
+                    response += get_utterance("activity_time",language).format(activity_time)
                 if activity_hard != None:
                     if activity_hard:
                         response += get_utterance("activity_hard_true",language)
@@ -207,9 +213,9 @@ class ActionFillSlotsSport(FormActionTriggerAction):
             little = get_utterance("little",language)
             moderate = get_utterance("moderate",language)
             vigorous = get_utterance("vigorous",language)
-            buttons = [Button(title=little, payload="/pain{\"sport_level\":\"little\"}"),
-                       Button(title=moderate, payload="/pain{\"sport_level\":\"moderate\"}"),
-                       Button(title=vigorous, payload="/pain{\"sport_level\":\"vigorous\"}")]
+            buttons = [Button(title=little, payload="/activity{\"activity_level\":\"little\"}"),
+                       Button(title=moderate, payload="/activity{\"activity_level\":\"moderate\"}"),
+                       Button(title=vigorous, payload="/activity{\"activity_level\":\"vigorous\"}")]
             message = get_utterance("ask_level_activity",language)
             dispatcher.utter_button_message(message, buttons)  
 
@@ -412,7 +418,7 @@ class Pathology(FormActionTriggerAction):
                     response += get_utterance("pathology_treatment_linked_true",language)
                 else:
                     response += get_utterance("pathology_treatment_linked_false",language)
-            response += "\n"+get_utterance("right",language)
+            response += get_utterance("right",language)
         except:
             response = get_utterance("sum_up_pathology",language)
         dispatcher.utter_message(response)
@@ -501,7 +507,7 @@ class Treatment(FormActionTriggerAction):
                     response += get_utterance("treatment_ok_true",language)
                 else:
                     response += get_utterance("treatment_ok_false",language)
-            response += "\n"+get_utterance("right",language)
+            response += get_utterance("right",language)
         except:
             response = get_utterance("sum_up_treatment",language)      
         dispatcher.utter_message(response)
