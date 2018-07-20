@@ -3,7 +3,7 @@
           "DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>formActions.ActionWithoutCalculus</title>
+  <title>formActions.FormActionCalculusAndCore</title>
   <link rel="stylesheet" href="epydoc.css" type="text/css" />
   <script type="text/javascript" src="epydoc.js"></script>
 </head>
@@ -40,7 +40,7 @@
     <td width="100%">
       <span class="breadcrumbs">
         <a href="formActions-module.html">Module&nbsp;formActions</a> ::
-        Class&nbsp;ActionWithoutCalculus
+        Class&nbsp;FormActionCalculusAndCore
       </span>
     </td>
     <td>
@@ -50,40 +50,49 @@
     onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
         <tr><td align="right"><span class="options"
             >[<a href="frames.html" target="_top">frames</a
-            >]&nbsp;|&nbsp;<a href="formActions.ActionWithoutCalculus-class.html"
+            >]&nbsp;|&nbsp;<a href="formActions.FormActionCalculusAndCore-class.html"
             target="_top">no&nbsp;frames</a>]</span></td></tr>
       </table>
     </td>
   </tr>
 </table>
 <!-- ==================== CLASS DESCRIPTION ==================== -->
-<h1 class="epydoc">Class ActionWithoutCalculus</h1><p class="nomargin-top"><span class="codelink"><a href="formActions-pysrc.html#ActionWithoutCalculus">source&nbsp;code</a></span></p>
+<h1 class="epydoc">Class FormActionCalculusAndCore</h1><p class="nomargin-top"><span class="codelink"><a href="formActions-pysrc.html#FormActionCalculusAndCore">source&nbsp;code</a></span></p>
 <center>
 <center>  <map id="uml_class_diagram_for_formacti_4" name="uml_class_diagram_for_formacti_4">
-<area shape="rect" id="node1_12" href="formActions.ActionWithoutCalculus-class.html#action_core" title="formActions.ActionWithoutCalculus.action_core" alt="" coords="18,405,371,425"/>
-<area shape="rect" id="node1_13" href="formActions.ActionWithoutCalculus-class.html#sum_up_setted_slots" title="formActions.ActionWithoutCalculus.sum_up_setted_slots" alt="" coords="18,425,371,445"/>
-<area shape="rect" id="node1" href="formActions.ActionWithoutCalculus-class.html" title="A custom class heritating from FormActionTriggerAction." alt="" coords="5,372,383,451"/>
-<area shape="rect" id="node2_14" href="formActions.FormActionTriggerAction-class.html#run" title="Trigger a custom action to ask the requested_slot." alt="" coords="86,327,305,347"/>
-<area shape="rect" id="node2" href="formActions.FormActionTriggerAction-class.html" title="A custom class heritating from FormAction." alt="" coords="74,295,317,353"/>
-<area shape="rect" id="node3_15" href="javascript:void(0);" title="Indicator if this action resets the topic when run." alt="" coords="103,37,287,57"/>
-<area shape="rect" id="node3_16" href="javascript:void(0);" title="Unique identifier of this simple action." alt="" coords="103,57,287,77"/>
-<area shape="rect" id="node3_17" href="javascript:void(0);" title="str(x)" alt="" coords="103,77,287,97"/>
-<area shape="rect" id="node3" href="javascript:void(0);" title="Next action to be taken in response to a dialogue state." alt="" coords="91,5,299,104"/>
-<area shape="rect" id="node4_18" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.RANDOMIZE" alt="" coords="62,147,329,167"/>
-<area shape="rect" id="node4_19" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.required_fields" alt="" coords="62,170,329,190"/>
-<area shape="rect" id="node4_20" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.should_request_slot" alt="" coords="62,190,329,210"/>
-<area shape="rect" id="node4_21" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.get_other_slots" alt="" coords="62,210,329,230"/>
-<area shape="rect" id="node4_22" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.get_requested_slot" alt="" coords="62,230,329,250"/>
-<area shape="rect" id="node4_23" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.submit" alt="" coords="62,250,329,270"/>
-<area shape="rect" id="node4" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction" alt="" coords="50,123,341,276"/>
+<area shape="rect" id="node1_14" href="formActions.FormActionCalculusAndCore-class.html#init" title="formActions.FormActionCalculusAndCore.init" alt="" coords="17,405,428,425"/>
+<area shape="rect" id="node1_15" href="formActions.FormActionCalculusAndCore-class.html#calculus_action" title="formActions.FormActionCalculusAndCore.calculus_action" alt="" coords="17,425,428,445"/>
+<area shape="rect" id="node1_16" href="formActions.FormActionCalculusAndCore-class.html#core_action" title="formActions.FormActionCalculusAndCore.core_action" alt="" coords="17,445,428,465"/>
+<area shape="rect" id="node1_17" href="formActions.FormActionCalculusAndCore-class.html#sum_up_setted_slots" title="formActions.FormActionCalculusAndCore.sum_up_setted_slots" alt="" coords="17,465,428,485"/>
+<area shape="rect" id="node1" href="formActions.FormActionCalculusAndCore-class.html" title="A custom class heritating from FormActionTriggerAction." alt="" coords="5,372,440,491"/>
+<area shape="rect" id="node2_18" href="formActions.FormActionTriggerAction-class.html#run" title="Trigger a custom action to ask the requested_slot." alt="" coords="113,327,332,347"/>
+<area shape="rect" id="node2" href="formActions.FormActionTriggerAction-class.html" title="A custom class heritating from FormAction." alt="" coords="101,295,344,353"/>
+<area shape="rect" id="node3_19" href="javascript:void(0);" title="Indicator if this action resets the topic when run." alt="" coords="131,37,315,57"/>
+<area shape="rect" id="node3_20" href="javascript:void(0);" title="Unique identifier of this simple action." alt="" coords="131,57,315,77"/>
+<area shape="rect" id="node3_21" href="javascript:void(0);" title="str(x)" alt="" coords="131,77,315,97"/>
+<area shape="rect" id="node3" href="javascript:void(0);" title="Next action to be taken in response to a dialogue state." alt="" coords="119,5,327,104"/>
+<area shape="rect" id="node4_22" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.RANDOMIZE" alt="" coords="89,147,356,167"/>
+<area shape="rect" id="node4_23" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.required_fields" alt="" coords="89,170,356,190"/>
+<area shape="rect" id="node4_24" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.should_request_slot" alt="" coords="89,190,356,210"/>
+<area shape="rect" id="node4_25" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.get_other_slots" alt="" coords="89,210,356,230"/>
+<area shape="rect" id="node4_26" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.get_requested_slot" alt="" coords="89,230,356,250"/>
+<area shape="rect" id="node4_27" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.submit" alt="" coords="89,250,356,270"/>
+<area shape="rect" id="node4" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction" alt="" coords="77,123,368,276"/>
 </map>
   <img src="uml_class_diagram_for_formacti_4.gif" alt='' usemap="#uml_class_diagram_for_formacti_4" ismap="ismap" class="graph-without-title" />
 </center>
 </center>
 <hr />
 <p>A custom class heritating from FormActionTriggerAction. This type of 
-  action is used when the intent is not containing a level calculated but 
-  containing entities</p>
+  action is used when the intent is containing a level calculated:</p>
+  <ul>
+    <li>
+      pain (mild, moderate,severe)
+    </li>
+    <li>
+      activity (little, moderate, vigorous)
+    </li>
+  </ul>
 
 <!-- ==================== INSTANCE METHODS ==================== -->
 <a name="section-InstanceMethods"></a>
@@ -108,13 +117,50 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="formActions.ActionWithoutCalculus-class.html#action_core" class="summary-sig-name">action_core</a>(<span class="summary-sig-arg">self</span>,
+          <td><span class="summary-sig"><a href="formActions.FormActionCalculusAndCore-class.html#init" class="summary-sig-name">init</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">intent_name</span>,
+        <span class="summary-sig-arg">to_calculate_slot</span>,
+        <span class="summary-sig-arg">levelsList</span>,
+        <span class="summary-sig-arg">classifier_method</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="formActions-pysrc.html#FormActionCalculusAndCore.init">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="formActions.FormActionCalculusAndCore-class.html#calculus_action" class="summary-sig-name">calculus_action</a>(<span class="summary-sig-arg">self</span>,
         <span class="summary-sig-arg">tracker</span>,
-        <span class="summary-sig-arg">language</span>,
+        <span class="summary-sig-arg">dispatcher</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="formActions-pysrc.html#FormActionCalculusAndCore.calculus_action">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="formActions.FormActionCalculusAndCore-class.html#core_action" class="summary-sig-name">core_action</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">tracker</span>,
         <span class="summary-sig-arg">dispatcher</span>,
         <span class="summary-sig-arg">intentName</span>)</span></td>
           <td align="right" valign="top">
-            <span class="codelink"><a href="formActions-pysrc.html#ActionWithoutCalculus.action_core">source&nbsp;code</a></span>
+            <span class="codelink"><a href="formActions-pysrc.html#FormActionCalculusAndCore.core_action">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -133,7 +179,7 @@
         <span class="summary-sig-arg">tracker</span>,
         <span class="summary-sig-arg">language</span>)</span></td>
           <td align="right" valign="top">
-            <span class="codelink"><a href="formActions-pysrc.html#ActionWithoutCalculus.sum_up_setted_slots">source&nbsp;code</a></span>
+            <span class="codelink"><a href="formActions-pysrc.html#FormActionCalculusAndCore.sum_up_setted_slots">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -267,21 +313,86 @@
   </td>
 </tr>
 </table>
-<a name="action_core"></a>
+<a name="init"></a>
 <div>
 <table class="details" border="1" cellpadding="3"
        cellspacing="0" width="100%" bgcolor="white">
 <tr><td>
   <table width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">action_core</span>(<span class="sig-arg">self</span>,
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">init</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">intent_name</span>,
+        <span class="sig-arg">to_calculate_slot</span>,
+        <span class="sig-arg">levelsList</span>,
+        <span class="sig-arg">classifier_method</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="formActions-pysrc.html#FormActionCalculusAndCore.init">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>intent_name</code></strong> - name of the intent</li>
+        <li><strong class="pname"><code>to_calculate_slot</code></strong> - name of the slot used to calculate level</li>
+        <li><strong class="pname"><code>levelsList</code></strong> - list of different levels</li>
+        <li><strong class="pname"><code>classifier_method</code></strong> - method called to classify level with to_calculate_slot name
+          <p>Set all specific variables for one ActionWithCalculus 
+          action</p></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="calculus_action"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">calculus_action</span>(<span class="sig-arg">self</span>,
         <span class="sig-arg">tracker</span>,
-        <span class="sig-arg">language</span>,
+        <span class="sig-arg">dispatcher</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="formActions-pysrc.html#FormActionCalculusAndCore.calculus_action">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>tracker</code></strong> - used to get the language of the bot and get and set global score</li>
+        <li><strong class="pname"><code>language</code></strong> - language used by the bot</li>
+        <li><strong class="pname"><code>dispatcher</code></strong> - used to tell the patient that he talked about the intent
+          <p>This action will sum up infos about the intent. If they're all
+          set to None (no mandatory entity), just say that we talked about 
+          intent</p>
+          <p>Ask if the informations are correct.</p>
+          <p>If the level is 'Incorrect', that mean the user said that it 
+          was incorrect before. If so, display buttons to allow user to 
+          tell the level himself</p></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="core_action"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">core_action</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">tracker</span>,
         <span class="sig-arg">dispatcher</span>,
         <span class="sig-arg">intentName</span>)</span>
   </h3>
   </td><td align="right" valign="top"
-    ><span class="codelink"><a href="formActions-pysrc.html#ActionWithoutCalculus.action_core">source&nbsp;code</a></span>&nbsp;
+    ><span class="codelink"><a href="formActions-pysrc.html#FormActionCalculusAndCore.core_action">source&nbsp;code</a></span>&nbsp;
     </td>
   </tr></table>
   
@@ -292,6 +403,10 @@
         <li><strong class="pname"><code>tracker</code></strong> - used to get the language of the bot and get and set global score</li>
         <li><strong class="pname"><code>language</code></strong> - language used by the bot</li>
         <li><strong class="pname"><code>dispatcher</code></strong> - used to tell the patient that he talked about the intent</li>
+        <li><strong class="pname"><code>intentName</code></strong> - name of the intent
+          <p>This action will sum up infos about the intent. If they're all
+          set to None (no mandatory entity), just say that we talked about 
+          intent Ask if the informations are correct.</p></li>
     </ul></dd>
   </dl>
 </td></tr></table>
@@ -325,7 +440,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Thu Jul 19 16:41:20 2018
+    Generated by Epydoc 3.0.1 on Fri Jul 20 11:00:26 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

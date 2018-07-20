@@ -22,11 +22,11 @@ def get_buttons_simple(buttons, slot_name, tracker,language,intent_name,other_va
     @return: list of buttons in which we appended new ones
     """
     slot_value = tracker.get_slot(slot_name)
-    if button_name!=None:
-        to_search_in_ressources = button_name
-    else:
-        to_search_in_ressources = slot_name+"_button"
     if slot_value != None :
+        if button_name!=None:
+            to_search_in_ressources = button_name
+        else:
+            to_search_in_ressources = slot_name+"_button"
         if other_value == None or (other_value != None and slot_value != other_value):
             slot_button = get_utterance(to_search_in_ressources,language)
             buttons.append(Button(title=slot_button, payload="/"+intent_name+"{\""+slot_name+"\":null}"))   
@@ -58,13 +58,14 @@ def get_buttons_multiple(buttons, slot_names, tracker,language,intent_name,to_ch
     return buttons
 
 
-def get_buttons_boolean(buttons, slot_name, tracker,language,intent_name):
+def get_buttons_boolean(buttons, slot_name, tracker,language,intent_name,button_name=None):
     """
     @param buttons: list of buttons in which we have to append new ones
     @param slot_name: name of the boolean slot we want to add a button for
     @param tracker: used to get all infos for 'slot_name' entity from the tracker
     @param language: language of the bot (for display the right name of button)
     @param intent_name: name of the intent linked to the slot 
+    @param button_name: unrequired, name of the button if different to {slot_name}_button
     
     Add a button to the list of buttons to display, named after the slot names. 
     If the slot value is True, when the button is clicked, set the slot value to False
@@ -74,11 +75,15 @@ def get_buttons_boolean(buttons, slot_name, tracker,language,intent_name):
     """
     slot_value = tracker.get_slot(slot_name)
     if slot_value != None:
-            slot_button = get_utterance(slot_name+"_button",language)
-            if slot_value:
-                buttons.append(Button(title=slot_button, payload="/"+intent_name+"{\""+slot_name+"\":false}"))
-            else:
-                buttons.append(Button(title=slot_button, payload="/"+intent_name+"{\""+slot_name+"\":true}"))   
+        if button_name!=None:
+            to_search_in_ressources = button_name
+        else:
+            to_search_in_ressources = slot_name+"_button"
+        slot_button = get_utterance(to_search_in_ressources,language)
+        if slot_value:
+            buttons.append(Button(title=slot_button, payload="/"+intent_name+"{\""+slot_name+"\":false}"))
+        else:
+            buttons.append(Button(title=slot_button, payload="/"+intent_name+"{\""+slot_name+"\":true}"))   
     return buttons
 
 class AskWhatSport(Action):
@@ -180,7 +185,7 @@ class AskWhatPathology(Action):
         buttons = get_buttons_simple(buttons, "pathology_body_part", tracker,language,intent_name,button_name="body_part_button")
         buttons = get_buttons_simple(buttons, "pathology_time", tracker,language,intent_name,button_name="time_button")
         buttons = get_buttons_simple(buttons, "pathology_period", tracker,language,intent_name,button_name="period_button")
-        buttons = get_buttons_boolean(buttons, "pathology_change", tracker,language,intent_name)
+        buttons = get_buttons_boolean(buttons, "pathology_change", tracker,language,intent_name,button_name="evolution_button")
         buttons = get_buttons_boolean(buttons, "pathology_treatment_linked", tracker,language,intent_name)
         message = get_utterance("ask_what",language)
         dispatcher.utter_button_message(message, buttons)
