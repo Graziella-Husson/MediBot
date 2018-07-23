@@ -212,6 +212,7 @@ class AskWhatTreatment(Action):
             - treatment_ok(boolean)
             - treatment_overdosage
             - treatment_period
+            - treatment_duration
             
         If medicinal button is cliked, set the slot 'medicinal' to the opposite of its value.
         If medicinal button is cliked, set the slot 'treatment_prescripted' to the opposite of its value.
@@ -228,6 +229,7 @@ class AskWhatTreatment(Action):
         buttons = get_buttons_simple(buttons, "treatment_period", tracker,language,intent_name,button_name="period_button")
         buttons = get_buttons_simple(buttons, "treatment_time", tracker,language,intent_name,button_name="time_button")
         buttons = get_buttons_simple(buttons, "treatment_overdosage", tracker,language,intent_name,"no_drug")
+        buttons = get_buttons_simple(buttons, "treatment_duration", tracker,language,intent_name,button_name="duration_button")
         buttons = get_buttons_boolean(buttons, "treatment_prescripted", tracker,language,intent_name)
         buttons = get_buttons_boolean(buttons, "treatment_ok", tracker,language,intent_name)
         message = get_utterance("ask_what",language)

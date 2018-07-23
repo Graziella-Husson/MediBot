@@ -174,6 +174,7 @@ class ResetTreatmentSlots(Action):
                 SlotSet("treatment_ok",None),
                 SlotSet("treatment_overdosage",None),
                 SlotSet("treatment_period",None),
+                SlotSet("treatment_duration",None),
                 SlotSet("topic", None), 
                 SlotSet("requested_slot", None),
                 SlotSet("treatment",True)]

@@ -512,6 +512,7 @@ class Treatment(FormActionCalculusAndCore):
             - treatment_ok(boolean)
             - treatment_overdosage
             - treatment_period
+            - treatment_duration
 
         This action will sum up these infos. If they're all set to None (no mandatory entity), just say that we talked about a treatment
         
@@ -528,6 +529,7 @@ class Treatment(FormActionCalculusAndCore):
         response = get_response_simple(response, "treatment_overdosage",tracker,language,"no_drug")
         response = get_response_boolean(response, "treatment_prescripted",tracker,language)
         response = get_response_boolean(response, "treatment_ok",tracker,language)
+        response = get_response_simple(response, "treatment_duration",tracker,language)
         return response
 
 class InfoPatient(FormActionCalculusAndCore):

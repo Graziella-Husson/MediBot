@@ -129,6 +129,8 @@ slots:
     type: text
   risk:
     type: bool
+  treatment_duration:
+    type: text
 
 intents:
  - activity
@@ -243,4 +245,5 @@ actions:
  - simpleActions.AskTreatmentPrescripted
  - simpleActions.AskTreatmentOk
  - simpleActions.AskRisk
+ - simpleActions.AskTreatmentDuration
 

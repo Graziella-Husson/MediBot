@@ -87,7 +87,7 @@ class AskButtonsAction(Action):
             name_button = get_utterance(button+"_button",language)
             buttons_to_show.append(Button(title=name_button, payload="/"+self.intentName+"{\""+self.entityName+"\":\""+name_button.lower()+"\"}"))
         dispatcher.utter_button_message(message, buttons_to_show)
-s
+
 class AskMedicinal(AskBooleanAction):
     """
     Say something to the user : display buttons to tell if the treatment is medicinal or not
@@ -899,4 +899,19 @@ class Hello(AskAction):
         @return: the name of the action.
         """
         return 'sum_up_hello'
-             
+
+class AskTreatmentDuration(AskAction):
+    """
+    Say something to the user : ask the duration of the treatment 
+    """ 
+    def init(self):
+        """        
+        Set the name of the entity to ask
+        """
+        self.entityName = "treatment_duration"
+        
+    def name(self):
+        """
+        @return: the name of the action.
+        """
+        return 'utter_ask_treatment_duration'

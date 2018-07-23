@@ -839,6 +839,16 @@
 		{
 		"ENG":"To summarize, you talked about your risky behaviors",
 		"FRA":"Pour résumer, vous avez parlé de vos comportements à risques"
+		},
+	"ask_treatment_duration":
+		{
+		"ENG":"Can you tell me hwo long you have to take your treatment?",
+		"FRA":"Pouvez-vous me dire combien de temps vous devez prendre votre traitement ?"
+		},
+	"treatment_duration":
+		{
+		"ENG":"\n\tYour treatment's duration is of {}",
+		"FRA":"\n\tVotre traitement a une durée de {}"
 		}
 	}
 }

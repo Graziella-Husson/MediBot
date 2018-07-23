@@ -659,6 +659,13 @@ simpleActions.AskTreatmentBeingTaken.name	simpleActions.AskTreatmentBeingTaken-c
 rasa_core.actions.action.Action.__str__	rasa_core.actions.action.Action-class.html#__str__
 simpleActions.AskTreatmentBeingTaken.init	simpleActions.AskTreatmentBeingTaken-class.html#init
 rasa_core.actions.action.Action.resets_topic	rasa_core.actions.action.Action-class.html#resets_topic
+simpleActions.AskTreatmentDuration	simpleActions.AskTreatmentDuration-class.html
+simpleActions.AskAction.run	simpleActions.AskAction-class.html#run
+simpleActions.AskTreatmentDuration.name	simpleActions.AskTreatmentDuration-class.html#name
+simpleActions.AskAction.SIMPLE	simpleActions.AskAction-class.html#SIMPLE
+rasa_core.actions.action.Action.__str__	rasa_core.actions.action.Action-class.html#__str__
+simpleActions.AskTreatmentDuration.init	simpleActions.AskTreatmentDuration-class.html#init
+rasa_core.actions.action.Action.resets_topic	rasa_core.actions.action.Action-class.html#resets_topic
 simpleActions.AskTreatmentOk	simpleActions.AskTreatmentOk-class.html
 simpleActions.AskBooleanAction.run	simpleActions.AskBooleanAction-class.html#run
 simpleActions.AskTreatmentOk.name	simpleActions.AskTreatmentOk-class.html#name
