@@ -59,18 +59,31 @@
 <!-- ==================== CLASS DESCRIPTION ==================== -->
 <h1 class="epydoc">Class AskTreatmentBeingTaken</h1><p class="nomargin-top"><span class="codelink"><a href="simpleActions-pysrc.html#AskTreatmentBeingTaken">source&nbsp;code</a></span></p>
 <center>
-<center>  <map id="uml_class_diagram_for_simpleac_36" name="uml_class_diagram_for_simpleac_36">
-<area shape="rect" id="node1_4" href="simpleActions.AskTreatmentBeingTaken-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="17,135,236,155"/>
-<area shape="rect" id="node1_5" href="simpleActions.AskTreatmentBeingTaken-class.html#run" title="Say something to the user : display buttons to tell if the treatment is &#160;being well taken or forgotten or stopped When the &quot;stopped&quot; button is &#160;clicked, we have to set :" alt="" coords="17,155,236,175"/>
-<area shape="rect" id="node1" href="simpleActions.AskTreatmentBeingTaken-class.html" title="simpleActions.AskTreatmentBeingTaken" alt="" coords="5,103,248,181"/>
-<area shape="rect" id="node2_6" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="35,38,219,58"/>
-<area shape="rect" id="node2_7" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="35,58,219,78"/>
-<area shape="rect" id="node2" href="rasa_core.actions.action.Action-class.html" title="Next action to be taken in response to a dialogue state." alt="" coords="23,5,231,84"/>
+<center>  <map id="uml_class_diagram_for_simpleac_39" name="uml_class_diagram_for_simpleac_39">
+<area shape="rect" id="node1_5" href="simpleActions.AskTreatmentBeingTaken-class.html#init" title="Set the name of the entity to ask" alt="" coords="51,213,203,233"/>
+<area shape="rect" id="node1_6" href="simpleActions.AskTreatmentBeingTaken-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="51,233,203,253"/>
+<area shape="rect" id="node1" href="simpleActions.AskTreatmentBeingTaken-class.html" title="Say something to the user : display buttons to tell if the treatment is being well taken or forgotten or stopped When the &quot;stopped&quot; button is clicked, we have to set :" alt="" coords="39,180,215,259"/>
+<area shape="rect" id="node2_7" href="simpleActions.AskButtonsAction-class.html#run" title="For each button is self.buttons, make a button after the name button" alt="" coords="17,135,236,155"/>
+<area shape="rect" id="node2" href="simpleActions.AskButtonsAction-class.html" title="Used to say something to the user using predefined buttons" alt="" coords="5,103,248,161"/>
+<area shape="rect" id="node3_8" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="35,38,219,58"/>
+<area shape="rect" id="node3_9" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="35,58,219,78"/>
+<area shape="rect" id="node3" href="rasa_core.actions.action.Action-class.html" title="Next action to be taken in response to a dialogue state." alt="" coords="23,5,231,84"/>
 </map>
-  <img src="uml_class_diagram_for_simpleac_36.gif" alt='' usemap="#uml_class_diagram_for_simpleac_36" ismap="ismap" class="graph-without-title" />
+  <img src="uml_class_diagram_for_simpleac_39.gif" alt='' usemap="#uml_class_diagram_for_simpleac_39" ismap="ismap" class="graph-without-title" />
 </center>
 </center>
 <hr />
+<p>Say something to the user : display buttons to tell if the treatment 
+  is being well taken or forgotten or stopped When the &quot;stopped&quot; 
+  button is clicked, we have to set :</p>
+  <ul>
+    <li>
+      dosing
+    </li>
+  </ul>
+  <p>to something, saying that we won't ask anything about it for this 
+  treatment.</p>
+
 <!-- ==================== INSTANCE METHODS ==================== -->
 <a name="section-InstanceMethods"></a>
 <table class="summary" border="1" cellpadding="3"
@@ -94,11 +107,10 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="simpleActions.AskTreatmentBeingTaken-class.html#name" class="summary-sig-name">name</a>(<span class="summary-sig-arg">self</span>)</span><br />
-      Returns:
-      the name of the action.</td>
+          <td><span class="summary-sig"><a href="simpleActions.AskTreatmentBeingTaken-class.html#init" class="summary-sig-name">init</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Set the name of the entity to ask</td>
           <td align="right" valign="top">
-            <span class="codelink"><a href="simpleActions-pysrc.html#AskTreatmentBeingTaken.name">source&nbsp;code</a></span>
+            <span class="codelink"><a href="simpleActions-pysrc.html#AskTreatmentBeingTaken.init">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -112,15 +124,11 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="simpleActions.AskTreatmentBeingTaken-class.html#run" class="summary-sig-name">run</a>(<span class="summary-sig-arg">self</span>,
-        <span class="summary-sig-arg">dispatcher</span>,
-        <span class="summary-sig-arg">tracker</span>,
-        <span class="summary-sig-arg">domain</span>)</span><br />
-      Say something to the user : display buttons to tell if the treatment 
-      is being well taken or forgotten or stopped When the 
-      &quot;stopped&quot; button is clicked, we have to set :</td>
+          <td><span class="summary-sig"><a href="simpleActions.AskTreatmentBeingTaken-class.html#name" class="summary-sig-name">name</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Returns:
+      the name of the action.</td>
           <td align="right" valign="top">
-            <span class="codelink"><a href="simpleActions-pysrc.html#AskTreatmentBeingTaken.run">source&nbsp;code</a></span>
+            <span class="codelink"><a href="simpleActions-pysrc.html#AskTreatmentBeingTaken.name">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -130,6 +138,9 @@
   </tr>
   <tr>
     <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="simpleActions.AskButtonsAction-class.html">AskButtonsAction</a></code></b>:
+      <code><a href="simpleActions.AskButtonsAction-class.html#run">run</a></code>
+      </p>
     <p class="indent-wrapped-lines"><b>Inherited from <code><a href="rasa_core.actions.action.Action-class.html">rasa_core.actions.action.Action</a></code></b>:
       <code><a href="rasa_core.actions.action.Action-class.html#__str__">__str__</a></code>,
       <code><a href="rasa_core.actions.action.Action-class.html#resets_topic">resets_topic</a></code>
@@ -194,6 +205,30 @@
   </td>
 </tr>
 </table>
+<a name="init"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">init</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="simpleActions-pysrc.html#AskTreatmentBeingTaken.init">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set the name of the entity to ask</p>
+  <p>Set the name of the intent</p>
+  <p>Set the list of available buttons to show to the user</p>
+  <dl class="fields">
+    <dt>Overrides:
+        <a href="simpleActions.AskButtonsAction-class.html#init">AskButtonsAction.init</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
 <a name="name"></a>
 <div>
 <table class="details" border="1" cellpadding="3"
@@ -214,40 +249,6 @@
         <dd>the name of the action.</dd>
     <dt>Overrides:
         <a href="rasa_core.actions.action.Action-class.html#name">rasa_core.actions.action.Action.name</a>
-    </dt>
-  </dl>
-</td></tr></table>
-</div>
-<a name="run"></a>
-<div>
-<table class="details" border="1" cellpadding="3"
-       cellspacing="0" width="100%" bgcolor="white">
-<tr><td>
-  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-  <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">run</span>(<span class="sig-arg">self</span>,
-        <span class="sig-arg">dispatcher</span>,
-        <span class="sig-arg">tracker</span>,
-        <span class="sig-arg">domain</span>)</span>
-  </h3>
-  </td><td align="right" valign="top"
-    ><span class="codelink"><a href="simpleActions-pysrc.html#AskTreatmentBeingTaken.run">source&nbsp;code</a></span>&nbsp;
-    </td>
-  </tr></table>
-  
-  <p>Say something to the user : display buttons to tell if the treatment 
-  is being well taken or forgotten or stopped When the &quot;stopped&quot; 
-  button is clicked, we have to set :</p>
-  <ul>
-    <li>
-      dosing
-    </li>
-  </ul>
-  <p>to something, saying that we won't ask anything about it for this 
-  treatment.</p>
-  <dl class="fields">
-    <dt>Overrides:
-        <a href="rasa_core.actions.action.Action-class.html#run">rasa_core.actions.action.Action.run</a>
     </dt>
   </dl>
 </td></tr></table>
@@ -281,7 +282,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Mon Jul 23 11:07:32 2018
+    Generated by Epydoc 3.0.1 on Mon Jul 23 14:16:05 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"
