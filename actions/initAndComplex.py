@@ -575,6 +575,7 @@ class SumUpSLots(Action):
 `\tsadness = {},`
 `\thappy = {},`
 `\tsocial = {},`
+`\trisk = {},`
 `\tdistance = {}, period = {}, duration = {}, time = {}, body_part = {},temperature = {}`""").format(
 tracker.get_slot("topic"), tracker.get_slot("requested_slot"),
 tracker.get_slot("activity"), tracker.get_slot("sport"), tracker.get_slot("activity_level"), tracker.get_slot("activity_duration"), tracker.get_slot("activity_period"), tracker.get_slot("activity_hard"), tracker.get_slot("activity_time"),tracker.get_slot("activity_distance"),
@@ -585,6 +586,7 @@ tracker.get_slot("infoPatient"), tracker.get_slot("addiction"), tracker.get_slot
 tracker.get_slot("emotional_sadness"),
 tracker.get_slot("emotional_hapiness"),
 tracker.get_slot("social"),
+tracker.get_slot("risk"),
 tracker.get_slot("distance"), tracker.get_slot("period"), tracker.get_slot("duration"), tracker.get_slot("time"), tracker.get_slot("body_part"), tracker.get_slot("temperature"))
           dispatcher.utter_message(response)
           conv.write("{ '"+str(date)+"' : [{'text': '"+response+"'}]},\n")

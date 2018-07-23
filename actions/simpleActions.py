@@ -87,7 +87,7 @@ class AskButtonsAction(Action):
             name_button = get_utterance(button+"_button",language)
             buttons_to_show.append(Button(title=name_button, payload="/"+self.intentName+"{\""+self.entityName+"\":\""+name_button.lower()+"\"}"))
         dispatcher.utter_button_message(message, buttons_to_show)
-
+s
 class AskMedicinal(AskBooleanAction):
     """
     Say something to the user : display buttons to tell if the treatment is medicinal or not
