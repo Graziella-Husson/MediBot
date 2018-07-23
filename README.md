@@ -180,3 +180,10 @@ In actions folder :
 ```
 epydoc askWhat.py complexSets.py formActions.py initAndComplex.py level_classifiers.py reminders.py resetSlots.py ressources.py simpleActions.py --config epydoc_config 
 ```
+
+For a class and package diagramm:
+
+```
+pyreverse -o pdf /*.py
+
+```
