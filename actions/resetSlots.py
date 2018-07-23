@@ -160,7 +160,9 @@ class ResetTreatmentSlots(Action):
         language = tracker.get_slot("language")
         global_score = tracker.get_slot("global_score")
         global_score+=2
-        dispatcher.utter_message(get_utterance("saved",language))
+        response = get_utterance("saved",language)
+        response += get_utterance("more_treatment",language)
+        dispatcher.utter_message(response)
         # TODO: save to DB
         return [SlotSet("global_score",global_score),
                 SlotSet("medicinal",None),

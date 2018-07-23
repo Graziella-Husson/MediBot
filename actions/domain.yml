@@ -127,6 +127,8 @@ slots:
     type: bool
   treatment_period:
     type: text
+  risk:
+    type: bool
 
 intents:
  - activity
@@ -143,6 +145,7 @@ intents:
  - incomprehension
  - treatment
  - infoPatient
+ - risk
 
 entities:
  - sport
@@ -181,6 +184,7 @@ actions:
  - formActions.Treatment
  - formActions.InfoPatient
  - formActions.CheckRequestedIntents
+ - formActions.Risk
  - complexSets.SetMultiple
  - askWhat.AskWhatPathology
  - askWhat.AskWhatPain
@@ -238,3 +242,5 @@ actions:
  - simpleActions.AskTreatmentPeriod
  - simpleActions.AskTreatmentPrescripted
  - simpleActions.AskTreatmentOk
+ - simpleActions.AskRisk
+

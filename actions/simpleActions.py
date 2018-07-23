@@ -757,3 +757,17 @@ class AskTreatmentOk(Action):
                    Button(title=no_button, payload="/treatment{\"treatment_ok\":false}")] 
         dispatcher.utter_button_message(message, buttons)
   
+class AskRisk(Action):
+    def name(self):
+        """
+        @return: the name of the action.
+        """
+        return 'utter_ask_risk'
+        
+    def run(self, dispatcher, tracker, domain):
+        """
+        Say something to the user : ask the user to talk about his risky behaviors
+        """ 
+        language = tracker.get_slot("language")
+        response = get_utterance("ask_risk",language)
+        dispatcher.utter_message(response)

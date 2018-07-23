@@ -815,7 +815,22 @@
 <a name="L756"></a><tt class="py-lineno">756</tt>  <tt class="py-line">        <tt class="py-name">buttons</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">Button</tt><tt class="py-op">(</tt><tt class="py-name">title</tt><tt class="py-op">=</tt><tt class="py-name">yes_button</tt><tt class="py-op">,</tt> <tt class="py-name">payload</tt><tt class="py-op">=</tt><tt class="py-string">"/treatment{\"treatment_ok\":true}"</tt><tt class="py-op">)</tt><tt class="py-op">,</tt>        </tt>
 <a name="L757"></a><tt class="py-lineno">757</tt>  <tt class="py-line">                   <tt class="py-name">Button</tt><tt class="py-op">(</tt><tt class="py-name">title</tt><tt class="py-op">=</tt><tt class="py-name">no_button</tt><tt class="py-op">,</tt> <tt class="py-name">payload</tt><tt class="py-op">=</tt><tt class="py-string">"/treatment{\"treatment_ok\":false}"</tt><tt class="py-op">)</tt><tt class="py-op">]</tt>  </tt>
 <a name="L758"></a><tt class="py-lineno">758</tt>  <tt class="py-line">        <tt class="py-name">dispatcher</tt><tt class="py-op">.</tt><tt class="py-name">utter_button_message</tt><tt class="py-op">(</tt><tt class="py-name">message</tt><tt class="py-op">,</tt> <tt class="py-name">buttons</tt><tt class="py-op">)</tt> </tt>
-</div></div><a name="L759"></a><tt class="py-lineno">759</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+</div></div><a name="L759"></a><tt class="py-lineno">759</tt>  <tt class="py-line">   </tt>
+<a name="AskRisk"></a><div id="AskRisk-def"><a name="L760"></a><tt class="py-lineno">760</tt> <a class="py-toggle" href="#" id="AskRisk-toggle" onclick="return toggle('AskRisk');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="simpleActions.AskRisk-class.html">AskRisk</a><tt class="py-op">(</tt><tt class="py-base-class">Action</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="AskRisk-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="AskRisk-expanded"><a name="AskRisk.name"></a><div id="AskRisk.name-def"><a name="L761"></a><tt class="py-lineno">761</tt> <a class="py-toggle" href="#" id="AskRisk.name-toggle" onclick="return toggle('AskRisk.name');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="simpleActions.AskRisk-class.html#name">name</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="AskRisk.name-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="AskRisk.name-expanded"><a name="L762"></a><tt class="py-lineno">762</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L763"></a><tt class="py-lineno">763</tt>  <tt class="py-line"><tt class="py-docstring">        @return: the name of the action.</tt> </tt>
+<a name="L764"></a><tt class="py-lineno">764</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L765"></a><tt class="py-lineno">765</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-string">'utter_ask_risk'</tt> </tt>
+</div><a name="L766"></a><tt class="py-lineno">766</tt>  <tt class="py-line">         </tt>
+<a name="AskRisk.run"></a><div id="AskRisk.run-def"><a name="L767"></a><tt class="py-lineno">767</tt> <a class="py-toggle" href="#" id="AskRisk.run-toggle" onclick="return toggle('AskRisk.run');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="simpleActions.AskRisk-class.html#run">run</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">dispatcher</tt><tt class="py-op">,</tt> <tt class="py-param">tracker</tt><tt class="py-op">,</tt> <tt class="py-param">domain</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="AskRisk.run-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="AskRisk.run-expanded"><a name="L768"></a><tt class="py-lineno">768</tt>  <tt class="py-line">        <tt class="py-docstring">"""</tt> </tt>
+<a name="L769"></a><tt class="py-lineno">769</tt>  <tt class="py-line"><tt class="py-docstring">        Say something to the user : ask the user to talk about his risky behaviors</tt> </tt>
+<a name="L770"></a><tt class="py-lineno">770</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt>  </tt>
+<a name="L771"></a><tt class="py-lineno">771</tt>  <tt class="py-line">        <tt class="py-name">language</tt> <tt class="py-op">=</tt> <tt class="py-name">tracker</tt><tt class="py-op">.</tt><tt class="py-name">get_slot</tt><tt class="py-op">(</tt><tt class="py-string">"language"</tt><tt class="py-op">)</tt> </tt>
+<a name="L772"></a><tt class="py-lineno">772</tt>  <tt class="py-line">        <tt class="py-name">response</tt> <tt class="py-op">=</tt> <tt id="link-69" class="py-name"><a title="ressources.get_utterance" class="py-name" href="#" onclick="return doclink('link-69', 'get_utterance', 'link-1');">get_utterance</a></tt><tt class="py-op">(</tt><tt class="py-string">"ask_risk"</tt><tt class="py-op">,</tt><tt class="py-name">language</tt><tt class="py-op">)</tt> </tt>
+<a name="L773"></a><tt class="py-lineno">773</tt>  <tt class="py-line">        <tt class="py-name">dispatcher</tt><tt class="py-op">.</tt><tt class="py-name">utter_message</tt><tt class="py-op">(</tt><tt class="py-name">response</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L774"></a><tt class="py-lineno">774</tt>  <tt class="py-line"> </tt><script type="text/javascript">
 <!--
 expandto(location.href);
 // -->
@@ -850,7 +865,7 @@ expandto(location.href);
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Fri Jul 20 11:00:31 2018
+    Generated by Epydoc 3.0.1 on Mon Jul 23 08:39:17 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

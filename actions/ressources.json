@@ -632,7 +632,7 @@
 		},
 	"ask_pathology_period":
 		{
-		"en":"Can you telle me the period of this pathology / side effect / symptom? Does it comes every day?",
+		"en":"Can you tell me the period of this pathology / side effect / symptom? Does it comes every day?",
 		"fr":"Pouvez vous me dire si cette pathologie / effet secondaire / symptôme revient de manière périodique ? Par exemple, tous les jours."
 		},
 	"ask_pathology_change":
@@ -824,8 +824,22 @@
 		{
 		"en":"\n\tYour pain began {}",
 		"fr":"\n\tVotre douleur a commencé {}"
+		},
+	"more_treatment":
+		{
+		"en":"Do you have another treatment to talk about?",
+		"fr":"Avez-vous un autre traitement duquel parler ?"
+		},
+	"ask_risk":
+		{
+		"en":"Can you talk about your risky behaviors, if you have any?",
+		"fr":"Pouvez-vous parler de vos comportements à risque, si vous en avez ?"
+		},
+	"sum_up_risk":
+		{
+		"en":"To summarize, you talked about your risky behaviors",
+		"fr":"Pour résumer, vous avez parlé de vos comportements à risques"
 		}
-	
 	}
 }
 
