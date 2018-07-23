@@ -81,20 +81,22 @@ class FormActionTriggerAction(FormAction):
                 return events
         events_from_submit = self.submit(dispatcher, temp_tracker, domain) or []
         return events + events_from_submit
-
+        
 class FormActionCalculusAndCore(FormActionTriggerAction):
     """
     A custom class heritating from FormActionTriggerAction. 
-    This type of action is used when the intent is containing a level calculated:
+    
+    When CALCULUS is True, this type of action is used when the intent is containing a level calculated:
         - pain (mild, moderate,severe)
         - activity (little, moderate, vigorous)
+        
+    Otherwise, this action will just show the informations collected
     """    
-    calculus = False
+    CALCULUS = False
            
     def calculus_action(self, tracker, dispatcher): 
         """
         @param tracker: used to get the language of the bot and get and set global score
-        @param language: language used by the bot 
         @param dispatcher: used to tell the patient that he talked about the intent 
         
         This action will sum up infos about the intent. If they're all set to None (no mandatory entity), just say that we talked about intent
@@ -105,6 +107,7 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
         """         
         language = tracker.get_slot("language")        
         level = tracker.get_slot(self.intentName+"_level")
+        to_return = []
         if not level == "Incorrect":
             mainSlotValue = tracker.get_slot(self.mainSlot)
             obligatories = get_obligatories()
@@ -115,7 +118,7 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
                     if level == None:
                         #get calculated level
                         level = self.classifier(mainSlotValue)                
-                        tracker.update(SlotSet(self.intentName+"_level",level))
+                        to_return.append(SlotSet(self.intentName+"_level",level))
                     level = get_utterance(level,language)
                     response += get_utterance(self.mainSlot,language).format(mainSlotValue, level)
                 response = self.sum_up_setted_slots(response,tracker,language)
@@ -123,8 +126,8 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
             except:
                 response = get_utterance(self.intentName+"_no_entity",language)
                 # TODO: add to database
-            tracker.update(SlotSet("topic",None))
-            tracker.update(SlotSet("requested_slot",None))
+            to_return.append(SlotSet("topic",None))
+            to_return.append(SlotSet("requested_slot",None))
             dispatcher.utter_message(response)
         else:
             buttons = []
@@ -133,26 +136,36 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
                 buttons.append(Button(title=level_title, payload="/"+self.intentName+"{\""+self.intentName+"_level"+"\":\""+level+"\"}"))
             message = get_utterance("ask_level_"+self.intentName,language)
             dispatcher.utter_button_message(message, buttons)
+        return to_return
 
     def submit(self, dispatcher, tracker, domain):
+        """
+        Init the class with informations in C{init} method
+        
+        When CALCULUS is True, call the C{calculus_action} method
+        
+        Otherwise, call the C{core_action} method
+        """    
         self.init()
-        if self.calculus:
-            self.calculus_action(tracker,dispatcher)
+        if self.CALCULUS:
+            to_return = self.calculus_action(tracker,dispatcher)
         else:
-            self.core_action(tracker,dispatcher)            
+            to_return = self.core_action(tracker,dispatcher)            
+        return to_return
         
     def core_action(self, tracker,dispatcher): 
         """
         @param tracker: used to get the language of the bot and get and set global score
-        @param language: language used by the bot 
         @param dispatcher: used to tell the patient that he talked about the intent
         
         This action will sum up infos about the intent. If they're all set to None (no mandatory entity), just say that we talked about intent
+        
         Ask if the informations are correct.
         """        
         language = tracker.get_slot("language")        
         global_score = tracker.get_slot('global_score')
         global_score+=2
+        to_return = []
         #TODO: save score
         try:
             obligatories = get_obligatories()
@@ -162,27 +175,38 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
             response += get_utterance("right",language)
         except:
             response = get_utterance("sum_up_"+self.intentName,language)
+            to_return.append(SlotSet(self.intentName,True))
         dispatcher.utter_message(response)
-        tracker.update(SlotSet("global_score",global_score))
-                   
+        to_return.append(SlotSet("global_score",global_score))
+        return to_return
+
     def sum_up_setted_slots(self, response,tracker,language):
-        raise NotImplementedError("a FormActionTriggerAction action must implement a sum_up_setted_slots method")
+        try:
+            obligatories = get_obligatories()
+            len(obligatories[self.intentName])>0
+            raise NotImplementedError("a FormActionCalculusAndCore action with linked entities must implement a sum_up_setted_slots method")
+        except :
+            pass
 
 class ActionFillSlotsPain(FormActionCalculusAndCore):
     
     def init(self):
         """
         Set the name of the intent
+        
         Set the slot used to level classify 
+        
         Set the list of labels for the level classifier
+        
         Set the classifier method
-        Set calculus to True
+        
+        Set CALCULUS to True
         """
         self.intentName = "pain"
         self.mainSlot = "pain_desc"
         self.levels = ["mild","moderate","severe"]
         self.classifier = get_pain_level
-        self.calculus = True        
+        self.CALCULUS = True        
         
     def name(self):
         """
@@ -193,8 +217,7 @@ class ActionFillSlotsPain(FormActionCalculusAndCore):
     @staticmethod
     def required_fields():
         """
-        @return: if the dict C{obligatories} from the C{init} class contains a list a the requested slot for the intent,
-        return it. If not, return an empty list.
+        @return: if the dict C{obligatories} from the C{init} class contains a list a the requested slot for the intent, returns it. If not, returns an empty list.
         """
         obligatories = get_obligatories()
         try:
@@ -213,8 +236,11 @@ class ActionFillSlotsPain(FormActionCalculusAndCore):
             - pain_change
             - pain_period
             - pain_time
+            
         The pain level is calculated with the method C{get_pain_level(pain_desc)}
+        
         If we want the pain level, we have to have the pain_desc slot mandatory. 
+        
         @return: all infos sum up response
         """
         response = get_response_simple(response, "pain_body_part",tracker,language)
@@ -229,16 +255,20 @@ class ActionFillSlotsSport(FormActionCalculusAndCore):
     def init(self):
         """
         Set the name of the intent
+        
         Set the slot used to level classify 
+        
         Set the list of labels for the level classifier
+        
         Set the classifier method
-        Set calculus to True
+        
+        Set CALCULUS to True
         """
         self.intentName = "activity"
         self.mainSlot = "sport"
         self.levels = ["little","moderate","vigorous"]
         self.classifier = get_physical_activity_level
-        self.calculus = True     
+        self.CALCULUS = True     
         
     def name(self):
         """
@@ -250,7 +280,7 @@ class ActionFillSlotsSport(FormActionCalculusAndCore):
     def required_fields():
         """
         @return: if the dict C{obligatories} from the C{init} class contains a list a the requested slot for the intent,
-        return it. If not, return an empty list.
+        returns it. If not, returns an empty list.
         """
         obligatories = get_obligatories()
         try:
@@ -268,8 +298,11 @@ class ActionFillSlotsSport(FormActionCalculusAndCore):
             - activity_distance
             - activity_hard (boolean)
             - activity_time
+            
         The sport level is calculated with the method C{get_physical_activity_level(sport)}
+        
         If we want the sport level, we have to have the sport slot mandatory.
+        
         @return: all infos sum up response
         """
         response = get_response_simple(response, "activity_duration",tracker,language)
@@ -297,11 +330,11 @@ class CheckRequestedIntents(FormActionTriggerAction):
     def required_fields():
         """
         @return: if the dict C{obligatories} from the C{init} class contains a list a the requested slot for the intent,
-        return it. If not, return an empty list.
+        returns it. If not, returns an empty list.
         """
         obligatories = get_obligatories()
         try:
-            return obligatories["action_check_intents"]
+            return obligatories["requested_intent"]
         except:
             return []
     
@@ -313,7 +346,7 @@ class CheckRequestedIntents(FormActionTriggerAction):
         language = tracker.get_slot("language")
         dispatcher.utter_message(get_utterance("requested_intent",language))
 
-class Sadness(FormActionTriggerAction):
+class Sadness(FormActionCalculusAndCore):
     
     def init(self):
         """
@@ -331,30 +364,15 @@ class Sadness(FormActionTriggerAction):
     def required_fields():
         """
         @return: if the dict C{obligatories} from the C{init} class contains a list a the requested slot for the intent,
-        return it. If not, return an empty list.
+        returns it. If not, returns an empty list.
         """
         obligatories = get_obligatories()
         try:
             return obligatories["sum_up_emotionnal_sadness"]
         except:
             return []
-        
-    def submit(self, dispatcher, tracker, domain):  
-        """
-        @param tracker: used to get the language of the bot and get and set global score
-        @param dispatcher: used to tell the patient that he talked about the intent 'emotional_sadness'.
-        
-        No entities for this intent for now.
-        """
-        self.init()
-        language = tracker.get_slot("language")
-        global_score = tracker.get_slot('global_score')
-        global_score+=1
-        #TODO: save score        
-        dispatcher.utter_message(get_utterance("sum_up_sadness",language))
-        tracker.update(SlotSet("global_score",global_score))
       
-class Happy(FormActionTriggerAction):
+class Happy(FormActionCalculusAndCore):
     
     def init(self):
         """
@@ -379,23 +397,8 @@ class Happy(FormActionTriggerAction):
             return obligatories["sum_up_emotional_hapiness"]
         except:
             return []
-        
-    def submit(self, dispatcher, tracker, domain):  
-        """
-        @param tracker: used to get the language of the bot and get and set global score
-        @param dispatcher: used to tell the patient that he talked about the intent 'emotional_hapiness'.
-        
-        No entities for this intent for now.
-        """
-        self.init()
-        language = tracker.get_slot("language")
-        global_score = tracker.get_slot('global_score')
-        global_score+=3
-        #TODO: save score
-        dispatcher.utter_message(get_utterance("sum_up_happiness",language))
-        tracker.update(SlotSet("global_score",global_score))
 
-class Social(FormActionTriggerAction):
+class Social(FormActionCalculusAndCore):
     
     def init(self):
         """
@@ -413,28 +416,13 @@ class Social(FormActionTriggerAction):
     def required_fields():
         """
         @return: if the dict C{obligatories} from the C{init} class contains a list a the requested slot for the intent,
-        return it. If not, return an empty list.
+        returns it. If not, returns an empty list.
         """
         obligatories = get_obligatories()
         try:
             return obligatories["social"]
         except:
             return []
-        
-    def submit(self, dispatcher, tracker, domain):  
-        """
-        @param tracker: used to get the language of the bot and get and set global score
-        @param dispatcher: used to tell the patient that he talked about the intent 'social'.
-        
-        No entities for this intent for now.
-        """
-        language = tracker.get_slot("language")
-        global_score = tracker.get_slot('global_score')
-        global_score+=2
-        #TODO: save score
-        dispatcher.utter_message(get_utterance("sum_up_social",language))
-        tracker.update(SlotSet("social",True))
-        tracker.update(SlotSet("global_score",global_score))
         
 class Pathology(FormActionCalculusAndCore):
     
@@ -454,7 +442,7 @@ class Pathology(FormActionCalculusAndCore):
     def required_fields():
         """
         @return: if the dict C{obligatories} from the C{init} class contains a list a the requested slot for the intent,
-        return it. If not, return an empty list.
+        returns it. If not, returns an empty list.
         """
         obligatories = get_obligatories()
         try:
@@ -472,7 +460,9 @@ class Pathology(FormActionCalculusAndCore):
             - pathology_period
             - pathology_treatment_linked (boolean)
         This action will sum up these infos. If they're all set to None (no mandatory entity), just say that we talked about a pathology
+        
         Ask if the informations are correct.
+        
         @return: all infos sum up response
         """
         response = get_response_simple(response, "symtoms",tracker,language)
@@ -502,7 +492,7 @@ class Treatment(FormActionCalculusAndCore):
     def required_fields():
         """
         @return: if the dict C{obligatories} from the C{init} class contains a list a the requested slot for the intent,
-        return it. If not, return an empty list.
+        returns it. If not, returns an empty list.
         """
         obligatories = get_obligatories()
         try:
@@ -524,7 +514,9 @@ class Treatment(FormActionCalculusAndCore):
             - treatment_period
 
         This action will sum up these infos. If they're all set to None (no mandatory entity), just say that we talked about a treatment
+        
         Ask if the informations are correct.
+        
         @return: all infos sum up response
         """
         response = get_response_boolean(response, "medicinal",tracker,language)
@@ -556,7 +548,7 @@ class InfoPatient(FormActionCalculusAndCore):
     def required_fields():
         """
         @return: if the dict C{obligatories} from the C{init} class contains a list a the requested slot for the intent,
-        return it. If not, return an empty list.
+        returns it. If not, returns an empty list.
         """
         obligatories = get_obligatories()
         try:
@@ -576,7 +568,9 @@ class InfoPatient(FormActionCalculusAndCore):
             - blood_pressure
             - infoPatient_time
         This action will sum up these infos. If they're all set to None (no mandatory entity), just say that we talked about a personal info
+        
         Ask if the informations are correct.
+        
         @return: all infos sum up response
         """
         response = get_response_simple(response, "addiction",tracker,language)
@@ -589,7 +583,7 @@ class InfoPatient(FormActionCalculusAndCore):
         response = get_response_simple(response, "infoPatient_time",tracker,language)
         return response
 
-class Risk(FormActionTriggerAction):
+class Risk(FormActionCalculusAndCore):
     
     def init(self):
         """
@@ -607,26 +601,10 @@ class Risk(FormActionTriggerAction):
     def required_fields():
         """
         @return: if the dict C{obligatories} from the C{init} class contains a list a the requested slot for the intent,
-        return it. If not, return an empty list.
+        returns it. If not, returns an empty list.
         """
         obligatories = get_obligatories()
         try:
             return obligatories["risk"]
         except:
             return []
-        
-    def submit(self, dispatcher, tracker, domain):  
-        """
-        @param tracker: used to get the language of the bot and get and set global score
-        @param dispatcher: used to tell the patient that he talked about the intent 'social'.
-        
-        No entities for this intent for now.
-        """
-        self.init()
-        language = tracker.get_slot("language")
-        global_score = tracker.get_slot('global_score')
-        global_score+=2
-        #TODO: save score
-        dispatcher.utter_message(get_utterance("sum_up_risk",language))
-        tracker.update(SlotSet("risk",True))
-        tracker.update(SlotSet("global_score",global_score))

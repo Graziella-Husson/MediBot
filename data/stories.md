@@ -6716,3 +6716,678 @@
     - sum_up_slots
     - export
 
+## Generated Story 406091104660128323
+* risk
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "en"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "risk"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_risk
+    - sum_up_slots
+    - export
+
+## Generated Story 2669031986072366677
+* pathology
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_pathology
+    - slot{"requested_slot": "symtoms"}
+    - utter_ask_symtoms
+    - sum_up_slots
+* pathology{"body_part": "leg", "period": "every day", "time": "yesterday", "symtoms": "test"}
+    - slot{"body_part": "leg"}
+    - slot{"period": "every day"}
+    - slot{"symtoms": "test"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"pathology_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"pathology_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"pathology_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pathology
+    - slot{"symtoms": "test"}
+    - slot{"requested_slot": "pathology_treatment_linked"}
+    - utter_ask_pathology_treatment_linked
+    - sum_up_slots
+* pathology{"pathology_treatment_linked": false}
+    - slot{"pathology_treatment_linked": false}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_pathology
+    - slot{"pathology_treatment_linked": false}
+    - slot{"requested_slot": "pathology_change"}
+    - utter_ask_pathology_change
+    - sum_up_slots
+* pathology{"pathology_change": true}
+    - slot{"pathology_change": true}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_pathology
+    - slot{"pathology_change": true}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_pathology
+    - slot{"global_score": 1}
+    - slot{"symtoms": null}
+    - slot{"pathology_body_part": null}
+    - slot{"pathology_time": null}
+    - slot{"pathology_change": null}
+    - slot{"pathology_period": null}
+    - slot{"pathology_treatment_linked": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"pathology": true}
+    - sum_up_slots
+* treatment{"time": "yesterday", "dosing": "dosing", "drug": "drug", "period": "every day"}
+    - slot{"dosing": "dosing"}
+    - slot{"drug": "drug"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - sum_up_treatment
+    - slot{"drug": "drug"}
+    - slot{"dosing": "dosing"}
+    - slot{"requested_slot": "medicinal"}
+    - utter_ask_medicinal
+    - save_conv
+    - slot{"topic": "treatment"}
+    - sum_up_pathology
+    - slot{"requested_slot": "pathology_period"}
+    - utter_ask_pathology_period
+    - sum_up_slots
+
+## Generated Story -7746088067153613180
+* treatment{"medicinal": true, "dosing": "dosing", "drug": "drug"}
+    - slot{"dosing": "dosing"}
+    - slot{"drug": "drug"}
+    - slot{"medicinal": true}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - sum_up_treatment
+    - slot{"medicinal": true}
+    - slot{"drug": "drug"}
+    - slot{"dosing": "dosing"}
+    - slot{"requested_slot": "treatment_being_taken"}
+    - utter_ask_treatment_being_taken
+    - sum_up_slots
+* treatment{"treatment_being_taken": "taken"}
+    - slot{"treatment_being_taken": "taken"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_pathology
+    - slot{"requested_slot": "pathology_treatment_linked"}
+    - utter_ask_pathology_treatment_linked
+    - sum_up_slots
+* pathology{"pathology_treatment_linked": true}
+    - slot{"pathology_treatment_linked": true}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"requested_slot": "treatment_ok"}
+    - utter_ask_treatment_ok
+    - sum_up_slots
+* treatment{"treatment_ok": false}
+    - slot{"treatment_ok": false}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_ok": false}
+    - slot{"requested_slot": "treatment_time"}
+    - utter_ask_treatment_time
+    - sum_up_slots
+* treatment
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"requested_slot": "treatment_time"}
+    - utter_ask_treatment_time
+    - sum_up_slots
+* treatment{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"treatment_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"treatment_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_treatment
+    - slot{"requested_slot": "treatment_overdosage"}
+    - utter_ask_treatment_overdosage
+    - sum_up_slots
+* treatment{"treatment_overdosage": "non overdosed"}
+    - slot{"treatment_overdosage": "non overdosed"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_overdosage": "non overdosed"}
+    - slot{"requested_slot": "treatment_prescripted"}
+    - utter_ask_treatment_prescripted
+    - sum_up_slots
+* treatment{"treatment_prescripted": true}
+    - slot{"treatment_prescripted": true}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"treatment_prescripted": true}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_treatment
+    - slot{"global_score": 2}
+    - slot{"medicinal": null}
+    - slot{"drug": null}
+    - slot{"treatment_being_taken": null}
+    - slot{"dosing": null}
+    - slot{"treatment_time": null}
+    - slot{"treatment_prescripted": null}
+    - slot{"treatment_ok": null}
+    - slot{"treatment_overdosage": null}
+    - slot{"treatment_period": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"treatment": true}
+    - sum_up_slots
+* infoPatient{"addiction": "cigarette", "weight": "60kg", "distance": "1m60", "temperature": "38", "heart_rate": "90bpm", "gender": "woman", "blood_pressure": "high", "time": "yesterday"}
+    - slot{"addiction": "cigarette"}
+    - slot{"blood_pressure": "high"}
+    - slot{"distance": "1m60"}
+    - slot{"gender": "woman"}
+    - slot{"heart_rate": "90bpm"}
+    - slot{"temperature": "38"}
+    - slot{"time": "yesterday"}
+    - slot{"weight": "60kg"}
+    - save_conv
+    - slot{"topic": "infoPatient"}
+    - slot{"infoPatient_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"infoPatient_distance": "1m60"}
+    - slot{"distance": null}
+    - slot{"infoPatient_temperature": "38"}
+    - slot{"temperature": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_info_patient
+    - slot{"heart_rate": "90bpm"}
+    - slot{"weight": "60kg"}
+    - slot{"blood_pressure": "high"}
+    - slot{"gender": "woman"}
+    - sum_up_slots
+* risk
+    - save_conv
+    - slot{"topic": "risk"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_risk
+    - sum_up_slots
+* infoPatient
+    - save_conv
+    - slot{"topic": "infoPatient"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_info_patient
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_info_patient
+    - slot{"addiction": null}
+    - slot{"weight": null}
+    - slot{"infoPatient_distance": null}
+    - slot{"gender": null}
+    - slot{"infoPatient_temperature": null}
+    - slot{"heart_rate": null}
+    - slot{"blood_pressure": null}
+    - slot{"infoPatient_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"infoPatient": true}
+    - sum_up_slots
+    - export
+
+## Generated Story -2607548998516213401
+* activity{"distance": "1km", "sport": "gym", "time": "yesterday", "duration": "1h", "period": "every day"}
+    - slot{"distance": "1km"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"sport": "gym"}
+    - slot{"time": "yesterday"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"activity_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"activity_distance": "1km"}
+    - slot{"distance": null}
+    - slot{"activity_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"activity_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - action_check_slots_sport
+    - slot{"sport": "gym"}
+    - slot{"requested_slot": "activity_hard"}
+    - utter_ask_activity_hard
+    - sum_up_slots
+* activity{"activity_hard": true}
+    - slot{"activity_hard": true}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - action_check_slots_sport
+    - slot{"activity_hard": true}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - reset_slots_sport
+    - slot{"global_score": 0}
+    - slot{"activity_hard": null}
+    - slot{"activity_duration": null}
+    - slot{"activity_level": null}
+    - slot{"sport": null}
+    - slot{"activity_distance": null}
+    - slot{"activity_period": null}
+    - slot{"activity_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"activity": true}
+    - sum_up_slots
+* pain{"duration": "1h", "pain_desc": "sharp", "time": "yesterday", "body_part": "leg", "period": "every day"}
+    - slot{"body_part": "leg"}
+    - slot{"duration": "1h"}
+    - slot{"pain_desc": "sharp"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"pain_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"pain_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"pain_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - action_check_slots_pain
+    - slot{"pain_desc": "sharp"}
+    - slot{"requested_slot": "pain_change"}
+    - utter_ask_pain_change
+    - sum_up_slots
+* pain{"pain_change": "continuous"}
+    - slot{"pain_change": "continuous"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - action_check_slots_pain
+    - slot{"pain_change": "continuous"}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - reset_slots_pain
+    - slot{"global_score": 0}
+    - slot{"pain_duration": null}
+    - slot{"pain_desc": null}
+    - slot{"pain_body_part": null}
+    - slot{"pain_change": null}
+    - slot{"pain_period": null}
+    - slot{"pain_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"pain": true}
+    - slot{"pain_level": null}
+    - sum_up_slots
+    - export
+
+## Generated Story 8613180928437451314
+* social
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "social"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_social
+    - sum_up_slots
+* social
+    - save_conv
+    - slot{"topic": "social"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_social
+    - sum_up_slots
+    - export
+
+## Generated Story 5654598305061139926
+* risk
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "risk"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_risk
+    - slot{"risk": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story -2607548998516213401
+* activity{"distance": "1km", "sport": "gym", "time": "yesterday", "duration": "1h", "period": "every day"}
+    - slot{"distance": "1km"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"sport": "gym"}
+    - slot{"time": "yesterday"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"activity_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"activity_distance": "1km"}
+    - slot{"distance": null}
+    - slot{"activity_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"activity_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - action_check_slots_sport
+    - slot{"sport": "gym"}
+    - slot{"requested_slot": "activity_hard"}
+    - utter_ask_activity_hard
+    - sum_up_slots
+* activity{"activity_hard": true}
+    - slot{"activity_hard": true}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - action_check_slots_sport
+    - slot{"activity_hard": true}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - reset_slots_sport
+    - slot{"global_score": 0}
+    - slot{"activity_hard": null}
+    - slot{"activity_duration": null}
+    - slot{"activity_level": null}
+    - slot{"sport": null}
+    - slot{"activity_distance": null}
+    - slot{"activity_period": null}
+    - slot{"activity_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"activity": true}
+    - sum_up_slots
+* pain{"duration": "1h", "pain_desc": "sharp", "time": "yesterday", "body_part": "leg", "period": "every day"}
+    - slot{"body_part": "leg"}
+    - slot{"duration": "1h"}
+    - slot{"pain_desc": "sharp"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"pain_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"pain_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"pain_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - action_check_slots_pain
+    - slot{"pain_desc": "sharp"}
+    - slot{"requested_slot": "pain_change"}
+    - utter_ask_pain_change
+    - sum_up_slots
+* pain{"pain_change": "continuous"}
+    - slot{"pain_change": "continuous"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - action_check_slots_pain
+    - slot{"pain_change": "continuous"}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - reset_slots_pain
+    - slot{"global_score": 0}
+    - slot{"pain_duration": null}
+    - slot{"pain_desc": null}
+    - slot{"pain_body_part": null}
+    - slot{"pain_change": null}
+    - slot{"pain_period": null}
+    - slot{"pain_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"pain": true}
+    - slot{"pain_level": null}
+    - sum_up_slots
+    - export
+
+## Generated Story 8613180928437451314
+* social
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "social"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_social
+    - sum_up_slots
+* social
+    - save_conv
+    - slot{"topic": "social"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_social
+    - sum_up_slots
+    - export
+
+## Generated Story 5654598305061139926
+* risk
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "risk"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_risk
+    - slot{"risk": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+

@@ -2,843 +2,843 @@
 	{
 	"fallback":
 		{
-		"en":"Sorry, I did not understand what you said...\n`This is a fallback for NLU part (intent fallback)`",
-		"fr":"Désolé, je n'ai pas compris ce que vous avez dit... \n `Ceci est un fallback de la partie NLU (intention fallback)`"
+		"ENG":"Sorry, I did not understand what you said...\n`This is a fallback for NLU part (intent fallback)`",
+		"FRA":"Désolé, je n'ai pas compris ce que vous avez dit... \n `Ceci est un fallback de la partie NLU (intention fallback)`"
 		},
 	"emergency":
 		{
-		"en":"It seems that you have an emeregency. I contacted someone.",
-		"fr":"Il semblerait que vous ayez une urgence. J'ai contacté quelqu'un."
+		"ENG":"It seems that you have an emeregency. I contacted someone.",
+		"FRA":"Il semblerait que vous ayez une urgence. J'ai contacté quelqu'un."
 		},
 	"exit":
 		{
-		"en":"Talk to you later.",
-		"fr":"A plus tard!"
+		"ENG":"Talk to you later.",
+		"FRA":"A plus tard!"
 		},
 	"welcome":
 		{
-		"en":"Nice to meet you! My name is",
-		"fr":"Ravi de vous rencontrer ! Mon nom est"
+		"ENG":"Nice to meet you! My name is",
+		"FRA":"Ravi de vous rencontrer ! Mon nom est"
 		},
 	"score":
 		{
-		"en":"This session score was of {} points.",
-		"fr":"Le score de cette session est de {} points."
+		"ENG":"This session score was of {} points.",
+		"FRA":"Le score de cette session est de {} points."
 		},
 	"not_broached":
 		{
-		"en":"The following intents were not broached: ",
-		"fr":"Les intentions suivantes n'ont pas été abordées: "
+		"ENG":"The following intents were not broached: ",
+		"FRA":"Les intentions suivantes n'ont pas été abordées: "
 		},
 	"change_session":
 		{
-		"en":"We just changed session! :smile:\nNow, let's talk!",
-		"fr":"Nous venons de changer de session ! :smile:\nParlons !"
+		"ENG":"We just changed session! :smile:\nNow, let's talk!",
+		"FRA":"Nous venons de changer de session ! :smile:\nParlons !"
 		},
 	"last_session":
 		{
-		"en":"It was the last session! Goodbye and thank you! :smile:",
-		"fr":"C'était la dernière session! Au revoir et merci de votre participation ! :smile:"
+		"ENG":"It was the last session! Goodbye and thank you! :smile:",
+		"FRA":"C'était la dernière session! Au revoir et merci de votre participation ! :smile:"
 		},
 	"user_reminder":
 		{
-		"en":"Hey! It's been a while! We have to talk about you :smile:",
-		"fr":"Hey ! Ca fait un moment qu'on ne s'est pas parlé ! :smile:"
+		"ENG":"Hey! It's been a while! We have to talk about you :smile:",
+		"FRA":"Hey ! Ca fait un moment qu'on ne s'est pas parlé ! :smile:"
 		},
 	"count_user_reminder":
 		{
-		"en":"It seems that you did not response for {} times. I contacted someone. I hope you're ok.",
-		"fr":"Il semblerait que vous n'avez pas répondu {} fois. J'ai contacté quelqu'un. J'espère que vous allez bien."
+		"ENG":"It seems that you did not response for {} times. I contacted someone. I hope you're ok.",
+		"FRA":"Il semblerait que vous n'avez pas répondu {} fois. J'ai contacté quelqu'un. J'espère que vous allez bien."
 		},
 	"talk":
 		{
-		"en":"Hey! We have to talk about you :smile: \n",
-		"fr":"Hey ! Nous devons parler de vous ! :smile: \n"
+		"ENG":"Hey! We have to talk about you :smile: \n",
+		"FRA":"Hey ! Nous devons parler de vous ! :smile: \n"
 		},
 	"so_far":
 		{
-		"en":"So far, we talked about:\n",
-		"fr":"Jusqu'ici, nous avons parlé de:\n"
+		"ENG":"So far, we talked about:\n",
+		"FRA":"Jusqu'ici, nous avons parlé de:\n"
 		},
 	"social":
 		{
-		"en":"\n\tYour socialness",
-		"fr":"\n\tVotre vie sociale"
+		"ENG":"\n\tYour socialness",
+		"FRA":"\n\tVotre vie sociale"
 		},
 	"activity":
 		{
-		"en":"\n\tYour physical activities",
-		"fr":"\n\tVos activités physiques"
+		"ENG":"\n\tYour physical activities",
+		"FRA":"\n\tVos activités physiques"
 		},
 	"pain":
 		{
-		"en":"\n\tYour pain",
-		"fr":"\n\tVotre douleur"
+		"ENG":"\n\tYour pain",
+		"FRA":"\n\tVotre douleur"
 		},
 	"emotional_sadness":
 		{
-		"en":"\n\tYour sadness",
-		"fr":"\n\tVotre tristesse"
+		"ENG":"\n\tYour sadness",
+		"FRA":"\n\tVotre tristesse"
 		},
 	"emotional_hapiness":
 		{
-		"en":"\n\tYour happiness",
-		"fr":"\n\tVotre bonheur"
+		"ENG":"\n\tYour happiness",
+		"FRA":"\n\tVotre bonheur"
 		},
 	"pathology":
 		{
-		"en":"\n\tYour pathology (or side effects)",
-		"fr":"\n\tVotre pathologie (ou effets secondaires)"
+		"ENG":"\n\tYour pathology (or side effects)",
+		"FRA":"\n\tVotre pathologie (ou effets secondaires)"
 		},
 	"treatment":
 		{
-		"en":"\n\tYour treatment",
-		"fr":"\n\tVotre traitement"
+		"ENG":"\n\tYour treatment",
+		"FRA":"\n\tVotre traitement"
 		},
 	"infoPatient":
 		{
-		"en":"\n\tYour personal informations",
-		"fr":"\n\tVos informations personnelles"
+		"ENG":"\n\tYour personal informations",
+		"FRA":"\n\tVos informations personnelles"
 		},
 	"user_reminder_little":
 		{
-		"en":"Are you still there?",
-		"fr":"Vous êtes toujours là ?"
+		"ENG":"Are you still there?",
+		"FRA":"Vous êtes toujours là ?"
 		},
 	"saved":
 		{
-		"en":"Saved!",
-		"fr":"Sauvegardé!"
+		"ENG":"Saved!",
+		"FRA":"Sauvegardé!"
 		},
 	"ask_what":
 		{
-		"en":"Ok. So, tell me what's wrong? Click on a button or tell me above!",
-		"fr":"Ok. Qu'est-ce qui n'est pas correct ? Cliquez sur un bouton ou dites-le en dessous !"
+		"ENG":"Ok. So, tell me what's wrong? Click on a button or tell me above!",
+		"FRA":"Ok. Qu'est-ce qui n'est pas correct ? Cliquez sur un bouton ou dites-le en dessous !"
 		},
 	"sum_up":
 		{
-		"en":"To sum up:\n",
-		"fr":"Pour résumer : \n"
+		"ENG":"To sum up:\n",
+		"FRA":"Pour résumer : \n"
 		},
 	"pain_desc":
 		{
-		"en":"\n\tYou have some {} pain (it's considered has a {} pain).",
-		"fr":"\n\tVous resentez une douleur {} (considérée comme une douleur {})."
+		"ENG":"\n\tYou have some {} pain (it's considered has a {} pain).",
+		"FRA":"\n\tVous resentez une douleur {} (considérée comme une douleur {})."
 		},
 	"pain_body_part":
 		{
-		"en":"\n\tThe pain is localized at {}.",
-		"fr":"\n\tLa douleur est localisée à {}."
+		"ENG":"\n\tThe pain is localized at {}.",
+		"FRA":"\n\tLa douleur est localisée à {}."
 		},
 	"pain_duration":
 		{
-		"en":"\n\tThe duration of this pain is of {}.",
-		"fr":"\n\tLa durée de cette douleur est de {}."
+		"ENG":"\n\tThe duration of this pain is of {}.",
+		"FRA":"\n\tLa durée de cette douleur est de {}."
 		},
 	"pain_period":
 		{
-		"en":"\n\tThe pain period/recurrence is {}.",
-		"fr":"\n\tLa période/récurrence de cette douleur est de {}."
+		"ENG":"\n\tThe pain period/recurrence is {}.",
+		"FRA":"\n\tLa période/récurrence de cette douleur est de {}."
 		},
 	"pain_change":
 		{
-		"en":"\n\tThe pain seems to be {}.",
-		"fr":"\n\tLa douleur semble {}."
+		"ENG":"\n\tThe pain seems to be {}.",
+		"FRA":"\n\tLa douleur semble {}."
 		},
 	"right":
 		{
-		"en":"\nIs it right?",
-		"fr":"\nEst-ce exact ?"
+		"ENG":"\nIs it right?",
+		"FRA":"\nEst-ce exact ?"
 		},
 	"pain_no_entity":
 		{
-		"en":"So, you feel some pain.",
-		"fr":"Donc, vous ressentez une douleur."
+		"ENG":"So, you feel some pain.",
+		"FRA":"Donc, vous ressentez une douleur."
 		},
 	"mild":
 		{
-		"en":"Mild",
-		"fr":"Faible"
+		"ENG":"Mild",
+		"FRA":"Faible"
 		},
 	"moderate":
 		{
-		"en":"Moderate",
-		"fr":"Modérée"
+		"ENG":"Moderate",
+		"FRA":"Modérée"
 		},
 	"severe":
 		{
-		"en":"Severe",
-		"fr":"Sévère"
+		"ENG":"Severe",
+		"FRA":"Sévère"
 		},
 	"ask_level_pain":
 		{
-		"en":"I failed to calculate your pain level. Can you tell me it? Click on one of the buttons above.",
-		"fr":"Je n'ai pas réussi à calculer le niveau de douleur. Pouvez-vous me le dire en cliquant sur le bon bouton ?"
+		"ENG":"I failed to calculate your pain level. Can you tell me it? Click on one of the buttons above.",
+		"FRA":"Je n'ai pas réussi à calculer le niveau de douleur. Pouvez-vous me le dire en cliquant sur le bon bouton ?"
 		},
 	"sport":
 		{
-		"en":"\n\tYou did some {} physical activity. The physical activity detected is {}.",
-		"fr":"\n\tVous avez fait une activité physique jugée {}. L'activité détectée est {}."
+		"ENG":"\n\tYou did some {} physical activity. The physical activity detected is {}.",
+		"FRA":"\n\tVous avez fait une activité physique jugée {}. L'activité détectée est {}."
 		},
 	"activity_duration":
 		{
-		"en":"\n\tThe physical activity duration is of {}.",
-		"fr":"\n\tLa durée de l'activité physique est de {}."
+		"ENG":"\n\tThe physical activity duration is of {}.",
+		"FRA":"\n\tLa durée de l'activité physique est de {}."
 		},
 	"activity_distance":
 		{
-		"en":"\n\tThe physical activity distance you did is of {}.",
-		"fr":"\n\tLa distance parcourue est de {}."
+		"ENG":"\n\tThe physical activity distance you did is of {}.",
+		"FRA":"\n\tLa distance parcourue est de {}."
 		},
 	"activity_period":
 		{
-		"en":"\n\tThe physical activity period/recurrence detected is {}.",
-		"fr":"\n\tLa période/récurrence de l'activité physique détectée est de {}."
+		"ENG":"\n\tThe physical activity period/recurrence detected is {}.",
+		"FRA":"\n\tLa période/récurrence de l'activité physique détectée est de {}."
 		},
 	"activity_hard_true":
 		{
-		"en":"\n\tYour activity was hard because of your general health.",
-		"fr":"\n\tVotre activité était dure à performer à cause de votre état de santé général."
+		"ENG":"\n\tYour activity was hard because of your general health.",
+		"FRA":"\n\tVotre activité était dure à performer à cause de votre état de santé général."
 		},
 	"activity_hard_false":
 		{
-		"en":"\n\tYour general health did not make your activity harder.",
-		"fr":"\n\tVotre état de santé général n'a pas fait que votre activité était dure à performer."
+		"ENG":"\n\tYour general health did not make your activity harder.",
+		"FRA":"\n\tVotre état de santé général n'a pas fait que votre activité était dure à performer."
 		},
 	"activity_no_entity":
 		{
-		"en":"So, you did some physical activities.",
-		"fr":"Donc, vous avez fait une activité physique"
+		"ENG":"So, you did some physical activities.",
+		"FRA":"Donc, vous avez fait une activité physique"
 		},
 	"little":
 		{
-		"en":"Little",
-		"fr":"Peu intensive"
+		"ENG":"Little",
+		"FRA":"Peu intensive"
 		},
 	"vigorous":
 		{
-		"en":"Vigorous",
-		"fr":"Vigoureuse"
+		"ENG":"Vigorous",
+		"FRA":"Vigoureuse"
 		},
 	"ask_level_activity":
 		{
-		"en":"I failed to calculate your physical activity level. Can you tell me it? Click on one of the buttons above.",
-		"fr":"Je n'ai pas réussi à calculer le niveau de l'activité physique citée. Pouvez-vous me le dire en cliquant sur le bon bouton ?"
+		"ENG":"I failed to calculate your physical activity level. Can you tell me it? Click on one of the buttons above.",
+		"FRA":"Je n'ai pas réussi à calculer le niveau de l'activité physique citée. Pouvez-vous me le dire en cliquant sur le bon bouton ?"
 		},
 	"requested_intent":
 		{
-		"en":"We talked about everything we had to! But feel free to talk to me about everything else!",
-		"fr":"Nous avons parlé de tous les sujets que nous devions aborder ! Sentez-vous libre de continuer de discuter !"
+		"ENG":"We talked about everything we had to! But feel free to talk to me about everything else!",
+		"FRA":"Nous avons parlé de tous les sujets que nous devions aborder ! Sentez-vous libre de continuer de discuter !"
 		},
 	"sum_up_sadness":
 		{
-		"en":"It seems that you are in a bad mood... Do you want to talk about it in details?",
-		"fr":"Il semblerait que vous soyez dans une mauvaise passe... Voulez-vous en parler plus en détails ?"
+		"ENG":"It seems that you are in a bad mood... Do you want to talk about it in details?",
+		"FRA":"Il semblerait que vous soyez dans une mauvaise passe... Voulez-vous en parler plus en détails ?"
 		},
 	"sum_up_happiness":
 		{
-		"en":"Great! You are in a good mood!",
-		"fr":"Génial ! Vous semblez de bonne humeur !"
+		"ENG":"Great! You are in a good mood!",
+		"FRA":"Génial ! Vous semblez de bonne humeur !"
 		},
 	"sum_up_social":
 		{
-		"en":"It seems that you talked about a social thing.",
-		"fr":"Il semblerait que vous ayez parlé d'une activité sociale."
+		"ENG":"It seems that you talked about a social thing.",
+		"FRA":"Il semblerait que vous ayez parlé d'une activité sociale."
 		},
 	"symtoms":
 		{
-		"en":"\n\tYou have some symptoms : {}",
-		"fr":"\n\tVous avez le(s) symptôme(s) suivant(s) : {}"
+		"ENG":"\n\tYou have some symptoms : {}",
+		"FRA":"\n\tVous avez le(s) symptôme(s) suivant(s) : {}"
 		},
 	"pathology_body_part":
 		{
-		"en":"\n\tThis symptom is localized at {}",
-		"fr":"\n\tCe(s) symptôme(s) est localisé à {}"
+		"ENG":"\n\tThis symptom is localized at {}",
+		"FRA":"\n\tCe(s) symptôme(s) est localisé à {}"
 		},
 	"sum_up_pathology":
 		{
-		"en":"It seems that you talked about a pathology.",
-		"fr":"Il semblerait que vous avez parlé d'une pathologie"
+		"ENG":"It seems that you talked about a pathology.",
+		"FRA":"Il semblerait que vous avez parlé d'une pathologie"
 		},
 	"medicinal_true":
 		{
-		"en":"\n\tYour traitment is medicinal",
-		"fr":"\n\tVotre traitement est médicamenteux"
+		"ENG":"\n\tYour traitment is medicinal",
+		"FRA":"\n\tVotre traitement est médicamenteux"
 		},
 	"medicinal_false":
 		{
-		"en":"\n\tYour traitment is not medicinal",
-		"fr":"\n\tVotre traitement n'est pas médicamenteux"
+		"ENG":"\n\tYour traitment is not medicinal",
+		"FRA":"\n\tVotre traitement n'est pas médicamenteux"
 		},
 	"drug":
 		{
-		"en":"\n\tYou take: {}",
-		"fr":"\n\tVous prenez : {}"
+		"ENG":"\n\tYou take: {}",
+		"FRA":"\n\tVous prenez : {}"
 		},
 	"sum_up_treatment":
 		{
-		"en":"It seems that you talked about a treatment.",
-		"fr":"Il semblerait que vous avez parlé de votre traitement."
+		"ENG":"It seems that you talked about a treatment.",
+		"FRA":"Il semblerait que vous avez parlé de votre traitement."
 		},
 	"addiction":
 		{
-		"en":"\n\tYou have some addiction: {}",
-		"fr":"\n\tVous avez une addiction: {}"
+		"ENG":"\n\tYou have some addiction: {}",
+		"FRA":"\n\tVous avez une addiction: {}"
 		},
 	"weight":
 		{
-		"en":"\n\tYour weight is of {}",
-		"fr":"\n\tVotre poids est de {}"
+		"ENG":"\n\tYour weight is of {}",
+		"FRA":"\n\tVotre poids est de {}"
 		},
 	"size":
 		{
-		"en":"\n\tYou're {} tall",
-		"fr":"\n\tVous mesurez {}"
+		"ENG":"\n\tYou're {} tall",
+		"FRA":"\n\tVous mesurez {}"
 		},
 	"gender":
 		{
-		"en":"\n\tYou're a {}",
-		"fr":"\n\tVous êtes un(e) {}"
+		"ENG":"\n\tYou're a {}",
+		"FRA":"\n\tVous êtes un(e) {}"
 		},
 	"infoPatient_temperature":
 		{
-		"en":"\n\tYour temperature is of {}",
-		"fr":"\n\tVotre température est de {}"
+		"ENG":"\n\tYour temperature is of {}",
+		"FRA":"\n\tVotre température est de {}"
 		},
 	"heart_rate":
 		{
-		"en":"\n\tYour heart rate is of {}",
-		"fr":"\n\tVotre rythme cardiaque est de {}"
+		"ENG":"\n\tYour heart rate is of {}",
+		"FRA":"\n\tVotre rythme cardiaque est de {}"
 		},
 	"blood_pressure":
 		{
-		"en":"\n\tYour blood pressure is of {}",
-		"fr":"\n\tVotre pression sanguine est de {}"
+		"ENG":"\n\tYour blood pressure is of {}",
+		"FRA":"\n\tVotre pression sanguine est de {}"
 		},
 	"infoPatient_time":
 		{
-		"en":"\n\tYou saw some caregivers on: {}",
-		"fr":"\n\tVous avez vu un personnel médical à cette date : {}"
+		"ENG":"\n\tYou saw some caregivers on: {}",
+		"FRA":"\n\tVous avez vu un personnel médical à cette date : {}"
 		},
 	"sum_up_info_patient":
 		{
-		"en":"It seems that you talked about some personal informations.",
-		"fr":"Il semblerait que vous avez parlé de quelques informations personnelles."
+		"ENG":"It seems that you talked about some personal informations.",
+		"FRA":"Il semblerait que vous avez parlé de quelques informations personnelles."
 		},
 	"sport_button":
 		{
-		"en":"Sport",
-		"fr":"Sport"
+		"ENG":"Sport",
+		"FRA":"Sport"
 		},
 	"level_button":
 		{
-		"en":"Level",
-		"fr":"Niveau"
+		"ENG":"Level",
+		"FRA":"Niveau"
 		},
 	"duration_button":
 		{
-		"en":"Duration",
-		"fr":"Durée"
+		"ENG":"Duration",
+		"FRA":"Durée"
 		},
 	"distance_button":
 		{
-		"en":"Distance",
-		"fr":"Distance"
+		"ENG":"Distance",
+		"FRA":"Distance"
 		},
 	"period_button":
 		{
-		"en":"Period",
-		"fr":"Période"
+		"ENG":"Period",
+		"FRA":"Période"
 		},
 	"activity_hard_button":
 		{
-		"en":"Hardness",
-		"fr":"Difficultés"
+		"ENG":"Hardness",
+		"FRA":"Difficultés"
 		},
 	"time_button":
 		{
-		"en":"Begin date",
-		"fr":"Date de début"
+		"ENG":"Begin date",
+		"FRA":"Date de début"
 		},
 	"pain_desc_button":
 		{
-		"en":"Description",
-		"fr":"Description"
+		"ENG":"Description",
+		"FRA":"Description"
 		},
 	"body_part_button":
 		{
-		"en":"Body part",
-		"fr":"Partie du corps"
+		"ENG":"Body part",
+		"FRA":"Partie du corps"
 		},
 	"evolution_button":
 		{
-		"en":"Evolution",
-		"fr":"Evolution"
+		"ENG":"Evolution",
+		"FRA":"Evolution"
 		},
 	"symtoms_button":
 		{
-		"en":"Symptoms",
-		"fr":"Symptômes"
+		"ENG":"Symptoms",
+		"FRA":"Symptômes"
 		},
 	"medicinal_button":
 		{
-		"en":"Medicinal",
-		"fr":"Médicamenteux"
+		"ENG":"Medicinal",
+		"FRA":"Médicamenteux"
 		},
 	"drug_button":
 		{
-		"en":"Drug",
-		"fr":"Médicament"
+		"ENG":"Drug",
+		"FRA":"Médicament"
 		},
 	"addiction_button":
 		{
-		"en":"Addiction",
-		"fr":"Addiction"
+		"ENG":"Addiction",
+		"FRA":"Addiction"
 		},
 	"weight_button":
 		{
-		"en":"Weight",
-		"fr":"Poids"
+		"ENG":"Weight",
+		"FRA":"Poids"
 		},
 	"size_button":
 		{
-		"en":"Size",
-		"fr":"Taille"
+		"ENG":"Size",
+		"FRA":"Taille"
 		},
 	"gender_button":
 		{
-		"en":"Gender",
-		"fr":"Genre"
+		"ENG":"Gender",
+		"FRA":"Genre"
 		},
 	"temperature_button":
 		{
-		"en":"Temperature",
-		"fr":"Température"
+		"ENG":"Temperature",
+		"FRA":"Température"
 		},
 	"heart_rate_button":
 		{
-		"en":"Heart rate",
-		"fr":"Rythme cardiaque"
+		"ENG":"Heart rate",
+		"FRA":"Rythme cardiaque"
 		},
 	"blood_pressure_button":
 		{
-		"en":"Blood Pressure",
-		"fr":"Pression sanguine"
+		"ENG":"Blood Pressure",
+		"FRA":"Pression sanguine"
 		},
 	"date_check_up_button":
 		{
-		"en":"Date last check up",
-		"fr":"Date dernier check up"
+		"ENG":"Date last check up",
+		"FRA":"Date dernier check up"
 		},
 	"ask_activity_hard":
 		{
-		"en":"Was your physical activity hard to perform because of your general health?",
-		"fr":"Votre activité physique était-elle dure a performer à cause de votre état de santé général ?"
+		"ENG":"Was your physical activity hard to perform because of your general health?",
+		"FRA":"Votre activité physique était-elle dure a performer à cause de votre état de santé général ?"
 		},
 	"yes":
 		{
-		"en":"Yes",
-		"fr":"Oui"
+		"ENG":"Yes",
+		"FRA":"Oui"
 		},
 	"no":
 		{
-		"en":"No",
-		"fr":"Non"
+		"ENG":"No",
+		"FRA":"Non"
 		},
 	"ask_sport":
 		{
-		"en":"I did not recognize any physical activity in what you said. Can you tell me more?",
-		"fr":"Je n'ai pas détecté d'activité physique dans votre phrase. Pouvez-vous m'en dire plus ?"
+		"ENG":"I did not recognize any physical activity in what you said. Can you tell me more?",
+		"FRA":"Je n'ai pas détecté d'activité physique dans votre phrase. Pouvez-vous m'en dire plus ?"
 		},
 	"ask_activity_duration":
 		{
-		"en":"How long did you do your physical activity?",
-		"fr":"Combien de temps avez-vous effectué votre activité physique ?"
+		"ENG":"How long did you do your physical activity?",
+		"FRA":"Combien de temps avez-vous effectué votre activité physique ?"
 		},
 	"ask_pain_body_part":
 		{
-		"en":"Where is localized this pain?",
-		"fr":"Où avez-vous mal ?"
+		"ENG":"Where is localized this pain?",
+		"FRA":"Où avez-vous mal ?"
 		},
 	"ask_pathology_body_part":
 		{
-		"en":"Where is localized this pathology or symptoms?",
-		"fr":"Où avez vous vos symptômes ou votre pathologie ?"
+		"ENG":"Where is localized this pathology or symptoms?",
+		"FRA":"Où avez vous vos symptômes ou votre pathologie ?"
 		},
 	"ask_pain_duration":
 		{
-		"en":"How long did you have this pain?",
-		"fr":"Combien de temps avez-vous eu mal ?"
+		"ENG":"How long did you have this pain?",
+		"FRA":"Combien de temps avez-vous eu mal ?"
 		},
 	"ask_pain_change":
 		{
-		"en":"How does your pain change with time?",
-		"fr":"Comment évolue votre douleur ?"
+		"ENG":"How does your pain change with time?",
+		"FRA":"Comment évolue votre douleur ?"
 		},
 	"continuous_button":
 		{
-		"en":"Continuous",
-		"fr":"Continue"
+		"ENG":"Continuous",
+		"FRA":"Continue"
 		},
 	"intermittent_button":
 		{
-		"en":"Intermittent",
-		"fr":"Intermittent"
+		"ENG":"Intermittent",
+		"FRA":"Intermittent"
 		},
 	"brief_button":
 		{
-		"en":"Brief",
-		"fr":"Brève"
+		"ENG":"Brief",
+		"FRA":"Brève"
 		},
 	"ask_pain_period":
 		{
-		"en":"Does the pain have a period (e.g. every week)?",
-		"fr":"Votre douleur a-t-elle une période (par exemple, toutes les semaines) ?"
+		"ENG":"Does the pain have a period (e.g. every week)?",
+		"FRA":"Votre douleur a-t-elle une période (par exemple, toutes les semaines) ?"
 		},
 	"ask_activity_period":
 		{
-		"en":"Do you do your physical activity with a regular period (e.g. every week)?",
-		"fr":"Faites vous votre activité physique de manière régulière (chaque semaine, etc.) ?"
+		"ENG":"Do you do your physical activity with a regular period (e.g. every week)?",
+		"FRA":"Faites vous votre activité physique de manière régulière (chaque semaine, etc.) ?"
 		},
 	"ask_pain":
 		{
-		"en":"Can you talk about your pain?",
-		"fr":"Pouvez-vous parler de votre douleur ?"
+		"ENG":"Can you talk about your pain?",
+		"FRA":"Pouvez-vous parler de votre douleur ?"
 		},
 	"ask_activity":
 		{
-		"en":"Can you talk about your physical activity?",
-		"fr":"Pouvez-vous parler de votre activité physique ?"
+		"ENG":"Can you talk about your physical activity?",
+		"FRA":"Pouvez-vous parler de votre activité physique ?"
 		},
 	"ask_social":
 		{
-		"en":"Can you talk about something social?",
-		"fr":"Pouvez-vous parler de vos intéractions sociales ?"
+		"ENG":"Can you talk about something social?",
+		"FRA":"Pouvez-vous parler de vos intéractions sociales ?"
 		},
 	"ask_happiness":
 		{
-		"en":"How do you feel? Happy?",
-		"fr":"Comment vous sentez-vous ? Heureux ?"
+		"ENG":"How do you feel? Happy?",
+		"FRA":"Comment vous sentez-vous ? Heureux ?"
 		},
 	"ask_sadness":
 		{
-		"en":"How do you feel? Sad?",
-		"fr":"Comment vous sentez-vous ? Triste ?"
+		"ENG":"How do you feel? Sad?",
+		"FRA":"Comment vous sentez-vous ? Triste ?"
 		},
 	"ask_pain_desc":
 		{
-		"en":"I did not recognize any description of your pain. Can you tell me more about it? (e.g. is it a sharp pain?).",
-		"fr":"Je n'ai pas reconnu de description de votre douleur. Pouvez-vous m'en dire plus ? (par exemple, est-ce une douleur aigüe ?)"
+		"ENG":"I did not recognize any description of your pain. Can you tell me more about it? (e.g. is it a sharp pain?).",
+		"FRA":"Je n'ai pas reconnu de description de votre douleur. Pouvez-vous m'en dire plus ? (par exemple, est-ce une douleur aigüe ?)"
 		},
 	"agree":
 		{
-		"en":"Glad you agree!",
-		"fr":"Content que vous soyez d'accord !"
+		"ENG":"Glad you agree!",
+		"FRA":"Content que vous soyez d'accord !"
 		},
 	"disagree":
 		{
-		"en":"I see, you disagree. I respect that.",
-		"fr":"Je vois, vous n'êtes pas d'accord. Je respecte."
+		"ENG":"I see, you disagree. I respect that.",
+		"FRA":"Je vois, vous n'êtes pas d'accord. Je respecte."
 		},
 	"ask_why":
 		{
-		"en":"So, why are you in a bad mood?",
-		"fr":"Donc, pourquoi êtes vous dans une mauvaise passe ?"
+		"ENG":"So, why are you in a bad mood?",
+		"FRA":"Donc, pourquoi êtes vous dans une mauvaise passe ?"
 		},
 	"bye":
 		{
-		"en":"Goodbye, human friend!",
-		"fr":"Au revoir, mon ami !"
+		"ENG":"Goodbye, human friend!",
+		"FRA":"Au revoir, mon ami !"
 		},
 	"hello":
 		{
-		"en":"Hello!",
-		"fr":"Bonjour !"
+		"ENG":"Hello!",
+		"FRA":"Bonjour !"
 		},
 	"ask_symtoms":
 		{
-		"en":"I did not recognize any symtom in what you said. Can you tell me more?",
-		"fr":"Je n'ai pas reconnu de symptôme dans votre phrase. Pouvez-vous m'en dire plus ?"
+		"ENG":"I did not recognize any symtom in what you said. Can you tell me more?",
+		"FRA":"Je n'ai pas reconnu de symptôme dans votre phrase. Pouvez-vous m'en dire plus ?"
 		},
 	"ask_medicinal":
 		{
-		"en":"Is your treatment medicinal or not?",
-		"fr":"Votre traitement est-il médicamenteux ?"
+		"ENG":"Is your treatment medicinal or not?",
+		"FRA":"Votre traitement est-il médicamenteux ?"
 		},
 	"ask_drug":
 		{
-		"en":"I did not recognize any drug in what you said. Can you tell me more?",
-		"fr":"Je n'ai pas reconnu de médicament dans votre phrase. Pouvez-vous m'en dire plus ?"
+		"ENG":"I did not recognize any drug in what you said. Can you tell me more?",
+		"FRA":"Je n'ai pas reconnu de médicament dans votre phrase. Pouvez-vous m'en dire plus ?"
 		},
 	"ask_pain_time":
 		{
-		"en":"When did your pain begin?",
-		"fr":"Quand votre douleur a-t-elle commencé ?"
+		"ENG":"When did your pain begin?",
+		"FRA":"Quand votre douleur a-t-elle commencé ?"
 		},
 	"ask_activity_time":
 		{
-		"en":"When did you begin your physical activity?",
-		"fr":"Quand votre activité physique a-t-elle commencé ?"
+		"ENG":"When did you begin your physical activity?",
+		"FRA":"Quand votre activité physique a-t-elle commencé ?"
 		},
 	"ask_activity_distance":
 		{
-		"en":"Can you talk about the distance you did during your physical activity?",
-		"fr":"Pouvez-vous parler de la distance que vous avez parcourue durant votre activité physique ?"
+		"ENG":"Can you talk about the distance you did during your physical activity?",
+		"FRA":"Pouvez-vous parler de la distance que vous avez parcourue durant votre activité physique ?"
 		},
 	"ask_weight":
 		{
-		"en":"How much do you weigh, if it is not indiscreet?",
-		"fr":"Combien pesez-vous, si ce n'est pas indiscret ?"
+		"ENG":"How much do you weigh, if it is not indiscreet?",
+		"FRA":"Combien pesez-vous, si ce n'est pas indiscret ?"
 		},
 	"ask_infoPatient_distance":
 		{
-		"en":"How tall are you?",
-		"fr":"Combien mesurez-vous ?"
+		"ENG":"How tall are you?",
+		"FRA":"Combien mesurez-vous ?"
 		},
 	"ask_heart_rate":
 		{
-		"en":"Can you give me the measure of your heart rate?",
-		"fr":"Pouvez-vous me donner la mesure de votre rythme cardiaque ?"
+		"ENG":"Can you give me the measure of your heart rate?",
+		"FRA":"Pouvez-vous me donner la mesure de votre rythme cardiaque ?"
 		},
 	"ask_infoPatient_temperature":
 		{
-		"en":"What is your temperature?",
-		"fr":"Quelle est votre température ?"
+		"ENG":"What is your temperature?",
+		"FRA":"Quelle est votre température ?"
 		},
 	"ask_gender":
 		{
-		"en":"What is your gender now?",
-		"fr":"Quel est votre genre ?"
+		"ENG":"What is your gender now?",
+		"FRA":"Quel est votre genre ?"
 		},
 	"ask_blood_pressure":
 		{
-		"en":"Can you give me the measure of your blood pressure?",
-		"fr":"Pouvez-vous me donner la mesure de votre pression artérielle ?"
+		"ENG":"Can you give me the measure of your blood pressure?",
+		"FRA":"Pouvez-vous me donner la mesure de votre pression artérielle ?"
 		},
 	"ask_addiction":
 		{
-		"en":"Do you have any addiction?",
-		"fr":"Avez-vous une addiction ?"
+		"ENG":"Do you have any addiction?",
+		"FRA":"Avez-vous une addiction ?"
 		},
 	"ask_infoPatient_time":
 		{
-		"en":"When did you last see medical staff?",
-		"fr":"Quand avez-vous un personnel médical pour la dernière fois ?"
+		"ENG":"When did you last see medical staff?",
+		"FRA":"Quand avez-vous un personnel médical pour la dernière fois ?"
 		},
 	"ask_pathology_time":
 		{
-		"en":"Can you tell me when did this pathology / side effect / symptom begin?",
-		"fr":"Pouvez-vous me dire depuis quand vous avez cette pathologie / effet secondaire / symptôme ?"
+		"ENG":"Can you tell me when did this pathology / side effect / symptom begin?",
+		"FRA":"Pouvez-vous me dire depuis quand vous avez cette pathologie / effet secondaire / symptôme ?"
 		},
 	"ask_pathology_period":
 		{
-		"en":"Can you tell me the period of this pathology / side effect / symptom? Does it comes every day?",
-		"fr":"Pouvez vous me dire si cette pathologie / effet secondaire / symptôme revient de manière périodique ? Par exemple, tous les jours."
+		"ENG":"Can you tell me the period of this pathology / side effect / symptom? Does it comes every day?",
+		"FRA":"Pouvez vous me dire si cette pathologie / effet secondaire / symptôme revient de manière périodique ? Par exemple, tous les jours."
 		},
 	"ask_pathology_change":
 		{
-		"en":"Is this pathology / side effect / symptom worse than last time or not?",
-		"fr":"Est-ce que cette pathologie / effet secondaire / symptôme est pire qu'avant ou non ?"
+		"ENG":"Is this pathology / side effect / symptom worse than last time or not?",
+		"FRA":"Est-ce que cette pathologie / effet secondaire / symptôme est pire qu'avant ou non ?"
 		},
 	"ask_pathology_treatment_linked":
 		{
-		"en":"Do you think this pathology / side effect / symptom is due to your treatment?",
-		"fr":"Pensez-vous que cette pathologie / effet secondaire / symptôme soit dû à votre traitement ?"
+		"ENG":"Do you think this pathology / side effect / symptom is due to your treatment?",
+		"FRA":"Pensez-vous que cette pathologie / effet secondaire / symptôme soit dû à votre traitement ?"
 		},
 	"pathology_time":
 		{
-		"en":"\n\tYou have this pathology / side effect / symptom since {}",
-		"fr":"\n\tVous avez cette pathologie / effet secondaire / symptôme depuis {}"
+		"ENG":"\n\tYou have this pathology / side effect / symptom since {}",
+		"FRA":"\n\tVous avez cette pathologie / effet secondaire / symptôme depuis {}"
 		},
 	"pathology_change_true":
 		{
-		"en":"\n\tYou feel that this pathology / side effect / symptom is getting worse",
-		"fr":"\n\tVous pensez que cette pathologie / effet secondaire / symptôme s'aggrave"
+		"ENG":"\n\tYou feel that this pathology / side effect / symptom is getting worse",
+		"FRA":"\n\tVous pensez que cette pathologie / effet secondaire / symptôme s'aggrave"
 		},
 	"pathology_change_false":
 		{
-		"en":"\n\tYou feel that this pathology / side effect / symptom is not getting worse",
-		"fr":"\n\tVous pensez que cette pathologie / effet secondaire / symptôme ne s'aggrave pas"
+		"ENG":"\n\tYou feel that this pathology / side effect / symptom is not getting worse",
+		"FRA":"\n\tVous pensez que cette pathologie / effet secondaire / symptôme ne s'aggrave pas"
 		},
 	"pathology_period":
 		{
-		"en":"\n\tThe pathology / side effect / symptom period/recurrence is {}.",
-		"fr":"\n\tLa période/récurrence de cette pathologie / effet secondaire / symptôme est de {}."
+		"ENG":"\n\tThe pathology / side effect / symptom period/recurrence is {}.",
+		"FRA":"\n\tLa période/récurrence de cette pathologie / effet secondaire / symptôme est de {}."
 		},
 	"pathology_treatment_linked_true":
 		{
-		"en":"\n\tAccording to you, this pathology / side effect / symptom is due to your treatment",
-		"fr":"\n\tD'après vous, cette pathologie / effet secondaire / symptôme est dû à votre traitement"
+		"ENG":"\n\tAccording to you, this pathology / side effect / symptom is due to your treatment",
+		"FRA":"\n\tD'après vous, cette pathologie / effet secondaire / symptôme est dû à votre traitement"
 		},
 	"pathology_treatment_linked_false":
 		{
-		"en":"\n\tAccording to you, this pathology / side effect / symptom is not due to your treatment",
-		"fr":"\n\tD'après vous, cette pathologie / effet secondaire / symptôme n'est pas dû à votre traitement"
+		"ENG":"\n\tAccording to you, this pathology / side effect / symptom is not due to your treatment",
+		"FRA":"\n\tD'après vous, cette pathologie / effet secondaire / symptôme n'est pas dû à votre traitement"
 		},
 	"pathology_treatment_linked_button":
 		{
-		"en":"Link with treatment",
-		"fr":"Lien avec le traitement"
+		"ENG":"Link with treatment",
+		"FRA":"Lien avec le traitement"
 		},
 	"ask_dosing":
 		{
-		"en":"Can you tell me the dose you're taking for this drug?",
-		"fr":"Pouvez-vous me dire la dose que vous prenez pour ce médicament ?"
+		"ENG":"Can you tell me the dose you're taking for this drug?",
+		"FRA":"Pouvez-vous me dire la dose que vous prenez pour ce médicament ?"
 		},
 	"ask_treatment_time":
 		{
-		"en":"When did you begin your treatment?",
-		"fr":"Quand avez-vous commencé votre traitement ?"
+		"ENG":"When did you begin your treatment?",
+		"FRA":"Quand avez-vous commencé votre traitement ?"
 		},
 	"ask_treatment_being_taken":
 		{
-		"en":"Is your treatment well taken, stopped or forgotten?",
-		"fr":"Votre traitement est-il bien suivi, arrêté ou l'oubliez-vous ?"
+		"ENG":"Is your treatment well taken, stopped or forgotten?",
+		"FRA":"Votre traitement est-il bien suivi, arrêté ou l'oubliez-vous ?"
 		},
 	"taken":
 		{
-		"en":"Taken",
-		"fr":"Pris"
+		"ENG":"Taken",
+		"FRA":"Pris"
 		},
 	"stopped":
 		{
-		"en":"Stopped",
-		"fr":"Arrêté"
+		"ENG":"Stopped",
+		"FRA":"Arrêté"
 		},
 	"forgotten":
 		{
-		"en":"Forgotten",
-		"fr":"Oublié"
+		"ENG":"Forgotten",
+		"FRA":"Oublié"
 		},
 	"ask_treatment_overdosage":
 		{
-		"en":"Do you take the prescribed dose of your treatment, do you take more or less?",
-		"fr":"Prenez-vous la dose prescrite de votre traitement, prenez-vous plus ou moins ?"
+		"ENG":"Do you take the prescribed dose of your treatment, do you take more or less?",
+		"FRA":"Prenez-vous la dose prescrite de votre traitement, prenez-vous plus ou moins ?"
 		},
 	"welltaken":
 		{
-		"en":"Non overdosed",
-		"fr":"Non surdosé"
+		"ENG":"Non overdosed",
+		"FRA":"Non surdosé"
 		},
 	"overdose":
 		{
-		"en":"Overdosed",
-		"fr":"Surdosé"
+		"ENG":"Overdosed",
+		"FRA":"Surdosé"
 		},
 	"underdose":
 		{
-		"en":"Underdosed",
-		"fr":"Sous dosé"
+		"ENG":"Underdosed",
+		"FRA":"Sous dosé"
 		},
 	"ask_treatment_period":
 		{
-		"en":"Can you tell me how often you take your medicine? (e.g. 3 times a day)",
-		"fr":"Pouvez-vous me dire la récurrence à laquelle vous prenez votre médicament ? (par exemple, 3 fois par jours)"
+		"ENG":"Can you tell me how often you take your medicine? (e.g. 3 times a day)",
+		"FRA":"Pouvez-vous me dire la récurrence à laquelle vous prenez votre médicament ? (par exemple, 3 fois par jours)"
 		},
 	"ask_treatment_prescripted":
 		{
-		"en":"Has your treatment been prescribed to you by medical personnel?",
-		"fr":"Votre traitement vous a-t-il été prescrit par un personnel médical ?"
+		"ENG":"Has your treatment been prescribed to you by medical personnel?",
+		"FRA":"Votre traitement vous a-t-il été prescrit par un personnel médical ?"
 		},
 	"ask_treatment_ok":
 		{
-		"en":"Do you think your treatment is good for you?",
-		"fr":"Pensez-vous que votre traitement vous soit bénéfique ?"
+		"ENG":"Do you think your treatment is good for you?",
+		"FRA":"Pensez-vous que votre traitement vous soit bénéfique ?"
 		},
 	"treatment_being_taken":
 		{
-		"en":"\n\tYour treatment has been {}",
-		"fr":"\n\tVotre traitement a été {}"
+		"ENG":"\n\tYour treatment has been {}",
+		"FRA":"\n\tVotre traitement a été {}"
 		},
 	"dosing":
 		{
-		"en":"\n\tThe dose of medication you are taking is {}",
-		"fr":"\n\tLa dose de médicament que vous prenez est de {}"
+		"ENG":"\n\tThe dose of medication you are taking is {}",
+		"FRA":"\n\tLa dose de médicament que vous prenez est de {}"
 		},
 	"treatment_period":
 		{
-		"en":"\n\tThe recurrence you take your medicine is {}",
-		"fr":"\n\tLa récurrence à laquelle vous prenez votre médicament est de {}"
+		"ENG":"\n\tThe recurrence you take your medicine is {}",
+		"FRA":"\n\tLa récurrence à laquelle vous prenez votre médicament est de {}"
 		},
 	"treatment_time":
 		{
-		"en":"\n\tYou started your treatment {}",
-		"fr":"\n\tVous avez commencé votre traitement {}"
+		"ENG":"\n\tYou started your treatment {}",
+		"FRA":"\n\tVous avez commencé votre traitement {}"
 		},
 	"treatment_overdosage":
 		{
-		"en":"\n\tYour medication is {}",
-		"fr":"\n\tVotre traitement médicamenteux est {}"
+		"ENG":"\n\tYour medication is {}",
+		"FRA":"\n\tVotre traitement médicamenteux est {}"
 		},
 	"treatment_prescripted_true":
 		{
-		"en":"\n\tYour treatment has been prescribed",
-		"fr":"\n\tVotre traitement vous a été prescrit"
+		"ENG":"\n\tYour treatment has been prescribed",
+		"FRA":"\n\tVotre traitement vous a été prescrit"
 		},
 	"treatment_prescripted_false":
 		{
-		"en":"\n\tYour treatment has not been prescribed",
-		"fr":"\n\tVotre traitement ne vous a pas été prescrit"
+		"ENG":"\n\tYour treatment has not been prescribed",
+		"FRA":"\n\tVotre traitement ne vous a pas été prescrit"
 		},
 	"treatment_ok_true":
 		{
-		"en":"\n\tYou think your treatment is beneficial to you",
-		"fr":"\n\tVous pensez que votre traitement vous est bénéfique"
+		"ENG":"\n\tYou think your treatment is beneficial to you",
+		"FRA":"\n\tVous pensez que votre traitement vous est bénéfique"
 		},
 	"treatment_ok_false":
 		{
-		"en":"\n\tYou think your treatment is not beneficial to you",
-		"fr":"\n\tVous pensez que votre traitement ne vous est pas bénéfique"
+		"ENG":"\n\tYou think your treatment is not beneficial to you",
+		"FRA":"\n\tVous pensez que votre traitement ne vous est pas bénéfique"
 		},
 	"treatment_being_taken_button":
 		{
-		"en":"Taking the medicine",
-		"fr":"Prise du médicament"
+		"ENG":"Taking the medicine",
+		"FRA":"Prise du médicament"
 		},
 	"dosing_button":
 		{
-		"en":"Dosing",
-		"fr":"Dose"
+		"ENG":"Dosing",
+		"FRA":"Dose"
 		},
 	"treatment_prescripted_button":
 		{
-		"en":"Prescription",
-		"fr":"Prescription"
+		"ENG":"Prescription",
+		"FRA":"Prescription"
 		},
 	"treatment_ok_button":
 		{
-		"en":"Beneficial",
-		"fr":"Bénéfique"
+		"ENG":"Beneficial",
+		"FRA":"Bénéfique"
 		},
 	"treatment_overdosage_button":
 		{
-		"en":"Overdose",
-		"fr":"Overdose"
+		"ENG":"Overdose",
+		"FRA":"Overdose"
 		},
 	"activity_time":
 		{
-		"en":"\n\tYou began your physical activity {}",
-		"fr":"\n\tVous avez commencé votre activité physique {}"
+		"ENG":"\n\tYou began your physical activity {}",
+		"FRA":"\n\tVous avez commencé votre activité physique {}"
 		},
 	"pain_time":
 		{
-		"en":"\n\tYour pain began {}",
-		"fr":"\n\tVotre douleur a commencé {}"
+		"ENG":"\n\tYour pain began {}",
+		"FRA":"\n\tVotre douleur a commencé {}"
 		},
 	"more_treatment":
 		{
-		"en":"Do you have another treatment to talk about?",
-		"fr":"Avez-vous un autre traitement duquel parler ?"
+		"ENG":"\nDo you have another treatment to talk about?",
+		"FRA":"\nAvez-vous un autre traitement duquel parler ?"
 		},
 	"ask_risk":
 		{
-		"en":"Can you talk about your risky behaviors, if you have any?",
-		"fr":"Pouvez-vous parler de vos comportements à risque, si vous en avez ?"
+		"ENG":"Can you talk about your risky behaviors, if you have any?",
+		"FRA":"Pouvez-vous parler de vos comportements à risque, si vous en avez ?"
 		},
 	"sum_up_risk":
 		{
-		"en":"To summarize, you talked about your risky behaviors",
-		"fr":"Pour résumer, vous avez parlé de vos comportements à risques"
+		"ENG":"To summarize, you talked about your risky behaviors",
+		"FRA":"Pour résumer, vous avez parlé de vos comportements à risques"
 		}
 	}
 }
