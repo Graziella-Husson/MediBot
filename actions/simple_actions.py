@@ -1,8 +1,8 @@
 """
-Created on Tue Jun 26 10:22:40 2018
-@author: Graziella-Husson
-This module is used to regroup all simple actions.
-A simple action is an action where the bot just say something or displays buttons
+This module is used to regroup all simple actions.\n
+A simple action is an action where the bot just say something or displays buttons\n
+Created on Tue Jun 26 10:22:40 2018\n
+@author: U{@Graziella-Husson<https://github.com/Graziella-Husson>}
 """
 from rasa_core.actions.action import Action
 from rasa_core.dispatcher import Button

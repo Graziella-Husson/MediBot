@@ -187,17 +187,17 @@ actions:
  - formActions.InfoPatient
  - formActions.CheckRequestedIntents
  - formActions.Risk
- - complexSets.SetMultiple
- - askWhat.AskWhatPathology
- - askWhat.AskWhatPain
- - askWhat.AskWhatSport
- - askWhat.AskWhatTreatment
- - askWhat.AskWhatInfoPatient
- - resetSlots.ResetPathologySlots
- - resetSlots.ResetTreatmentSlots
- - resetSlots.ResetInfoPatientSlots
- - resetSlots.ResetSportSlots
- - resetSlots.ResetPainSlots
+ - complex_sets.SetMultiple
+ - ask_what.AskWhatPathology
+ - ask_what.AskWhatPain
+ - ask_what.AskWhatSport
+ - ask_what.AskWhatTreatment
+ - ask_what.AskWhatInfoPatient
+ - reset_slots.ResetPathologySlots
+ - reset_slots.ResetTreatmentSlots
+ - reset_slots.ResetInfoPatientSlots
+ - reset_slots.ResetSportSlots
+ - reset_slots.ResetPainSlots
  - simple_actions.Fallback
  - simple_actions.AskActivityHard
  - simple_actions.AskSport
