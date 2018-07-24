@@ -16,7 +16,7 @@ EntityFormField
 import yaml
 import os
 
-from simpleActions import Fallback
+from simple_actions import Fallback
 from duckling import DucklingWrapper
 from ressources import get_utterance
 
