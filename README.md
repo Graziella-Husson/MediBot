@@ -178,12 +178,11 @@ When its saved, you will be able to talk to your bot in slack with buttons!
 In actions folder :
 
 ```
-epydoc askWhat.py complexSets.py formActions.py initAndComplex.py level_classifiers.py reminders.py resetSlots.py ressources.py simpleActions.py --config epydoc_config 
+epydoc ask_what.py complex_sets.py form_actions.py init_and_complex.py level_classifiers.py reminders.py reset_slots.py ressources.py simple_actions.py rasa_core/actions/action.py rasa_core/actions/forms.py --config epydoc_config 
 ```
 
 For a class and package diagramm:
 
 ```
-pyreverse -o pdf /*.py
-
+pyreverse -o pdf  ask_what.py complex_sets.py form_actions.py init_and_complex.py level_classifiers.py reminders.py reset_slots.py ressources.py simple_actions.py rasa_core/actions/action.py rasa_core/actions/forms.py
 ```
