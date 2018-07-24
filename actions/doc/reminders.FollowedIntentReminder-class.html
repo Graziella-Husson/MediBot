@@ -60,14 +60,12 @@
 <h1 class="epydoc">Class FollowedIntentReminder</h1><p class="nomargin-top"><span class="codelink"><a href="reminders-pysrc.html#FollowedIntentReminder">source&nbsp;code</a></span></p>
 <center>
 <center>  <map id="uml_class_diagram_for_reminder_2" name="uml_class_diagram_for_reminder_2">
-<area shape="rect" id="node1_6" href="reminders.FollowedIntentReminder-class.html#get_reminder" title="reminders.FollowedIntentReminder.get_reminder" alt="" coords="18,135,281,155"/>
-<area shape="rect" id="node1_7" href="reminders.FollowedIntentReminder-class.html#string_in_entity_form_list" title="reminders.FollowedIntentReminder.string_in_entity_form_list" alt="" coords="18,155,281,175"/>
-<area shape="rect" id="node1_8" href="reminders.FollowedIntentReminder-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="18,175,281,195"/>
-<area shape="rect" id="node1_9" href="reminders.FollowedIntentReminder-class.html#run" title="Get the intent followed and linked entities Make intent mandatory and add &#160;an EntityFormField for each entity to make them requested for the intent &#160;Remove reminder in followed_reminders list (it has been triggered)" alt="" coords="18,195,281,215"/>
-<area shape="rect" id="node1" href="reminders.FollowedIntentReminder-class.html" title="Reminder that get the intent followed and make it mandatory for the current session." alt="" coords="5,103,292,221"/>
-<area shape="rect" id="node2_10" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="58,38,242,58"/>
-<area shape="rect" id="node2_11" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="58,58,242,78"/>
-<area shape="rect" id="node2" href="rasa_core.actions.action.Action-class.html" title="Next action to be taken in response to a dialogue state." alt="" coords="46,5,254,84"/>
+<area shape="rect" id="node1_4" href="reminders.FollowedIntentReminder-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="17,135,236,155"/>
+<area shape="rect" id="node1_5" href="reminders.FollowedIntentReminder-class.html#run" title="Get the intent followed and linked entities" alt="" coords="17,155,236,175"/>
+<area shape="rect" id="node1" href="reminders.FollowedIntentReminder-class.html" title="Reminder that get the intent followed and make it mandatory for the current session." alt="" coords="5,103,248,181"/>
+<area shape="rect" id="node2_6" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="35,38,219,58"/>
+<area shape="rect" id="node2_7" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="35,58,219,78"/>
+<area shape="rect" id="node2" href="rasa_core.actions.action.Action-class.html" title="Next action to be taken in response to a dialogue state." alt="" coords="23,5,231,84"/>
 </map>
   <img src="uml_class_diagram_for_reminder_2.gif" alt='' usemap="#uml_class_diagram_for_reminder_2" ismap="ismap" class="graph-without-title" />
 </center>
@@ -99,42 +97,6 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="reminders.FollowedIntentReminder-class.html#get_reminder" class="summary-sig-name">get_reminder</a>(<span class="summary-sig-arg">self</span>,
-        <span class="summary-sig-arg">followed_reminders</span>,
-        <span class="summary-sig-arg">now</span>)</span></td>
-          <td align="right" valign="top">
-            <span class="codelink"><a href="reminders-pysrc.html#FollowedIntentReminder.get_reminder">source&nbsp;code</a></span>
-            
-          </td>
-        </tr>
-      </table>
-      
-    </td>
-  </tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td><span class="summary-sig"><a href="reminders.FollowedIntentReminder-class.html#string_in_entity_form_list" class="summary-sig-name">string_in_entity_form_list</a>(<span class="summary-sig-arg">self</span>,
-        <span class="summary-sig-arg">string</span>,
-        <span class="summary-sig-arg">listing</span>)</span></td>
-          <td align="right" valign="top">
-            <span class="codelink"><a href="reminders-pysrc.html#FollowedIntentReminder.string_in_entity_form_list">source&nbsp;code</a></span>
-            
-          </td>
-        </tr>
-      </table>
-      
-    </td>
-  </tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr>
           <td><span class="summary-sig"><a href="reminders.FollowedIntentReminder-class.html#name" class="summary-sig-name">name</a>(<span class="summary-sig-arg">self</span>)</span><br />
       Returns:
       the name of the action.</td>
@@ -157,10 +119,7 @@
         <span class="summary-sig-arg">dispatcher</span>,
         <span class="summary-sig-arg">tracker</span>,
         <span class="summary-sig-arg">domain</span>)</span><br />
-      Get the intent followed and linked entities Make intent mandatory and
-      add an EntityFormField for each entity to make them requested for the
-      intent Remove reminder in followed_reminders list (it has been 
-      triggered)</td>
+      Get the intent followed and linked entities</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="reminders-pysrc.html#FollowedIntentReminder.run">source&nbsp;code</a></span>
             
@@ -236,61 +195,6 @@
   </td>
 </tr>
 </table>
-<a name="get_reminder"></a>
-<div>
-<table class="details" border="1" cellpadding="3"
-       cellspacing="0" width="100%" bgcolor="white">
-<tr><td>
-  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-  <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_reminder</span>(<span class="sig-arg">self</span>,
-        <span class="sig-arg">followed_reminders</span>,
-        <span class="sig-arg">now</span>)</span>
-  </h3>
-  </td><td align="right" valign="top"
-    ><span class="codelink"><a href="reminders-pysrc.html#FollowedIntentReminder.get_reminder">source&nbsp;code</a></span>&nbsp;
-    </td>
-  </tr></table>
-  
-  
-  <dl class="fields">
-    <dt>Parameters:</dt>
-    <dd><ul class="nomargin-top">
-        <li><strong class="pname"><code>followed_reminders</code></strong> - list of reminders of type follow_reminders send and not 
-          triggered.</li>
-        <li><strong class="pname"><code>now</code></strong> - the current date Get the reminder that have a trigger date 
-          closest as now (the one that triggered this action).</li>
-    </ul></dd>
-  </dl>
-</td></tr></table>
-</div>
-<a name="string_in_entity_form_list"></a>
-<div>
-<table class="details" border="1" cellpadding="3"
-       cellspacing="0" width="100%" bgcolor="white">
-<tr><td>
-  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-  <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">string_in_entity_form_list</span>(<span class="sig-arg">self</span>,
-        <span class="sig-arg">string</span>,
-        <span class="sig-arg">listing</span>)</span>
-  </h3>
-  </td><td align="right" valign="top"
-    ><span class="codelink"><a href="reminders-pysrc.html#FollowedIntentReminder.string_in_entity_form_list">source&nbsp;code</a></span>&nbsp;
-    </td>
-  </tr></table>
-  
-  
-  <dl class="fields">
-    <dt>Parameters:</dt>
-    <dd><ul class="nomargin-top">
-        <li><strong class="pname"><code>string</code></strong> - entity name to find in listing of EntityFormField</li>
-        <li><strong class="pname"><code>listing</code></strong> - listing of EntityFormField @return True if string is one of the 
-          EntityFormField entity name in the listing</li>
-    </ul></dd>
-  </dl>
-</td></tr></table>
-</div>
 <a name="name"></a>
 <div>
 <table class="details" border="1" cellpadding="3"
@@ -332,10 +236,10 @@
     </td>
   </tr></table>
   
-  <p>Get the intent followed and linked entities Make intent mandatory and 
-  add an EntityFormField for each entity to make them requested for the 
-  intent Remove reminder in followed_reminders list (it has been 
-  triggered)</p>
+  <p>Get the intent followed and linked entities</p>
+  <p>Make intent mandatory and add an EntityFormField for each entity to 
+  make them requested for the intent</p>
+  <p>Remove reminder in followed_reminders list (it has been triggered)</p>
   <dl class="fields">
     <dt>Overrides:
         <a href="rasa_core.actions.action.Action-class.html#run">rasa_core.actions.action.Action.run</a>
@@ -372,7 +276,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Tue Jul 24 15:30:44 2018
+    Generated by Epydoc 3.0.1 on Tue Jul 24 17:21:01 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

@@ -8,7 +8,7 @@ from rasa_core.events import SlotSet
 from rasa_core.dispatcher import Button
 from rasa_core.actions.forms import FormAction
 from level_classifiers import get_pain_level, get_physical_activity_level
-from initAndComplex import get_obligatories
+from init_and_complex import get_obligatories
 from ressources import get_utterance
 
 def get_response_simple(response, slot_name, tracker, language, other_value=None, utt_name=None):

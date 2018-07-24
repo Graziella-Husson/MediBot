@@ -8,7 +8,7 @@ Created on Tue Jun 26 10:22:40 2018\n
 from rasa_core.actions.action import Action
 from rasa_core.events import SlotSet
 from simple_actions import Fallback
-from initAndComplex import get_complex_entities
+from init_and_complex import get_complex_entities
 from form_actions import (
     ActionFillSlotsSport,
     ActionFillSlotsPain,
