@@ -177,16 +177,16 @@ actions:
  - reminders.ChangeSessionReminder
  - reminders.UserReminderLittle
  - reminders.FollowedIntentReminder
- - formActions.ActionFillSlotsPain
- - formActions.ActionFillSlotsSport
- - formActions.Sadness
- - formActions.Happy
- - formActions.Social
- - formActions.Pathology
- - formActions.Treatment
- - formActions.InfoPatient
- - formActions.CheckRequestedIntents
- - formActions.Risk
+ - form_actions.ActionFillSlotsPain
+ - form_actions.ActionFillSlotsSport
+ - form_actions.Sadness
+ - form_actions.Happy
+ - form_actions.Social
+ - form_actions.Pathology
+ - form_actions.Treatment
+ - form_actions.InfoPatient
+ - form_actions.CheckRequestedIntents
+ - form_actions.Risk
  - complex_sets.SetMultiple
  - ask_what.AskWhatPathology
  - ask_what.AskWhatPain
