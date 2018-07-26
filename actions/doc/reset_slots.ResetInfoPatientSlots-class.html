@@ -60,12 +60,20 @@
 <h1 class="epydoc">Class ResetInfoPatientSlots</h1><p class="nomargin-top"><span class="codelink"><a href="reset_slots-pysrc.html#ResetInfoPatientSlots">source&nbsp;code</a></span></p>
 <center>
 <center>  <map id="uml_class_diagram_for_reset_sl" name="uml_class_diagram_for_reset_sl">
-<area shape="rect" id="node1_4" href="reset_slots.ResetInfoPatientSlots-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="17,135,236,155"/>
-<area shape="rect" id="node1_5" href="reset_slots.ResetInfoPatientSlots-class.html#run" title="Returns: &#160;A list of SlotSet" alt="" coords="17,155,236,175"/>
-<area shape="rect" id="node1" href="reset_slots.ResetInfoPatientSlots-class.html" title="Reset slots linked to infoPatient intent and save infos in DB" alt="" coords="5,103,248,181"/>
-<area shape="rect" id="node2_6" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="35,38,219,58"/>
-<area shape="rect" id="node2_7" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="35,58,219,78"/>
-<area shape="rect" id="node2" href="rasa_core.actions.action.Action-class.html" title="Next action to be taken in response to a dialogue state." alt="" coords="23,5,231,84"/>
+<area shape="rect" id="node1_11" href="reset_slots.ResetInfoPatientSlots-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="61,327,191,347"/>
+<area shape="rect" id="node1_12" href="reset_slots.ResetInfoPatientSlots-class.html#__init__" title="Set all slots for intent &#39;infoPatient&#39; to None:" alt="" coords="61,347,191,367"/>
+<area shape="rect" id="node1" href="reset_slots.ResetInfoPatientSlots-class.html" title="Reset slots linked to infoPatient intent and save infos in DB" alt="" coords="49,295,202,373"/>
+<area shape="rect" id="node2_13" href="reset_slots.ResetSlotsAction-class.html#calculus" title="reset_slots.ResetSlotsAction.calculus" alt="" coords="17,127,236,147"/>
+<area shape="rect" id="node2_14" href="reset_slots.ResetSlotsAction-class.html#intent_name" title="reset_slots.ResetSlotsAction.intent_name" alt="" coords="17,147,236,167"/>
+<area shape="rect" id="node2_15" href="reset_slots.ResetSlotsAction-class.html#entities" title="reset_slots.ResetSlotsAction.entities" alt="" coords="17,167,236,187"/>
+<area shape="rect" id="node2_16" href="reset_slots.ResetSlotsAction-class.html#check" title="Used to check if all proprieties has been set" alt="" coords="17,189,236,209"/>
+<area shape="rect" id="node2_17" href="reset_slots.ResetSlotsAction-class.html#run" title="Save infos and reset slots" alt="" coords="17,209,236,229"/>
+<area shape="rect" id="node2_18" href="reset_slots.ResetSlotsAction-class.html#core_action" title="Set entities list, topic and requested_slot to None." alt="" coords="17,229,236,249"/>
+<area shape="rect" id="node2_19" href="reset_slots.ResetSlotsAction-class.html#calculus_action" title="In case of calculus action, save the score depending on level" alt="" coords="17,249,236,269"/>
+<area shape="rect" id="node2" href="reset_slots.ResetSlotsAction-class.html" title="Heritated from Action, used to reset given slots" alt="" coords="5,103,248,276"/>
+<area shape="rect" id="node3_20" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="35,38,219,58"/>
+<area shape="rect" id="node3_21" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="35,58,219,78"/>
+<area shape="rect" id="node3" href="rasa_core.actions.action.Action-class.html" title="Next action to be taken in response to a dialogue state." alt="" coords="23,5,231,84"/>
 </map>
   <img src="uml_class_diagram_for_reset_sl.gif" alt='' usemap="#uml_class_diagram_for_reset_sl" ismap="ismap" class="graph-without-title" />
 </center>
@@ -114,14 +122,10 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="reset_slots.ResetInfoPatientSlots-class.html#run" class="summary-sig-name">run</a>(<span class="summary-sig-arg">self</span>,
-        <span class="summary-sig-arg">dispatcher</span>,
-        <span class="summary-sig-arg">tracker</span>,
-        <span class="summary-sig-arg">domain</span>)</span><br />
-      Returns:
-      A list of SlotSet</td>
+          <td><span class="summary-sig"><a href="reset_slots.ResetInfoPatientSlots-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Set all slots for intent 'infoPatient' to None:</td>
           <td align="right" valign="top">
-            <span class="codelink"><a href="reset_slots-pysrc.html#ResetInfoPatientSlots.run">source&nbsp;code</a></span>
+            <span class="codelink"><a href="reset_slots-pysrc.html#ResetInfoPatientSlots.__init__">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -131,6 +135,12 @@
   </tr>
   <tr>
     <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="reset_slots.ResetSlotsAction-class.html">ResetSlotsAction</a></code></b>:
+      <code><a href="reset_slots.ResetSlotsAction-class.html#calculus_action">calculus_action</a></code>,
+      <code><a href="reset_slots.ResetSlotsAction-class.html#check">check</a></code>,
+      <code><a href="reset_slots.ResetSlotsAction-class.html#core_action">core_action</a></code>,
+      <code><a href="reset_slots.ResetSlotsAction-class.html#run">run</a></code>
+      </p>
     <p class="indent-wrapped-lines"><b>Inherited from <code><a href="rasa_core.actions.action.Action-class.html">rasa_core.actions.action.Action</a></code></b>:
       <code><a href="rasa_core.actions.action.Action-class.html#__str__">__str__</a></code>,
       <code><a href="rasa_core.actions.action.Action-class.html#resets_topic">resets_topic</a></code>
@@ -140,7 +150,6 @@
       <code>__format__</code>,
       <code>__getattribute__</code>,
       <code>__hash__</code>,
-      <code>__init__</code>,
       <code>__new__</code>,
       <code>__reduce__</code>,
       <code>__reduce_ex__</code>,
@@ -148,6 +157,33 @@
       <code>__setattr__</code>,
       <code>__sizeof__</code>,
       <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="reset_slots.ResetSlotsAction-class.html">ResetSlotsAction</a></code></b>:
+      <code><a href="reset_slots.ResetSlotsAction-class.html#calculus">calculus</a></code>,
+      <code><a href="reset_slots.ResetSlotsAction-class.html#entities">entities</a></code>,
+      <code><a href="reset_slots.ResetSlotsAction-class.html#intent_name">intent_name</a></code>
       </p>
     </td>
   </tr>
@@ -209,7 +245,7 @@
     </td>
   </tr></table>
   
-  <p>Unique identifier of this simple action.</p>
+  <p>the name of the action to implement</p>
   <dl class="fields">
     <dt>Returns:</dt>
         <dd>the name of the action.</dd>
@@ -219,65 +255,52 @@
   </dl>
 </td></tr></table>
 </div>
-<a name="run"></a>
+<a name="__init__"></a>
 <div>
 <table class="details" border="1" cellpadding="3"
        cellspacing="0" width="100%" bgcolor="white">
 <tr><td>
   <table width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">run</span>(<span class="sig-arg">self</span>,
-        <span class="sig-arg">dispatcher</span>,
-        <span class="sig-arg">tracker</span>,
-        <span class="sig-arg">domain</span>)</span>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
   </h3>
   </td><td align="right" valign="top"
-    ><span class="codelink"><a href="reset_slots-pysrc.html#ResetInfoPatientSlots.run">source&nbsp;code</a></span>&nbsp;
+    ><span class="codelink"><a href="reset_slots-pysrc.html#ResetInfoPatientSlots.__init__">source&nbsp;code</a></span>&nbsp;
     </td>
   </tr></table>
   
-  <p>Execute the side effects of this action.</p>
-  <p>Return a list of events (i.e. instructions to update tracker 
-  state)</p>
-  <p>:param tracker: user state tracker :param dispatcher: communication 
-  channel :param domain: bots custom domain</p>
+  <p>Set all slots for intent 'infoPatient' to None:</p>
+  <ul>
+    <li>
+      addiction
+    </li>
+    <li>
+      weight
+    </li>
+    <li>
+      infoPatient_distance
+    </li>
+    <li>
+      gender
+    </li>
+    <li>
+      infoPatient_temperature
+    </li>
+    <li>
+      heart_rate
+    </li>
+    <li>
+      blood_pressure
+    </li>
+    <li>
+      infoPatient_time
+    </li>
+  </ul>
+  <p>Set slot infoPatient to True</p>
   <dl class="fields">
-    <dt>Parameters:</dt>
-    <dd><ul class="nomargin-top">
-        <li><strong class="pname"><code>tracker</code></strong> - get all infos for intent 'info_patient' Set all slots for intent 
-          'info_patient' to None:
-          <ul>
-            <li>
-              addiction
-            </li>
-            <li>
-              weight
-            </li>
-            <li>
-              infoPatient_distance
-            </li>
-            <li>
-              gender
-            </li>
-            <li>
-              infoPatient_temperature
-            </li>
-            <li>
-              heart_rate
-            </li>
-            <li>
-              blood_pressure
-            </li>
-            <li>
-              infoPatient_time
-            </li>
-          </ul>
-          <p>Set slot info_patient to True</p></li>
-    </ul></dd>
-    <dt>Returns:</dt>
-        <dd>A list of SlotSet</dd>
     <dt>Overrides:
-        <a href="rasa_core.actions.action.Action-class.html#run">rasa_core.actions.action.Action.run</a>
+        object.__init__
     </dt>
   </dl>
 </td></tr></table>
@@ -311,7 +334,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Tue Jul 24 17:57:13 2018
+    Generated by Epydoc 3.0.1 on Thu Jul 26 16:28:28 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

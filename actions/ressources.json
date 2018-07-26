@@ -230,12 +230,12 @@
 		"ENG":"We talked about everything we had to! But feel free to talk to me about everything else!",
 		"FRA":"Nous avons parlé de tous les sujets que nous devions aborder ! Sentez-vous libre de continuer de discuter !"
 		},
-	"sum_up_sadness":
+	"sum_up_emotional_sadness":
 		{
 		"ENG":"It seems that you are in a bad mood... Do you want to talk about it in details?",
 		"FRA":"Il semblerait que vous soyez dans une mauvaise passe... Voulez-vous en parler plus en détails ?"
 		},
-	"sum_up_happiness":
+	"sum_up_emotional_hapiness":
 		{
 		"ENG":"Great! You are in a good mood!",
 		"FRA":"Génial ! Vous semblez de bonne humeur !"
@@ -262,12 +262,12 @@
 		},
 	"medicinal_true":
 		{
-		"ENG":"\n\tYour traitment is medicinal",
+		"ENG":"\n\tYour treatment is medicinal",
 		"FRA":"\n\tVotre traitement est médicamenteux"
 		},
 	"medicinal_false":
 		{
-		"ENG":"\n\tYour traitment is not medicinal",
+		"ENG":"\n\tYour treatment is not medicinal",
 		"FRA":"\n\tVotre traitement n'est pas médicamenteux"
 		},
 	"drug":
@@ -320,7 +320,7 @@
 		"ENG":"\n\tYou saw some caregivers on: {}",
 		"FRA":"\n\tVous avez vu un personnel médical à cette date : {}"
 		},
-	"sum_up_info_patient":
+	"sum_up_infoPatient":
 		{
 		"ENG":"It seems that you talked about some personal informations.",
 		"FRA":"Il semblerait que vous avez parlé de quelques informations personnelles."

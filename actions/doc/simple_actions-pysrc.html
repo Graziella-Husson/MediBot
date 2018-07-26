@@ -121,7 +121,9 @@ simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="r
 <a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line">    <tt id="link-12" class="py-name"><a title="simple_actions.AskAction.entity_name
 simple_actions.AskBooleanAction.entity_name
 simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="return doclink('link-12', 'entity_name', 'link-5');">entity_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
-<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">    <tt id="link-13" class="py-name" targets="Variable form_actions.FormActionCalculusAndCore.intent_name=form_actions.FormActionCalculusAndCore-class.html#intent_name,Variable simple_actions.AskBooleanAction.intent_name=simple_actions.AskBooleanAction-class.html#intent_name,Variable simple_actions.AskButtonsAction.intent_name=simple_actions.AskButtonsAction-class.html#intent_name"><a title="form_actions.FormActionCalculusAndCore.intent_name
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">    <tt id="link-13" class="py-name" targets="Variable ask_what.AskWhatAction.intent_name=ask_what.AskWhatAction-class.html#intent_name,Variable form_actions.FormActionCalculusAndCore.intent_name=form_actions.FormActionCalculusAndCore-class.html#intent_name,Variable reset_slots.ResetSlotsAction.intent_name=reset_slots.ResetSlotsAction-class.html#intent_name,Variable simple_actions.AskBooleanAction.intent_name=simple_actions.AskBooleanAction-class.html#intent_name,Variable simple_actions.AskButtonsAction.intent_name=simple_actions.AskButtonsAction-class.html#intent_name"><a title="ask_what.AskWhatAction.intent_name
+form_actions.FormActionCalculusAndCore.intent_name
+reset_slots.ResetSlotsAction.intent_name
 simple_actions.AskBooleanAction.intent_name
 simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="return doclink('link-13', 'intent_name', 'link-13');">intent_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
 <a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line"> </tt>
@@ -129,7 +131,9 @@ simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="r
 </div><div id="AskBooleanAction.check-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="AskBooleanAction.check-expanded"><a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line">        <tt class="py-docstring">"""Used to check if all proprieties has been set"""</tt> </tt>
 <a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-14" class="py-name"><a title="simple_actions.AskAction.entity_name
 simple_actions.AskBooleanAction.entity_name
-simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="return doclink('link-14', 'entity_name', 'link-5');">entity_name</a></tt> <tt class="py-op">==</tt> <tt class="py-string">""</tt> <tt class="py-keyword">or</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-15" class="py-name"><a title="form_actions.FormActionCalculusAndCore.intent_name
+simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="return doclink('link-14', 'entity_name', 'link-5');">entity_name</a></tt> <tt class="py-op">==</tt> <tt class="py-string">""</tt> <tt class="py-keyword">or</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-15" class="py-name"><a title="ask_what.AskWhatAction.intent_name
+form_actions.FormActionCalculusAndCore.intent_name
+reset_slots.ResetSlotsAction.intent_name
 simple_actions.AskBooleanAction.intent_name
 simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="return doclink('link-15', 'intent_name', 'link-13');">intent_name</a></tt> <tt class="py-op">==</tt> <tt class="py-string">""</tt><tt class="py-op">:</tt> </tt>
 <a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line">            <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-string">"""</tt> </tt>
@@ -147,14 +151,18 @@ simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="r
 <a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">        <tt class="py-name">no_button</tt> <tt class="py-op">=</tt> <tt id="link-19" class="py-name"><a title="ressources.get_utterance" class="py-name" href="#" onclick="return doclink('link-19', 'get_utterance', 'link-3');">get_utterance</a></tt><tt class="py-op">(</tt><tt class="py-string">"no"</tt><tt class="py-op">,</tt> <tt class="py-name">language</tt><tt class="py-op">)</tt> </tt>
 <a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">        <tt id="link-20" class="py-name" targets="Variable simple_actions.AskButtonsAction.buttons=simple_actions.AskButtonsAction-class.html#buttons"><a title="simple_actions.AskButtonsAction.buttons" class="py-name" href="#" onclick="return doclink('link-20', 'buttons', 'link-20');">buttons</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
 <a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">        <tt id="link-21" class="py-name"><a title="simple_actions.AskButtonsAction.buttons" class="py-name" href="#" onclick="return doclink('link-21', 'buttons', 'link-20');">buttons</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">Button</tt><tt class="py-op">(</tt><tt class="py-name">title</tt><tt class="py-op">=</tt><tt class="py-name">yes_button</tt><tt class="py-op">,</tt> </tt>
-<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">                              <tt class="py-name">payload</tt><tt class="py-op">=</tt><tt class="py-string">"/"</tt><tt class="py-op">+</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-22" class="py-name"><a title="form_actions.FormActionCalculusAndCore.intent_name
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">                              <tt class="py-name">payload</tt><tt class="py-op">=</tt><tt class="py-string">"/"</tt><tt class="py-op">+</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-22" class="py-name"><a title="ask_what.AskWhatAction.intent_name
+form_actions.FormActionCalculusAndCore.intent_name
+reset_slots.ResetSlotsAction.intent_name
 simple_actions.AskBooleanAction.intent_name
 simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="return doclink('link-22', 'intent_name', 'link-13');">intent_name</a></tt><tt class="py-op">+</tt><tt class="py-string">"{\""</tt><tt class="py-op">+</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-23" class="py-name"><a title="simple_actions.AskAction.entity_name
 simple_actions.AskBooleanAction.entity_name
 simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="return doclink('link-23', 'entity_name', 'link-5');">entity_name</a></tt><tt class="py-op">+</tt><tt class="py-string">"\":true}"</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
 <a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-24" class="py-name"><a title="simple_actions.AskBooleanAction.payload_no" class="py-name" href="#" onclick="return doclink('link-24', 'payload_no', 'link-11');">payload_no</a></tt> <tt class="py-keyword">is</tt> <tt class="py-name">None</tt><tt class="py-op">:</tt> </tt>
 <a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line">            <tt id="link-25" class="py-name"><a title="simple_actions.AskButtonsAction.buttons" class="py-name" href="#" onclick="return doclink('link-25', 'buttons', 'link-20');">buttons</a></tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">Button</tt><tt class="py-op">(</tt><tt class="py-name">title</tt><tt class="py-op">=</tt><tt class="py-name">no_button</tt><tt class="py-op">,</tt> </tt>
-<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">                                  <tt class="py-name">payload</tt><tt class="py-op">=</tt><tt class="py-string">"/"</tt><tt class="py-op">+</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-26" class="py-name"><a title="form_actions.FormActionCalculusAndCore.intent_name
+<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">                                  <tt class="py-name">payload</tt><tt class="py-op">=</tt><tt class="py-string">"/"</tt><tt class="py-op">+</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-26" class="py-name"><a title="ask_what.AskWhatAction.intent_name
+form_actions.FormActionCalculusAndCore.intent_name
+reset_slots.ResetSlotsAction.intent_name
 simple_actions.AskBooleanAction.intent_name
 simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="return doclink('link-26', 'intent_name', 'link-13');">intent_name</a></tt><tt class="py-op">+</tt><tt class="py-string">"{\""</tt><tt class="py-op">+</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-27" class="py-name"><a title="simple_actions.AskAction.entity_name
 simple_actions.AskBooleanAction.entity_name
@@ -171,7 +179,9 @@ simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="r
 <a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line">    <tt id="link-31" class="py-name"><a title="simple_actions.AskAction.entity_name
 simple_actions.AskBooleanAction.entity_name
 simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="return doclink('link-31', 'entity_name', 'link-5');">entity_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
-<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">    <tt id="link-32" class="py-name"><a title="form_actions.FormActionCalculusAndCore.intent_name
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line">    <tt id="link-32" class="py-name"><a title="ask_what.AskWhatAction.intent_name
+form_actions.FormActionCalculusAndCore.intent_name
+reset_slots.ResetSlotsAction.intent_name
 simple_actions.AskBooleanAction.intent_name
 simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="return doclink('link-32', 'intent_name', 'link-13');">intent_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
 <a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line">    <tt id="link-33" class="py-name"><a title="simple_actions.AskButtonsAction.buttons" class="py-name" href="#" onclick="return doclink('link-33', 'buttons', 'link-20');">buttons</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
@@ -180,7 +190,9 @@ simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="r
 </div><div id="AskButtonsAction.check-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="AskButtonsAction.check-expanded"><a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line">        <tt class="py-docstring">"""Used to check if all proprieties has been set"""</tt> </tt>
 <a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-34" class="py-name"><a title="simple_actions.AskAction.entity_name
 simple_actions.AskBooleanAction.entity_name
-simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="return doclink('link-34', 'entity_name', 'link-5');">entity_name</a></tt> <tt class="py-op">==</tt> <tt class="py-string">""</tt> <tt class="py-keyword">or</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-35" class="py-name"><a title="form_actions.FormActionCalculusAndCore.intent_name
+simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="return doclink('link-34', 'entity_name', 'link-5');">entity_name</a></tt> <tt class="py-op">==</tt> <tt class="py-string">""</tt> <tt class="py-keyword">or</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-35" class="py-name"><a title="ask_what.AskWhatAction.intent_name
+form_actions.FormActionCalculusAndCore.intent_name
+reset_slots.ResetSlotsAction.intent_name
 simple_actions.AskBooleanAction.intent_name
 simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="return doclink('link-35', 'intent_name', 'link-13');">intent_name</a></tt> <tt class="py-op">==</tt> <tt class="py-string">""</tt> <tt class="py-keyword">or</tt> <tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-36" class="py-name"><a title="simple_actions.AskButtonsAction.buttons" class="py-name" href="#" onclick="return doclink('link-36', 'buttons', 'link-20');">buttons</a></tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt class="py-number">0</tt><tt class="py-op">:</tt> </tt>
 <a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">            <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt><tt class="py-op">(</tt><tt class="py-string">"""</tt> </tt>
@@ -198,7 +210,9 @@ simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="r
 <a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">            <tt class="py-name">name_button</tt> <tt class="py-op">=</tt> <tt id="link-40" class="py-name"><a title="ressources.get_utterance" class="py-name" href="#" onclick="return doclink('link-40', 'get_utterance', 'link-3');">get_utterance</a></tt><tt class="py-op">(</tt><tt class="py-name">button</tt><tt class="py-op">+</tt><tt class="py-string">"_button"</tt><tt class="py-op">,</tt> <tt class="py-name">language</tt><tt class="py-op">)</tt> </tt>
 <a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">            <tt class="py-name">buttons_to_show</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">Button</tt><tt class="py-op">(</tt><tt class="py-name">title</tt><tt class="py-op">=</tt><tt class="py-name">name_button</tt><tt class="py-op">,</tt> </tt>
 <a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">                                          <tt class="py-name">payload</tt><tt class="py-op">=</tt><tt class="py-string">"/"</tt> </tt>
-<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">                                          <tt class="py-op">+</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-41" class="py-name"><a title="form_actions.FormActionCalculusAndCore.intent_name
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">                                          <tt class="py-op">+</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-41" class="py-name"><a title="ask_what.AskWhatAction.intent_name
+form_actions.FormActionCalculusAndCore.intent_name
+reset_slots.ResetSlotsAction.intent_name
 simple_actions.AskBooleanAction.intent_name
 simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="return doclink('link-41', 'intent_name', 'link-13');">intent_name</a></tt> </tt>
 <a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">                                          <tt class="py-op">+</tt><tt class="py-string">"{\""</tt> </tt>
@@ -228,7 +242,9 @@ simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="r
 <a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-43" class="py-name"><a title="simple_actions.AskAction.entity_name
 simple_actions.AskBooleanAction.entity_name
 simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="return doclink('link-43', 'entity_name', 'link-5');">entity_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"medicinal"</tt> </tt>
-<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-44" class="py-name"><a title="form_actions.FormActionCalculusAndCore.intent_name
+<a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-44" class="py-name"><a title="ask_what.AskWhatAction.intent_name
+form_actions.FormActionCalculusAndCore.intent_name
+reset_slots.ResetSlotsAction.intent_name
 simple_actions.AskBooleanAction.intent_name
 simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="return doclink('link-44', 'intent_name', 'link-13');">intent_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"treatment"</tt> </tt>
 <a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-45" class="py-name"><a title="simple_actions.AskBooleanAction.payload_no" class="py-name" href="#" onclick="return doclink('link-45', 'payload_no', 'link-11');">payload_no</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"/treatment{\"medicinal\":false, \"drug\":\"no_drug\", \"dosing\":\"no_drug\", \"treatment_being_taken\":\"no_drug\", \"treatment_overdosage\":\"no_drug\"}"</tt> </tt>
@@ -246,7 +262,9 @@ simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="r
 <a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-46" class="py-name"><a title="simple_actions.AskAction.entity_name
 simple_actions.AskBooleanAction.entity_name
 simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="return doclink('link-46', 'entity_name', 'link-5');">entity_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"activity_hard"</tt> </tt>
-<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-47" class="py-name"><a title="form_actions.FormActionCalculusAndCore.intent_name
+<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-47" class="py-name"><a title="ask_what.AskWhatAction.intent_name
+form_actions.FormActionCalculusAndCore.intent_name
+reset_slots.ResetSlotsAction.intent_name
 simple_actions.AskBooleanAction.intent_name
 simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="return doclink('link-47', 'intent_name', 'link-13');">intent_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"activity"</tt> </tt>
 </div><a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line"> </tt>
@@ -325,7 +343,9 @@ simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="r
 <a name="L198"></a><tt class="py-lineno">198</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-53" class="py-name"><a title="simple_actions.AskAction.entity_name
 simple_actions.AskBooleanAction.entity_name
 simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="return doclink('link-53', 'entity_name', 'link-5');">entity_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"pain_change"</tt> </tt>
-<a name="L199"></a><tt class="py-lineno">199</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-54" class="py-name"><a title="form_actions.FormActionCalculusAndCore.intent_name
+<a name="L199"></a><tt class="py-lineno">199</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-54" class="py-name"><a title="ask_what.AskWhatAction.intent_name
+form_actions.FormActionCalculusAndCore.intent_name
+reset_slots.ResetSlotsAction.intent_name
 simple_actions.AskBooleanAction.intent_name
 simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="return doclink('link-54', 'intent_name', 'link-13');">intent_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"pain"</tt> </tt>
 <a name="L200"></a><tt class="py-lineno">200</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-55" class="py-name"><a title="simple_actions.AskButtonsAction.buttons" class="py-name" href="#" onclick="return doclink('link-55', 'buttons', 'link-20');">buttons</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">"continuous"</tt><tt class="py-op">,</tt> <tt class="py-string">"intermittent"</tt><tt class="py-op">,</tt> <tt class="py-string">"brief"</tt><tt class="py-op">]</tt> </tt>
@@ -608,7 +628,9 @@ simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="r
 <a name="L433"></a><tt class="py-lineno">433</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-78" class="py-name"><a title="simple_actions.AskAction.entity_name
 simple_actions.AskBooleanAction.entity_name
 simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="return doclink('link-78', 'entity_name', 'link-5');">entity_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"pathology_change"</tt> </tt>
-<a name="L434"></a><tt class="py-lineno">434</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-79" class="py-name"><a title="form_actions.FormActionCalculusAndCore.intent_name
+<a name="L434"></a><tt class="py-lineno">434</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-79" class="py-name"><a title="ask_what.AskWhatAction.intent_name
+form_actions.FormActionCalculusAndCore.intent_name
+reset_slots.ResetSlotsAction.intent_name
 simple_actions.AskBooleanAction.intent_name
 simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="return doclink('link-79', 'intent_name', 'link-13');">intent_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"pathology"</tt> </tt>
 </div><a name="L435"></a><tt class="py-lineno">435</tt>  <tt class="py-line"> </tt>
@@ -623,7 +645,9 @@ simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="r
 <a name="AskPathologyTreatmentLinked.__init__"></a><div id="AskPathologyTreatmentLinked.__init__-def"><a name="L444"></a><tt class="py-lineno">444</tt> <a class="py-toggle" href="#" id="AskPathologyTreatmentLinked.__init__-toggle" onclick="return toggle('AskPathologyTreatmentLinked.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="simple_actions.AskPathologyTreatmentLinked-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
 </div><div id="AskPathologyTreatmentLinked.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="AskPathologyTreatmentLinked.__init__-expanded"><a name="L445"></a><tt class="py-lineno">445</tt>  <tt class="py-line">        <tt class="py-docstring">"""Set the name of the intent\n</tt> </tt>
 <a name="L446"></a><tt class="py-lineno">446</tt>  <tt class="py-line"><tt class="py-docstring">        Set the name of the entity to ask"""</tt> </tt>
-<a name="L447"></a><tt class="py-lineno">447</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-80" class="py-name"><a title="form_actions.FormActionCalculusAndCore.intent_name
+<a name="L447"></a><tt class="py-lineno">447</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-80" class="py-name"><a title="ask_what.AskWhatAction.intent_name
+form_actions.FormActionCalculusAndCore.intent_name
+reset_slots.ResetSlotsAction.intent_name
 simple_actions.AskBooleanAction.intent_name
 simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="return doclink('link-80', 'intent_name', 'link-13');">intent_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"pathology"</tt> </tt>
 <a name="L448"></a><tt class="py-lineno">448</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-81" class="py-name"><a title="simple_actions.AskAction.entity_name
@@ -673,7 +697,9 @@ simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="r
 <a name="L486"></a><tt class="py-lineno">486</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-84" class="py-name"><a title="simple_actions.AskAction.entity_name
 simple_actions.AskBooleanAction.entity_name
 simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="return doclink('link-84', 'entity_name', 'link-5');">entity_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"treatment_being_taken"</tt> </tt>
-<a name="L487"></a><tt class="py-lineno">487</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-85" class="py-name"><a title="form_actions.FormActionCalculusAndCore.intent_name
+<a name="L487"></a><tt class="py-lineno">487</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-85" class="py-name"><a title="ask_what.AskWhatAction.intent_name
+form_actions.FormActionCalculusAndCore.intent_name
+reset_slots.ResetSlotsAction.intent_name
 simple_actions.AskBooleanAction.intent_name
 simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="return doclink('link-85', 'intent_name', 'link-13');">intent_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"treatment"</tt> </tt>
 <a name="L488"></a><tt class="py-lineno">488</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-86" class="py-name"><a title="simple_actions.AskButtonsAction.buttons" class="py-name" href="#" onclick="return doclink('link-86', 'buttons', 'link-20');">buttons</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">"taken"</tt><tt class="py-op">,</tt> <tt class="py-string">"stopped"</tt><tt class="py-op">,</tt> <tt class="py-string">"forgotten"</tt><tt class="py-op">]</tt> </tt>
@@ -692,7 +718,9 @@ simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="r
 <a name="L501"></a><tt class="py-lineno">501</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-87" class="py-name"><a title="simple_actions.AskAction.entity_name
 simple_actions.AskBooleanAction.entity_name
 simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="return doclink('link-87', 'entity_name', 'link-5');">entity_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"treatment_overdosage"</tt> </tt>
-<a name="L502"></a><tt class="py-lineno">502</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-88" class="py-name"><a title="form_actions.FormActionCalculusAndCore.intent_name
+<a name="L502"></a><tt class="py-lineno">502</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-88" class="py-name"><a title="ask_what.AskWhatAction.intent_name
+form_actions.FormActionCalculusAndCore.intent_name
+reset_slots.ResetSlotsAction.intent_name
 simple_actions.AskBooleanAction.intent_name
 simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="return doclink('link-88', 'intent_name', 'link-13');">intent_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"treatment"</tt> </tt>
 <a name="L503"></a><tt class="py-lineno">503</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-89" class="py-name"><a title="simple_actions.AskButtonsAction.buttons" class="py-name" href="#" onclick="return doclink('link-89', 'buttons', 'link-20');">buttons</a></tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-string">"welltaken"</tt><tt class="py-op">,</tt> <tt class="py-string">"overdose"</tt><tt class="py-op">,</tt> <tt class="py-string">"underdose"</tt><tt class="py-op">]</tt> </tt>
@@ -718,7 +746,9 @@ simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="r
 <a name="AskTreatmentPrescripted.__init__"></a><div id="AskTreatmentPrescripted.__init__-def"><a name="L521"></a><tt class="py-lineno">521</tt> <a class="py-toggle" href="#" id="AskTreatmentPrescripted.__init__-toggle" onclick="return toggle('AskTreatmentPrescripted.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="simple_actions.AskTreatmentPrescripted-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
 </div><div id="AskTreatmentPrescripted.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="AskTreatmentPrescripted.__init__-expanded"><a name="L522"></a><tt class="py-lineno">522</tt>  <tt class="py-line">        <tt class="py-docstring">"""Set the name of the intent\n</tt> </tt>
 <a name="L523"></a><tt class="py-lineno">523</tt>  <tt class="py-line"><tt class="py-docstring">        Set the name of the entity to ask"""</tt> </tt>
-<a name="L524"></a><tt class="py-lineno">524</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-91" class="py-name"><a title="form_actions.FormActionCalculusAndCore.intent_name
+<a name="L524"></a><tt class="py-lineno">524</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-91" class="py-name"><a title="ask_what.AskWhatAction.intent_name
+form_actions.FormActionCalculusAndCore.intent_name
+reset_slots.ResetSlotsAction.intent_name
 simple_actions.AskBooleanAction.intent_name
 simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="return doclink('link-91', 'intent_name', 'link-13');">intent_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"treatment"</tt> </tt>
 <a name="L525"></a><tt class="py-lineno">525</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-92" class="py-name"><a title="simple_actions.AskAction.entity_name
@@ -735,7 +765,9 @@ simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="r
 <a name="AskTreatmentOk.__init__"></a><div id="AskTreatmentOk.__init__-def"><a name="L534"></a><tt class="py-lineno">534</tt> <a class="py-toggle" href="#" id="AskTreatmentOk.__init__-toggle" onclick="return toggle('AskTreatmentOk.__init__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="simple_actions.AskTreatmentOk-class.html#__init__">__init__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
 </div><div id="AskTreatmentOk.__init__-collapsed" style="display:none;" pad="+++" indent="++++++++"></div><div id="AskTreatmentOk.__init__-expanded"><a name="L535"></a><tt class="py-lineno">535</tt>  <tt class="py-line">        <tt class="py-docstring">"""Set the name of the intent\n</tt> </tt>
 <a name="L536"></a><tt class="py-lineno">536</tt>  <tt class="py-line"><tt class="py-docstring">        Set the name of the entity to ask"""</tt> </tt>
-<a name="L537"></a><tt class="py-lineno">537</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-93" class="py-name"><a title="form_actions.FormActionCalculusAndCore.intent_name
+<a name="L537"></a><tt class="py-lineno">537</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-93" class="py-name"><a title="ask_what.AskWhatAction.intent_name
+form_actions.FormActionCalculusAndCore.intent_name
+reset_slots.ResetSlotsAction.intent_name
 simple_actions.AskBooleanAction.intent_name
 simple_actions.AskButtonsAction.intent_name" class="py-name" href="#" onclick="return doclink('link-93', 'intent_name', 'link-13');">intent_name</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"treatment"</tt> </tt>
 <a name="L538"></a><tt class="py-lineno">538</tt>  <tt class="py-line">        <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-94" class="py-name"><a title="simple_actions.AskAction.entity_name
@@ -925,7 +957,7 @@ expandto(location.href);
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Tue Jul 24 17:57:17 2018
+    Generated by Epydoc 3.0.1 on Thu Jul 26 16:28:34 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

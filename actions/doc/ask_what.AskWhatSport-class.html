@@ -59,15 +59,22 @@
 <!-- ==================== CLASS DESCRIPTION ==================== -->
 <h1 class="epydoc">Class AskWhatSport</h1><p class="nomargin-top"><span class="codelink"><a href="ask_what-pysrc.html#AskWhatSport">source&nbsp;code</a></span></p>
 <center>
-<center>  <map id="uml_class_diagram_for_ask_what_4" name="uml_class_diagram_for_ask_what_4">
-<area shape="rect" id="node1_4" href="ask_what.AskWhatSport-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="17,135,236,155"/>
-<area shape="rect" id="node1_5" href="ask_what.AskWhatSport-class.html#run" title="Execute the side effects of this action." alt="" coords="17,155,236,175"/>
-<area shape="rect" id="node1" href="ask_what.AskWhatSport-class.html" title="Ask what&#39;s wrong with the infos for the intent activity" alt="" coords="5,103,248,181"/>
-<area shape="rect" id="node2_6" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="35,38,219,58"/>
-<area shape="rect" id="node2_7" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="35,58,219,78"/>
-<area shape="rect" id="node2" href="rasa_core.actions.action.Action-class.html" title="Next action to be taken in response to a dialogue state." alt="" coords="23,5,231,84"/>
+<center>  <map id="uml_class_diagram_for_ask_what_5" name="uml_class_diagram_for_ask_what_5">
+<area shape="rect" id="node1_10" href="ask_what.AskWhatSport-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="84,307,169,327"/>
+<area shape="rect" id="node1_11" href="ask_what.AskWhatSport-class.html#__init__" title="Display a button for all infos the tracker have for the intent &#39;activity&#39;:" alt="" coords="84,327,169,347"/>
+<area shape="rect" id="node1" href="ask_what.AskWhatSport-class.html" title="Ask what&#39;s wrong with the infos for the intent activity" alt="" coords="72,275,181,353"/>
+<area shape="rect" id="node2_12" href="ask_what.AskWhatAction-class.html#intent_name" title="ask_what.AskWhatAction.intent_name" alt="" coords="17,127,236,147"/>
+<area shape="rect" id="node2_13" href="ask_what.AskWhatAction-class.html#simple_buttons" title="ask_what.AskWhatAction.simple_buttons" alt="" coords="17,147,236,167"/>
+<area shape="rect" id="node2_14" href="ask_what.AskWhatAction-class.html#boolean_buttons" title="ask_what.AskWhatAction.boolean_buttons" alt="" coords="17,167,236,187"/>
+<area shape="rect" id="node2_15" href="ask_what.AskWhatAction-class.html#multiple_buttons" title="ask_what.AskWhatAction.multiple_buttons" alt="" coords="17,187,236,207"/>
+<area shape="rect" id="node2_16" href="ask_what.AskWhatAction-class.html#check" title="Used to check if all proprieties has been set" alt="" coords="17,210,236,230"/>
+<area shape="rect" id="node2_17" href="ask_what.AskWhatAction-class.html#run" title="Execute the side effects of this action." alt="" coords="17,230,236,250"/>
+<area shape="rect" id="node2" href="ask_what.AskWhatAction-class.html" title="ask_what.AskWhatAction" alt="" coords="5,103,248,256"/>
+<area shape="rect" id="node3_18" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="35,38,219,58"/>
+<area shape="rect" id="node3_19" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="35,58,219,78"/>
+<area shape="rect" id="node3" href="rasa_core.actions.action.Action-class.html" title="Next action to be taken in response to a dialogue state." alt="" coords="23,5,231,84"/>
 </map>
-  <img src="uml_class_diagram_for_ask_what_4.gif" alt='' usemap="#uml_class_diagram_for_ask_what_4" ismap="ismap" class="graph-without-title" />
+  <img src="uml_class_diagram_for_ask_what_5.gif" alt='' usemap="#uml_class_diagram_for_ask_what_5" ismap="ismap" class="graph-without-title" />
 </center>
 </center>
 <hr />
@@ -114,13 +121,11 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="ask_what.AskWhatSport-class.html#run" class="summary-sig-name">run</a>(<span class="summary-sig-arg">self</span>,
-        <span class="summary-sig-arg">dispatcher</span>,
-        <span class="summary-sig-arg">tracker</span>,
-        <span class="summary-sig-arg">domain</span>)</span><br />
-      Execute the side effects of this action.</td>
+          <td><span class="summary-sig"><a href="ask_what.AskWhatSport-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Display a button for all infos the tracker have for the intent 
+      'activity':</td>
           <td align="right" valign="top">
-            <span class="codelink"><a href="ask_what-pysrc.html#AskWhatSport.run">source&nbsp;code</a></span>
+            <span class="codelink"><a href="ask_what-pysrc.html#AskWhatSport.__init__">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -130,6 +135,10 @@
   </tr>
   <tr>
     <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="ask_what.AskWhatAction-class.html">AskWhatAction</a></code></b>:
+      <code><a href="ask_what.AskWhatAction-class.html#check">check</a></code>,
+      <code><a href="ask_what.AskWhatAction-class.html#run">run</a></code>
+      </p>
     <p class="indent-wrapped-lines"><b>Inherited from <code><a href="rasa_core.actions.action.Action-class.html">rasa_core.actions.action.Action</a></code></b>:
       <code><a href="rasa_core.actions.action.Action-class.html#__str__">__str__</a></code>,
       <code><a href="rasa_core.actions.action.Action-class.html#resets_topic">resets_topic</a></code>
@@ -139,7 +148,6 @@
       <code>__format__</code>,
       <code>__getattribute__</code>,
       <code>__hash__</code>,
-      <code>__init__</code>,
       <code>__new__</code>,
       <code>__reduce__</code>,
       <code>__reduce_ex__</code>,
@@ -147,6 +155,34 @@
       <code>__setattr__</code>,
       <code>__sizeof__</code>,
       <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS VARIABLES ==================== -->
+<a name="section-ClassVariables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variables</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariables"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="ask_what.AskWhatAction-class.html">AskWhatAction</a></code></b>:
+      <code><a href="ask_what.AskWhatAction-class.html#boolean_buttons">boolean_buttons</a></code>,
+      <code><a href="ask_what.AskWhatAction-class.html#intent_name">intent_name</a></code>,
+      <code><a href="ask_what.AskWhatAction-class.html#multiple_buttons">multiple_buttons</a></code>,
+      <code><a href="ask_what.AskWhatAction-class.html#simple_buttons">simple_buttons</a></code>
       </p>
     </td>
   </tr>
@@ -208,7 +244,7 @@
     </td>
   </tr></table>
   
-  <p>Unique identifier of this simple action.</p>
+  <p>the name of the action to implement</p>
   <dl class="fields">
     <dt>Returns:</dt>
         <dd>the name of the action.</dd>
@@ -218,62 +254,49 @@
   </dl>
 </td></tr></table>
 </div>
-<a name="run"></a>
+<a name="__init__"></a>
 <div>
 <table class="details" border="1" cellpadding="3"
        cellspacing="0" width="100%" bgcolor="white">
 <tr><td>
   <table width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">run</span>(<span class="sig-arg">self</span>,
-        <span class="sig-arg">dispatcher</span>,
-        <span class="sig-arg">tracker</span>,
-        <span class="sig-arg">domain</span>)</span>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
   </h3>
   </td><td align="right" valign="top"
-    ><span class="codelink"><a href="ask_what-pysrc.html#AskWhatSport.run">source&nbsp;code</a></span>&nbsp;
+    ><span class="codelink"><a href="ask_what-pysrc.html#AskWhatSport.__init__">source&nbsp;code</a></span>&nbsp;
     </td>
   </tr></table>
   
-  <p>Execute the side effects of this action.</p>
-  <p>Return a list of events (i.e. instructions to update tracker 
-  state)</p>
-  <p>:param tracker: user state tracker :param dispatcher: communication 
-  channel :param domain: bots custom domain</p>
+  <p>Display a button for all infos the tracker have for the intent 
+  'activity':</p>
+  <ul>
+    <li>
+      activity_period
+    </li>
+    <li>
+      activity_distance
+    </li>
+    <li>
+      sport
+    </li>
+    <li>
+      activity_duration
+    </li>
+    <li>
+      activity_hard
+    </li>
+    <li>
+      activity_time
+    </li>
+  </ul>
+  <p>sport is linked to activity_level. If the sport is incorrect, 
+  activity_level too. When clicked, a button will reset the slot linked to 
+  it.</p>
   <dl class="fields">
-    <dt>Parameters:</dt>
-    <dd><ul class="nomargin-top">
-        <li><strong class="pname"><code>tracker</code></strong> - used to get all infos for 'activity' intent from the tracker + 
-          language</li>
-        <li><strong class="pname"><code>dispatcher</code></strong> - used to display buttons with dispatcher.utter_button_message 
-          Display a button for all infos the tracker have for the intent 
-          'activity':
-          <ul>
-            <li>
-              activity_period
-            </li>
-            <li>
-              activity_distance
-            </li>
-            <li>
-              sport
-            </li>
-            <li>
-              activity_duration
-            </li>
-            <li>
-              activity_hard
-            </li>
-            <li>
-              activity_time
-            </li>
-          </ul>
-          <p>sport is linked to activity_level. If the sport is incorrect, 
-          activity_level too. When clicked, a button will reset the slot 
-          linked to it.</p></li>
-    </ul></dd>
     <dt>Overrides:
-        <a href="rasa_core.actions.action.Action-class.html#run">rasa_core.actions.action.Action.run</a>
+        object.__init__
     </dt>
   </dl>
 </td></tr></table>
@@ -307,7 +330,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Tue Jul 24 17:57:11 2018
+    Generated by Epydoc 3.0.1 on Thu Jul 26 16:28:26 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

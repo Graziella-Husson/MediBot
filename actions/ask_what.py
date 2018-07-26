@@ -22,7 +22,7 @@ def get_buttons_simple(buttons, slot_name, tracker, language, intent_name, other
     @return: list of buttons in which we appended new ones"""
     slot_value = tracker.get_slot(slot_name)
     if slot_value is not None:
-        if button_name is None:
+        if button_name is not None:
             to_search_in_ressources = button_name
         else:
             to_search_in_ressources = slot_name+"_button"
@@ -71,7 +71,7 @@ def get_buttons_boolean(buttons, slot_name, tracker, language, intent_name, butt
     @return: list of buttons in which we appended new ones"""
     slot_value = tracker.get_slot(slot_name)
     if slot_value is not None:
-        if button_name is None:
+        if button_name is not None:
             to_search_in_ressources = button_name
         else:
             to_search_in_ressources = slot_name+"_button"
@@ -84,76 +84,109 @@ def get_buttons_boolean(buttons, slot_name, tracker, language, intent_name, butt
                                   payload="/"+intent_name+"{\""+slot_name+"\":true}"))
     return buttons
 
-class AskWhatSport(Action):
+
+class AskWhatAction(Action):
+    intent_name = ""
+    simple_buttons = []
+    boolean_buttons = []
+    multiple_buttons = []
+
+    def check(self):
+        """Used to check if all proprieties has been set"""
+        if self.intent_name == "" or (len(self.simple_buttons) == 0 and len(self.boolean_buttons) == 0 and len(self.multiple_buttons) == 0):
+                raise NotImplementedError("""
+                a AskAction action must implement a __init__ method
+                with a intent_name and minimun one of simple_buttons,
+                boolean_buttons and multiple_buttons list""")
+
+    def name(self):
+        """the name of the action to implement"""
+        raise NotImplementedError("""a AskWhatAction action must
+                                    implement a name method""")
+
+    def run(self, dispatcher, tracker, domain):
+        language = tracker.get_slot("language")
+        buttons = []
+        for button in self.simple_buttons:
+            if type(button) == list:
+                if len(button) == 3:
+                    buttons = get_buttons_simple(buttons, button[0], tracker, language, self.intent_name, button[2])
+                else:
+                    buttons = get_buttons_simple(buttons, button[0], tracker, language, self.intent_name, button_name=button[1])
+            else:
+                buttons = get_buttons_simple(buttons, button, tracker, language, self.intent_name)
+        for button in self.boolean_buttons:
+            if type(button) == list:
+                buttons = get_buttons_boolean(buttons, button[0], tracker, language, self.intent_name, button_name=button[1])
+            else:
+                buttons = get_buttons_boolean(buttons, button, tracker, language, self.intent_name)
+        for button in self.multiple_buttons:
+            buttons = get_buttons_multiple(buttons, button[0], tracker, language, self.intent_name, button[1])
+        if len(buttons) > 0:
+            message = get_utterance("ask_what", language)
+            dispatcher.utter_button_message(message, buttons)
+
+
+class AskWhatSport(AskWhatAction):
     """Ask what's wrong with the infos for the intent activity"""
     def name(self):
         """@return: the name of the action."""
         return 'ask_what_sport'
 
-    def run(self, dispatcher, tracker, domain):
-        """@param tracker: used to get all infos for 'activity' intent from the tracker + language
-        @param dispatcher: used to display buttons with dispatcher.utter_button_message
-        Display a button for all infos the tracker have for the intent 'activity':
+    def __init__(self):
+        """Display a button for all infos the tracker have for the intent 'activity':
             - activity_period
             - activity_distance
             - sport
             - activity_duration
             - activity_hard
             - activity_time
-        sport is linked to activity_level. If the sport is incorrect, activity_level too.
-        When clicked, a button will reset the slot linked to it.            """
-        language = tracker.get_slot("language")
-        intent_name = "activity"
-        buttons = []
-        buttons = get_buttons_multiple(buttons, ["sport", "level"], tracker, language, intent_name, "sport")
-        buttons = get_buttons_simple(buttons, "activity_duration", tracker, language, intent_name, button_name="duration_button")
-        buttons = get_buttons_simple(buttons, "activity_distance", tracker, language, intent_name, button_name="distance_button")
-        buttons = get_buttons_simple(buttons, "activity_period", tracker, language, intent_name, button_name="period_button")
-        buttons = get_buttons_simple(buttons, "activity_hard", tracker, language, intent_name)
-        buttons = get_buttons_simple(buttons, "activity_time", tracker, language, intent_name, button_name="time_button")
-        message = get_utterance("ask_what", language)
-        dispatcher.utter_button_message(message, buttons)
+        sport is linked to activity_level.
+        If the sport is incorrect, activity_level too.
+        When clicked, a button will reset the slot linked to it."""
+        self.intent_name = "activity"
+        self.simple_buttons = [["activity_duration", "duration_button"],
+                               ["activity_distance", "distance_button"],
+                               ["activity_period", "period_button"],
+                               ["activity_time", "time_button"],
+                               "activity_hard"]
+        self.multiple_buttons = [[["sport", "level"], "sport"]]
 
-class AskWhatPain(Action):
+
+class AskWhatPain(AskWhatAction):
     """Ask what's wrong with the infos for the intent pain"""
     def name(self):
         """@return: the name of the action."""
         return 'ask_what_pain'
 
-    def run(self, dispatcher, tracker, domain):
-        """@param tracker: used to get all infos for 'pain' intent from the tracker + language
-        @param dispatcher: used to display buttons with dispatcher.utter_button_message(message, buttons)
-        Display a button for all infos the tracker have for the intent 'pain':
+    def __init__(self):
+        """Display a button for all infos the tracker have for the intent 'pain':
             - pain_period
             - pain_desc
             - pain_body_part
             - pain_duration
             - pain_change
             - pain_time
-        pain_desc is linked to pain_level. If the pain_desc is incorrect, pain_level too.
+        pain_desc is linked to pain_level. If the pain_desc is incorrect,
+        pain_level too.
         When clicked, a button will reset the slot linked to it."""
-        language = tracker.get_slot("language")
-        intent_name = "pain"
-        buttons = []
-        buttons = get_buttons_multiple(buttons, ["pain_desc", "level"], tracker, language, intent_name, "pain_desc")
-        buttons = get_buttons_simple(buttons, "pain_change", tracker, language, intent_name, button_name="evolution_button")
-        buttons = get_buttons_simple(buttons, "pain_duration", tracker, language, intent_name, button_name="duration_button")
-        buttons = get_buttons_simple(buttons, "pain_body_part", tracker, language, intent_name, button_name="body_part_button")
-        buttons = get_buttons_simple(buttons, "pain_period", tracker, language, intent_name, button_name="period_button")
-        buttons = get_buttons_simple(buttons, "pain_time", tracker, language, intent_name, button_name="time_button")
-        message = get_utterance("ask_what", language)
-        dispatcher.utter_button_message(message, buttons)
+        self.intent_name = "pain"
+        self.simple_buttons = [["pain_change", "evolution_button"],
+                               ["pain_duration", "duration_button"],
+                               ["pain_body_part", "body_part_button"],
+                               ["pain_period", "period_button"],
+                               ["pain_time", "time_button"]]
+        self.multiple_buttons = [[["pain_desc", "level"], "pain_desc"]]
 
-class AskWhatPathology(Action):
+
+class AskWhatPathology(AskWhatAction):
     """Ask what's wrong with the infos for the intent pathology"""
     def name(self):
         """@return: the name of the action."""
         return 'ask_what_pathology'
 
-    def run(self, dispatcher, tracker, domain):
-        """@param tracker: used to get all infos for 'pathology' intent from the tracker + language
-        @param dispatcher: used to display buttons with dispatcher.utter_button_message(message, buttons)
-        Display a button for all infos the tracker have for the intent 'pathology':
+    def __init__(self):
+        """Display a button for all infos the tracker have for the intent 'pathology':
             - pathology_body_part
             - symtoms
             - pathology_time
@@ -161,28 +194,23 @@ class AskWhatPathology(Action):
             - pathology_period
             - pathology_treatment_linked (boolean)
         When clicked, a button will reset the slot linked to it."""
-        language = tracker.get_slot("language")
-        intent_name = "pathology"
-        buttons = []
-        buttons = get_buttons_simple(buttons, "symtoms", tracker, language, intent_name)
-        buttons = get_buttons_simple(buttons, "pathology_body_part", tracker, language, intent_name, button_name="body_part_button")
-        buttons = get_buttons_simple(buttons, "pathology_time", tracker, language, intent_name, button_name="time_button")
-        buttons = get_buttons_simple(buttons, "pathology_period", tracker, language, intent_name, button_name="period_button")
-        buttons = get_buttons_boolean(buttons, "pathology_change", tracker, language, intent_name, button_name="evolution_button")
-        buttons = get_buttons_boolean(buttons, "pathology_treatment_linked", tracker, language, intent_name)
-        message = get_utterance("ask_what", language)
-        dispatcher.utter_button_message(message, buttons)
+        self.intent_name = "pathology"
+        self.simple_buttons = [["pathology_body_part", "body_part_button"],
+                               ["pathology_time", "time_button"],
+                               ["pathology_period", "period_button"],
+                               "symtoms"]
+        self.boolean_buttons = [["pathology_change", "evolution_button"],
+                                "pathology_treatment_linked"]
 
-class AskWhatTreatment(Action):
+
+class AskWhatTreatment(AskWhatAction):
     """Ask what's wrong with the infos for the intent treatment"""
     def name(self):
         """@return: the name of the action."""
         return 'ask_what_treatment'
 
-    def run(self, dispatcher, tracker, domain):
-        """@param tracker: used to get all infos for 'treatment' intent from the tracker + language
-        @param dispatcher: used to display buttons with dispatcher.utter_button_message(message, buttons)
-        Display a button for all infos the tracker have for the intent 'treatment':
+    def __init__(self):
+        """Display a button for all infos the tracker have for the intent 'treatment':
             - medicinal (boolean)
             - treatment_being_taken
             - drug
@@ -193,36 +221,35 @@ class AskWhatTreatment(Action):
             - treatment_overdosage
             - treatment_period
             - treatment_duration
-        If medicinal button is cliked, set the slot 'medicinal' to the opposite of its value.
-        If medicinal button is cliked, set the slot 'treatment_prescripted' to the opposite of its value.
-        If medicinal button is cliked, set the slot 'treatment_ok' to the opposite of its value.
+        If medicinal button is cliked,
+        set the slot 'medicinal' to the opposite of its value.
+        If medicinal button is cliked,
+        set the slot 'treatment_prescripted' to the opposite of its value.
+        If medicinal button is cliked,
+        set the slot 'treatment_ok' to the opposite of its value.
         For others buttons, when clicked, will reset the slot linked to it."""
-        language = tracker.get_slot("language")
-        intent_name = "treatment"
-        buttons = []
-        buttons = get_buttons_boolean(buttons, "medicinal", tracker, language, intent_name)
-        buttons = get_buttons_simple(buttons, "treatment_being_taken", tracker, language, intent_name, "no_drug")
-        buttons = get_buttons_simple(buttons, "drug", tracker, language, intent_name, "no_drug")
-        buttons = get_buttons_simple(buttons, "dosing", tracker, language, intent_name, "no_drug")
-        buttons = get_buttons_simple(buttons, "treatment_period", tracker, language, intent_name, button_name="period_button")
-        buttons = get_buttons_simple(buttons, "treatment_time", tracker, language, intent_name, button_name="time_button")
-        buttons = get_buttons_simple(buttons, "treatment_overdosage", tracker, language, intent_name, "no_drug")
-        buttons = get_buttons_simple(buttons, "treatment_duration", tracker, language, intent_name, button_name="duration_button")
-        buttons = get_buttons_boolean(buttons, "treatment_prescripted", tracker, language, intent_name)
-        buttons = get_buttons_boolean(buttons, "treatment_ok", tracker, language, intent_name)
-        message = get_utterance("ask_what", language)
-        dispatcher.utter_button_message(message, buttons)
+        self.intent_name = "treatment"
+        self.simple_buttons = [["treatment_period", "period_button"],
+                               ["treatment_time", "time_button"],
+                               ["treatment_duration", "duration_button"],
+                               ["treatment_overdosage", None, "no_drug"],
+                               ["dosing", None, "no_drug"],
+                               ["drug", None, "no_drug"],
+                               ["treatment_being_taken", None, "no_drug"]]
+        self.boolean_buttons = ["treatment_prescripted",
+                                "medicinal",
+                                "treatment_ok"]
 
-class AskWhatInfoPatient(Action):
+
+class AskWhatInfoPatient(AskWhatAction):
     """Ask what's wrong with the infos for the intent infoPatient"""
     def name(self):
         """@return: the name of the action."""
         return 'ask_what_info_patient'
 
-    def run(self, dispatcher, tracker, domain):
-        """@param tracker: used to get all infos for 'info_patient' intent from the tracker + language
-        @param dispatcher: used to display buttons with dispatcher.utter_button_message(message, buttons)
-        Display a button for all infos the tracker have for the intent 'info_patient':
+    def __init__(self):
+        """Display a button for all infos the tracker
+        have for the intent 'info_patient':
             - addiction
             - weight
             - infoPatient_distance
@@ -232,16 +259,12 @@ class AskWhatInfoPatient(Action):
             - blood_pressure
             - infoPatient_time
         When clicked, the button will reset the slot linked to it."""
-        language = tracker.get_slot("language")
-        intent_name = "infoPatient"
-        buttons = []
-        buttons = get_buttons_simple(buttons, "addiction", tracker, language, intent_name)
-        buttons = get_buttons_simple(buttons, "weight", tracker, language, intent_name)
-        buttons = get_buttons_simple(buttons, "infoPatient_distance", tracker, language, intent_name, button_name="size_button")
-        buttons = get_buttons_simple(buttons, "gender", tracker, language, intent_name)
-        buttons = get_buttons_simple(buttons, "infoPatient_temperature", tracker, language, intent_name, button_name="temperature_button")
-        buttons = get_buttons_simple(buttons, "heart_rate", tracker, language, intent_name)
-        buttons = get_buttons_simple(buttons, "blood_pressure", tracker, language, intent_name)
-        buttons = get_buttons_simple(buttons, "infoPatient_time", tracker, language, intent_name, button_name="date_check_up_button")
-        message = get_utterance("ask_what", language)
-        dispatcher.utter_button_message(message, buttons)
+        self.intent_name = "infoPatient"
+        self.simple_buttons = [["infoPatient_distance", "size_button"],
+                               ["infoPatient_temperature", "temperature_button"],
+                               ["infoPatient_time", "date_check_up_button"],
+                               "addiction",
+                               "weight",
+                               "gender",
+                               "heart_rate",
+                               "blood_pressure"]

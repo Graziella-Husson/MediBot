@@ -11,14 +11,18 @@ from level_classifiers import get_pain_level, get_physical_activity_level
 from init_and_complex import get_obligatories
 from ressources import get_utterance
 
+
 def get_response_simple(response, slot_name, tracker, language, other_value=None, utt_name=None):
     """@param response: string of the response the bot will say to the user
     @param slot_name: name of the slot we want to sum up
-    @param tracker: used to get all infos for 'slot_name' entity from the tracker
+    @param tracker: used to get all infos for 'slot_name' entity
+    from the tracker
     @param language: language of the bot (for display the right name of button)
-    @param other_value: unrequired, if the slot value is set to this value, do not sum up it
-    @param button_name: unrequired, name of the ressource in json if different to slot_name
-    Add a part in the response of the bot with a sentence to sum up a given slot
+    @param other_value: unrequired, if the slot value is set to
+    this value, do not sum up it
+    @param button_name: unrequired, name of the ressource in json
+    if different to slot_name
+    Add part in the response of the bot with a sentence to sum up a given slot
     @return: string of the response the bot will say to the user
     """
     if utt_name is not None:
@@ -31,10 +35,12 @@ def get_response_simple(response, slot_name, tracker, language, other_value=None
             response += get_utterance(to_search_in_ressources, language).format(slot_value)
     return response
 
+
 def get_response_boolean(response, slot_name, tracker, language):
     """@param response: string of the response the bot will say to the user
     @param slot_name: name of the boolean slot we want to sum up
-    @param tracker: used to get all infos for 'slot_name' entity from the tracker
+    @param tracker: used to get all infos for 'slot_name' entity
+    from the tracker
     @param language: language of the bot (for display the right name of button)
     Add a part in the response of the bot with a sentence to
     sum up a given boolean slot, depending of its true or false value
@@ -47,6 +53,7 @@ def get_response_boolean(response, slot_name, tracker, language):
             response += get_utterance(slot_name+"_false", language)
     return response
 
+
 class FormActionTriggerAction(FormAction):
     """A custom class heritating from FormAction.
     The main difference is in what we use to ask requested_slots.
@@ -55,7 +62,8 @@ class FormActionTriggerAction(FormAction):
     RANDOMIZE = True
 
     def name(self):
-        raise NotImplementedError("a FormActionTriggerAction action must implement a name method")
+        raise NotImplementedError("""a FormActionTriggerAction action
+                                    must implement a name method""")
 
     def run(self, dispatcher, tracker, domain):
         """Trigger a custom action to ask the requested_slot."""
@@ -72,6 +80,7 @@ class FormActionTriggerAction(FormAction):
         events_from_submit = self.submit(dispatcher, temp_tracker, domain) or []
         return events + events_from_submit
 
+
 class FormActionCalculusAndCore(FormActionTriggerAction):
     """A custom class heritating from FormActionTriggerAction.
     When calculus is True, this type of action is used when
@@ -84,13 +93,15 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
     classifier = None
     main_slot = ""
     levels = []
+    simples = []
+    booleans = []
 
     def check(self):
         """Used to check if all proprieties has been set"""
         if self.calculus:
             if self.intent_name == "":
                 raise NotImplementedError("""
-                a AskAction action must implement a __init__ method 
+                a AskAction action must implement a __init__ method
                 with a entity_name""")
         else:
             if self.intent_name == "" or self.classifier is None or self.main_slot == "" or len(self.levels) == 0:
@@ -99,13 +110,16 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
                 with a entity_name""")
 
     def calculus_action(self, tracker, dispatcher):
-        """@param tracker: used to get the language of the bot and get and set global score
-        @param dispatcher: used to tell the patient that he talked about the intent
+        """@param tracker: used to get the language of the bot and
+        get and set global score
+        @param dispatcher: used to tell the patient that he talked
+        about the intent
         This action will sum up infos about the intent.
         If they're all set to None (no mandatory entity),
         just say that we talked about intent\n
         Ask if the informations are correct.\n
-        If the level is 'Incorrect', that mean the user said that it was incorrect before.
+        If the level is 'Incorrect', that mean the user said that it was
+        incorrect before.
         If so, display buttons to allow user to tell the level himself"""
         language = tracker.get_slot("language")
         level = tracker.get_slot(self.intent_name+"_level")
@@ -118,16 +132,18 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
                 response = get_utterance("sum_up", language)
                 if main_slot_value is not None:
                     if level is None:
-                        #get calculated level
+                        # get calculated level
                         level = self.classifier(main_slot_value)
-                        to_return.append(SlotSet(self.intent_name+"_level", level))
+                        to_return.append(SlotSet(self.intent_name+"_level",
+                                                 level))
                     level = get_utterance(level, language)
-                    response += get_utterance(self.main_slot,
-                                              language).format(main_slot_value, level)
-                response = self.sum_up_setted_slots(response, tracker, language)
+                    response += get_utterance(self.main_slot, language).format(main_slot_value, level)
+                response = self.sum_up_setted_slots(response, tracker,
+                                                    language)
                 response += get_utterance("right", language)
             except:
-                response = get_utterance(self.intent_name+"_no_entity", language)
+                response = get_utterance(self.intent_name+"_no_entity",
+                                         language)
                 # TODO: add to database
             to_return.append(SlotSet("topic", None))
             to_return.append(SlotSet("requested_slot", None))
@@ -137,9 +153,9 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
             for level in self.levels:
                 level_title = get_utterance(level, language)
                 buttons.append(Button(title=level_title,
-                                      payload="/"+self.intent_name+
-                                      "{\""+self.intent_name+
-                                      "_level"+"\":\""+level+
+                                      payload="/"+self.intent_name +
+                                      "{\""+self.intent_name +
+                                      "_level" + "\":\"" + level +
                                       "\"}"))
             message = get_utterance("ask_level_"+self.intent_name, language)
             dispatcher.utter_button_message(message, buttons)
@@ -155,8 +171,10 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
         return to_return
 
     def core_action(self, tracker, dispatcher):
-        """@param tracker: used to get the language of the bot and get and set global score
-        @param dispatcher: used to tell the patient that he talked about the intent
+        """@param tracker: used to get the language of the bot
+        and get and set global score
+        @param dispatcher: used to tell the patient that he
+        talked about the intent
         This action will sum up infos about the intent.
         If they're all set to None (no mandatory entity),
         just say that we talked about intent\n
@@ -180,19 +198,28 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
         return to_return
 
     def sum_up_setted_slots(self, response, tracker, language):
-        """To implement if the intent has mandatory entities"""
-        try:
-            obligatories = get_obligatories()
-            len(obligatories[self.intent_name]) > 0
-            raise NotImplementedError("""
-            a FormActionCalculusAndCore action with linked
-            entities must implement a sum_up_setted_slots method""")
-        except:
-            pass
+        for simple in self.simples:
+            if type(simple) == list:
+                if len(simple) == 3:
+                    response = get_response_simple(response, simple[0],
+                                                   tracker, language,
+                                                   utt_name=simple[2])
+                else:
+                    response = get_response_simple(response, simple[0],
+                                                   tracker, language,
+                                                   simple[1])
+            else:
+                response = get_response_simple(response, simple,
+                                               tracker, language)
+        for boo in self.booleans:
+            response = get_response_boolean(response, boo, tracker, language)
+        return response
 
     def name(self):
         """@return: the name of the action."""
-        raise NotImplementedError("a FormActionCalculusAndCore action must implement a name method")
+        raise NotImplementedError("""a FormActionCalculusAndCore action
+                                    must implement a name method""")
+
 
 class ActionFillSlotsPain(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for pain intent"""
@@ -201,12 +228,29 @@ class ActionFillSlotsPain(FormActionCalculusAndCore):
         Set the slot used to level classify\n
         Set the list of labels for the level classifier\n
         Set the classifier method\n
-        Set calculus to True"""
+        Set calculus to True
+        The entities linked to the 'pain' intent are:
+            - pain_level
+            - pain_duration
+            - pain_desc
+            - pain_body_part
+            - pain_change
+            - pain_period
+            - pain_time
+        The pain level is calculated with the method
+        C{get_pain_level(pain_desc)}\n
+        If we want the pain level, we have to have the
+        pain_desc slot mandatory.\n"""
         self.intent_name = "pain"
         self.main_slot = "pain_desc"
         self.levels = ["mild", "moderate", "severe"]
         self.classifier = get_pain_level
         self.calculus = True
+        self.simples = ["pain_body_part",
+                        "pain_duration",
+                        "pain_period",
+                        "pain_change",
+                        "pain_time"]
 
     def name(self):
         """@return: the name of the action."""
@@ -223,24 +267,6 @@ class ActionFillSlotsPain(FormActionCalculusAndCore):
         except:
             return []
 
-    def sum_up_setted_slots(self, response, tracker, language):
-        """The entities linked to the 'pain' intent are:
-            - pain_level
-            - pain_duration
-            - pain_desc
-            - pain_body_part
-            - pain_change
-            - pain_period
-            - pain_time
-        The pain level is calculated with the method C{get_pain_level(pain_desc)}\n
-        If we want the pain level, we have to have the pain_desc slot mandatory.\n
-        @return: all infos sum up response"""
-        response = get_response_simple(response, "pain_body_part", tracker, language)
-        response = get_response_simple(response, "pain_duration", tracker, language)
-        response = get_response_simple(response, "pain_period", tracker, language)
-        response = get_response_simple(response, "pain_change", tracker, language)
-        response = get_response_simple(response, "pain_time", tracker, language)
-        return response
 
 class ActionFillSlotsSport(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for activity intent"""
@@ -249,12 +275,28 @@ class ActionFillSlotsSport(FormActionCalculusAndCore):
         Set the slot used to level classify\n
         Set the list of labels for the level classifier\n
         Set the classifier method\n
-        Set calculus to True"""
+        Set calculus to True
+        The entities linked to the 'activity' intent are:
+            - activity_level
+            - activity_duration
+            - sport
+            - activity_period
+            - activity_distance
+            - activity_hard (boolean)
+            - activity_time
+        The sport level is calculated with the method
+        C{get_physical_activity_level(sport)}
+        If we want the sport level, we have to have the sport slot mandatory"""
         self.intent_name = "activity"
         self.main_slot = "sport"
         self.levels = ["little", "moderate", "vigorous"]
         self.classifier = get_physical_activity_level
         self.calculus = True
+        self.simples = ["activity_duration",
+                        "activity_distance",
+                        "activity_period",
+                        "activity_time"]
+        self.booleans = ["activity_hard"]
 
     def name(self):
         """@return: the name of the action."""
@@ -271,25 +313,6 @@ class ActionFillSlotsSport(FormActionCalculusAndCore):
         except:
             return []
 
-    def sum_up_setted_slots(self, response, tracker, language):
-        """The entities linked to the 'activity' intent are:
-            - activity_level
-            - activity_duration
-            - sport
-            - activity_period
-            - activity_distance
-            - activity_hard (boolean)
-            - activity_time
-        The sport level is calculated with the method
-        C{get_physical_activity_level(sport)}
-        If we want the sport level, we have to have the sport slot mandatory.
-        @return: all infos sum up response"""
-        response = get_response_simple(response, "activity_duration", tracker, language)
-        response = get_response_simple(response, "activity_distance", tracker, language)
-        response = get_response_simple(response, "activity_period", tracker, language)
-        response = get_response_simple(response, "activity_time", tracker, language)
-        response = get_response_boolean(response, "activity_hard", tracker, language)
-        return response
 
 class CheckRequestedIntents(FormActionTriggerAction):
     """FormActionCalculusAndCore for check requested intent"""
@@ -319,6 +342,7 @@ class CheckRequestedIntents(FormActionTriggerAction):
         language = tracker.get_slot("language")
         dispatcher.utter_message(get_utterance("requested_intent", language))
 
+
 class Sadness(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for sadness intent"""
     def __init__(self):
@@ -339,6 +363,7 @@ class Sadness(FormActionCalculusAndCore):
             return obligatories["sum_up_emotionnal_sadness"]
         except:
             return []
+
 
 class Happy(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for happiness intent"""
@@ -361,6 +386,7 @@ class Happy(FormActionCalculusAndCore):
         except:
             return []
 
+
 class Social(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for social intent"""
     def __init__(self):
@@ -382,11 +408,29 @@ class Social(FormActionCalculusAndCore):
         except:
             return []
 
+
 class Pathology(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for pathology intent"""
     def __init__(self):
-        """Set the name of the intent"""
+        """Set the name of the intent
+        The entities linked to this intent are:
+            - pathology_body_part
+            - symtoms
+            - pathology_time
+            - pathology_change (boolean)
+            - pathology_period
+            - pathology_treatment_linked (boolean)
+        This action will sum up these infos.
+        If they're all set to None (no mandatory entity),
+        just say that we talked about a pathology\n
+        Ask if the informations are correct.\n"""
         self.intent_name = "pathology"
+        self.simples = ["symtoms",
+                        "pathology_body_part",
+                        "pathology_time",
+                        "pathology_period"]
+        self.booleans = ["pathology_change",
+                         "pathology_treatment_linked"]
 
     def name(self):
         """@return: the name of the action."""
@@ -403,35 +447,40 @@ class Pathology(FormActionCalculusAndCore):
         except:
             return []
 
-    def sum_up_setted_slots(self, response, tracker, language):
-        """The entities linked to this intent are:
-            - pathology_body_part
-            - symtoms
-            - pathology_time
-            - pathology_change (boolean)
-            - pathology_period
-            - pathology_treatment_linked (boolean)
-        This action will sum up these infos.
-        If they're all set to None (no mandatory entity),
-        just say that we talked about a pathology\n
-        Ask if the informations are correct.\n
-        @return: all infos sum up response"""
-        response = get_response_simple(response, "symtoms", tracker, language)
-        response = get_response_simple(response, "pathology_body_part", tracker, language)
-        response = get_response_simple(response, "pathology_time", tracker, language)
-        response = get_response_boolean(response, "pathology_change", tracker, language)
-        response = get_response_simple(response, "pathology_period", tracker, language)
-        response = get_response_boolean(response, "pathology_treatment_linked", tracker, language)
-        return response
 
 class Treatment(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for treatment intent"""
     RANDOMIZE = False
+
     def __init__(self):
-        """
-        Set the name of the intent
-        """
+        """Set the name of the intent
+        The entities linked to this intent are:
+            - medicinal (boolean)
+            - treatment_being_taken
+            - drug
+            - dosing
+            - treatment_time
+            - treatment_prescripted(boolean)
+            - treatment_ok(boolean)
+            - treatment_overdosage
+            - treatment_period
+            - treatment_duration
+        This action will sum up these infos.
+        If they're all set to None (no mandatory entity),
+        just say that we talked about a treatment\n
+        Ask if the informations are correct.\n"""
         self.intent_name = "treatment"
+        self.simples = ["treatment_period",
+                        "treatment_time",
+                        "treatment_duration",
+                        ["treatment_being_taken", "no_drug"],
+                        ["drug", "no_drug"],
+                        ["dosing", "no_drug"],
+                        ["treatment_overdosage", "no_drug"]]
+        self.booleans = ["medicinal",
+                         "treatment",
+                         "treatment_prescripted",
+                         "treatment_ok"]
 
     def name(self):
         """@return: the name of the action."""
@@ -448,43 +497,33 @@ class Treatment(FormActionCalculusAndCore):
         except:
             return []
 
-    def sum_up_setted_slots(self, response, tracker, language):
-        """The entities linked to this intent are:
-            - medicinal (boolean)
-            - treatment_being_taken
-            - drug
-            - dosing
-            - treatment_time
-            - treatment_prescripted(boolean)
-            - treatment_ok(boolean)
-            - treatment_overdosage
-            - treatment_period
-            - treatment_duration
-        This action will sum up these infos.
-        If they're all set to None (no mandatory entity),
-        just say that we talked about a treatment\n
-        Ask if the informations are correct.\n
-        @return: all infos sum up response
-        """
-        response = get_response_boolean(response, "medicinal", tracker, language)
-        response = get_response_simple(response, "treatment_being_taken",
-                                       tracker, language, "no_drug")
-        response = get_response_simple(response, "drug", tracker, language, "no_drug")
-        response = get_response_simple(response, "dosing", tracker, language, "no_drug")
-        response = get_response_simple(response, "treatment_period", tracker, language)
-        response = get_response_simple(response, "treatment_time", tracker, language)
-        response = get_response_simple(response, "treatment_overdosage",
-                                       tracker, language, "no_drug")
-        response = get_response_boolean(response, "treatment_prescripted", tracker, language)
-        response = get_response_boolean(response, "treatment_ok", tracker, language)
-        response = get_response_simple(response, "treatment_duration", tracker, language)
-        return response
 
 class InfoPatient(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for infoPatient intent"""
     def __init__(self):
-        """Set the name of the intent"""
+        """Set the name of the intent
+        The entities linked to this intent are:
+            - addiction
+            - weight
+            - infoPatient_distance
+            - gender
+            - infoPatient_temperature
+            - heart_rate
+            - blood_pressure
+            - infoPatient_time
+        This action will sum up these infos.
+        If they're all set to None (no mandatory entity),
+        just say that we talked about a personal info\n
+        Ask if the informations are correct.\n"""
         self.intent_name = "infoPatient"
+        self.simples = ["addiction",
+                        "weight",
+                        ["infoPatient_distance", None, "size"],
+                        "infoPatient_temperature",
+                        "heart_rate",
+                        "gender",
+                        "blood_pressure",
+                        "infoPatient_time"]
 
     def name(self):
         """@return: the name of the action."""
@@ -501,31 +540,6 @@ class InfoPatient(FormActionCalculusAndCore):
         except:
             return []
 
-    def sum_up_setted_slots(self, response, tracker, language):
-        """The entities linked to this intent are:
-            - addiction
-            - weight
-            - infoPatient_distance
-            - gender
-            - infoPatient_temperature
-            - heart_rate
-            - blood_pressure
-            - infoPatient_time
-        This action will sum up these infos.
-        If they're all set to None (no mandatory entity),
-        just say that we talked about a personal info\n
-        Ask if the informations are correct.\n
-        @return: all infos sum up response"""
-        response = get_response_simple(response, "addiction", tracker, language)
-        response = get_response_simple(response, "weight", tracker, language)
-        response = get_response_simple(response, "infoPatient_distance",
-                                       tracker, language, utt_name="size")
-        response = get_response_simple(response, "gender", tracker, language)
-        response = get_response_simple(response, "infoPatient_temperature", tracker, language)
-        response = get_response_simple(response, "heart_rate", tracker, language)
-        response = get_response_simple(response, "blood_pressure", tracker, language)
-        response = get_response_simple(response, "infoPatient_time", tracker, language)
-        return response
 
 class Risk(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for risk intent"""

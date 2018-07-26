@@ -29,6 +29,7 @@ from init_and_complex import (
 )
 from ressources import get_utterance
 
+
 def get_reminder(followed_reminders, now):
     """@param followed_reminders: list of reminders of type
     follow_reminders send and not triggered.
@@ -44,6 +45,7 @@ def get_reminder(followed_reminders, now):
             to_return = reminder
     return to_return
 
+
 def string_in_entity_form_list(string, listing):
     """@param string: entity name to find in listing of EntityFormField
     @param listing: listing of EntityFormField
@@ -54,6 +56,7 @@ def string_in_entity_form_list(string, listing):
             return True
     return False
 
+
 class ChangeSessionReminder(Action):
     """Change session. Called at the end of the current session."""
     def name(self):
@@ -61,8 +64,10 @@ class ChangeSessionReminder(Action):
         return 'change_session_reminder'
 
     def run(self, dispatcher, tracker, domain):
-        """Display all not broached requested_intents; the global score of the session\n
-        Call the C{init} method and send reminder C{ChangeSessionReminder} to change session.\n
+        """Display all not broached requested_intents;
+        the global score of the session\n
+        Call the C{init} method and send reminder
+        C{ChangeSessionReminder} to change session.\n
         If it's the last session, pause the conversation."""
         language = get_language()
 #        print(language)
@@ -114,7 +119,8 @@ class ChangeSessionReminder(Action):
             to_return.append(SlotSet("global_score", global_score))
 #            print("reminder change session scheduled at "+str(date_end))
             to_return.append(ReminderScheduled("change_session_reminder",
-                                               date_end, kill_on_user_message=False))
+                                               date_end,
+                                               kill_on_user_message=False))
 #            print("reminder before change session scheduled at "+str(date_end - reminder_end_session))
             to_return.append(ReminderScheduled("session_end_reminder",
                                                date_end - reminder_end_session,
@@ -124,6 +130,7 @@ class ChangeSessionReminder(Action):
             dispatcher.utter_message(response)
             return [AllSlotsReset(), ConversationPaused()]
         return to_return
+
 
 class UserReminder(Action):
     """Call the patient after a while."""
@@ -146,14 +153,18 @@ class UserReminder(Action):
         count_user_reminder += 1
         if count_user_reminder > count_user_reminder_max:
          #TODO : Send a notif instead
-            response = get_utterance("count_user_reminder", language).format(count_user_reminder)
+            response = get_utterance("count_user_reminder",
+                                     language).format(count_user_reminder)
             dispatcher.utter_message(response)
         to_return = []
         to_return.append(SlotSet("count_user_reminder", count_user_reminder))
 #        print("reminder user scheduled at "+str(dt.now() + reminder_patient))
         to_return.append(ReminderScheduled("user_reminder",
-                                           dt.now() + reminder_patient, kill_on_user_message=True))
+                                           dt.now() +
+                                           reminder_patient,
+                                           kill_on_user_message=True))
         return to_return
+
 
 class SessionEndReminder(Action):
     """Call the patient before the session ends."""
@@ -184,6 +195,7 @@ class SessionEndReminder(Action):
                     response += get_utterance(str(i), language)
             dispatcher.utter_message(response)
 
+
 class UserReminderLittle(Action):
     """Call the patient after a little while."""
     def name(self):
@@ -196,6 +208,7 @@ class UserReminderLittle(Action):
         #TODO : Send a notif instead
         response = get_utterance("user_reminder_little", language)
         dispatcher.utter_message(response)
+
 
 class FollowedIntentReminder(Action):
     """Reminder that get the intent followed and make it
@@ -228,7 +241,8 @@ class FollowedIntentReminder(Action):
             except:
                 obligatories[intent] = []
                 obligatories[intent].append(EntityFormField(i, i))
-            if not string_in_entity_form_list(intent, obligatories['requested_intent']):
+            if not string_in_entity_form_list(intent,
+                                              obligatories['requested_intent']):
                 obligatories['requested_intent'].append(EntityFormField(intent, intent))
 #        for i in obligatories:
 #            print(i)
@@ -236,4 +250,3 @@ class FollowedIntentReminder(Action):
 #                print("\t"+j.entity_name)
         followed_reminders.remove(reminder)
         set_followed_reminders(followed_reminders)
-    
