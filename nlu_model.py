@@ -1,8 +1,11 @@
 from rasa_nlu.model import Metadata, Interpreter
 
 # where `model_directory points to the folder the model is persisted in
-interpreter = Interpreter.load('models/nlu/default/current')
-print (interpreter.parse(u"I feel this pain every day"))
+interpreter = Interpreter.load('models/nlu/default/fr_duckling')
+print (interpreter.parse(u"Je ressens cette forte douleur depuis hier"))
+print (interpreter.parse(u"J'ai fait du sport pendant 5 heures"))
+print (interpreter.parse(u"J'ai couru 3 kilomètres"))
+print (interpreter.parse(u"J'ai 39°C de fièvre."))
 #print (interpreter.parse(u"I feel a sharp pain in the leg"))
 # 'pain', 'confidence': 0.985409655949852
 #print (interpreter.parse(u"My horse is sharp"))

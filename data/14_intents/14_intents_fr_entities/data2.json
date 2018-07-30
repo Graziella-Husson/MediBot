@@ -1,4 +1,4 @@
-﻿{
+{
   "rasa_nlu_data": {
     "common_examples": [
       {
@@ -146,7 +146,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la clindamycine.",
+        "text": "Mon médicament est la clindamycine",
         "intent": "treatment",
         "entities": [
           {
@@ -170,7 +170,7 @@
         ]
       },
       {
-        "text": "Je prends de la ciprofloxacine.",
+        "text": "Je prends de la ciprofloxacine",
         "intent": "treatment",
         "entities": [
           {
@@ -194,7 +194,7 @@
         ]
       },
       {
-        "text": "Je prends de la benzylpénicilline.",
+        "text": "Je prends de la benzylpénicilline",
         "intent": "treatment",
         "entities": [
           {
@@ -206,7 +206,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la nitrofurantoïne.",
+        "text": "Mon médicament est la nitrofurantoïne",
         "intent": "treatment",
         "entities": [
           {
@@ -218,7 +218,7 @@
         ]
       },
       {
-        "text": "J'ai pris une ceftriaxone.",
+        "text": "J'ai pris une ceftriaxone",
         "intent": "treatment",
         "entities": [
           {
@@ -230,7 +230,7 @@
         ]
       },
       {
-        "text": "Je prends du céfépime.",
+        "text": "Je prends du céfépime",
         "intent": "treatment",
         "entities": [
           {
@@ -242,7 +242,7 @@
         ]
       },
       {
-        "text": "J'ai pris du formotérol.",
+        "text": "J'ai pris du formotérol",
         "intent": "treatment",
         "entities": [
           {
@@ -266,7 +266,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la ceftriaxone.",
+        "text": "Mon médicament est la ceftriaxone",
         "intent": "treatment",
         "entities": [
           {
@@ -290,7 +290,7 @@
         ]
       },
       {
-        "text": "Je prends de la vancomycine.",
+        "text": "Je prends de la vancomycine",
         "intent": "treatment",
         "entities": [
           {
@@ -302,7 +302,7 @@
         ]
       },
       {
-        "text": "Je prends de la phénoxyméthylpénicilline.",
+        "text": "Je prends de la phénoxyméthylpénicilline",
         "intent": "treatment",
         "entities": [
           {
@@ -326,7 +326,7 @@
         ]
       },
       {
-        "text": "J'ai pris un métronidazole.",
+        "text": "J'ai pris un métronidazole",
         "intent": "treatment",
         "entities": [
           {
@@ -338,7 +338,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la ciprofloxacine.",
+        "text": "Mon médicament est la ciprofloxacine",
         "intent": "treatment",
         "entities": [
           {
@@ -350,7 +350,7 @@
         ]
       },
       {
-        "text": "Je prends du trimethoprim.",
+        "text": "Je prends du trimethoprim",
         "intent": "treatment",
         "entities": [
           {
@@ -362,7 +362,7 @@
         ]
       },
       {
-        "text": "Je prends de la tigécycline.",
+        "text": "Je prends de la tigécycline",
         "intent": "treatment",
         "entities": [
           {
@@ -374,7 +374,7 @@
         ]
       },
       {
-        "text": "Mon médicament est le méropénem.",
+        "text": "Mon médicament est le méropénem",
         "intent": "treatment",
         "entities": [
           {
@@ -410,7 +410,7 @@
         ]
       },
       {
-        "text": "Je prends du tazobactam.",
+        "text": "Je prends du tazobactam",
         "intent": "treatment",
         "entities": [
           {
@@ -458,7 +458,7 @@
         ]
       },
       {
-        "text": "J'ai pris un nitrofurantoïne.",
+        "text": "J'ai pris un nitrofurantoïne",
         "intent": "treatment",
         "entities": [
           {
@@ -482,7 +482,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la pyronaridine.",
+        "text": "Mon médicament est la pyronaridine",
         "intent": "treatment",
         "entities": [
           {
@@ -494,7 +494,7 @@
         ]
       },
       {
-        "text": "J'ai pris un amikacin.",
+        "text": "J'ai pris un amikacin",
         "intent": "treatment",
         "entities": [
           {
@@ -518,7 +518,7 @@
         ]
       },
       {
-        "text": "Je prends du sulfaméthoxazole.",
+        "text": "Je prends du sulfaméthoxazole",
         "intent": "treatment",
         "entities": [
           {
@@ -530,7 +530,7 @@
         ]
       },
       {
-        "text": "Je prends de la benzylpénicilline.",
+        "text": "Je prends de la benzylpénicilline",
         "intent": "treatment",
         "entities": [
           {
@@ -542,7 +542,7 @@
         ]
       },
       {
-        "text": "Je prends de la clarithromycine.",
+        "text": "Je prends de la clarithromycine",
         "intent": "treatment",
         "entities": [
           {
@@ -566,7 +566,7 @@
         ]
       },
       {
-        "text": "Mon médicament est Oxazolidinones.",
+        "text": "Mon médicament est Oxazolidinones",
         "intent": "treatment",
         "entities": [
           {
@@ -578,7 +578,7 @@
         ]
       },
       {
-        "text": "J'ai pris de la céfalexine.",
+        "text": "J'ai pris de la céfalexine",
         "intent": "treatment",
         "entities": [
           {
@@ -590,7 +590,7 @@
         ]
       },
       {
-        "text": "Je suis sous budésonide.",
+        "text": "Je suis sous budésonide",
         "intent": "treatment",
         "entities": [
           {
@@ -602,7 +602,7 @@
         ]
       },
       {
-        "text": "Mon médicament est l'amoxicilline.",
+        "text": "Mon médicament est l'amoxicilline",
         "intent": "treatment",
         "entities": [
           {
@@ -614,7 +614,7 @@
         ]
       },
       {
-        "text": "Je prends de la pénicilline.",
+        "text": "Je prends de la pénicilline",
         "intent": "treatment",
         "entities": [
           {
@@ -674,7 +674,7 @@
         ]
       },
       {
-        "text": "J'ai pris de l'ampicilline.",
+        "text": "J'ai pris de l'ampicilline",
         "intent": "treatment",
         "entities": [
           {
@@ -686,7 +686,7 @@
         ]
       },
       {
-        "text": "Mon médicament est le chloramphénicol.",
+        "text": "Mon médicament est le chloramphénicol",
         "intent": "treatment",
         "entities": [
           {
@@ -698,7 +698,7 @@
         ]
       },
       {
-        "text": "Je prends de la fosfomycine.",
+        "text": "Je prends de la fosfomycine",
         "intent": "treatment",
         "entities": [
           {
@@ -710,7 +710,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la tigécycline.",
+        "text": "Mon médicament est la tigécycline",
         "intent": "treatment",
         "entities": [
           {
@@ -722,7 +722,7 @@
         ]
       },
       {
-        "text": "J'ai pris des céphalosporines.",
+        "text": "J'ai pris des céphalosporines",
         "intent": "treatment",
         "entities": [
           {
@@ -746,7 +746,7 @@
         ]
       },
       {
-        "text": "Je prends de la pipéracilline.",
+        "text": "Je prends de la pipéracilline",
         "intent": "treatment",
         "entities": [
           {
@@ -782,7 +782,7 @@
         ]
       },
       {
-        "text": "J'ai pris un artesunate.",
+        "text": "J'ai pris un artesunate",
         "intent": "treatment",
         "entities": [
           {
@@ -794,7 +794,7 @@
         ]
       },
       {
-        "text": "Ma drogue est le ritonavir.",
+        "text": "Ma drogue est le ritonavir",
         "intent": "treatment",
         "entities": [
           {
@@ -806,7 +806,7 @@
         ]
       },
       {
-        "text": "Je prends de la clindamycine.",
+        "text": "Je prends de la clindamycine",
         "intent": "treatment",
         "entities": [
           {
@@ -818,7 +818,7 @@
         ]
       },
       {
-        "text": "Je prends du céfixime.",
+        "text": "Je prends du céfixime",
         "intent": "treatment",
         "entities": [
           {
@@ -830,7 +830,7 @@
         ]
       },
       {
-        "text": "Je prends de la ceftriaxone.",
+        "text": "Je prends de la ceftriaxone",
         "intent": "treatment",
         "entities": [
           {
@@ -854,7 +854,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la gentamicine.",
+        "text": "Mon médicament est la gentamicine",
         "intent": "treatment",
         "entities": [
           {
@@ -866,7 +866,7 @@
         ]
       },
       {
-        "text": "Je prends de la spectinomycine.",
+        "text": "Je prends de la spectinomycine",
         "intent": "treatment",
         "entities": [
           {
@@ -878,7 +878,7 @@
         ]
       },
       {
-        "text": "J'ai pris une gentamicine.",
+        "text": "J'ai pris une gentamicine",
         "intent": "treatment",
         "entities": [
           {
@@ -890,7 +890,7 @@
         ]
       },
       {
-        "text": "Je prends de la ceftaroline.",
+        "text": "Je prends de la ceftaroline",
         "intent": "treatment",
         "entities": [
           {
@@ -902,7 +902,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la cloxacilline.",
+        "text": "Mon médicament est la cloxacilline",
         "intent": "treatment",
         "entities": [
           {
@@ -926,7 +926,7 @@
         ]
       },
       {
-        "text": "J'ai pris une vancomycine.",
+        "text": "J'ai pris une vancomycine",
         "intent": "treatment",
         "entities": [
           {
@@ -962,7 +962,7 @@
         ]
       },
       {
-        "text": "J'ai pris une ceftaroline.",
+        "text": "J'ai pris une ceftaroline",
         "intent": "treatment",
         "entities": [
           {
@@ -974,7 +974,7 @@
         ]
       },
       {
-        "text": "Je prends de la ceftriaxone.",
+        "text": "Je prends de la ceftriaxone",
         "intent": "treatment",
         "entities": [
           {
@@ -986,7 +986,7 @@
         ]
       },
       {
-        "text": "Je prends de la pyronaridine.",
+        "text": "Je prends de la pyronaridine",
         "intent": "treatment",
         "entities": [
           {
@@ -998,7 +998,7 @@
         ]
       },
       {
-        "text": "Mon médicament est le budésonide.",
+        "text": "Mon médicament est le budésonide",
         "intent": "treatment",
         "entities": [
           {
@@ -1022,7 +1022,7 @@
         ]
       },
       {
-        "text": "Je prends du ritonavir.",
+        "text": "Je prends du ritonavir",
         "intent": "treatment",
         "entities": [
           {
@@ -1034,7 +1034,7 @@
         ]
       },
       {
-        "text": "Mon médicament est l'atazanavir.",
+        "text": "Mon médicament est l'atazanavir",
         "intent": "treatment",
         "entities": [
           {
@@ -1046,7 +1046,7 @@
         ]
       },
       {
-        "text": "Je prends du sulfaméthoxazole.",
+        "text": "Je prends du sulfaméthoxazole",
         "intent": "treatment",
         "entities": [
           {
@@ -1058,7 +1058,7 @@
         ]
       },
       {
-        "text": "J'ai pris un céfépime.",
+        "text": "J'ai pris un céfépime",
         "intent": "treatment",
         "entities": [
           {
@@ -1082,7 +1082,7 @@
         ]
       },
       {
-        "text": "J'ai pris une fosfomycine.",
+        "text": "J'ai pris une fosfomycine",
         "intent": "treatment",
         "entities": [
           {
@@ -1094,7 +1094,7 @@
         ]
       },
       {
-        "text": "Je prends du chloramphénicol.",
+        "text": "Je prends du chloramphénicol",
         "intent": "treatment",
         "entities": [
           {
@@ -1106,7 +1106,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la pipéracilline.",
+        "text": "Mon médicament est la pipéracilline",
         "intent": "treatment",
         "entities": [
           {
@@ -1118,7 +1118,7 @@
         ]
       },
       {
-        "text": "Je prends de la cloxacilline.",
+        "text": "Je prends de la cloxacilline",
         "intent": "treatment",
         "entities": [
           {
@@ -1142,7 +1142,7 @@
         ]
       },
       {
-        "text": "Ma drogue est le linézolide.",
+        "text": "Ma drogue est le linézolide",
         "intent": "treatment",
         "entities": [
           {
@@ -1154,7 +1154,7 @@
         ]
       },
       {
-        "text": "Je prends du céfotaxime.",
+        "text": "Je prends du céfotaxime",
         "intent": "treatment",
         "entities": [
           {
@@ -1178,7 +1178,7 @@
         ]
       },
       {
-        "text": "J'ai pris un céfotaxime.",
+        "text": "J'ai pris un céfotaxime",
         "intent": "treatment",
         "entities": [
           {
@@ -1190,7 +1190,7 @@
         ]
       },
       {
-        "text": "Mon médicament est le benzyle.",
+        "text": "Mon médicament est le benzyle",
         "intent": "treatment",
         "entities": [
           {
@@ -1214,7 +1214,7 @@
         ]
       },
       {
-        "text": "J'ai pris du chloramphénicol.",
+        "text": "J'ai pris du chloramphénicol",
         "intent": "treatment",
         "entities": [
           {
@@ -1226,7 +1226,7 @@
         ]
       },
       {
-        "text": "Je prends de la daptomycine.",
+        "text": "Je prends de la daptomycine",
         "intent": "treatment",
         "entities": [
           {
@@ -1238,7 +1238,7 @@
         ]
       },
       {
-        "text": "Je prends des ulipristal.",
+        "text": "Je prends des ulipristal",
         "intent": "treatment",
         "entities": [
           {
@@ -1262,7 +1262,7 @@
         ]
       },
       {
-        "text": "Mon médicament est l'aztréonam.",
+        "text": "Mon médicament est l'aztréonam",
         "intent": "treatment",
         "entities": [
           {
@@ -1274,7 +1274,7 @@
         ]
       },
       {
-        "text": "Je prends du céfotaxime.",
+        "text": "Je prends du céfotaxime",
         "intent": "treatment",
         "entities": [
           {
@@ -1286,7 +1286,7 @@
         ]
       },
       {
-        "text": "Je prends des céphalosporines.",
+        "text": "Je prends des céphalosporines",
         "intent": "treatment",
         "entities": [
           {
@@ -1298,7 +1298,7 @@
         ]
       },
       {
-        "text": "J'ai pris un aztréonam.",
+        "text": "J'ai pris un aztréonam",
         "intent": "treatment",
         "entities": [
           {
@@ -1310,7 +1310,7 @@
         ]
       },
       {
-        "text": "Mon médicament est un antibiotique.",
+        "text": "Mon médicament est un antibiotique",
         "intent": "treatment",
         "entities": [
           {
@@ -1322,7 +1322,7 @@
         ]
       },
       {
-        "text": "J'ai pris des antibiotiques.",
+        "text": "J'ai pris des antibiotiques",
         "intent": "treatment",
         "entities": [
           {
@@ -1334,7 +1334,7 @@
         ]
       },
       {
-        "text": "Je prends des antibiotiques.",
+        "text": "Je prends des antibiotiques",
         "intent": "treatment",
         "entities": [
           {
@@ -1358,7 +1358,7 @@
         ]
       },
       {
-        "text": "Je suis sous nitrofurantoïne.",
+        "text": "Je suis sous nitrofurantoïne",
         "intent": "treatment",
         "entities": [
           {
@@ -1370,7 +1370,7 @@
         ]
       },
       {
-        "text": "Je prends de l'aztréonam.",
+        "text": "Je prends de l'aztréonam",
         "intent": "treatment",
         "entities": [
           {
@@ -1382,7 +1382,7 @@
         ]
       },
       {
-        "text": "J'ai pris un céfixime.",
+        "text": "J'ai pris un céfixime",
         "intent": "treatment",
         "entities": [
           {
@@ -1394,7 +1394,7 @@
         ]
       },
       {
-        "text": "Je prends de la gentamicine.",
+        "text": "Je prends de la gentamicine",
         "intent": "treatment",
         "entities": [
           {
@@ -1418,7 +1418,7 @@
         ]
       },
       {
-        "text": "Mon médicament est ulipristal.",
+        "text": "Mon médicament est ulipristal",
         "intent": "treatment",
         "entities": [
           {
@@ -1430,7 +1430,7 @@
         ]
       },
       {
-        "text": "Je prends de la cloxacilline.",
+        "text": "Je prends de la cloxacilline",
         "intent": "treatment",
         "entities": [
           {
@@ -1442,7 +1442,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la céfazoline.",
+        "text": "Mon médicament est la céfazoline",
         "intent": "treatment",
         "entities": [
           {
@@ -1454,7 +1454,7 @@
         ]
       },
       {
-        "text": "Je prends du nitrofurantoïne.",
+        "text": "Je prends du nitrofurantoïne",
         "intent": "treatment",
         "entities": [
           {
@@ -1478,7 +1478,7 @@
         ]
       },
       {
-        "text": "J'ai pris une clindamycine.",
+        "text": "J'ai pris une clindamycine",
         "intent": "treatment",
         "entities": [
           {
@@ -1490,7 +1490,7 @@
         ]
       },
       {
-        "text": "Je prends de l'amoxicilline.",
+        "text": "Je prends de l'amoxicilline",
         "intent": "treatment",
         "entities": [
           {
@@ -1502,7 +1502,7 @@
         ]
       },
       {
-        "text": "J'ai pris une lamotrigine.",
+        "text": "J'ai pris une lamotrigine",
         "intent": "treatment",
         "entities": [
           {
@@ -1514,7 +1514,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la vancomycine.",
+        "text": "Mon médicament est la vancomycine",
         "intent": "treatment",
         "entities": [
           {
@@ -1526,7 +1526,7 @@
         ]
       },
       {
-        "text": "Je prends de la daptomycine.",
+        "text": "Je prends de la daptomycine",
         "intent": "treatment",
         "entities": [
           {
@@ -1550,7 +1550,7 @@
         ]
       },
       {
-        "text": "Je prends de la benzathine.",
+        "text": "Je prends de la benzathine",
         "intent": "treatment",
         "entities": [
           {
@@ -1574,7 +1574,7 @@
         ]
       },
       {
-        "text": "Je prends de l'atazanavir.",
+        "text": "Je prends de l'atazanavir",
         "intent": "treatment",
         "entities": [
           {
@@ -1598,7 +1598,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la clarithromycine.",
+        "text": "Mon médicament est la clarithromycine",
         "intent": "treatment",
         "entities": [
           {
@@ -1610,7 +1610,7 @@
         ]
       },
       {
-        "text": "Je prends de la céfalexine.",
+        "text": "Je prends de la céfalexine",
         "intent": "treatment",
         "entities": [
           {
@@ -1622,7 +1622,7 @@
         ]
       },
       {
-        "text": "J'ai pris une pyronaridine.",
+        "text": "J'ai pris une pyronaridine",
         "intent": "treatment",
         "entities": [
           {
@@ -1634,7 +1634,7 @@
         ]
       },
       {
-        "text": "Je suis sous spectinomycine.",
+        "text": "Je suis sous spectinomycine",
         "intent": "treatment",
         "entities": [
           {
@@ -1658,7 +1658,7 @@
         ]
       },
       {
-        "text": "Mon médicament est de l'artesunate.",
+        "text": "Mon médicament est de l'artesunate",
         "intent": "treatment",
         "entities": [
           {
@@ -1670,7 +1670,7 @@
         ]
       },
       {
-        "text": "Je prends de la tigécycline.",
+        "text": "Je prends de la tigécycline",
         "intent": "treatment",
         "entities": [
           {
@@ -1682,7 +1682,7 @@
         ]
       },
       {
-        "text": "Je prends du méropénem.",
+        "text": "Je prends du méropénem",
         "intent": "treatment",
         "entities": [
           {
@@ -1706,7 +1706,7 @@
         ]
       },
       {
-        "text": "J'ai pris une cloxacilline.",
+        "text": "J'ai pris une cloxacilline",
         "intent": "treatment",
         "entities": [
           {
@@ -1718,7 +1718,7 @@
         ]
       },
       {
-        "text": "Je prends de la pénicilline.",
+        "text": "Je prends de la pénicilline",
         "intent": "treatment",
         "entities": [
           {
@@ -1730,7 +1730,7 @@
         ]
       },
       {
-        "text": "Mon médicament est le céfépime.",
+        "text": "Mon médicament est le céfépime",
         "intent": "treatment",
         "entities": [
           {
@@ -1742,7 +1742,7 @@
         ]
       },
       {
-        "text": "Je prends de la gentamicine.",
+        "text": "Je prends de la gentamicine",
         "intent": "treatment",
         "entities": [
           {
@@ -1766,7 +1766,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la phénoxyméthylpénicilline.",
+        "text": "Mon médicament est la phénoxyméthylpénicilline",
         "intent": "treatment",
         "entities": [
           {
@@ -1778,7 +1778,7 @@
         ]
       },
       {
-        "text": "Je prends de la procaïne.",
+        "text": "Je prends de la procaïne",
         "intent": "treatment",
         "entities": [
           {
@@ -1790,7 +1790,7 @@
         ]
       },
       {
-        "text": "J'ai pris un atazanavir.",
+        "text": "J'ai pris un atazanavir",
         "intent": "treatment",
         "entities": [
           {
@@ -1802,7 +1802,7 @@
         ]
       },
       {
-        "text": "Je prends des céphalosporines.",
+        "text": "Je prends des céphalosporines",
         "intent": "treatment",
         "entities": [
           {
@@ -1946,7 +1946,7 @@
         ]
       },
       {
-        "text": "Mon médicament est le métronidazole.",
+        "text": "Mon médicament est le métronidazole",
         "intent": "treatment",
         "entities": [
           {
@@ -1958,7 +1958,7 @@
         ]
       },
       {
-        "text": "Je prends de la vancomycine.",
+        "text": "Je prends de la vancomycine",
         "intent": "treatment",
         "entities": [
           {
@@ -1970,7 +1970,7 @@
         ]
       },
       {
-        "text": "J'ai pris un budesonide.",
+        "text": "J'ai pris un budesonide",
         "intent": "treatment",
         "entities": [
           {
@@ -2018,7 +2018,7 @@
         ]
       },
       {
-        "text": "Je prends du linézolide.",
+        "text": "Je prends du linézolide",
         "intent": "treatment",
         "entities": [
           {
@@ -2042,7 +2042,7 @@
         ]
       },
       {
-        "text": "J'ai pris un méropénem.",
+        "text": "J'ai pris un méropénem",
         "intent": "treatment",
         "entities": [
           {
@@ -2054,7 +2054,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la céfalexine.",
+        "text": "Mon médicament est la céfalexine",
         "intent": "treatment",
         "entities": [
           {
@@ -2066,7 +2066,7 @@
         ]
       },
       {
-        "text": "Je prends de la céfalexine.",
+        "text": "Je prends de la céfalexine",
         "intent": "treatment",
         "entities": [
           {
@@ -2078,7 +2078,7 @@
         ]
       },
       {
-        "text": "Je prends de la doxycycline.",
+        "text": "Je prends de la doxycycline",
         "intent": "treatment",
         "entities": [
           {
@@ -2102,7 +2102,7 @@
         ]
       },
       {
-        "text": "J'ai pris une benzylpénicilline.",
+        "text": "J'ai pris une benzylpénicilline",
         "intent": "treatment",
         "entities": [
           {
@@ -2114,7 +2114,7 @@
         ]
       },
       {
-        "text": "Ma drogue est la spectinomycine.",
+        "text": "Ma drogue est la spectinomycine",
         "intent": "treatment",
         "entities": [
           {
@@ -2126,7 +2126,7 @@
         ]
       },
       {
-        "text": "Mon médicament est le formotérol.",
+        "text": "Mon médicament est le formotérol",
         "intent": "treatment",
         "entities": [
           {
@@ -2138,7 +2138,7 @@
         ]
       },
       {
-        "text": "Je prends du tazobactam.",
+        "text": "Je prends du tazobactam",
         "intent": "treatment",
         "entities": [
           {
@@ -2150,7 +2150,7 @@
         ]
       },
       {
-        "text": "J'ai pris un ritonavir.",
+        "text": "J'ai pris un ritonavir",
         "intent": "treatment",
         "entities": [
           {
@@ -2162,7 +2162,7 @@
         ]
       },
       {
-        "text": "Je prends du benzyle.",
+        "text": "Je prends du benzyle",
         "intent": "treatment",
         "entities": [
           {
@@ -2186,7 +2186,7 @@
         ]
       },
       {
-        "text": "J'ai pris un trimethoprim.",
+        "text": "J'ai pris un trimethoprim",
         "intent": "treatment",
         "entities": [
           {
@@ -2210,7 +2210,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la doxycycline.",
+        "text": "Mon médicament est la doxycycline",
         "intent": "treatment",
         "entities": [
           {
@@ -2222,7 +2222,7 @@
         ]
       },
       {
-        "text": "Je prends de la céfazoline.",
+        "text": "Je prends de la céfazoline",
         "intent": "treatment",
         "entities": [
           {
@@ -2234,7 +2234,7 @@
         ]
       },
       {
-        "text": "Je prends de la doxycycline.",
+        "text": "Je prends de la doxycycline",
         "intent": "treatment",
         "entities": [
           {
@@ -2246,7 +2246,7 @@
         ]
       },
       {
-        "text": "Je prends de l'ampicilline.",
+        "text": "Je prends de l'ampicilline",
         "intent": "treatment",
         "entities": [
           {
@@ -2258,7 +2258,7 @@
         ]
       },
       {
-        "text": "Ma drogue, c'est la pénicilline.",
+        "text": "Ma drogue, c'est la pénicilline",
         "intent": "treatment",
         "entities": [
           {
@@ -2282,7 +2282,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la lamotrigine.",
+        "text": "Mon médicament est la lamotrigine",
         "intent": "treatment",
         "entities": [
           {
@@ -2294,7 +2294,7 @@
         ]
       },
       {
-        "text": "Je prends de l'atazanavir.",
+        "text": "Je prends de l'atazanavir",
         "intent": "treatment",
         "entities": [
           {
@@ -2318,7 +2318,7 @@
         ]
       },
       {
-        "text": "Je prends du céfépime.",
+        "text": "Je prends du céfépime",
         "intent": "treatment",
         "entities": [
           {
@@ -2330,7 +2330,7 @@
         ]
       },
       {
-        "text": "J'ai pris un tazobactam.",
+        "text": "J'ai pris un tazobactam",
         "intent": "treatment",
         "entities": [
           {
@@ -2366,7 +2366,7 @@
         ]
       },
       {
-        "text": "Je prends de la céfazoline.",
+        "text": "Je prends de la céfazoline",
         "intent": "treatment",
         "entities": [
           {
@@ -2390,7 +2390,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la ceftaroline.",
+        "text": "Mon médicament est la ceftaroline",
         "intent": "treatment",
         "entities": [
           {
@@ -2402,7 +2402,7 @@
         ]
       },
       {
-        "text": "Je prends de la clarithromycine.",
+        "text": "Je prends de la clarithromycine",
         "intent": "treatment",
         "entities": [
           {
@@ -2414,7 +2414,7 @@
         ]
       },
       {
-        "text": "Je prends du métronidazole.",
+        "text": "Je prends du métronidazole",
         "intent": "treatment",
         "entities": [
           {
@@ -2426,7 +2426,7 @@
         ]
       },
       {
-        "text": "J'ai pris un ulipristal.",
+        "text": "J'ai pris un ulipristal",
         "intent": "treatment",
         "entities": [
           {
@@ -2438,7 +2438,7 @@
         ]
       },
       {
-        "text": "Ma drogue est la procaïne.",
+        "text": "Ma drogue est la procaïne",
         "intent": "treatment",
         "entities": [
           {
@@ -2462,7 +2462,7 @@
         ]
       },
       {
-        "text": "J'ai pris une pénicilline.",
+        "text": "J'ai pris une pénicilline",
         "intent": "treatment",
         "entities": [
           {
@@ -2474,7 +2474,7 @@
         ]
       },
       {
-        "text": "Je prends de l'amikacine.",
+        "text": "Je prends de l'amikacine",
         "intent": "treatment",
         "entities": [
           {
@@ -2498,7 +2498,7 @@
         ]
       },
       {
-        "text": "J'ai pris une doxycycline.",
+        "text": "J'ai pris une doxycycline",
         "intent": "treatment",
         "entities": [
           {
@@ -2510,7 +2510,7 @@
         ]
       },
       {
-        "text": "Je prends des Oxazolidinones.",
+        "text": "Je prends des Oxazolidinones",
         "intent": "treatment",
         "entities": [
           {
@@ -2534,7 +2534,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la daptomycine.",
+        "text": "Mon médicament est la daptomycine",
         "intent": "treatment",
         "entities": [
           {
@@ -2546,7 +2546,7 @@
         ]
       },
       {
-        "text": "Je prends de la benzathine.",
+        "text": "Je prends de la benzathine",
         "intent": "treatment",
         "entities": [
           {
@@ -2570,7 +2570,7 @@
         ]
       },
       {
-        "text": "Je suis sous pipéracilline.",
+        "text": "Je suis sous pipéracilline",
         "intent": "treatment",
         "entities": [
           {
@@ -2582,7 +2582,7 @@
         ]
       },
       {
-        "text": "Je prends de l'artesunate.",
+        "text": "Je prends de l'artesunate",
         "intent": "treatment",
         "entities": [
           {
@@ -2594,7 +2594,7 @@
         ]
       },
       {
-        "text": "J'ai pris une benzathine.",
+        "text": "J'ai pris une benzathine",
         "intent": "treatment",
         "entities": [
           {
@@ -2606,7 +2606,7 @@
         ]
       },
       {
-        "text": "Mon médicament est le sulfaméthoxazole.",
+        "text": "Mon médicament est le sulfaméthoxazole",
         "intent": "treatment",
         "entities": [
           {
@@ -2618,7 +2618,7 @@
         ]
       },
       {
-        "text": "Mon médicament est le céfixime.",
+        "text": "Mon médicament est le céfixime",
         "intent": "treatment",
         "entities": [
           {
@@ -2630,7 +2630,7 @@
         ]
       },
       {
-        "text": "J'ai pris une pipéracilline.",
+        "text": "J'ai pris une pipéracilline",
         "intent": "treatment",
         "entities": [
           {
@@ -2654,7 +2654,7 @@
         ]
       },
       {
-        "text": "J'ai pris une procaïne.",
+        "text": "J'ai pris une procaïne",
         "intent": "treatment",
         "entities": [
           {
@@ -2690,7 +2690,7 @@
         ]
       },
       {
-        "text": "Mon médicament est le céfotaxime.",
+        "text": "Mon médicament est le céfotaxime",
         "intent": "treatment",
         "entities": [
           {
@@ -2702,7 +2702,7 @@
         ]
       },
       {
-        "text": "Je prends de la clindamycine.",
+        "text": "Je prends de la clindamycine",
         "intent": "treatment",
         "entities": [
           {
@@ -2714,7 +2714,7 @@
         ]
       },
       {
-        "text": "Je prends de la pyronaridine.",
+        "text": "Je prends de la pyronaridine",
         "intent": "treatment",
         "entities": [
           {
@@ -2750,7 +2750,7 @@
         ]
       },
       {
-        "text": "J'ai pris une clarithromycine.",
+        "text": "J'ai pris une clarithromycine",
         "intent": "treatment",
         "entities": [
           {
@@ -2762,7 +2762,7 @@
         ]
       },
       {
-        "text": "Mon médicament est la fosfomycine.",
+        "text": "Mon médicament est la fosfomycine",
         "intent": "treatment",
         "entities": [
           {
@@ -2774,7 +2774,7 @@
         ]
       },
       {
-        "text": "J'ai pris de la ciprofloxacine.",
+        "text": "J'ai pris de la ciprofloxacine",
         "intent": "treatment",
         "entities": [
           {
@@ -2786,7 +2786,7 @@
         ]
       },
       {
-        "text": "Je prends du métronidazole.",
+        "text": "Je prends du métronidazole",
         "intent": "treatment",
         "entities": [
           {
@@ -2798,7 +2798,7 @@
         ]
       },
       {
-        "text": "Ma drogue est l'ampicilline.",
+        "text": "Ma drogue est l'ampicilline",
         "intent": "treatment",
         "entities": [
           {
@@ -2810,7 +2810,7 @@
         ]
       },
       {
-        "text": "Je prends de la phénoxyméthylpénicilline.",
+        "text": "Je prends de la phénoxyméthylpénicilline",
         "intent": "treatment",
         "entities": [
           {
@@ -2822,7 +2822,7 @@
         ]
       },
       {
-        "text": "Mon médicament est le tazobactam.",
+        "text": "Mon médicament est le tazobactam",
         "intent": "treatment",
         "entities": [
           {
@@ -2834,7 +2834,7 @@
         ]
       },
       {
-        "text": "Je prends de la fosfomycine.",
+        "text": "Je prends de la fosfomycine",
         "intent": "treatment",
         "entities": [
           {
@@ -2846,7 +2846,7 @@
         ]
       },
       {
-        "text": "J'ai pris un sulfaméthoxazole.",
+        "text": "J'ai pris un sulfaméthoxazole",
         "intent": "treatment",
         "entities": [
           {
@@ -2870,7 +2870,7 @@
         ]
       },
       {
-        "text": "Je prends du formotérol.",
+        "text": "Je prends du formotérol",
         "intent": "treatment",
         "entities": [
           {
@@ -2882,7 +2882,7 @@
         ]
       },
       {
-        "text": "Je ressens cette douleur à chaque minute.",
+        "text": "Je ressens cette douleur à chaque minute",
         "intent": "pain",
         "entities": [
           {
@@ -2894,7 +2894,7 @@
         ]
       },
       {
-        "text": "je resssens cette douleur depuis 4 ans.",
+        "text": "je resssens cette douleur depuis 4 ans",
         "intent": "pain",
         "entities": [
           {
@@ -2906,7 +2906,7 @@
         ]
       },
       {
-        "text": "Cette douleur remonte à l'année dernière.",
+        "text": "Cette douleur remonte à l'année dernière",
         "intent": "pain",
         "entities": [
           {
@@ -2918,7 +2918,7 @@
         ]
       },
       {
-        "text": "je resssens cette douleur depuis lundi dernier.",
+        "text": "je resssens cette douleur depuis lundi dernier",
         "intent": "pain",
         "entities": [
           {
@@ -2930,7 +2930,7 @@
         ]
       },
       {
-        "text": "je resssens cette douleur depuis des dernières semaines.",
+        "text": "je resssens cette douleur depuis des dernières semaines",
         "intent": "pain",
         "entities": [
           {
@@ -2942,7 +2942,7 @@
         ]
       },
       {
-        "text": "Je ressens cette douleur toutes les nuits.",
+        "text": "Je ressens cette douleur toutes les nuits",
         "intent": "pain",
         "entities": [
           {
@@ -2954,19 +2954,19 @@
         ]
       },
       {
-        "text": "je resssens cette douleur le jeudi.",
+        "text": "je resssens cette douleur le jeudi",
         "intent": "pain",
         "entities": [
           {
             "start": 26,
             "end": 34,
             "value": "le jeudi",
-            "entity": "time"
+            "entity": "period"
           }
         ]
       },
       {
-        "text": "je ressens cette douleur depuis hier.",
+        "text": "je ressens cette douleur depuis hier",
         "intent": "pain",
         "entities": [
           {
@@ -2978,7 +2978,7 @@
         ]
       },
       {
-        "text": "Je ressens cette douleur deux fois par mois.",
+        "text": "Je ressens cette douleur deux fois par mois",
         "intent": "pain",
         "entities": [
           {
@@ -2990,7 +2990,7 @@
         ]
       },
       {
-        "text": "je ressens cette douleur depuis 2 jours.",
+        "text": "je ressens cette douleur depuis 2 jours",
         "intent": "pain",
         "entities": [
           {
@@ -3002,7 +3002,7 @@
         ]
       },
       {
-        "text": "je resssens cette douleur au cours des dernières heures.",
+        "text": "je resssens cette douleur au cours des dernières heures",
         "intent": "pain",
         "entities": [
           {
@@ -3014,19 +3014,19 @@
         ]
       },
       {
-        "text": "je ressens cette douleur le vendredi.",
+        "text": "je ressens cette douleur le vendredi",
         "intent": "pain",
         "entities": [
           {
             "start": 25,
             "end": 36,
             "value": "le vendredi",
-            "entity": "time"
+            "entity": "period"
           }
         ]
       },
       {
-        "text": "Je ressens cette douleur deux fois par nuit.",
+        "text": "Je ressens cette douleur deux fois par nuit",
         "intent": "pain",
         "entities": [
           {
@@ -3038,7 +3038,7 @@
         ]
       },
       {
-        "text": "Cette douleur remonte à la semaine dernière.",
+        "text": "Cette douleur remonte à la semaine dernière",
         "intent": "pain",
         "entities": [
           {
@@ -3050,7 +3050,7 @@
         ]
       },
       {
-        "text": "je resssens cette douleur depuis hier.",
+        "text": "je resssens cette douleur depuis hier",
         "intent": "pain",
         "entities": [
           {
@@ -3062,7 +3062,7 @@
         ]
       },
       {
-        "text": "Je ressens cette douleur tous les mois.",
+        "text": "Je ressens cette douleur tous les mois",
         "intent": "pain",
         "entities": [
           {
@@ -3074,7 +3074,7 @@
         ]
       },
       {
-        "text": "je resssens cette douleur depuis un certain temps.",
+        "text": "je resssens cette douleur depuis un certain temps",
         "intent": "pain",
         "entities": [
           {
@@ -3086,7 +3086,7 @@
         ]
       },
       {
-        "text": "je resssens cette douleur depuis 1 mois.",
+        "text": "je resssens cette douleur depuis 1 mois",
         "intent": "pain",
         "entities": [
           {
@@ -3098,7 +3098,7 @@
         ]
       },
       {
-        "text": "Je ressens cette douleur à chaque seconde.",
+        "text": "Je ressens cette douleur à chaque seconde",
         "intent": "pain",
         "entities": [
           {
@@ -3110,7 +3110,7 @@
         ]
       },
       {
-        "text": "je resssens cette douleur depuis samedi.",
+        "text": "je resssens cette douleur depuis samedi",
         "intent": "pain",
         "entities": [
           {
@@ -3122,7 +3122,7 @@
         ]
       },
       {
-        "text": "Cette douleur n'a pas duré si longtemps.",
+        "text": "Cette douleur n'a pas duré si longtemps",
         "intent": "pain",
         "entities": [
           {
@@ -3134,7 +3134,7 @@
         ]
       },
       {
-        "text": "je ressens cette douleur depuis la semaine dernière.",
+        "text": "je ressens cette douleur depuis la semaine dernière",
         "intent": "pain",
         "entities": [
           {
@@ -3146,7 +3146,7 @@
         ]
       },
       {
-        "text": "Je ressens cette douleur chaque semaine.",
+        "text": "Je ressens cette douleur chaque semaine",
         "intent": "pain",
         "entities": [
           {
@@ -3158,7 +3158,7 @@
         ]
       },
       {
-        "text": "Cette douleur a été pendant un certain temps.",
+        "text": "Cette douleur a été pendant un certain temps",
         "intent": "pain",
         "entities": [
           {
@@ -3170,7 +3170,7 @@
         ]
       },
       {
-        "text": "je resssens cette douleur depuis longtemps.",
+        "text": "je resssens cette douleur depuis longtemps",
         "intent": "pain",
         "entities": [
           {
@@ -3182,7 +3182,7 @@
         ]
       },
       {
-        "text": "Je ressens cette douleur chaque nuit.",
+        "text": "Je ressens cette douleur chaque nuit",
         "intent": "pain",
         "entities": [
           {
@@ -3194,7 +3194,7 @@
         ]
       },
       {
-        "text": "je resssens cette douleur depuis quelques minutes.",
+        "text": "je resssens cette douleur depuis quelques minutes",
         "intent": "pain",
         "entities": [
           {
@@ -3206,7 +3206,7 @@
         ]
       },
       {
-        "text": "je ressens cette douleur depuis quelques heures.",
+        "text": "je ressens cette douleur depuis quelques heures",
         "intent": "pain",
         "entities": [
           {
@@ -3218,7 +3218,7 @@
         ]
       },
       {
-        "text": "je resssens cette douleur au cours des derniers mois.",
+        "text": "je resssens cette douleur au cours des derniers mois",
         "intent": "pain",
         "entities": [
           {
@@ -3230,7 +3230,7 @@
         ]
       },
       {
-        "text": "Je ressens cette douleur de temps en temps.",
+        "text": "Je ressens cette douleur de temps en temps",
         "intent": "pain",
         "entities": [
           {
@@ -3242,7 +3242,7 @@
         ]
       },
       {
-        "text": "je resssens cette douleur depuis le mois dernier.",
+        "text": "je resssens cette douleur depuis le mois dernier",
         "intent": "pain",
         "entities": [
           {
@@ -3254,7 +3254,7 @@
         ]
       },
       {
-        "text": "Cette douleur remonte au mois dernier.",
+        "text": "Cette douleur remonte au mois dernier",
         "intent": "pain",
         "entities": [
           {
@@ -3266,7 +3266,7 @@
         ]
       },
       {
-        "text": "je resssens cette douleur depuis ce mardi.",
+        "text": "je resssens cette douleur depuis ce mardi",
         "intent": "pain",
         "entities": [
           {
@@ -3278,7 +3278,7 @@
         ]
       },
       {
-        "text": "Je ressens cette douleur toutes les semaines.",
+        "text": "Je ressens cette douleur toutes les semaines",
         "intent": "pain",
         "entities": [
           {
@@ -3290,7 +3290,7 @@
         ]
       },
       {
-        "text": "je resssens cette douleur depuis quelques jours.",
+        "text": "je resssens cette douleur depuis quelques jours",
         "intent": "pain",
         "entities": [
           {
@@ -3302,7 +3302,7 @@
         ]
       },
       {
-        "text": "je resssens cette douleur durant jours passés.",
+        "text": "je resssens cette douleur durant jours passés",
         "intent": "pain",
         "entities": [
           {
@@ -3314,7 +3314,7 @@
         ]
       },
       {
-        "text": "Je ressens cette douleur tous les jours.",
+        "text": "Je ressens cette douleur tous les jours",
         "intent": "pain",
         "entities": [
           {
@@ -3326,19 +3326,19 @@
         ]
       },
       {
-        "text": "je resssens cette douleur depuis le mercredi.",
+        "text": "je resssens cette douleur depuis mercredi dernier",
         "intent": "pain",
         "entities": [
           {
             "start": 26,
-            "end": 44,
-            "value": "depuis le mercredi",
+            "end": 49,
+            "value": "depuis mercredi dernier",
             "entity": "duration"
           }
         ]
       },
       {
-        "text": "Je ressens cette douleur deux fois par jour.",
+        "text": "Je ressens cette douleur deux fois par jour",
         "intent": "pain",
         "entities": [
           {
@@ -3350,7 +3350,7 @@
         ]
       },
       {
-        "text": "je resssens cette douleur depuis 3 semaines.",
+        "text": "je resssens cette douleur depuis 3 semaines",
         "intent": "pain",
         "entities": [
           {
@@ -3362,19 +3362,19 @@
         ]
       },
       {
-        "text": "Cette douleur remonte à il y a une heure.",
+        "text": "Cette douleur remonte à il y a une heure",
         "intent": "pain",
         "entities": [
           {
-            "start": 24,
+            "start": 14,
             "end": 40,
-            "value": "il y a une heure",
-            "entity": "time"
+            "value": "remonte à il y a une heure",
+            "entity": "duration"
           }
         ]
       },
       {
-        "text": "je ressens cette douleur depuis la semaine dernière.",
+        "text": "je ressens cette douleur depuis la semaine dernière",
         "intent": "pain",
         "entities": [
           {
@@ -3386,7 +3386,7 @@
         ]
       },
       {
-        "text": "Je ressens cette douleur tous les jours.",
+        "text": "Je ressens cette douleur tous les jours",
         "intent": "pain",
         "entities": [
           {
@@ -3398,19 +3398,19 @@
         ]
       },
       {
-        "text": "je ressens cette douleur le dimanche.",
+        "text": "je ressens cette douleur le dimanche",
         "intent": "pain",
         "entities": [
           {
             "start": 25,
             "end": 36,
             "value": "le dimanche",
-            "entity": "time"
+            "entity": "period"
           }
         ]
       },
       {
-        "text": "Je ressens cette douleur chaque année.",
+        "text": "Je ressens cette douleur chaque année",
         "intent": "pain",
         "entities": [
           {
@@ -3422,7 +3422,7 @@
         ]
       },
       {
-        "text": "je ressens cette douleur au cours des dernières années.",
+        "text": "je ressens cette douleur au cours des dernières années",
         "intent": "pain",
         "entities": [
           {
@@ -3434,7 +3434,7 @@
         ]
       },
       {
-        "text": "je ressens cette douleur depuis une heure.",
+        "text": "je ressens cette douleur depuis une heure",
         "intent": "pain",
         "entities": [
           {
@@ -3446,7 +3446,7 @@
         ]
       },
       {
-        "text": "Je fais cette activité de temps en temps.",
+        "text": "Je fais cette activité de temps en temps",
         "intent": "activity",
         "entities": [
           {
@@ -3458,7 +3458,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 30 mètres.",
+        "text": "J'ai fait une course de 30 mètres",
         "intent": "activity",
         "entities": [
           {
@@ -3476,7 +3476,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon de 9 mètres.",
+        "text": "J'ai fait un marathon de 9 mètres",
         "intent": "activity",
         "entities": [
           {
@@ -3494,7 +3494,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 44 kilomètres.",
+        "text": "J'ai fait une course de 44 kilomètres",
         "intent": "activity",
         "entities": [
           {
@@ -3512,7 +3512,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon de 99 km.",
+        "text": "J'ai fait un marathon de 99 km",
         "intent": "activity",
         "entities": [
           {
@@ -3530,7 +3530,7 @@
         ]
       },
       {
-        "text": "Je fais cette activité tous les jours.",
+        "text": "Je fais cette activité tous les jours",
         "intent": "activity",
         "entities": [
           {
@@ -3542,7 +3542,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 1 pouce.",
+        "text": "J'ai fait une course de 1 pouce",
         "intent": "activity",
         "entities": [
           {
@@ -3560,7 +3560,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 40 yards.",
+        "text": "J'ai fait une course de 40 yards",
         "intent": "activity",
         "entities": [
           {
@@ -3578,7 +3578,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 94 millimètres.",
+        "text": "J'ai fait une course de 94 millimètres",
         "intent": "activity",
         "entities": [
           {
@@ -3596,7 +3596,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon de 34 pieds.",
+        "text": "J'ai fait un marathon de 34 pieds",
         "intent": "activity",
         "entities": [
           {
@@ -3614,7 +3614,7 @@
         ]
       },
       {
-        "text": "Je fais cette activité chaque semaine.",
+        "text": "Je fais cette activité chaque semaine",
         "intent": "activity",
         "entities": [
           {
@@ -3644,7 +3644,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 10 centimètres.",
+        "text": "J'ai fait une course de 10 centimètres",
         "intent": "activity",
         "entities": [
           {
@@ -3662,7 +3662,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 1 centimètre.",
+        "text": "J'ai fait une course de 1 centimètre",
         "intent": "activity",
         "entities": [
           {
@@ -3680,7 +3680,7 @@
         ]
       },
       {
-        "text": "Je fais cette activité tous les jours.",
+        "text": "Je fais cette activité tous les jours",
         "intent": "activity",
         "entities": [
           {
@@ -3692,7 +3692,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon de 4m.",
+        "text": "J'ai fait un marathon de 4m",
         "intent": "activity",
         "entities": [
           {
@@ -3710,7 +3710,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 3cm.",
+        "text": "J'ai fait une course de 3cm",
         "intent": "activity",
         "entities": [
           {
@@ -3728,7 +3728,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 8mm.",
+        "text": "J'ai fait une course de 8mm",
         "intent": "activity",
         "entities": [
           {
@@ -3746,7 +3746,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon de 1 pied.",
+        "text": "J'ai fait un marathon de 1 pied",
         "intent": "activity",
         "entities": [
           {
@@ -3764,7 +3764,7 @@
         ]
       },
       {
-        "text": "Je fais cette activité toutes les semaines.",
+        "text": "Je fais cette activité toutes les semaines",
         "intent": "activity",
         "entities": [
           {
@@ -3776,7 +3776,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon d'un millimètre.",
+        "text": "J'ai fait un marathon d'un millimètre",
         "intent": "activity",
         "entities": [
           {
@@ -3794,7 +3794,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 10 pouces.",
+        "text": "J'ai fait une course de 10 pouces",
         "intent": "activity",
         "entities": [
           {
@@ -3812,7 +3812,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 44 kilomètres.",
+        "text": "J'ai fait une course de 44 kilomètres",
         "intent": "activity",
         "entities": [
           {
@@ -3830,7 +3830,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 9 mètres.",
+        "text": "J'ai fait une course de 9 mètres",
         "intent": "activity",
         "entities": [
           {
@@ -3848,7 +3848,7 @@
         ]
       },
       {
-        "text": "Je fais cette activité toutes les secondes.",
+        "text": "Je fais cette activité toutes les secondes",
         "intent": "activity",
         "entities": [
           {
@@ -3860,7 +3860,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon de 8 mm.",
+        "text": "J'ai fait un marathon de 8 mm",
         "intent": "activity",
         "entities": [
           {
@@ -3878,7 +3878,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 99 km.",
+        "text": "J'ai fait une course de 99 km",
         "intent": "activity",
         "entities": [
           {
@@ -3896,7 +3896,7 @@
         ]
       },
       {
-        "text": "Je fais cette activité tous les soirs.",
+        "text": "Je fais cette activité tous les soirs",
         "intent": "activity",
         "entities": [
           {
@@ -3908,7 +3908,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon de 30 mètres.",
+        "text": "J'ai fait un marathon de 30 mètres",
         "intent": "activity",
         "entities": [
           {
@@ -3926,7 +3926,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 4m.",
+        "text": "J'ai fait une course de 4m",
         "intent": "activity",
         "entities": [
           {
@@ -3944,7 +3944,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 1 pied.",
+        "text": "J'ai fait une course de 1 pied",
         "intent": "activity",
         "entities": [
           {
@@ -3962,7 +3962,7 @@
         ]
       },
       {
-        "text": "Je fais cette activité chaque année.",
+        "text": "Je fais cette activité chaque année",
         "intent": "activity",
         "entities": [
           {
@@ -3974,7 +3974,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon de 1 pouce.",
+        "text": "J'ai fait un marathon de 1 pouce",
         "intent": "activity",
         "entities": [
           {
@@ -3992,7 +3992,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 1 millimètre.",
+        "text": "J'ai fait une course de 1 millimètre",
         "intent": "activity",
         "entities": [
           {
@@ -4010,7 +4010,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon de 3cm.",
+        "text": "J'ai fait un marathon de 3cm",
         "intent": "activity",
         "entities": [
           {
@@ -4028,7 +4028,7 @@
         ]
       },
       {
-        "text": "Je fais cette activité deux fois par mois.",
+        "text": "Je fais cette activité deux fois par mois",
         "intent": "activity",
         "entities": [
           {
@@ -4040,7 +4040,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 10 centimètres.",
+        "text": "J'ai fait une course de 10 centimètres",
         "intent": "activity",
         "entities": [
           {
@@ -4058,7 +4058,7 @@
         ]
       },
       {
-        "text": "Je fais cette activité à chaque minute.",
+        "text": "Je fais cette activité à chaque minute",
         "intent": "activity",
         "entities": [
           {
@@ -4070,7 +4070,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon de 1 verge.",
+        "text": "J'ai fait un marathon de 1 verge",
         "intent": "activity",
         "entities": [
           {
@@ -4088,7 +4088,7 @@
         ]
       },
       {
-        "text": "Je fais cette activité tous les mois.",
+        "text": "Je fais cette activité tous les mois",
         "intent": "activity",
         "entities": [
           {
@@ -4100,7 +4100,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 10 pouces.",
+        "text": "J'ai fait une course de 10 pouces",
         "intent": "activity",
         "entities": [
           {
@@ -4118,7 +4118,7 @@
         ]
       },
       {
-        "text": "Je fais cette activité deux fois par jour.",
+        "text": "Je fais cette activité deux fois par jour",
         "intent": "activity",
         "entities": [
           {
@@ -4130,7 +4130,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 99 km.",
+        "text": "J'ai fait une course de 99 km",
         "intent": "activity",
         "entities": [
           {
@@ -4148,7 +4148,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course d'un millimètre.",
+        "text": "J'ai fait une course d'un millimètre",
         "intent": "activity",
         "entities": [
           {
@@ -4166,7 +4166,7 @@
         ]
       },
       {
-        "text": "Je fais cette activité deux fois par nuit.",
+        "text": "Je fais cette activité deux fois par nuit",
         "intent": "activity",
         "entities": [
           {
@@ -4178,7 +4178,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon de 94 millimètres.",
+        "text": "J'ai fait un marathon de 94 millimètres",
         "intent": "activity",
         "entities": [
           {
@@ -4196,7 +4196,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 9 mètres.",
+        "text": "J'ai fait une course de 9 mètres",
         "intent": "activity",
         "entities": [
           {
@@ -4214,7 +4214,7 @@
         ]
       },
       {
-        "text": "Je pratique cette activité tous les soirs.",
+        "text": "Je pratique cette activité tous les soirs",
         "intent": "activity",
         "entities": [
           {
@@ -4226,7 +4226,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 8mm.",
+        "text": "J'ai fait une course de 8mm",
         "intent": "activity",
         "entities": [
           {
@@ -4244,7 +4244,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon de 10 centimètres.",
+        "text": "J'ai fait un marathon de 10 centimètres",
         "intent": "activity",
         "entities": [
           {
@@ -4262,7 +4262,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 1 pouce.",
+        "text": "J'ai fait une course de 1 pouce",
         "intent": "activity",
         "entities": [
           {
@@ -4280,7 +4280,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon de 40 yards.",
+        "text": "J'ai fait un marathon de 40 yards",
         "intent": "activity",
         "entities": [
           {
@@ -4298,7 +4298,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 40 yards.",
+        "text": "J'ai fait une course de 40 yards",
         "intent": "activity",
         "entities": [
           {
@@ -4316,7 +4316,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon de 1 centimètre.",
+        "text": "J'ai fait un marathon de 1 centimètre",
         "intent": "activity",
         "entities": [
           {
@@ -4334,7 +4334,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 34 pieds.",
+        "text": "J'ai fait une course de 34 pieds",
         "intent": "activity",
         "entities": [
           {
@@ -4352,7 +4352,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 1 yard.",
+        "text": "J'ai fait une course de 1 yard",
         "intent": "activity",
         "entities": [
           {
@@ -4370,7 +4370,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon de 44 kilomètres.",
+        "text": "J'ai fait un marathon de 44 kilomètres",
         "intent": "activity",
         "entities": [
           {
@@ -4388,7 +4388,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 1 centimètre.",
+        "text": "J'ai fait une course de 1 centimètre",
         "intent": "activity",
         "entities": [
           {
@@ -4406,7 +4406,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 30 mètres.",
+        "text": "J'ai fait une course de 30 mètres",
         "intent": "activity",
         "entities": [
           {
@@ -4424,7 +4424,7 @@
         ]
       },
       {
-        "text": "J'ai couru de 1 pied.",
+        "text": "J'ai couru de 1 pied",
         "intent": "activity",
         "entities": [
           {
@@ -4442,7 +4442,7 @@
         ]
       },
       {
-        "text": "J'ai couru de 4m.",
+        "text": "J'ai couru de 4m",
         "intent": "activity",
         "entities": [
           {
@@ -4460,7 +4460,7 @@
         ]
       },
       {
-        "text": "J'ai couru 94 millimètres.",
+        "text": "J'ai couru 94 millimètres",
         "intent": "activity",
         "entities": [
           {
@@ -4478,7 +4478,7 @@
         ]
       },
       {
-        "text": "J'ai fait un marathon de 10 pouces.",
+        "text": "J'ai fait un marathon de 10 pouces",
         "intent": "activity",
         "entities": [
           {
@@ -4496,7 +4496,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 3cm.",
+        "text": "J'ai fait une course de 3cm",
         "intent": "activity",
         "entities": [
           {
@@ -4514,7 +4514,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 34 pieds.",
+        "text": "J'ai fait une course de 34 pieds",
         "intent": "activity",
         "entities": [
           {
@@ -4532,7 +4532,7 @@
         ]
       },
       {
-        "text": "Je ne peux plus parler.",
+        "text": "Je ne peux plus parler",
         "intent": "pathology",
         "entities": []
       },
@@ -4562,12 +4562,26 @@
       {
         "text": "Je ne peux pas avaler",
         "intent": "pathology",
-        "entities": []
+        "entities": [
+          {
+            "start": 15,
+            "end": 21,
+            "value": "avaler",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
-        "text": "Je ne peux pas respirer profondément.",
+        "text": "Je ne peux pas respirer profondément",
         "intent": "pathology",
-        "entities": []
+        "entities": [
+          {
+            "start": 15,
+            "end": 36,
+            "value": "respirer profondément",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
         "text": "J'ai une toux",
@@ -4599,7 +4613,7 @@
         ]
       },
       {
-        "text": "J'ai des ulcères buccaux.",
+        "text": "J'ai des ulcères buccaux",
         "intent": "pathology",
         "entities": [
           {
@@ -4665,7 +4679,7 @@
         ]
       },
       {
-        "text": "c'est comme des aiguilles dans mes jambes.",
+        "text": "c'est comme des aiguilles dans mes jambes",
         "intent": "pathology",
         "entities": [
           {
@@ -4699,9 +4713,9 @@
         "intent": "pathology",
         "entities": [
           {
-            "start": 5,
+            "start": 21,
             "end": 27,
-            "value": "souvent envie d'uriner",
+            "value": "uriner",
             "entity": "symtoms"
           }
         ]
@@ -4725,7 +4739,7 @@
         ]
       },
       {
-        "text": "J'ai des plaques sur la peau.",
+        "text": "J'ai des plaques sur la peau",
         "intent": "pathology",
         "entities": [
           {
@@ -4743,7 +4757,7 @@
         ]
       },
       {
-        "text": "J'ai des taches blanches dans la bouche. ",
+        "text": "J'ai des taches blanches dans la bouche.",
         "intent": "pathology",
         "entities": [
           {
@@ -4761,12 +4775,25 @@
         ]
       },
       {
-        "text": "J'ai des cloques qui démangent sur le corps.",
+        "text": "J'ai des cloques qui démangent sur le corps",
         "intent": "pathology",
-        "entities": []
+        "entities": [
+          {
+            "start": 9,
+            "end": 16,
+            "value": "cloques",
+            "entity": "symtoms"
+          },
+          {
+            "start": 38,
+            "end": 43,
+            "value": "corps",
+            "entity": "body_part"
+          }
+        ]
       },
       {
-        "text": "J'ai le nez bouché.",
+        "text": "J'ai le nez bouché",
         "intent": "pathology",
         "entities": [
           {
@@ -4796,7 +4823,7 @@
         ]
       },
       {
-        "text": "ça sonne dans mon oreille.",
+        "text": "ça sonne dans mon oreille",
         "intent": "pathology",
         "entities": [
           {
@@ -4814,7 +4841,7 @@
         ]
       },
       {
-        "text": "J'ai des éclats de voix incontrôlés.",
+        "text": "J'ai des éclats de voix incontrôlés",
         "intent": "pathology",
         "entities": [
           {
@@ -4838,7 +4865,7 @@
         ]
       },
       {
-        "text": "J'ai besoin de vomir.",
+        "text": "J'ai besoin de vomir",
         "intent": "pathology",
         "entities": [
           {
@@ -4850,7 +4877,7 @@
         ]
       },
       {
-        "text": "J'éternue beaucoup.",
+        "text": "J'éternue beaucoup",
         "intent": "pathology",
         "entities": [
           {
@@ -4862,7 +4889,7 @@
         ]
       },
       {
-        "text": "J'ai une crise cardiaque.",
+        "text": "J'ai une crise cardiaque",
         "intent": "pathology",
         "entities": [
           {
@@ -4874,9 +4901,16 @@
         ]
       },
       {
-        "text": "il est difficile à avaler",
+        "text": "C'est difficile d'avaler",
         "intent": "pathology",
-        "entities": []
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "avaler",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
         "text": "je développe une éruption cutanée",
@@ -4938,7 +4972,7 @@
         ]
       },
       {
-        "text": "Je ne peux pas respirer par le nez.",
+        "text": "Je ne peux pas respirer par le nez",
         "intent": "pathology",
         "entities": [
           {
@@ -4968,7 +5002,7 @@
         ]
       },
       {
-        "text": "J'ai la diarrhée.",
+        "text": "J'ai la diarrhée",
         "intent": "pathology",
         "entities": [
           {
@@ -4980,7 +5014,7 @@
         ]
       },
       {
-        "text": "J'ai des mouvements répétés et incontrôlés.",
+        "text": "J'ai des mouvements répétés et incontrôlés",
         "intent": "pathology",
         "entities": [
           {
@@ -4992,9 +5026,16 @@
         ]
       },
       {
-        "text": "Je n'ai pas faim.",
+        "text": "Je n'ai pas faim",
         "intent": "pathology",
-        "entities": []
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "faim",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
         "text": "Je tousse",
@@ -5009,7 +5050,7 @@
         ]
       },
       {
-        "text": "J'ai le nez qui coule.",
+        "text": "J'ai le nez qui coule",
         "intent": "pathology",
         "entities": [
           {
@@ -5027,15 +5068,9 @@
         ]
       },
       {
-        "text": "mes jambes sont faibles",
+        "text": "mes jambes sont faible",
         "intent": "pathology",
         "entities": [
-          {
-            "start": 16,
-            "end": 23,
-            "value": "faibles",
-            "entity": "symtoms"
-          },
           {
             "start": 4,
             "end": 10,
@@ -5045,17 +5080,31 @@
         ]
       },
       {
-        "text": "Ça brûle quand j'urine.",
+        "text": "Ça brûle quand j'urine",
         "intent": "pathology",
-        "entities": []
+        "entities": [
+          {
+            "start": 3,
+            "end": 8,
+            "value": "brûle",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
         "text": "il est très difficile d'uriner",
         "intent": "pathology",
-        "entities": []
+        "entities": [
+          {
+            "start": 24,
+            "end": 30,
+            "value": "uriner",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
-        "text": "J'ai une sensation d'étouffement dans la gorge.",
+        "text": "J'ai une sensation d'étouffement dans la gorge",
         "intent": "pathology",
         "entities": [
           {
@@ -5077,17 +5126,24 @@
         "intent": "pathology",
         "entities": [
           {
-            "start": 5,
-            "end": 10,
-            "value": "froid",
-            "entity": "symtoms"
+            "end": 17,
+            "entity": "symtoms",
+            "value": "feeling cold",
+            "start": 5
           }
         ]
       },
       {
-        "text": "J'ai de la difficulté à avaler",
+        "text": "J'ai de la difficulté à déglutir",
         "intent": "pathology",
-        "entities": []
+        "entities": [
+          {
+            "start": 24,
+            "end": 32,
+            "value": "déglutir",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
         "text": "mes yeux sont irrités",
@@ -5108,7 +5164,7 @@
         ]
       },
       {
-        "text": "J'ai du sang dans mon urine.",
+        "text": "J'ai du sang dans mon urine",
         "intent": "pathology",
         "entities": [
           {
@@ -5138,7 +5194,7 @@
         ]
       },
       {
-        "text": "Je n'entends plus rien.",
+        "text": "Je n'entends plus rien",
         "intent": "pathology",
         "entities": []
       },
@@ -5148,7 +5204,7 @@
         "entities": []
       },
       {
-        "text": "Je frissonne.",
+        "text": "Je frissonne",
         "intent": "pathology",
         "entities": [
           {
@@ -5189,7 +5245,7 @@
         ]
       },
       {
-        "text": "Mon urine est de couleur foncée.",
+        "text": "Mon urine est de couleur foncée",
         "intent": "pathology",
         "entities": [
           {
@@ -5201,7 +5257,7 @@
         ]
       },
       {
-        "text": "J'ai des engourdissements dans mes mains.",
+        "text": "J'ai des engourdissements dans mes mains",
         "intent": "pathology",
         "entities": [
           {
@@ -5231,12 +5287,12 @@
         ]
       },
       {
-        "text": "Je ne peux pas parler.",
+        "text": "Je ne peux pas parler",
         "intent": "pathology",
         "entities": []
       },
       {
-        "text": "J'ai des sueurs.",
+        "text": "J'ai des sueurs",
         "intent": "pathology",
         "entities": [
           {
@@ -5248,7 +5304,7 @@
         ]
       },
       {
-        "text": "Une éruption cutanée apparaît sur ma peau.",
+        "text": "Une éruption cutanée apparaît sur ma peau",
         "intent": "pathology",
         "entities": [
           {
@@ -5266,7 +5322,7 @@
         ]
       },
       {
-        "text": "j'ai une réaction allergique.",
+        "text": "j'ai une réaction allergique",
         "intent": "pathology",
         "entities": [
           {
@@ -5278,7 +5334,7 @@
         ]
       },
       {
-        "text": "J'ai des palpitations cardiaques.",
+        "text": "J'ai des palpitations cardiaques",
         "intent": "pathology",
         "entities": [
           {
@@ -5290,7 +5346,7 @@
         ]
       },
       {
-        "text": "Je suis constipé.",
+        "text": "Je suis constipé",
         "intent": "pathology",
         "entities": [
           {
@@ -5302,7 +5358,7 @@
         ]
       },
       {
-        "text": "J'ai perdu l'appétit.",
+        "text": "J'ai perdu l'appétit",
         "intent": "pathology",
         "entities": [
           {
@@ -5314,7 +5370,7 @@
         ]
       },
       {
-        "text": "J'ai des symptômes semblables à ceux de la grippe.",
+        "text": "J'ai des symptômes semblables à ceux de la grippe",
         "intent": "pathology",
         "entities": [
           {
@@ -5326,7 +5382,7 @@
         ]
       },
       {
-        "text": "J'ai des bosses et des ampoules sur ma peau.",
+        "text": "J'ai des bosses et des ampoules sur ma peau",
         "intent": "pathology",
         "entities": [
           {
@@ -5350,12 +5406,19 @@
         ]
       },
       {
-        "text": "J'ai souvent envie d'uriner.",
+        "text": "J'ai souvent envie d'uriner",
         "intent": "pathology",
-        "entities": []
+        "entities": [
+          {
+            "start": 21,
+            "end": 27,
+            "value": "uriner",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
-        "text": "J'ai des problèmes d'audition.",
+        "text": "J'ai des problèmes d'audition",
         "intent": "pathology",
         "entities": [
           {
@@ -5367,7 +5430,7 @@
         ]
       },
       {
-        "text": "Je sens des picotements sur les lèvres.",
+        "text": "Je sens des picotements sur les lèvres",
         "intent": "pain",
         "entities": [
           {
@@ -5385,12 +5448,19 @@
         ]
       },
       {
-        "text": "Je n'entends pas bien.",
+        "text": "Je n'entends pas bien",
         "intent": "pathology",
-        "entities": []
+        "entities": [
+          {
+            "start": 5,
+            "end": 21,
+            "value": "entends pas bien",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
-        "text": "mon visage gonfle.",
+        "text": "mon visage gonfle",
         "intent": "pathology",
         "entities": [
           {
@@ -5408,7 +5478,7 @@
         ]
       },
       {
-        "text": "Je n'ai aucune sensation dans mon corps.",
+        "text": "Je n'ai aucune sensation dans mon corps",
         "intent": "pathology",
         "entities": [
           {
@@ -5420,7 +5490,7 @@
         ]
       },
       {
-        "text": "J'ai une respiration rapide.",
+        "text": "J'ai une respiration rapide",
         "intent": "pathology",
         "entities": [
           {
@@ -5432,7 +5502,7 @@
         ]
       },
       {
-        "text": "J'ai des douleurs aux sinus.",
+        "text": "J'ai des douleurs aux sinus",
         "intent": "pain",
         "entities": [
           {
@@ -5474,7 +5544,7 @@
         ]
       },
       {
-        "text": "J'ai besoin de vomir.",
+        "text": "J'ai besoin de vomir",
         "intent": "pathology",
         "entities": [
           {
@@ -5486,7 +5556,7 @@
         ]
       },
       {
-        "text": "c'est tout flou autour de moi.",
+        "text": "c'est tout flou autour de moi",
         "intent": "pathology",
         "entities": [
           {
@@ -5498,7 +5568,7 @@
         ]
       },
       {
-        "text": "Je vomis.",
+        "text": "Je vomis",
         "intent": "pathology",
         "entities": [
           {
@@ -5510,7 +5580,7 @@
         ]
       },
       {
-        "text": "J'ai des palpitations cardiaques.",
+        "text": "J'ai des palpitations cardiaques",
         "intent": "pathology",
         "entities": [
           {
@@ -5522,7 +5592,7 @@
         ]
       },
       {
-        "text": "J'ai de la difficulté à respirer par le nez.",
+        "text": "J'ai de la difficulté à respirer par le nez",
         "intent": "pathology",
         "entities": [
           {
@@ -5540,7 +5610,7 @@
         ]
       },
       {
-        "text": "c'est comme des aiguilles dans mes bras.",
+        "text": "c'est comme des aiguilles dans mes bras",
         "intent": "pathology",
         "entities": [
           {
@@ -5558,7 +5628,7 @@
         ]
       },
       {
-        "text": "J'ai des frissons.",
+        "text": "J'ai des frissons",
         "intent": "pathology",
         "entities": [
           {
@@ -5570,13 +5640,13 @@
         ]
       },
       {
-        "text": "ma peau est pâle.",
+        "text": "ma peau est pâle",
         "intent": "pathology",
         "entities": [
           {
             "end": 7,
             "entity": "body_part",
-            "value": "peau",
+            "value": "skin",
             "start": 3
           },
           {
@@ -5588,7 +5658,7 @@
         ]
       },
       {
-        "text": "J'ai une irritation de la peau.",
+        "text": "J'ai une irritation de la peau",
         "intent": "pathology",
         "entities": [
           {
@@ -5606,7 +5676,7 @@
         ]
       },
       {
-        "text": "J'ai les yeux qui me démangent.",
+        "text": "J'ai les yeux qui me démangent",
         "intent": "pathology",
         "entities": [
           {
@@ -5624,7 +5694,7 @@
         ]
       },
       {
-        "text": "mes bras sont lourds.",
+        "text": "mes bras sont lourds",
         "intent": "pathology",
         "entities": [
           {
@@ -5642,7 +5712,7 @@
         ]
       },
       {
-        "text": "J'ai la narine droite bouchée.",
+        "text": "J'ai la narine droite bouchée",
         "intent": "pathology",
         "entities": [
           {
@@ -5660,19 +5730,25 @@
         ]
       },
       {
-        "text": "Il y a du sang dans mes selles.",
+        "text": "Il y a du sang dans mes selles",
         "intent": "pathology",
         "entities": [
           {
             "start": 10,
-            "end": 30,
-            "value": "sang dans mes selles",
+            "end": 14,
+            "value": "sang",
             "entity": "symtoms"
+          },
+          {
+            "start": 20,
+            "end": 30,
+            "value": "mes selles",
+            "entity": "body_part"
           }
         ]
       },
       {
-        "text": "J'ai de la pression sur ma poitrine.",
+        "text": "J'ai de la pression sur ma poitrine",
         "intent": "pathology",
         "entities": [
           {
@@ -5690,7 +5766,7 @@
         ]
       },
       {
-        "text": "J'ai du mal à respirer par les narines.",
+        "text": "J'ai du mal à respirer par les narines",
         "intent": "pathology",
         "entities": [
           {
@@ -5708,7 +5784,7 @@
         ]
       },
       {
-        "text": "c'est comme l'engourdissement des extrémités.",
+        "text": "c'est comme l'engourdissement des extrémités",
         "intent": "pathology",
         "entities": [
           {
@@ -5726,7 +5802,7 @@
         ]
       },
       {
-        "text": "ma vision est double.",
+        "text": "ma vision est double",
         "intent": "pathology",
         "entities": [
           {
@@ -5738,7 +5814,7 @@
         ]
       },
       {
-        "text": "J'ai une éruption cutanée.",
+        "text": "J'ai une éruption cutanée",
         "intent": "pathology",
         "entities": [
           {
@@ -5750,7 +5826,7 @@
         ]
       },
       {
-        "text": "je ressens une soudaine faiblesse.",
+        "text": "je ressens une soudaine faiblesse",
         "intent": "pathology",
         "entities": [
           {
@@ -5762,7 +5838,7 @@
         ]
       },
       {
-        "text": "J'ai de l'urine trouble.",
+        "text": "J'ai de l'urine trouble",
         "intent": "pathology",
         "entities": [
           {
@@ -5774,7 +5850,7 @@
         ]
       },
       {
-        "text": "J'ai des battements de cœur irréguliers.",
+        "text": "J'ai des battements de cœur irréguliers",
         "intent": "pathology",
         "entities": [
           {
@@ -5786,7 +5862,7 @@
         ]
       },
       {
-        "text": "J'ai une otite.",
+        "text": "J'ai une otite",
         "intent": "pathology",
         "entities": [
           {
@@ -5798,7 +5874,7 @@
         ]
       },
       {
-        "text": "J'ai besoin de vomir.",
+        "text": "J'ai besoin de vomir",
         "intent": "pathology",
         "entities": [
           {
@@ -5810,7 +5886,7 @@
         ]
       },
       {
-        "text": "J'ai de la fièvre.",
+        "text": "J'ai de la fièvre",
         "intent": "pathology",
         "entities": [
           {
@@ -5822,7 +5898,7 @@
         ]
       },
       {
-        "text": "j'ai mal à la gorge.",
+        "text": "j'ai mal à la gorge",
         "intent": "pain",
         "entities": [
           {
@@ -5840,7 +5916,7 @@
         ]
       },
       {
-        "text": "J'ai mal au cou.",
+        "text": "J'ai mal au cou",
         "intent": "pain",
         "entities": [
           {
@@ -5858,7 +5934,7 @@
         ]
       },
       {
-        "text": "mes poumons me font mal.",
+        "text": "mes poumons me font mal",
         "intent": "pain",
         "entities": [
           {
@@ -5876,7 +5952,7 @@
         ]
       },
       {
-        "text": "mon front est en train de se taper",
+        "text": "mon front me fait mal",
         "intent": "pain",
         "entities": [
           {
@@ -5886,15 +5962,15 @@
             "entity": "body_part"
           },
           {
-            "start": 26,
-            "end": 34,
-            "value": "se taper",
-            "entity": "pain_desc"
+            "start": 12,
+            "end": 21,
+            "value": " fait mal",
+            "entity": "symtoms"
           }
         ]
       },
       {
-        "text": "Mes muscles sont douloureux.",
+        "text": "Mes muscles sont douloureux",
         "intent": "pain",
         "entities": [
           {
@@ -5912,19 +5988,25 @@
         ]
       },
       {
-        "text": "J'ai des crampes abdominales.",
+        "text": "J'ai des crampes abdominales",
         "intent": "pain",
         "entities": [
           {
-            "start": 9,
+            "start": 17,
             "end": 28,
-            "value": "crampes abdominales",
-            "entity": "pain_desc"
+            "value": "abdominales",
+            "entity": "body_part"
+          },
+          {
+            "start": 9,
+            "end": 16,
+            "value": "crampes",
+            "entity": "symtoms"
           }
         ]
       },
       {
-        "text": "J'ai l'impression que mon estomac me brûle.",
+        "text": "J'ai l'impression que mon estomac me brûle",
         "intent": "pain",
         "entities": [
           {
@@ -5942,7 +6024,7 @@
         ]
       },
       {
-        "text": "ma gorge se serre de plus en plus fort.",
+        "text": "ma gorge se serre de plus en plus fort",
         "intent": "pain",
         "entities": [
           {
@@ -5960,7 +6042,7 @@
         ]
       },
       {
-        "text": "J'ai mal à la gorge.",
+        "text": "J'ai mal à la gorge",
         "intent": "pain",
         "entities": [
           {
@@ -5978,7 +6060,7 @@
         ]
       },
       {
-        "text": "mon spasme musculaire est douloureux.",
+        "text": "mon spasme musculaire est douloureux",
         "intent": "pain",
         "entities": [
           {
@@ -6002,7 +6084,7 @@
         ]
       },
       {
-        "text": "Ça fait mal quand j'avale.",
+        "text": "Ça fait mal quand j'avale",
         "intent": "pain",
         "entities": [
           {
@@ -6014,7 +6096,7 @@
         ]
       },
       {
-        "text": "J'ai mal à l'estomac.",
+        "text": "J'ai mal à l'estomac",
         "intent": "pain",
         "entities": [
           {
@@ -6032,7 +6114,7 @@
         ]
       },
       {
-        "text": "J'ai des douleurs à la poitrine.",
+        "text": "J'ai des douleurs à la poitrine",
         "intent": "pain",
         "entities": [
           {
@@ -6068,7 +6150,7 @@
         ]
       },
       {
-        "text": "ma gorge semble enflée.",
+        "text": "ma gorge semble enflée",
         "intent": "pathology",
         "entities": [
           {
@@ -6090,15 +6172,21 @@
         "intent": "pain",
         "entities": [
           {
-            "start": 9,
+            "start": 18,
             "end": 29,
-            "value": "douleurs abdominales",
+            "value": "abdominales",
+            "entity": "body_part"
+          },
+          {
+            "start": 9,
+            "end": 17,
+            "value": "douleurs",
             "entity": "symtoms"
           }
         ]
       },
       {
-        "text": "J'ai mal au cou.",
+        "text": "J'ai mal au cou",
         "intent": "pain",
         "entities": [
           {
@@ -6116,7 +6204,7 @@
         ]
       },
       {
-        "text": "J'ai des crampes.",
+        "text": "J'ai des crampes",
         "intent": "pain",
         "entities": [
           {
@@ -6128,7 +6216,7 @@
         ]
       },
       {
-        "text": "J'ai mal au ventre.",
+        "text": "J'ai mal au ventre",
         "intent": "pain",
         "entities": [
           {
@@ -6146,7 +6234,7 @@
         ]
       },
       {
-        "text": "mes poumons me font mal quand je respire profondément.",
+        "text": "mes poumons me font mal quand je respire profondément",
         "intent": "pain",
         "entities": [
           {
@@ -6169,7 +6257,7 @@
         "entities": []
       },
       {
-        "text": "Désolé, je ne comprends pas.",
+        "text": "Désolé, je ne comprends pas",
         "intent": "incomprehension",
         "entities": []
       },
@@ -6184,12 +6272,12 @@
         "entities": []
       },
       {
-        "text": "Vous n'êtes pas clair.",
+        "text": "Vous n'êtes pas clair",
         "intent": "incomprehension",
         "entities": []
       },
       {
-        "text": "Répétez. ",
+        "text": "Répétez",
         "intent": "incomprehension",
         "entities": []
       },
@@ -6199,12 +6287,12 @@
         "entities": []
       },
       {
-        "text": "Répétez s'il vous plaît.",
+        "text": "Répétez s'il vous plaît",
         "intent": "incomprehension",
         "entities": []
       },
       {
-        "text": "C'est difficile à comprendre.",
+        "text": "C'est difficile à comprendre",
         "intent": "incomprehension",
         "entities": []
       },
@@ -6214,12 +6302,12 @@
         "entities": []
       },
       {
-        "text": "Je ne t'ai pas compris.",
+        "text": "Je ne t'ai pas compris",
         "intent": "incomprehension",
         "entities": []
       },
       {
-        "text": "Je prends des inhibiteurs de l'ECA.",
+        "text": "Je prends des inhibiteurs de l'ECA",
         "intent": "treatment",
         "entities": [
           {
@@ -6231,7 +6319,7 @@
         ]
       },
       {
-        "text": "Je prends de l'ibuprofène.",
+        "text": "Je prends de l'ibuprofène",
         "intent": "treatment",
         "entities": [
           {
@@ -6243,7 +6331,7 @@
         ]
       },
       {
-        "text": "Je prends de la warfarine.",
+        "text": "Je prends de la warfarine",
         "intent": "treatment",
         "entities": [
           {
@@ -6255,7 +6343,7 @@
         ]
       },
       {
-        "text": "Je prends de l'aspirine.",
+        "text": "Je prends de l'aspirine",
         "intent": "treatment",
         "entities": [
           {
@@ -6267,7 +6355,7 @@
         ]
       },
       {
-        "text": "Je prends du magnésium.",
+        "text": "Je prends du magnésium",
         "intent": "treatment",
         "entities": [
           {
@@ -6279,7 +6367,7 @@
         ]
       },
       {
-        "text": "Je prends des bloqueurs de canaux calciques.",
+        "text": "Je prends des bloqueurs de canaux calciques",
         "intent": "treatment",
         "entities": [
           {
@@ -6291,7 +6379,7 @@
         ]
       },
       {
-        "text": "Je prends du paracétamol.",
+        "text": "Je prends du paracétamol",
         "intent": "treatment",
         "entities": [
           {
@@ -6303,7 +6391,7 @@
         ]
       },
       {
-        "text": "Je prends des bêta-blokkers.",
+        "text": "Je prends des bêta-blokkers",
         "intent": "treatment",
         "entities": [
           {
@@ -6315,7 +6403,7 @@
         ]
       },
       {
-        "text": "J'ai besoin de potassium.",
+        "text": "J'ai besoin de potassium",
         "intent": "treatment",
         "entities": [
           {
@@ -6327,7 +6415,7 @@
         ]
       },
       {
-        "text": "Je prends du ketoprofène.",
+        "text": "Je prends du ketoprofène",
         "intent": "treatment",
         "entities": [
           {
@@ -6339,7 +6427,7 @@
         ]
       },
       {
-        "text": "Je ne peux pas prendre du poids.",
+        "text": "Je ne peux pas prendre du poids",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6351,7 +6439,7 @@
         ]
       },
       {
-        "text": "je suis maintenant une femme.",
+        "text": "je suis maintenant une femme",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6363,7 +6451,7 @@
         ]
       },
       {
-        "text": "Je mesure 1,70 mètres.",
+        "text": "Je mesure 1,70 mètres",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6375,7 +6463,7 @@
         ]
       },
       {
-        "text": "Je ne peux compter que 60 battements par minute.",
+        "text": "Je ne peux compter que 60 battements par minute",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6387,7 +6475,7 @@
         ]
       },
       {
-        "text": "je mesure 5,5 pieds.",
+        "text": "je mesure 5,5 pieds",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6399,7 +6487,7 @@
         ]
       },
       {
-        "text": "je suis une femme.",
+        "text": "je suis une femme",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6411,7 +6499,7 @@
         ]
       },
       {
-        "text": "je mesure 5,5 pieds.",
+        "text": "je mesure 5,5 pieds",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6423,7 +6511,7 @@
         ]
       },
       {
-        "text": "Le thermomètre indique 99 degrés fahrenheit.",
+        "text": "Le thermomètre indique 99 degrés fahrenheit",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6435,7 +6523,7 @@
         ]
       },
       {
-        "text": "Je devrais perdre du poids.",
+        "text": "Je devrais perdre du poids",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6447,7 +6535,7 @@
         ]
       },
       {
-        "text": "Je suis une femme.",
+        "text": "Je suis une femme",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6459,7 +6547,7 @@
         ]
       },
       {
-        "text": "J'ai vu mon médecin il y a 5 semaines.",
+        "text": "J'ai vu mon médecin il y a 5 semaines",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6471,7 +6559,7 @@
         ]
       },
       {
-        "text": "Je mesure 5,4 pieds de haut.",
+        "text": "Je mesure 5,4 pieds de haut",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6483,7 +6571,7 @@
         ]
       },
       {
-        "text": "ma température est de 99.",
+        "text": "ma température est de 99",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6495,7 +6583,7 @@
         ]
       },
       {
-        "text": "J'ai 5 lbs à perdre.",
+        "text": "J'ai 5 lbs à perdre",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6507,7 +6595,7 @@
         ]
       },
       {
-        "text": "Mon coeur bat vite.",
+        "text": "Mon coeur bat vite",
         "intent": "pathology",
         "entities": [
           {
@@ -6525,7 +6613,7 @@
         ]
       },
       {
-        "text": "J'ai pris 400 grammes.",
+        "text": "J'ai pris 400 grammes",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6537,7 +6625,7 @@
         ]
       },
       {
-        "text": "Je mesure 1 mètre et 69 centimètres de haut.",
+        "text": "Je mesure 1 mètre et 69 centimètres de haut",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6549,7 +6637,7 @@
         ]
       },
       {
-        "text": "Je pèse 110 livres.",
+        "text": "Je pèse 110 livres",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6561,7 +6649,7 @@
         ]
       },
       {
-        "text": "J'ai perdu 10 lb.",
+        "text": "J'ai perdu 10 lb",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6573,19 +6661,12 @@
         ]
       },
       {
-        "text": "Je mesure 5 pieds et 50 pouces.",
+        "text": "Je mesure 5 pieds et 50 pouce",
         "intent": "infoPatient",
-        "entities": [
-          {
-            "start": 10,
-            "end": 30,
-            "value": "5 pieds et 50 pouces",
-            "entity": "distance"
-          }
-        ]
+        "entities": []
       },
       {
-        "text": "J'ai 5 kilos de trop.",
+        "text": "J'ai 5 kilos de trop",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6597,7 +6678,7 @@
         ]
       },
       {
-        "text": "je mesure 1m et 69 cm.",
+        "text": "je mesure 1m et 69 cm",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6621,7 +6702,7 @@
         ]
       },
       {
-        "text": "Ma température est de 37,5.",
+        "text": "Ma température est de 37,5",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6633,7 +6714,7 @@
         ]
       },
       {
-        "text": "Mon coeur pompe beaucoup.",
+        "text": "Mon coeur pompe beaucoup",
         "intent": "pathology",
         "entities": [
           {
@@ -6651,7 +6732,7 @@
         ]
       },
       {
-        "text": "Je mesure 1m et 69 cm de haut.",
+        "text": "Je mesure 1m et 69 cm de haut",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6663,7 +6744,7 @@
         ]
       },
       {
-        "text": "Mon rythme cardiaque au repos est de 40 battements par minute.",
+        "text": "Mon rythme cardiaque au repos est de 40 battements par minute",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6735,7 +6816,7 @@
         ]
       },
       {
-        "text": "Mon poids est de 50 kg.",
+        "text": "Mon poids est de 50 kg",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6759,7 +6840,7 @@
         ]
       },
       {
-        "text": "Je mesure 5 pieds et 50 pouces.",
+        "text": "Je mesure 5 pieds et 50 pouces",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6771,7 +6852,7 @@
         ]
       },
       {
-        "text": "La dernière fois que j'ai vu mon médecin, c'était lundi.",
+        "text": "La dernière fois que j'ai vu mon médecin, c'était lundi",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6812,7 +6893,7 @@
         ]
       },
       {
-        "text": "Mon rythme cardiaque ne revient pas à la normale.",
+        "text": "Mon rythme cardiaque ne revient pas à la normale",
         "intent": "pathology",
         "entities": [
           {
@@ -6836,7 +6917,7 @@
         ]
       },
       {
-        "text": "J'ai pris 400 oz.",
+        "text": "J'ai pris 400 oz",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6848,7 +6929,7 @@
         ]
       },
       {
-        "text": "J'ai 5 livres de trop.",
+        "text": "J'ai 5 livres de trop",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6860,7 +6941,7 @@
         ]
       },
       {
-        "text": "J'ai un rythme cardiaque rapide.",
+        "text": "J'ai un rythme cardiaque rapide",
         "intent": "pathology",
         "entities": [
           {
@@ -6884,7 +6965,7 @@
         ]
       },
       {
-        "text": "J'étais un homme.",
+        "text": "J'étais un homme",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6896,7 +6977,7 @@
         ]
       },
       {
-        "text": "J'étais une femme, avant.",
+        "text": "J'étais une femme, avant",
         "intent": "infoPatient",
         "entities": [
           {
@@ -6908,7 +6989,7 @@
         ]
       },
       {
-        "text": "Mon coeur bat vite.",
+        "text": "Mon coeur bat vite",
         "intent": "pathology",
         "entities": [
           {
@@ -6926,7 +7007,7 @@
         ]
       },
       {
-        "text": "Mon rythme cardiaque est élevé.",
+        "text": "Mon rythme cardiaque est élevé",
         "intent": "pathology",
         "entities": [
           {
@@ -7147,7 +7228,7 @@
         ]
       },
       {
-        "text": "Je pèse 50 kilos.",
+        "text": "Je pèse 50 kilos",
         "intent": "infoPatient",
         "entities": [
           {
@@ -7159,7 +7240,7 @@
         ]
       },
       {
-        "text": "J'ai perdu 5 kilos.",
+        "text": "J'ai perdu 5 kilos",
         "intent": "infoPatient",
         "entities": [
           {
@@ -7171,7 +7252,7 @@
         ]
       },
       {
-        "text": "Je mesure 5 pieds et 69 pouces de haut.",
+        "text": "Je mesure 5 pieds et 69 pouces de haut",
         "intent": "infoPatient",
         "entities": [
           {
@@ -7183,7 +7264,7 @@
         ]
       },
       {
-        "text": "Mon coeur fait des pauses et des battements.",
+        "text": "Mon coeur fait des pauses et des battements",
         "intent": "pathology",
         "entities": [
           {
@@ -7195,7 +7276,7 @@
         ]
       },
       {
-        "text": "Le thermomètre indique 99 degrés.",
+        "text": "Le thermomètre indique 99 degrés",
         "intent": "infoPatient",
         "entities": [
           {
@@ -7207,7 +7288,7 @@
         ]
       },
       {
-        "text": "j'ai 5 kg à perdre.",
+        "text": "j'ai 5 kg à perdre",
         "intent": "infoPatient",
         "entities": [
           {
@@ -7219,7 +7300,7 @@
         ]
       },
       {
-        "text": "Je suis un homme.",
+        "text": "Je suis un homme",
         "intent": "infoPatient",
         "entities": [
           {
@@ -7243,7 +7324,7 @@
         ]
       },
       {
-        "text": "Je mesure 5 pieds et 50 pouces.",
+        "text": "Je mesure 5 pieds et 50 pouces",
         "intent": "infoPatient",
         "entities": [
           {
@@ -7255,7 +7336,7 @@
         ]
       },
       {
-        "text": "J'étais un homme.",
+        "text": "J'étais un homme",
         "intent": "infoPatient",
         "entities": [
           {
@@ -7267,7 +7348,7 @@
         ]
       },
       {
-        "text": "Mon coeur saute un battement.",
+        "text": "Mon coeur saute un battement",
         "intent": "pathology",
         "entities": [
           {
@@ -7285,7 +7366,7 @@
         ]
       },
       {
-        "text": "Mon rythme cardiaque maximum est de 200 battements par minute.",
+        "text": "Mon rythme cardiaque maximum est de 200 battements par minute",
         "intent": "infoPatient",
         "entities": [
           {
@@ -7297,19 +7378,19 @@
         ]
       },
       {
-        "text": "J'ai 37,5 de température.",
+        "text": "J'ai 37,5° de température",
         "intent": "infoPatient",
         "entities": [
           {
             "start": 5,
-            "end": 9,
-            "value": "37,5",
+            "end": 10,
+            "value": "37,5°",
             "entity": "temperature"
           }
         ]
       },
       {
-        "text": "Je suis un homme.",
+        "text": "Je suis un homme",
         "intent": "infoPatient",
         "entities": [
           {
@@ -7321,7 +7402,7 @@
         ]
       },
       {
-        "text": "Je mesure 5 pieds et 69 pieds de hauteur.",
+        "text": "Je mesure 5 pieds et 69 pieds de hauteur",
         "intent": "infoPatient",
         "entities": [
           {
@@ -7333,7 +7414,7 @@
         ]
       },
       {
-        "text": "Je mesure 5,4 pieds de haut.",
+        "text": "Je mesure 5,4 pieds de haut",
         "intent": "infoPatient",
         "entities": [
           {
@@ -7345,67 +7426,67 @@
         ]
       },
       {
-        "text": "La douleur est là pour presque Noël.",
+        "text": "La douleur est là depuis Noël",
         "intent": "pain",
         "entities": [
           {
-            "start": 31,
-            "end": 35,
-            "value": "Noël",
-            "entity": "time"
+            "start": 18,
+            "end": 29,
+            "value": "depuis Noël",
+            "entity": "duration"
           }
         ]
       },
       {
-        "text": "Je ressens une douleur depuis Thanksgiving.",
+        "text": "Je ressens une douleur depuis Thanksgiving",
         "intent": "pain",
         "entities": [
           {
             "start": 23,
             "end": 42,
             "value": "depuis Thanksgiving",
-            "entity": "time"
-          }
-        ]
-      },
-      {
-        "text": "La douleur est là depuis presque trois mois.",
-        "intent": "pain",
-        "entities": [
-          {
-            "start": 18,
-            "end": 43,
-            "value": "depuis presque trois mois",
             "entity": "duration"
           }
         ]
       },
       {
-        "text": "La douleur est ici à partir du lundi 18 février.",
+        "text": "La douleur est là depuis environ trois mois",
         "intent": "pain",
         "entities": [
           {
-            "start": 31,
-            "end": 47,
-            "value": "lundi 18 février",
-            "entity": "time"
+            "start": 18,
+            "end": 43,
+            "value": "depuis environ trois mois",
+            "entity": "duration"
           }
         ]
       },
       {
-        "text": "La douleur est là depuis presque le 1er mars.",
+        "text": "La douleur est ici depuis lundi 18 février",
         "intent": "pain",
         "entities": [
           {
-            "start": 33,
-            "end": 44,
-            "value": "le 1er mars",
-            "entity": "time"
+            "start": 18,
+            "end": 42,
+            "value": " depuis lundi 18 février",
+            "entity": "duration"
           }
         ]
       },
       {
-        "text": "Je ressens une douleur depuis quelques semaines.",
+        "text": "La douleur est là depuis le 1er mars",
+        "intent": "pain",
+        "entities": [
+          {
+            "start": 18,
+            "end": 36,
+            "value": "depuis le 1er mars",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "Je ressens une douleur depuis quelques semaines",
         "intent": "pain",
         "entities": [
           {
@@ -7417,19 +7498,19 @@
         ]
       },
       {
-        "text": "La douleur est là depuis presque quelques semaines.",
+        "text": "La douleur est là depuis quelques mois",
         "intent": "pain",
         "entities": [
           {
             "start": 18,
-            "end": 50,
-            "value": "depuis presque quelques semaines",
+            "end": 38,
+            "value": "depuis quelques mois",
             "entity": "duration"
           }
         ]
       },
       {
-        "text": "La douleur est ici depuis la veille de Noël.",
+        "text": "La douleur est ici depuis la veille de Noël",
         "intent": "pain",
         "entities": [
           {
@@ -7441,7 +7522,7 @@
         ]
       },
       {
-        "text": "J'ai mal à partir de 2 mois.",
+        "text": "J'ai mal à partir de 2 mois",
         "intent": "pain",
         "entities": [
           {
@@ -7453,7 +7534,7 @@
         ]
       },
       {
-        "text": "La douleur est apparue la veille de la fête du travail.",
+        "text": "La douleur est apparue la veille de la fête du travail",
         "intent": "pain",
         "entities": [
           {
@@ -7465,24 +7546,24 @@
         ]
       },
       {
-        "text": "Je ressens une douleur depuis le lundi 18 février.",
+        "text": "Je ressens une douleur depuis le lundi 18 février",
         "intent": "pain",
         "entities": [
           {
-            "start": 33,
+            "start": 23,
             "end": 49,
-            "value": "lundi 18 février",
-            "entity": "time"
+            "value": "depuis le lundi 18 février",
+            "entity": "duration"
           }
         ]
       },
       {
-        "text": "La douleur est là depuis presque 11h45.",
+        "text": "J'ai ressenti ma douleur à 11h45",
         "intent": "pain",
         "entities": [
           {
-            "start": 33,
-            "end": 38,
+            "start": 27,
+            "end": 32,
             "value": "11h45",
             "entity": "time"
           }
@@ -7513,7 +7594,7 @@
         ]
       },
       {
-        "text": "La douleur est là depuis midi moins le quart.",
+        "text": "La douleur est là depuis midi moins le quart",
         "intent": "pain",
         "entities": [
           {
@@ -7549,12 +7630,12 @@
         ]
       },
       {
-        "text": "La douleur est arrivé le jour de la fête des mères",
+        "text": "La douleur est arrivée le jour de la fête des mères",
         "intent": "pain",
         "entities": [
           {
-            "start": 33,
-            "end": 50,
+            "start": 34,
+            "end": 51,
             "value": "la fête des mères",
             "entity": "time"
           }
@@ -7597,13 +7678,13 @@
         ]
       },
       {
-        "text": "La douleur est là depuis presque la semaine dernière",
+        "text": "La douleur est là depuis la semaine dernière",
         "intent": "pain",
         "entities": [
           {
             "start": 18,
-            "end": 52,
-            "value": "depuis presque la semaine dernière",
+            "end": 44,
+            "value": "depuis la semaine dernière",
             "entity": "duration"
           }
         ]
@@ -7753,7 +7834,7 @@
         ]
       },
       {
-        "text": "La douleur est là depuis presque 3 semaines.",
+        "text": "La douleur est là depuis presque 3 semaines",
         "intent": "pain",
         "entities": [
           {
@@ -7789,14 +7870,14 @@
         ]
       },
       {
-        "text": "La douleur est là depuis aujourd'hui.",
+        "text": "La douleur est là depuis aujourd'hui",
         "intent": "pain",
         "entities": [
           {
             "start": 18,
             "end": 36,
             "value": "depuis aujourd'hui",
-            "entity": "time"
+            "entity": "duration"
           }
         ]
       },
@@ -7844,7 +7925,7 @@
             "start": 21,
             "end": 42,
             "value": "chaque fête des mères",
-            "entity": "time"
+            "entity": "period"
           }
         ]
       },
@@ -7877,9 +7958,9 @@
         "intent": "pain",
         "entities": [
           {
-            "start": 15,
+            "start": 23,
             "end": 40,
-            "value": "douleur depuis 3 semaines",
+            "value": "depuis 3 semaines",
             "entity": "duration"
           }
         ]
@@ -7897,13 +7978,13 @@
         ]
       },
       {
-        "text": "La douleur vient à Noel",
+        "text": "La douleur vient à Noël",
         "intent": "pain",
         "entities": [
           {
             "start": 19,
             "end": 23,
-            "value": "Noel",
+            "value": "Noël",
             "entity": "time"
           }
         ]
@@ -7949,10 +8030,10 @@
         "intent": "pain",
         "entities": [
           {
-            "start": 28,
+            "start": 18,
             "end": 44,
-            "value": "lundi 18 février",
-            "entity": "time"
+            "value": "depuis le lundi 18 février",
+            "entity": "duration"
           }
         ]
       },
@@ -7969,13 +8050,13 @@
         ]
       },
       {
-        "text": "Je ressens une douleur depuis midi et quart",
+        "text": "Je ressens une douleur depuis midi",
         "intent": "pain",
         "entities": [
           {
             "start": 23,
-            "end": 43,
-            "value": "depuis midi et quart",
+            "end": 34,
+            "value": "depuis midi",
             "entity": "duration"
           }
         ]
@@ -8072,7 +8153,7 @@
             "start": 20,
             "end": 31,
             "value": "chaque Noël",
-            "entity": "time"
+            "entity": "period"
           }
         ]
       },
@@ -8101,14 +8182,14 @@
         ]
       },
       {
-        "text": "La douleur est là pour l'action de grâce.",
+        "text": "La douleur est là pour Thanksgiving",
         "intent": "pain",
         "entities": [
           {
-            "start": 25,
-            "end": 40,
-            "value": "action de grâce",
-            "entity": "time"
+            "start": 23,
+            "end": 35,
+            "value": "Thanksgiving",
+            "entity": "period"
           }
         ]
       },
@@ -8137,19 +8218,19 @@
         ]
       },
       {
-        "text": "La douleur est là jusque 11h00 le jeudi.",
+        "text": "La douleur revient chaque jeudi à 11h00",
         "intent": "pain",
         "entities": [
           {
-            "start": 25,
+            "start": 19,
             "end": 39,
-            "value": "11h00 le jeudi",
-            "entity": "time"
+            "value": "chaque jeudi à 11h00",
+            "entity": "period"
           }
         ]
       },
       {
-        "text": "La douleur est là à partir de 11h45.",
+        "text": "La douleur est là à partir de 11h45",
         "intent": "pain",
         "entities": [
           {
@@ -8161,12 +8242,12 @@
         ]
       },
       {
-        "text": "dos",
+        "text": "j'ai mal au dos",
         "intent": "pain",
         "entities": [
           {
-            "start": 0,
-            "end": 3,
+            "start": 12,
+            "end": 15,
             "value": "dos",
             "entity": "body_part"
           }
@@ -8207,6 +8288,12 @@
         "intent": "pain",
         "entities": [
           {
+            "start": 20,
+            "end": 29,
+            "value": "étranges ",
+            "entity": "pain_desc"
+          },
+          {
             "start": 45,
             "end": 61,
             "value": "depuis 10 heures",
@@ -8217,12 +8304,6 @@
             "end": 44,
             "value": "jambes",
             "entity": "body_part"
-          },
-          {
-            "start": 20,
-            "end": 28,
-            "value": "étranges",
-            "entity": "pain_desc"
           }
         ]
       },
@@ -8239,20 +8320,20 @@
         ]
       },
       {
-        "text": "J'ai un léger mal de tête.",
+        "text": "J'ai légèrement mal à la tête",
         "intent": "pain",
         "entities": [
           {
-            "start": 8,
-            "end": 13,
-            "value": "léger",
-            "entity": "pain_desc"
-          },
-          {
-            "start": 21,
-            "end": 25,
+            "start": 25,
+            "end": 29,
             "value": "tête",
             "entity": "body_part"
+          },
+          {
+            "start": 5,
+            "end": 19,
+            "value": "légèrement mal",
+            "entity": "pain_desc"
           }
         ]
       },
@@ -8313,12 +8394,18 @@
             "end": 29,
             "value": "toutes les 5 minutes",
             "entity": "period"
+          },
+          {
+            "start": 0,
+            "end": 8,
+            "value": "clignote",
+            "entity": "pain_desc"
           }
         ]
       },
       {
         "text": "Je sens des crampes dans ma jambe",
-        "intent": "pathology",
+        "intent": "pain",
         "entities": [
           {
             "start": 28,
@@ -8330,7 +8417,7 @@
             "start": 12,
             "end": 19,
             "value": "crampes",
-            "entity": "symtoms"
+            "entity": "pain_desc"
           }
         ]
       },
@@ -8880,15 +8967,9 @@
         "entities": [
           {
             "start": 8,
-            "end": 16,
-            "value": "terrible",
-            "entity": "pain_desc"
-          },
-          {
-            "start": 24,
             "end": 28,
-            "value": "tête",
-            "entity": "body_part"
+            "value": "terrible mal de tête",
+            "entity": "pain_desc"
           }
         ]
       },
@@ -8905,7 +8986,7 @@
         ]
       },
       {
-        "text": "J'ai une douleur aiguë ici.",
+        "text": "J'ai une douleur aiguë ici",
         "intent": "pain",
         "entities": [
           {
@@ -8959,7 +9040,7 @@
         "entities": []
       },
       {
-        "text": "Je ne veux voir personne.",
+        "text": "Je ne veux voir personne",
         "intent": "emotional_sadness",
         "entities": []
       },
@@ -8984,7 +9065,7 @@
         "entities": []
       },
       {
-        "text": "Ma famille et mes amis me manquent.",
+        "text": "Ma famille et mes amis me manquent",
         "intent": "emotional_sadness",
         "entities": []
       },
@@ -8994,12 +9075,12 @@
         "entities": []
       },
       {
-        "text": "Je ne ris plus.",
+        "text": "Je ne ris plus",
         "intent": "emotional_sadness",
         "entities": []
       },
       {
-        "text": "Je me sens triste sans toi.",
+        "text": "Je me sens triste sans toi",
         "intent": "emotional_sadness",
         "entities": []
       },
@@ -9009,17 +9090,17 @@
         "entities": []
       },
       {
-        "text": "il ne semble pas y avoir de fin à ma situation.",
+        "text": "il ne semble pas y avoir de fin à ma situation",
         "intent": "emotional_sadness",
         "entities": []
       },
       {
-        "text": "Je ne voulais pas me réveiller.",
+        "text": "Je ne voulais pas me réveiller",
         "intent": "emotional_sadness",
         "entities": []
       },
       {
-        "text": "c'est sans espoir.",
+        "text": "c'est sans espoir",
         "intent": "emotional_sadness",
         "entities": []
       },
@@ -9094,7 +9175,7 @@
         "entities": []
       },
       {
-        "text": "Je ne suis pas dans mon assiette aujourd'hui.",
+        "text": "Je ne suis pas dans mon assiette aujourd'hui",
         "intent": "emotional_sadness",
         "entities": []
       },
@@ -9154,12 +9235,12 @@
         "entities": []
       },
       {
-        "text": "ça me déprime.",
+        "text": "ça me déprime",
         "intent": "emotional_sadness",
         "entities": []
       },
       {
-        "text": "mon humeur est un peu morose.",
+        "text": "mon humeur est un peu morose",
         "intent": "emotional_sadness",
         "entities": []
       },
@@ -9664,7 +9745,7 @@
         "entities": []
       },
       {
-        "text": "Je me sens en meilleure santé.",
+        "text": "Je me sens en meilleure santé",
         "intent": "emotional_hapiness",
         "entities": []
       },
@@ -9679,7 +9760,7 @@
         "entities": []
       },
       {
-        "text": "Je me sens très bien.",
+        "text": "Je me sens très bien",
         "intent": "emotional_hapiness",
         "entities": []
       },
@@ -9729,12 +9810,12 @@
         "entities": []
       },
       {
-        "text": "Ma vie est très équilibrée.",
+        "text": "Ma vie est très équilibrée",
         "intent": "emotional_hapiness",
         "entities": []
       },
       {
-        "text": "Je dois vivre une vie équilibrée.",
+        "text": "Je dois vivre une vie équilibrée",
         "intent": "emotional_hapiness",
         "entities": []
       },
@@ -9837,7 +9918,7 @@
         ]
       },
       {
-        "text": "Je joue au tennis double 3 fois par semaine.",
+        "text": "Je joue au tennis double 3 fois par semaine",
         "intent": "activity",
         "entities": [
           {
@@ -9867,13 +9948,19 @@
         ]
       },
       {
-        "text": "Hockey sur gazon ou patin à roues alignées",
+        "text": "Hockey sur gazon ou patin à roulettes",
         "intent": "activity",
         "entities": [
           {
             "start": 0,
             "end": 6,
             "value": "Hockey",
+            "entity": "sport"
+          },
+          {
+            "start": 20,
+            "end": 37,
+            "value": "patin à roulettes",
             "entity": "sport"
           }
         ]
@@ -9933,7 +10020,7 @@
         ]
       },
       {
-        "text": "Je saute tout le temps.",
+        "text": "Je saute tout le temps",
         "intent": "activity",
         "entities": [
           {
@@ -9963,7 +10050,7 @@
         ]
       },
       {
-        "text": "Je monte les escaliers en 5 minutes.",
+        "text": "Je monte les escaliers en 5 minutes",
         "intent": "activity",
         "entities": [
           {
@@ -9983,7 +10070,14 @@
       {
         "text": "J'ai fait du sport",
         "intent": "activity",
-        "entities": []
+        "entities": [
+          {
+            "start": 13,
+            "end": 18,
+            "value": "sport",
+            "entity": "sport"
+          }
+        ]
       },
       {
         "text": "Je fais 5 km tous les soirs.",
@@ -10004,7 +10098,7 @@
         ]
       },
       {
-        "text": "Je peux facilement marcher 10 km à pied.",
+        "text": "Je peux facilement marcher 10 km à pied",
         "intent": "activity",
         "entities": [
           {
@@ -10022,7 +10116,7 @@
         ]
       },
       {
-        "text": "Je vais à la piscine tous les jours.",
+        "text": "Je vais à la piscine tous les jours",
         "intent": "activity",
         "entities": [
           {
@@ -10034,7 +10128,7 @@
         ]
       },
       {
-        "text": "Je sens une douleur dans ma bouche.",
+        "text": "Je sens une douleur dans ma bouche",
         "intent": "pain",
         "entities": [
           {
@@ -10082,7 +10176,7 @@
         ]
       },
       {
-        "text": "Je fais du vélo tous les jours pendant 5 km.",
+        "text": "Je fais du vélo tous les jours pendant 5 km",
         "intent": "activity",
         "entities": [
           {
@@ -10106,7 +10200,7 @@
         ]
       },
       {
-        "text": "Je ressens une forte douleur dans le nez tous les matins.",
+        "text": "Je ressens une forte douleur dans le nez tous les matins",
         "intent": "pain",
         "entities": [
           {
@@ -10178,7 +10272,7 @@
         ]
       },
       {
-        "text": "Je fais du jogging aquatique toutes les vacances.",
+        "text": "Je fais du jogging aquatique toutes les vacances",
         "intent": "activity",
         "entities": [
           {
@@ -10316,7 +10410,7 @@
         "entities": []
       },
       {
-        "text": "dis-moi que tu m'aimes.",
+        "text": "dis-moi que tu m'aimes",
         "intent": "fallback",
         "entities": []
       },
@@ -10426,7 +10520,7 @@
         "entities": []
       },
       {
-        "text": "La sensation de douleur que j'ai au ventre est acceptable.",
+        "text": "La sensation de douleur que j'ai au ventre est acceptable",
         "intent": "pain",
         "entities": [
           {
@@ -10480,7 +10574,7 @@
         ]
       },
       {
-        "text": "Je joue au volley-ball tous les vendredis.",
+        "text": "Je joue au volley-ball tous les vendredis",
         "intent": "activity",
         "entities": [
           {
@@ -10539,7 +10633,7 @@
         ]
       },
       {
-        "text": "l'ascension d'une colline de 10 kilomètres.",
+        "text": "l'ascension d'une colline de 10 kilomètres",
         "intent": "activity",
         "entities": [
           {
@@ -10557,7 +10651,7 @@
         ]
       },
       {
-        "text": "Je suis venu au travail en courant sur 1 kilomètre.",
+        "text": "Je suis venu au travail en courant sur 1 kilomètre",
         "intent": "activity",
         "entities": [
           {
@@ -10575,7 +10669,7 @@
         ]
       },
       {
-        "text": "Se rendre au travail à pied sur 100 mètres.",
+        "text": "Se rendre au travail à pied sur 100 mètres",
         "intent": "activity",
         "entities": [
           {
@@ -10593,7 +10687,7 @@
         ]
       },
       {
-        "text": "Je cours tous les jours pendant 8 km.",
+        "text": "Je cours tous les jours pendant 8 km",
         "intent": "activity",
         "entities": [
           {
@@ -10635,7 +10729,7 @@
         ]
       },
       {
-        "text": "Je joue au football 8 heures par semaine.",
+        "text": "Je joue au football 8 heures par semaine",
         "intent": "activity",
         "entities": [
           {
@@ -10659,7 +10753,7 @@
         ]
       },
       {
-        "text": "Je fais un marathon de 5 heures.",
+        "text": "Je fais un marathon de 5 heures",
         "intent": "activity",
         "entities": [
           {
@@ -10677,7 +10771,7 @@
         ]
       },
       {
-        "text": "j'ai mal à la tête depuis 4 heures.",
+        "text": "j'ai mal à la tête depuis 4 heures",
         "intent": "pain",
         "entities": [
           {
@@ -10701,7 +10795,7 @@
         ]
       },
       {
-        "text": "J'ai eu mal à la tête le soir pendant 2 heures.",
+        "text": "J'ai eu mal à la tête le soir pendant 2 heures",
         "intent": "pain",
         "entities": [
           {
@@ -10748,7 +10842,7 @@
         ]
       },
       {
-        "text": "J'ai une douleur aiguë au bras depuis 4 heures.",
+        "text": "J'ai une douleur aiguë au bras depuis 4 heures",
         "intent": "pain",
         "entities": [
           {
@@ -10772,7 +10866,7 @@
         ]
       },
       {
-        "text": "La douleur dans mon dos est terrible.",
+        "text": "La douleur dans mon dos est terrible",
         "intent": "pain",
         "entities": [
           {
@@ -10790,7 +10884,7 @@
         ]
       },
       {
-        "text": "La douleur est tolérable.",
+        "text": "La douleur est tolérable",
         "intent": "pain",
         "entities": [
           {
@@ -10802,7 +10896,7 @@
         ]
       },
       {
-        "text": "La douleur est si forte tous les jours.",
+        "text": "La douleur est si forte tous les jours",
         "intent": "pain",
         "entities": [
           {
@@ -10814,7 +10908,7 @@
         ]
       },
       {
-        "text": "c'est une douleur désagréable de vivre au jour le jour avec",
+        "text": "c'est une douleur désagréable de vivre au jour le jour avec ça",
         "intent": "pain",
         "entities": [
           {
@@ -10842,15 +10936,15 @@
             "entity": "pain_desc"
           },
           {
-            "start": 27,
+            "start": 34,
             "end": 41,
-            "value": "depuis 4 jours",
+            "value": "4 jours",
             "entity": "duration"
           }
         ]
       },
       {
-        "text": "J'ai fait du yoga pendant quelques heures.",
+        "text": "J'ai fait du yoga pendant quelques heures",
         "intent": "activity",
         "entities": [
           {
@@ -10868,7 +10962,7 @@
         ]
       },
       {
-        "text": "J'ai joué au base-ball.",
+        "text": "J'ai joué au base-ball",
         "intent": "activity",
         "entities": [
           {
@@ -10880,7 +10974,7 @@
         ]
       },
       {
-        "text": "J'ai fait du bowling hier soir.",
+        "text": "J'ai fait du bowling hier soir",
         "intent": "activity",
         "entities": [
           {
@@ -10898,7 +10992,7 @@
         ]
       },
       {
-        "text": "J'ai lavé les vitres le soir.",
+        "text": "J'ai lavé les vitres le soir",
         "intent": "activity",
         "entities": [
           {
@@ -10928,7 +11022,7 @@
         ]
       },
       {
-        "text": "Je poussais une voiture.",
+        "text": "Je poussais une voiture",
         "intent": "activity",
         "entities": [
           {
@@ -10940,7 +11034,7 @@
         ]
       },
       {
-        "text": "Je fais du saut à la corde 5 fois par semaine.",
+        "text": "Je fais du saut à la corde 5 fois par semaine",
         "intent": "activity",
         "entities": [
           {
@@ -10958,7 +11052,7 @@
         ]
       },
       {
-        "text": "J'aime sauter la nuit.",
+        "text": "J'aime sauter la nuit",
         "intent": "activity",
         "entities": [
           {
@@ -10976,7 +11070,7 @@
         ]
       },
       {
-        "text": "Je fais de l'équitation au galop.",
+        "text": "Je fais de l'équitation au galop",
         "intent": "activity",
         "entities": [
           {
@@ -10988,7 +11082,7 @@
         ]
       },
       {
-        "text": "Je faisais de l'équitation au trot.",
+        "text": "Je faisais de l'équitation au trot",
         "intent": "activity",
         "entities": [
           {
@@ -11029,7 +11123,7 @@
         "entities": []
       },
       {
-        "text": "J'ai fait du water-polo pendant le week-end.",
+        "text": "J'ai fait du water-polo pendant le week-end",
         "intent": "activity",
         "entities": [
           {
@@ -11059,7 +11153,7 @@
         ]
       },
       {
-        "text": "J'ai fait du tae kwon do.",
+        "text": "J'ai fait du tae kwon do",
         "intent": "activity",
         "entities": [
           {
@@ -11095,7 +11189,7 @@
         ]
       },
       {
-        "text": "J'ai fait une course de 5 km.",
+        "text": "J'ai fait une course de 5 km",
         "intent": "activity",
         "entities": [
           {
@@ -11266,7 +11360,7 @@
         "entities": []
       },
       {
-        "text": "J'ai une douleur mineure au genou.",
+        "text": "J'ai une douleur mineure au genou",
         "intent": "pain",
         "entities": [
           {
@@ -11284,7 +11378,7 @@
         ]
       },
       {
-        "text": "la douleur me transperce la poitrine.",
+        "text": "la douleur me transperce la poitrine",
         "intent": "pain",
         "entities": [
           {
@@ -11314,7 +11408,7 @@
         ]
       },
       {
-        "text": "J'ai fait de l'escalade sur 50 mètres.",
+        "text": "J'ai fait de l'escalade sur 50 mètres",
         "intent": "activity",
         "entities": [
           {
@@ -11332,7 +11426,7 @@
         ]
       },
       {
-        "text": "Je suis venu au judo.",
+        "text": "Je suis venu au judo",
         "intent": "activity",
         "entities": [
           {
@@ -11344,7 +11438,7 @@
         ]
       },
       {
-        "text": "J'ai fait du karaté.",
+        "text": "J'ai fait du karaté",
         "intent": "activity",
         "entities": [
           {
@@ -11356,7 +11450,7 @@
         ]
       },
       {
-        "text": "J'ai fait de l'escalade sur 100 mètres.",
+        "text": "J'ai fait de l'escalade sur 100 mètres",
         "intent": "activity",
         "entities": [
           {
@@ -11398,7 +11492,7 @@
         ]
       },
       {
-        "text": "J'ai fait un match de foot.",
+        "text": "J'ai fait un match de foot",
         "intent": "activity",
         "entities": [
           {
@@ -11440,7 +11534,7 @@
         ]
       },
       {
-        "text": "Je pédalais sur une route de 1000 mètres.",
+        "text": "Je pédalais sur une route de 1000 mètres",
         "intent": "activity",
         "entities": [
           {
@@ -11458,7 +11552,7 @@
         ]
       },
       {
-        "text": "J'ai fait une marche nordique sur 60 km.",
+        "text": "J'ai fait une marche nordique sur 60 km",
         "intent": "activity",
         "entities": [
           {
@@ -11476,7 +11570,7 @@
         ]
       },
       {
-        "text": "J'ai une douleur insupportable dans le cou.",
+        "text": "J'ai une douleur insupportable dans le cou",
         "intent": "pain",
         "entities": [
           {
@@ -11541,7 +11635,7 @@
         "entities": []
       },
       {
-        "text": "La douleur est lancinante depuis un jour.",
+        "text": "La douleur est lancinante depuis un jour",
         "intent": "pain",
         "entities": [
           {
@@ -11559,7 +11653,7 @@
         ]
       },
       {
-        "text": "J'ai une douleur épouvantable au doigt.",
+        "text": "J'ai une douleur épouvantable au doigt",
         "intent": "pain",
         "entities": [
           {
@@ -11589,7 +11683,7 @@
         ]
       },
       {
-        "text": "J'ai ressenti une douleur fulgurante dans le bas du dos.",
+        "text": "J'ai ressenti une douleur fulgurante dans le bas du dos",
         "intent": "pain",
         "entities": [
           {
@@ -11607,7 +11701,7 @@
         ]
       },
       {
-        "text": "Je me tortillais sur le sol, j'avais mal au ventre.      ",
+        "text": "Je me tortillais sur le sol, j'avais mal au ventre.     ",
         "intent": "pain",
         "entities": [
           {
@@ -11643,7 +11737,7 @@
         ]
       },
       {
-        "text": "Je me suis plaint de douleurs sévères dans la poitrine.",
+        "text": "Je me suis plaint de douleurs sévères dans la poitrine",
         "intent": "pain",
         "entities": [
           {
@@ -11709,7 +11803,7 @@
         ]
       },
       {
-        "text": "George et moi avons joué au ping-pong pendant deux heures pendant le déjeuner.",
+        "text": "George et moi avons joué au ping-pong pendant deux heures pendant le déjeuner",
         "intent": "activity",
         "entities": [
           {
@@ -11763,7 +11857,7 @@
         ]
       },
       {
-        "text": "J'ai utilisé mon équipement pour grimper.",
+        "text": "J'ai utilisé mon équipement pour grimper",
         "intent": "activity",
         "entities": [
           {
@@ -11775,7 +11869,7 @@
         ]
       },
       {
-        "text": "On fait de l'aérobic à chaque midi.",
+        "text": "On fait de l'aérobic à chaque midi",
         "intent": "activity",
         "entities": [
           {
@@ -11793,7 +11887,7 @@
         ]
       },
       {
-        "text": "Je suis épuisé de sauter à la corde comme depuis 5 heures.",
+        "text": "Je suis épuisé de sauter à la corde comme depuis 5 heures",
         "intent": "activity",
         "entities": [
           {
@@ -11803,15 +11897,15 @@
             "entity": "sport"
           },
           {
-            "start": 49,
+            "start": 42,
             "end": 57,
-            "value": "5 heures",
+            "value": "depuis 5 heures",
             "entity": "duration"
           }
         ]
       },
       {
-        "text": "J'étais dans un match de boxe.",
+        "text": "J'étais dans un match de boxe",
         "intent": "activity",
         "entities": [
           {
@@ -11823,7 +11917,7 @@
         ]
       },
       {
-        "text": "J'ai fait une séance d'entraînement.",
+        "text": "J'ai fait une séance d'entraînement",
         "intent": "activity",
         "entities": [
           {
@@ -11835,7 +11929,7 @@
         ]
       },
       {
-        "text": "Je participe à certaines activités cette semaine, comme le tennis en fauteuil roulant.",
+        "text": "Je participe à certaines activités cette semaine, comme le tennis en fauteuil roulant",
         "intent": "activity",
         "entities": [
           {
@@ -11853,7 +11947,7 @@
         ]
       },
       {
-        "text": "Je participe à certaines activités de cette journée, comme le rugby.",
+        "text": "Je participe à certaines activités de cette journée, comme le rugby",
         "intent": "activity",
         "entities": [
           {
@@ -11871,7 +11965,7 @@
         ]
       },
       {
-        "text": "Je participe à certaines activités, comme le beach volley.",
+        "text": "Je participe à certaines activités, comme le beach volley",
         "intent": "activity",
         "entities": [
           {
@@ -11883,7 +11977,7 @@
         ]
       },
       {
-        "text": "Je suis allé au skatepark pour faire du patin à roulettes.",
+        "text": "Je suis allé au skatepark pour faire du patin à roulettes",
         "intent": "activity",
         "entities": [
           {
@@ -11895,7 +11989,7 @@
         ]
       },
       {
-        "text": "J'ai toujours aimé jouer au racquetball.",
+        "text": "J'ai toujours aimé jouer au racquetball",
         "intent": "activity",
         "entities": [
           {
@@ -11925,7 +12019,7 @@
         ]
       },
       {
-        "text": "Je jouais au baseball.",
+        "text": "Je jouais au baseball",
         "intent": "activity",
         "entities": [
           {
@@ -11937,7 +12031,7 @@
         ]
       },
       {
-        "text": "Moi, je jouais au football.",
+        "text": "Moi, je jouais au football",
         "intent": "activity",
         "entities": [
           {
@@ -11949,7 +12043,7 @@
         ]
       },
       {
-        "text": "Je jouais au ping-pong pendant le déjeuner.",
+        "text": "Je jouais au ping-pong pendant le déjeuner",
         "intent": "activity",
         "entities": [
           {
@@ -11967,7 +12061,7 @@
         ]
       },
       {
-        "text": "Je suis venu pour une course à travers la forêt.",
+        "text": "Je suis venu pour une course à travers la forêt",
         "intent": "activity",
         "entities": [
           {
@@ -11979,7 +12073,7 @@
         ]
       },
       {
-        "text": "Je suis allé faire un jogging.",
+        "text": "Je suis allé faire un jogging",
         "intent": "activity",
         "entities": [
           {
@@ -11991,17 +12085,17 @@
         ]
       },
       {
-        "text": "Je vois beaucoup d'amis.",
+        "text": "Je vois beaucoup d'amis",
         "intent": "social",
         "entities": []
       },
       {
-        "text": "J'ai bu un verre avec mes voisins.",
+        "text": "J'ai bu un verre avec mes voisins",
         "intent": "social",
         "entities": []
       },
       {
-        "text": "Je vois ma famille tous les week-ends.",
+        "text": "Je vois ma famille tous les week-ends",
         "intent": "social",
         "entities": [
           {
@@ -12013,12 +12107,12 @@
         ]
       },
       {
-        "text": "Je parle beaucoup à ma famille.",
+        "text": "Je parle beaucoup à ma famille",
         "intent": "social",
         "entities": []
       },
       {
-        "text": "J'aime être avec mes amis.",
+        "text": "J'aime être avec mes amis",
         "intent": "social",
         "entities": []
       },
@@ -12028,7 +12122,7 @@
         "entities": []
       },
       {
-        "text": "J'aime passer du temps avec mes amis.",
+        "text": "J'aime passer du temps avec mes amis",
         "intent": "social",
         "entities": []
       },
@@ -12038,7 +12132,7 @@
         "entities": []
       },
       {
-        "text": "Mes amis viennent tous les week-ends.",
+        "text": "Mes amis viennent tous les week-ends",
         "intent": "social",
         "entities": [
           {
@@ -12055,7 +12149,7 @@
         "entities": []
       },
       {
-        "text": "Mes amis m'appellent une fois par semaine.",
+        "text": "Mes amis m'appellent une fois par semaine",
         "intent": "social",
         "entities": [
           {
@@ -12067,7 +12161,7 @@
         ]
       },
       {
-        "text": "Je vois ma famille de temps en temps.",
+        "text": "Je vois ma famille de temps en temps",
         "intent": "social",
         "entities": [
           {
@@ -12079,7 +12173,7 @@
         ]
       },
       {
-        "text": "Je vois ma famille tous les deux jours.",
+        "text": "Je vois ma famille tous les deux jours",
         "intent": "social",
         "entities": [
           {
@@ -12091,7 +12185,7 @@
         ]
       },
       {
-        "text": "Je rencontre mes voisins tous les samedis.",
+        "text": "Je rencontre mes voisins tous les samedis",
         "intent": "social",
         "entities": [
           {
@@ -12121,7 +12215,7 @@
         ]
       },
       {
-        "text": "Je suis occupé tout le week-end.",
+        "text": "Je suis occupé tout le week-end",
         "intent": "social",
         "entities": [
           {
@@ -12138,7 +12232,7 @@
         "entities": []
       },
       {
-        "text": "Je vois mes amis de temps en temps.",
+        "text": "Je vois mes amis de temps en temps",
         "intent": "social",
         "entities": [
           {
@@ -12155,7 +12249,7 @@
         "entities": []
       },
       {
-        "text": "Mes amis me rendent visite une fois par mois.",
+        "text": "Mes amis me rendent visite une fois par mois",
         "intent": "social",
         "entities": [
           {
@@ -12167,12 +12261,12 @@
         ]
       },
       {
-        "text": "Mes voisins m'ignorent.",
+        "text": "Mes voisins m'ignorent",
         "intent": "social",
         "entities": []
       },
       {
-        "text": "J'aimerais voir des amis plus souvent.",
+        "text": "J'aimerais voir des amis plus souvent",
         "intent": "social",
         "entities": [
           {
@@ -12184,12 +12278,12 @@
         ]
       },
       {
-        "text": "Je vois assez mes amis.",
+        "text": "Je vois assez mes amis",
         "intent": "social",
         "entities": []
       },
       {
-        "text": "Je rends visite à mes parents tous les week-ends.",
+        "text": "Je rends visite à mes parents tous les week-ends",
         "intent": "social",
         "entities": [
           {
@@ -12201,7 +12295,7 @@
         ]
       },
       {
-        "text": "Je rends visite à mon oncle et ma tante tous les trimestres.",
+        "text": "Je rends visite à mon oncle et ma tante tous les trimestres",
         "intent": "social",
         "entities": [
           {
@@ -12213,7 +12307,7 @@
         ]
       },
       {
-        "text": "J'aimerais pouvoir jouer plus souvent avec mes amis.",
+        "text": "J'aimerais pouvoir jouer plus souvent avec mes amis",
         "intent": "social",
         "entities": [
           {
@@ -12225,12 +12319,12 @@
         ]
       },
       {
-        "text": "Si seulement je pouvais faire des choses amusantes.",
+        "text": "Si seulement je pouvais faire des choses amusantes",
         "intent": "social",
         "entities": []
       },
       {
-        "text": "Une fois que je me sentirai mieux, je retrouverai mes amis.",
+        "text": "Une fois que je me sentirai mieux, je retrouverai mes amis",
         "intent": "social",
         "entities": []
       },
@@ -12240,7 +12334,7 @@
         "entities": []
       },
       {
-        "text": "Je n'ai pas d'amis.",
+        "text": "Je n'ai pas d'amis",
         "intent": "social",
         "entities": []
       },
@@ -12250,7 +12344,7 @@
         "entities": []
       },
       {
-        "text": "Mes voisins ne me reconnaissent plus.",
+        "text": "Mes voisins ne me reconnaissent plus",
         "intent": "social",
         "entities": []
       },
@@ -12260,7 +12354,7 @@
         "entities": []
       },
       {
-        "text": "Je vois mes amis une fois par an.",
+        "text": "Je vois mes amis une fois par an",
         "intent": "social",
         "entities": [
           {
@@ -12272,7 +12366,7 @@
         ]
       },
       {
-        "text": "J'appelle mes parents une fois par mois.",
+        "text": "J'appelle mes parents une fois par mois",
         "intent": "social",
         "entities": [
           {
@@ -12311,7 +12405,7 @@
         "entities": []
       },
       {
-        "text": "Je me sens seul et je n'aime pas ça.",
+        "text": "Je me sens seul et je n'aime pas ça",
         "intent": "social",
         "entities": []
       },
@@ -12321,22 +12415,22 @@
         "entities": []
       },
       {
-        "text": "J'ai passé mes soirées toute seule.",
+        "text": "J'ai passé mes soirées toute seule",
         "intent": "social",
         "entities": []
       },
       {
-        "text": "J'ai passé la plupart du temps sur mon canapé.",
+        "text": "J'ai passé la plupart du temps sur mon canapé",
         "intent": "social",
         "entities": []
       },
       {
-        "text": "Je ne vois jamais personne d'autre que mon médecin.",
+        "text": "Je ne vois jamais personne d'autre que mon médecin",
         "intent": "social",
         "entities": []
       },
       {
-        "text": "Je ne vais jamais au cinéma.",
+        "text": "Je ne vais jamais au cinéma",
         "intent": "social",
         "entities": []
       },
@@ -12351,7 +12445,7 @@
         "entities": []
       },
       {
-        "text": "Mes amis pensent que je ne suis pas sociable.",
+        "text": "Mes amis pensent que je ne suis pas sociable",
         "intent": "social",
         "entities": []
       },
@@ -12366,7 +12460,7 @@
         "entities": []
       },
       {
-        "text": "Je pourrais aller à une fête tous les week-ends.",
+        "text": "Je pourrais aller à une fête tous les week-ends",
         "intent": "social",
         "entities": [
           {
@@ -12383,7 +12477,7 @@
         "entities": []
       },
       {
-        "text": "Ma famille ne me parle plus.",
+        "text": "Ma famille ne me parle plus",
         "intent": "social",
         "entities": []
       },
@@ -12408,32 +12502,32 @@
         "entities": []
       },
       {
-        "text": "Il est de plus en plus difficile de sortir.",
+        "text": "Il est de plus en plus difficile de sortir",
         "intent": "social",
         "entities": []
       },
       {
-        "text": "Il est difficile de voir des amis.",
+        "text": "Il est difficile de voir des amis",
         "intent": "social",
         "entities": []
       },
       {
-        "text": "Je n'ai plus de vie sociale.",
+        "text": "Je n'ai plus de vie sociale",
         "intent": "social",
         "entities": []
       },
       {
-        "text": "Je ne quitte pas la maison.",
+        "text": "Je ne quitte pas la maison",
         "intent": "social",
         "entities": []
       },
       {
-        "text": "Je suis toujours dehors.",
+        "text": "Je suis toujours dehors",
         "intent": "social",
         "entities": []
       },
       {
-        "text": "Je ne suis jamais seul.",
+        "text": "Je ne suis jamais seul",
         "intent": "social",
         "entities": []
       },
@@ -12443,7 +12537,7 @@
         "entities": []
       },
       {
-        "text": "Mon animal de compagnie est mon seul ami.",
+        "text": "Mon animal de compagnie est mon seul ami",
         "intent": "social",
         "entities": []
       },
@@ -12453,7 +12547,7 @@
         "entities": []
       },
       {
-        "text": "J'espère que je pourrai bientôt retrouver une vie sociale normale.",
+        "text": "J'espère que je pourrai bientôt retrouver une vie sociale normale",
         "intent": "social",
         "entities": []
       },
@@ -12498,7 +12592,7 @@
         "entities": []
       },
       {
-        "text": "Je m'amuse tellement que je ne dors presque pas le week-end.",
+        "text": "Je m'amuse tellement que je ne dors presque pas le week-end",
         "intent": "social",
         "entities": [
           {
@@ -12510,7 +12604,7 @@
         ]
       },
       {
-        "text": "Je ne reste presque jamais éveillé après 22 heures du soir.",
+        "text": "Je ne reste presque jamais éveillé après 22 heures du soir",
         "intent": "social",
         "entities": [
           {
@@ -12522,24 +12616,24 @@
         ]
       },
       {
-        "text": "Ma dernière fête, c'était quand j'étais encore en bonne santé.",
+        "text": "Ma dernière fête, c'était quand j'étais encore en bonne santé",
         "intent": "social",
         "entities": []
       },
       {
-        "text": "Mon dernier rendez-vous remonte à 3 ans.",
+        "text": "Mon dernier rendez-vous remonte à 3 ans",
         "intent": "social",
         "entities": [
           {
             "start": 32,
-            "end": 40,
-            "value": "à 3 ans.",
+            "end": 39,
+            "value": "à 3 ans",
             "entity": "time"
           }
         ]
       },
       {
-        "text": "Je sors toutes les semaines.",
+        "text": "Je sors toutes les semaines",
         "intent": "social",
         "entities": [
           {
@@ -12551,7 +12645,7 @@
         ]
       },
       {
-        "text": "J'ai vu mes amis d'enfance ce week-end.",
+        "text": "J'ai vu mes amis d'enfance ce week-end",
         "intent": "social",
         "entities": [
           {
@@ -12563,7 +12657,7 @@
         ]
       },
       {
-        "text": "J'ai fait une fête hier soir.",
+        "text": "J'ai fait une fête hier soir",
         "intent": "social",
         "entities": [
           {
@@ -12590,7 +12684,7 @@
         "entities": []
       },
       {
-        "text": "Ma dent me fait mal à en mourir, je ne suis pas sûr de pouvoir attendre la semaine prochaine pour la faire réparer. ",
+        "text": "Ma dent me fait mal à en mourir, je ne suis pas sûr de pouvoir attendre la semaine prochaine pour la faire réparer",
         "intent": "pain",
         "entities": [
           {
@@ -12620,7 +12714,7 @@
         ]
       },
       {
-        "text": "La jambe gauche me fait mal.",
+        "text": "La jambe gauche me fait mal",
         "intent": "pain",
         "entities": [
           {
@@ -12636,9 +12730,9 @@
         "intent": "pain",
         "entities": [
           {
-            "start": 18,
+            "start": 11,
             "end": 26,
-            "value": "3 heures",
+            "value": "depuis 3 heures",
             "entity": "duration"
           }
         ]
@@ -12654,21 +12748,21 @@
             "entity": "sport"
           },
           {
-            "start": 19,
+            "start": 11,
             "end": 27,
-            "value": "3 heures",
+            "value": "pendant 3 heures",
             "entity": "duration"
           }
         ]
       },
       {
-        "text": "J'ai souffert pendant deux jours.",
+        "text": "J'ai souffert pendant deux jours",
         "intent": "pain",
         "entities": [
           {
-            "start": 22,
+            "start": 14,
             "end": 32,
-            "value": "deux jours",
+            "value": "pendant deux jours",
             "entity": "duration"
           }
         ]
@@ -12684,7 +12778,7 @@
         "entities": []
       },
       {
-        "text": "J'ai pédalé pendant 4 heures.",
+        "text": "J'ai pédalé pendant 4 heures",
         "intent": "activity",
         "entities": [
           {
@@ -12694,15 +12788,15 @@
             "entity": "sport"
           },
           {
-            "start": 20,
+            "start": 12,
             "end": 28,
-            "value": "4 heures",
+            "value": "pendant 4 heures",
             "entity": "duration"
           }
         ]
       },
       {
-        "text": "la douleur est aiguë et ne s'arrête pas.",
+        "text": "la douleur est aiguë et ne s'arrête pas",
         "intent": "pain",
         "entities": [
           {
@@ -12714,7 +12808,7 @@
         ]
       },
       {
-        "text": "Je suis allé au gymnase.",
+        "text": "Je suis allé au gymnase",
         "intent": "activity",
         "entities": [
           {
@@ -12738,14 +12832,20 @@
         ]
       },
       {
-        "text": "J'ai fait de la gym.",
+        "text": "J'ai fait du sport toute la matinée",
         "intent": "activity",
         "entities": [
           {
-            "start": 16,
-            "end": 19,
-            "value": "gym",
+            "start": 13,
+            "end": 18,
+            "value": "sport",
             "entity": "sport"
+          },
+          {
+            "start": 19,
+            "end": 35,
+            "value": "toute la matinée",
+            "entity": "duration"
           }
         ]
       },
@@ -12805,7 +12905,7 @@
         "entities": []
       },
       {
-        "text": "Oui",
+        "text": "ça me va bien",
         "intent": "agree",
         "entities": []
       },
@@ -12955,7 +13055,7 @@
         "entities": []
       },
       {
-        "text": "Je vais parler, oui.",
+        "text": "Je vais parler, oui",
         "intent": "agree",
         "entities": []
       },
@@ -12985,7 +13085,7 @@
         "entities": []
       },
       {
-        "text": "Ya",
+        "text": "Yop",
         "intent": "agree",
         "entities": []
       },
@@ -14477,7 +14577,7 @@
         ]
       },
       {
-        "text": "Il y a une douleur aiguë dans mon oreille.",
+        "text": "Il y a une douleur aiguë dans mon oreille",
         "intent": "pain",
         "entities": [
           {
@@ -14495,7 +14595,7 @@
         ]
       },
       {
-        "text": "Je sens cette douleur aiguë dans l'oreille.",
+        "text": "Je sens cette douleur aiguë dans l'oreille",
         "intent": "pain",
         "entities": [
           {
@@ -14513,7 +14613,7 @@
         ]
       },
       {
-        "text": "C'est dans mon oreille.",
+        "text": "C'est dans mon oreille",
         "intent": "pain",
         "entities": [
           {
@@ -14525,31 +14625,31 @@
         ]
       },
       {
-        "text": "La douleur est là depuis quelques minutes.",
+        "text": "La douleur est là depuis quelques minutes",
         "intent": "pain",
         "entities": [
           {
-            "start": 25,
+            "start": 18,
             "end": 41,
-            "value": "quelques minutes",
+            "value": "depuis quelques minutes",
             "entity": "duration"
           }
         ]
       },
       {
-        "text": "Cette douleur est là depuis quelques jours.",
+        "text": "Cette douleur est là depuis quelques jours",
         "intent": "pain",
         "entities": [
           {
-            "start": 28,
+            "start": 21,
             "end": 42,
-            "value": "quelques jours",
+            "value": "depuis quelques jours",
             "entity": "duration"
           }
         ]
       },
       {
-        "text": "Je ne peux rien faire, ça fait trop mal.",
+        "text": "Je ne peux rien faire, ça fait trop mal",
         "intent": "pain",
         "entities": []
       },
@@ -14900,7 +15000,7 @@
         ]
       },
       {
-        "text": "J'ai une douleur aiguë à la cheville depuis 4 heures.",
+        "text": "J'ai une douleur aiguë à la cheville depuis 4 heures",
         "intent": "pain",
         "entities": [
           {
@@ -15090,16 +15190,16 @@
         "intent": "pain",
         "entities": [
           {
-            "start": 28,
-            "end": 41,
-            "value": "quelques mois",
-            "entity": "duration"
-          },
-          {
             "start": 13,
             "end": 20,
             "value": "oreille",
             "entity": "body_part"
+          },
+          {
+            "start": 21,
+            "end": 41,
+            "value": "depuis quelques mois",
+            "entity": "duration"
           }
         ]
       },
@@ -15534,7 +15634,7 @@
         "entities": []
       },
       {
-        "text": "Je ne suis pas d'accord avec cela.",
+        "text": "Je ne suis pas d'accord avec cela",
         "intent": "disagree",
         "entities": []
       },
@@ -15890,7 +15990,7 @@
         ]
       },
       {
-        "text": "Je prends 25 mg d'Amitriptyline pour PHN (bardeaux) pour m'aider à dormir.",
+        "text": "Je prends 25 mg d'Amitriptyline pour PHN (bardeaux) pour m'aider à dormir",
         "intent": "treatment",
         "entities": [
           {
@@ -15902,7 +16002,7 @@
         ]
       },
       {
-        "text": "je ne digère pas mes pilules.",
+        "text": "je ne digère pas mes pilules",
         "intent": "pathology",
         "entities": [
           {
@@ -15926,7 +16026,7 @@
         ]
       },
       {
-        "text": "Je viens de recevoir un diagnostic de maladie de Parkinson.",
+        "text": "Je viens de recevoir un diagnostic de maladie de Parkinson",
         "intent": "pathology",
         "entities": [
           {
@@ -15938,7 +16038,7 @@
         ]
       },
       {
-        "text": "Je prends de l'hydroxychloroqine. ",
+        "text": "Je prends de l'hydroxychloroqine",
         "intent": "treatment",
         "entities": [
           {
@@ -15950,7 +16050,7 @@
         ]
       },
       {
-        "text": "J'ai pris une dose supplémentaire de lisinopril.",
+        "text": "J'ai pris une dose supplémentaire de lisinopril",
         "intent": "treatment",
         "entities": [
           {
@@ -15962,7 +16062,7 @@
         ]
       },
       {
-        "text": "Je prends mes 7 mtx un dimanche soir.",
+        "text": "Je prends mes 7 mtx un dimanche soir",
         "intent": "treatment",
         "entities": [
           {
@@ -15980,7 +16080,7 @@
         ]
       },
       {
-        "text": "mon médicament me donne des démangeaisons.",
+        "text": "mon médicament me donne des démangeaisons",
         "intent": "pathology",
         "entities": [
           {
@@ -15992,7 +16092,7 @@
         ]
       },
       {
-        "text": "J'ai un médicament contre l'insuffisance thyroïdienne.",
+        "text": "J'ai un médicament contre l'insuffisance thyroïdienne",
         "intent": "pathology",
         "entities": [
           {
@@ -16004,7 +16104,7 @@
         ]
       },
       {
-        "text": "Je dois suivre une thérapie de remplacement de prednisolone pour le reste de ma vie.",
+        "text": "Je dois suivre une thérapie de remplacement de prednisolone pour le reste de ma vie",
         "intent": "treatment",
         "entities": [
           {
@@ -16016,7 +16116,7 @@
         ]
       },
       {
-        "text": "J'ai pris des injections B1 pendant presque quatre mois.",
+        "text": "J'ai pris des injections B1 pendant presque quatre mois",
         "intent": "treatment",
         "entities": [
           {
@@ -16058,7 +16158,7 @@
         ]
       },
       {
-        "text": "quand je prenais du MTX, j'avais l'habitude de sucer un bonbon tout de suite après.",
+        "text": "quand je prenais du MTX, j'avais l'habitude de sucer un bonbon tout de suite après",
         "intent": "treatment",
         "entities": [
           {
@@ -16070,7 +16170,7 @@
         ]
       },
       {
-        "text": "Je suis assez favorable au maintien de la méthadone.",
+        "text": "Je suis assez favorable au maintien de la méthadone",
         "intent": "treatment",
         "entities": [
           {
@@ -16082,7 +16182,7 @@
         ]
       },
       {
-        "text": "Je voudrais essayer Serrapeptase. ",
+        "text": "Je voudrais essayer Serrapeptase.",
         "intent": "treatment",
         "entities": [
           {
@@ -16094,7 +16194,7 @@
         ]
       },
       {
-        "text": "J'ai eu une mauvaise réaction à la prednisolone.",
+        "text": "J'ai eu une mauvaise réaction à la prednisolone",
         "intent": "treatment",
         "entities": [
           {
@@ -16111,7 +16211,7 @@
         "entities": []
       },
       {
-        "text": "Je prends de la mésalazine, des remèdes à base de plantes médicinales et des suppléments.",
+        "text": "Je prends de la mésalazine, des remèdes à base de plantes médicinales et des suppléments",
         "intent": "treatment",
         "entities": [
           {
@@ -16123,7 +16223,7 @@
         ]
       },
       {
-        "text": "J'ai pris une dose quotidienne d'aspirine.",
+        "text": "J'ai pris une dose quotidienne d'aspirine",
         "intent": "treatment",
         "entities": [
           {
@@ -16141,7 +16241,7 @@
         ]
       },
       {
-        "text": "J'ai pris une dose de fluconazole.",
+        "text": "J'ai pris une dose de fluconazole",
         "intent": "treatment",
         "entities": [
           {
@@ -16165,7 +16265,7 @@
         ]
       },
       {
-        "text": "J'ai été diagnostiqué il y a 4 ans et mon médecin m'a mis sous méthotrexate.",
+        "text": "J'ai été diagnostiqué il y a 4 ans et mon médecin m'a mis sous méthotrexate",
         "intent": "treatment",
         "entities": [
           {
@@ -16195,7 +16295,7 @@
         ]
       },
       {
-        "text": "Je prends du méthotrexate depuis 5 ans et je n'ai eu aucun problème.",
+        "text": "Je prends du méthotrexate depuis 5 ans et je n'ai eu aucun problème",
         "intent": "treatment",
         "entities": [
           {
@@ -16213,7 +16313,7 @@
         ]
       },
       {
-        "text": "J'ai récemment eu une grave poussée de RCH et j'ai passé une semaine à l'hôpital avec des injections d'hydrocortisone.",
+        "text": "J'ai récemment eu une grave poussée de RCH et j'ai passé une semaine à l'hôpital avec des injections d'hydrocortisone",
         "intent": "treatment",
         "entities": [
           {
@@ -16225,7 +16325,7 @@
         ]
       },
       {
-        "text": "Je prends du captopril, mais je suis enceinte.",
+        "text": "Je prends du captopril, mais je suis enceinte",
         "intent": "treatment",
         "entities": [
           {
@@ -16237,7 +16337,7 @@
         ]
       },
       {
-        "text": "J'ai des nausées lorsque je prends une capsule de cymbalta.",
+        "text": "J'ai des nausées lorsque je prends une capsule de cymbalta",
         "intent": "treatment",
         "entities": [
           {
@@ -16249,7 +16349,19 @@
         ]
       },
       {
-        "text": "J'ai eu une réaction à l'hydroxychloquine il y a plusieurs années.",
+        "text": "Zapain est une marque de Co-codamol.",
+        "intent": "treatment",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Zapain",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "J'ai eu une réaction à l'hydroxychloquine il y a plusieurs années",
         "intent": "treatment",
         "entities": [
           {
@@ -16261,12 +16373,12 @@
         ]
       },
       {
-        "text": "mes médicaments me rendent malade.",
+        "text": "mes médicaments me rendent malade",
         "intent": "treatment",
         "entities": []
       },
       {
-        "text": "Je prends du Tylenol tous les jours.",
+        "text": "Je prends du Tylenol tous les jours",
         "intent": "treatment",
         "entities": [
           {
@@ -16284,7 +16396,7 @@
         ]
       },
       {
-        "text": "J'ai essayé de réduire l'hydroxy placquenil, mais les douleurs persistent, alors je continue.",
+        "text": "J'ai essayé de réduire l'hydroxy placquenil, mais les douleurs persistent, alors je continue",
         "intent": "treatment",
         "entities": [
           {
@@ -16296,7 +16408,7 @@
         ]
       },
       {
-        "text": " mon toubib m'a donné 5mg x 6 par jour de Pred.",
+        "text": " mon toubib m'a donné 5mg x 6 par jour de Pred",
         "intent": "treatment",
         "entities": [
           {
@@ -16314,7 +16426,7 @@
         ]
       },
       {
-        "text": "Je prends de la testostérone.",
+        "text": "Je prends de la testostérone",
         "intent": "treatment",
         "entities": [
           {
@@ -16326,7 +16438,7 @@
         ]
       },
       {
-        "text": "Je prends du métronidazole et je bois de l'alcool.",
+        "text": "Je prends du métronidazole et je bois de l'alcool",
         "intent": "treatment",
         "entities": [
           {
@@ -16334,11 +16446,17 @@
             "end": 26,
             "value": "métronidazole",
             "entity": "drug"
+          },
+          {
+            "start": 41,
+            "end": 49,
+            "value": "l'alcool",
+            "entity": ""
           }
         ]
       },
       {
-        "text": "J'ai essayé de réduire l'hydroxy placquenil, mais la fatigue persiste, alors je continue.",
+        "text": "J'ai essayé de réduire l'hydroxy placquenil, mais la fatigue persiste, alors je continue",
         "intent": "treatment",
         "entities": [
           {
@@ -16350,7 +16468,7 @@
         ]
       },
       {
-        "text": "J'ai essayé l'infliximab et j'en ai pris pendant environ 6 ans.",
+        "text": "J'ai essayé l'infliximab et j'en ai pris pendant environ 6 ans",
         "intent": "treatment",
         "entities": [
           {
@@ -16413,7 +16531,7 @@
         "entities": []
       },
       {
-        "text": "J'ai pris une double dose de métoprolol.",
+        "text": "J'ai pris une double dose de métoprolol",
         "intent": "treatment",
         "entities": [
           {
@@ -16425,7 +16543,7 @@
         ]
       },
       {
-        "text": "Je prends de l'Hydroxychloroquine depuis 6 ans.",
+        "text": "Je prends de l'Hydroxychloroquine depuis 6 ans",
         "intent": "treatment",
         "entities": [
           {
@@ -16443,7 +16561,7 @@
         ]
       },
       {
-        "text": "récemment, mon rhumy m'a mis sous stéroïdes.",
+        "text": "récemment, mon rhumy m'a mis sous stéroïdes",
         "intent": "treatment",
         "entities": [
           {
@@ -16455,7 +16573,7 @@
         ]
       },
       {
-        "text": "J'ai pris des pilules d'ibuprofène.",
+        "text": "J'ai pris des pilules d'ibuprofène",
         "intent": "treatment",
         "entities": [
           {
@@ -16467,7 +16585,7 @@
         ]
       },
       {
-        "text": "Je prends actuellement des infusions Remicade pendant 3 ans.",
+        "text": "Je prends actuellement des infusions Remicade pendant 3 ans",
         "intent": "treatment",
         "entities": [
           {
@@ -16497,7 +16615,7 @@
         ]
       },
       {
-        "text": "J'étais sous sulfasaiazin au début pendant 8 semaines.",
+        "text": "J'étais sous sulfasaiazin au début pendant 8 semaines",
         "intent": "treatment",
         "entities": [
           {
@@ -16520,7 +16638,7 @@
         "entities": []
       },
       {
-        "text": "Aujourd'hui, je prends ma première dose de méthotrexate.",
+        "text": "Aujourd'hui, je prends ma première dose de méthotrexate",
         "intent": "treatment",
         "entities": [
           {
@@ -16537,7 +16655,7 @@
         "entities": []
       },
       {
-        "text": "J'ai oublié de prendre de la duloxétine hier.",
+        "text": "J'ai oublié de prendre de la duloxétine hier",
         "intent": "treatment",
         "entities": [
           {
@@ -16572,7 +16690,7 @@
         "entities": []
       },
       {
-        "text": "J'ai eu 3 injections de prostap en octobre de l'année dernière.",
+        "text": "J'ai eu 3 injections de prostap en octobre de l'année dernière",
         "intent": "treatment",
         "entities": [
           {
@@ -16602,7 +16720,7 @@
         ]
       },
       {
-        "text": "J'avais fini ma thérapie au prozac.",
+        "text": "J'avais fini ma thérapie au prozac",
         "intent": "treatment",
         "entities": [
           {
@@ -16619,7 +16737,7 @@
         "entities": []
       },
       {
-        "text": "J'ai arrêté de prendre du plaquenil à la fin du mois de décembre.",
+        "text": "J'ai arrêté de prendre du plaquenil à la fin du mois de décembre",
         "intent": "treatment",
         "entities": [
           {
@@ -16637,7 +16755,7 @@
         ]
       },
       {
-        "text": "J'étais sous sulfasaiazine, ça n'a pas marché.",
+        "text": "J'étais sous sulfasaiazine, ça n'a pas marché",
         "intent": "treatment",
         "entities": [
           {
@@ -16649,7 +16767,7 @@
         ]
       },
       {
-        "text": "a commencé à prendre de l'hydroxychloroquine il y a environ 2 semaines. ",
+        "text": "a commencé à prendre de l'hydroxychloroquine il y a environ 2 semaines.",
         "intent": "treatment",
         "entities": [
           {
@@ -16667,7 +16785,7 @@
         ]
       },
       {
-        "text": "J'ai pris une double dose de flécaïnide.",
+        "text": "J'ai pris une double dose de flécaïnide",
         "intent": "treatment",
         "entities": [
           {
@@ -16691,7 +16809,7 @@
         ]
       },
       {
-        "text": "J'ai utilisé la thérapie de remplacement de testostérone bioidentique pendant près d'un an.",
+        "text": "J'ai utilisé la thérapie de remplacement de testostérone bioidentique pendant près d'un an",
         "intent": "treatment",
         "entities": [
           {
@@ -16709,12 +16827,12 @@
         ]
       },
       {
-        "text": "J'ai arrêté de prendre le médicament à cause de ses effets néfastes.",
+        "text": "J'ai arrêté de prendre le médicament à cause de ses effets néfastes",
         "intent": "treatment",
         "entities": []
       },
       {
-        "text": "On m'a prescrit Sinemet 3 fois par jour à 25/100 comprimés.",
+        "text": "On m'a prescrit Sinemet 3 fois par jour à 25/100 comprimés",
         "intent": "treatment",
         "entities": [
           {
@@ -16732,7 +16850,7 @@
         ]
       },
       {
-        "text": "J'ai le syndrome de Hughes.",
+        "text": "J'ai le syndrome de Hughes",
         "intent": "pathology",
         "entities": [
           {

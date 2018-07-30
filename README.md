@@ -106,6 +106,15 @@ pipeline:
 sudo apt-get install default-jdk
 ```
 
+For Duckling http version, install stack and git clone duckling repo 
+```
+git clone https://github.com/facebook/duckling.git
+sudo apt-get update
+sudo apt-get install libpcre3 libpcre3-dev
+stack build
+stack exec duckling-example-exe
+```
+
 ## Train NLU model :speech_balloon:
 * _data.json_ file have to be filled with examples (text + entities in it + intent).
 To do so:
