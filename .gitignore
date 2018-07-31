@@ -16,3 +16,4 @@ nltk/
 textblob/
 actions/*.txt
 .pyc
+doc/
