@@ -7,7 +7,8 @@ pipeline:
 - name: "intent_featurizer_spacy"
 - name: "intent_featurizer_ngrams"
   max_number_of_ngrams: 2
-- name: "ner_duckling_http"
-  url: "http://0.0.0.0:8000"
+- name: "ner_crf"
+- name: "ner_synonyms"
+- name: "ner_duckling"
   dimensions: ["time", "distance", "duration", "temperature"]
 - name: "intent_classifier_sklearn"

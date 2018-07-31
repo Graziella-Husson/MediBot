@@ -1,0 +1,1864 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [],
+    "common_examples": [
+      {
+        "text": "I’m drinking at least a bottle of wine a day in the week",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I drink six ounces of vodka average per day",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I can go for months and at least a year or so with out drinking",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I'm in end stage of alcohol addiction",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I do buy a 'four pack' every night after work",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I am trying to stop drinking",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I’m 25 years old and I’ve been battling with alcohol for the past 5 years",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I don’t drink often but when I do drink I don’t know my limits",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Weekends it all goes out of the window though, I drink too much",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I’m now 2 months clean back home",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "my apparent inability to drink 'sensibly'",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I finally did a 28 day rehab stint",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I am becoming more and more concerned about how much I am drinking on a regular basis",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I need to get up and drink in the morning",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I started huffing alcohol here recently",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "My drinking has been an issue for years",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "So I am an alcoholic and want to stop drinking",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I know all to well the cycle of drinking",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I honestly think I drink to escape my demons",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I've been worried about my drinking for a while",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "to help in reducing/stopping my heavy alcohol consumption",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "When I was drinking vodka came 1st 2nd 3rd",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "When I say drinking it's either four cans or half a bottle of wine each week evening",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I drink six ounces of vodka  average per day",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I've had a problem with alcohol since I was 12",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I have due to the alcohol I used to drink",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I am trying the Sinclair Method",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I've been misusing alcohol for over ten years now",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I have a \"real\" drinking problem",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I need of help with alcoholism addiction",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "One time I drank 1/3 of a 1L bottle of whiskey in 30 minutes",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "So that's 25 years of drinking almost every day",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I watch what I eat through the day so I can have more wine and less calories with my food",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I will have my first glass of wine throughout the day",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Over the last 10 yrs I’ve relied on alcohol more and more",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "If i dont drink for a day or two, i feel fine in myself",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I can take or leave drink but when I drink I get so drunk",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "At last I more or less have my Drinking under control",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "At that point I was on around 16-20 units of whiskey an evening, every evening for around 4 years",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I pretty much drink between 1 and 2 bottles of white wine a night",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I had started drinking a little",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {"text": "I'm a drunk", "intent": "alcohol", "entities": []},
+      {
+        "text": "I'm 33 now and I would say that I've been a full blown alcoholic for about nine years",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I have been drinking heavy lately",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I started drinking around aged 15",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Naltrexone has killed my urges and ability to drink wine",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I haven't touched anything in eleven weeks",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "this morning I had half bottle left",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I had two attemps at reducing my drinking",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "my thoughts are often on drinking",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "a slow but progressive cutting down of the alcohol",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I’ve known my drinking has been bad for a while but I just can’t seem to stop",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I was drinking a fifth of vodka a day and sometimes more",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Ive been drinking 3/4 nights a week",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "i have managed to not have a drink untill 5 instead of usual 1 oclock",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "the alcohol just takes the edge off",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {"text": "I have a love of alcohol", "intent": "alcohol", "entities": []},
+      {
+        "text": "Last drink of alcohol I had was Tuesday night",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I’m just out of rehab for the fifth time",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {"text": "I am a true drinker", "intent": "alcohol", "entities": []},
+      {
+        "text": "I usually start drinking at 3pm every day and by 11pm the vodka is gone",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {"text": "I drink white wine", "intent": "alcohol", "entities": []},
+      {
+        "text": "This time is bad 30 days straight of drinking 1.5 liters of wine a day",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {"text": "Im going to have a drink", "intent": "alcohol", "entities": []},
+      {
+        "text": "I just as easily drink 1 pint at home if not in the mood",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I'm mid 40's and have been a drinker pretty much all my life",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I am a functioning alcoholic",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "i drank less last night and same today",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I used to eat a lot and weigh 120",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I abuse laxatives massively about 30-40 a day",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "my eating habits aren't 'normal'",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I see myself as morbidly obese",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I started having a hard time keeping my food down",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I feel fat and bloated",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I've binged for 6 days on junk food",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "my eating is someone I’ve accepted is going to be an issue my entire life",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "If I eat I feel ashamed and fat and I blame myself",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "everytime I eat, I feel anxious and nervous",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "just want to end this endless cycle of binging and laxative abuse",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I use to eat a lot and I mean a lot",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I used to be overweight when I was a teen",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I may have issues with food",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I have recently got too my lowest weight",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "When I was overweight, I didn't really eat any more than any of my friends did at the time",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I struggle to eat to gain weight",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I am really scared of eating",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I have had Bulimia on and off for a few year",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I started making my self sick after meals",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "So about 2 to 3 weeks ago I’ve probably only eaten one meal a day",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I'm restricting all day",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I eat as an emotional response to everything and anything",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I am diagnosed anorexic and am at my lowest weight ever",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "i feel I may have an eating disorder",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I was anorexic and bulimic during my 20 up to my 40",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I have uncontrollable vomiting",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "when I eat I have nausea",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I am fed up being overweight but can't stick to diets anymore",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I weigh myself 2-3 times a day and get depressed and won’t eat if I go up a pound",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I’m growing fatter and fatter",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "A while ago I went through a few months of disordered eating",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I suffered from anorexia when I was 13",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "The problem is, every time I eat, I throw up because of my thoughts",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I feel hungry, but any time I eat, I take one bite and I feel absolutely sick",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I've always struggled with my weight especially as a young teen",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I constantly binge eat",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I am scared of gaining weight",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I have noticed that in now over 8 months I have been experiencing a kind of food sickness",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I started to binge last year, in around September, when I started university",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Been suffering from bulimia for some time, really struggling at the minute with my mental health",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I’ve suffered with anorexia since I was about eight years old",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I don't eat much because when I started drinking I was 135 pounds now I'm almost 300 pounds",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I think i may have Anorexia",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I am on 60 mg. of meth",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "The new doctor gave me a schuedule to wean me off the tramadol",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I took anywhere from 2 to 6 norco a day but 3 was my average",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "i went to detox for 21 days",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "i am 19 and i have been snorting cocaine for the last 6 months",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I had weaned down from 50mg of methadone to 40mg in two months",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I am in the process of tapering from Suboxone long-term use",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "It’s been two days since I have been recreationally using tramadol 400mg",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I have been taking 50mgs of Valium daily for nearly the last 6-7 months",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I am advanced maternal age(40) and taking 16 mgms of Suboxone films for opiate addiction",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I’ve been snorting come for almost 2 weeks now",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I've been on methadone at 150mg a day and about 15 mg of xanax",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I use about 3 grams per month average",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "Now I am totally clean",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "Snorted a large amount of Cocaine, 3 weeks ago, for the first (and last) time in my life",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I'm trying to quit after years of snorting",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "Yesterday I stupidly changed the qty of my prescription for Darvon from 5 pills to 15 pills",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I started to use coke in my early twenties at first on special occasions or parties",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I have been back and forth with suboxone",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I took one line of cocaine last night about .1 to .2 grams",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "Im 25 and tried mdma/X for the first time a few months ago",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I went from pills to heroin",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I have just started a 21 day detox from my methadone clinic",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "My 1 year (so far) , addiction to Sub, after Detox, started with 4mg",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I did the biggest mistake of my life - tried snorting cocaine on New years party",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I have been off suboxone for 103 days, can't believe I was on it for 9 years",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I have been casually taking coke for a while, but it’s become daily",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I'm 50 years old, male and have been on methadone for the last 10 years",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I am 30 and have been using drugs for about 10 years",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I've been taking 10mg hydrocodone for 2 years now",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I have abused prescription drugs since my high school days",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I have been taking 30mgs sometimes 60.mgs of percocet a day for the past 4 weeks",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I was addicted to xanax about a year ago",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I have been a user of opiates for approx. 4 years now",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I had been drinking one 5-Hour Energy shot every day",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "my husband and myself have been snorting pills",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I am clean 35 days from Suboxone",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "i ve been taking coricidin for 9 yrs",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {"text": "I shot up meth", "intent": "drug_addiction", "entities": []},
+      {
+        "text": "I have tried cocaine many times, but only in the last month",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I've been giving myself straight dopamine for over a year and abruptly stopped",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I've been using cocaine on and off since the age of 17",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "For the past 4 or so days, I've taken a totally of 20 acetaminophen pills",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I am in the process of getting off of tramadol",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I have been addicted to cocaine since one year",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I have been taking between 90mg and 120mg of morphine sulfate a day for the last 6 years",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "First time I tried cocaine was 3 years ago",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I quit dip about a month ago",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I quit smoking just over one month ago",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I was a 1 pk a day smoker",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I smoke about 12-15 cigs. in a day",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I have started smoking a year back and I was smoking nearly five times a week",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "i used to smoke 23 ciggerates everyday but im on track to cut down",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Have been using the vuse to stop smoking cigarettes",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I was smoking 2 packs a day, until 6 days ago",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "i smoked for about 2 years, at about 5 ciggs a day",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "If I go more than 6-8 hrs without a cigarette I start to get jittery",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I am 39 years old and was a light smoker most of the time",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I'm a 33 old male who just quit smoking after about 15 years at about a pack a day max",
+        "intent": "smoking",
+        "entities": []
+      },
+      {"text": "Ive started smoke less", "intent": "smoking", "entities": []},
+      {
+        "text": "I am suppose to be nicotine free for 2-3 months",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I smoke maybe ten to twenty cigarettes a day and have been smoking for about 3 years now",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I smoke just 1 Cigarette a day , not more than that",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I've been chewing Nicorette for about ten years",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I have had personal challenges with addiction",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Last week I smoke a lot more that what I'm usually used to",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I was a heavy smoker at one point for a few years",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I recently quite smoking after 10-years of 1 Pack+/day use",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "i'm 16 and i smoke but not all the time",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I think my smoking is getting out of hand",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Just been on the patch for 4 days",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Not to long ago i started the patch to help me quit smoking cigarette",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I have stopped smoking since last ten days",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I quit smoking on January 10, 2016",
+        "intent": "smoking",
+        "entities": []
+      },
+      {"text": "I really do love smoking", "intent": "smoking", "entities": []},
+      {
+        "text": "I’ve not had a cigarette for 32 days, I was on the patches",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I chew between nine and eleven pieces of the 2mg a day",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I am on my second day of giving up smoking",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I can't quit smoking no matter how hard I try",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I had my first cigarette when I was only 9 years old",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I was smoking almost a pack a day",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Last summer I started drinking and smoking cigaretttes a lot",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I am in my mid 20's, and have been struggling to quit smoking for a little over a year now",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I am so addicted to it that i look for excuses to be alone so that i can smoke",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I need to teach my body when to sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I’m exhausted and go home and sleep anywhere from 2-5 hours typically",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I used to sleep like a rock for 7-10 hours a night uninterrupted",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I started to dread going to bed",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "then 5 hours later i go back to sleep for another 2 or so hours",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I noticed that I slept much deeper on days I didn't exercise",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I often start dreaming before I even completely fall asleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I have narcolepsy, and was diagnosed about 4 years ago",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I've had sleep problems my whole life",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "if I were to jog for 10 minutes, then I have insomnia",
+        "intent": "sleep",
+        "entities": []
+      },
+      {"text": "I developed sleep anxiety", "intent": "sleep", "entities": []},
+      {
+        "text": "I prolly go to bed by 11 or so",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "it's so frustrating seeing others go to bed",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "But sometimes if the sleep is bad, I feel even more tired",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "If I can't sleep within 45 minutes, get up and out of bed",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I feel like I am bombarded with some random dreams",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I also started drinking sleepy time tea at night",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I lie down and feel very tired",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I cannot sleep early at night",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I then lay there in bed for 2-3 hours",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I can fall asleep only when my body and my mind become exhausted",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "it's just waking up every hour that's the problem",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I fight daytime sleepiness with caffeine",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I've had sleeping problems on and off for a year now",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "After sleep, for 2-3 hours, I am better and then start feeling tired again",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I have very mild sleep apnea",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I doing 10-15 minute guided meditation before bed",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "my big fear is ill never sleep again",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "i'd get home, and get no homework done in the evening, because all i could do was sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I would have poor, restless sleep the rest of the night",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I've been struggling to sleep for over a year",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I was constantly worried about not sleeping",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I'm so tired, and I'm just fed up of it all now",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "If I wake up I have to get out of bed",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I am just a wired body put on pause waiting for nightfall",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "i am convinced my total lack of sleep will ruin everything",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Usually I go to bed at 11:00-12:00 pm and wake up at 8:30-10:00 am",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I would worry about the lack of sleep at times",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I have done only an hour and a half of sleep or no sleep at all",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I have been having these nightmares ever since I was 13",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I'm a 60 year old men, in excellent health, except for experiencing tremors during sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Every night i cant manage to fall asleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I now also feel like I'm a really light sleeper and the slightest noise will wake me up",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I’m getting up to 11 hrs some nights now",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I began waking up in the middle of the night",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I don’t fall asleep right away",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I was in bed at 9:30pm every night, then would read a bit with lights out by 10pm",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I would fall asleep within 10 minutes",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "there were most nights where i've done 1-3 hours of sleep or none at all",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I have had a major problem with sleep lately",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I was actually awake 36hrs sleeping 12",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I'm at the point where I don't even want to lie in my bed anymore",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I wake up about every 4 hours",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I have excessive daytime sleepiness",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I don't have too much trouble falling asleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "It feels like I am in the middle of sleep whole day",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "every time I give it a shot, sleep during the day",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "i haven't been able to get by with less than 15 hours sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I used to do melatonin but it didnt help me stay asleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I never suffered unduly from my poor sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I was dreaming about when being disturbed in light sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I feel these consolidated blocks of my sleep, 6-7 hours a night",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "my sleep has always been different",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "it's best not to take a second dose if you wake during the night",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I’ll just doze off if I don’t just lay on my bed",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I sleep with a blindfold and earplugs, as I have for years",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I can't wake up easily because something keeps pulling me back",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I was only able to sleep about 6-7 hours on following nights",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I’ve suffered from the odd sleep paralysis",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "when i wake with any less sleep than that, i feel like i haven't slept at all",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I would wake up every weekday at 6am",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "It’s frustrating not to simply sleep through the night",
+        "intent": "sleep",
+        "entities": []
+      },
+      {"text": "I just cant go to sleep", "intent": "sleep", "entities": []},
+      {
+        "text": "I only stay asleep for 2 hours",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "My body wanted to go back to sleep, but, everytime I fell sleep the tremors woke me up",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I think a Z-drug might help to get me some sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "as a child of 6 it already took me several hours to fall asleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {"text": "I wake up panicking", "intent": "sleep", "entities": []},
+      {
+        "text": "if I wake up and then just close my eyes",
+        "intent": "sleep",
+        "entities": []
+      },
+      {"text": "I work nights", "intent": "sleep", "entities": []},
+      {
+        "text": "I get lots and lots of dreams",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I intend to sleep till 8 AM, but I wake up automatically at 5-6 AM",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "my sleep pattern was permanently shot in my mid-20s",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I'm not sure if this is just another symptom of: insomnia, sleep paralysis, or hypnogognic jerk",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I am always awake until late at night",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I've been going thru insomnia",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "It started with one bad nights sleep nearly two weeks ago",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I was on sleep aids during college for a short period",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "it's about my inability to catch up on lost sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I had some terrible sleeping habits in the last month",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I havent been on sleep aids",
+        "intent": "sleep",
+        "entities": []
+      },
+      {"text": "I don’t wake up too early", "intent": "sleep", "entities": []},
+      {
+        "text": "sometimes my sleep would be sporadic",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "As I start to fall sleep again, I feel these \"rumbleling\" (tremors) around my upper body",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I started waking up in the morning with completely numb hands",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "My 6-7 hours aren't enough for me to feel good",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I would wake about 4 hours after falling asleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "As soon as I'm about to fall asleep, I hear my own snoring",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I initially fell asleep and woke up about an hour later in a panic",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I would wake up around 2 or 3am, unable to fall back asleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I feel very tired and most importantly drowsy",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "So i go to work or school with at most 2 hrs of sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "The first two nights I simply could not go back to sleep at all",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I still feel very sleepy and tired",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I wake up anywhere between 2am-4am",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "During this time my sleep schedule was completely off",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I know sleep patterns can begin to change around this age",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I’m going to try not watching tv before bed",
+        "intent": "sleep",
+        "entities": []
+      },
+      {"text": "I’ll shut my eyes", "intent": "sleep", "entities": []},
+      {
+        "text": "This week I am falling asleep rather easily",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I wouldnt go to sleep until like 5, 6 or 8am",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "There were times where it was sparatic type sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I can finally sleep normally",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I used to sleep more after a bad night",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "for a week it seems that I've been getting a good sleep every 2 nights",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "But the important thing is that I slept",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "So for the past 2 weeks I've been having a variety of things happen to me while I try to sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "my sleep does not feel restful at all",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I get worried about the nighttime",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "my sleeping pattern was back on",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I was giving depressed meds to sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "melatonin doesn't do much for me",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I wake me up and have difficulty going  back to sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "every day I have to take naps",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I immediately wake up again",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I wake up hourly and it's extremely annoying and exhausting",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "now I'm not sleeping for one second during the night",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "yesterday I was very sleep deprived",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I have been dealing with horrible idiopathic hypersomnia for 30+ years",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "So this routine is really not the best thing in the world for me",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "My sleep has been messed up",
+        "intent": "sleep",
+        "entities": []
+      },
+      {"text": "I'm a very light sleeper", "intent": "sleep", "entities": []},
+      {"text": "I'm still waking up early", "intent": "sleep", "entities": []},
+      {
+        "text": "Currently, in the morning, most of the times, I wake up at some 5 AM or 6 AM",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I blame this constantly insufficient sleep of mine",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I would usually go right back to sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I still waking up too early",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I thought the insomnia would go away",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "By the time late april came, I was sleeping better",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "when I'm not in work I've got 19 hours to try to stay awake",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "In the middle of the day, I always have to take a nap",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I will only get four hours of good quality sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I always seem to be very tired if I lie down somewhere",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "This happens almost every night",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I slept yesterday night for around 6:30 hours",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I have to take 2 naps a day and not drive anywhere",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I also start the day feeling really tired",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I stay 2-3 days awake sometimes",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I’ve been having hallucinations, and these occur when I don’t go to sleep at night",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I keep a good sleep hygiene",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I wake up at least 2 times a night",
+        "intent": "sleep",
+        "entities": []
+      },
+      {"text": "my eyes sometimes paining", "intent": "sleep", "entities": []},
+      {
+        "text": "I never got back to normal sleeping for the remaining 40-odd years",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I've had broken sleep for over 6 months",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I am aware of the repercussions of not getting enough sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "i want to be able to have a normal sleep schedule",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I notice when I sleep during the night I constantly have dreams of spirits",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I would sometimes do naps during the day to help me catch up on sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Every time I fall asleep I will either go into a short state of sleep paralysis",
+        "intent": "sleep",
+        "entities": []
+      },
+      {"text": "I keep a sleep journal", "intent": "sleep", "entities": []},
+      {
+        "text": "As for my sleeping habits, I could never sleep at night",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "The last 3 months I have woken up feeling like I am suffocating",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I started to feel very dizzy around that time after I ate",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "And I am tired all the time, the only solution I find is, to sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I was recently diagnosed with Idiopathic Hypersomnia",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I was awake for two days in a row",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I do experience a lot of sleeping issues",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I don't know why I can't sleep through the night any more",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "in the morning when I wake too soon",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "recently, my sleep pattern has turned really weird",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I've been suffering from sleep issues for about a week",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "this week it's back to me having no amount of sleep or having a short window of sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Ive been up for an hour but don't feel exhausted yet",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "From the past 3-4 years I have been suffering from sleep issues",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I just could not sleep, I just didn't feel tired",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "go to bed at a reasonable time",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "There were most nights where I would do 1 to 3 hours of sleep or no sleep at all",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "It seems that I can fall asleep in less than 7 minutes",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I feel tired already after 11 a.m",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "As for a z-pill, I was prescribed them for severe insomnia",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I have got sleep deprivation",
+        "intent": "sleep",
+        "entities": []
+      },
+      {"text": "My own snore wakes me up", "intent": "sleep", "entities": []},
+      {
+        "text": "I have exercise-induced insomnia",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "It's been nine days now since I started having terrible insomnia",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "For about 6 or 7 years now, I have only slept 2 and at the most 3 hours before waking up",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I am good after 2 days/nights without sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I've tried different sleep aids",
+        "intent": "sleep",
+        "entities": []
+      },
+      {"text": "it felt like i slept worse", "intent": "sleep", "entities": []},
+      {
+        "text": "mostly, i sleep around 20-24",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I went for a power nap as I was so tired",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Generally one day a week, I will just come home and crash and sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {"text": "my sleep certainly is light", "intent": "sleep", "entities": []}
+    ]
+  }
+}

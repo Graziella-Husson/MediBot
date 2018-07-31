@@ -1,7 +1,7 @@
 from rasa_nlu.model import Metadata, Interpreter
 
 # where `model_directory points to the folder the model is persisted in
-interpreter = Interpreter.load('models/nlu/default/fr_duckling')
+interpreter = Interpreter.load('models/nlu/default/fr_entities')
 print (interpreter.parse(u"Je ressens cette forte douleur depuis hier"))
 print (interpreter.parse(u"J'ai fait du sport pendant 5 heures"))
 print (interpreter.parse(u"J'ai couru 3 kilomètres"))

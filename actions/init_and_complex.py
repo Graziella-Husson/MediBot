@@ -2,6 +2,7 @@
 This module is used to regroup init, save and sum_up_slots actions.\n
 This module contains a lot of global constant and global methods\n
 Created on Tue Jun 26 10:22:40 2018\n
+Last update on Mon Jul 30 10:30:00 2018\n
 @author: U{@Graziella-Husson<https://github.com/Graziella-Husson>}
 """
 import os
@@ -23,6 +24,7 @@ import yaml
 from simple_actions import Fallback
 from duckling import DucklingWrapper
 from ressources import get_utterance
+from ressources import get_language_duckling
 
 global CONFIG, FIRST, MANDATORIES, REMINDER_PATIENT, REMINDER_END_SESSION, REMINDER_PATIENT_LITTLE, LAST_SESSION, DUCKLING_WRAPPER, BEGIN_DATE, LANGUAGE_GLOBAL, FOLLOWED_INTENT, COMPLEX_ENTITIES
 CONFIG = yaml.load(open('config.yml'))
@@ -34,8 +36,9 @@ REMINDER_END_SESSION = timedelta(seconds=0)
 REMINDER_PATIENT_LITTLE = timedelta(seconds=0)
 DATE_END = timedelta(seconds=0)
 LAST_SESSION = False
-DUCKLING_WRAPPER = DucklingWrapper()
-LANGUAGE_GLOBAL = None
+LANGUAGE_GLOBAL = str(CONFIG['language'])
+lang = get_language_duckling(LANGUAGE_GLOBAL)
+DUCKLING_WRAPPER = DucklingWrapper(language=lang)
 FOLLOWED_REMINDERS = []
 FOLLOW_INTENT_TRIGGER_DATE = timedelta(seconds=0)
 COMPLEX_ENTITIES = ["time", "body_part", "distance", "duration", "period", "temperature"]
@@ -255,7 +258,7 @@ def duckling_set_slots(data, to_return):
         for i in data:
             entity = i['entity']
             if entity in to_set.keys():
-                if i['extractor'] == 'ner_duckling':
+                if i['extractor'] == 'ner_duckling' or i['extractor'] == 'ner_duckling_http':
                     if entity != 'time':
                         unit = i['additional_info']['unit']
                         if unit is not None:
