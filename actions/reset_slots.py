@@ -9,6 +9,7 @@ from rasa_core.actions.action import Action
 from rasa_core.events import SlotSet
 from ressources import get_utterance
 
+
 class ResetSlotsAction(Action):
     """Heritated from Action, used to reset given slots"""
     calculus = False
@@ -24,7 +25,8 @@ class ResetSlotsAction(Action):
 
     def name(self):
         """the name of the action to implement"""
-        raise NotImplementedError("a ResetSlots action must implement a name method")
+        raise NotImplementedError("""a ResetSlots action must
+                                    implement a name method""")
 
     def run(self, dispatcher, tracker, domain):
         """Save infos and reset slots"""
@@ -40,7 +42,8 @@ class ResetSlotsAction(Action):
         return to_return
 
     def core_action(self):
-        """Set entities list, topic and requested_slot to None. Set intent_name to True"""
+        """Set entities list, topic and requested_slot
+        to None. Set intent_name to True"""
         to_return = []
         to_reset = ["topic", "requested_slot"]
         for entity in self.entities:
@@ -65,6 +68,7 @@ class ResetSlotsAction(Action):
             met = "> 6 MET"
         #TODO: save met
         return global_score
+
 
 class ResetSportSlots(ResetSlotsAction):
     """Reset slots linked to activity intent and save infos in DB"""
@@ -93,7 +97,8 @@ class ResetSportSlots(ResetSlotsAction):
                          "activity_distance",
                          "activity_period",
                          "activity_time"
-                        ]
+                         ]
+
 
 class ResetPainSlots(ResetSlotsAction):
     """Reset slots linked to pain intent and save infos in DB"""
@@ -120,7 +125,8 @@ class ResetPainSlots(ResetSlotsAction):
                          "pain_change",
                          "pain_time",
                          "pain_level"
-                        ]
+                         ]
+
 
 class ResetPathologySlots(ResetSlotsAction):
     """Reset slots linked to pathology intent and save infos in DB"""
@@ -136,6 +142,7 @@ class ResetPathologySlots(ResetSlotsAction):
             - pathology_change (boolean)
             - pathology_period
             - pathology_treatment_linked (boolean)
+            - pathology_duration
         Set slot pathology to True"""
         self.intent_name = "pathology"
         self.entities = ["pathology_body_part",
@@ -143,8 +150,10 @@ class ResetPathologySlots(ResetSlotsAction):
                          "pathology_time",
                          "pathology_change",
                          "pathology_period",
-                         "pathology_treatment_linked"
-                        ]
+                         "pathology_treatment_linked",
+                         "pathology_duration"
+                         ]
+
 
 class ResetTreatmentSlots(ResetSlotsAction):
     """Reset slots linked to treatment intent and save infos in DB"""
@@ -176,7 +185,8 @@ class ResetTreatmentSlots(ResetSlotsAction):
                          "treatment_overdosage",
                          "treatment_period",
                          "treatment_duration"
-                        ]
+                         ]
+
 
 class ResetInfoPatientSlots(ResetSlotsAction):
     """Reset slots linked to infoPatient intent and save infos in DB"""
@@ -204,4 +214,4 @@ class ResetInfoPatientSlots(ResetSlotsAction):
                          "heart_rate",
                          "blood_pressure",
                          "infoPatient_time"
-                        ]
+                         ]

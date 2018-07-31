@@ -193,11 +193,13 @@ class AskWhatPathology(AskWhatAction):
             - pathology_change (boolean)
             - pathology_period
             - pathology_treatment_linked (boolean)
+            - pathology_duration
         When clicked, a button will reset the slot linked to it."""
         self.intent_name = "pathology"
         self.simple_buttons = [["pathology_body_part", "body_part_button"],
                                ["pathology_time", "time_button"],
                                ["pathology_period", "period_button"],
+                               ["pathology_duration", "duration_button"],
                                "symtoms"]
         self.boolean_buttons = [["pathology_change", "evolution_button"],
                                 "pathology_treatment_linked"]

@@ -1,0 +1,1 @@
+{"rasa_nlu_data": {"entity_synonyms": [], "common_examples": [{"entities": [], "intent": "alcohol", "text": "I'm drinking at least a bottle of wine a day in the week"}], "regex_features": []}}

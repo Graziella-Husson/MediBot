@@ -131,6 +131,18 @@ slots:
     type: bool
   treatment_duration:
     type: text
+  pathology_duration:
+    type: text
+  sleep:
+    type: bool
+  eatingDisorders:
+    type: bool
+  drugAddiction:
+    type: bool
+  smoking:
+    type: bool
+  alcohol:
+    type: bool
 
 intents:
  - activity
@@ -148,6 +160,11 @@ intents:
  - treatment
  - infoPatient
  - risk
+ - sleep
+ - eatingDisorders
+ - drugAddiction
+ - smoking
+ - alcohol
 
 entities:
  - sport
@@ -187,6 +204,11 @@ actions:
  - form_actions.InfoPatient
  - form_actions.CheckRequestedIntents
  - form_actions.Risk
+ - form_actions.Sleep
+ - form_actions.EatingDisorders
+ - form_actions.DrugAddiction
+ - form_actions.Smoking
+ - form_actions.Alcohol
  - complex_sets.SetMultiple
  - ask_what.AskWhatPathology
  - ask_what.AskWhatPain
@@ -246,4 +268,10 @@ actions:
  - simple_actions.AskTreatmentOk
  - simple_actions.AskRisk
  - simple_actions.AskTreatmentDuration
+ - simple_actions.AskPathologyDuration
+ - simple_actions.AskSleep
+ - simple_actions.AskEatingDisorders
+ - simple_actions.AskDrugAddiction
+ - simple_actions.AskSmoking
+ - simple_actions.AskAlcohol
 

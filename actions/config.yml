@@ -17,7 +17,7 @@ sessions:
       infoPatient: weight,infoPatient_time,infoPatient_distance,infoPatient_temperature,gender,heart_rate,blood_pressure
       activity: sport,activity_duration,activity_period,activity_distance,activity_hard,activity_time
       pain: pain_duration,pain_desc,pain_body_part,pain_period,pain_time,pain_change
-      pathology: symtoms,pathology_time,pathology_period,pathology_body_part,pathology_change,pathology_treatment_linked
+      pathology: symtoms,pathology_time,pathology_period,pathology_body_part,pathology_change,pathology_treatment_linked,pathology_duration
 
   2:
     duration:

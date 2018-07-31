@@ -849,6 +849,66 @@
 		{
 		"ENG":"\n\tYour treatment's duration is of {}",
 		"FRA":"\n\tVotre traitement a une durée de {}"
+		},
+	"ask_pathology_duration":
+		{
+		"ENG":"Can you tell me the duration of this pathology / side effect / symptom?",
+		"FRA":"Pouvez-vous me dire la durée de ce pathologie / effet secondaire / symptôme ?"
+		},
+	"pathology_duration":
+		{
+		"ENG":"\n\tYour pathology / side effect / symptom's duration is of {}",
+		"FRA":"\n\tVotre pathologie / effet secondaire / symptôme a une durée de {}"
+		},
+	"ask_sleep":
+		{
+		"ENG":"Can you talk about your sleep?",
+		"FRA":"Pouvez-vous parler de votre sommeil ?"
+		},
+	"ask_eatingDisorders":
+		{
+		"ENG":"Can you talk about your eating disorders?",
+		"FRA":"Pouvez-vous parler de vos troubles alimentaires ?"
+		},
+	"ask_drugAddiction":
+		{
+		"ENG":"Can you talk about your addiction to drugs?",
+		"FRA":"Pouvez-vous parler de votre addiction à la drogue ?"
+		},
+	"ask_smoking":
+		{
+		"ENG":"Can you talk about your smoking?",
+		"FRA":"Pouvez-vous parler de votre tabagisme ?"
+		},
+	"ask_alcohol":
+		{
+		"ENG":"Can you talk about your alcoholism?",
+		"FRA":"Pouvez-vous parler de votre alcoolisme ?"
+		},
+	"sum_up_sleep":
+		{
+		"ENG":"To summarize, you talked about your sleep",
+		"FRA":"Pour résumer, vous avez parlé de votre sommeil"
+		},
+	"sum_up_eatingDisorders":
+		{
+		"ENG":"To summarize, you talked about your eating disorders",
+		"FRA":"Pour résumer, vous avez parlé de vos troubles alimentaires"
+		},
+	"sum_up_drugAddiction":
+		{
+		"ENG":"To summarize, you talked about your drug addiction",
+		"FRA":"Pour résumer, vous avez parlé de votre addiction à la drogue"
+		},
+	"sum_up_smoking":
+		{
+		"ENG":"To summarize, you talked about your smoking",
+		"FRA":"Pour résumer, vous avez parlé de votre tabagisme"
+		},
+	"sum_up_alcohol":
+		{
+		"ENG":"To summarize, you talked about your alcoholism",
+		"FRA":"Pour résumer, vous avez parlé de votre alcoolisme"
 		}
 	}
 }

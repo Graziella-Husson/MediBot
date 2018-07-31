@@ -420,6 +420,7 @@ class Pathology(FormActionCalculusAndCore):
             - pathology_change (boolean)
             - pathology_period
             - pathology_treatment_linked (boolean)
+            - pathology_duration
         This action will sum up these infos.
         If they're all set to None (no mandatory entity),
         just say that we talked about a pathology\n
@@ -428,7 +429,8 @@ class Pathology(FormActionCalculusAndCore):
         self.simples = ["symtoms",
                         "pathology_body_part",
                         "pathology_time",
-                        "pathology_period"]
+                        "pathology_period",
+                        "pathology_duration"]
         self.booleans = ["pathology_change",
                          "pathology_treatment_linked"]
 
@@ -559,5 +561,115 @@ class Risk(FormActionCalculusAndCore):
         obligatories = get_obligatories()
         try:
             return obligatories["risk"]
+        except:
+            return []
+
+
+class Sleep(FormActionCalculusAndCore):
+    """FormActionCalculusAndCore for sleep intent"""
+    def __init__(self):
+        """Set the name of the intent"""
+        self.intent_name = "sleep"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'sum_up_sleep'
+
+    @staticmethod
+    def required_fields():
+        """@return: if the dict C{obligatories} from the C{init}
+        class contains a list a the requested slot for the intent,
+        returns it. If not, returns an empty list."""
+        obligatories = get_obligatories()
+        try:
+            return obligatories["sleep"]
+        except:
+            return []
+
+
+class EatingDisorders(FormActionCalculusAndCore):
+    """FormActionCalculusAndCore for eating disorders intent"""
+    def __init__(self):
+        """Set the name of the intent"""
+        self.intent_name = "eatingDisorders"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'sum_up_eatingDisorders'
+
+    @staticmethod
+    def required_fields():
+        """@return: if the dict C{obligatories} from the C{init}
+        class contains a list a the requested slot for the intent,
+        returns it. If not, returns an empty list."""
+        obligatories = get_obligatories()
+        try:
+            return obligatories["eatingDisorders"]
+        except:
+            return []
+
+
+class DrugAddiction(FormActionCalculusAndCore):
+    """FormActionCalculusAndCore for drug addiction intent"""
+    def __init__(self):
+        """Set the name of the intent"""
+        self.intent_name = "drugAddiction"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'sum_up_drugAddiction'
+
+    @staticmethod
+    def required_fields():
+        """@return: if the dict C{obligatories} from the C{init}
+        class contains a list a the requested slot for the intent,
+        returns it. If not, returns an empty list."""
+        obligatories = get_obligatories()
+        try:
+            return obligatories["drugAddiction"]
+        except:
+            return []
+
+
+class Smoking(FormActionCalculusAndCore):
+    """FormActionCalculusAndCore for smoking intent"""
+    def __init__(self):
+        """Set the name of the intent"""
+        self.intent_name = "smoking"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'sum_up_smoking'
+
+    @staticmethod
+    def required_fields():
+        """@return: if the dict C{obligatories} from the C{init}
+        class contains a list a the requested slot for the intent,
+        returns it. If not, returns an empty list."""
+        obligatories = get_obligatories()
+        try:
+            return obligatories["smoking"]
+        except:
+            return []
+
+
+class Alcohol(FormActionCalculusAndCore):
+    """FormActionCalculusAndCore for smoking intent"""
+    def __init__(self):
+        """Set the name of the intent"""
+        self.intent_name = "alcohol"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'sum_up_alcohol'
+
+    @staticmethod
+    def required_fields():
+        """@return: if the dict C{obligatories} from the C{init}
+        class contains a list a the requested slot for the intent,
+        returns it. If not, returns an empty list."""
+        obligatories = get_obligatories()
+        try:
+            return obligatories["alcohol"]
         except:
             return []

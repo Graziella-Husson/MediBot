@@ -9425,3 +9425,566 @@
     - sum_up_slots
     - export
 
+## Generated Story -3945891103628858289
+* pathology{"time": "yesterday", "symtoms": "test", "period": "every day", "pathology_change": true, "pathology_treatment_linked": false, "body_part": "leg"}
+    - slot{"body_part": "leg"}
+    - slot{"pathology_change": true}
+    - slot{"pathology_treatment_linked": false}
+    - slot{"period": "every day"}
+    - slot{"symtoms": "test"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"pathology_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"pathology_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"pathology_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pathology
+    - slot{"pathology_treatment_linked": false}
+    - slot{"symtoms": "test"}
+    - slot{"pathology_change": true}
+    - slot{"requested_slot": "pathology_duration"}
+    - utter_ask_pathology_duration
+    - sum_up_slots
+    - export
+
+## Generated Story -3945891103628858289
+* pathology{"time": "yesterday", "symtoms": "test", "period": "every day", "pathology_change": true, "pathology_treatment_linked": false, "body_part": "leg"}
+    - slot{"body_part": "leg"}
+    - slot{"pathology_change": true}
+    - slot{"pathology_treatment_linked": false}
+    - slot{"period": "every day"}
+    - slot{"symtoms": "test"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"pathology_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"pathology_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"pathology_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pathology
+    - slot{"pathology_treatment_linked": false}
+    - slot{"symtoms": "test"}
+    - slot{"pathology_change": true}
+    - slot{"requested_slot": "pathology_duration"}
+    - utter_ask_pathology_duration
+    - sum_up_slots
+    - export
+
+## Generated Story -6209748893251335146
+* pathology{"time": "yesterday", "pathology_change": true, "pathology_treatment_linked": false, "period": "every day", "body_part": "leg", "duration": "1h", "symtoms": "test"}
+    - slot{"body_part": "leg"}
+    - slot{"duration": "1h"}
+    - slot{"pathology_change": true}
+    - slot{"pathology_treatment_linked": false}
+    - slot{"period": "every day"}
+    - slot{"symtoms": "test"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"pathology_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"pathology_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"pathology_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"pathology_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pathology
+    - slot{"pathology_treatment_linked": false}
+    - slot{"pathology_change": true}
+    - slot{"symtoms": "test"}
+    - slot{"global_score": 2}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - reset_slots_pathology
+    - slot{"pathology_body_part": null}
+    - slot{"symtoms": null}
+    - slot{"pathology_time": null}
+    - slot{"pathology_change": null}
+    - slot{"pathology_period": null}
+    - slot{"pathology_treatment_linked": null}
+    - slot{"pathology_duration": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"pathology": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story -6209748893251335146
+* pathology{"time": "yesterday", "pathology_change": true, "pathology_treatment_linked": false, "period": "every day", "body_part": "leg", "duration": "1h", "symtoms": "test"}
+    - slot{"body_part": "leg"}
+    - slot{"duration": "1h"}
+    - slot{"pathology_change": true}
+    - slot{"pathology_treatment_linked": false}
+    - slot{"period": "every day"}
+    - slot{"symtoms": "test"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"pathology_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"pathology_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"pathology_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"pathology_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pathology
+    - slot{"pathology_treatment_linked": false}
+    - slot{"pathology_change": true}
+    - slot{"symtoms": "test"}
+    - slot{"global_score": 2}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - reset_slots_pathology
+    - slot{"pathology_body_part": null}
+    - slot{"symtoms": null}
+    - slot{"pathology_time": null}
+    - slot{"pathology_change": null}
+    - slot{"pathology_period": null}
+    - slot{"pathology_treatment_linked": null}
+    - slot{"pathology_duration": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"pathology": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 2407203154608917268
+* pathology{"period": "every day", "pathology_treatment_linked": false, "duration": "1h", "pathology_change": true, "body_part": "leg", "symtoms": "test", "time": "yesterday"}
+    - slot{"body_part": "leg"}
+    - slot{"duration": "1h"}
+    - slot{"pathology_change": true}
+    - slot{"pathology_treatment_linked": false}
+    - slot{"period": "every day"}
+    - slot{"symtoms": "test"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"pathology_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"pathology_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"pathology_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"pathology_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pathology
+    - slot{"symtoms": "test"}
+    - slot{"pathology_treatment_linked": false}
+    - slot{"pathology_change": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - ask_what_pathology
+    - sum_up_slots
+* pathology{"pathology_duration": null}
+    - slot{"pathology_duration": null}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_pathology
+    - slot{"requested_slot": "pathology_duration"}
+    - utter_ask_pathology_duration
+    - sum_up_slots
+* pathology{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"pathology_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pathology
+    - slot{"global_score": 4}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - reset_slots_pathology
+    - slot{"pathology_body_part": null}
+    - slot{"symtoms": null}
+    - slot{"pathology_time": null}
+    - slot{"pathology_change": null}
+    - slot{"pathology_period": null}
+    - slot{"pathology_treatment_linked": null}
+    - slot{"pathology_duration": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"pathology": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+    - export
+
+## Generated Story 2407203154608917268
+* pathology{"period": "every day", "pathology_treatment_linked": false, "duration": "1h", "pathology_change": true, "body_part": "leg", "symtoms": "test", "time": "yesterday"}
+    - slot{"body_part": "leg"}
+    - slot{"duration": "1h"}
+    - slot{"pathology_change": true}
+    - slot{"pathology_treatment_linked": false}
+    - slot{"period": "every day"}
+    - slot{"symtoms": "test"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"pathology_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"pathology_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"pathology_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"pathology_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pathology
+    - slot{"symtoms": "test"}
+    - slot{"pathology_treatment_linked": false}
+    - slot{"pathology_change": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - ask_what_pathology
+    - sum_up_slots
+* pathology{"pathology_duration": null}
+    - slot{"pathology_duration": null}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_pathology
+    - slot{"requested_slot": "pathology_duration"}
+    - utter_ask_pathology_duration
+    - sum_up_slots
+* pathology{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pathology"}
+    - slot{"pathology_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pathology
+    - slot{"global_score": 4}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - reset_slots_pathology
+    - slot{"pathology_body_part": null}
+    - slot{"symtoms": null}
+    - slot{"pathology_time": null}
+    - slot{"pathology_change": null}
+    - slot{"pathology_period": null}
+    - slot{"pathology_treatment_linked": null}
+    - slot{"pathology_duration": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"pathology": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+    - export
+
+## Generated Story -8588779786946050975
+* sleep
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_sleep
+    - slot{"sleep": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+* eatingDisorders
+    - save_conv
+    - slot{"topic": "eatingDisorders"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_eatingDisorders
+    - slot{"eatingDisorders": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+* drugAddiction
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"drugAddiction": true}
+    - slot{"global_score": 6}
+    - sum_up_slots
+* smoking
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_smoking
+    - slot{"smoking": true}
+    - slot{"global_score": 8}
+    - sum_up_slots
+* alcohol
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_alcohol
+    - slot{"alcohol": true}
+    - slot{"global_score": 10}
+    - sum_up_slots
+    - export
+
+## sleep
+* sleep
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_sleep
+    - slot{"sleep": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+
+## eatingDisorders
+* eatingDisorders
+    - save_conv
+    - slot{"topic": "eatingDisorders"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_eatingDisorders
+    - slot{"eatingDisorders": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+
+## drugAddiction
+* drugAddiction
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"drugAddiction": true}
+    - slot{"global_score": 6}
+    - sum_up_slots
+
+## smoking
+* smoking
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_smoking
+    - slot{"smoking": true}
+    - slot{"global_score": 8}
+    - sum_up_slots
+
+## alcohol
+* alcohol
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_alcohol
+    - slot{"alcohol": true}
+    - slot{"global_score": 10}
+    - sum_up_slots
+    - export
+
+## Generated Story -8588779786946050975
+* sleep
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_sleep
+    - slot{"sleep": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+* eatingDisorders
+    - save_conv
+    - slot{"topic": "eatingDisorders"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_eatingDisorders
+    - slot{"eatingDisorders": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+* drugAddiction
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"drugAddiction": true}
+    - slot{"global_score": 6}
+    - sum_up_slots
+* smoking
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_smoking
+    - slot{"smoking": true}
+    - slot{"global_score": 8}
+    - sum_up_slots
+* alcohol
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_alcohol
+    - slot{"alcohol": true}
+    - slot{"global_score": 10}
+    - sum_up_slots
+    - export
+
+## sleep
+* sleep
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_sleep
+    - slot{"sleep": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+
+## eatingDisorders
+* eatingDisorders
+    - save_conv
+    - slot{"topic": "eatingDisorders"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_eatingDisorders
+    - slot{"eatingDisorders": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+
+## drugAddiction
+* drugAddiction
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"drugAddiction": true}
+    - slot{"global_score": 6}
+    - sum_up_slots
+
+## smoking
+* smoking
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_smoking
+    - slot{"smoking": true}
+    - slot{"global_score": 8}
+    - sum_up_slots
+
+## alcohol
+* alcohol
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_alcohol
+    - slot{"alcohol": true}
+    - slot{"global_score": 10}
+    - sum_up_slots
+    - export
+
+
