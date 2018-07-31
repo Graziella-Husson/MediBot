@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>rasa_core.actions.action</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="https://github.com/Graziella-Husson/MediBot">Ailixir Bot</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Package&nbsp;rasa_core ::
+        Package&nbsp;actions ::
+        Module&nbsp;action
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options">[<a href="javascript:void(0);" class="privatelink"
+    onclick="toggle_private();">hide&nbsp;private</a>]</span></td></tr>
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="rasa_core.actions.action-pysrc.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<h1 class="epydoc">Source Code for <a href="rasa_core.actions.action-module.html">Module rasa_core.actions.action</a></h1>
+<pre class="py-src">
+<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">__future__</tt> <tt class="py-keyword">import</tt> <tt class="py-name">absolute_import</tt> </tt>
+<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">__future__</tt> <tt class="py-keyword">import</tt> <tt class="py-name">division</tt> </tt>
+<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">__future__</tt> <tt class="py-keyword">import</tt> <tt class="py-name">print_function</tt> </tt>
+<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">__future__</tt> <tt class="py-keyword">import</tt> <tt class="py-name">unicode_literals</tt> </tt>
+<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"> </tt>
+<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">logging</tt> </tt>
+<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"> </tt>
+<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">typing</tt> </tt>
+<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">typing</tt> <tt class="py-keyword">import</tt> <tt class="py-name">List</tt><tt class="py-op">,</tt> <tt class="py-name">Text</tt> </tt>
+<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"> </tt>
+<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"><tt class="py-keyword">if</tt> <tt class="py-name">typing</tt><tt class="py-op">.</tt><tt class="py-name">TYPE_CHECKING</tt><tt class="py-op">:</tt> </tt>
+<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line">    <tt class="py-keyword">from</tt> <tt class="py-name">rasa_core</tt><tt class="py-op">.</tt><tt class="py-name">trackers</tt> <tt class="py-keyword">import</tt> <tt class="py-name">DialogueStateTracker</tt> </tt>
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line">    <tt class="py-keyword">from</tt> <tt class="py-name">rasa_core</tt><tt class="py-op">.</tt><tt class="py-name">dispatcher</tt> <tt class="py-keyword">import</tt> <tt class="py-name">Dispatcher</tt> </tt>
+<a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line">    <tt class="py-keyword">from</tt> <tt class="py-name">rasa_core</tt><tt class="py-op">.</tt><tt class="py-name">events</tt> <tt class="py-keyword">import</tt> <tt class="py-name">Event</tt> </tt>
+<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line">    <tt class="py-keyword">from</tt> <tt class="py-name">rasa_core</tt><tt class="py-op">.</tt><tt class="py-name">domain</tt> <tt class="py-keyword">import</tt> <tt class="py-name">Domain</tt> </tt>
+<a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line"> </tt>
+<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line"><tt id="link-0" class="py-name" targets="Variable rasa_core.actions.action.logger=rasa_core.actions.action-module.html#logger,Variable rasa_core.actions.forms.logger=rasa_core.actions.forms-module.html#logger"><a title="rasa_core.actions.action.logger
+rasa_core.actions.forms.logger" class="py-name" href="#" onclick="return doclink('link-0', 'logger', 'link-0');">logger</a></tt> <tt class="py-op">=</tt> <tt class="py-name">logging</tt><tt class="py-op">.</tt><tt class="py-name">getLogger</tt><tt class="py-op">(</tt><tt class="py-name">__name__</tt><tt class="py-op">)</tt> </tt>
+<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line"> </tt>
+<a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line"><tt id="link-1" class="py-name" targets="Variable rasa_core.actions.action.ACTION_LISTEN_NAME=rasa_core.actions.action-module.html#ACTION_LISTEN_NAME"><a title="rasa_core.actions.action.ACTION_LISTEN_NAME" class="py-name" href="#" onclick="return doclink('link-1', 'ACTION_LISTEN_NAME', 'link-1');">ACTION_LISTEN_NAME</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"action_listen"</tt> </tt>
+<a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line"> </tt>
+<a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line"><tt id="link-2" class="py-name" targets="Variable rasa_core.actions.action.ACTION_RESTART_NAME=rasa_core.actions.action-module.html#ACTION_RESTART_NAME"><a title="rasa_core.actions.action.ACTION_RESTART_NAME" class="py-name" href="#" onclick="return doclink('link-2', 'ACTION_RESTART_NAME', 'link-2');">ACTION_RESTART_NAME</a></tt> <tt class="py-op">=</tt> <tt class="py-string">"action_restart"</tt> </tt>
+<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line"> </tt>
+<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line"> </tt>
+<a name="Action"></a><div id="Action-def"><a name="L24"></a><tt class="py-lineno">24</tt> <a class="py-toggle" href="#" id="Action-toggle" onclick="return toggle('Action');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="rasa_core.actions.action.Action-class.html">Action</a><tt class="py-op">(</tt><tt class="py-base-class">object</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Action-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="Action-expanded"><a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line">    <tt class="py-docstring">"""Next action to be taken in response to a dialogue state."""</tt> </tt>
+<a name="L26"></a><tt class="py-lineno">26</tt>  <tt class="py-line"> </tt>
+<a name="Action.resets_topic"></a><div id="Action.resets_topic-def"><a name="L27"></a><tt class="py-lineno">27</tt> <a class="py-toggle" href="#" id="Action.resets_topic-toggle" onclick="return toggle('Action.resets_topic');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="rasa_core.actions.action.Action-class.html#resets_topic">resets_topic</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Action.resets_topic-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Action.resets_topic-expanded"><a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line">        <tt class="py-comment"># type: () -&gt; bool</tt> </tt>
+<a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line">        <tt class="py-docstring">"""Indicator if this action resets the topic when run."""</tt> </tt>
+<a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line"> </tt>
+<a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-name">False</tt> </tt>
+</div><a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line"> </tt>
+<a name="Action.name"></a><div id="Action.name-def"><a name="L33"></a><tt class="py-lineno">33</tt> <a class="py-toggle" href="#" id="Action.name-toggle" onclick="return toggle('Action.name');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="rasa_core.actions.action.Action-class.html#name">name</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Action.name-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Action.name-expanded"><a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line">        <tt class="py-comment"># type: () -&gt; Text</tt> </tt>
+<a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line">        <tt class="py-docstring">"""Unique identifier of this simple action."""</tt> </tt>
+<a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line"> </tt>
+<a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt> </tt>
+</div><a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line"> </tt>
+<a name="Action.run"></a><div id="Action.run-def"><a name="L39"></a><tt class="py-lineno">39</tt> <a class="py-toggle" href="#" id="Action.run-toggle" onclick="return toggle('Action.run');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="rasa_core.actions.action.Action-class.html#run">run</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">dispatcher</tt><tt class="py-op">,</tt> <tt class="py-param">tracker</tt><tt class="py-op">,</tt> <tt class="py-param">domain</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Action.run-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Action.run-expanded"><a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line">        <tt class="py-comment"># type: (Dispatcher, DialogueStateTracker, Domain) -&gt; List[Event]</tt> </tt>
+<a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line">        <tt class="py-docstring">"""Execute the side effects of this action.</tt> </tt>
+<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L43"></a><tt class="py-lineno">43</tt>  <tt class="py-line"><tt class="py-docstring">        Return a list of events (i.e. instructions to update tracker state)</tt> </tt>
+<a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line"><tt class="py-docstring">        :param tracker: user state tracker</tt> </tt>
+<a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line"><tt class="py-docstring">        :param dispatcher: communication channel</tt> </tt>
+<a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line"><tt class="py-docstring">        :param domain: bots custom domain</tt> </tt>
+<a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line"><tt class="py-docstring">        """</tt> </tt>
+<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line"> </tt>
+<a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line">        <tt class="py-keyword">raise</tt> <tt class="py-name">NotImplementedError</tt> </tt>
+</div><a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line"> </tt>
+<a name="Action.__str__"></a><div id="Action.__str__-def"><a name="L52"></a><tt class="py-lineno">52</tt> <a class="py-toggle" href="#" id="Action.__str__-toggle" onclick="return toggle('Action.__str__');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="rasa_core.actions.action.Action-class.html#__str__">__str__</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="Action.__str__-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="Action.__str__-expanded"><a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line">        <tt class="py-keyword">return</tt> <tt class="py-string">"Action('{}')"</tt><tt class="py-op">.</tt><tt class="py-name">format</tt><tt class="py-op">(</tt><tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-3" class="py-name" targets="Method ask_what.AskWhatAction.name()=ask_what.AskWhatAction-class.html#name,Method ask_what.AskWhatInfoPatient.name()=ask_what.AskWhatInfoPatient-class.html#name,Method ask_what.AskWhatPain.name()=ask_what.AskWhatPain-class.html#name,Method ask_what.AskWhatPathology.name()=ask_what.AskWhatPathology-class.html#name,Method ask_what.AskWhatSport.name()=ask_what.AskWhatSport-class.html#name,Method ask_what.AskWhatTreatment.name()=ask_what.AskWhatTreatment-class.html#name,Method complex_sets.SetMultiple.name()=complex_sets.SetMultiple-class.html#name,Method form_actions.ActionFillSlotsPain.name()=form_actions.ActionFillSlotsPain-class.html#name,Method form_actions.ActionFillSlotsSport.name()=form_actions.ActionFillSlotsSport-class.html#name,Method form_actions.Alcohol.name()=form_actions.Alcohol-class.html#name,Method form_actions.CheckRequestedIntents.name()=form_actions.CheckRequestedIntents-class.html#name,Method form_actions.DrugAddiction.name()=form_actions.DrugAddiction-class.html#name,Method form_actions.EatingDisorders.name()=form_actions.EatingDisorders-class.html#name,Method form_actions.FormActionCalculusAndCore.name()=form_actions.FormActionCalculusAndCore-class.html#name,Method form_actions.FormActionTriggerAction.name()=form_actions.FormActionTriggerAction-class.html#name,Method form_actions.Happy.name()=form_actions.Happy-class.html#name,Method form_actions.InfoPatient.name()=form_actions.InfoPatient-class.html#name,Method form_actions.Pathology.name()=form_actions.Pathology-class.html#name,Method form_actions.Risk.name()=form_actions.Risk-class.html#name,Method form_actions.Sadness.name()=form_actions.Sadness-class.html#name,Method form_actions.Sleep.name()=form_actions.Sleep-class.html#name,Method form_actions.Smoking.name()=form_actions.Smoking-class.html#name,Method form_actions.Social.name()=form_actions.Social-class.html#name,Method form_actions.Treatment.name()=form_actions.Treatment-class.html#name,Method init_and_complex.InitBot.name()=init_and_complex.InitBot-class.html#name,Method init_and_complex.SaveConv.name()=init_and_complex.SaveConv-class.html#name,Method init_and_complex.SumUpSLots.name()=init_and_complex.SumUpSLots-class.html#name,Method rasa_core.actions.action.Action.name()=rasa_core.actions.action.Action-class.html#name,Method reminders.ChangeSessionReminder.name()=reminders.ChangeSessionReminder-class.html#name,Method reminders.FollowedIntentReminder.name()=reminders.FollowedIntentReminder-class.html#name,Method reminders.SessionEndReminder.name()=reminders.SessionEndReminder-class.html#name,Method reminders.UserReminder.name()=reminders.UserReminder-class.html#name,Method reminders.UserReminderLittle.name()=reminders.UserReminderLittle-class.html#name,Method reset_slots.ResetInfoPatientSlots.name()=reset_slots.ResetInfoPatientSlots-class.html#name,Method reset_slots.ResetPainSlots.name()=reset_slots.ResetPainSlots-class.html#name,Method reset_slots.ResetPathologySlots.name()=reset_slots.ResetPathologySlots-class.html#name,Method reset_slots.ResetSlotsAction.name()=reset_slots.ResetSlotsAction-class.html#name,Method reset_slots.ResetSportSlots.name()=reset_slots.ResetSportSlots-class.html#name,Method reset_slots.ResetTreatmentSlots.name()=reset_slots.ResetTreatmentSlots-class.html#name,Method simple_actions.Agree.name()=simple_actions.Agree-class.html#name,Method simple_actions.AskAction.name()=simple_actions.AskAction-class.html#name,Method simple_actions.AskActivity.name()=simple_actions.AskActivity-class.html#name,Method simple_actions.AskActivityDistance.name()=simple_actions.AskActivityDistance-class.html#name,Method simple_actions.AskActivityDuration.name()=simple_actions.AskActivityDuration-class.html#name,Method simple_actions.AskActivityHard.name()=simple_actions.AskActivityHard-class.html#name,Method simple_actions.AskActivityPeriod.name()=simple_actions.AskActivityPeriod-class.html#name,Method simple_actions.AskActivityTime.name()=simple_actions.AskActivityTime-class.html#name,Method simple_actions.AskAddiction.name()=simple_actions.AskAddiction-class.html#name,Method simple_actions.AskAlcohol.name()=simple_actions.AskAlcohol-class.html#name,Method simple_actions.AskBloodPressure.name()=simple_actions.AskBloodPressure-class.html#name,Method simple_actions.AskBooleanAction.name()=simple_actions.AskBooleanAction-class.html#name,Method simple_actions.AskButtonsAction.name()=simple_actions.AskButtonsAction-class.html#name,Method simple_actions.AskDosing.name()=simple_actions.AskDosing-class.html#name,Method simple_actions.AskDrug.name()=simple_actions.AskDrug-class.html#name,Method simple_actions.AskDrugAddiction.name()=simple_actions.AskDrugAddiction-class.html#name,Method simple_actions.AskEatingDisorders.name()=simple_actions.AskEatingDisorders-class.html#name,Method simple_actions.AskGender.name()=simple_actions.AskGender-class.html#name,Method simple_actions.AskHappiness.name()=simple_actions.AskHappiness-class.html#name,Method simple_actions.AskHeartRate.name()=simple_actions.AskHeartRate-class.html#name,Method simple_actions.AskInfoPatientDistance.name()=simple_actions.AskInfoPatientDistance-class.html#name,Method simple_actions.AskInfoPatientTemperature.name()=simple_actions.AskInfoPatientTemperature-class.html#name,Method simple_actions.AskInfoPatientTime.name()=simple_actions.AskInfoPatientTime-class.html#name,Method simple_actions.AskMedicinal.name()=simple_actions.AskMedicinal-class.html#name,Method simple_actions.AskPain.name()=simple_actions.AskPain-class.html#name,Method simple_actions.AskPainBodyPart.name()=simple_actions.AskPainBodyPart-class.html#name,Method simple_actions.AskPainChange.name()=simple_actions.AskPainChange-class.html#name,Method simple_actions.AskPainDesc.name()=simple_actions.AskPainDesc-class.html#name,Method simple_actions.AskPainDuration.name()=simple_actions.AskPainDuration-class.html#name,Method simple_actions.AskPainPeriod.name()=simple_actions.AskPainPeriod-class.html#name,Method simple_actions.AskPainTime.name()=simple_actions.AskPainTime-class.html#name,Method simple_actions.AskPathologyBodyPart.name()=simple_actions.AskPathologyBodyPart-class.html#name,Method simple_actions.AskPathologyChange.name()=simple_actions.AskPathologyChange-class.html#name,Method simple_actions.AskPathologyDuration.name()=simple_actions.AskPathologyDuration-class.html#name,Method simple_actions.AskPathologyPeriod.name()=simple_actions.AskPathologyPeriod-class.html#name,Method simple_actions.AskPathologyTime.name()=simple_actions.AskPathologyTime-class.html#name,Method simple_actions.AskPathologyTreatmentLinked.name()=simple_actions.AskPathologyTreatmentLinked-class.html#name,Method simple_actions.AskRisk.name()=simple_actions.AskRisk-class.html#name,Method simple_actions.AskSadness.name()=simple_actions.AskSadness-class.html#name,Method simple_actions.AskSleep.name()=simple_actions.AskSleep-class.html#name,Method simple_actions.AskSmoking.name()=simple_actions.AskSmoking-class.html#name,Method simple_actions.AskSocial.name()=simple_actions.AskSocial-class.html#name,Method simple_actions.AskSport.name()=simple_actions.AskSport-class.html#name,Method simple_actions.AskSymptoms.name()=simple_actions.AskSymptoms-class.html#name,Method simple_actions.AskTreatmentBeingTaken.name()=simple_actions.AskTreatmentBeingTaken-class.html#name,Method simple_actions.AskTreatmentDuration.name()=simple_actions.AskTreatmentDuration-class.html#name,Method simple_actions.AskTreatmentOk.name()=simple_actions.AskTreatmentOk-class.html#name,Method simple_actions.AskTreatmentOverdosage.name()=simple_actions.AskTreatmentOverdosage-class.html#name,Method simple_actions.AskTreatmentPeriod.name()=simple_actions.AskTreatmentPeriod-class.html#name,Method simple_actions.AskTreatmentPrescripted.name()=simple_actions.AskTreatmentPrescripted-class.html#name,Method simple_actions.AskTreatmentTime.name()=simple_actions.AskTreatmentTime-class.html#name,Method simple_actions.AskWeight.name()=simple_actions.AskWeight-class.html#name,Method simple_actions.AskWhy.name()=simple_actions.AskWhy-class.html#name,Method simple_actions.Bye.name()=simple_actions.Bye-class.html#name,Method simple_actions.Disagree.name()=simple_actions.Disagree-class.html#name,Method simple_actions.Fallback.name()=simple_actions.Fallback-class.html#name,Method simple_actions.Hello.name()=simple_actions.Hello-class.html#name"><a title="ask_what.AskWhatAction.name
+ask_what.AskWhatInfoPatient.name
+ask_what.AskWhatPain.name
+ask_what.AskWhatPathology.name
+ask_what.AskWhatSport.name
+ask_what.AskWhatTreatment.name
+complex_sets.SetMultiple.name
+form_actions.ActionFillSlotsPain.name
+form_actions.ActionFillSlotsSport.name
+form_actions.Alcohol.name
+form_actions.CheckRequestedIntents.name
+form_actions.DrugAddiction.name
+form_actions.EatingDisorders.name
+form_actions.FormActionCalculusAndCore.name
+form_actions.FormActionTriggerAction.name
+form_actions.Happy.name
+form_actions.InfoPatient.name
+form_actions.Pathology.name
+form_actions.Risk.name
+form_actions.Sadness.name
+form_actions.Sleep.name
+form_actions.Smoking.name
+form_actions.Social.name
+form_actions.Treatment.name
+init_and_complex.InitBot.name
+init_and_complex.SaveConv.name
+init_and_complex.SumUpSLots.name
+rasa_core.actions.action.Action.name
+reminders.ChangeSessionReminder.name
+reminders.FollowedIntentReminder.name
+reminders.SessionEndReminder.name
+reminders.UserReminder.name
+reminders.UserReminderLittle.name
+reset_slots.ResetInfoPatientSlots.name
+reset_slots.ResetPainSlots.name
+reset_slots.ResetPathologySlots.name
+reset_slots.ResetSlotsAction.name
+reset_slots.ResetSportSlots.name
+reset_slots.ResetTreatmentSlots.name
+simple_actions.Agree.name
+simple_actions.AskAction.name
+simple_actions.AskActivity.name
+simple_actions.AskActivityDistance.name
+simple_actions.AskActivityDuration.name
+simple_actions.AskActivityHard.name
+simple_actions.AskActivityPeriod.name
+simple_actions.AskActivityTime.name
+simple_actions.AskAddiction.name
+simple_actions.AskAlcohol.name
+simple_actions.AskBloodPressure.name
+simple_actions.AskBooleanAction.name
+simple_actions.AskButtonsAction.name
+simple_actions.AskDosing.name
+simple_actions.AskDrug.name
+simple_actions.AskDrugAddiction.name
+simple_actions.AskEatingDisorders.name
+simple_actions.AskGender.name
+simple_actions.AskHappiness.name
+simple_actions.AskHeartRate.name
+simple_actions.AskInfoPatientDistance.name
+simple_actions.AskInfoPatientTemperature.name
+simple_actions.AskInfoPatientTime.name
+simple_actions.AskMedicinal.name
+simple_actions.AskPain.name
+simple_actions.AskPainBodyPart.name
+simple_actions.AskPainChange.name
+simple_actions.AskPainDesc.name
+simple_actions.AskPainDuration.name
+simple_actions.AskPainPeriod.name
+simple_actions.AskPainTime.name
+simple_actions.AskPathologyBodyPart.name
+simple_actions.AskPathologyChange.name
+simple_actions.AskPathologyDuration.name
+simple_actions.AskPathologyPeriod.name
+simple_actions.AskPathologyTime.name
+simple_actions.AskPathologyTreatmentLinked.name
+simple_actions.AskRisk.name
+simple_actions.AskSadness.name
+simple_actions.AskSleep.name
+simple_actions.AskSmoking.name
+simple_actions.AskSocial.name
+simple_actions.AskSport.name
+simple_actions.AskSymptoms.name
+simple_actions.AskTreatmentBeingTaken.name
+simple_actions.AskTreatmentDuration.name
+simple_actions.AskTreatmentOk.name
+simple_actions.AskTreatmentOverdosage.name
+simple_actions.AskTreatmentPeriod.name
+simple_actions.AskTreatmentPrescripted.name
+simple_actions.AskTreatmentTime.name
+simple_actions.AskWeight.name
+simple_actions.AskWhy.name
+simple_actions.Bye.name
+simple_actions.Disagree.name
+simple_actions.Fallback.name
+simple_actions.Hello.name" class="py-name" href="#" onclick="return doclink('link-3', 'name', 'link-3');">name</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+</div></div><a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<!--
+expandto(location.href);
+// -->
+</script>
+</pre>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="https://github.com/Graziella-Husson/MediBot">Ailixir Bot</a></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Tue Jul 31 15:58:16 2018
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>
