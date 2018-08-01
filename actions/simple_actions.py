@@ -112,7 +112,7 @@ class AskMedicinal(AskBooleanAction):
     """Say something to the user : display buttons to tell
     if the treatment is medicinal or not
     When the "no" button is clicked, we have to set :
-        - drug
+        - treatment_drug
         - dosing
         - treatment_being_taken
         - treatment_period
@@ -124,7 +124,7 @@ class AskMedicinal(AskBooleanAction):
         Set the name of the entity to ask"""
         self.entity_name = "medicinal"
         self.intent_name = "treatment"
-        self.payload_no = "/treatment{\"medicinal\":false, \"drug\":\"no_drug\", \"dosing\":\"no_drug\", \"treatment_being_taken\":\"no_drug\", \"treatment_overdosage\":\"no_drug\"}"
+        self.payload_no = "/treatment{\"medicinal\":false, \"treatment_drug\":\"no_drug\", \"dosing\":\"no_drug\", \"treatment_being_taken\":\"no_drug\", \"treatment_overdosage\":\"no_drug\"}"
 
     def name(self):
         """@return: the name of the action."""
@@ -307,16 +307,16 @@ class AskSymptoms(AskAction):
         return 'utter_ask_symtoms'
 
 
-class AskDrug(AskAction):
+class AskTreatmentDrug(AskAction):
     """Say something to the user : ask the drug of the treatment
     We have to talk about that only if the treatment is medicinal"""
     def __init__(self):
         """Set the name of the entity to ask"""
-        self.entity_name = "drug"
+        self.entity_name = "treatment_drug"
 
     def name(self):
         """@return: the name of the action."""
-        return 'utter_ask_drug'
+        return 'utter_ask_treatment_drug'
 
 
 class AskPainTime(AskAction):

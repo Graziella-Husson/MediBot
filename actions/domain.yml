@@ -69,6 +69,8 @@ slots:
     type: text
   drug:
     type: text
+  treatment_drug:
+    type: text
   addiction:
     type: text
   weight:
@@ -243,7 +245,7 @@ actions:
  - simple_actions.Hello
  - simple_actions.AskSymptoms
  - simple_actions.AskMedicinal
- - simple_actions.AskDrug
+ - simple_actions.AskTreatmentDrug
  - simple_actions.AskPainTime
  - simple_actions.AskActivityTime
  - simple_actions.AskActivityDistance

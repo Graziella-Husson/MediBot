@@ -270,7 +270,7 @@
 		"ENG":"\n\tYour treatment is not medicinal",
 		"FRA":"\n\tVotre traitement n'est pas médicamenteux"
 		},
-	"drug":
+	"treatment_drug":
 		{
 		"ENG":"\n\tYou take: {}",
 		"FRA":"\n\tVous prenez : {}"
@@ -385,7 +385,7 @@
 		"ENG":"Medicinal",
 		"FRA":"Médicamenteux"
 		},
-	"drug_button":
+	"treatment_drug_button":
 		{
 		"ENG":"Drug",
 		"FRA":"Médicament"
@@ -565,7 +565,7 @@
 		"ENG":"Is your treatment medicinal or not?",
 		"FRA":"Votre traitement est-il médicamenteux ?"
 		},
-	"ask_drug":
+	"ask_treatment_drug":
 		{
 		"ENG":"I did not recognize any drug in what you said. Can you tell me more?",
 		"FRA":"Je n'ai pas reconnu de médicament dans votre phrase. Pouvez-vous m'en dire plus ?"

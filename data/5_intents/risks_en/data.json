@@ -6,17 +6,62 @@
       {
         "text": "I’m drinking at least a bottle of wine a day in the week",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 34,
+            "end": 38,
+            "value": "wine",
+            "entity": "drug"
+          },
+          {
+            "start": 24,
+            "end": 30,
+            "value": "bottle",
+            "entity": "dosing"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "I drink six ounces of vodka average per day",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 8,
+            "end": 18,
+            "value": "six ounces",
+            "entity": "dosing"
+          },
+          {
+            "start": 22,
+            "end": 27,
+            "value": "vodka",
+            "entity": "drug"
+          },
+          {
+            "start": 36,
+            "end": 43,
+            "value": "per day",
+            "entity": "period"
+          }
+        ]
       },
       {
-        "text": "I can go for months and at least a year or so with out drinking",
+        "text": "I can go for months and at least a year or so without drinking",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 9,
+            "end": 19,
+            "value": "for months",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I'm in end stage of alcohol addiction",
@@ -24,9 +69,22 @@
         "entities": []
       },
       {
-        "text": "I do buy a 'four pack' every night after work",
+        "text": "I do buy a four pack every night after work",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 11,
+            "end": 20,
+            "value": "four pack",
+            "entity": "dosing"
+          },
+          {
+            "start": 21,
+            "end": 32,
+            "value": "every night",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "I am trying to stop drinking",
@@ -36,7 +94,14 @@
       {
         "text": "I’m 25 years old and I’ve been battling with alcohol for the past 5 years",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 53,
+            "end": 73,
+            "value": "for the past 5 years",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I don’t drink often but when I do drink I don’t know my limits",
@@ -66,12 +131,26 @@
       {
         "text": "I am becoming more and more concerned about how much I am drinking on a regular basis",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 67,
+            "end": 85,
+            "value": "on a regular basis",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "I need to get up and drink in the morning",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 27,
+            "end": 41,
+            "value": "in the morning",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "I started huffing alcohol here recently",
@@ -81,7 +160,14 @@
       {
         "text": "My drinking has been an issue for years",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 30,
+            "end": 39,
+            "value": "for years",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "So I am an alcoholic and want to stop drinking",
@@ -111,17 +197,62 @@
       {
         "text": "When I was drinking vodka came 1st 2nd 3rd",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 20,
+            "end": 25,
+            "value": "vodka",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "When I say drinking it's either four cans or half a bottle of wine each week evening",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 32,
+            "end": 41,
+            "value": "four cans",
+            "entity": "dosing"
+          },
+          {
+            "start": 67,
+            "end": 84,
+            "value": "each week evening",
+            "entity": "period"
+          },
+          {
+            "start": 62,
+            "end": 66,
+            "value": "wine",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "I drink six ounces of vodka  average per day",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 8,
+            "end": 18,
+            "value": "six ounces",
+            "entity": "dosing"
+          },
+          {
+            "start": 22,
+            "end": 27,
+            "value": "vodka",
+            "entity": "drug"
+          },
+          {
+            "start": 37,
+            "end": 44,
+            "value": "per day",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "I've had a problem with alcohol since I was 12",
@@ -141,7 +272,14 @@
       {
         "text": "I've been misusing alcohol for over ten years now",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 27,
+            "end": 49,
+            "value": "for over ten years now",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I have a \"real\" drinking problem",
@@ -156,12 +294,32 @@
       {
         "text": "One time I drank 1/3 of a 1L bottle of whiskey in 30 minutes",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 26,
+            "end": 35,
+            "value": "1L bottle",
+            "entity": "dosing"
+          },
+          {
+            "start": 39,
+            "end": 46,
+            "value": "whiskey",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "So that's 25 years of drinking almost every day",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 31,
+            "end": 47,
+            "value": "almost every day",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "I watch what I eat through the day so I can have more wine and less calories with my food",
@@ -171,12 +329,32 @@
       {
         "text": "I will have my first glass of wine throughout the day",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 21,
+            "end": 26,
+            "value": "glass",
+            "entity": "dosing"
+          },
+          {
+            "start": 30,
+            "end": 34,
+            "value": "wine",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "Over the last 10 yrs I’ve relied on alcohol more and more",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 0,
+            "end": 20,
+            "value": "Over the last 10 yrs",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "If i dont drink for a day or two, i feel fine in myself",
@@ -196,23 +374,78 @@
       {
         "text": "At that point I was on around 16-20 units of whiskey an evening, every evening for around 4 years",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 30,
+            "end": 41,
+            "value": "16-20 units",
+            "entity": "dosing"
+          },
+          {
+            "start": 45,
+            "end": 52,
+            "value": "whiskey",
+            "entity": "drug"
+          },
+          {
+            "start": 65,
+            "end": 78,
+            "value": "every evening",
+            "entity": "period"
+          },
+          {
+            "start": 79,
+            "end": 97,
+            "value": "for around 4 years",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I pretty much drink between 1 and 2 bottles of white wine a night",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 28,
+            "end": 43,
+            "value": "1 and 2 bottles",
+            "entity": "dosing"
+          },
+          {
+            "start": 47,
+            "end": 57,
+            "value": "white wine",
+            "entity": "drug"
+          },
+          {
+            "start": 58,
+            "end": 65,
+            "value": "a night",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "I had started drinking a little",
         "intent": "alcohol",
         "entities": []
       },
-      {"text": "I'm a drunk", "intent": "alcohol", "entities": []},
+      {
+        "text": "I'm a drunk",
+        "intent": "alcohol",
+        "entities": []
+      },
       {
         "text": "I'm 33 now and I would say that I've been a full blown alcoholic for about nine years",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 65,
+            "end": 85,
+            "value": "for about nine years",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I have been drinking heavy lately",
@@ -232,12 +465,26 @@
       {
         "text": "I haven't touched anything in eleven weeks",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 27,
+            "end": 42,
+            "value": "in eleven weeks",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "this morning I had half bottle left",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 19,
+            "end": 30,
+            "value": "half bottle",
+            "entity": "dosing"
+          }
+        ]
       },
       {
         "text": "I had two attemps at reducing my drinking",
@@ -262,51 +509,159 @@
       {
         "text": "I was drinking a fifth of vodka a day and sometimes more",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "a fifth",
+            "entity": "dosing"
+          },
+          {
+            "start": 26,
+            "end": 31,
+            "value": "vodka",
+            "entity": "drug"
+          },
+          {
+            "start": 32,
+            "end": 37,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
       },
       {
-        "text": "Ive been drinking 3/4 nights a week",
+        "text": "Ive been drinking 3 nights a week",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "3 nights",
+            "entity": "dosing"
+          },
+          {
+            "start": 27,
+            "end": 33,
+            "value": "a week",
+            "entity": "period"
+          }
+        ]
       },
       {
-        "text": "i have managed to not have a drink untill 5 instead of usual 1 oclock",
+        "text": "i have managed to not have a drink untill 5pm instead of usual 1 oclock",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 35,
+            "end": 45,
+            "value": "untill 5pm",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "the alcohol just takes the edge off",
         "intent": "alcohol",
         "entities": []
       },
-      {"text": "I have a love of alcohol", "intent": "alcohol", "entities": []},
+      {
+        "text": "I have a love of alcohol",
+        "intent": "alcohol",
+        "entities": []
+      },
       {
         "text": "Last drink of alcohol I had was Tuesday night",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 32,
+            "end": 45,
+            "value": "Tuesday night",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "I’m just out of rehab for the fifth time",
         "intent": "alcohol",
         "entities": []
       },
-      {"text": "I am a true drinker", "intent": "alcohol", "entities": []},
+      {
+        "text": "I am a true drinker",
+        "intent": "alcohol",
+        "entities": []
+      },
       {
         "text": "I usually start drinking at 3pm every day and by 11pm the vodka is gone",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 28,
+            "end": 31,
+            "value": "3pm",
+            "entity": "time"
+          },
+          {
+            "start": 32,
+            "end": 41,
+            "value": "every day",
+            "entity": "period"
+          }
+        ]
       },
-      {"text": "I drink white wine", "intent": "alcohol", "entities": []},
+      {
+        "text": "I drink white wine",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 8,
+            "end": 18,
+            "value": "white wine",
+            "entity": "drug"
+          }
+        ]
+      },
       {
         "text": "This time is bad 30 days straight of drinking 1.5 liters of wine a day",
         "intent": "alcohol",
+        "entities": [
+          {
+            "start": 46,
+            "end": 56,
+            "value": "1.5 liters",
+            "entity": "dosing"
+          },
+          {
+            "start": 60,
+            "end": 64,
+            "value": "wine",
+            "entity": "drug"
+          },
+          {
+            "start": 65,
+            "end": 70,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "Im going to have a drink",
+        "intent": "alcohol",
         "entities": []
       },
-      {"text": "Im going to have a drink", "intent": "alcohol", "entities": []},
       {
         "text": "I just as easily drink 1 pint at home if not in the mood",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 23,
+            "end": 29,
+            "value": "1 pint",
+            "entity": "dosing"
+          }
+        ]
       },
       {
         "text": "I'm mid 40's and have been a drinker pretty much all my life",
@@ -321,7 +676,20 @@
       {
         "text": "i drank less last night and same today",
         "intent": "alcohol",
-        "entities": []
+        "entities": [
+          {
+            "start": 13,
+            "end": 23,
+            "value": "last night",
+            "entity": "time"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "value": "same",
+            "entity": "dosing"
+          }
+        ]
       },
       {
         "text": "I used to eat a lot and weigh 120",
@@ -334,7 +702,7 @@
         "entities": []
       },
       {
-        "text": "my eating habits aren't 'normal'",
+        "text": "my eating habits aren't normal",
         "intent": "eating_disorders",
         "entities": []
       },
@@ -356,7 +724,14 @@
       {
         "text": "I've binged for 6 days on junk food",
         "intent": "eating_disorders",
-        "entities": []
+        "entities": [
+          {
+            "start": 12,
+            "end": 22,
+            "value": "for 6 days",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "my eating is someone I’ve accepted is going to be an issue my entire life",
@@ -416,7 +791,14 @@
       {
         "text": "I have had Bulimia on and off for a few year",
         "intent": "eating_disorders",
-        "entities": []
+        "entities": [
+          {
+            "start": 30,
+            "end": 44,
+            "value": "for a few year",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I started making my self sick after meals",
@@ -426,7 +808,14 @@
       {
         "text": "So about 2 to 3 weeks ago I’ve probably only eaten one meal a day",
         "intent": "eating_disorders",
-        "entities": []
+        "entities": [
+          {
+            "start": 9,
+            "end": 25,
+            "value": "2 to 3 weeks ago",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "I'm restricting all day",
@@ -530,8 +919,15 @@
       },
       {
         "text": "I’ve suffered with anorexia since I was about eight years old",
-        "intent": "eating_disorders",
-        "entities": []
+        "intent": "pathology",
+        "entities": [
+          {
+            "start": 19,
+            "end": 27,
+            "value": "anorexia",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
         "text": "I don't eat much because when I started drinking I was 135 pounds now I'm almost 300 pounds",
@@ -540,23 +936,63 @@
       },
       {
         "text": "I think i may have Anorexia",
-        "intent": "eating_disorders",
-        "entities": []
+        "intent": "pathology",
+        "entities": [
+          {
+            "start": 19,
+            "end": 27,
+            "value": "Anorexia",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
-        "text": "I am on 60 mg. of meth",
+        "text": "I am on 60 mg of meth",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 8,
+            "end": 13,
+            "value": "60 mg",
+            "entity": "dosing"
+          },
+          {
+            "start": 17,
+            "end": 21,
+            "value": "meth",
+            "entity": "drug"
+          }
+        ]
       },
       {
-        "text": "The new doctor gave me a schuedule to wean me off the tramadol",
+        "text": "The new doctor gave me a schedule to wean me off the tramadol",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 53,
+            "end": 61,
+            "value": "tramadol",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "I took anywhere from 2 to 6 norco a day but 3 was my average",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 21,
+            "end": 33,
+            "value": "2 to 6 norco",
+            "entity": "dosing"
+          },
+          {
+            "start": 34,
+            "end": 39,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "i went to detox for 21 days",
@@ -566,47 +1002,188 @@
       {
         "text": "i am 19 and i have been snorting cocaine for the last 6 months",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 33,
+            "end": 40,
+            "value": "cocaine",
+            "entity": "drug"
+          },
+          {
+            "start": 41,
+            "end": 62,
+            "value": "for the last 6 months",
+            "entity": "duration"
+          }
+        ]
       },
       {
-        "text": "I had weaned down from 50mg of methadone to 40mg in two months",
+        "text": "I had weaned down from 50 mg of methadone to 40mg in two months",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "50 mg",
+            "entity": "dosing"
+          },
+          {
+            "start": 32,
+            "end": 41,
+            "value": "methadone",
+            "entity": "drug"
+          },
+          {
+            "start": 50,
+            "end": 63,
+            "value": "in two months",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I am in the process of tapering from Suboxone long-term use",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 37,
+            "end": 45,
+            "value": "Suboxone",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "It’s been two days since I have been recreationally using tramadol 400mg",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 58,
+            "end": 66,
+            "value": "tramadol",
+            "entity": "drug"
+          },
+          {
+            "start": 67,
+            "end": 72,
+            "value": "400mg",
+            "entity": "dosing"
+          },
+          {
+            "start": 10,
+            "end": 18,
+            "value": "two days",
+            "entity": "duration"
+          }
+        ]
       },
       {
-        "text": "I have been taking 50mgs of Valium daily for nearly the last 6-7 months",
+        "text": "I have been taking 50 mgs of Valium daily for nearly the last 6 months",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "50 mgs",
+            "entity": "dosing"
+          },
+          {
+            "start": 29,
+            "end": 35,
+            "value": "Valium",
+            "entity": "drug"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "value": "daily",
+            "entity": "period"
+          },
+          {
+            "start": 42,
+            "end": 70,
+            "value": "for nearly the last 6 months",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I am advanced maternal age(40) and taking 16 mgms of Suboxone films for opiate addiction",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 42,
+            "end": 49,
+            "value": "16 mgms",
+            "entity": "dosing"
+          },
+          {
+            "start": 53,
+            "end": 61,
+            "value": "Suboxone",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "I’ve been snorting come for almost 2 weeks now",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "come",
+            "entity": "drug"
+          },
+          {
+            "start": 24,
+            "end": 46,
+            "value": "for almost 2 weeks now",
+            "entity": "duration"
+          }
+        ]
       },
       {
-        "text": "I've been on methadone at 150mg a day and about 15 mg of xanax",
+        "text": "I've been on methadone at 150 mg a day and about 15 mg of xanax",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 13,
+            "end": 22,
+            "value": "methadone",
+            "entity": "drug"
+          },
+          {
+            "start": 26,
+            "end": 32,
+            "value": "150 mg",
+            "entity": "dosing"
+          },
+          {
+            "start": 33,
+            "end": 38,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "I use about 3 grams per month average",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "3 grams",
+            "entity": "dosing"
+          },
+          {
+            "start": 20,
+            "end": 29,
+            "value": "per month",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "Now I am totally clean",
@@ -616,7 +1193,14 @@
       {
         "text": "Snorted a large amount of Cocaine, 3 weeks ago, for the first (and last) time in my life",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 35,
+            "end": 46,
+            "value": "3 weeks ago",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "I'm trying to quit after years of snorting",
@@ -626,97 +1210,332 @@
       {
         "text": "Yesterday I stupidly changed the qty of my prescription for Darvon from 5 pills to 15 pills",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 60,
+            "end": 66,
+            "value": "Darvon",
+            "entity": "drug"
+          },
+          {
+            "start": 72,
+            "end": 79,
+            "value": "5 pills",
+            "entity": "dosing"
+          }
+        ]
       },
       {
         "text": "I started to use coke in my early twenties at first on special occasions or parties",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "coke",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "I have been back and forth with suboxone",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 32,
+            "end": 40,
+            "value": "suboxone",
+            "entity": "drug"
+          }
+        ]
       },
       {
-        "text": "I took one line of cocaine last night about .1 to .2 grams",
+        "text": "I took one line of cocaine last night about 0.2 grams",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 27,
+            "end": 37,
+            "value": "last night",
+            "entity": "time"
+          },
+          {
+            "start": 44,
+            "end": 53,
+            "value": "0.2 grams",
+            "entity": "dosing"
+          }
+        ]
       },
       {
         "text": "Im 25 and tried mdma/X for the first time a few months ago",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 16,
+            "end": 22,
+            "value": "mdma/X",
+            "entity": "drug"
+          },
+          {
+            "start": 42,
+            "end": 58,
+            "value": "a few months ago",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "I went from pills to heroin",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 21,
+            "end": 27,
+            "value": "heroin",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "I have just started a 21 day detox from my methadone clinic",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 43,
+            "end": 52,
+            "value": "methadone",
+            "entity": "drug"
+          }
+        ]
       },
       {
-        "text": "My 1 year (so far) , addiction to Sub, after Detox, started with 4mg",
+        "text": "My 1 year (so far) , addiction to Sub, after Detox, started with 4 mg",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 34,
+            "end": 37,
+            "value": "Sub",
+            "entity": "drug"
+          },
+          {
+            "start": 65,
+            "end": 69,
+            "value": "4 mg",
+            "entity": "dosing"
+          }
+        ]
       },
       {
         "text": "I did the biggest mistake of my life - tried snorting cocaine on New years party",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 54,
+            "end": 61,
+            "value": "cocaine",
+            "entity": "drug"
+          },
+          {
+            "start": 65,
+            "end": 80,
+            "value": "New years party",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "I have been off suboxone for 103 days, can't believe I was on it for 9 years",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 16,
+            "end": 24,
+            "value": "suboxone",
+            "entity": "drug"
+          },
+          {
+            "start": 25,
+            "end": 37,
+            "value": "for 103 days",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I have been casually taking coke for a while, but it’s become daily",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 62,
+            "end": 67,
+            "value": "daily",
+            "entity": "period"
+          },
+          {
+            "start": 28,
+            "end": 32,
+            "value": "coke",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "I'm 50 years old, male and have been on methadone for the last 10 years",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 40,
+            "end": 49,
+            "value": "methadone",
+            "entity": "drug"
+          },
+          {
+            "start": 50,
+            "end": 71,
+            "value": "for the last 10 years",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I am 30 and have been using drugs for about 10 years",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 34,
+            "end": 52,
+            "value": "for about 10 years",
+            "entity": "duration"
+          },
+          {
+            "start": 28,
+            "end": 33,
+            "value": "drugs",
+            "entity": "drug"
+          }
+        ]
       },
       {
-        "text": "I've been taking 10mg hydrocodone for 2 years now",
+        "text": "I've been taking 10 mg hydrocodone for 2 years now",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "10 mg",
+            "entity": "dosing"
+          },
+          {
+            "start": 23,
+            "end": 34,
+            "value": "hydrocodone",
+            "entity": "drug"
+          },
+          {
+            "start": 35,
+            "end": 50,
+            "value": "for 2 years now",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I have abused prescription drugs since my high school days",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 14,
+            "end": 32,
+            "value": "prescription drugs",
+            "entity": "drug"
+          }
+        ]
       },
       {
-        "text": "I have been taking 30mgs sometimes 60.mgs of percocet a day for the past 4 weeks",
+        "text": "I have been taking 30 mgs sometimes 60 mgs of percocet a day for the past 4 weeks",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 19,
+            "end": 25,
+            "value": "30 mgs",
+            "entity": "dosing"
+          },
+          {
+            "start": 46,
+            "end": 54,
+            "value": "percocet",
+            "entity": "drug"
+          },
+          {
+            "start": 55,
+            "end": 60,
+            "value": "a day",
+            "entity": "period"
+          },
+          {
+            "start": 61,
+            "end": 81,
+            "value": "for the past 4 weeks",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I was addicted to xanax about a year ago",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "xanax",
+            "entity": "drug"
+          },
+          {
+            "start": 30,
+            "end": 40,
+            "value": "a year ago",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "I have been a user of opiates for approx. 4 years now",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 22,
+            "end": 29,
+            "value": "opiates",
+            "entity": "drug"
+          },
+          {
+            "start": 30,
+            "end": 53,
+            "value": "for approx. 4 years now",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I had been drinking one 5-Hour Energy shot every day",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 20,
+            "end": 37,
+            "value": "one 5-Hour Energy",
+            "entity": "drug"
+          },
+          {
+            "start": 43,
+            "end": 52,
+            "value": "every day",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "my husband and myself have been snorting pills",
@@ -729,15 +1548,52 @@
         "entities": []
       },
       {
-        "text": "i ve been taking coricidin for 9 yrs",
+        "text": "i ve been taking coricidin for 9 years",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 17,
+            "end": 26,
+            "value": "coricidin",
+            "entity": "drug"
+          },
+          {
+            "start": 27,
+            "end": 38,
+            "value": "for 9 years",
+            "entity": "duration"
+          }
+        ]
       },
-      {"text": "I shot up meth", "intent": "drug_addiction", "entities": []},
+      {
+        "text": "I shot up meth",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "meth",
+            "entity": "drug"
+          }
+        ]
+      },
       {
         "text": "I have tried cocaine many times, but only in the last month",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 13,
+            "end": 20,
+            "value": "cocaine",
+            "entity": "drug"
+          },
+          {
+            "start": 21,
+            "end": 31,
+            "value": "many times",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "I've been giving myself straight dopamine for over a year and abruptly stopped",
@@ -747,62 +1603,230 @@
       {
         "text": "I've been using cocaine on and off since the age of 17",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 16,
+            "end": 23,
+            "value": "cocaine",
+            "entity": "drug"
+          }
+        ]
       },
       {
-        "text": "For the past 4 or so days, I've taken a totally of 20 acetaminophen pills",
+        "text": "For the past 4 days, I've taken a totally of 20 acetaminophen pills",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 0,
+            "end": 19,
+            "value": "For the past 4 days",
+            "entity": "duration"
+          },
+          {
+            "start": 48,
+            "end": 61,
+            "value": "acetaminophen",
+            "entity": "drug"
+          },
+          {
+            "start": 45,
+            "end": 47,
+            "value": "20",
+            "entity": "dosing"
+          }
+        ]
       },
       {
         "text": "I am in the process of getting off of tramadol",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 38,
+            "end": 46,
+            "value": "tramadol",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "I have been addicted to cocaine since one year",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 24,
+            "end": 31,
+            "value": "cocaine",
+            "entity": "drug"
+          },
+          {
+            "start": 32,
+            "end": 46,
+            "value": "since one year",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I have been taking between 90mg and 120mg of morphine sulfate a day for the last 6 years",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 27,
+            "end": 31,
+            "value": "90mg",
+            "entity": "dosing"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "value": "120mg",
+            "entity": "dosing"
+          },
+          {
+            "start": 45,
+            "end": 61,
+            "value": "morphine sulfate",
+            "entity": "dosing"
+          },
+          {
+            "start": 68,
+            "end": 88,
+            "value": "for the last 6 years",
+            "entity": "duration"
+          },
+          {
+            "start": 62,
+            "end": 67,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "First time I tried cocaine was 3 years ago",
         "intent": "drug_addiction",
-        "entities": []
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "cocaine",
+            "entity": "drug"
+          },
+          {
+            "start": 31,
+            "end": 42,
+            "value": "3 years ago",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "I quit dip about a month ago",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "dip",
+            "entity": "drug"
+          },
+          {
+            "start": 17,
+            "end": 28,
+            "value": "a month ago",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "I quit smoking just over one month ago",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 25,
+            "end": 38,
+            "value": "one month ago",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "I was a 1 pk a day smoker",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "1 pk",
+            "entity": "dosing"
+          },
+          {
+            "start": 13,
+            "end": 18,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "I smoke about 12-15 cigs. in a day",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 14,
+            "end": 24,
+            "value": "12-15 cigs",
+            "entity": "dosing"
+          },
+          {
+            "start": 26,
+            "end": 34,
+            "value": "in a day",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "I have started smoking a year back and I was smoking nearly five times a week",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 23,
+            "end": 34,
+            "value": "a year back",
+            "entity": "time"
+          },
+          {
+            "start": 60,
+            "end": 70,
+            "value": "five times",
+            "entity": "dosing"
+          },
+          {
+            "start": 71,
+            "end": 77,
+            "value": "a week",
+            "entity": "period"
+          }
+        ]
       },
       {
-        "text": "i used to smoke 23 ciggerates everyday but im on track to cut down",
+        "text": "i used to smoke 23 cigarettes everyday but im on track to cut down",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 30,
+            "end": 38,
+            "value": "everyday",
+            "entity": "period"
+          },
+          {
+            "start": 16,
+            "end": 29,
+            "value": "23 cigarettes",
+            "entity": "dosing"
+          }
+        ]
       },
       {
         "text": "Have been using the vuse to stop smoking cigarettes",
@@ -812,12 +1836,38 @@
       {
         "text": "I was smoking 2 packs a day, until 6 days ago",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 14,
+            "end": 21,
+            "value": "2 packs",
+            "entity": "dosing"
+          },
+          {
+            "start": 22,
+            "end": 27,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "i smoked for about 2 years, at about 5 ciggs a day",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 37,
+            "end": 44,
+            "value": "5 ciggs",
+            "entity": "dosing"
+          },
+          {
+            "start": 45,
+            "end": 50,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "If I go more than 6-8 hrs without a cigarette I start to get jittery",
@@ -834,7 +1884,11 @@
         "intent": "smoking",
         "entities": []
       },
-      {"text": "Ive started smoke less", "intent": "smoking", "entities": []},
+      {
+        "text": "Ive started smoke less",
+        "intent": "smoking",
+        "entities": []
+      },
       {
         "text": "I am suppose to be nicotine free for 2-3 months",
         "intent": "smoking",
@@ -863,22 +1917,62 @@
       {
         "text": "Last week I smoke a lot more that what I'm usually used to",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "Last week",
+            "entity": "time"
+          },
+          {
+            "start": 18,
+            "end": 28,
+            "value": "a lot more",
+            "entity": "dosing"
+          }
+        ]
       },
       {
         "text": "I was a heavy smoker at one point for a few years",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 34,
+            "end": 49,
+            "value": "for a few years",
+            "entity": "duration"
+          }
+        ]
       },
       {
-        "text": "I recently quite smoking after 10-years of 1 Pack+/day use",
+        "text": "I recently quite smoking after 10-years of 1 Pack a day use",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 43,
+            "end": 49,
+            "value": "1 Pack",
+            "entity": "dosing"
+          },
+          {
+            "start": 50,
+            "end": 55,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "i'm 16 and i smoke but not all the time",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 27,
+            "end": 39,
+            "value": "all the time",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "I think my smoking is getting out of hand",
@@ -888,28 +1982,73 @@
       {
         "text": "Just been on the patch for 4 days",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 23,
+            "end": 33,
+            "value": "for 4 days",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "Not to long ago i started the patch to help me quit smoking cigarette",
-        "intent": "smoking",
-        "entities": []
+        "intent": "treatment",
+        "entities": [
+          {
+            "start": 26,
+            "end": 35,
+            "value": "the patch",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "I have stopped smoking since last ten days",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 23,
+            "end": 42,
+            "value": "since last ten days",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I quit smoking on January 10, 2016",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 15,
+            "end": 34,
+            "value": "on January 10, 2016",
+            "entity": "time"
+          }
+        ]
       },
-      {"text": "I really do love smoking", "intent": "smoking", "entities": []},
       {
-        "text": "I’ve not had a cigarette for 32 days, I was on the patches",
+        "text": "I really do love smoking",
         "intent": "smoking",
         "entities": []
+      },
+      {
+        "text": "I’ve not had a cigarette for 32 days, I was on the patches",
+        "intent": "treatment",
+        "entities": [
+          {
+            "start": 25,
+            "end": 36,
+            "value": "for 32 days",
+            "entity": "duration"
+          },
+          {
+            "start": 47,
+            "end": 58,
+            "value": "the patches",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "I chew between nine and eleven pieces of the 2mg a day",
@@ -934,17 +2073,50 @@
       {
         "text": "I was smoking almost a pack a day",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 21,
+            "end": 27,
+            "value": "a pack",
+            "entity": "dosing"
+          },
+          {
+            "start": 28,
+            "end": 33,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
       },
       {
         "text": "Last summer I started drinking and smoking cigaretttes a lot",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 0,
+            "end": 11,
+            "value": "Last summer",
+            "entity": "time"
+          },
+          {
+            "start": 55,
+            "end": 60,
+            "value": "a lot",
+            "entity": "dosing"
+          }
+        ]
       },
       {
-        "text": "I am in my mid 20's, and have been struggling to quit smoking for a little over a year now",
+        "text": "I am in my mid 20's, and have been struggling to quit smoking for a year now",
         "intent": "smoking",
-        "entities": []
+        "entities": [
+          {
+            "start": 62,
+            "end": 76,
+            "value": "for a year now",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I am so addicted to it that i look for excuses to be alone so that i can smoke",
@@ -959,12 +2131,26 @@
       {
         "text": "I’m exhausted and go home and sleep anywhere from 2-5 hours typically",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 50,
+            "end": 59,
+            "value": "2-5 hours",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I used to sleep like a rock for 7-10 hours a night uninterrupted",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 32,
+            "end": 42,
+            "value": "7-10 hours",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I started to dread going to bed",
@@ -974,7 +2160,14 @@
       {
         "text": "then 5 hours later i go back to sleep for another 2 or so hours",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 50,
+            "end": 63,
+            "value": "2 or so hours",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I noticed that I slept much deeper on days I didn't exercise",
@@ -1001,7 +2194,11 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I developed sleep anxiety", "intent": "sleep", "entities": []},
+      {
+        "text": "I developed sleep anxiety",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "I prolly go to bed by 11 or so",
         "intent": "sleep",
@@ -1045,7 +2242,14 @@
       {
         "text": "I then lay there in bed for 2-3 hours",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 24,
+            "end": 37,
+            "value": "for 2-3 hours",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I can fall asleep only when my body and my mind become exhausted",
@@ -1070,7 +2274,14 @@
       {
         "text": "After sleep, for 2-3 hours, I am better and then start feeling tired again",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 13,
+            "end": 26,
+            "value": "for 2-3 hours",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I have very mild sleep apnea",
@@ -1130,7 +2341,20 @@
       {
         "text": "Usually I go to bed at 11:00-12:00 pm and wake up at 8:30-10:00 am",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 20,
+            "end": 37,
+            "value": "at 11:00-12:00 pm",
+            "entity": "time"
+          },
+          {
+            "start": 50,
+            "end": 66,
+            "value": "at 8:30-10:00 am",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "I would worry about the lack of sleep at times",
@@ -1180,7 +2404,14 @@
       {
         "text": "I was in bed at 9:30pm every night, then would read a bit with lights out by 10pm",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 13,
+            "end": 22,
+            "value": "at 9:30pm",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "I would fall asleep within 10 minutes",
@@ -1190,7 +2421,14 @@
       {
         "text": "there were most nights where i've done 1-3 hours of sleep or none at all",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 39,
+            "end": 48,
+            "value": "1-3 hours",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I have had a major problem with sleep lately",
@@ -1198,9 +2436,16 @@
         "entities": []
       },
       {
-        "text": "I was actually awake 36hrs sleeping 12",
+        "text": "I was actually awake 36hrs sleeping 12hrs",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 36,
+            "end": 41,
+            "value": "12hrs",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I'm at the point where I don't even want to lie in my bed anymore",
@@ -1235,7 +2480,14 @@
       {
         "text": "i haven't been able to get by with less than 15 hours sleep",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 35,
+            "end": 53,
+            "value": "less than 15 hours",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I used to do melatonin but it didnt help me stay asleep",
@@ -1255,7 +2507,14 @@
       {
         "text": "I feel these consolidated blocks of my sleep, 6-7 hours a night",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 46,
+            "end": 55,
+            "value": "6-7 hours",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "my sleep has always been different",
@@ -1285,7 +2544,14 @@
       {
         "text": "I was only able to sleep about 6-7 hours on following nights",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 31,
+            "end": 40,
+            "value": "6-7 hours",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I’ve suffered from the odd sleep paralysis",
@@ -1307,7 +2573,11 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I just cant go to sleep", "intent": "sleep", "entities": []},
+      {
+        "text": "I just cant go to sleep",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "I only stay asleep for 2 hours",
         "intent": "sleep",
@@ -1328,13 +2598,21 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I wake up panicking", "intent": "sleep", "entities": []},
+      {
+        "text": "I wake up panicking",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "if I wake up and then just close my eyes",
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I work nights", "intent": "sleep", "entities": []},
+      {
+        "text": "I work nights",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "I get lots and lots of dreams",
         "intent": "sleep",
@@ -1390,7 +2668,11 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I don’t wake up too early", "intent": "sleep", "entities": []},
+      {
+        "text": "I don’t wake up too early",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "sometimes my sleep would be sporadic",
         "intent": "sleep",
@@ -1409,7 +2691,14 @@
       {
         "text": "My 6-7 hours aren't enough for me to feel good",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 3,
+            "end": 12,
+            "value": "6-7 hours",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I would wake about 4 hours after falling asleep",
@@ -1439,7 +2728,14 @@
       {
         "text": "So i go to work or school with at most 2 hrs of sleep",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 39,
+            "end": 44,
+            "value": "2 hrs",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "The first two nights I simply could not go back to sleep at all",
@@ -1471,7 +2767,11 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I’ll shut my eyes", "intent": "sleep", "entities": []},
+      {
+        "text": "I’ll shut my eyes",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "This week I am falling asleep rather easily",
         "intent": "sleep",
@@ -1534,8 +2834,15 @@
       },
       {
         "text": "melatonin doesn't do much for me",
-        "intent": "sleep",
-        "entities": []
+        "intent": "treatment",
+        "entities": [
+          {
+            "start": 0,
+            "end": 9,
+            "value": "melatonin",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "I wake me up and have difficulty going  back to sleep",
@@ -1569,8 +2876,15 @@
       },
       {
         "text": "I have been dealing with horrible idiopathic hypersomnia for 30+ years",
-        "intent": "sleep",
-        "entities": []
+        "intent": "pathology",
+        "entities": [
+          {
+            "start": 45,
+            "end": 56,
+            "value": "hypersomnia",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
         "text": "So this routine is really not the best thing in the world for me",
@@ -1582,12 +2896,27 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I'm a very light sleeper", "intent": "sleep", "entities": []},
-      {"text": "I'm still waking up early", "intent": "sleep", "entities": []},
+      {
+        "text": "I'm a very light sleeper",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "I'm still waking up early",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "Currently, in the morning, most of the times, I wake up at some 5 AM or 6 AM",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 64,
+            "end": 68,
+            "value": "5 AM",
+            "entity": "time"
+          }
+        ]
       },
       {
         "text": "I blame this constantly insufficient sleep of mine",
@@ -1642,7 +2971,14 @@
       {
         "text": "I slept yesterday night for around 6:30 hours",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 35,
+            "end": 45,
+            "value": "6:30 hours",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I have to take 2 naps a day and not drive anywhere",
@@ -1674,7 +3010,11 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "my eyes sometimes paining", "intent": "sleep", "entities": []},
+      {
+        "text": "my eyes sometimes paining",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "I never got back to normal sleeping for the remaining 40-odd years",
         "intent": "sleep",
@@ -1710,7 +3050,11 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I keep a sleep journal", "intent": "sleep", "entities": []},
+      {
+        "text": "I keep a sleep journal",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "As for my sleeping habits, I could never sleep at night",
         "intent": "sleep",
@@ -1733,8 +3077,15 @@
       },
       {
         "text": "I was recently diagnosed with Idiopathic Hypersomnia",
-        "intent": "sleep",
-        "entities": []
+        "intent": "pathology",
+        "entities": [
+          {
+            "start": 30,
+            "end": 52,
+            "value": "Idiopathic Hypersomnia",
+            "entity": "symtoms"
+          }
+        ]
       },
       {
         "text": "I was awake for two days in a row",
@@ -1808,15 +3159,26 @@
       },
       {
         "text": "As for a z-pill, I was prescribed them for severe insomnia",
-        "intent": "sleep",
-        "entities": []
+        "intent": "treatment",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "z-pill",
+            "entity": "drug"
+          }
+        ]
       },
       {
         "text": "I have got sleep deprivation",
         "intent": "sleep",
         "entities": []
       },
-      {"text": "My own snore wakes me up", "intent": "sleep", "entities": []},
+      {
+        "text": "My own snore wakes me up",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "I have exercise-induced insomnia",
         "intent": "sleep",
@@ -1830,7 +3192,14 @@
       {
         "text": "For about 6 or 7 years now, I have only slept 2 and at the most 3 hours before waking up",
         "intent": "sleep",
-        "entities": []
+        "entities": [
+          {
+            "start": 46,
+            "end": 71,
+            "value": "2 and at the most 3 hours",
+            "entity": "duration"
+          }
+        ]
       },
       {
         "text": "I am good after 2 days/nights without sleep",
@@ -1842,7 +3211,11 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "it felt like i slept worse", "intent": "sleep", "entities": []},
+      {
+        "text": "it felt like i slept worse",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "mostly, i sleep around 20-24",
         "intent": "sleep",
@@ -1858,7 +3231,11 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "my sleep certainly is light", "intent": "sleep", "entities": []}
+      {
+        "text": "my sleep certainly is light",
+        "intent": "sleep",
+        "entities": []
+      }
     ]
   }
 }

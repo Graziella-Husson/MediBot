@@ -459,7 +459,7 @@ class Treatment(FormActionCalculusAndCore):
         The entities linked to this intent are:
             - medicinal (boolean)
             - treatment_being_taken
-            - drug
+            - treatment_drug
             - dosing
             - treatment_time
             - treatment_prescripted(boolean)
@@ -476,7 +476,7 @@ class Treatment(FormActionCalculusAndCore):
                         "treatment_time",
                         "treatment_duration",
                         ["treatment_being_taken", "no_drug"],
-                        ["drug", "no_drug"],
+                        ["treatment_drug", "no_drug"],
                         ["dosing", "no_drug"],
                         ["treatment_overdosage", "no_drug"]]
         self.booleans = ["medicinal",

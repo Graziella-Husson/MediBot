@@ -1,0 +1,3241 @@
+﻿{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [],
+    "common_examples": [
+      {
+        "text": "Je bois au moins une bouteille de vin par jour dans la semaine.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 38,
+            "start": 34,
+            "entity": "drug",
+            "value": "wine"
+          },
+          {
+            "end": 30,
+            "start": 24,
+            "entity": "dosing",
+            "value": "bottle"
+          },
+          {
+            "end": 44,
+            "start": 39,
+            "entity": "period",
+            "value": "a day"
+          }
+        ]
+      },
+      {
+        "text": "Je bois six onces de vodka en moyenne par jour.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 18,
+            "start": 8,
+            "entity": "dosing",
+            "value": "six ounces"
+          },
+          {
+            "end": 27,
+            "start": 22,
+            "entity": "drug",
+            "value": "vodka"
+          },
+          {
+            "end": 43,
+            "start": 36,
+            "entity": "period",
+            "value": "per day"
+          }
+        ]
+      },
+      {
+        "text": "Je peux y aller pendant des mois et au moins un an sans boire.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 19,
+            "start": 9,
+            "entity": "duration",
+            "value": "for months"
+          }
+        ]
+      },
+      {
+        "text": "Je suis en phase terminale de la dépendance à l'alcool.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "J'achète un paquet de quatre tous les soirs après le travail.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 20,
+            "start": 11,
+            "entity": "dosing",
+            "value": "four pack"
+          },
+          {
+            "end": 32,
+            "start": 21,
+            "entity": "period",
+            "value": "every night"
+          }
+        ]
+      },
+      {
+        "text": "J'essaie d'arrêter de boire.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "J'ai 25 ans et je me bats avec l'alcool depuis 5 ans.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 73,
+            "start": 53,
+            "entity": "duration",
+            "value": "for the past 5 years"
+          }
+        ]
+      },
+      {
+        "text": "Je ne bois pas souvent, mais quand je bois, je ne connais pas mes limites.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Les week-ends, tout passe par la fenêtre, je bois trop.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "J'ai maintenant 2 mois d'abstinence à la maison.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "mon incapacité apparente à boire \"raisonnablement\".",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "J'ai finalement fait un séjour de 28 jours en désintoxication.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Je suis de plus en plus préoccupé par la quantité d'alcool que je bois régulièrement.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 85,
+            "start": 67,
+            "entity": "period",
+            "value": "on a regular basis"
+          }
+        ]
+      },
+      {
+        "text": "J'ai besoin de me lever et de boire le matin.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 41,
+            "start": 27,
+            "entity": "period",
+            "value": "in the morning"
+          }
+        ]
+      },
+      {
+        "text": "J'ai commencé à boire de l'alcool ici récemment.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Ma consommation d'alcool est un problème depuis des années.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 39,
+            "start": 30,
+            "entity": "duration",
+            "value": "for years"
+          }
+        ]
+      },
+      {
+        "text": "Je suis alcoolique et je veux arrêter de boire.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Je connais bien le cycle de la boisson.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Je pense honnêtement que je bois pour échapper à mes démons.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Je m'inquiète de ma consommation d'alcool depuis un moment.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "pour m'aider à réduire/arrêter ma forte consommation d'alcool",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Quand je buvais de la vodka, je suis arrivé 1er, 2e, 3e, 3e.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 25,
+            "start": 20,
+            "entity": "drug",
+            "value": "vodka"
+          }
+        ]
+      },
+      {
+        "text": "Quand je dis que boire c'est soit quatre canettes ou une demi-bouteille de vin chaque semaine en soirée.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 41,
+            "start": 32,
+            "entity": "dosing",
+            "value": "four cans"
+          },
+          {
+            "end": 84,
+            "start": 67,
+            "entity": "period",
+            "value": "each week evening"
+          },
+          {
+            "end": 67,
+            "start": 62,
+            "entity": "drug",
+            "value": "wine "
+          }
+        ]
+      },
+      {
+        "text": "Je bois six onces de vodka en moyenne par jour.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 18,
+            "start": 8,
+            "entity": "dosing",
+            "value": "six ounces"
+          },
+          {
+            "end": 27,
+            "start": 22,
+            "entity": "drug",
+            "value": "vodka"
+          },
+          {
+            "end": 44,
+            "start": 37,
+            "entity": "period",
+            "value": "per day"
+          }
+        ]
+      },
+      {
+        "text": "J'ai un problème avec l'alcool depuis l'âge de 12 ans.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "J'ai dû à l'alcool que j'avais l'habitude de boire.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "J'essaie la méthode Sinclair.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "J'ai abusé de l'alcool depuis plus de dix ans.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 49,
+            "start": 27,
+            "entity": "duration",
+            "value": "for over ten years now"
+          }
+        ]
+      },
+      {
+        "text": "J'ai un \"vrai\" problème de consommation d'alcool",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "J'ai besoin d'aide en matière de dépendance à l'alcoolisme.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Une fois, j'ai bu 1/3 d'une bouteille de 1 litre de whisky en 30 minutes.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 35,
+            "start": 26,
+            "entity": "dosing",
+            "value": "1L bottle"
+          },
+          {
+            "end": 46,
+            "start": 39,
+            "entity": "drug",
+            "value": "whiskey"
+          }
+        ]
+      },
+      {
+        "text": "Ça fait 25 ans de beuverie presque tous les jours.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 47,
+            "start": 31,
+            "entity": "period",
+            "value": "almost every day"
+          }
+        ]
+      },
+      {
+        "text": "Je surveille ce que je mange tout au long de la journée afin d'avoir plus de vin et moins de calories avec ma nourriture.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Je prendrai mon premier verre de vin tout au long de la journée.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 26,
+            "start": 21,
+            "entity": "dosing",
+            "value": "glass"
+          },
+          {
+            "end": 34,
+            "start": 30,
+            "entity": "drug",
+            "value": "wine"
+          }
+        ]
+      },
+      {
+        "text": "Au cours des 10 dernières années, j'ai eu de plus en plus recours à l'alcool.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 20,
+            "start": 0,
+            "entity": "duration",
+            "value": "Over the last 10 yrs"
+          }
+        ]
+      },
+      {
+        "text": "Si je ne bois pas pendant un jour ou deux, je me sens bien dans ma peau.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Je peux prendre ou laisser boire, mais quand je bois, je suis tellement soûl.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Enfin, j'ai plus ou moins le contrôle de ma consommation d'alcool.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "À ce moment-là, je prenais environ 16 à 20 unités de whisky par soir, tous les soirs pendant environ 4 ans.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 41,
+            "start": 30,
+            "entity": "dosing",
+            "value": "16-20 units"
+          },
+          {
+            "end": 52,
+            "start": 45,
+            "entity": "drug",
+            "value": "whiskey"
+          },
+          {
+            "end": 78,
+            "start": 65,
+            "entity": "period",
+            "value": "every evening"
+          },
+          {
+            "end": 97,
+            "start": 79,
+            "entity": "duration",
+            "value": "for around 4 years"
+          }
+        ]
+      },
+      {
+        "text": "Je bois entre 1 et 2 bouteilles de vin blanc par nuit.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 43,
+            "start": 28,
+            "entity": "dosing",
+            "value": "1 and 2 bottles"
+          },
+          {
+            "end": 57,
+            "start": 47,
+            "entity": "drug",
+            "value": "white wine"
+          },
+          {
+            "end": 65,
+            "start": 58,
+            "entity": "period",
+            "value": "a night"
+          }
+        ]
+      },
+      {
+        "text": "J'avais commencé à boire un peu.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Je suis un ivrogne.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "J'ai 33 ans maintenant et je dirais que je suis un alcoolique à part entière depuis environ neuf ans.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 85,
+            "start": 65,
+            "entity": "duration",
+            "value": "for about nine years"
+          }
+        ]
+      },
+      {
+        "text": "J'ai beaucoup bu dernièrement.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "J'ai commencé à boire vers l'âge de 15 ans.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Naltrexone a tué mes pulsions et ma capacité à boire du vin.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Je n'ai rien touché depuis onze semaines.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 42,
+            "start": 27,
+            "entity": "duration",
+            "value": "in eleven weeks"
+          }
+        ]
+      },
+      {
+        "text": "ce matin, il me restait une demi-bouteille.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 30,
+            "start": 19,
+            "entity": "dosing",
+            "value": "half bottle"
+          }
+        ]
+      },
+      {
+        "text": "J'ai eu deux tentatives pour réduire ma consommation d'alcool.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "mes pensées sont souvent sur la consommation d'alcool",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "une réduction lente mais progressive de l'alcool",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Je sais que ma consommation d'alcool est mauvaise depuis un certain temps, mais je n'arrive pas à m'arrêter.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Je buvais un cinquième de vodka par jour et parfois plus.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 22,
+            "start": 15,
+            "entity": "dosing",
+            "value": "a fifth"
+          },
+          {
+            "end": 31,
+            "start": 26,
+            "entity": "drug",
+            "value": "vodka"
+          },
+          {
+            "end": 37,
+            "start": 32,
+            "entity": "period",
+            "value": "a day"
+          }
+        ]
+      },
+      {
+        "text": "J'ai bu 3 soirs par semaine.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 26,
+            "start": 18,
+            "entity": "dosing",
+            "value": "3 nights"
+          },
+          {
+            "end": 33,
+            "start": 27,
+            "entity": "period",
+            "value": "a week"
+          }
+        ]
+      },
+      {
+        "text": "J'ai réussi à ne pas prendre un verre jusqu'à 17 heures au lieu de 1 heure comme d'habitude.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 45,
+            "start": 35,
+            "entity": "time",
+            "value": "untill 5pm"
+          }
+        ]
+      },
+      {
+        "text": "l'alcool ne fait que détendre l'atmosphère.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "J'ai un amour de l'alcool",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "La dernière fois que j'ai bu de l'alcool, c'était mardi soir.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 45,
+            "start": 32,
+            "entity": "time",
+            "value": "Tuesday night"
+          }
+        ]
+      },
+      {
+        "text": "Je sors de désintoxication pour la cinquième fois.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Je suis un vrai buveur",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Je commence habituellement à boire à 15h tous les jours et à 23h la vodka est partie.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 31,
+            "start": 28,
+            "entity": "time",
+            "value": "3pm"
+          },
+          {
+            "end": 41,
+            "start": 32,
+            "entity": "period",
+            "value": "every day"
+          }
+        ]
+      },
+      {
+        "text": "Je bois du vin blanc",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 18,
+            "start": 8,
+            "entity": "drug",
+            "value": "white wine"
+          }
+        ]
+      },
+      {
+        "text": "Ce temps est mauvais 30 jours consécutifs de boire 1,5 litres de vin par jour.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 56,
+            "start": 46,
+            "entity": "dosing",
+            "value": "1.5 liters"
+          },
+          {
+            "end": 64,
+            "start": 60,
+            "entity": "drug",
+            "value": "wine"
+          },
+          {
+            "end": 70,
+            "start": 65,
+            "entity": "period",
+            "value": "a day"
+          }
+        ]
+      },
+      {
+        "text": "Je vais prendre un verre.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Je bois aussi facilement 1 pinte à la maison si je ne suis pas d'humeur.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 29,
+            "start": 23,
+            "entity": "dosing",
+            "value": "1 pint"
+          }
+        ]
+      },
+      {
+        "text": "J'ai la quarantaine et j'ai été un buveur toute ma vie.",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "Je suis un alcoolique en état de fonctionnement",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "J'ai moins bu la nuit dernière et la même chose aujourd'hui.",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "end": 23,
+            "start": 13,
+            "entity": "time",
+            "value": "last night"
+          },
+          {
+            "end": 32,
+            "start": 28,
+            "entity": "dosing",
+            "value": "same"
+          }
+        ]
+      },
+      {
+        "text": "J'avais l'habitude de manger beaucoup et de peser 120.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'abuse massivement des laxatifs à raison de 30 à 40 par jour.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "mes habitudes alimentaires ne sont pas normales",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Je me considère comme un obèse morbide.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'ai commencé à avoir du mal à garder ma nourriture au sol.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Je me sens grosse et ballonnée.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'ai passé 6 jours à manger de la malbouffe.",
+        "intent": "eating_disorders",
+        "entities": [
+          {
+            "end": 22,
+            "start": 12,
+            "entity": "duration",
+            "value": "for 6 days"
+          }
+        ]
+      },
+      {
+        "text": "mon alimentation est quelqu'un que j'ai accepté va être un problème toute ma vie.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Si je mange, je me sens honteuse et grosse et je me blâme.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "chaque fois que je mange, je me sens anxieux et nerveux.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "veulent juste mettre fin à ce cycle sans fin d'abus de bing et de laxatifs.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'avais l'habitude de manger beaucoup et je veux dire beaucoup.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'étais en surpoids quand j'étais adolescent.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'ai peut-être des problèmes avec la nourriture.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'ai eu récemment mon poids le plus bas.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Quand j'étais en surpoids, je ne mangeais pas plus qu'aucun de mes amis à l'époque.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'ai du mal à manger pour prendre du poids",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'ai vraiment peur de manger.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Je souffre de boulimie depuis quelques années.",
+        "intent": "eating_disorders",
+        "entities": [
+          {
+            "end": 44,
+            "start": 30,
+            "entity": "duration",
+            "value": "for a few year"
+          }
+        ]
+      },
+      {
+        "text": "J'ai commencé à me rendre malade après les repas.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Il y a environ 2 à 3 semaines, je n'ai probablement mangé qu'un seul repas par jour.",
+        "intent": "eating_disorders",
+        "entities": [
+          {
+            "end": 25,
+            "start": 9,
+            "entity": "time",
+            "value": "2 to 3 weeks ago"
+          }
+        ]
+      },
+      {
+        "text": "Je restreins toute la journée.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Je mange comme une réponse émotionnelle à tout et n'importe quoi.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'ai reçu un diagnostic d'anorexie et j'ai atteint mon poids le plus bas de tous les temps.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'ai l'impression d'avoir un trouble de l'alimentation.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'étais anorexique et boulimique pendant mes 20 à 40 ans.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'ai des vomissements incontrôlables.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Quand je mange, j'ai des nausées.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'en ai marre de faire de l'embonpoint, mais je ne peux plus m'en tenir aux régimes.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Je me pèse 2 à 3 fois par jour, je suis déprimé et je ne mangerai pas si je prends une livre.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Je deviens de plus en plus gros.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Il y a quelque temps, j'ai eu quelques mois de troubles de l'alimentation.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'ai souffert d'anorexie à l'âge de 13 ans.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Le problème, c'est qu'à chaque fois que je mange, je vomis à cause de mes pensées.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'ai faim, mais à chaque fois que je mange, je prends une bouchée et je me sens absolument malade.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'ai toujours lutté avec mon poids, surtout quand j'étais une jeune adolescente.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Je suis constamment en train de manger à l'excès",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'ai peur de prendre du poids",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'ai remarqué que depuis maintenant plus de 8 mois, je souffre d'une sorte de mal des aliments.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'ai commencé à me défoncer l'année dernière, vers septembre, quand j'ai commencé l'université.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Je souffre de boulimie depuis un certain temps, j'ai vraiment du mal à la minute avec ma santé mentale.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "J'ai souffert d'anorexie depuis l'âge de huit ans.",
+        "intent": "pathology",
+        "entities": [
+          {
+            "end": 27,
+            "start": 19,
+            "entity": "symtoms",
+            "value": "anorexia"
+          }
+        ]
+      },
+      {
+        "text": "Je ne mange pas beaucoup parce que quand j'ai commencé à boire, j'avais 135 livres maintenant je pèse presque 300 livres.",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Je pense que j'ai peut-être l'anorexie.",
+        "intent": "pathology",
+        "entities": [
+          {
+            "end": 27,
+            "start": 19,
+            "entity": "symtoms",
+            "value": "Anorexia"
+          }
+        ]
+      },
+      {
+        "text": "Je prends 60 mg de méthamphétamine.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 13,
+            "start": 8,
+            "entity": "dosing",
+            "value": "60 mg"
+          },
+          {
+            "end": 21,
+            "start": 17,
+            "entity": "drug",
+            "value": "meth"
+          }
+        ]
+      },
+      {
+        "text": "Le nouveau docteur m'a donné un planning pour me sevrer du tramadol.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 61,
+            "start": 53,
+            "entity": "drug",
+            "value": "tramadol"
+          }
+        ]
+      },
+      {
+        "text": "J'ai pris de 2 à 6 norco par jour, mais 3 était ma moyenne.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 33,
+            "start": 21,
+            "entity": "dosing",
+            "value": "2 to 6 norco"
+          },
+          {
+            "end": 39,
+            "start": 34,
+            "entity": "period",
+            "value": "a day"
+          }
+        ]
+      },
+      {
+        "text": "Je suis allé en désintoxication pendant 21 jours.",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "J'ai 19 ans et je sniffe de la cocaïne depuis 6 mois.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 40,
+            "start": 33,
+            "entity": "drug",
+            "value": "cocaine"
+          },
+          {
+            "end": 62,
+            "start": 41,
+            "entity": "duration",
+            "value": "for the last 6 months"
+          }
+        ]
+      },
+      {
+        "text": "J'avais sevré de 50 mg de méthadone à 40 mg en deux mois.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 28,
+            "start": 23,
+            "entity": "dosing",
+            "value": "50 mg"
+          },
+          {
+            "end": 41,
+            "start": 32,
+            "entity": "drug",
+            "value": "methadone"
+          },
+          {
+            "end": 63,
+            "start": 50,
+            "entity": "duration",
+            "value": "in two months"
+          }
+        ]
+      },
+      {
+        "text": "Je suis en train de passer de l'utilisation à long terme de Suboxone.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 45,
+            "start": 37,
+            "entity": "drug",
+            "value": "Suboxone"
+          }
+        ]
+      },
+      {
+        "text": "Cela fait deux jours que je n'ai pas utilisé le tramadol 400 mg de tramadol à des fins récréatives.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 66,
+            "start": 58,
+            "entity": "drug",
+            "value": "tramadol"
+          },
+          {
+            "end": 72,
+            "start": 67,
+            "entity": "dosing",
+            "value": "400mg"
+          },
+          {
+            "end": 18,
+            "start": 10,
+            "entity": "duration",
+            "value": "two days"
+          }
+        ]
+      },
+      {
+        "text": "Je prends 50 mg de Valium par jour depuis près de 6 mois.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 25,
+            "start": 19,
+            "entity": "dosing",
+            "value": "50 mgs"
+          },
+          {
+            "end": 35,
+            "start": 29,
+            "entity": "drug",
+            "value": "Valium"
+          },
+          {
+            "end": 41,
+            "start": 36,
+            "entity": "period",
+            "value": "daily"
+          },
+          {
+            "end": 70,
+            "start": 42,
+            "entity": "duration",
+            "value": "for nearly the last 6 months"
+          }
+        ]
+      },
+      {
+        "text": "J'ai un âge maternel avancé (40 ans) et je prends 16 mg de films Suboxone pour la dépendance aux opiacés.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 49,
+            "start": 42,
+            "entity": "dosing",
+            "value": "16 mgms"
+          },
+          {
+            "end": 61,
+            "start": 53,
+            "entity": "drug",
+            "value": "Suboxone"
+          }
+        ]
+      },
+      {
+        "text": "Je sniffe depuis presque deux semaines maintenant.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 23,
+            "start": 19,
+            "entity": "drug",
+            "value": "come"
+          },
+          {
+            "end": 46,
+            "start": 24,
+            "entity": "duration",
+            "value": "for almost 2 weeks now"
+          }
+        ]
+      },
+      {
+        "text": "J'ai pris de la méthadone à raison de 150 mg par jour et environ 15 mg de xanax.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 22,
+            "start": 13,
+            "entity": "drug",
+            "value": "methadone"
+          },
+          {
+            "end": 32,
+            "start": 26,
+            "entity": "dosing",
+            "value": "150 mg"
+          },
+          {
+            "end": 38,
+            "start": 33,
+            "entity": "period",
+            "value": "a day"
+          }
+        ]
+      },
+      {
+        "text": "J'utilise environ 3 grammes par mois en moyenne.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 19,
+            "start": 12,
+            "entity": "dosing",
+            "value": "3 grams"
+          },
+          {
+            "end": 29,
+            "start": 20,
+            "entity": "period",
+            "value": "per month"
+          }
+        ]
+      },
+      {
+        "text": "Maintenant, je suis totalement propre.",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "J'ai reniflé une grande quantité de cocaïne, il y a 3 semaines, pour la première (et la dernière) fois de ma vie.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 46,
+            "start": 35,
+            "entity": "time",
+            "value": "3 weeks ago"
+          }
+        ]
+      },
+      {
+        "text": "J'essaie d'arrêter après des années de sniffage.",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "Hier, j'ai stupidement changé la quantité de mon ordonnance pour Darvon de 5 pilules à 15 pilules.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 66,
+            "start": 60,
+            "entity": "drug",
+            "value": "Darvon"
+          },
+          {
+            "end": 79,
+            "start": 72,
+            "entity": "dosing",
+            "value": "5 pills"
+          }
+        ]
+      },
+      {
+        "text": "J'ai commencé à consommer de la coke au début de la vingtaine à l'occasion d'occasions spéciales ou de fêtes.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 21,
+            "start": 17,
+            "entity": "drug",
+            "value": "coke"
+          }
+        ]
+      },
+      {
+        "text": "J'ai fait des allers-retours avec Suboxone.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 40,
+            "start": 32,
+            "entity": "drug",
+            "value": "suboxone"
+          }
+        ]
+      },
+      {
+        "text": "J'ai pris une ligne de cocaïne hier soir, environ 0,2 grammes.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 37,
+            "start": 27,
+            "entity": "time",
+            "value": "last night"
+          },
+          {
+            "end": 53,
+            "start": 44,
+            "entity": "dosing",
+            "value": "0.2 grams"
+          }
+        ]
+      },
+      {
+        "text": "J'ai essayé mdma/X pour la première fois il y a quelques mois.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 22,
+            "start": 16,
+            "entity": "drug",
+            "value": "mdma/X"
+          },
+          {
+            "end": 58,
+            "start": 42,
+            "entity": "time",
+            "value": "a few months ago"
+          }
+        ]
+      },
+      {
+        "text": "Je suis passé des pilules à l'héroïne.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 27,
+            "start": 21,
+            "entity": "drug",
+            "value": "heroin"
+          }
+        ]
+      },
+      {
+        "text": "Je viens de commencer une désintoxication de 21 jours de ma clinique de méthadone.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 52,
+            "start": 43,
+            "entity": "drug",
+            "value": "methadone"
+          }
+        ]
+      },
+      {
+        "text": "Mon 1 an (jusqu'à présent), la dépendance à Sub, après Detox, a commencé avec 4 mg.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 37,
+            "start": 34,
+            "entity": "drug",
+            "value": "Sub"
+          },
+          {
+            "end": 69,
+            "start": 65,
+            "entity": "dosing",
+            "value": "4 mg"
+          }
+        ]
+      },
+      {
+        "text": "J'ai fait la plus grosse erreur de ma vie - j'ai essayé de sniffer de la cocaïne à la fête du Nouvel An.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 61,
+            "start": 54,
+            "entity": "drug",
+            "value": "cocaine"
+          },
+          {
+            "end": 80,
+            "start": 65,
+            "entity": "time",
+            "value": "New years party"
+          }
+        ]
+      },
+      {
+        "text": "J'ai été off suboxone pendant 103 jours, je n'arrive pas à croire que j'y ai été pendant 9 ans.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 24,
+            "start": 16,
+            "entity": "drug",
+            "value": "suboxone"
+          },
+          {
+            "end": 37,
+            "start": 25,
+            "entity": "duration",
+            "value": "for 103 days"
+          }
+        ]
+      },
+      {
+        "text": "Je prends de la coke par hasard depuis un certain temps, mais c'est devenu quotidien.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 67,
+            "start": 62,
+            "entity": "period",
+            "value": "daily"
+          },
+          {
+            "end": 32,
+            "start": 28,
+            "entity": "drug",
+            "value": "coke"
+          }
+        ]
+      },
+      {
+        "text": "J'ai 50 ans, de sexe masculin et je prends de la méthadone depuis 10 ans.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 49,
+            "start": 40,
+            "entity": "drug",
+            "value": "methadone"
+          },
+          {
+            "end": 71,
+            "start": 50,
+            "entity": "duration",
+            "value": "for the last 10 years"
+          }
+        ]
+      },
+      {
+        "text": "J'ai 30 ans et je consomme de la drogue depuis environ 10 ans.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 52,
+            "start": 34,
+            "entity": "duration",
+            "value": "for about 10 years"
+          },
+          {
+            "end": 33,
+            "start": 28,
+            "entity": "drug",
+            "value": "drugs"
+          }
+        ]
+      },
+      {
+        "text": "Je prends 10 mg d'hydrocodone depuis 2 ans.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 22,
+            "start": 17,
+            "entity": "dosing",
+            "value": "10 mg"
+          },
+          {
+            "end": 34,
+            "start": 23,
+            "entity": "drug",
+            "value": "hydrocodone"
+          },
+          {
+            "end": 50,
+            "start": 35,
+            "entity": "duration",
+            "value": "for 2 years now"
+          }
+        ]
+      },
+      {
+        "text": "J'ai abusé de médicaments d'ordonnance depuis l'école secondaire.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 32,
+            "start": 14,
+            "entity": "drug",
+            "value": "prescription drugs"
+          }
+        ]
+      },
+      {
+        "text": "J'ai pris 30 mg, parfois 60 mg de percocet par jour pendant les 4 dernières semaines.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 25,
+            "start": 19,
+            "entity": "dosing",
+            "value": "30 mgs"
+          },
+          {
+            "end": 54,
+            "start": 46,
+            "entity": "drug",
+            "value": "percocet"
+          },
+          {
+            "end": 60,
+            "start": 55,
+            "entity": "period",
+            "value": "a day"
+          },
+          {
+            "end": 81,
+            "start": 61,
+            "entity": "duration",
+            "value": "for the past 4 weeks"
+          }
+        ]
+      },
+      {
+        "text": "J'étais accro au xanax il y a environ un an.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 23,
+            "start": 18,
+            "entity": "drug",
+            "value": "xanax"
+          },
+          {
+            "end": 40,
+            "start": 30,
+            "entity": "time",
+            "value": "a year ago"
+          }
+        ]
+      },
+      {
+        "text": "Je consomme des opiacés depuis environ 4 ans.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 29,
+            "start": 22,
+            "entity": "drug",
+            "value": "opiates"
+          },
+          {
+            "end": 53,
+            "start": 30,
+            "entity": "duration",
+            "value": "for approx. 4 years now"
+          }
+        ]
+      },
+      {
+        "text": "J'avais bu une dose d'énergie de 5 heures par jour.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 37,
+            "start": 20,
+            "entity": "drug",
+            "value": "one 5-Hour Energy"
+          },
+          {
+            "end": 52,
+            "start": 43,
+            "entity": "period",
+            "value": "every day"
+          }
+        ]
+      },
+      {
+        "text": "mon mari et moi avons sniffé des pilules.",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "Je suis propre 35 jours de Suboxone.",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "Je prends de la coricidine depuis 9 ans.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 26,
+            "start": 17,
+            "entity": "drug",
+            "value": "coricidin"
+          },
+          {
+            "end": 38,
+            "start": 27,
+            "entity": "duration",
+            "value": "for 9 years"
+          }
+        ]
+      },
+      {
+        "text": "J'ai pris de la méthamphétamine",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 14,
+            "start": 10,
+            "entity": "drug",
+            "value": "meth"
+          }
+        ]
+      },
+      {
+        "text": "J'ai essayé la cocaïne plusieurs fois, mais seulement le mois dernier.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 20,
+            "start": 13,
+            "entity": "drug",
+            "value": "cocaine"
+          },
+          {
+            "end": 31,
+            "start": 21,
+            "entity": "time",
+            "value": "many times"
+          }
+        ]
+      },
+      {
+        "text": "Je me donne de la dopamine depuis plus d'un an et j'ai arrêté brusquement.",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "Je consomme de la cocaïne depuis l'âge de 17 ans.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 23,
+            "start": 16,
+            "entity": "drug",
+            "value": "cocaine"
+          }
+        ]
+      },
+      {
+        "text": "Au cours des 4 derniers jours, j'ai pris au total 20 pilules d'acétaminophène.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 19,
+            "start": 0,
+            "entity": "duration",
+            "value": "For the past 4 days"
+          },
+          {
+            "end": 61,
+            "start": 48,
+            "entity": "drug",
+            "value": "acetaminophen"
+          },
+          {
+            "end": 47,
+            "start": 45,
+            "entity": "dosing",
+            "value": "20"
+          }
+        ]
+      },
+      {
+        "text": "Je suis en train de descendre du tramadol.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 46,
+            "start": 38,
+            "entity": "drug",
+            "value": "tramadol"
+          }
+        ]
+      },
+      {
+        "text": "Je suis accro à la cocaïne depuis un an.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 31,
+            "start": 24,
+            "entity": "drug",
+            "value": "cocaine"
+          },
+          {
+            "end": 46,
+            "start": 32,
+            "entity": "duration",
+            "value": "since one year"
+          }
+        ]
+      },
+      {
+        "text": "Je prends entre 90 mg et 120 mg de sulfate de morphine par jour depuis 6 ans.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 31,
+            "start": 27,
+            "entity": "dosing",
+            "value": "90mg"
+          },
+          {
+            "end": 41,
+            "start": 36,
+            "entity": "dosing",
+            "value": "120mg"
+          },
+          {
+            "end": 61,
+            "start": 45,
+            "entity": "dosing",
+            "value": "morphine sulfate"
+          },
+          {
+            "end": 88,
+            "start": 68,
+            "entity": "duration",
+            "value": "for the last 6 years"
+          },
+          {
+            "end": 67,
+            "start": 62,
+            "entity": "period",
+            "value": "a day"
+          }
+        ]
+      },
+      {
+        "text": "La première fois que j'ai essayé la cocaïne, c'était il y a 3 ans.",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "end": 26,
+            "start": 19,
+            "entity": "drug",
+            "value": "cocaine"
+          },
+          {
+            "end": 42,
+            "start": 31,
+            "entity": "time",
+            "value": "3 years ago"
+          }
+        ]
+      },
+      {
+        "text": "J'ai arrêté la baignade il y a environ un mois.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 10,
+            "start": 7,
+            "entity": "drug",
+            "value": "dip"
+          },
+          {
+            "end": 28,
+            "start": 17,
+            "entity": "time",
+            "value": "a month ago"
+          }
+        ]
+      },
+      {
+        "text": "J'ai arrêté de fumer il y a un peu plus d'un mois.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 38,
+            "start": 25,
+            "entity": "time",
+            "value": "one month ago"
+          }
+        ]
+      },
+      {
+        "text": "J'étais un fumeur de 1 pk par jour.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 12,
+            "start": 8,
+            "entity": "dosing",
+            "value": "1 pk"
+          },
+          {
+            "end": 18,
+            "start": 13,
+            "entity": "period",
+            "value": "a day"
+          }
+        ]
+      },
+      {
+        "text": "Je fume environ 12 à 15 cigarettes par jour.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 24,
+            "start": 14,
+            "entity": "dosing",
+            "value": "12-15 cigs"
+          },
+          {
+            "end": 34,
+            "start": 26,
+            "entity": "period",
+            "value": "in a day"
+          }
+        ]
+      },
+      {
+        "text": "J'ai commencé à fumer il y a un an et je fumais presque cinq fois par semaine.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 34,
+            "start": 23,
+            "entity": "time",
+            "value": "a year back"
+          },
+          {
+            "end": 70,
+            "start": 60,
+            "entity": "dosing",
+            "value": "five times"
+          },
+          {
+            "end": 77,
+            "start": 71,
+            "entity": "period",
+            "value": "a week"
+          }
+        ]
+      },
+      {
+        "text": "J'avais l'habitude de fumer 23 cigarettes tous les jours, mais je suis sur la bonne voie pour réduire le nombre de cigarettes.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 38,
+            "start": 30,
+            "entity": "period",
+            "value": "everyday"
+          },
+          {
+            "end": 29,
+            "start": 16,
+            "entity": "dosing",
+            "value": "23 cigarettes"
+          }
+        ]
+      },
+      {
+        "text": "Ont utilisé le vuse pour arrêter de fumer des cigarettes.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Je fumais 2 paquets par jour, jusqu'à il y a 6 jours.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 21,
+            "start": 14,
+            "entity": "dosing",
+            "value": "2 packs"
+          },
+          {
+            "end": 27,
+            "start": 22,
+            "entity": "period",
+            "value": "a day"
+          }
+        ]
+      },
+      {
+        "text": "J'ai fumé pendant environ 2 ans, à raison d'environ 5 cigarettes par jour.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 44,
+            "start": 37,
+            "entity": "dosing",
+            "value": "5 ciggs"
+          },
+          {
+            "end": 50,
+            "start": 45,
+            "entity": "period",
+            "value": "a day"
+          }
+        ]
+      },
+      {
+        "text": "Si je passe plus de 6 à 8 heures sans cigarette, je commence à être nerveux.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "J'ai 39 ans et j'étais un fumeur léger la plupart du temps.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Je suis un homme de 33 ans qui vient d'arrêter de fumer après environ 15 ans à raison d'un paquet par jour max.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "J'ai commencé à fumer moins",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Je suis supposé être sans nicotine pendant 2 à 3 mois.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Je fume peut-être dix à vingt cigarettes par jour et je fume depuis environ trois ans maintenant.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Je ne fume qu'une cigarette par jour, pas plus que ça.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "J'ai mâché Nicorette pendant une dizaine d'années.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "J'ai eu des problèmes personnels de dépendance.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "La semaine dernière, je fume beaucoup plus que ce à quoi je suis habitué.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 9,
+            "start": 0,
+            "entity": "time",
+            "value": "Last week"
+          },
+          {
+            "end": 28,
+            "start": 18,
+            "entity": "dosing",
+            "value": "a lot more"
+          }
+        ]
+      },
+      {
+        "text": "J'ai été un gros fumeur à un moment donné pendant quelques années.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 49,
+            "start": 34,
+            "entity": "duration",
+            "value": "for a few years"
+          }
+        ]
+      },
+      {
+        "text": "J'ai fumé récemment après 10 ans d'utilisation d'un paquet par jour.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 49,
+            "start": 43,
+            "entity": "dosing",
+            "value": "1 Pack"
+          },
+          {
+            "end": 55,
+            "start": 50,
+            "entity": "period",
+            "value": "a day"
+          }
+        ]
+      },
+      {
+        "text": "J'ai 16 ans et je fume mais pas tout le temps.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 39,
+            "start": 27,
+            "entity": "period",
+            "value": "all the time"
+          }
+        ]
+      },
+      {
+        "text": "Je pense que ma consommation de tabac devient incontrôlable.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Je suis sur le patch depuis 4 jours.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 33,
+            "start": 23,
+            "entity": "duration",
+            "value": "for 4 days"
+          }
+        ]
+      },
+      {
+        "text": "Il n'y a pas si longtemps, j'ai commencé le patch pour m'aider à arrêter de fumer la cigarette.",
+        "intent": "treatment",
+        "entities": [
+          {
+            "end": 35,
+            "start": 26,
+            "entity": "drug",
+            "value": "the patch"
+          }
+        ]
+      },
+      {
+        "text": "J'ai arrêté de fumer depuis les dix derniers jours.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 42,
+            "start": 23,
+            "entity": "duration",
+            "value": "since last ten days"
+          }
+        ]
+      },
+      {
+        "text": "J'ai arrêté de fumer le 10 janvier 2016.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 34,
+            "start": 15,
+            "entity": "time",
+            "value": "on January 10, 2016"
+          }
+        ]
+      },
+      {
+        "text": "J'adore vraiment fumer.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Je n'ai pas fumé depuis 32 jours, j'étais sur les écussons.",
+        "intent": "treatment",
+        "entities": [
+          {
+            "end": 36,
+            "start": 25,
+            "entity": "duration",
+            "value": "for 32 days"
+          },
+          {
+            "end": 58,
+            "start": 47,
+            "entity": "drug",
+            "value": "the patches"
+          }
+        ]
+      },
+      {
+        "text": "Je mâche entre neuf et onze morceaux de 2 mg par jour.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "J'en suis à mon deuxième jour de sevrage tabagique.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Je ne peux pas arrêter de fumer, peu importe à quel point j'essaie.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "J'ai fumé ma première cigarette quand j'avais seulement 9 ans.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Je fumais presque un paquet par jour.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 27,
+            "start": 21,
+            "entity": "dosing",
+            "value": "a pack"
+          },
+          {
+            "end": 33,
+            "start": 28,
+            "entity": "period",
+            "value": "a day"
+          }
+        ]
+      },
+      {
+        "text": "L'été dernier, j'ai commencé à boire et à fumer beaucoup de cigarettes.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 11,
+            "start": 0,
+            "entity": "time",
+            "value": "Last summer"
+          },
+          {
+            "end": 60,
+            "start": 55,
+            "entity": "dosing",
+            "value": "a lot"
+          }
+        ]
+      },
+      {
+        "text": "J'ai une vingtaine d'années et j'ai du mal à arrêter de fumer depuis un an maintenant.",
+        "intent": "smoking",
+        "entities": [
+          {
+            "end": 76,
+            "start": 62,
+            "entity": "duration",
+            "value": "for a year now"
+          }
+        ]
+      },
+      {
+        "text": "Je suis tellement accro que je cherche des excuses pour être seul afin de pouvoir fumer.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "J'ai besoin d'apprendre à mon corps quand dormir.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je suis épuisé et je rentre chez moi et je dors n'importe où pendant 2 à 5 heures en général.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 59,
+            "start": 50,
+            "entity": "duration",
+            "value": "2-5 hours"
+          }
+        ]
+      },
+      {
+        "text": "J'avais l'habitude de dormir comme un rocher pendant 7-10 heures par nuit sans interruption.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 42,
+            "start": 32,
+            "entity": "duration",
+            "value": "7-10 hours"
+          }
+        ]
+      },
+      {
+        "text": "J'ai commencé à redouter d'aller au lit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "puis 5 heures plus tard, je me rendors 2 heures de plus.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 63,
+            "start": 50,
+            "entity": "duration",
+            "value": "2 or so hours"
+          }
+        ]
+      },
+      {
+        "text": "J'ai remarqué que je dormais beaucoup plus profondément les jours où je ne faisais pas d'exercice.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je commence souvent à rêver avant même de m'endormir complètement.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai une narcolepsie et on m'a diagnostiqué il y a environ 4 ans.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai eu des problèmes de sommeil toute ma vie.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "si je devais faire du jogging pendant 10 minutes, je souffrirais d'insomnie.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai développé l'anxiété du sommeil",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je me couche à 11 heures environ.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "C'est si frustrant de voir les autres aller au lit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Mais parfois, si le sommeil est mauvais, je me sens encore plus fatigué.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Si je n'arrive pas à dormir dans les 45 minutes, levez-vous et sortez du lit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai l'impression d'être bombardée de rêves aléatoires.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai aussi commencé à boire du thé à l'heure du sommeil la nuit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je m'allonge et je me sens très fatigué.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je ne peux pas dormir tôt la nuit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je suis resté allongé dans mon lit pendant 2 à 3 heures.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 37,
+            "start": 24,
+            "entity": "duration",
+            "value": "for 2-3 hours"
+          }
+        ]
+      },
+      {
+        "text": "Je ne peux m'endormir que lorsque mon corps et mon esprit sont épuisés.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "c'est de se réveiller toutes les heures, c'est le problème.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je lutte contre la somnolence diurne avec la caféine.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai des problèmes de sommeil depuis un an.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Après le sommeil, pendant 2 à 3 heures, je me sens mieux et je me sens de nouveau fatigué.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 26,
+            "start": 13,
+            "entity": "duration",
+            "value": "for 2-3 hours"
+          }
+        ]
+      },
+      {
+        "text": "J'ai une apnée du sommeil très légère.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je fais 10-15 minutes de méditation guidée avant le coucher.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "ma grande peur est de ne plus jamais dormir.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "je rentrais chez moi, et je ne faisais pas de devoirs le soir, parce que tout ce que je pouvais faire c'était dormir.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'aurais eu un sommeil pauvre et agité le reste de la nuit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai du mal à dormir depuis plus d'un an.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'étais constamment inquiet de ne pas dormir.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je suis si fatiguée, et j'en ai marre de tout ça maintenant.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Si je me réveille, je dois sortir du lit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je ne suis qu'un corps branché mis en pause en attendant la tombée de la nuit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je suis convaincu que mon manque total de sommeil ruinera tout.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "D'habitude, je me couche à 23 h 00-12 h 00 et me réveille à 8 h 30-10 h 00.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 37,
+            "start": 20,
+            "entity": "time",
+            "value": "at 11:00-12:00 pm"
+          },
+          {
+            "end": 66,
+            "start": 50,
+            "entity": "time",
+            "value": "at 8:30-10:00 am"
+          }
+        ]
+      },
+      {
+        "text": "Je m'inquiéterais du manque de sommeil à certains moments.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je n'ai fait qu'une heure et demie de sommeil ou pas de sommeil du tout.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je fais ces cauchemars depuis que j'ai 13 ans.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je suis un homme de 60 ans, en excellente santé, à l'exception des tremblements pendant le sommeil.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Chaque nuit, je n'arrive pas à m'endormir.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai aussi l'impression d'avoir le sommeil léger et le moindre bruit me réveillera.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Il y a des nuits où je me lève à 11 heures.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai commencé à me réveiller au milieu de la nuit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je ne m'endors pas tout de suite.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'étais au lit à 21 h 30 tous les soirs, puis je lisais un peu avec les lumières éteintes à 22 h.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 22,
+            "start": 13,
+            "entity": "time",
+            "value": "at 9:30pm"
+          }
+        ]
+      },
+      {
+        "text": "Je m'endormais en 10 minutes.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Il y a eu la plupart des nuits où j'ai fait 1-3 heures de sommeil ou pas du tout.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 48,
+            "start": 39,
+            "entity": "duration",
+            "value": "1-3 hours"
+          }
+        ]
+      },
+      {
+        "text": "J'ai eu un gros problème de sommeil dernièrement.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'étais en fait réveillé 36hrs dormant 12hrs.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 41,
+            "start": 36,
+            "entity": "duration",
+            "value": "12hrs"
+          }
+        ]
+      },
+      {
+        "text": "J'en suis au point où je ne veux même plus m'allonger dans mon lit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je me réveille environ toutes les 4 heures.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai une somnolence diurne excessive.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je n'ai pas trop de mal à m'endormir.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai l'impression d'être en plein sommeil toute la journée.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "à chaque fois que je lui donne une piqûre, dormir pendant la journée",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je n'ai pas réussi à m'en sortir avec moins de 15 heures de sommeil.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 53,
+            "start": 35,
+            "entity": "duration",
+            "value": "less than 15 hours"
+          }
+        ]
+      },
+      {
+        "text": "Je faisais de la mélatonine, mais ça ne m'aidait pas à rester endormie.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je n'ai jamais souffert indûment de mon manque de sommeil.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je rêvais d'être dérangé dans un sommeil léger.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je sens ces blocs consolidés de mon sommeil, 6-7 heures par nuit.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 55,
+            "start": 46,
+            "entity": "duration",
+            "value": "6-7 hours"
+          }
+        ]
+      },
+      {
+        "text": "mon sommeil a toujours été différent",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "il est préférable de ne pas prendre une deuxième dose si vous vous réveillez pendant la nuit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je vais m'endormir si je ne m'allonge pas sur mon lit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je dors les yeux bandés et avec des bouchons d'oreille, comme je le fais depuis des années.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je ne peux pas me réveiller facilement parce que quelque chose me tire vers l'arrière.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je n'ai pu dormir que 6-7 heures la nuit suivante.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 40,
+            "start": 31,
+            "entity": "duration",
+            "value": "6-7 hours"
+          }
+        ]
+      },
+      {
+        "text": "J'ai souffert d'une étrange paralysie du sommeil.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Quand je me réveille avec moins de sommeil, j'ai l'impression de ne pas avoir dormi du tout.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je me réveillais tous les jours de la semaine à 6 heures du matin.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "C'est frustrant de ne pas simplement dormir toute la nuit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je n'arrive pas à dormir.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je ne reste endormie que 2 heures.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Mon corps voulait se rendormir, mais à chaque fois que je tombais endormi, les tremblements me réveillaient.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je pense qu'un Z-drogue pourrait m'aider à dormir.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "enfant de 6 ans, il m'a déjà fallu plusieurs heures pour m'endormir.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je me réveille en paniquant.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "si je me réveille et que je ferme les yeux.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je travaille de nuit",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai beaucoup et beaucoup de rêves.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai l'intention de dormir jusqu'à 8 heures du matin, mais je me réveille automatiquement à 5-6 heures du matin.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "mon sommeil a été filmé en permanence au milieu de la vingtaine.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je ne sais pas si ce n'est qu'un autre symptôme d'insomnie, de paralysie du sommeil ou de secousse hypnognique.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je suis toujours éveillé jusqu'à tard dans la nuit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai traversé l'insomnie.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Ça a commencé avec une mauvaise nuit de sommeil il y a presque deux semaines.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai pris des somnifères pendant mes études collégiales pendant une courte période.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "il s'agit de mon incapacité à rattraper le sommeil perdu.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai eu de terribles habitudes de sommeil le mois dernier.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je n'ai jamais pris des somnifères.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je ne me réveille pas trop tôt.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Parfois, mon sommeil était sporadique.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Lorsque je recommence à m'endormir, je sens ces \"grondements\" (tremblements) autour de mon corps supérieur.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai commencé à me réveiller le matin avec des mains complètement engourdies.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Mes 6-7 heures ne sont pas suffisantes pour que je me sente bien.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 12,
+            "start": 3,
+            "entity": "duration",
+            "value": "6-7 hours"
+          }
+        ]
+      },
+      {
+        "text": "Je me réveillais environ 4 heures après m'être endormi.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Dès que je suis sur le point de m'endormir, j'entends mes propres ronflements.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je me suis endormie et je me suis réveillée environ une heure plus tard, paniquée.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je me réveillais vers 2 ou 3 heures du matin, incapable de me rendormir.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je me sens très fatigué et surtout somnolent.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Donc je vais au travail ou à l'école avec au maximum 2 heures de sommeil.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 44,
+            "start": 39,
+            "entity": "duration",
+            "value": "2 hrs"
+          }
+        ]
+      },
+      {
+        "text": "Les deux premières nuits, je n'arrivais tout simplement pas à me rendormir.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je me sens encore très endormie et fatiguée.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je me réveille n'importe où entre 2h et 4h du matin.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Pendant ce temps, mon horaire de sommeil était complètement annulé.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je sais que les habitudes de sommeil peuvent commencer à changer vers cet âge.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je vais essayer de ne pas regarder la télé avant d'aller au lit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je vais fermer les yeux.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Cette semaine, je m'endors assez facilement.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je ne m'endormirais pas avant 5, 6 ou 8 heures du matin.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Il y a eu des moments où c'était un sommeil de type sparatique.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je peux enfin dormir normalement.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je dormais plus après une mauvaise nuit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "pendant une semaine, il semble que j'ai bien dormi toutes les deux nuits.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Mais l'important, c'est que j'ai dormi.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Depuis deux semaines, il m'arrive des tas de choses pendant que j'essaie de dormir.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "mon sommeil n'est pas du tout réparateur",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je m'inquiète pour la nuit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "mon rythme de sommeil était de retour.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je donnais des médicaments contre la dépression pour dormir.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "la mélatonine ne fait pas grand-chose pour moi.",
+        "intent": "treatment",
+        "entities": [
+          {
+            "end": 9,
+            "start": 0,
+            "entity": "drug",
+            "value": "melatonin"
+          }
+        ]
+      },
+      {
+        "text": "Je me réveille et j'ai de la difficulté à me rendormir.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "tous les jours, je dois faire des siestes.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je me réveille immédiatement.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je me réveille toutes les heures et c'est extrêmement ennuyeux et épuisant.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Maintenant, je ne dors pas une seconde pendant la nuit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "hier j'étais très privé de sommeil",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai eu affaire à une horrible hypersomnie idiopathique pendant 30 ans.",
+        "intent": "pathology",
+        "entities": [
+          {
+            "end": 56,
+            "start": 45,
+            "entity": "symtoms",
+            "value": "hypersomnia"
+          }
+        ]
+      },
+      {
+        "text": "Donc cette routine n'est pas vraiment la meilleure chose au monde pour moi.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Mon sommeil a été perturbé.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je suis un dormeur très léger.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je me réveille encore tôt.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Actuellement, le matin, la plupart du temps, je me réveille à 5 ou 6 heures du matin.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 68,
+            "start": 64,
+            "entity": "time",
+            "value": "5 AM"
+          }
+        ]
+      },
+      {
+        "text": "Je blâme mon sommeil constamment insuffisant.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "D'habitude, je me rendors tout de suite.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je me réveille encore trop tôt.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je pensais que l'insomnie disparaîtrait.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Quand la fin avril est arrivé, je dormais mieux.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "quand je ne suis pas au travail, j'ai 19 heures pour essayer de rester éveillé.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Au milieu de la journée, je dois toujours faire une sieste.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je n'aurai que quatre heures de sommeil de bonne qualité.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai toujours l'air très fatigué si je m'allonge quelque part.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Cela se produit presque toutes les nuits.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai dormi hier soir pendant environ 6h30.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 45,
+            "start": 35,
+            "entity": "duration",
+            "value": "6:30 hours"
+          }
+        ]
+      },
+      {
+        "text": "Je dois faire 2 siestes par jour et ne pas conduire n'importe où.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je commence aussi la journée en me sentant vraiment fatigué.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je reste éveillé 2-3 jours parfois.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai eu des hallucinations, et ça arrive quand je ne m'endors pas la nuit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je garde une bonne hygiène du sommeil",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je me réveille au moins deux fois par nuit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "mes yeux me font parfois souffrir",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je n'ai jamais retrouvé un sommeil normal pendant les 40 années restantes.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai eu un sommeil agité pendant plus de 6 mois.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je suis conscient des répercussions d'un manque de sommeil.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je veux pouvoir avoir un horaire de sommeil normal.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je remarque que lorsque je dors pendant la nuit, j'ai constamment des rêves d'esprits.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je faisais parfois des siestes pendant la journée pour m'aider à rattraper mon retard de sommeil.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Chaque fois que je m'endormirai, je serai dans un court état de paralysie du sommeil.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je tiens un journal du sommeil.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Quant à mes habitudes de sommeil, je n'ai jamais pu dormir la nuit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Au cours des 3 derniers mois, j'ai eu l'impression d'étouffer.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai commencé à me sentir très étourdie après avoir mangé.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Et je suis tout le temps fatigué, la seule solution que je trouve, c'est de dormir.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "On m'a récemment diagnostiqué une hypersomnie idiopathique.",
+        "intent": "pathology",
+        "entities": [
+          {
+            "end": 52,
+            "start": 30,
+            "entity": "symtoms",
+            "value": "Idiopathic Hypersomnia"
+          }
+        ]
+      },
+      {
+        "text": "J'ai été éveillé deux jours de suite.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai beaucoup de problèmes de sommeil.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je ne sais pas pourquoi je ne peux plus dormir la nuit.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "le matin, quand je me réveille trop tôt.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "récemment, mon sommeil est devenu vraiment bizarre.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je souffre de problèmes de sommeil depuis environ une semaine.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "cette semaine, c'est à moi de ne pas dormir ou d'avoir une courte période de sommeil.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je suis debout depuis une heure, mais je ne me sens pas encore épuisé.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Au cours des 3-4 dernières années, j'ai souffert de problèmes de sommeil.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je n'arrivais pas à dormir, je ne me sentais pas fatiguée.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "aller au lit à une heure raisonnable",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Il y avait la plupart des nuits où je faisais 1 à 3 heures de sommeil ou pas de sommeil du tout.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Il semble que je puisse m'endormir en moins de 7 minutes.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Je me sens déjà fatigué après 11 heures du matin.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Comme pour une pilule Z, on m'a prescrit des médicaments pour l'insomnie sévère.",
+        "intent": "treatment",
+        "entities": [
+          {
+            "end": 15,
+            "start": 9,
+            "entity": "drug",
+            "value": "z-pill"
+          }
+        ]
+      },
+      {
+        "text": "J'ai un manque de sommeil.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Mon propre ronflement me réveille.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai une insomnie induite par l'exercice.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Ça fait neuf jours que j'ai commencé à souffrir d'insomnie.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "Depuis 6 ou 7 ans, je n'ai dormi que 2 heures et au plus 3 heures avant de me réveiller.",
+        "intent": "sleep",
+        "entities": [
+          {
+            "end": 71,
+            "start": 46,
+            "entity": "duration",
+            "value": "2 and at the most 3 hours"
+          }
+        ]
+      },
+      {
+        "text": "Je suis bien après 2 jours/nuits sans dormir.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai essayé différents somnifères.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'avais l'impression d'avoir dormi encore plus mal.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "la plupart du temps, je dors autour de 20-24 ans.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "J'ai fait une sieste, car j'étais si fatigué.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "En général, un jour par semaine, je rentre à la maison, je m'écrase et je dors.",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "mon sommeil est certainement léger",
+        "intent": "sleep",
+        "entities": []
+      }
+    ]
+  }
+}

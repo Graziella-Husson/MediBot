@@ -1033,7 +1033,7 @@
     - sum_up_treatment
     - slot{"treatment_being_taken": "pris"}
     - slot{"requested_slot": "drug"}
-    - utter_ask_drug
+    - utter_ask_treatment_drug
     - sum_up_slots
 * treatment{"drug": "drug"}
     - slot{"drug": "drug"}
@@ -1043,6 +1043,7 @@
     - slot{"duration": null}
     - slot{"distance": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"drug": "drug"}
     - slot{"requested_slot": "treatment_ok"}
@@ -1174,7 +1175,7 @@
     - sum_up_treatment
     - slot{"treatment_being_taken": "taken"}
     - slot{"requested_slot": "drug"}
-    - utter_ask_drug
+    - utter_ask_treatment_drug
     - sum_up_slots
 * treatment{"drug": "drug"}
     - slot{"drug": "drug"}
@@ -1184,6 +1185,7 @@
     - slot{"distance": null}
     - slot{"temperature": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"drug": "drug"}
     - slot{"requested_slot": "treatment_ok"}
@@ -1289,6 +1291,7 @@
     - slot{"duration": null}
     - slot{"distance": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"drug": "drug"}
     - slot{"dosing": "dosing"}
@@ -1430,6 +1433,7 @@
     - slot{"temperature": null}
     - slot{"distance": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"drug": "drug"}
     - slot{"dosing": "dosing"}
@@ -1549,6 +1553,7 @@
     - slot{"temperature": null}
     - slot{"distance": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"medicinal": false}
     - slot{"treatment_being_taken": "no_drug"}
@@ -1601,6 +1606,7 @@
     - slot{"temperature": null}
     - slot{"distance": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"drug": "drug"}
     - slot{"dosing": "dosing"}
@@ -1620,6 +1626,7 @@
     - slot{"temperature": null}
     - slot{"distance": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"medicinal": false}
     - slot{"treatment_being_taken": "no_drug"}
@@ -3404,7 +3411,7 @@
     - sum_up_treatment
     - slot{"treatment_being_taken": "pris"}
     - slot{"requested_slot": "drug"}
-    - utter_ask_drug
+    - utter_ask_treatment_drug
     - sum_up_slots
 * treatment{"drug": "drug"}
     - slot{"drug": "drug"}
@@ -3414,6 +3421,7 @@
     - slot{"duration": null}
     - slot{"distance": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"drug": "drug"}
     - slot{"requested_slot": "treatment_ok"}
@@ -3545,7 +3553,7 @@
     - sum_up_treatment
     - slot{"treatment_being_taken": "taken"}
     - slot{"requested_slot": "drug"}
-    - utter_ask_drug
+    - utter_ask_treatment_drug
     - sum_up_slots
 * treatment{"drug": "drug"}
     - slot{"drug": "drug"}
@@ -3555,6 +3563,7 @@
     - slot{"distance": null}
     - slot{"temperature": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"drug": "drug"}
     - slot{"requested_slot": "treatment_ok"}
@@ -3660,6 +3669,7 @@
     - slot{"duration": null}
     - slot{"distance": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"drug": "drug"}
     - slot{"dosing": "dosing"}
@@ -3801,6 +3811,7 @@
     - slot{"temperature": null}
     - slot{"distance": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"drug": "drug"}
     - slot{"dosing": "dosing"}
@@ -3920,6 +3931,7 @@
     - slot{"temperature": null}
     - slot{"distance": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"medicinal": false}
     - slot{"treatment_being_taken": "no_drug"}
@@ -3972,6 +3984,7 @@
     - slot{"temperature": null}
     - slot{"distance": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"drug": "drug"}
     - slot{"dosing": "dosing"}
@@ -3991,6 +4004,7 @@
     - slot{"temperature": null}
     - slot{"distance": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"medicinal": false}
     - slot{"treatment_being_taken": "no_drug"}
@@ -5766,6 +5780,7 @@
     - slot{"temperature": null}
     - slot{"distance": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"medicinal": false}
     - slot{"treatment_being_taken": "no_drug"}
@@ -6289,6 +6304,7 @@
     - slot{"temperature": null}
     - slot{"distance": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"medicinal": false}
     - slot{"treatment_being_taken": "no_drug"}
@@ -6830,6 +6846,7 @@
     - slot{"time": "yesterday"}
     - save_conv
     - slot{"topic": "treatment"}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"drug": "drug"}
     - slot{"dosing": "dosing"}
@@ -6859,6 +6876,7 @@
     - slot{"global_score": 0}
     - save_conv
     - slot{"topic": "treatment"}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"medicinal": true}
     - slot{"drug": "drug"}
@@ -8656,6 +8674,7 @@
     - slot{"duration": null}
     - slot{"temperature": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"medicinal": false}
     - slot{"treatment_being_taken": "no_drug"}
@@ -8985,7 +9004,7 @@
     - sum_up_slots
 
 ## Generated Story -8860499764658370426
-* treatment{"medicinal": false, "dosing": "no_drug", "drug": "no_drug", "treatment_overdosage": "no_drug", "treatment_being_taken": "no_drug"}
+* treatment{"medicinal": false, "dosing": "no_drug", "treatment_drug": "no_drug", "treatment_overdosage": "no_drug", "treatment_being_taken": "no_drug"}
     - slot{"dosing": "no_drug"}
     - slot{"drug": "no_drug"}
     - slot{"medicinal": false}
@@ -8997,6 +9016,7 @@
     - slot{"duration": null}
     - slot{"temperature": null}
     - slot{"time": null}
+    - action_multiple_set_complex
     - sum_up_treatment
     - slot{"medicinal": false}
     - slot{"treatment_being_taken": "no_drug"}

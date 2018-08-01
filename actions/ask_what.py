@@ -215,7 +215,7 @@ class AskWhatTreatment(AskWhatAction):
         """Display a button for all infos the tracker have for the intent 'treatment':
             - medicinal (boolean)
             - treatment_being_taken
-            - drug
+            - treatment_drug
             - dosing
             - treatment_time
             - treatment_prescripted(boolean)
@@ -236,7 +236,7 @@ class AskWhatTreatment(AskWhatAction):
                                ["treatment_duration", "duration_button"],
                                ["treatment_overdosage", None, "no_drug"],
                                ["dosing", None, "no_drug"],
-                               ["drug", None, "no_drug"],
+                               ["treatment_drug", None, "no_drug"],
                                ["treatment_being_taken", None, "no_drug"]]
         self.boolean_buttons = ["treatment_prescripted",
                                 "medicinal",

@@ -165,7 +165,7 @@ class ResetTreatmentSlots(ResetSlotsAction):
         """Set all slots for intent 'treatment' to None:
             - medicinal (boolean)
             - treatment_being_taken
-            - drug
+            - treatment_drug
             - dosing
             - treatment_time
             - treatment_prescripted(boolean)
@@ -177,7 +177,7 @@ class ResetTreatmentSlots(ResetSlotsAction):
         self.intent_name = "treatment"
         self.entities = ["medicinal",
                          "treatment_being_taken",
-                         "drug",
+                         "treatment_drug",
                          "dosing",
                          "treatment_time",
                          "treatment_prescripted",
