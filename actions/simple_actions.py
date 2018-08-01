@@ -108,12 +108,12 @@ class AskButtonsAction(Action):
                                     must implement a name method""")
 
 
-class AskMedicinal(AskBooleanAction):
+class AskTreatmentMedicinal(AskBooleanAction):
     """Say something to the user : display buttons to tell
     if the treatment is medicinal or not
     When the "no" button is clicked, we have to set :
         - treatment_drug
-        - dosing
+        - treatment_dosing
         - treatment_being_taken
         - treatment_period
         - treatment_overdosage
@@ -122,13 +122,13 @@ class AskMedicinal(AskBooleanAction):
     def __init__(self):
         """Set the name of the intent\n
         Set the name of the entity to ask"""
-        self.entity_name = "medicinal"
+        self.entity_name = "treatment_medicinal"
         self.intent_name = "treatment"
-        self.payload_no = "/treatment{\"medicinal\":false, \"treatment_drug\":\"no_drug\", \"dosing\":\"no_drug\", \"treatment_being_taken\":\"no_drug\", \"treatment_overdosage\":\"no_drug\"}"
+        self.payload_no = "/treatment{\"treatment_medicinal\":false, \"treatment_drug\":\"no_drug\", \"treatment_dosing\":\"no_drug\", \"treatment_being_taken\":\"no_drug\", \"treatment_overdosage\":\"no_drug\"}"
 
     def name(self):
         """@return: the name of the action."""
-        return 'utter_ask_medicinal'
+        return 'utter_ask_treatment_medicinal'
 
 
 class AskActivityHard(AskBooleanAction):
@@ -145,15 +145,15 @@ class AskActivityHard(AskBooleanAction):
         return 'utter_ask_activity_hard'
 
 
-class AskSport(AskAction):
+class AskActivitySport(AskAction):
     """Say something to the user : ask the activity the user did"""
     def __init__(self):
         """Set the name of the entity to ask"""
-        self.entity_name = "sport"
+        self.entity_name = "activity_sport"
 
     def name(self):
         """@return: the name of the action."""
-        return 'utter_ask_sport'
+        return 'utter_ask_activity_sport'
 
 
 class AskActivityDuration(AskAction):
@@ -263,26 +263,26 @@ class AskSocial(AskAction):
         return 'utter_ask_social'
 
 
-class AskHappiness(AskAction):
+class AskPositiveEmo(AskAction):
     """Say something to the user :  ask the user to talk about his happiness"""
     def __init__(self):
         """Set the name of the entity to ask"""
-        self.entity_name = "happiness"
+        self.entity_name = "positiveEmo"
 
     def name(self):
         """@return: the name of the action."""
-        return 'utter_ask_emotionnal_hapiness'
+        return 'utter_ask_positiveEmo'
 
 
-class AskSadness(AskAction):
+class AskNegativeEmo(AskAction):
     """Say something to the user :  ask the user to talk about his sadness"""
     def __init__(self):
         """Set the name of the entity to ask"""
-        self.entity_name = "sadness"
+        self.entity_name = "negativeEmo"
 
     def name(self):
         """@return: the name of the action."""
-        return 'utter_ask_emotionnal_sadness'
+        return 'utter_ask_negativeEmo'
 
 
 class AskPainDesc(AskAction):
@@ -296,15 +296,15 @@ class AskPainDesc(AskAction):
         return 'utter_ask_pain_desc'
 
 
-class AskSymptoms(AskAction):
+class AskPathologySymptom(AskAction):
     """Say something to the user : ask the symptoms"""
     def __init__(self):
         """Set the name of the entity to ask"""
-        self.entity_name = "symtoms"
+        self.entity_name = "pathology_symptom"
 
     def name(self):
         """@return: the name of the action."""
-        return 'utter_ask_symtoms'
+        return 'utter_ask_pathology_symptom'
 
 
 class AskTreatmentDrug(AskAction):
@@ -352,15 +352,15 @@ class AskActivityDistance(AskAction):
         return 'utter_ask_activity_distance'
 
 
-class AskWeight(AskAction):
+class AskInfoPatientWeight(AskAction):
     """Say something to the user : ask the weight of the patient"""
     def __init__(self):
         """Set the name of the entity to ask"""
-        self.entity_name = "weight"
+        self.entity_name = "infoPatient_weight"
 
     def name(self):
         """@return: the name of the action."""
-        return 'utter_ask_weight'
+        return 'utter_ask_infoPatient_weight'
 
 
 class AskInfoPatientDistance(AskAction):
@@ -374,15 +374,15 @@ class AskInfoPatientDistance(AskAction):
         return 'utter_ask_infoPatient_distance'
 
 
-class AskHeartRate(AskAction):
+class AskInfoPatientHeartRate(AskAction):
     """Say something to the user : ask the heart rate of the patient"""
     def __init__(self):
         """Set the name of the entity to ask"""
-        self.entity_name = "heart_rate"
+        self.entity_name = "infoPatient_heart_rate"
 
     def name(self):
         """@return: the name of the action."""
-        return 'utter_ask_heart_rate'
+        return 'utter_ask_infoPatient_heart_rate'
 
 
 class AskInfoPatientTemperature(AskAction):
@@ -396,37 +396,37 @@ class AskInfoPatientTemperature(AskAction):
         return 'utter_ask_infoPatient_temperature'
 
 
-class AskGender(AskAction):
+class AskInfoPatientGender(AskAction):
     """Say something to the user : ask the gender of the patient"""
     def __init__(self):
         """Set the name of the entity to ask"""
-        self.entity_name = "gender"
+        self.entity_name = "infoPatient_gender"
 
     def name(self):
         """@return: the name of the action."""
-        return 'utter_ask_gender'
+        return 'utter_ask_infoPatient_gender'
 
 
-class AskBloodPressure(AskAction):
+class AskInfoPatientBloodPressure(AskAction):
     """Say something to the user : ask the blood pressure of the patient"""
     def __init__(self):
         """Set the name of the entity to ask"""
-        self.entity_name = "blood_pressure"
+        self.entity_name = "infoPatient_blood_pressure"
 
     def name(self):
         """@return: the name of the action."""
-        return 'utter_ask_blood_pressure'
+        return 'utter_ask_infoPatient_blood_pressure'
 
 
-class AskAddiction(AskAction):
-    """Say something to the user : ask if the patient have an addicition"""
+class AskInfoPatientAddiction(AskAction):
+    """Say something to the user : ask if the patient have an addiction"""
     def __init__(self):
         """Set the name of the entity to ask"""
-        self.entity_name = "addiction"
+        self.entity_name = "infoPatient_addiction"
 
     def name(self):
         """@return: the name of the action."""
-        return 'utter_ask_addiction'
+        return 'utter_ask_infoPatient_addiction'
 
 
 class AskInfoPatientTime(AskAction):
@@ -493,17 +493,17 @@ class AskPathologyTreatmentLinked(AskBooleanAction):
         return 'utter_ask_pathology_treatment_linked'
 
 
-class AskDosing(AskAction):
+class AskTreatmentDosing(AskAction):
     """Say something to the user : ask the dose the patient is taking
     (not the one prescripted)
     We have to talk about that only if the treatment is medicinal"""
     def __init__(self):
         """Set the name of the entity to ask"""
-        self.entity_name = "dosing"
+        self.entity_name = "treatment_dosing"
 
     def name(self):
         """@return: the name of the action."""
-        return 'utter_ask_dosing'
+        return 'utter_ask_treatment_dosing'
 
 
 class AskTreatmentTime(AskAction):
@@ -522,7 +522,7 @@ class AskTreatmentBeingTaken(AskButtonsAction):
     display buttons to tell if the treatment is being well
     taken or forgotten or stopped
     When the "stopped" button is clicked, we have to set :
-        - dosing
+        - treatment_dosing
     to something, saying that we won't ask anything about
     it for this treatment."""
     def __init__(self):

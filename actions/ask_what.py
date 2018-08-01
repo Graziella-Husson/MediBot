@@ -127,22 +127,22 @@ class AskWhatAction(Action):
             dispatcher.utter_button_message(message, buttons)
 
 
-class AskWhatSport(AskWhatAction):
+class AskWhatActivity(AskWhatAction):
     """Ask what's wrong with the infos for the intent activity"""
     def name(self):
         """@return: the name of the action."""
-        return 'ask_what_sport'
+        return 'ask_what_activity'
 
     def __init__(self):
         """Display a button for all infos the tracker have for the intent 'activity':
             - activity_period
             - activity_distance
-            - sport
+            - activity_sport
             - activity_duration
             - activity_hard
             - activity_time
-        sport is linked to activity_level.
-        If the sport is incorrect, activity_level too.
+        activity_sport is linked to activity_level.
+        If the activity_sport is incorrect, activity_level too.
         When clicked, a button will reset the slot linked to it."""
         self.intent_name = "activity"
         self.simple_buttons = [["activity_duration", "duration_button"],
@@ -150,7 +150,7 @@ class AskWhatSport(AskWhatAction):
                                ["activity_period", "period_button"],
                                ["activity_time", "time_button"],
                                "activity_hard"]
-        self.multiple_buttons = [[["sport", "level"], "sport"]]
+        self.multiple_buttons = [[["activity_sport", "level"], "activity_sport"]]
 
 
 class AskWhatPain(AskWhatAction):
@@ -188,7 +188,7 @@ class AskWhatPathology(AskWhatAction):
     def __init__(self):
         """Display a button for all infos the tracker have for the intent 'pathology':
             - pathology_body_part
-            - symtoms
+            - pathology_symptom
             - pathology_time
             - pathology_change (boolean)
             - pathology_period
@@ -200,7 +200,7 @@ class AskWhatPathology(AskWhatAction):
                                ["pathology_time", "time_button"],
                                ["pathology_period", "period_button"],
                                ["pathology_duration", "duration_button"],
-                               "symtoms"]
+                               "pathology_symptom"]
         self.boolean_buttons = [["pathology_change", "evolution_button"],
                                 "pathology_treatment_linked"]
 
@@ -213,21 +213,21 @@ class AskWhatTreatment(AskWhatAction):
 
     def __init__(self):
         """Display a button for all infos the tracker have for the intent 'treatment':
-            - medicinal (boolean)
+            - treatment_medicinal (boolean)
             - treatment_being_taken
             - treatment_drug
-            - dosing
+            - treatment_dosing
             - treatment_time
             - treatment_prescripted(boolean)
             - treatment_ok(boolean)
             - treatment_overdosage
             - treatment_period
             - treatment_duration
-        If medicinal button is cliked,
-        set the slot 'medicinal' to the opposite of its value.
-        If medicinal button is cliked,
+        If treatment_medicinal button is cliked,
+        set the slot 'treatment_medicinal' to the opposite of its value.
+        If treatment_medicinal button is cliked,
         set the slot 'treatment_prescripted' to the opposite of its value.
-        If medicinal button is cliked,
+        If treatment_medicinal button is cliked,
         set the slot 'treatment_ok' to the opposite of its value.
         For others buttons, when clicked, will reset the slot linked to it."""
         self.intent_name = "treatment"
@@ -235,11 +235,11 @@ class AskWhatTreatment(AskWhatAction):
                                ["treatment_time", "time_button"],
                                ["treatment_duration", "duration_button"],
                                ["treatment_overdosage", None, "no_drug"],
-                               ["dosing", None, "no_drug"],
+                               ["treatment_dosing", None, "no_drug"],
                                ["treatment_drug", None, "no_drug"],
                                ["treatment_being_taken", None, "no_drug"]]
         self.boolean_buttons = ["treatment_prescripted",
-                                "medicinal",
+                                "treatment_medicinal",
                                 "treatment_ok"]
 
 
@@ -252,21 +252,21 @@ class AskWhatInfoPatient(AskWhatAction):
     def __init__(self):
         """Display a button for all infos the tracker
         have for the intent 'info_patient':
-            - addiction
-            - weight
+            - infoPatient_addiction
+            - infoPatient_weight
             - infoPatient_distance
-            - gender
+            - infoPatient_gender
             - infoPatient_temperature
-            - heart_rate
-            - blood_pressure
+            - infoPatient_heart_rate
+            - infoPatient_blood_pressure
             - infoPatient_time
         When clicked, the button will reset the slot linked to it."""
         self.intent_name = "infoPatient"
         self.simple_buttons = [["infoPatient_distance", "size_button"],
                                ["infoPatient_temperature", "temperature_button"],
                                ["infoPatient_time", "date_check_up_button"],
-                               "addiction",
-                               "weight",
-                               "gender",
-                               "heart_rate",
-                               "blood_pressure"]
+                               "infoPatient_addiction",
+                               "infoPatient_weight",
+                               "infoPatient_gender",
+                               "infoPatient_heart_rate",
+                               "infoPatient_blood_pressure"]

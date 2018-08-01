@@ -839,432 +839,432 @@
       },
       {
         "text": "i always feel Miserable",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i am fearful",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I have no energy",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel down",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel super tired",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel lonely",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I don't want to see anyone",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "my life sucks",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I have no friends",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am sad",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "sadness is my middlename",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I miss my family and friends",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am depressed",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I do not laugh anymore",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i feel sad without you",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "my life does not make sense",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "there seems no end to my situation",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I didn’t want to wake up",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "it's hopeless",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "my life is a complete chaos of emotions",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Whatever is happening to me is my own fault",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I have done something wrong",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "nothing is enjoyable",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i see no future for me",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i feel like a ghost",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i am isolated",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i feel somber",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am melancholic all day",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "my mind is paralyzed",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Every day is a struggle",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i hate myself",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "my heart just sank",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel off",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I'm out of sorts today",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I'm in the dumps about the situation",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel gloomy",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I had a sinking feeling",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am beside myself",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I'm feeling under the weather",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I have the blues",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am bummed out",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am in the pits",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am in a blue funk",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am on a bit of a downer",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am troubled",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "it depresses me",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "my mood is a little morose",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am gloomy",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am worried",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel lost",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am distressed",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am afflicted",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am truly saddened",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am beset by the ironies of my life",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am troubled",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am in a state of real grief",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I'm just so overwhelmed",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel like weeping",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel like crying",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I cry a lot",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I scream",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I have a tendency to cry easily",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "having the urge to cry",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I may have felt like weeping",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I have sad thoughts",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I often feel spent and dull",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "deep sorrow entered me",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "higher anxiety",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am devastated",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am heart-broken",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "absolutely gutted",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "My heart is broken",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I do not want to live anymore",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Let me be",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "distraught",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "in pieces",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "a bit depressed",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I need some moral support",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel so much sorrow",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel unhappy",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I was lying on my bed",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel without hope",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel very upset",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am no longer able to deal with this difficult situation",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am at the end of my rope",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am at the end of my tether",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {

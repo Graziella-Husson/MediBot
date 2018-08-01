@@ -3493,862 +3493,862 @@
       },
       {
         "text": "Je me sens toujours malheureux.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis craintif",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je n'ai pas d'énergie",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je me sens mal",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je me sens super fatigué",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "JE suis pas bien",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je ne veux voir personne.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "ma vie craint",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je n'ai pas d'amis",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis triste",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "la tristesse est mon middlename",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Ma famille et mes amis me manquent.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis déprimé",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je ne ris plus.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je me sens triste sans toi.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "ma vie n'a pas de sens",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "il ne semble pas y avoir de fin à ma situation.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je ne voulais pas me réveiller.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "c'est sans espoir.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "ma vie est un chaos complet d'émotions.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Quoi qu'il m'arrive, c'est de ma faute.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "J'ai fait quelque chose de mal",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "rien n'est agréable",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je ne vois pas d'avenir pour moi.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je me sens comme un fantôme.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "je suis isolé",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je me sens sombre",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis mélancolique toute la journée.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "mon esprit est paralysé",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Chaque jour est une lutte",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je me déteste",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "mon coeur vient de s'enfoncer",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je me sens mal",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je ne suis pas dans mon assiette aujourd'hui.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis dans la merde à propos de la situation.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je me sens lugubre",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "J'avais l'impression de sombrer.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis à côté de moi",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je me sens mal à l'aise avec le temps.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "J'ai le blues",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis déprimée.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis dans les fosses",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis dans un funk bleu.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis un peu déprimée.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "je susi triste",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "ça me déprime.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "mon humeur est un peu morose.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis lugubre",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis inquiet",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je me sens perdu",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis en détresse",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis affligé",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis vraiment attristé",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis assailli par les ironies de ma vie.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "J'déprime",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis dans un état de vrai chagrin.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis tellement bouleversée.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "J'ai envie de pleurer",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "J'ai envie de pleurer",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je pleure beaucoup",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je crie",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "J'ai tendance à pleurer facilement.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "avoir l'envie de pleurer",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "J'ai peut-être eu envie de pleurer.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "J'ai des pensées tristes",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je me sens souvent dépensé et ennuyeux.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "une profonde tristesse est entrée en moi",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "anxiété accrue",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis dévastée",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "J'ai le cœur brisé.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "absolument éviscéré",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Mon coeur est brisé",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je ne veux plus vivre.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Laisse-moi être",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "désemparé",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "en morceaux",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "un peu déprimé",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "J'ai besoin d'un soutien moral",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je ressens tant de tristesse",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je me sens malheureux.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "J'étais allongé sur mon lit.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je me sens sans espoir",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je me sens très contrarié",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je ne suis plus capable de faire face à cette situation difficile.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis au bout du rouleau.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis au bout de rouleau.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je dors bien",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "C'est fantastique",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "ne peut pas être mieux",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me porte bien",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Ma vie est ce que je veux qu'elle soit.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "La vie est belle",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Plein de bonheur",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Cool",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis si bien.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens bien",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Très bien, très bien",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens énergique",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "J'ai envie de danser tout le temps.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "ma vie est en haut de l'échelle",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "J'aime ma vie",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "le ciel est la limite",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis heureux",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis entouré de ma famille et de mes amis.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je n'ai pas de dépression.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je ne ressens aucun chagrin.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis une personne heureuse",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je souris",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens très bien",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "c'est plein d'espoir.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "mon esprit est en paix",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis optimiste",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "je me sens euphorique à propos de la vie",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je fais beaucoup de blagues.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je plaisante toute la journée.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "je suis satisfait de ma vie",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "je suis amoureux",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis amusé",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "s'éclater",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je passe du bon temps",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens merveilleusement bien.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis heureux comme tout",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis aux anges",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "je suis au paradis",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens très heureux.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis un campeur si heureux en ce moment.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis plein des joies du printemps aujourd'hui.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je profite d'une soirée heureuse",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens merveilleusement bien",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis plein d'énergie",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "J'ai trouvé la satisfaction",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "vivre une vie merveilleuse",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "C'est une question de tranquillité d'esprit.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis capable de trouver une sérénité si inhabituelle.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "mes émotions restent fraîches",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis dans la zone de confort.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je vis dans la tranquillité",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens très bien dans mon corps.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens absolument merveilleux",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens bien",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens si bien",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis si à l'aise",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens en forme",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens plus en forme",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "détendu",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "énergisé",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens bien dans mon corps et dans mon esprit.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens en meilleure santé.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens en meilleure forme",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis dans un état très heureux.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens très bien.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis en apesenteur",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis un homme épanoui",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "ma vie est belle",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens comme un poisson dans l'eau",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis heureux",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "je me sens plutôt serein.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis très détendue.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens en confiance",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis totalement satisfait de ma vie.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Ma vie est très équilibrée.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je dois vivre une vie équilibrée.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "vie significative",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "C'est un moment heureux dans ma vie.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis ravi",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens en forme",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Charmant",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Merveilleux",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "plein de Joie",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis optimiste",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je me sens ludique",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis debout",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
@@ -5753,7 +5753,7 @@
       },
       {
         "text": "Je suis content que vous ayez demandé",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
@@ -7983,82 +7983,82 @@
       },
       {
         "text": "C'est merveilleux",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Charmant !",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis heureux !",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Jours heureux",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "C'est une belle façon de se sentir !",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je vais hyper bien",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis tellement contente",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Il n'y a pas d'espoir.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "La guerre ne change jamais",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je ne peux pas vivre comme ça.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je veux tout arrêter.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Tout le monde est un enfer",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis déprimé",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "J'ai l'impression que je vais mourir.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "So sad :''((",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je pleure",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
@@ -8218,7 +8218,7 @@
       },
       {
         "text": "Je ne suis pas heureux.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
@@ -8268,7 +8268,7 @@
       },
       {
         "text": "Je ne me sens pas bien.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
@@ -8303,42 +8303,42 @@
       },
       {
         "text": "Je ne suis pas de bonne humeur. ",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je ne vais pas bien.",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je ne suis pas heureux",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je ne suis pas triste",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je vais bien",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je suis de bonne humeur.",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Je ne suis pas bien",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je vais pas très bien",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {

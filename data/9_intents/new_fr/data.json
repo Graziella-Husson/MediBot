@@ -35,7 +35,7 @@
             "start": 63,
             "end": 69,
             "value": "0.5 mg",
-            "entity": "dosing"
+            "entity": "treatment_dosing"
           }
         ]
       },
@@ -53,7 +53,7 @@
             "start": 10,
             "end": 14,
             "value": "deux",
-            "entity": "dosing"
+            "entity": "treatment_dosing"
           }
         ]
       },
@@ -101,7 +101,7 @@
             "start": 22,
             "end": 28,
             "value": "100 mg",
-            "entity": "dosing"
+            "entity": "treatment_dosing"
           },
           {
             "start": 32,
@@ -325,7 +325,7 @@
             "start": 10,
             "end": 13,
             "value": "7mg",
-            "entity": "dosing"
+            "entity": "treatment_dosing"
           },
           {
             "start": 17,
@@ -367,7 +367,7 @@
             "start": 0,
             "end": 8,
             "value": "1 cachet",
-            "entity": "dosing"
+            "entity": "treatment_dosing"
           }
         ]
       },
@@ -397,7 +397,7 @@
             "start": 20,
             "end": 40,
             "value": "2 gélules de 0,75 mg",
-            "entity": "dosing"
+            "entity": "treatment_dosing"
           },
           {
             "start": 41,
@@ -445,7 +445,7 @@
             "start": 35,
             "end": 48,
             "value": "40mg par jour",
-            "entity": "dosing"
+            "entity": "treatment_dosing"
           }
         ]
       },
@@ -481,7 +481,7 @@
             "start": 23,
             "end": 30,
             "value": "50 µg/h",
-            "entity": "dosing"
+            "entity": "treatment_dosing"
           },
           {
             "start": 34,
@@ -563,7 +563,7 @@
             "start": 16,
             "end": 26,
             "value": "1,09 mui/L",
-            "entity": "dosing"
+            "entity": "treatment_dosing"
           }
         ]
       },
@@ -598,7 +598,7 @@
             "start": 35,
             "end": 41,
             "value": "160 mg",
-            "entity": "dosing"
+            "entity": "treatment_dosing"
           },
           {
             "start": 42,
@@ -711,7 +711,7 @@
             "start": 19,
             "end": 33,
             "value": "deux comprimés",
-            "entity": "dosing"
+            "entity": "treatment_dosing"
           },
           {
             "start": 37,
@@ -747,7 +747,7 @@
             "start": 18,
             "end": 23,
             "value": "30 mg",
-            "entity": "dosing"
+            "entity": "treatment_dosing"
           },
           {
             "start": 27,
@@ -770,7 +770,7 @@
             "start": 22,
             "end": 32,
             "value": "2 x 300 mg",
-            "entity": "dosing"
+            "entity": "treatment_dosing"
           },
           {
             "start": 36,
@@ -818,7 +818,7 @@
             "start": 47,
             "end": 53,
             "value": "0.5 mg",
-            "entity": "dosing"
+            "entity": "treatment_dosing"
           },
           {
             "start": 54,
@@ -836,7 +836,7 @@
             "start": 4,
             "end": 18,
             "value": "deux comprimés",
-            "entity": "dosing"
+            "entity": "treatment_dosing"
           },
           {
             "start": 22,
@@ -1943,192 +1943,192 @@
       },
       {
         "text": "je combats courageusement mon embonpoint",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "c'est sur qu'il y a pire que moi",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "la déprime vient tout juste de me quitter",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "je ne me laisse pas abattre",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "je ne suis pas forcément stresser",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "je pense que c'est de l'angoisse",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "je sais pas si je dois m'inquiéter ou non",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je me mis à pleurer",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "ne pas savoir ce que j'ai ça me perturbe",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "j'ai peté un plomb",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "je suis devenue agoraphobe",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "j'ai peur de rester seule",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "j'ai le morale a plat",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "tout le monde me prend pour une folle",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "c'est fatiguant",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "je ne ressens plus aucune émotion",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "c'est très pénible et angoissant",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je suis complètement paumé",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je ne suis pas bien dans ma tête",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "j'ai peur qu'il aggrave mon cas",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "j'en pleure tout les soirs",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Mon moral n'est pas au beau fixe",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "je me couche dans l'angoisse",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "j'ai peur de devoir vivre avec ça toute ma vie",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "je me sens complètement perdue",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "je suis très stressé",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je me sens dépérir",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "je suis trés angoissée",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "je suis à 100% stressé",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "j'ai une sensation de mort imminente",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Je ne sais plus quoi faire, ni penser",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Donc j'angoisse vraiment",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "J'en ai vraiment marre",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "je suis prise un peu de panique",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "je m’inquiète fortement",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "J'ai comme qui dirait un peu peur",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "je suis terriblement inquiète",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "je dois bien avouer que je suis à 100% stressé",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
@@ -2139,7 +2139,7 @@
             "start": 23,
             "end": 30,
             "value": "pas vif",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -2161,7 +2161,7 @@
             "start": 3,
             "end": 9,
             "value": "chasse",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 10,
@@ -2179,7 +2179,7 @@
             "start": 7,
             "end": 15,
             "value": "jardiner",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -2191,7 +2191,7 @@
             "start": 0,
             "end": 36,
             "value": "soulever/déplacer de lourdes charges",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -2203,7 +2203,7 @@
             "start": 12,
             "end": 43,
             "value": "travaux ménagers et domestiques",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -2215,7 +2215,7 @@
             "start": 15,
             "end": 24,
             "value": "escaliers",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -2227,7 +2227,7 @@
             "start": 7,
             "end": 25,
             "value": "promener mon chien",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -2239,7 +2239,7 @@
             "start": 3,
             "end": 8,
             "value": "danse",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -2251,7 +2251,7 @@
             "start": 14,
             "end": 34,
             "value": "cueillette de fruits",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -2293,7 +2293,7 @@
       },
       {
         "text": "Je ne supporte plus mon poids",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
@@ -2315,7 +2315,7 @@
             "start": 19,
             "end": 24,
             "value": "85 kg",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -2332,7 +2332,7 @@
             "start": 23,
             "end": 31,
             "value": "38 kilos",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           },
           {
             "start": 37,
@@ -2350,7 +2350,7 @@
             "start": 11,
             "end": 15,
             "value": "10kg",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -2362,7 +2362,7 @@
             "start": 17,
             "end": 34,
             "value": "pertes de mémoire",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2380,7 +2380,7 @@
             "start": 35,
             "end": 41,
             "value": "grippe",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2402,7 +2402,7 @@
             "start": 15,
             "end": 27,
             "value": "extrasystole",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2419,7 +2419,7 @@
             "start": 55,
             "end": 63,
             "value": "vertiges",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2431,7 +2431,7 @@
             "start": 24,
             "end": 31,
             "value": "plaques",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 40,
@@ -2449,7 +2449,7 @@
             "start": 14,
             "end": 20,
             "value": "nodule",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 25,
@@ -2479,7 +2479,7 @@
             "start": 15,
             "end": 23,
             "value": "allergie",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2491,7 +2491,7 @@
             "start": 43,
             "end": 51,
             "value": "frissons",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2503,7 +2503,7 @@
             "start": 23,
             "end": 37,
             "value": "maladie de cmt",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2521,7 +2521,7 @@
             "start": 11,
             "end": 20,
             "value": "brouillée",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2533,7 +2533,7 @@
             "start": 9,
             "end": 19,
             "value": "picotement",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 28,
@@ -2551,7 +2551,7 @@
             "start": 3,
             "end": 10,
             "value": "tremble",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2574,7 +2574,7 @@
             "start": 24,
             "end": 33,
             "value": "irritable",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2622,7 +2622,7 @@
             "start": 36,
             "end": 47,
             "value": "toux grasse",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2634,7 +2634,7 @@
             "start": 23,
             "end": 40,
             "value": "jambes sans repos",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2651,7 +2651,7 @@
             "start": 20,
             "end": 28,
             "value": "étouffer",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2668,7 +2668,7 @@
             "start": 31,
             "end": 39,
             "value": "vertiges",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2713,7 +2713,7 @@
             "start": 3,
             "end": 20,
             "value": "fatigue très vite",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2731,7 +2731,7 @@
             "start": 29,
             "end": 35,
             "value": "pèlent",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2773,7 +2773,7 @@
             "start": 14,
             "end": 21,
             "value": "gonflés",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2791,7 +2791,7 @@
             "start": 36,
             "end": 44,
             "value": "étouffer",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2803,7 +2803,7 @@
             "start": 9,
             "end": 21,
             "value": "incontinance",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2815,7 +2815,7 @@
             "start": 23,
             "end": 54,
             "value": "pseudo polyartrite rhizomélique",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2857,7 +2857,7 @@
             "start": 3,
             "end": 7,
             "value": "toux",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2869,7 +2869,7 @@
             "start": 44,
             "end": 52,
             "value": "vertiges",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2881,7 +2881,7 @@
             "start": 26,
             "end": 34,
             "value": "migraine",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2893,7 +2893,7 @@
             "start": 40,
             "end": 46,
             "value": "fièvre",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2911,7 +2911,7 @@
             "start": 37,
             "end": 48,
             "value": "déchaussées",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2928,7 +2928,7 @@
             "start": 21,
             "end": 38,
             "value": "perds l equilibre",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2940,7 +2940,7 @@
             "start": 22,
             "end": 32,
             "value": "épuisement",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2970,7 +2970,7 @@
             "start": 18,
             "end": 25,
             "value": "fatigue",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -2988,7 +2988,7 @@
             "start": 24,
             "end": 39,
             "value": "engourdissement",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 46,
@@ -3006,7 +3006,7 @@
             "start": 3,
             "end": 10,
             "value": "fatigue",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3030,7 +3030,7 @@
             "start": 81,
             "end": 86,
             "value": "otite",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3047,7 +3047,7 @@
             "start": 9,
             "end": 21,
             "value": "Hypoesthésie",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3059,7 +3059,7 @@
             "start": 17,
             "end": 25,
             "value": "frissons",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3082,7 +3082,7 @@
             "start": 34,
             "end": 40,
             "value": "baissé",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3094,7 +3094,7 @@
             "start": 21,
             "end": 29,
             "value": "vertiges",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3112,7 +3112,7 @@
             "start": 23,
             "end": 30,
             "value": "trouble",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3124,7 +3124,7 @@
             "start": 3,
             "end": 9,
             "value": "crache",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3136,7 +3136,7 @@
             "start": 32,
             "end": 40,
             "value": "evanouir",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3172,7 +3172,7 @@
             "start": 9,
             "end": 22,
             "value": "melorheostose",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 39,
@@ -3190,7 +3190,7 @@
             "start": 23,
             "end": 37,
             "value": "étourdissement",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 38,
@@ -3232,7 +3232,7 @@
             "start": 28,
             "end": 48,
             "value": "\"boule\" sous la peau",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3244,7 +3244,7 @@
             "start": 8,
             "end": 18,
             "value": "essoufflée",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3256,7 +3256,7 @@
             "start": 8,
             "end": 18,
             "value": "diabétique",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3268,7 +3268,7 @@
             "start": 23,
             "end": 30,
             "value": "fièvres",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3280,7 +3280,7 @@
             "start": 46,
             "end": 51,
             "value": "vomir",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3310,7 +3310,7 @@
             "start": 23,
             "end": 44,
             "value": "sarcoidose pulmonaire",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 56,
@@ -3328,7 +3328,7 @@
             "start": 5,
             "end": 36,
             "value": "perdu momentanément l'équilibre",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3340,7 +3340,7 @@
             "start": 9,
             "end": 66,
             "value": "anémie ferriprive et microcytaire (très sévère) chronique",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3352,7 +3352,7 @@
             "start": 64,
             "end": 71,
             "value": "vertige",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3364,7 +3364,7 @@
             "start": 9,
             "end": 17,
             "value": "vertiges",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 24,
@@ -3382,7 +3382,7 @@
             "start": 9,
             "end": 21,
             "value": "palpitations",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3406,7 +3406,7 @@
             "start": 11,
             "end": 16,
             "value": "abces",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 24,
@@ -3430,7 +3430,7 @@
             "start": 13,
             "end": 22,
             "value": "assombrie",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3442,7 +3442,7 @@
             "start": 34,
             "end": 37,
             "value": "SEP",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3471,7 +3471,7 @@
             "start": 16,
             "end": 31,
             "value": "engourdissement",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 35,
@@ -3495,7 +3495,7 @@
             "start": 27,
             "end": 35,
             "value": "bouchées",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 47,
@@ -3519,7 +3519,7 @@
             "start": 28,
             "end": 50,
             "value": "difficultés à respirer",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3531,7 +3531,7 @@
             "start": 21,
             "end": 28,
             "value": "fatigué",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 29,
@@ -3555,7 +3555,7 @@
             "start": 17,
             "end": 29,
             "value": "congestionné",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3603,7 +3603,7 @@
             "start": 8,
             "end": 15,
             "value": "fatigué",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 16,
@@ -3626,7 +3626,7 @@
             "start": 20,
             "end": 32,
             "value": "sclérodermie",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 33,
@@ -3644,7 +3644,7 @@
             "start": 20,
             "end": 33,
             "value": "démangeaisons",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3656,7 +3656,7 @@
             "start": 3,
             "end": 10,
             "value": "fissure",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 11,
@@ -3674,7 +3674,7 @@
             "start": 9,
             "end": 21,
             "value": "palpitations",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3722,7 +3722,7 @@
             "start": 8,
             "end": 14,
             "value": "marque",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3734,7 +3734,7 @@
             "start": 9,
             "end": 17,
             "value": "allergie",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 31,
@@ -3752,7 +3752,7 @@
             "start": 12,
             "end": 18,
             "value": "grippe",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 19,
@@ -3770,7 +3770,7 @@
             "start": 40,
             "end": 54,
             "value": "hallucinations",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3782,7 +3782,7 @@
             "start": 21,
             "end": 56,
             "value": "perdre mes facultés intellectuelles",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3794,7 +3794,7 @@
             "start": 27,
             "end": 35,
             "value": "pression",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 36,
@@ -3812,7 +3812,7 @@
             "start": 3,
             "end": 9,
             "value": "tousse",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3824,7 +3824,7 @@
             "start": 9,
             "end": 22,
             "value": "extrasystoles",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3842,7 +3842,7 @@
             "start": 36,
             "end": 43,
             "value": "tension",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3859,7 +3859,7 @@
             "start": 13,
             "end": 21,
             "value": "fatiguée",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3877,7 +3877,7 @@
             "start": 18,
             "end": 26,
             "value": "gonflent",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3889,7 +3889,7 @@
             "start": 22,
             "end": 31,
             "value": "migraines",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3901,7 +3901,7 @@
             "start": 19,
             "end": 43,
             "value": "problème de mémorisation",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3913,7 +3913,7 @@
             "start": 41,
             "end": 48,
             "value": "enflure",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 54,
@@ -3943,7 +3943,7 @@
             "start": 9,
             "end": 27,
             "value": "se plie toute seul",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3955,7 +3955,7 @@
             "start": 19,
             "end": 42,
             "value": "Neuropathie tomaculaire",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3967,7 +3967,7 @@
             "start": 11,
             "end": 23,
             "value": "goût de sang",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 32,
@@ -3985,7 +3985,7 @@
             "start": 3,
             "end": 18,
             "value": "peine a marcher",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -3997,7 +3997,7 @@
             "start": 13,
             "end": 22,
             "value": "infarctus",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 26,
@@ -4021,7 +4021,7 @@
             "start": 39,
             "end": 48,
             "value": "digestion",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4033,7 +4033,7 @@
             "start": 30,
             "end": 51,
             "value": "plus pouvoir respirer",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4062,7 +4062,7 @@
             "start": 3,
             "end": 26,
             "value": "perd un peu l'équilibre",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4074,7 +4074,7 @@
             "start": 8,
             "end": 22,
             "value": "léiomyosarcome",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           },
           {
             "start": 29,
@@ -4102,7 +4102,7 @@
             "start": 20,
             "end": 43,
             "value": "tachycardie type vagale",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       }

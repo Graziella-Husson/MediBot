@@ -11,13 +11,13 @@ sessions:
     duration:
       minutes: '15'
     followed_intent: None
-    requested_intent: treatment,infoPatient,activity,pain,pathology,social,emotional_hapiness,emotional_sadness
+    requested_intent: treatment,infoPatient,activity,pain,pathology,social,positiveEmo,negativeEmo
     requested_slot:
-      treatment: medicinal,treatment_being_taken,treatment_drug,treatment_ok,dosing,treatment_time,treatment_overdosage,treatment_prescripted,treatment_period,treatment_duration
-      infoPatient: weight,infoPatient_time,infoPatient_distance,infoPatient_temperature,gender,heart_rate,blood_pressure
-      activity: sport,activity_duration,activity_period,activity_distance,activity_hard,activity_time
+      treatment: treatment_medicinal,treatment_being_taken,treatment_drug,treatment_ok,treatment_dosing,treatment_time,treatment_overdosage,treatment_prescripted,treatment_period,treatment_duration
+      infoPatient: infoPatient_weight,infoPatient_time,infoPatient_distance,infoPatient_temperature,infoPatient_gender,infoPatient_heart_rate,infoPatient_blood_pressure,infoPatient_addiction
+      activity: activity_sport,activity_duration,activity_period,activity_distance,activity_hard,activity_time
       pain: pain_duration,pain_desc,pain_body_part,pain_period,pain_time,pain_change
-      pathology: symtoms,pathology_time,pathology_period,pathology_body_part,pathology_change,pathology_treatment_linked,pathology_duration
+      pathology: pathology_symptom,pathology_time,pathology_period,pathology_body_part,pathology_change,pathology_treatment_linked,pathology_duration
 
   2:
     duration:
@@ -26,7 +26,7 @@ sessions:
     requested_intent: pain
     requested_slot:
       pain: pain_desc
-      activity: sport,activity_distance
+      activity: activity_sport,activity_distance
   3:
     duration:
       minutes: '5'
@@ -34,7 +34,7 @@ sessions:
     requested_intent: pain
     requested_slot:
       pain: pain_desc
-      activity: sport,activity_distance
+      activity: activity_sport,activity_distance
 stopword: stop
 emergency : help
 nickname : Ailixir

@@ -10,24 +10,27 @@ from rasa_core.events import SlotSet
 from simple_actions import Fallback
 from init_and_complex import get_complex_entities
 from form_actions import (
-    ActionFillSlotsSport,
-    ActionFillSlotsPain,
+    Activity,
+    Pain,
     InfoPatient,
     Pathology,
     Treatment
 )
+
+
 def get_topic(tracker):
     """@return: The topic
     If the slot 'requested_slot' is not null and requires something
-    with a topic ('sport' slot has no topic, because it's not a complex slot)
+    with a topic
     the topic is set to from the topic of 'requested_slot' {topic}_{entity}
     else, the topic is set with the name of the intent detected."""
     topic = tracker.get_slot("topic")
     requested_slot = tracker.get_slot("requested_slot")
-    if requested_slot != None and len(requested_slot.split('_')) > 1:
+    if requested_slot is not None and len(requested_slot.split('_')) > 1:
         head, *tail = requested_slot.split('_')
         topic = head
     return topic
+
 
 def get_next_action(topic):
     """@return: The next action to do.
@@ -39,12 +42,13 @@ def get_next_action(topic):
         - pathology
         - treatment"""
     return {
-        'activity': ActionFillSlotsSport(),
-        'pain': ActionFillSlotsPain(),
+        'activity': Activity(),
+        'pain': Pain(),
         'infoPatient': InfoPatient(),
         'pathology': Pathology(),
         'treatment': Treatment()
         }.get(topic, Fallback())    # fallback is default if topic not found
+
 
 class SetMultiple(Action):
     """Fill slots with complex entities values"""
@@ -63,7 +67,7 @@ class SetMultiple(Action):
         topic = get_topic(tracker)
 #        real_topic = topic
         for i in every:
-            if tracker.get_slot(str(i)) != None:
+            if tracker.get_slot(str(i)) is not None:
                 value = tracker.get_slot(i)
 #                print(topic+"_"+str(i))
 #                print(value)
@@ -72,5 +76,5 @@ class SetMultiple(Action):
                 tracker.update(SlotSet(str(i), None))
         tracker.update(SlotSet("requested_slot", None))
         action = get_next_action(topic)
-        if action != None:
+        if action is not None:
             tracker.trigger_follow_up_action(action)

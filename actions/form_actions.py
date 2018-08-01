@@ -221,7 +221,7 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
                                     must implement a name method""")
 
 
-class ActionFillSlotsPain(FormActionCalculusAndCore):
+class Pain(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for pain intent"""
     def __init__(self):
         """Set the name of the intent\n
@@ -254,7 +254,7 @@ class ActionFillSlotsPain(FormActionCalculusAndCore):
 
     def name(self):
         """@return: the name of the action."""
-        return 'action_check_slots_pain'
+        return 'sum_up_pain'
 
     @staticmethod
     def required_fields():
@@ -268,7 +268,7 @@ class ActionFillSlotsPain(FormActionCalculusAndCore):
             return []
 
 
-class ActionFillSlotsSport(FormActionCalculusAndCore):
+class Activity(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for activity intent"""
     def __init__(self):
         """Set the name of the intent\n
@@ -279,16 +279,16 @@ class ActionFillSlotsSport(FormActionCalculusAndCore):
         The entities linked to the 'activity' intent are:
             - activity_level
             - activity_duration
-            - sport
+            - activity_sport
             - activity_period
             - activity_distance
             - activity_hard (boolean)
             - activity_time
-        The sport level is calculated with the method
-        C{get_physical_activity_level(sport)}
-        If we want the sport level, we have to have the sport slot mandatory"""
+        The activity_sport level is calculated with the method
+        C{get_physical_activity_level(activity_sport)}
+        If we want the activity_sport level, we have to have the sport slot mandatory"""
         self.intent_name = "activity"
-        self.main_slot = "sport"
+        self.main_slot = "activity_sport"
         self.levels = ["little", "moderate", "vigorous"]
         self.classifier = get_physical_activity_level
         self.calculus = True
@@ -300,7 +300,7 @@ class ActionFillSlotsSport(FormActionCalculusAndCore):
 
     def name(self):
         """@return: the name of the action."""
-        return 'action_check_slots_sport'
+        return 'sum_up_activity'
 
     @staticmethod
     def required_fields():
@@ -343,15 +343,15 @@ class CheckRequestedIntents(FormActionTriggerAction):
         dispatcher.utter_message(get_utterance("requested_intent", language))
 
 
-class Sadness(FormActionCalculusAndCore):
+class NegativeEmo(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for sadness intent"""
     def __init__(self):
         """Set the name of the intent"""
-        self.intent_name = "emotional_sadness"
+        self.intent_name = "negativeEmo"
 
     def name(self):
         """@return: the name of the action."""
-        return 'sum_up_emotionnal_sadness'
+        return 'sum_up_negativeEmo'
 
     @staticmethod
     def required_fields():
@@ -360,20 +360,20 @@ class Sadness(FormActionCalculusAndCore):
         returns it. If not, returns an empty list."""
         obligatories = get_obligatories()
         try:
-            return obligatories["sum_up_emotionnal_sadness"]
+            return obligatories["negativeEmo"]
         except:
             return []
 
 
-class Happy(FormActionCalculusAndCore):
+class PositiveEmo(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for happiness intent"""
     def __init__(self):
         """Set the name of the intent"""
-        self.intent_name = "emotional_hapiness"
+        self.intent_name = "positiveEmo"
 
     def name(self):
         """@return: the name of the action."""
-        return 'sum_up_emotional_hapiness'
+        return 'sum_up_positiveEmo'
 
     @staticmethod
     def required_fields():
@@ -382,7 +382,7 @@ class Happy(FormActionCalculusAndCore):
         return it. If not, return an empty list."""
         obligatories = get_obligatories()
         try:
-            return obligatories["sum_up_emotional_hapiness"]
+            return obligatories["positiveEmo"]
         except:
             return []
 
@@ -415,7 +415,7 @@ class Pathology(FormActionCalculusAndCore):
         """Set the name of the intent
         The entities linked to this intent are:
             - pathology_body_part
-            - symtoms
+            - pathology_symptom
             - pathology_time
             - pathology_change (boolean)
             - pathology_period
@@ -426,7 +426,7 @@ class Pathology(FormActionCalculusAndCore):
         just say that we talked about a pathology\n
         Ask if the informations are correct.\n"""
         self.intent_name = "pathology"
-        self.simples = ["symtoms",
+        self.simples = ["pathology_symptom",
                         "pathology_body_part",
                         "pathology_time",
                         "pathology_period",
@@ -457,10 +457,10 @@ class Treatment(FormActionCalculusAndCore):
     def __init__(self):
         """Set the name of the intent
         The entities linked to this intent are:
-            - medicinal (boolean)
+            - treatment_medicinal (boolean)
             - treatment_being_taken
             - treatment_drug
-            - dosing
+            - treatment_dosing
             - treatment_time
             - treatment_prescripted(boolean)
             - treatment_ok(boolean)
@@ -477,9 +477,9 @@ class Treatment(FormActionCalculusAndCore):
                         "treatment_duration",
                         ["treatment_being_taken", "no_drug"],
                         ["treatment_drug", "no_drug"],
-                        ["dosing", "no_drug"],
+                        ["treatment_dosing", "no_drug"],
                         ["treatment_overdosage", "no_drug"]]
-        self.booleans = ["medicinal",
+        self.booleans = ["treatment_medicinal",
                          "treatment",
                          "treatment_prescripted",
                          "treatment_ok"]
@@ -505,12 +505,12 @@ class InfoPatient(FormActionCalculusAndCore):
     def __init__(self):
         """Set the name of the intent
         The entities linked to this intent are:
-            - addiction
-            - weight
+            - infoPatient_addiction
+            - infoPatient_weight
             - infoPatient_distance
-            - gender
+            - infoPatient_gender
             - infoPatient_temperature
-            - heart_rate
+            - infoPatient_heart_rate
             - blood_pressure
             - infoPatient_time
         This action will sum up these infos.
@@ -518,12 +518,12 @@ class InfoPatient(FormActionCalculusAndCore):
         just say that we talked about a personal info\n
         Ask if the informations are correct.\n"""
         self.intent_name = "infoPatient"
-        self.simples = ["addiction",
-                        "weight",
+        self.simples = ["infoPatient_addiction",
+                        "infoPatient_weight",
                         ["infoPatient_distance", None, "size"],
                         "infoPatient_temperature",
-                        "heart_rate",
-                        "gender",
+                        "infoPatient_heart_rate",
+                        "infoPatient_gender",
                         "blood_pressure",
                         "infoPatient_time"]
 

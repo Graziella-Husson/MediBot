@@ -3465,7 +3465,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -3483,7 +3483,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -3501,7 +3501,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -3519,7 +3519,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -3549,7 +3549,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -3567,7 +3567,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -3585,7 +3585,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -3603,7 +3603,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -3633,7 +3633,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -3651,7 +3651,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -3669,7 +3669,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -3699,7 +3699,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -3717,7 +3717,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -3735,7 +3735,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -3753,7 +3753,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -3783,7 +3783,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -3801,7 +3801,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -3819,7 +3819,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -3837,7 +3837,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -3867,7 +3867,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -3885,7 +3885,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -3915,7 +3915,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -3933,7 +3933,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -3951,7 +3951,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -3981,7 +3981,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -3999,7 +3999,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -4017,7 +4017,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -4047,7 +4047,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -4077,7 +4077,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -4107,7 +4107,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -4137,7 +4137,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -4155,7 +4155,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -4185,7 +4185,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -4203,7 +4203,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -4233,7 +4233,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -4251,7 +4251,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -4269,7 +4269,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -4287,7 +4287,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -4305,7 +4305,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -4323,7 +4323,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -4341,7 +4341,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -4359,7 +4359,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -4377,7 +4377,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -4395,7 +4395,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -4413,7 +4413,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -4431,7 +4431,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -4449,7 +4449,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -4467,7 +4467,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -4485,7 +4485,7 @@
         "entities": [
           {
             "end": 16,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "marathon"
           },
@@ -4503,7 +4503,7 @@
         "entities": [
           {
             "end": 11,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "ran"
           },
@@ -4521,7 +4521,7 @@
         "entities": [
           {
             "end": 12,
-            "entity": "sport",
+            "entity": "activity_sport",
             "start": 8,
             "value": "race"
           },
@@ -4541,7 +4541,7 @@
             "start": 2,
             "end": 15,
             "value": "can not speak",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4553,7 +4553,7 @@
             "start": 3,
             "end": 17,
             "value": "speech is slow",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4571,7 +4571,7 @@
             "start": 11,
             "end": 18,
             "value": "clogged",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4583,7 +4583,7 @@
             "start": 2,
             "end": 17,
             "value": "can not swallow",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4595,7 +4595,7 @@
             "start": 2,
             "end": 16,
             "value": "cannot breathe",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4607,7 +4607,7 @@
             "start": 9,
             "end": 14,
             "value": "cough",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4619,7 +4619,7 @@
             "start": 2,
             "end": 12,
             "value": "cannot eat",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4631,7 +4631,7 @@
             "start": 13,
             "end": 26,
             "value": "blurry vision",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4649,7 +4649,7 @@
             "start": 13,
             "end": 19,
             "value": "ulcers",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4661,7 +4661,7 @@
             "start": 7,
             "end": 13,
             "value": "nausea",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4673,7 +4673,7 @@
             "start": 2,
             "end": 12,
             "value": "cannot see",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4685,7 +4685,7 @@
             "start": 7,
             "end": 15,
             "value": "dry skin",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4697,7 +4697,7 @@
             "start": 2,
             "end": 14,
             "value": "lose my hair",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4715,7 +4715,7 @@
             "start": 3,
             "end": 21,
             "value": "feels like needles",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4727,7 +4727,7 @@
             "start": 7,
             "end": 15,
             "value": "feverish",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4739,7 +4739,7 @@
             "start": 16,
             "end": 31,
             "value": "urge to urinate",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4757,7 +4757,7 @@
             "start": 9,
             "end": 25,
             "value": "bets too quickly",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4775,7 +4775,7 @@
             "start": 7,
             "end": 14,
             "value": "plaques",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4793,7 +4793,7 @@
             "start": 7,
             "end": 18,
             "value": "white spots",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4805,7 +4805,7 @@
             "start": 7,
             "end": 21,
             "value": "itchy blisters",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4829,7 +4829,7 @@
             "start": 10,
             "end": 17,
             "value": "allergy",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4847,7 +4847,7 @@
             "start": 5,
             "end": 12,
             "value": "ringing",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4859,7 +4859,7 @@
             "start": 7,
             "end": 35,
             "value": "uncontrolled vocal outbursts",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4871,7 +4871,7 @@
             "start": 3,
             "end": 19,
             "value": "vision is blurry",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4883,7 +4883,7 @@
             "start": 10,
             "end": 15,
             "value": "vomit",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4895,7 +4895,7 @@
             "start": 2,
             "end": 8,
             "value": "sneeze",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4913,7 +4913,7 @@
             "start": 15,
             "end": 21,
             "value": "attack",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4925,7 +4925,7 @@
             "start": 6,
             "end": 26,
             "value": "difficult to swallow",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4937,7 +4937,7 @@
             "start": 12,
             "end": 16,
             "value": "rash",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4955,7 +4955,7 @@
             "start": 14,
             "end": 21,
             "value": "swollen",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4979,7 +4979,7 @@
             "start": 5,
             "end": 20,
             "value": "short of breath",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -4991,7 +4991,7 @@
             "start": 14,
             "end": 20,
             "value": "eczema",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5009,7 +5009,7 @@
             "start": 2,
             "end": 17,
             "value": "can not breathe",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5027,7 +5027,7 @@
             "start": 15,
             "end": 18,
             "value": "flu",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5039,7 +5039,7 @@
             "start": 7,
             "end": 15,
             "value": "diarrhea",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5051,7 +5051,7 @@
             "start": 7,
             "end": 38,
             "value": "uncontrolled repeated movements",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5063,7 +5063,7 @@
             "start": 5,
             "end": 15,
             "value": "not hungry",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5075,7 +5075,7 @@
             "start": 2,
             "end": 7,
             "value": "cough",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5093,7 +5093,7 @@
             "start": 9,
             "end": 14,
             "value": "runny",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5111,7 +5111,7 @@
             "start": 12,
             "end": 16,
             "value": "weak",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5123,7 +5123,7 @@
             "start": 3,
             "end": 23,
             "value": "burns when i urinate",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5135,7 +5135,7 @@
             "start": 11,
             "end": 31,
             "value": "difficult to urinate",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5153,7 +5153,7 @@
             "start": 9,
             "end": 26,
             "value": "choking sensation",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5165,7 +5165,7 @@
             "start": 5,
             "end": 17,
             "value": "feeling cold",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5177,7 +5177,7 @@
             "start": 7,
             "end": 33,
             "value": "difficulty with swallowing",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5195,7 +5195,7 @@
             "start": 12,
             "end": 21,
             "value": "irritated",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5207,7 +5207,7 @@
             "start": 7,
             "end": 24,
             "value": "blood in my urine",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5225,7 +5225,7 @@
             "start": 12,
             "end": 16,
             "value": "weak",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5237,7 +5237,7 @@
             "start": 2,
             "end": 13,
             "value": "do not hear",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5249,7 +5249,7 @@
             "start": 7,
             "end": 26,
             "value": "difficulty to think",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5261,7 +5261,7 @@
             "start": 4,
             "end": 13,
             "value": "shivering",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5273,7 +5273,7 @@
             "start": 7,
             "end": 12,
             "value": "fever",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5285,7 +5285,7 @@
             "start": 7,
             "end": 31,
             "value": "difficulty with speaking",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5297,7 +5297,7 @@
             "start": 23,
             "end": 27,
             "value": "numb",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5309,7 +5309,7 @@
             "start": 3,
             "end": 24,
             "value": "urine is dark-colored",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5327,7 +5327,7 @@
             "start": 7,
             "end": 15,
             "value": "numbness",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5339,7 +5339,7 @@
             "start": 7,
             "end": 26,
             "value": "hearing impairments",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5351,7 +5351,7 @@
             "start": 2,
             "end": 15,
             "value": "can not speak",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5363,7 +5363,7 @@
             "start": 7,
             "end": 13,
             "value": "sweats",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5381,7 +5381,7 @@
             "start": 2,
             "end": 6,
             "value": "rash",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5393,7 +5393,7 @@
             "start": 10,
             "end": 18,
             "value": "allergic",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5405,7 +5405,7 @@
             "start": 9,
             "end": 29,
             "value": "fluttering heartbeat",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5417,7 +5417,7 @@
             "start": 5,
             "end": 16,
             "value": "constipated",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5429,7 +5429,7 @@
             "start": 7,
             "end": 25,
             "value": "decreased appetite",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5441,7 +5441,7 @@
             "start": 7,
             "end": 10,
             "value": "flu",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5459,7 +5459,7 @@
             "start": 8,
             "end": 26,
             "value": "bumps and blisters",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5471,7 +5471,7 @@
             "start": 13,
             "end": 31,
             "value": "frequent urination",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5483,7 +5483,7 @@
             "start": 7,
             "end": 23,
             "value": "hearing problems",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5513,7 +5513,7 @@
             "start": 5,
             "end": 13,
             "value": "not hear",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5531,7 +5531,7 @@
             "start": 11,
             "end": 19,
             "value": "swelling",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5543,7 +5543,7 @@
             "start": 7,
             "end": 19,
             "value": "no sensation",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5555,7 +5555,7 @@
             "start": 9,
             "end": 24,
             "value": "rapid breathing",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5585,7 +5585,7 @@
             "start": 15,
             "end": 30,
             "value": "thin or brittle",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5597,7 +5597,7 @@
             "start": 10,
             "end": 14,
             "value": "puke",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5649,7 +5649,7 @@
             "start": 3,
             "end": 21,
             "value": "feels like needles",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5661,7 +5661,7 @@
             "start": 7,
             "end": 13,
             "value": "chills",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5679,7 +5679,7 @@
             "start": 11,
             "end": 15,
             "value": "pale",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5697,7 +5697,7 @@
             "start": 7,
             "end": 17,
             "value": "irritation",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5715,7 +5715,7 @@
             "start": 7,
             "end": 12,
             "value": "itchy",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5733,7 +5733,7 @@
             "start": 12,
             "end": 17,
             "value": "heavy",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5751,7 +5751,7 @@
             "start": 25,
             "end": 32,
             "value": "clogged",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5763,7 +5763,7 @@
             "start": 9,
             "end": 26,
             "value": "blood in my stool",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5781,7 +5781,7 @@
             "start": 7,
             "end": 15,
             "value": "pressure",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5799,7 +5799,7 @@
             "start": 7,
             "end": 24,
             "value": "trouble breathing",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5817,7 +5817,7 @@
             "start": 11,
             "end": 19,
             "value": "numbness",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5829,7 +5829,7 @@
             "start": 3,
             "end": 19,
             "value": "vision is double",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5847,7 +5847,7 @@
             "start": 12,
             "end": 20,
             "value": "eruption",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5859,7 +5859,7 @@
             "start": 14,
             "end": 22,
             "value": "weakness",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5871,7 +5871,7 @@
             "start": 7,
             "end": 19,
             "value": "cloudy urine",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5889,7 +5889,7 @@
             "start": 7,
             "end": 19,
             "value": "irregularity",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5907,7 +5907,7 @@
             "start": 14,
             "end": 23,
             "value": "infection",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5919,7 +5919,7 @@
             "start": 10,
             "end": 18,
             "value": "throw up",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -5931,7 +5931,7 @@
             "start": 7,
             "end": 12,
             "value": "fever",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -6146,7 +6146,7 @@
             "start": 16,
             "end": 23,
             "value": "swollen",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -6391,7 +6391,7 @@
             "start": 11,
             "end": 16,
             "value": "woman",
-            "entity": "gender"
+            "entity": "infoPatient_gender"
           }
         ]
       },
@@ -6415,7 +6415,7 @@
             "start": 17,
             "end": 36,
             "value": "60 beats per minute",
-            "entity": "heart_rate"
+            "entity": "infoPatient_heart_rate"
           }
         ]
       },
@@ -6439,7 +6439,7 @@
             "start": 7,
             "end": 12,
             "value": "woman",
-            "entity": "gender"
+            "entity": "infoPatient_gender"
           }
         ]
       },
@@ -6480,7 +6480,7 @@
             "start": 6,
             "end": 11,
             "value": "woman",
-            "entity": "gender"
+            "entity": "infoPatient_gender"
           }
         ]
       },
@@ -6528,7 +6528,7 @@
             "start": 7,
             "end": 12,
             "value": "5 lbs",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -6546,7 +6546,7 @@
             "start": 12,
             "end": 24,
             "value": "beating fast",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -6558,7 +6558,7 @@
             "start": 9,
             "end": 18,
             "value": "400 grams",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -6570,7 +6570,7 @@
             "start": 5,
             "end": 29,
             "value": "1 meter and 69 centimers",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -6582,7 +6582,7 @@
             "start": 9,
             "end": 19,
             "value": "110 pounds",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -6594,7 +6594,7 @@
             "start": 7,
             "end": 12,
             "value": "10 lb",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -6618,7 +6618,7 @@
             "start": 7,
             "end": 14,
             "value": "5 kilos",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -6672,7 +6672,7 @@
             "start": 9,
             "end": 20,
             "value": "pumps a lot",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -6696,7 +6696,7 @@
             "start": 25,
             "end": 44,
             "value": "40 beats per minute",
-            "entity": "heart_rate"
+            "entity": "infoPatient_heart_rate"
           }
         ]
       },
@@ -6708,7 +6708,7 @@
             "start": 29,
             "end": 35,
             "value": "150/90",
-            "entity": "heart_rate"
+            "entity": "infoPatient_heart_rate"
           }
         ]
       },
@@ -6720,7 +6720,7 @@
             "start": 13,
             "end": 20,
             "value": "110 lbs",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -6732,7 +6732,7 @@
             "start": 17,
             "end": 24,
             "value": "200 bpm",
-            "entity": "heart_rate"
+            "entity": "infoPatient_heart_rate"
           }
         ]
       },
@@ -6744,7 +6744,7 @@
             "start": 16,
             "end": 22,
             "value": "60 bpm",
-            "entity": "heart_rate"
+            "entity": "infoPatient_heart_rate"
           }
         ]
       },
@@ -6768,7 +6768,7 @@
             "start": 13,
             "end": 18,
             "value": "50 kg",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -6816,7 +6816,7 @@
             "start": 2,
             "end": 26,
             "value": "bearly feel my heartbeat",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -6834,7 +6834,7 @@
             "start": 12,
             "end": 19,
             "value": "beeping",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -6864,7 +6864,7 @@
             "start": 19,
             "end": 39,
             "value": "not return to normal",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -6888,7 +6888,7 @@
             "start": 9,
             "end": 15,
             "value": "400 oz",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -6900,7 +6900,7 @@
             "start": 7,
             "end": 15,
             "value": "5 pounds",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -6918,7 +6918,7 @@
             "start": 9,
             "end": 13,
             "value": "fast",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -6930,7 +6930,7 @@
             "start": 21,
             "end": 32,
             "value": "150 over 90",
-            "entity": "blood_pressure"
+            "entity": "infoPatient_blood_pressure"
           }
         ]
       },
@@ -6942,7 +6942,7 @@
             "start": 15,
             "end": 18,
             "value": "man",
-            "entity": "gender"
+            "entity": "infoPatient_gender"
           }
         ]
       },
@@ -6954,7 +6954,7 @@
             "start": 15,
             "end": 20,
             "value": "woman",
-            "entity": "gender"
+            "entity": "infoPatient_gender"
           }
         ]
       },
@@ -6972,7 +6972,7 @@
             "start": 9,
             "end": 19,
             "value": "beats fast",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -6990,7 +6990,7 @@
             "start": 9,
             "end": 25,
             "value": "rate is elevated",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -7026,7 +7026,7 @@
             "start": 11,
             "end": 14,
             "value": "man",
-            "entity": "gender"
+            "entity": "infoPatient_gender"
           }
         ]
       },
@@ -7079,7 +7079,7 @@
             "start": 10,
             "end": 32,
             "value": "pauses in my heartbeat",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -7121,7 +7121,7 @@
             "start": 9,
             "end": 22,
             "value": "beats rapidly",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -7133,7 +7133,7 @@
             "start": 9,
             "end": 17,
             "value": "400 once",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -7181,7 +7181,7 @@
             "start": 15,
             "end": 36,
             "value": "180 times in a minute",
-            "entity": "heart_rate"
+            "entity": "infoPatient_heart_rate"
           }
         ]
       },
@@ -7193,7 +7193,7 @@
             "start": 7,
             "end": 14,
             "value": "5 kilos",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -7205,7 +7205,7 @@
             "start": 9,
             "end": 17,
             "value": "50 kilos",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -7217,7 +7217,7 @@
             "start": 7,
             "end": 13,
             "value": "5 kilo",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -7247,7 +7247,7 @@
             "start": 9,
             "end": 35,
             "value": "beats and pauses and beats",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -7271,7 +7271,7 @@
             "start": 7,
             "end": 11,
             "value": "5 kg",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -7283,7 +7283,7 @@
             "start": 7,
             "end": 10,
             "value": "men",
-            "entity": "gender"
+            "entity": "infoPatient_gender"
           }
         ]
       },
@@ -7295,7 +7295,7 @@
             "start": 8,
             "end": 13,
             "value": "woman",
-            "entity": "gender"
+            "entity": "infoPatient_gender"
           }
         ]
       },
@@ -7319,7 +7319,7 @@
             "start": 8,
             "end": 11,
             "value": "man",
-            "entity": "gender"
+            "entity": "infoPatient_gender"
           }
         ]
       },
@@ -7337,7 +7337,7 @@
             "start": 9,
             "end": 21,
             "value": "skips a beat",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -7349,7 +7349,7 @@
             "start": 25,
             "end": 45,
             "value": "200 beats per minute",
-            "entity": "heart_rate"
+            "entity": "infoPatient_heart_rate"
           }
         ]
       },
@@ -7373,7 +7373,7 @@
             "start": 6,
             "end": 9,
             "value": "men",
-            "entity": "gender"
+            "entity": "infoPatient_gender"
           }
         ]
       },
@@ -8985,862 +8985,862 @@
       },
       {
         "text": "i always feel Miserable",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i am fearful",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I have no energy",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel down",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel super tired",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel lonely",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I don't want to see anyone",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "my life sucks",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I have no friends",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am sad",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "sadness is my middlename",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I miss my family and friends",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am depressed",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I do not laugh anymore",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i feel sad without you",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "my life does not make sense",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "there seems no end to my situation",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I didn’t want to wake up",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "it's hopeless",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "my life is a complete chaos of emotions",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Whatever is happening to me is my own fault",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I have done something wrong",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "nothing is enjoyable",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i see no future for me",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i feel like a ghost",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i am isolated",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i feel somber",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am melancholic all day",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "my mind is paralyzed",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Every day is a struggle",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i hate myself",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "my heart just sank",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel off",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I'm out of sorts today",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I'm in the dumps about the situation",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel gloomy",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I had a sinking feeling",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am beside myself",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I'm feeling under the weather",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I have the blues",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am bummed out",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am in the pits",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am in a blue funk",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am on a bit of a downer",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am troubled",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "it depresses me",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "my mood is a little morose",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am gloomy",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am worried",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel lost",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am distressed",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am afflicted",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am truly saddened",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am beset by the ironies of my life",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am troubled",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am in a state of real grief",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I'm just so overwhelmed",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel like weeping",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel like crying",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I cry a lot",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I scream",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I have a tendency to cry easily",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "having the urge to cry",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I may have felt like weeping",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I have sad thoughts",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I often feel spent and dull",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "deep sorrow entered me",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "higher anxiety",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am devastated",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am heart-broken",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "absolutely gutted",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "My heart is broken",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I do not want to live anymore",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Let me be",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "distraught",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "in pieces",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "a bit depressed",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I need some moral support",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel so much sorrow",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel unhappy",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I was lying on my bed",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel without hope",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel very upset",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am no longer able to deal with this difficult situation",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am at the end of my rope",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am at the end of my tether",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I sleep well",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Its fantastic",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "can't be better",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am being well",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "My life is as I want it to be",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Life is beautiful",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Full of hapiness",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Cool",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I'm so good",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel well",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Very well",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel energetic",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel like dancing all the time",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "my life is top",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I love my life",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "the sky is the limit",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am happy",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am surrounded by faily and friends",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I don't have any depression",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I don't feel any sorrow",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am a happy person",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am smiling",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel good",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "it's hopeful",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "my mind is in peace",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "i'm optimistic",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "i feel euphoric about life",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "i make a lot of jokes",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "i joke around all day",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "i am satisfied with my life",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "i am in love",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "i am amused",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "having a whale of a time",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am tickled pink",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am feeling wonderful",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am happy as a clam",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am over the moon",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "i am in seventh heaven",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel like a dog with two tails",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am such a happy camper at the moment",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am full of the joys of spring today",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I enjoy a happy evening",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel wonderful",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am full of energy",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I found contentment",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "living a wonderfull life",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "It is about peace of mind",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am able to find such unusual serenity",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "my emotions stay cool",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am is in the zone of quietude",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I live in tranquillity",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel very good in my body",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel absolutely wonderful",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel great",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel fine",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am so comfortable",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel in good shape",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel more fit",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "relaxed",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "energized",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel great in both body and mind",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "It makes me feel healthier",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel in better form",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am in a very happy state",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel like very good",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am floating on air",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I'm a man fulfilled",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "my life is beautiful",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel like a fish in water",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am glad",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I actually feel pretty serene",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I'm very relaxed",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel confident",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I'm totally satisfied with my life",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "My life feels very balanced",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am to live a balanced life",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "meaningful life",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "This is a happy time in my life",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am delighted",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel fit",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Lovely",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Wonderful",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "full of Joy",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am optimistic",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am feeling playful",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am up",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
@@ -9856,7 +9856,7 @@
             "start": 0,
             "end": 9,
             "value": "triathlon",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -9873,7 +9873,7 @@
             "start": 0,
             "end": 8,
             "value": "carrying",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -9885,7 +9885,7 @@
             "start": 7,
             "end": 20,
             "value": "double tennis",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 21,
@@ -9903,7 +9903,7 @@
             "start": 11,
             "end": 24,
             "value": "jumping jacks",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -9915,7 +9915,7 @@
             "start": 21,
             "end": 27,
             "value": "hockey",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -9927,7 +9927,7 @@
             "start": 9,
             "end": 15,
             "value": "skiing",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -9939,7 +9939,7 @@
             "start": 14,
             "end": 20,
             "value": "skiing",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -9951,7 +9951,7 @@
             "start": 8,
             "end": 18,
             "value": "ice hockey",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -9963,7 +9963,7 @@
             "start": 0,
             "end": 4,
             "value": "Walk",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 19,
@@ -9981,7 +9981,7 @@
             "start": 2,
             "end": 6,
             "value": "jump",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 7,
@@ -9999,7 +9999,7 @@
             "start": 8,
             "end": 12,
             "value": "polo",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -10011,7 +10011,7 @@
             "start": 8,
             "end": 14,
             "value": "stairs",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 18,
@@ -10052,7 +10052,7 @@
             "start": 6,
             "end": 10,
             "value": "walk",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 11,
@@ -10070,7 +10070,7 @@
             "start": 12,
             "end": 25,
             "value": "swimming pool",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -10094,7 +10094,7 @@
             "start": 7,
             "end": 13,
             "value": "tennis",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 17,
@@ -10112,7 +10112,7 @@
             "start": 0,
             "end": 7,
             "value": "running",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 12,
@@ -10136,7 +10136,7 @@
             "start": 9,
             "end": 13,
             "value": "bike",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 14,
@@ -10202,7 +10202,7 @@
             "start": 0,
             "end": 4,
             "value": "walk",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 5,
@@ -10226,7 +10226,7 @@
             "start": 5,
             "end": 18,
             "value": "Water jogging",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 19,
@@ -10492,7 +10492,7 @@
             "start": 0,
             "end": 7,
             "value": "jujitsu",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 15,
@@ -10510,7 +10510,7 @@
             "start": 13,
             "end": 21,
             "value": "ballroom",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 22,
@@ -10534,7 +10534,7 @@
             "start": 7,
             "end": 17,
             "value": "volleyball",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -10552,7 +10552,7 @@
             "start": 0,
             "end": 6,
             "value": "hiking",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -10575,7 +10575,7 @@
             "start": 0,
             "end": 7,
             "value": "lifting",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -10593,7 +10593,7 @@
             "start": 0,
             "end": 8,
             "value": "climbing",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -10611,7 +10611,7 @@
             "start": 15,
             "end": 22,
             "value": "running",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -10629,7 +10629,7 @@
             "start": 11,
             "end": 18,
             "value": "by foot",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -10641,7 +10641,7 @@
             "start": 2,
             "end": 5,
             "value": "run",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 6,
@@ -10671,7 +10671,7 @@
             "start": 0,
             "end": 10,
             "value": "basketball",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -10683,7 +10683,7 @@
             "start": 7,
             "end": 15,
             "value": "football",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 20,
@@ -10713,7 +10713,7 @@
             "start": 7,
             "end": 15,
             "value": "marathon",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -10904,7 +10904,7 @@
             "start": 11,
             "end": 14,
             "value": "yog",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 22,
@@ -10922,7 +10922,7 @@
             "start": 9,
             "end": 18,
             "value": "baskeball",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -10940,7 +10940,7 @@
             "start": 11,
             "end": 18,
             "value": "bowling",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -10958,7 +10958,7 @@
             "start": 2,
             "end": 20,
             "value": "washed the windows",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -10970,7 +10970,7 @@
             "start": 6,
             "end": 18,
             "value": "moving stuff",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -10982,7 +10982,7 @@
             "start": 6,
             "end": 19,
             "value": "pushing a car",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11000,7 +11000,7 @@
             "start": 5,
             "end": 12,
             "value": "jumping",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11012,7 +11012,7 @@
             "start": 7,
             "end": 14,
             "value": "jumping",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 15,
@@ -11030,7 +11030,7 @@
             "start": 10,
             "end": 25,
             "value": "horse galloping",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11042,7 +11042,7 @@
             "start": 6,
             "end": 21,
             "value": "Horsebackriding",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11054,7 +11054,7 @@
             "start": 7,
             "end": 19,
             "value": "Scuba diving",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11089,7 +11089,7 @@
             "start": 11,
             "end": 21,
             "value": "water polo",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11101,7 +11101,7 @@
             "start": 5,
             "end": 26,
             "value": "Synchronized swimming",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11113,7 +11113,7 @@
             "start": 11,
             "end": 22,
             "value": "tae kwon do",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11149,7 +11149,7 @@
             "start": 8,
             "end": 11,
             "value": "run",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 15,
@@ -11173,7 +11173,7 @@
             "start": 2,
             "end": 5,
             "value": "ran",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11356,7 +11356,7 @@
             "start": 2,
             "end": 8,
             "value": "Squash",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11374,7 +11374,7 @@
             "start": 8,
             "end": 21,
             "value": "rock climbing",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11386,7 +11386,7 @@
             "start": 14,
             "end": 18,
             "value": "judo",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11398,7 +11398,7 @@
             "start": 11,
             "end": 17,
             "value": "karate",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11410,7 +11410,7 @@
             "start": 8,
             "end": 25,
             "value": "Mountain climbing",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 29,
@@ -11428,7 +11428,7 @@
             "start": 9,
             "end": 17,
             "value": "handball",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11440,7 +11440,7 @@
             "start": 7,
             "end": 20,
             "value": "tennis single",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11452,7 +11452,7 @@
             "start": 8,
             "end": 14,
             "value": "soccer",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11464,7 +11464,7 @@
             "start": 7,
             "end": 15,
             "value": "football",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11482,7 +11482,7 @@
             "start": 2,
             "end": 6,
             "value": "swim",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11494,7 +11494,7 @@
             "start": 6,
             "end": 13,
             "value": "cycling",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 27,
@@ -11512,7 +11512,7 @@
             "start": 15,
             "end": 19,
             "value": "walk",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 23,
@@ -11733,7 +11733,7 @@
             "start": 13,
             "end": 21,
             "value": "aerobics",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 22,
@@ -11751,7 +11751,7 @@
             "start": 18,
             "end": 24,
             "value": "hockey",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11763,7 +11763,7 @@
             "start": 21,
             "end": 30,
             "value": "ping pong",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 31,
@@ -11793,7 +11793,7 @@
             "start": 19,
             "end": 28,
             "value": "shoveling",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11805,7 +11805,7 @@
             "start": 0,
             "end": 7,
             "value": "Digging",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11817,7 +11817,7 @@
             "start": 10,
             "end": 19,
             "value": "rapelling",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11829,7 +11829,7 @@
             "start": 13,
             "end": 26,
             "value": "step aerobics",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 33,
@@ -11847,7 +11847,7 @@
             "start": 19,
             "end": 31,
             "value": "jumping rope",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 43,
@@ -11865,7 +11865,7 @@
             "start": 11,
             "end": 17,
             "value": "boxing",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11877,7 +11877,7 @@
             "start": 8,
             "end": 16,
             "value": "sparring",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11895,7 +11895,7 @@
             "start": 55,
             "end": 72,
             "value": "wheelchair tennis",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11913,7 +11913,7 @@
             "start": 54,
             "end": 59,
             "value": "rugby",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11925,7 +11925,7 @@
             "start": 45,
             "end": 57,
             "value": "beach volley",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11937,7 +11937,7 @@
             "start": 29,
             "end": 39,
             "value": "speedskate",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11949,7 +11949,7 @@
             "start": 23,
             "end": 34,
             "value": "racquetball",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 2,
@@ -11967,7 +11967,7 @@
             "start": 0,
             "end": 8,
             "value": "Sledding",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11979,7 +11979,7 @@
             "start": 14,
             "end": 22,
             "value": "baseball",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -11991,7 +11991,7 @@
             "start": 18,
             "end": 26,
             "value": "football",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -12009,7 +12009,7 @@
             "start": 14,
             "end": 23,
             "value": "Ping-Pong",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -12021,7 +12021,7 @@
             "start": 13,
             "end": 17,
             "value": "race",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -12033,7 +12033,7 @@
             "start": 13,
             "end": 16,
             "value": "jog",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -12163,7 +12163,7 @@
             "start": 17,
             "end": 24,
             "value": "dancing",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -12697,7 +12697,7 @@
             "start": 2,
             "end": 5,
             "value": "ran",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -12715,7 +12715,7 @@
       },
       {
         "text": "I am glad you asked",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
@@ -12737,7 +12737,7 @@
             "start": 7,
             "end": 13,
             "value": "cycled",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -12761,7 +12761,7 @@
             "start": 14,
             "end": 17,
             "value": "gym",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -12773,7 +12773,7 @@
             "start": 11,
             "end": 14,
             "value": "gym",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -12785,7 +12785,7 @@
             "start": 9,
             "end": 16,
             "value": "gymming",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -14611,7 +14611,7 @@
             "start": 9,
             "end": 15,
             "value": "tennis",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -14623,7 +14623,7 @@
             "start": 11,
             "end": 17,
             "value": "tennis",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -14635,7 +14635,7 @@
             "start": 17,
             "end": 22,
             "value": "dance",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -14647,7 +14647,7 @@
             "start": 11,
             "end": 19,
             "value": "football",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 23,
@@ -14665,7 +14665,7 @@
             "start": 11,
             "end": 19,
             "value": "climbing",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -14677,7 +14677,7 @@
             "start": 17,
             "end": 20,
             "value": "run",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -14689,7 +14689,7 @@
             "start": 14,
             "end": 17,
             "value": "gym",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -14701,7 +14701,7 @@
             "start": 12,
             "end": 23,
             "value": "tai kwen do",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -14713,7 +14713,7 @@
             "start": 5,
             "end": 9,
             "value": "yoga",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -14725,7 +14725,7 @@
             "start": 5,
             "end": 13,
             "value": "marathon",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -14737,7 +14737,7 @@
             "start": 0,
             "end": 11,
             "value": "competitive",
-            "entity": "sport"
+            "entity": "activity_sport"
           },
           {
             "start": 19,
@@ -14875,7 +14875,7 @@
             "start": 6,
             "end": 12,
             "value": "tennis",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -14899,7 +14899,7 @@
             "start": 0,
             "end": 6,
             "value": "Tennis",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -15380,82 +15380,82 @@
       },
       {
         "text": "This is wonderful",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Lovely!",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am happy!",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "Happy days",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "This a lovely way to feel!",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am so good",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I'm so glad",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "There's no hope",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "War never changes",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I can't live like this",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I want to stop everything",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "All world is hell",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I'm depressed",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I feel that I am going to die",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "So sad :'(",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am crying",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
@@ -15655,7 +15655,7 @@
       },
       {
         "text": "I'm not happy",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
@@ -15696,7 +15696,7 @@
             "start": 11,
             "end": 17,
             "value": "squats",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -15708,7 +15708,7 @@
             "start": 2,
             "end": 18,
             "value": "lift some weight",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -15767,7 +15767,7 @@
       },
       {
         "text": "I don 't feel well",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
@@ -15832,7 +15832,7 @@
             "start": 9,
             "end": 12,
             "value": "flu",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -15843,42 +15843,42 @@
       },
       {
         "text": "I am no in a good mood ",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I'm not ok",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am not happy",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am not sad",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am ok",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am in a good mood",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am not well",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am so good",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
@@ -15942,7 +15942,7 @@
             "start": 13,
             "end": 26,
             "value": "not digesting",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -15966,7 +15966,7 @@
             "start": 26,
             "end": 45,
             "value": "Parkinson’s Disease",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -16020,7 +16020,7 @@
             "start": 25,
             "end": 29,
             "value": "itch",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -16032,7 +16032,7 @@
             "start": 20,
             "end": 39,
             "value": "underactive thyroid",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -16193,7 +16193,7 @@
             "start": 25,
             "end": 36,
             "value": "constipated",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -16223,7 +16223,7 @@
             "start": 25,
             "end": 33,
             "value": "adderall",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
@@ -16743,7 +16743,7 @@
             "start": 7,
             "end": 22,
             "value": "Hughes syndrome",
-            "entity": "symtoms"
+            "entity": "pathology_symptom"
           }
         ]
       },

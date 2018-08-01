@@ -393,27 +393,27 @@
 	{
         "text": "I did a run today",
         "intent": "activity",
-        "entities": [{"start": 8, "end": 11, "value": "run", "entity": "sport"}]
+        "entities": [{"start": 8, "end": 11, "value": "run", "entity": "activity_sport"}]
       },
       {
         "text": "I did a marathon today",
         "intent": "activity",
         "entities": [
-          {"start": 8, "end": 16, "value": "marathon", "entity": "sport"}
+          {"start": 8, "end": 16, "value": "marathon", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did a soccer game today",
         "intent": "activity",
         "entities": [
-          {"start": 8, "end": 19, "value": "soccer game", "entity": "sport"}
+          {"start": 8, "end": 19, "value": "soccer game", "entity": "activity_sport"}
         ]
       },
 	{
         "text": "I was running and it was cool",
         "intent": "activity",
         "entities": [
-          {"start": 6, "end": 13, "value": "running", "entity": "sport"}
+          {"start": 6, "end": 13, "value": "running", "entity": "activity_sport"}
         ]
       },
       {
@@ -424,7 +424,7 @@
             "start": 6,
             "end": 25,
             "value": "lifting heavy stuff",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -432,7 +432,7 @@
         "text": "I was cycling and it was cool",
         "intent": "activity",
         "entities": [
-          {"start": 6, "end": 13, "value": "cycling", "entity": "sport"}
+          {"start": 6, "end": 13, "value": "cycling", "entity": "activity_sport"}
         ]
       },
       {
@@ -443,7 +443,7 @@
             "start": 6,
             "end": 31,
             "value": "climbing brisky up a hill",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -451,7 +451,7 @@
         "text": "I was digging ditches and it was cool",
         "intent": "activity",
         "entities": [
-          {"start": 6, "end": 21, "value": "digging ditches", "entity": "sport"}
+          {"start": 6, "end": 21, "value": "digging ditches", "entity": "activity_sport"}
         ]
       },
       {
@@ -462,7 +462,7 @@
             "start": 6,
             "end": 26,
             "value": "carrying heavy loads",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -470,14 +470,14 @@
         "text": "I was hiking and it was cool",
         "intent": "activity",
         "entities": [
-          {"start": 6, "end": 12, "value": "hiking", "entity": "sport"}
+          {"start": 6, "end": 12, "value": "hiking", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I was Backpacking and it was cool",
         "intent": "activity",
         "entities": [
-          {"start": 6, "end": 17, "value": "Backpacking", "entity": "sport"}
+          {"start": 6, "end": 17, "value": "Backpacking", "entity": "activity_sport"}
         ]
       },
       {
@@ -488,7 +488,7 @@
             "start": 6,
             "end": 27,
             "value": "dancing energetically",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -496,56 +496,56 @@
         "text": "I was Boxing and it was cool",
         "intent": "activity",
         "entities": [
-          {"start": 6, "end": 12, "value": "Boxing", "entity": "sport"}
+          {"start": 6, "end": 12, "value": "Boxing", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I was sparring and it was cool",
         "intent": "activity",
         "entities": [
-          {"start": 6, "end": 14, "value": "sparring", "entity": "sport"}
+          {"start": 6, "end": 14, "value": "sparring", "entity": "activity_sport"}
         ]
       },
 	{
         "text": "I did some tennis",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 17, "value": "tennis", "entity": "sport"}
+          {"start": 11, "end": 17, "value": "tennis", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some extrem sports",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 24, "value": "extrem sports", "entity": "sport"}
+          {"start": 11, "end": 24, "value": "extrem sports", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some nordic walking",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 25, "value": "nordic walking", "entity": "sport"}
+          {"start": 11, "end": 25, "value": "nordic walking", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some bicylcle",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 19, "value": "bicylcle", "entity": "sport"}
+          {"start": 11, "end": 19, "value": "bicylcle", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some tennis",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 17, "value": "tennis", "entity": "sport"}
+          {"start": 11, "end": 17, "value": "tennis", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some aerobics",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 19, "value": "aerobics", "entity": "sport"}
+          {"start": 11, "end": 19, "value": "aerobics", "entity": "activity_sport"}
         ]
       },
       {
@@ -556,7 +556,7 @@
             "start": 11,
             "end": 29,
             "value": "competitive sports",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -564,42 +564,42 @@
         "text": "I did some football",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 19, "value": "football", "entity": "sport"}
+          {"start": 11, "end": 19, "value": "football", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some volleyball",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 21, "value": "volleyball", "entity": "sport"}
+          {"start": 11, "end": 21, "value": "volleyball", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some hockey",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 17, "value": "hockey", "entity": "sport"}
+          {"start": 11, "end": 17, "value": "hockey", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some basketball",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 21, "value": "basketball", "entity": "sport"}
+          {"start": 11, "end": 21, "value": "basketball", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some handball",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 19, "value": "handball", "entity": "sport"}
+          {"start": 11, "end": 19, "value": "handball", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some ping pong",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 20, "value": "ping pong", "entity": "sport"}
+          {"start": 11, "end": 20, "value": "ping pong", "entity": "activity_sport"}
         ]
       },
 	{
@@ -610,7 +610,7 @@
             "start": 14,
             "end": 35,
             "value": "Perform jumping jacks",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -622,7 +622,7 @@
             "start": 14,
             "end": 56,
             "value": "Use a stair climber machine at a fast pace",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -634,7 +634,7 @@
             "start": 14,
             "end": 55,
             "value": "Use a rowing machine with vigorous effort",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -646,7 +646,7 @@
             "start": 14,
             "end": 61,
             "value": "Use an arm cycling machine with vigorous effort",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -658,7 +658,7 @@
             "start": 14,
             "end": 34,
             "value": "triathlon exercising",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -670,7 +670,7 @@
             "start": 14,
             "end": 33,
             "value": "a lot of exercising",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -682,7 +682,7 @@
             "start": 9,
             "end": 33,
             "value": "heavy musical instrument",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -690,21 +690,21 @@
         "text": "I played tennis single",
         "intent": "activity",
         "entities": [
-          {"start": 9, "end": 22, "value": "tennis single", "entity": "sport"}
+          {"start": 9, "end": 22, "value": "tennis single", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I played Water jogging",
         "intent": "activity",
         "entities": [
-          {"start": 9, "end": 22, "value": "Water jogging", "entity": "sport"}
+          {"start": 9, "end": 22, "value": "Water jogging", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I played Water polo",
         "intent": "activity",
         "entities": [
-          {"start": 9, "end": 19, "value": "Water polo", "entity": "sport"}
+          {"start": 9, "end": 19, "value": "Water polo", "entity": "activity_sport"}
         ]
       },
       {
@@ -715,7 +715,7 @@
             "start": 9,
             "end": 25,
             "value": "Water basketball",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -723,7 +723,7 @@
         "text": "I played polo",
         "intent": "activity",
         "entities": [
-          {"start": 9, "end": 13, "value": "polo", "entity": "sport"}
+          {"start": 9, "end": 13, "value": "polo", "entity": "activity_sport"}
         ]
       },
 	{
@@ -734,7 +734,7 @@
             "start": 23,
             "end": 38,
             "value": "vacuum cleaning",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -746,7 +746,7 @@
             "start": 23,
             "end": 38,
             "value": "clean the house",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -754,49 +754,49 @@
         "text": "I came back to do some washing window",
         "intent": "activity",
         "entities": [
-          {"start": 23, "end": 37, "value": "washing window", "entity": "sport"}
+          {"start": 23, "end": 37, "value": "washing window", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I came back to do some bowling",
         "intent": "activity",
         "entities": [
-          {"start": 23, "end": 30, "value": "bowling", "entity": "sport"}
+          {"start": 23, "end": 30, "value": "bowling", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I came back to do some stairs",
         "intent": "activity",
         "entities": [
-          {"start": 23, "end": 29, "value": "stairs", "entity": "sport"}
+          {"start": 23, "end": 29, "value": "stairs", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I came back to do some floors",
         "intent": "activity",
         "entities": [
-          {"start": 23, "end": 29, "value": "floors", "entity": "sport"}
+          {"start": 23, "end": 29, "value": "floors", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I came back to do some active walking",
         "intent": "activity",
         "entities": [
-          {"start": 23, "end": 37, "value": "active walking", "entity": "sport"}
+          {"start": 23, "end": 37, "value": "active walking", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I came back to do some walking",
         "intent": "activity",
         "entities": [
-          {"start": 23, "end": 30, "value": "walking", "entity": "sport"}
+          {"start": 23, "end": 30, "value": "walking", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I came back to do some jogging",
         "intent": "activity",
         "entities": [
-          {"start": 23, "end": 30, "value": "jogging", "entity": "sport"}
+          {"start": 23, "end": 30, "value": "jogging", "entity": "activity_sport"}
         ]
       }
     ]

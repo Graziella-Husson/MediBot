@@ -1,5 +1,5 @@
 slots:
-  sport:
+  activity_sport:
     type: text
   activity_level:
     type: text
@@ -35,9 +35,9 @@ slots:
     type: text
   activity:
     type: text
-  emotional_sadness:
+  negativeEmo:
     type: text
-  emotional_hapiness:
+  positiveEmo:
     type: text
   social:
     type: text
@@ -63,27 +63,27 @@ slots:
     type: unfeaturized
   time:
     type: text
-  medicinal:
+  treatment_medicinal:
     type: bool
-  symtoms:
+  pathology_symptom:
     type: text
   drug:
     type: text
   treatment_drug:
     type: text
-  addiction:
+  infoPatient_addiction:
     type: text
-  weight:
+  infoPatient_weight:
     type: text
   infoPatient_distance:
     type: text
-  gender:
+  infoPatient_gender:
     type: text
   infoPatient_temperature:
     type: text
-  heart_rate:
+  infoPatient_heart_rate:
     type: text
-  blood_pressure:
+  infoPatient_blood_pressure:
     type: text
   infoPatient_time:
     type: text
@@ -115,6 +115,8 @@ slots:
     type: text
   pathology_treatment_linked:
     type: bool
+  treatment_dosing:
+    type: text
   dosing:
     type: text
   treatment_time:
@@ -149,8 +151,8 @@ slots:
 intents:
  - activity
  - pain
- - emotional_sadness
- - emotional_hapiness
+ - negativeEmo
+ - positiveEmo
  - fallback
  - social
  - agree
@@ -169,7 +171,7 @@ intents:
  - alcohol
 
 entities:
- - sport
+ - activity_sport
  - body_part
  - duration
  - pain_desc
@@ -177,15 +179,15 @@ entities:
  - period
  - pain_change
  - time
- - symtoms
+ - pathology_symptom
  - drug
- - addiction
- - weight
- - gender
+ - infoPatient_addiction
+ - infoPatient_weight
+ - infoPatient_gender
  - temperature
- - heart_rate
- - blood_pressure
- - dosing
+ - infoPatient_heart_rate
+ - infoPatient_blood_pressure
+ - treatment_dosing
 
 actions:
  - init_and_complex.SumUpSLots
@@ -196,10 +198,10 @@ actions:
  - reminders.ChangeSessionReminder
  - reminders.UserReminderLittle
  - reminders.FollowedIntentReminder
- - form_actions.ActionFillSlotsPain
- - form_actions.ActionFillSlotsSport
- - form_actions.Sadness
- - form_actions.Happy
+ - form_actions.Pain
+ - form_actions.Activity
+ - form_actions.NegativeEmo
+ - form_actions.PositiveEmo
  - form_actions.Social
  - form_actions.Pathology
  - form_actions.Treatment
@@ -214,17 +216,17 @@ actions:
  - complex_sets.SetMultiple
  - ask_what.AskWhatPathology
  - ask_what.AskWhatPain
- - ask_what.AskWhatSport
+ - ask_what.AskWhatActivity
  - ask_what.AskWhatTreatment
  - ask_what.AskWhatInfoPatient
  - reset_slots.ResetPathologySlots
  - reset_slots.ResetTreatmentSlots
  - reset_slots.ResetInfoPatientSlots
- - reset_slots.ResetSportSlots
+ - reset_slots.ResetActivitySlots
  - reset_slots.ResetPainSlots
  - simple_actions.Fallback
  - simple_actions.AskActivityHard
- - simple_actions.AskSport
+ - simple_actions.AskActivitySport
  - simple_actions.AskActivityDuration
  - simple_actions.AskPainBodyPart
  - simple_actions.AskPathologyBodyPart
@@ -235,33 +237,33 @@ actions:
  - simple_actions.AskPain
  - simple_actions.AskActivity
  - simple_actions.AskSocial
- - simple_actions.AskHappiness
- - simple_actions.AskSadness
+ - simple_actions.AskPositiveEmo
+ - simple_actions.AskNegativeEmo
  - simple_actions.AskPainDesc
  - simple_actions.Agree
  - simple_actions.Disagree
  - simple_actions.AskWhy
  - simple_actions.Bye
  - simple_actions.Hello
- - simple_actions.AskSymptoms
- - simple_actions.AskMedicinal
+ - simple_actions.AskPathologySymptom
+ - simple_actions.AskTreatmentMedicinal
  - simple_actions.AskTreatmentDrug
  - simple_actions.AskPainTime
  - simple_actions.AskActivityTime
  - simple_actions.AskActivityDistance
- - simple_actions.AskWeight
+ - simple_actions.AskInfoPatientWeight
  - simple_actions.AskInfoPatientDistance
- - simple_actions.AskHeartRate
+ - simple_actions.AskInfoPatientHeartRate
  - simple_actions.AskInfoPatientTemperature
- - simple_actions.AskGender
- - simple_actions.AskBloodPressure
- - simple_actions.AskAddiction
+ - simple_actions.AskInfoPatientGender
+ - simple_actions.AskInfoPatientBloodPressure
+ - simple_actions.AskInfoPatientAddiction
  - simple_actions.AskInfoPatientTime
  - simple_actions.AskPathologyTime
  - simple_actions.AskPathologyPeriod
  - simple_actions.AskPathologyChange
  - simple_actions.AskPathologyTreatmentLinked
- - simple_actions.AskDosing
+ - simple_actions.AskTreatmentDosing
  - simple_actions.AskTreatmentTime
  - simple_actions.AskTreatmentBeingTaken
  - simple_actions.AskTreatmentOverdosage

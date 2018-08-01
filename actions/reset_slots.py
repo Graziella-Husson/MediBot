@@ -70,20 +70,20 @@ class ResetSlotsAction(Action):
         return global_score
 
 
-class ResetSportSlots(ResetSlotsAction):
+class ResetActivitySlots(ResetSlotsAction):
     """Reset slots linked to activity intent and save infos in DB"""
     def name(self):
         """
         @return: the name of the action.
         """
-        return 'reset_slots_sport'
+        return 'reset_slots_activity'
 
     def __init__(self):
         """Set all slots for intent 'activity' to None :
             - activity_hard
             - activity_duration
             - activity_level
-            - sport
+            - activity_sport
             - activity_distance
             - activity_period
             - activity_time
@@ -93,7 +93,7 @@ class ResetSportSlots(ResetSlotsAction):
         self.entities = ["activity_hard",
                          "activity_duration",
                          "activity_level",
-                         "sport",
+                         "activity_sport",
                          "activity_distance",
                          "activity_period",
                          "activity_time"
@@ -137,7 +137,7 @@ class ResetPathologySlots(ResetSlotsAction):
     def __init__(self):
         """Set all slots for intent 'pathology' to None:
             - pathology_body_part
-            - symtoms
+            - pathology_symptom
             - pathology_time
             - pathology_change (boolean)
             - pathology_period
@@ -146,7 +146,7 @@ class ResetPathologySlots(ResetSlotsAction):
         Set slot pathology to True"""
         self.intent_name = "pathology"
         self.entities = ["pathology_body_part",
-                         "symtoms",
+                         "pathology_symptom",
                          "pathology_time",
                          "pathology_change",
                          "pathology_period",
@@ -163,10 +163,10 @@ class ResetTreatmentSlots(ResetSlotsAction):
 
     def __init__(self):
         """Set all slots for intent 'treatment' to None:
-            - medicinal (boolean)
+            - treatment_medicinal (boolean)
             - treatment_being_taken
             - treatment_drug
-            - dosing
+            - treatment_dosing
             - treatment_time
             - treatment_prescripted(boolean)
             - treatment_ok(boolean)
@@ -175,10 +175,10 @@ class ResetTreatmentSlots(ResetSlotsAction):
             - treatment_duration
         Set slot treatment to True"""
         self.intent_name = "treatment"
-        self.entities = ["medicinal",
+        self.entities = ["treatment_medicinal",
                          "treatment_being_taken",
                          "treatment_drug",
-                         "dosing",
+                         "treatment_dosing",
                          "treatment_time",
                          "treatment_prescripted",
                          "treatment_ok",
@@ -196,22 +196,22 @@ class ResetInfoPatientSlots(ResetSlotsAction):
 
     def __init__(self):
         """Set all slots for intent 'infoPatient' to None:
-            - addiction
-            - weight
+            - infoPatient_addiction
+            - infoPatient_weight
             - infoPatient_distance
-            - gender
+            - infoPatient_gender
             - infoPatient_temperature
-            - heart_rate
-            - blood_pressure
+            - infoPatient_heart_rate
+            - infoPatient_blood_pressure
             - infoPatient_time
         Set slot infoPatient to True"""
         self.intent_name = "infoPatient"
-        self.entities = ["addiction",
-                         "weight",
+        self.entities = ["infoPatient_addiction",
+                         "infoPatient_weight",
                          "infoPatient_distance",
-                         "gender",
+                         "infoPatient_gender",
                          "infoPatient_temperature",
-                         "heart_rate",
-                         "blood_pressure",
+                         "infoPatient_heart_rate",
+                         "infoPatient_blood_pressure",
                          "infoPatient_time"
                          ]

@@ -6,34 +6,34 @@
 	{
         "text": "I did a run today",
         "intent": "activity",
-        "entities": [{"start": 8, "end": 11, "value": "run", "entity": "sport"}]
+        "entities": [{"start": 8, "end": 11, "value": "run", "entity": "activity_sport"}]
       },
       {
         "text": "I did a marathon today",
         "intent": "activity",
         "entities": [
-          {"start": 8, "end": 16, "value": "marathon", "entity": "sport"}
+          {"start": 8, "end": 16, "value": "marathon", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did a soccer game today",
         "intent": "activity",
         "entities": [
-          {"start": 8, "end": 19, "value": "soccer game", "entity": "sport"}
+          {"start": 8, "end": 19, "value": "soccer game", "entity": "activity_sport"}
         ]
       },
 	{
         "text": "I was running and it was cool",
         "intent": "activity",
         "entities": [
-          {"start": 6, "end": 13, "value": "running", "entity": "sport"}
+          {"start": 6, "end": 13, "value": "running", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I was cycling and it was cool",
         "intent": "activity",
         "entities": [
-          {"start": 6, "end": 13, "value": "cycling", "entity": "sport"}
+          {"start": 6, "end": 13, "value": "cycling", "entity": "activity_sport"}
         ]
       },
       {
@@ -44,7 +44,7 @@
             "start": 6,
             "end": 31,
             "value": "climbing brisky up a hill",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -52,21 +52,21 @@
         "text": "I was digging ditches and it was cool",
         "intent": "activity",
         "entities": [
-          {"start": 6, "end": 21, "value": "digging ditches", "entity": "sport"}
+          {"start": 6, "end": 21, "value": "digging ditches", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I was hiking and it was cool",
         "intent": "activity",
         "entities": [
-          {"start": 6, "end": 12, "value": "hiking", "entity": "sport"}
+          {"start": 6, "end": 12, "value": "hiking", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I was Backpacking and it was cool",
         "intent": "activity",
         "entities": [
-          {"start": 6, "end": 17, "value": "Backpacking", "entity": "sport"}
+          {"start": 6, "end": 17, "value": "Backpacking", "entity": "activity_sport"}
         ]
       },
       {
@@ -77,7 +77,7 @@
             "start": 6,
             "end": 27,
             "value": "dancing energetically",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -85,91 +85,91 @@
         "text": "I was Boxing and it was cool",
         "intent": "activity",
         "entities": [
-          {"start": 6, "end": 12, "value": "Boxing", "entity": "sport"}
+          {"start": 6, "end": 12, "value": "Boxing", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I was sparring and it was cool",
         "intent": "activity",
         "entities": [
-          {"start": 6, "end": 14, "value": "sparring", "entity": "sport"}
+          {"start": 6, "end": 14, "value": "sparring", "entity": "activity_sport"}
         ]
       },
 	{
         "text": "I did some tennis",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 17, "value": "tennis", "entity": "sport"}
+          {"start": 11, "end": 17, "value": "tennis", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some nordic walking",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 25, "value": "nordic walking", "entity": "sport"}
+          {"start": 11, "end": 25, "value": "nordic walking", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some bicylcle",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 19, "value": "bicylcle", "entity": "sport"}
+          {"start": 11, "end": 19, "value": "bicylcle", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some tennis",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 17, "value": "tennis", "entity": "sport"}
+          {"start": 11, "end": 17, "value": "tennis", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some aerobics",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 19, "value": "aerobics", "entity": "sport"}
+          {"start": 11, "end": 19, "value": "aerobics", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some football",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 19, "value": "football", "entity": "sport"}
+          {"start": 11, "end": 19, "value": "football", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some volleyball",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 21, "value": "volleyball", "entity": "sport"}
+          {"start": 11, "end": 21, "value": "volleyball", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some hockey",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 17, "value": "hockey", "entity": "sport"}
+          {"start": 11, "end": 17, "value": "hockey", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some basketball",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 21, "value": "basketball", "entity": "sport"}
+          {"start": 11, "end": 21, "value": "basketball", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some handball",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 19, "value": "handball", "entity": "sport"}
+          {"start": 11, "end": 19, "value": "handball", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I did some ping pong",
         "intent": "activity",
         "entities": [
-          {"start": 11, "end": 20, "value": "ping pong", "entity": "sport"}
+          {"start": 11, "end": 20, "value": "ping pong", "entity": "activity_sport"}
         ]
       },
       {
@@ -180,7 +180,7 @@
             "start": 14,
             "end": 56,
             "value": "Use a stair climber machine at a fast pace",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -192,7 +192,7 @@
             "start": 14,
             "end": 55,
             "value": "Use a rowing machine with vigorous effort",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -204,7 +204,7 @@
             "start": 9,
             "end": 33,
             "value": "heavy musical instrument",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -212,21 +212,21 @@
         "text": "I played tennis single",
         "intent": "activity",
         "entities": [
-          {"start": 9, "end": 22, "value": "tennis single", "entity": "sport"}
+          {"start": 9, "end": 22, "value": "tennis single", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I played Water jogging",
         "intent": "activity",
         "entities": [
-          {"start": 9, "end": 22, "value": "Water jogging", "entity": "sport"}
+          {"start": 9, "end": 22, "value": "Water jogging", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I played Water polo",
         "intent": "activity",
         "entities": [
-          {"start": 9, "end": 19, "value": "Water polo", "entity": "sport"}
+          {"start": 9, "end": 19, "value": "Water polo", "entity": "activity_sport"}
         ]
       },
       {
@@ -237,7 +237,7 @@
             "start": 9,
             "end": 25,
             "value": "Water basketball",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -245,7 +245,7 @@
         "text": "I played polo",
         "intent": "activity",
         "entities": [
-          {"start": 9, "end": 13, "value": "polo", "entity": "sport"}
+          {"start": 9, "end": 13, "value": "polo", "entity": "activity_sport"}
         ]
       },
 	{
@@ -256,7 +256,7 @@
             "start": 23,
             "end": 38,
             "value": "vacuum cleaning",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -268,7 +268,7 @@
             "start": 23,
             "end": 38,
             "value": "clean the house",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -276,42 +276,42 @@
         "text": "I came back to do some washing window",
         "intent": "activity",
         "entities": [
-          {"start": 23, "end": 37, "value": "washing window", "entity": "sport"}
+          {"start": 23, "end": 37, "value": "washing window", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I came back to do some stairs",
         "intent": "activity",
         "entities": [
-          {"start": 23, "end": 29, "value": "stairs", "entity": "sport"}
+          {"start": 23, "end": 29, "value": "stairs", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I came back to do some floors",
         "intent": "activity",
         "entities": [
-          {"start": 23, "end": 29, "value": "floors", "entity": "sport"}
+          {"start": 23, "end": 29, "value": "floors", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I came back to do some active walking",
         "intent": "activity",
         "entities": [
-          {"start": 23, "end": 37, "value": "active walking", "entity": "sport"}
+          {"start": 23, "end": 37, "value": "active walking", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I came back to do some walking",
         "intent": "activity",
         "entities": [
-          {"start": 23, "end": 30, "value": "walking", "entity": "sport"}
+          {"start": 23, "end": 30, "value": "walking", "entity": "activity_sport"}
         ]
       },
       {
         "text": "I came back to do some jogging",
         "intent": "activity",
         "entities": [
-          {"start": 23, "end": 30, "value": "jogging", "entity": "sport"}
+          {"start": 23, "end": 30, "value": "jogging", "entity": "activity_sport"}
         ]
       },
 	{
@@ -673,312 +673,312 @@
       },
       {
         "text": "i always feel Miserable",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "i am fearful", "intent": "emotional_sadness", "entities": []},
+      {"text": "i am fearful", "intent": "negativeEmo", "entities": []},
       {
         "text": "I have no energy",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "I feel down", "intent": "emotional_sadness", "entities": []},
+      {"text": "I feel down", "intent": "negativeEmo", "entities": []},
       {
         "text": "I feel super tired",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "I feel lonely", "intent": "emotional_sadness", "entities": []},
+      {"text": "I feel lonely", "intent": "negativeEmo", "entities": []},
       {
         "text": "I don't want to see anyone",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "my life sucks", "intent": "emotional_sadness", "entities": []},
+      {"text": "my life sucks", "intent": "negativeEmo", "entities": []},
       {
         "text": "I have no friends",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "I am sad", "intent": "emotional_sadness", "entities": []},
-      {"text": "I want to die", "intent": "emotional_sadness", "entities": []},
+      {"text": "I am sad", "intent": "negativeEmo", "entities": []},
+      {"text": "I want to die", "intent": "negativeEmo", "entities": []},
       {
         "text": "sadness is my middlename",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I miss my family and friends",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "I am depressed", "intent": "emotional_sadness", "entities": []},
+      {"text": "I am depressed", "intent": "negativeEmo", "entities": []},
       {
         "text": "I do not laugh anymore",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i feel sad without you",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "my life does not make sense",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "there seems no end to my situation",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I didn’t want to wake up",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "it's hopeless", "intent": "emotional_sadness", "entities": []},
+      {"text": "it's hopeless", "intent": "negativeEmo", "entities": []},
       {
         "text": "my life is a complete chaos of emotions",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Whatever is happening to me is my own fault",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I have done something wrong",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "nothing is enjoyable",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i see no future for me",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "i feel like a ghost",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "i am isolated", "intent": "emotional_sadness", "entities": []},
-      {"text": "i am distroyed", "intent": "emotional_sadness", "entities": []},
-      {"text": "i feel somber", "intent": "emotional_sadness", "entities": []},
+      {"text": "i am isolated", "intent": "negativeEmo", "entities": []},
+      {"text": "i am distroyed", "intent": "negativeEmo", "entities": []},
+      {"text": "i feel somber", "intent": "negativeEmo", "entities": []},
       {
         "text": "I am melancholic all day",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "my mind is paralyzed",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "Every day is a struggle",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "i hate myself", "intent": "emotional_sadness", "entities": []},
+      {"text": "i hate myself", "intent": "negativeEmo", "entities": []},
       {
         "text": "my heart just sank",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "I feel off", "intent": "emotional_sadness", "entities": []},
+      {"text": "I feel off", "intent": "negativeEmo", "entities": []},
       {
         "text": "I'm out of sorts today",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I just don't feel well",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am in a blue funk",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
       {
         "text": "I am on a bit of a downer",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "I sleep well", "intent": "emotional_hapiness", "entities": []},
+      {"text": "I sleep well", "intent": "positiveEmo", "entities": []},
       {
         "text": "I feel energetic",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel like dancing all the time",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "my life is top",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I love my life",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "the sky is the limit",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
-      {"text": "I am happy", "intent": "emotional_hapiness", "entities": []},
+      {"text": "I am happy", "intent": "positiveEmo", "entities": []},
       {
         "text": "I am surrounded by faily and friends",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I don't have any depression",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am a happy person",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
-      {"text": "I am smiling", "intent": "emotional_hapiness", "entities": []},
-      {"text": "I feel good", "intent": "emotional_hapiness", "entities": []},
-      {"text": "it's hopeful", "intent": "emotional_hapiness", "entities": []},
+      {"text": "I am smiling", "intent": "positiveEmo", "entities": []},
+      {"text": "I feel good", "intent": "positiveEmo", "entities": []},
+      {"text": "it's hopeful", "intent": "positiveEmo", "entities": []},
       {
         "text": "my mind is in peace",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "i'm optimistic",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "i feel euphoric about life",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "i make a lot of jokes",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "i joke around all day",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "i am satisfied with my life",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
-      {"text": "i am in love", "intent": "emotional_hapiness", "entities": []},
-      {"text": "i am amused", "intent": "emotional_hapiness", "entities": []},
+      {"text": "i am in love", "intent": "positiveEmo", "entities": []},
+      {"text": "i am amused", "intent": "positiveEmo", "entities": []},
       {
         "text": "having a whale of a time",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am tickled pink",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am feeling wonderful",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am happy as a clam",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am over the moon",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "i am in seventh heaven",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel like a dog with two tails",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am such a happy camper at the moment",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am full of the joys of spring today",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I enjoy a happy evening",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I feel wonderful",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am full of energy",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I found contentment in living a simple life",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "It is about peace of mind",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am able to find such unusual serenity",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "my emotions stay cool",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I am is in the zone of quietude",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "I live in tranquillity",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       }
     ]

@@ -148,195 +148,195 @@
       {"text": "Drawing", "intent": "pain_severe", "entities": []},
       {"text": "torturing", "intent": "pain_severe", "entities": []},
       {"text": "torture", "intent": "pain_severe", "entities": []},
-      {"text": "miserable", "intent": "emotional_sadness", "entities": []},
-      {"text": "fearful", "intent": "emotional_sadness", "entities": []},
-      {"text": "no energy", "intent": "emotional_sadness", "entities": []},
-      {"text": "down", "intent": "emotional_sadness", "entities": []},
-      {"text": "super tired", "intent": "emotional_sadness", "entities": []},
-      {"text": "lonely", "intent": "emotional_sadness", "entities": []},
+      {"text": "miserable", "intent": "negativeEmo", "entities": []},
+      {"text": "fearful", "intent": "negativeEmo", "entities": []},
+      {"text": "no energy", "intent": "negativeEmo", "entities": []},
+      {"text": "down", "intent": "negativeEmo", "entities": []},
+      {"text": "super tired", "intent": "negativeEmo", "entities": []},
+      {"text": "lonely", "intent": "negativeEmo", "entities": []},
       {
         "text": "I don't want to see",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "life sucks", "intent": "emotional_sadness", "entities": []},
-      {"text": "no friends", "intent": "emotional_sadness", "entities": []},
-      {"text": "sad", "intent": "emotional_sadness", "entities": []},
-      {"text": "sadness", "intent": "emotional_sadness", "entities": []},
+      {"text": "life sucks", "intent": "negativeEmo", "entities": []},
+      {"text": "no friends", "intent": "negativeEmo", "entities": []},
+      {"text": "sad", "intent": "negativeEmo", "entities": []},
+      {"text": "sadness", "intent": "negativeEmo", "entities": []},
       {
         "text": "miss my family and friends",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "depressed", "intent": "emotional_sadness", "entities": []},
-      {"text": "do not laugh", "intent": "emotional_sadness", "entities": []},
+      {"text": "depressed", "intent": "negativeEmo", "entities": []},
+      {"text": "do not laugh", "intent": "negativeEmo", "entities": []},
       {
         "text": "sad without you",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "not make sense", "intent": "emotional_sadness", "entities": []},
-      {"text": "no end", "intent": "emotional_sadness", "entities": []},
+      {"text": "not make sense", "intent": "negativeEmo", "entities": []},
+      {"text": "no end", "intent": "negativeEmo", "entities": []},
       {
         "text": "didn’t want to wake up",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "hopeless", "intent": "emotional_sadness", "entities": []},
+      {"text": "hopeless", "intent": "negativeEmo", "entities": []},
       {
         "text": "chaos of emotions",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "my own fault", "intent": "emotional_sadness", "entities": []},
+      {"text": "my own fault", "intent": "negativeEmo", "entities": []},
       {
         "text": "something wrong",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "not enjoyable", "intent": "emotional_sadness", "entities": []},
+      {"text": "not enjoyable", "intent": "negativeEmo", "entities": []},
       {
         "text": "no future for me",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "a ghost", "intent": "emotional_sadness", "entities": []},
-      {"text": "isolated", "intent": "emotional_sadness", "entities": []},
-      {"text": "somber", "intent": "emotional_sadness", "entities": []},
-      {"text": "melancholic", "intent": "emotional_sadness", "entities": []},
-      {"text": "mind paralyzed", "intent": "emotional_sadness", "entities": []},
-      {"text": "struggle", "intent": "emotional_sadness", "entities": []},
-      {"text": "hate myself", "intent": "emotional_sadness", "entities": []},
+      {"text": "a ghost", "intent": "negativeEmo", "entities": []},
+      {"text": "isolated", "intent": "negativeEmo", "entities": []},
+      {"text": "somber", "intent": "negativeEmo", "entities": []},
+      {"text": "melancholic", "intent": "negativeEmo", "entities": []},
+      {"text": "mind paralyzed", "intent": "negativeEmo", "entities": []},
+      {"text": "struggle", "intent": "negativeEmo", "entities": []},
+      {"text": "hate myself", "intent": "negativeEmo", "entities": []},
       {
         "text": "heart just sank",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "off", "intent": "emotional_sadness", "entities": []},
-      {"text": "out of sorts", "intent": "emotional_sadness", "entities": []},
+      {"text": "off", "intent": "negativeEmo", "entities": []},
+      {"text": "out of sorts", "intent": "negativeEmo", "entities": []},
       {
         "text": "the dumps about the situation",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "gloomy", "intent": "emotional_sadness", "entities": []},
-      {"text": "sinking", "intent": "emotional_sadness", "entities": []},
-      {"text": "beside myself", "intent": "emotional_sadness", "entities": []},
+      {"text": "gloomy", "intent": "negativeEmo", "entities": []},
+      {"text": "sinking", "intent": "negativeEmo", "entities": []},
+      {"text": "beside myself", "intent": "negativeEmo", "entities": []},
       {
         "text": "under the weather",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "the blues", "intent": "emotional_sadness", "entities": []},
-      {"text": "bummed out", "intent": "emotional_sadness", "entities": []},
-      {"text": "in the pits", "intent": "emotional_sadness", "entities": []},
-      {"text": "in a blue funk", "intent": "emotional_sadness", "entities": []},
+      {"text": "the blues", "intent": "negativeEmo", "entities": []},
+      {"text": "bummed out", "intent": "negativeEmo", "entities": []},
+      {"text": "in the pits", "intent": "negativeEmo", "entities": []},
+      {"text": "in a blue funk", "intent": "negativeEmo", "entities": []},
       {
         "text": "on a bit of a downer",
-        "intent": "emotional_sadness",
+        "intent": "negativeEmo",
         "entities": []
       },
-      {"text": "so happy", "intent": "emotional_hapiness", "entities": []},
-      {"text": "sleep well", "intent": "emotional_hapiness", "entities": []},
-      {"text": "fantastic", "intent": "emotional_hapiness", "entities": []},
+      {"text": "so happy", "intent": "positiveEmo", "entities": []},
+      {"text": "sleep well", "intent": "positiveEmo", "entities": []},
+      {"text": "fantastic", "intent": "positiveEmo", "entities": []},
       {
         "text": "can't be better",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
-      {"text": "so good", "intent": "emotional_hapiness", "entities": []},
-      {"text": "well", "intent": "emotional_hapiness", "entities": []},
-      {"text": "Very well", "intent": "emotional_hapiness", "entities": []},
-      {"text": "energetic", "intent": "emotional_hapiness", "entities": []},
+      {"text": "so good", "intent": "positiveEmo", "entities": []},
+      {"text": "well", "intent": "positiveEmo", "entities": []},
+      {"text": "Very well", "intent": "positiveEmo", "entities": []},
+      {"text": "energetic", "intent": "positiveEmo", "entities": []},
       {
         "text": "like dancing all the time",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
-      {"text": "top", "intent": "emotional_hapiness", "entities": []},
-      {"text": "love", "intent": "emotional_hapiness", "entities": []},
+      {"text": "top", "intent": "positiveEmo", "entities": []},
+      {"text": "love", "intent": "positiveEmo", "entities": []},
       {
         "text": "sky is the limit",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
-      {"text": "happy", "intent": "emotional_hapiness", "entities": []},
+      {"text": "happy", "intent": "positiveEmo", "entities": []},
       {
         "text": "surrounded by faily and friends",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "don't have any depression",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
-      {"text": "happy person", "intent": "emotional_hapiness", "entities": []},
-      {"text": "smiling", "intent": "emotional_hapiness", "entities": []},
-      {"text": "good", "intent": "emotional_hapiness", "entities": []},
-      {"text": "hopeful", "intent": "emotional_hapiness", "entities": []},
-      {"text": "peace", "intent": "emotional_hapiness", "entities": []},
-      {"text": "optimistic", "intent": "emotional_hapiness", "entities": []},
+      {"text": "happy person", "intent": "positiveEmo", "entities": []},
+      {"text": "smiling", "intent": "positiveEmo", "entities": []},
+      {"text": "good", "intent": "positiveEmo", "entities": []},
+      {"text": "hopeful", "intent": "positiveEmo", "entities": []},
+      {"text": "peace", "intent": "positiveEmo", "entities": []},
+      {"text": "optimistic", "intent": "positiveEmo", "entities": []},
       {
         "text": "euphoric about life",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
-      {"text": "lot of jokes", "intent": "emotional_hapiness", "entities": []},
+      {"text": "lot of jokes", "intent": "positiveEmo", "entities": []},
       {
         "text": "joke around all day",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
-      {"text": "satisfied", "intent": "emotional_hapiness", "entities": []},
-      {"text": "in love", "intent": "emotional_hapiness", "entities": []},
-      {"text": "amused", "intent": "emotional_hapiness", "entities": []},
+      {"text": "satisfied", "intent": "positiveEmo", "entities": []},
+      {"text": "in love", "intent": "positiveEmo", "entities": []},
+      {"text": "amused", "intent": "positiveEmo", "entities": []},
       {
         "text": "whale of a time",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
-      {"text": "tickled pink", "intent": "emotional_hapiness", "entities": []},
-      {"text": "wonderful", "intent": "emotional_hapiness", "entities": []},
+      {"text": "tickled pink", "intent": "positiveEmo", "entities": []},
+      {"text": "wonderful", "intent": "positiveEmo", "entities": []},
       {
         "text": "happy as a clam",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
-      {"text": "over the moon", "intent": "emotional_hapiness", "entities": []},
+      {"text": "over the moon", "intent": "positiveEmo", "entities": []},
       {
         "text": "seventh heaven",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
       {
         "text": "a dog with two tails",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
-      {"text": "happy camper", "intent": "emotional_hapiness", "entities": []},
+      {"text": "happy camper", "intent": "positiveEmo", "entities": []},
       {
         "text": "joys of spring",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
-      {"text": "happy evening", "intent": "emotional_hapiness", "entities": []},
+      {"text": "happy evening", "intent": "positiveEmo", "entities": []},
       {
         "text": "full of energy",
-        "intent": "emotional_hapiness",
+        "intent": "positiveEmo",
         "entities": []
       },
-      {"text": "contentment", "intent": "emotional_hapiness", "entities": []},
-      {"text": "peace of mind", "intent": "emotional_hapiness", "entities": []},
-      {"text": "serenity", "intent": "emotional_hapiness", "entities": []},
-      {"text": "stay cool", "intent": "emotional_hapiness", "entities": []},
-      {"text": "quietude", "intent": "emotional_hapiness", "entities": []},
-      {"text": "tranquillity", "intent": "emotional_hapiness", "entities": []},
+      {"text": "contentment", "intent": "positiveEmo", "entities": []},
+      {"text": "peace of mind", "intent": "positiveEmo", "entities": []},
+      {"text": "serenity", "intent": "positiveEmo", "entities": []},
+      {"text": "stay cool", "intent": "positiveEmo", "entities": []},
+      {"text": "quietude", "intent": "positiveEmo", "entities": []},
+      {"text": "tranquillity", "intent": "positiveEmo", "entities": []},
       {
         "text": "running",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 7, "value": "running", "entity": "sport"}
+          {"start": 0, "end": 7, "value": "running", "entity": "activity_sport"}
         ]
       },
       {
@@ -347,7 +347,7 @@
             "start": 0,
             "end": 19,
             "value": "lifting heavy stuff",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -355,61 +355,61 @@
         "text": "extrem sports",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 13, "value": "extrem sports", "entity": "sport"}
+          {"start": 0, "end": 13, "value": "extrem sports", "entity": "activity_sport"}
         ]
       },
       {
         "text": "tennis",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 6, "value": "tennis", "entity": "sport"}
+          {"start": 0, "end": 6, "value": "tennis", "entity": "activity_sport"}
         ]
       },
       {
         "text": "marathon",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 8, "value": "marathon", "entity": "sport"}
+          {"start": 0, "end": 8, "value": "marathon", "entity": "activity_sport"}
         ]
       },
       {
         "text": "cycling",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 7, "value": "cycling", "entity": "sport"}
+          {"start": 0, "end": 7, "value": "cycling", "entity": "activity_sport"}
         ]
       },
       {
         "text": "nordic walking",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 14, "value": "nordic walking", "entity": "sport"}
+          {"start": 0, "end": 14, "value": "nordic walking", "entity": "activity_sport"}
         ]
       },
       {
         "text": "run",
         "intent": "activity",
-        "entities": [{"start": 0, "end": 3, "value": "run", "entity": "sport"}]
+        "entities": [{"start": 0, "end": 3, "value": "run", "entity": "activity_sport"}]
       },
       {
         "text": "cycle",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 5, "value": "cycle", "entity": "sport"}
+          {"start": 0, "end": 5, "value": "cycle", "entity": "activity_sport"}
         ]
       },
       {
         "text": "ride a bike",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 11, "value": "ride a bike", "entity": "sport"}
+          {"start": 0, "end": 11, "value": "ride a bike", "entity": "activity_sport"}
         ]
       },
       {
         "text": "swiming",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 7, "value": "swiming", "entity": "sport"}
+          {"start": 0, "end": 7, "value": "swiming", "entity": "activity_sport"}
         ]
       },
       {
@@ -420,7 +420,7 @@
             "start": 0,
             "end": 20,
             "value": "triathlon exercising",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -428,21 +428,21 @@
         "text": "marathon",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 8, "value": "marathon", "entity": "sport"}
+          {"start": 0, "end": 8, "value": "marathon", "entity": "activity_sport"}
         ]
       },
       {
         "text": "urban trail",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 11, "value": "urban trail", "entity": "sport"}
+          {"start": 0, "end": 11, "value": "urban trail", "entity": "activity_sport"}
         ]
       },
       {
         "text": "aerobics",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 8, "value": "aerobics", "entity": "sport"}
+          {"start": 0, "end": 8, "value": "aerobics", "entity": "activity_sport"}
         ]
       },
       {
@@ -453,7 +453,7 @@
             "start": 0,
             "end": 18,
             "value": "competitive sports",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -461,70 +461,70 @@
         "text": "football",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 8, "value": "football", "entity": "sport"}
+          {"start": 0, "end": 8, "value": "football", "entity": "activity_sport"}
         ]
       },
       {
         "text": "volleyball",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 10, "value": "volleyball", "entity": "sport"}
+          {"start": 0, "end": 10, "value": "volleyball", "entity": "activity_sport"}
         ]
       },
       {
         "text": "hockey",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 6, "value": "hockey", "entity": "sport"}
+          {"start": 0, "end": 6, "value": "hockey", "entity": "activity_sport"}
         ]
       },
       {
         "text": "basketball",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 10, "value": "basketball", "entity": "sport"}
+          {"start": 0, "end": 10, "value": "basketball", "entity": "activity_sport"}
         ]
       },
       {
         "text": "handball",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 8, "value": "handball", "entity": "sport"}
+          {"start": 0, "end": 8, "value": "handball", "entity": "activity_sport"}
         ]
       },
       {
         "text": "soccer game",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 11, "value": "soccer game", "entity": "sport"}
+          {"start": 0, "end": 11, "value": "soccer game", "entity": "activity_sport"}
         ]
       },
       {
         "text": "ping pong",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 9, "value": "ping pong", "entity": "sport"}
+          {"start": 0, "end": 9, "value": "ping pong", "entity": "activity_sport"}
         ]
       },
       {
         "text": "tennis single",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 13, "value": "tennis single", "entity": "sport"}
+          {"start": 0, "end": 13, "value": "tennis single", "entity": "activity_sport"}
         ]
       },
       {
         "text": "heavy shoveling",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 15, "value": "heavy shoveling", "entity": "sport"}
+          {"start": 0, "end": 15, "value": "heavy shoveling", "entity": "activity_sport"}
         ]
       },
       {
         "text": "digging ditches",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 15, "value": "digging ditches", "entity": "sport"}
+          {"start": 0, "end": 15, "value": "digging ditches", "entity": "activity_sport"}
         ]
       },
       {
@@ -535,7 +535,7 @@
             "start": 0,
             "end": 20,
             "value": "carrying heavy loads",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -543,14 +543,14 @@
         "text": "hiking",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 6, "value": "hiking", "entity": "sport"}
+          {"start": 0, "end": 6, "value": "hiking", "entity": "activity_sport"}
         ]
       },
       {
         "text": "Backpacking",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 11, "value": "Backpacking", "entity": "sport"}
+          {"start": 0, "end": 11, "value": "Backpacking", "entity": "activity_sport"}
         ]
       },
       {
@@ -561,7 +561,7 @@
             "start": 0,
             "end": 17,
             "value": "Mountain climbing",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -569,61 +569,61 @@
         "text": "rock climbing",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 13, "value": "rock climbing", "entity": "sport"}
+          {"start": 0, "end": 13, "value": "rock climbing", "entity": "activity_sport"}
         ]
       },
       {
         "text": "rapelling",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 9, "value": "rapelling", "entity": "sport"}
+          {"start": 0, "end": 9, "value": "rapelling", "entity": "activity_sport"}
         ]
       },
       {
         "text": "Step aerobics",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 13, "value": "Step aerobics", "entity": "sport"}
+          {"start": 0, "end": 13, "value": "Step aerobics", "entity": "activity_sport"}
         ]
       },
       {
         "text": "Water jogging",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 13, "value": "Water jogging", "entity": "sport"}
+          {"start": 0, "end": 13, "value": "Water jogging", "entity": "activity_sport"}
         ]
       },
       {
         "text": "karate",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 6, "value": "karate", "entity": "sport"}
+          {"start": 0, "end": 6, "value": "karate", "entity": "activity_sport"}
         ]
       },
       {
         "text": "judo",
         "intent": "activity",
-        "entities": [{"start": 0, "end": 4, "value": "judo", "entity": "sport"}]
+        "entities": [{"start": 0, "end": 4, "value": "judo", "entity": "activity_sport"}]
       },
       {
         "text": "tae kwon do",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 11, "value": "tae kwon do", "entity": "sport"}
+          {"start": 0, "end": 11, "value": "tae kwon do", "entity": "activity_sport"}
         ]
       },
       {
         "text": "jujitsu",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 7, "value": "jujitsu", "entity": "sport"}
+          {"start": 0, "end": 7, "value": "jujitsu", "entity": "activity_sport"}
         ]
       },
       {
         "text": "Jumping rope",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 12, "value": "Jumping rope", "entity": "sport"}
+          {"start": 0, "end": 12, "value": "Jumping rope", "entity": "activity_sport"}
         ]
       },
       {
@@ -634,7 +634,7 @@
             "start": 0,
             "end": 24,
             "value": "Performing jumping jacks",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -642,7 +642,7 @@
         "text": "Boxing",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 6, "value": "Boxing", "entity": "sport"}
+          {"start": 0, "end": 6, "value": "Boxing", "entity": "activity_sport"}
         ]
       },
       {
@@ -653,7 +653,7 @@
             "start": 0,
             "end": 21,
             "value": "dancing energetically",
-            "entity": "sport"
+            "entity": "activity_sport"
           }
         ]
       },
@@ -661,7 +661,7 @@
         "text": "Rugby Kickball",
         "intent": "activity",
         "entities": [
-          {"start": 0, "end": 14, "value": "Rugby Kickball", "entity": "sport"}
+          {"start": 0, "end": 14, "value": "Rugby Kickball", "entity": "activity_sport"}
         ]
       }
     ]

@@ -16,7 +16,7 @@
           {
             "end": 30,
             "start": 24,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "bottle"
           },
           {
@@ -34,7 +34,7 @@
           {
             "end": 18,
             "start": 8,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "six ounces"
           },
           {
@@ -75,7 +75,7 @@
           {
             "end": 20,
             "start": 11,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "four pack"
           },
           {
@@ -213,7 +213,7 @@
           {
             "end": 41,
             "start": 32,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "four cans"
           },
           {
@@ -237,7 +237,7 @@
           {
             "end": 18,
             "start": 8,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "six ounces"
           },
           {
@@ -298,7 +298,7 @@
           {
             "end": 35,
             "start": 26,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "1L bottle"
           },
           {
@@ -333,7 +333,7 @@
           {
             "end": 26,
             "start": 21,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "glass"
           },
           {
@@ -378,7 +378,7 @@
           {
             "end": 41,
             "start": 30,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "16-20 units"
           },
           {
@@ -408,7 +408,7 @@
           {
             "end": 43,
             "start": 28,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "1 and 2 bottles"
           },
           {
@@ -481,7 +481,7 @@
           {
             "end": 30,
             "start": 19,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "half bottle"
           }
         ]
@@ -513,7 +513,7 @@
           {
             "end": 22,
             "start": 15,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "a fifth"
           },
           {
@@ -537,7 +537,7 @@
           {
             "end": 26,
             "start": 18,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "3 nights"
           },
           {
@@ -629,7 +629,7 @@
           {
             "end": 56,
             "start": 46,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "1.5 liters"
           },
           {
@@ -658,7 +658,7 @@
           {
             "end": 29,
             "start": 23,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "1 pint"
           }
         ]
@@ -686,7 +686,7 @@
           {
             "end": 32,
             "start": 28,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "same"
           }
         ]
@@ -924,7 +924,7 @@
           {
             "end": 27,
             "start": 19,
-            "entity": "symtoms",
+            "entity": "pathology_symptom",
             "value": "anorexia"
           }
         ]
@@ -941,7 +941,7 @@
           {
             "end": 27,
             "start": 19,
-            "entity": "symtoms",
+            "entity": "pathology_symptom",
             "value": "Anorexia"
           }
         ]
@@ -953,7 +953,7 @@
           {
             "end": 13,
             "start": 8,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "60 mg"
           },
           {
@@ -983,7 +983,7 @@
           {
             "end": 33,
             "start": 21,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "2 to 6 norco"
           },
           {
@@ -1024,7 +1024,7 @@
           {
             "end": 28,
             "start": 23,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "50 mg"
           },
           {
@@ -1066,7 +1066,7 @@
           {
             "end": 72,
             "start": 67,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "400mg"
           },
           {
@@ -1084,7 +1084,7 @@
           {
             "end": 25,
             "start": 19,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "50 mgs"
           },
           {
@@ -1114,7 +1114,7 @@
           {
             "end": 49,
             "start": 42,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "16 mgms"
           },
           {
@@ -1156,7 +1156,7 @@
           {
             "end": 32,
             "start": 26,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "150 mg"
           },
           {
@@ -1174,7 +1174,7 @@
           {
             "end": 19,
             "start": 12,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "3 grams"
           },
           {
@@ -1220,7 +1220,7 @@
           {
             "end": 79,
             "start": 72,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "5 pills"
           }
         ]
@@ -1262,7 +1262,7 @@
           {
             "end": 53,
             "start": 44,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "0.2 grams"
           }
         ]
@@ -1322,7 +1322,7 @@
           {
             "end": 69,
             "start": 65,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "4 mg"
           }
         ]
@@ -1424,7 +1424,7 @@
           {
             "end": 22,
             "start": 17,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "10 mg"
           },
           {
@@ -1460,7 +1460,7 @@
           {
             "end": 25,
             "start": 19,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "30 mgs"
           },
           {
@@ -1631,7 +1631,7 @@
           {
             "end": 47,
             "start": 45,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "20"
           }
         ]
@@ -1673,19 +1673,19 @@
           {
             "end": 31,
             "start": 27,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "90mg"
           },
           {
             "end": 41,
             "start": 36,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "120mg"
           },
           {
             "end": 61,
             "start": 45,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "morphine sulfate"
           },
           {
@@ -1757,7 +1757,7 @@
           {
             "end": 12,
             "start": 8,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "1 pk"
           },
           {
@@ -1775,7 +1775,7 @@
           {
             "end": 24,
             "start": 14,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "12-15 cigs"
           },
           {
@@ -1799,7 +1799,7 @@
           {
             "end": 70,
             "start": 60,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "five times"
           },
           {
@@ -1823,7 +1823,7 @@
           {
             "end": 29,
             "start": 16,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "23 cigarettes"
           }
         ]
@@ -1840,7 +1840,7 @@
           {
             "end": 21,
             "start": 14,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "2 packs"
           },
           {
@@ -1858,7 +1858,7 @@
           {
             "end": 44,
             "start": 37,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "5 ciggs"
           },
           {
@@ -1927,7 +1927,7 @@
           {
             "end": 28,
             "start": 18,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "a lot more"
           }
         ]
@@ -1951,7 +1951,7 @@
           {
             "end": 49,
             "start": 43,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "1 Pack"
           },
           {
@@ -2077,7 +2077,7 @@
           {
             "end": 27,
             "start": 21,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "a pack"
           },
           {
@@ -2101,7 +2101,7 @@
           {
             "end": 60,
             "start": 55,
-            "entity": "dosing",
+            "entity": "treatment_dosing",
             "value": "a lot"
           }
         ]
@@ -2881,7 +2881,7 @@
           {
             "end": 56,
             "start": 45,
-            "entity": "symtoms",
+            "entity": "pathology_symptom",
             "value": "hypersomnia"
           }
         ]
@@ -3082,7 +3082,7 @@
           {
             "end": 52,
             "start": 30,
-            "entity": "symtoms",
+            "entity": "pathology_symptom",
             "value": "Idiopathic Hypersomnia"
           }
         ]

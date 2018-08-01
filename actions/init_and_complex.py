@@ -41,7 +41,7 @@ lang = get_language_duckling(LANGUAGE_GLOBAL)
 DUCKLING_WRAPPER = DucklingWrapper(language=lang)
 FOLLOWED_REMINDERS = []
 FOLLOW_INTENT_TRIGGER_DATE = timedelta(seconds=0)
-COMPLEX_ENTITIES = ["time", "body_part", "distance", "duration", "period", "temperature", "drug"]
+COMPLEX_ENTITIES = ["time", "body_part", "distance", "duration", "period", "temperature", "drug", "dosing"]
 
 def get_complex_entities():
     """Get COMPLEX_ENTITIES list"""
@@ -539,13 +539,13 @@ class SumUpSLots(Action):
         if response is not None:
             conv.write("{ '"+str(date)+"' : [{'text': '"+response+"'}]],\n")
             response = ("""`\ttopic = {}, requested_slot = {},`
-`\tactivity = {}, sport = {}, activity_level = {}, activity_duration = {}, activity_period = {}, activity_hard = {}, activity_time = {}, activity_distance = {},`
+`\tactivity = {}, activity_sport = {}, activity_level = {}, activity_duration = {}, activity_period = {}, activity_hard = {}, activity_time = {}, activity_distance = {},`
 `\tpain = {}, pain_duration = {}, pain_desc = {}, pain_body_part = {}, pain_change = {}, pain_period = {}, pain_level = {}, pain_time = {},` 
-`\tpathology = {}, symtoms = {}, pathology_body_part = {}, pathology_time = {}, pathology_change = {}, pathology_period = {}, pathology_treatment_linked = {}, pathology_duration = {},`
-`\ttreatment = {}, medicinal = {}, treatment_being_taken = {}, treatment_drug = {}, dosing = {}, treatment_time = {}, treatment_prescripted = {}, treatment_ok = {}, treatment_overdosage = {}, treatment_period = {}, treatment_duration = {}`
-`\tinfoPatient = {}, addiction = {}, weight = {}, infoPatient_distance = {}, gender = {}, infoPatient_temperature = {}, heart_rate = {}, blood_pressure = {}, infoPatient_time= {},`
-`\tsadness = {},`
-`\thappy = {},`
+`\tpathology = {}, pathology_symptom = {}, pathology_body_part = {}, pathology_time = {}, pathology_change = {}, pathology_period = {}, pathology_treatment_linked = {}, pathology_duration = {},`
+`\ttreatment = {}, treatment_medicinal = {}, treatment_being_taken = {}, treatment_drug = {}, treatment_dosing = {}, treatment_time = {}, treatment_prescripted = {}, treatment_ok = {}, treatment_overdosage = {}, treatment_period = {}, treatment_duration = {}`
+`\tinfoPatient = {}, infoPatient_addiction = {}, infoPatient_weight = {}, infoPatient_distance = {}, infoPatient_gender = {}, infoPatient_temperature = {}, infoPatient_heart_rate = {}, infoPatient_blood_pressure = {}, infoPatient_time= {},`
+`\tnegativeEmo = {},`
+`\tpositiveEmo = {},`
 `\tsocial = {},`
 `\trisk = {},`
 `\tsleep = {},`
@@ -553,15 +553,15 @@ class SumUpSLots(Action):
 `\tdrugAddiction = {},`
 `\tsmoking = {},`
 `\talcohol = {},`
-`\tdistance = {}, period = {}, duration = {}, time = {}, body_part = {}, temperature = {}, drug = {}`""").format(
+`\tdistance = {}, period = {}, duration = {}, time = {}, body_part = {}, temperature = {}, drug = {}, dosing = {}`""").format(
     tracker.get_slot("topic"), tracker.get_slot("requested_slot"),
-    tracker.get_slot("activity"), tracker.get_slot("sport"), tracker.get_slot("activity_level"), tracker.get_slot("activity_duration"), tracker.get_slot("activity_period"), tracker.get_slot("activity_hard"), tracker.get_slot("activity_time"), tracker.get_slot("activity_distance"),
+    tracker.get_slot("activity"), tracker.get_slot("activity_sport"), tracker.get_slot("activity_level"), tracker.get_slot("activity_duration"), tracker.get_slot("activity_period"), tracker.get_slot("activity_hard"), tracker.get_slot("activity_time"), tracker.get_slot("activity_distance"),
     tracker.get_slot("pain"), tracker.get_slot("pain_duration"), tracker.get_slot("pain_desc"), tracker.get_slot("pain_body_part"), tracker.get_slot("pain_change"), tracker.get_slot("pain_period"), tracker.get_slot("pain_level"), tracker.get_slot("pain_time"),
-    tracker.get_slot("pathology"), tracker.get_slot("symtoms"), tracker.get_slot("pathology_body_part"), tracker.get_slot("pathology_time"), tracker.get_slot("pathology_change"), tracker.get_slot("pathology_period"), tracker.get_slot("pathology_treatment_linked"), tracker.get_slot("pathology_duration"),
-    tracker.get_slot("treatment"), tracker.get_slot("medicinal"), tracker.get_slot("treatment_being_taken"), tracker.get_slot("treatment_drug"), tracker.get_slot("dosing"), tracker.get_slot("treatment_time"), tracker.get_slot("treatment_prescripted"), tracker.get_slot("treatment_ok"), tracker.get_slot("treatment_overdosage"), tracker.get_slot("treatment_period"), tracker.get_slot("treatment_duration"),
-    tracker.get_slot("infoPatient"), tracker.get_slot("addiction"), tracker.get_slot("weight"), tracker.get_slot("infoPatient_distance"), tracker.get_slot("gender"), tracker.get_slot("infoPatient_temperature"), tracker.get_slot("heart_rate"), tracker.get_slot("blood_pressure"), tracker.get_slot("infoPatient_time"),
-    tracker.get_slot("emotional_sadness"),
-    tracker.get_slot("emotional_hapiness"),
+    tracker.get_slot("pathology"), tracker.get_slot("pathology_symptom"), tracker.get_slot("pathology_body_part"), tracker.get_slot("pathology_time"), tracker.get_slot("pathology_change"), tracker.get_slot("pathology_period"), tracker.get_slot("pathology_treatment_linked"), tracker.get_slot("pathology_duration"),
+    tracker.get_slot("treatment"), tracker.get_slot("treatment_medicinal"), tracker.get_slot("treatment_being_taken"), tracker.get_slot("treatment_drug"), tracker.get_slot("treatment_dosing"), tracker.get_slot("treatment_time"), tracker.get_slot("treatment_prescripted"), tracker.get_slot("treatment_ok"), tracker.get_slot("treatment_overdosage"), tracker.get_slot("treatment_period"), tracker.get_slot("treatment_duration"),
+    tracker.get_slot("infoPatient"), tracker.get_slot("infoPatient_addiction"), tracker.get_slot("infoPatient_weight"), tracker.get_slot("infoPatient_distance"), tracker.get_slot("infoPatient_gender"), tracker.get_slot("infoPatient_temperature"), tracker.get_slot("infoPatient_heart_rate"), tracker.get_slot("infoPatient_blood_pressure"), tracker.get_slot("infoPatient_time"),
+    tracker.get_slot("negativeEmo"),
+    tracker.get_slot("positiveEmo"),
     tracker.get_slot("social"),
     tracker.get_slot("risk"),
     tracker.get_slot("sleep"),
@@ -569,7 +569,7 @@ class SumUpSLots(Action):
     tracker.get_slot("drugAddiction"),
     tracker.get_slot("smoking"),
     tracker.get_slot("alcohol"),
-    tracker.get_slot("distance"), tracker.get_slot("period"), tracker.get_slot("duration"), tracker.get_slot("time"), tracker.get_slot("body_part"), tracker.get_slot("temperature"), tracker.get_slot("drug"))
+    tracker.get_slot("distance"), tracker.get_slot("period"), tracker.get_slot("duration"), tracker.get_slot("time"), tracker.get_slot("body_part"), tracker.get_slot("temperature"), tracker.get_slot("drug"), tracker.get_slot("dosing"))
             dispatcher.utter_message(response)
             conv.write("{ '"+str(date)+"' : [{'text': '"+response+"'}]},\n")
         conv.close()
