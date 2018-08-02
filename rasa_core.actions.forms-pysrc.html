@@ -92,17 +92,17 @@ rasa_core.actions.forms.FormAction.RANDOMIZE" class="py-name" href="#" onclick="
 </div><div id="FormAction.get_other_slots-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="FormAction.get_other_slots-expanded"><a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line">        <tt class="py-name">requested_slot</tt> <tt class="py-op">=</tt> <tt class="py-name">tracker</tt><tt class="py-op">.</tt><tt class="py-name">get_slot</tt><tt class="py-op">(</tt><tt class="py-string">"requested_slot"</tt><tt class="py-op">)</tt> </tt>
 <a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line"> </tt>
 <a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line">        <tt class="py-name">requested_entity</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
-<a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">f</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-4" class="py-name" targets="Static Method form_actions.ActionFillSlotsPain.required_fields()=form_actions.ActionFillSlotsPain-class.html#required_fields,Static Method form_actions.ActionFillSlotsSport.required_fields()=form_actions.ActionFillSlotsSport-class.html#required_fields,Static Method form_actions.Alcohol.required_fields()=form_actions.Alcohol-class.html#required_fields,Static Method form_actions.CheckRequestedIntents.required_fields()=form_actions.CheckRequestedIntents-class.html#required_fields,Static Method form_actions.DrugAddiction.required_fields()=form_actions.DrugAddiction-class.html#required_fields,Static Method form_actions.EatingDisorders.required_fields()=form_actions.EatingDisorders-class.html#required_fields,Static Method form_actions.Happy.required_fields()=form_actions.Happy-class.html#required_fields,Static Method form_actions.InfoPatient.required_fields()=form_actions.InfoPatient-class.html#required_fields,Static Method form_actions.Pathology.required_fields()=form_actions.Pathology-class.html#required_fields,Static Method form_actions.Risk.required_fields()=form_actions.Risk-class.html#required_fields,Static Method form_actions.Sadness.required_fields()=form_actions.Sadness-class.html#required_fields,Static Method form_actions.Sleep.required_fields()=form_actions.Sleep-class.html#required_fields,Static Method form_actions.Smoking.required_fields()=form_actions.Smoking-class.html#required_fields,Static Method form_actions.Social.required_fields()=form_actions.Social-class.html#required_fields,Static Method form_actions.Treatment.required_fields()=form_actions.Treatment-class.html#required_fields,Static Method rasa_core.actions.forms.FormAction.required_fields()=rasa_core.actions.forms.FormAction-class.html#required_fields"><a title="form_actions.ActionFillSlotsPain.required_fields
-form_actions.ActionFillSlotsSport.required_fields
+<a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">f</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-4" class="py-name" targets="Static Method form_actions.Activity.required_fields()=form_actions.Activity-class.html#required_fields,Static Method form_actions.Alcohol.required_fields()=form_actions.Alcohol-class.html#required_fields,Static Method form_actions.CheckRequestedIntents.required_fields()=form_actions.CheckRequestedIntents-class.html#required_fields,Static Method form_actions.DrugAddiction.required_fields()=form_actions.DrugAddiction-class.html#required_fields,Static Method form_actions.EatingDisorders.required_fields()=form_actions.EatingDisorders-class.html#required_fields,Static Method form_actions.InfoPatient.required_fields()=form_actions.InfoPatient-class.html#required_fields,Static Method form_actions.NegativeEmo.required_fields()=form_actions.NegativeEmo-class.html#required_fields,Static Method form_actions.Pain.required_fields()=form_actions.Pain-class.html#required_fields,Static Method form_actions.Pathology.required_fields()=form_actions.Pathology-class.html#required_fields,Static Method form_actions.PositiveEmo.required_fields()=form_actions.PositiveEmo-class.html#required_fields,Static Method form_actions.Risk.required_fields()=form_actions.Risk-class.html#required_fields,Static Method form_actions.Sleep.required_fields()=form_actions.Sleep-class.html#required_fields,Static Method form_actions.Smoking.required_fields()=form_actions.Smoking-class.html#required_fields,Static Method form_actions.Social.required_fields()=form_actions.Social-class.html#required_fields,Static Method form_actions.Treatment.required_fields()=form_actions.Treatment-class.html#required_fields,Static Method rasa_core.actions.forms.FormAction.required_fields()=rasa_core.actions.forms.FormAction-class.html#required_fields"><a title="form_actions.Activity.required_fields
 form_actions.Alcohol.required_fields
 form_actions.CheckRequestedIntents.required_fields
 form_actions.DrugAddiction.required_fields
 form_actions.EatingDisorders.required_fields
-form_actions.Happy.required_fields
 form_actions.InfoPatient.required_fields
+form_actions.NegativeEmo.required_fields
+form_actions.Pain.required_fields
 form_actions.Pathology.required_fields
+form_actions.PositiveEmo.required_fields
 form_actions.Risk.required_fields
-form_actions.Sadness.required_fields
 form_actions.Sleep.required_fields
 form_actions.Smoking.required_fields
 form_actions.Social.required_fields
@@ -114,17 +114,17 @@ rasa_core.actions.forms.FormAction.required_fields" class="py-name" href="#" onc
 <a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line">        <tt class="py-name">slot_events</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
 <a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line">        <tt class="py-name">extracted_entities</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt><tt class="py-name">requested_entity</tt><tt class="py-op">}</tt> </tt>
 <a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line"> </tt>
-<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">f</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-5" class="py-name"><a title="form_actions.ActionFillSlotsPain.required_fields
-form_actions.ActionFillSlotsSport.required_fields
+<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">f</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-5" class="py-name"><a title="form_actions.Activity.required_fields
 form_actions.Alcohol.required_fields
 form_actions.CheckRequestedIntents.required_fields
 form_actions.DrugAddiction.required_fields
 form_actions.EatingDisorders.required_fields
-form_actions.Happy.required_fields
 form_actions.InfoPatient.required_fields
+form_actions.NegativeEmo.required_fields
+form_actions.Pain.required_fields
 form_actions.Pathology.required_fields
+form_actions.PositiveEmo.required_fields
 form_actions.Risk.required_fields
-form_actions.Sadness.required_fields
 form_actions.Sleep.required_fields
 form_actions.Smoking.required_fields
 form_actions.Social.required_fields
@@ -144,17 +144,17 @@ simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="r
 <a name="FormAction.get_requested_slot"></a><div id="FormAction.get_requested_slot-def"><a name="L46"></a><tt class="py-lineno">46</tt> <a class="py-toggle" href="#" id="FormAction.get_requested_slot-toggle" onclick="return toggle('FormAction.get_requested_slot');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="rasa_core.actions.forms.FormAction-class.html#get_requested_slot">get_requested_slot</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">tracker</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
 </div><div id="FormAction.get_requested_slot-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="FormAction.get_requested_slot-expanded"><a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line">        <tt class="py-name">requested_slot</tt> <tt class="py-op">=</tt> <tt class="py-name">tracker</tt><tt class="py-op">.</tt><tt class="py-name">get_slot</tt><tt class="py-op">(</tt><tt class="py-string">"requested_slot"</tt><tt class="py-op">)</tt> </tt>
 <a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line"> </tt>
-<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line">        <tt class="py-name">required</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-8" class="py-name"><a title="form_actions.ActionFillSlotsPain.required_fields
-form_actions.ActionFillSlotsSport.required_fields
+<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line">        <tt class="py-name">required</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-8" class="py-name"><a title="form_actions.Activity.required_fields
 form_actions.Alcohol.required_fields
 form_actions.CheckRequestedIntents.required_fields
 form_actions.DrugAddiction.required_fields
 form_actions.EatingDisorders.required_fields
-form_actions.Happy.required_fields
 form_actions.InfoPatient.required_fields
+form_actions.NegativeEmo.required_fields
+form_actions.Pain.required_fields
 form_actions.Pathology.required_fields
+form_actions.PositiveEmo.required_fields
 form_actions.Risk.required_fields
-form_actions.Sadness.required_fields
 form_actions.Sleep.required_fields
 form_actions.Smoking.required_fields
 form_actions.Social.required_fields
@@ -186,17 +186,17 @@ rasa_core.actions.forms.logger" class="py-name" href="#" onclick="return doclink
 <a name="L70"></a><tt class="py-lineno">70</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">e</tt> <tt class="py-keyword">in</tt> <tt class="py-name">events</tt><tt class="py-op">:</tt> </tt>
 <a name="L71"></a><tt class="py-lineno">71</tt>  <tt class="py-line">            <tt class="py-name">temp_tracker</tt><tt class="py-op">.</tt><tt class="py-name">update</tt><tt class="py-op">(</tt><tt class="py-name">e</tt><tt class="py-op">)</tt> </tt>
 <a name="L72"></a><tt class="py-lineno">72</tt>  <tt class="py-line"> </tt>
-<a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">field</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="form_actions.ActionFillSlotsPain.required_fields
-form_actions.ActionFillSlotsSport.required_fields
+<a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">field</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="form_actions.Activity.required_fields
 form_actions.Alcohol.required_fields
 form_actions.CheckRequestedIntents.required_fields
 form_actions.DrugAddiction.required_fields
 form_actions.EatingDisorders.required_fields
-form_actions.Happy.required_fields
 form_actions.InfoPatient.required_fields
+form_actions.NegativeEmo.required_fields
+form_actions.Pain.required_fields
 form_actions.Pathology.required_fields
+form_actions.PositiveEmo.required_fields
 form_actions.Risk.required_fields
-form_actions.Sadness.required_fields
 form_actions.Sleep.required_fields
 form_actions.Smoking.required_fields
 form_actions.Social.required_fields
@@ -253,7 +253,7 @@ expandto(location.href);
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Tue Jul 31 15:58:17 2018
+    Generated by Epydoc 3.0.1 on Thu Aug  2 16:59:24 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

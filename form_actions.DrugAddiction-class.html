@@ -59,8 +59,8 @@
 <!-- ==================== CLASS DESCRIPTION ==================== -->
 <h1 class="epydoc">Class DrugAddiction</h1><p class="nomargin-top"><span class="codelink"><a href="form_actions-pysrc.html#DrugAddiction">source&nbsp;code</a></span></p>
 <center>
-<center>  <map id="uml_class_diagram_for_form_act_5" name="uml_class_diagram_for_form_act_5">
-<area shape="rect" id="node1_22" href="form_actions.DrugAddiction-class.html#__init__" title="Set the name of the intent" alt="" coords="132,636,231,656"/>
+<center>  <map id="uml_class_diagram_for_form_act_4" name="uml_class_diagram_for_form_act_4">
+<area shape="rect" id="node1_22" href="form_actions.DrugAddiction-class.html#__init__" title="Set the name of the intent The entities linked to this intent are:" alt="" coords="132,636,231,656"/>
 <area shape="rect" id="node1_23" href="form_actions.DrugAddiction-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="132,656,231,676"/>
 <area shape="rect" id="node1_24" href="form_actions.DrugAddiction-class.html#required_fields" title="Returns: &#160;if the dict obligatories from the init class contains a list a the &#160;requested slot for the intent, returns it." alt="" coords="132,676,231,696"/>
 <area shape="rect" id="node1" href="form_actions.DrugAddiction-class.html" title="FormActionCalculusAndCore for drug addiction intent" alt="" coords="120,604,243,703"/>
@@ -80,15 +80,15 @@
 <area shape="rect" id="node3_37" href="form_actions.FormActionTriggerAction-class.html#RANDOMIZE" title="form_actions.FormActionTriggerAction.RANDOMIZE" alt="" coords="72,245,291,265"/>
 <area shape="rect" id="node3_38" href="form_actions.FormActionTriggerAction-class.html#run" title="Trigger a custom action to ask the requested_slot." alt="" coords="72,267,291,287"/>
 <area shape="rect" id="node3" href="form_actions.FormActionTriggerAction-class.html" title="A custom class heritating from FormAction." alt="" coords="60,220,303,293"/>
-<area shape="rect" id="node4_39" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="89,38,273,58"/>
-<area shape="rect" id="node4_40" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="89,58,273,78"/>
-<area shape="rect" id="node4" href="rasa_core.actions.action.Action-class.html" title="Next action to be taken in response to a dialogue state." alt="" coords="77,5,285,84"/>
-<area shape="rect" id="node5_41" href="rasa_core.actions.forms.FormAction-class.html#should_request_slot" title="rasa_core.actions.forms.FormAction.should_request_slot" alt="" coords="48,135,315,155"/>
-<area shape="rect" id="node5_42" href="rasa_core.actions.forms.FormAction-class.html#get_other_slots" title="rasa_core.actions.forms.FormAction.get_other_slots" alt="" coords="48,155,315,175"/>
-<area shape="rect" id="node5_43" href="rasa_core.actions.forms.FormAction-class.html#get_requested_slot" title="rasa_core.actions.forms.FormAction.get_requested_slot" alt="" coords="48,175,315,195"/>
-<area shape="rect" id="node5" href="rasa_core.actions.forms.FormAction-class.html" title="rasa_core.actions.forms.FormAction" alt="" coords="36,103,327,201"/>
+<area shape="rect" id="node4_39" href="rasa_core.actions.forms.FormAction-class.html#should_request_slot" title="rasa_core.actions.forms.FormAction.should_request_slot" alt="" coords="48,135,315,155"/>
+<area shape="rect" id="node4_40" href="rasa_core.actions.forms.FormAction-class.html#get_other_slots" title="rasa_core.actions.forms.FormAction.get_other_slots" alt="" coords="48,155,315,175"/>
+<area shape="rect" id="node4_41" href="rasa_core.actions.forms.FormAction-class.html#get_requested_slot" title="rasa_core.actions.forms.FormAction.get_requested_slot" alt="" coords="48,175,315,195"/>
+<area shape="rect" id="node4" href="rasa_core.actions.forms.FormAction-class.html" title="rasa_core.actions.forms.FormAction" alt="" coords="36,103,327,201"/>
+<area shape="rect" id="node5_42" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="89,38,273,58"/>
+<area shape="rect" id="node5_43" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="89,58,273,78"/>
+<area shape="rect" id="node5" href="rasa_core.actions.action.Action-class.html" title="Next action to be taken in response to a dialogue state." alt="" coords="77,5,285,84"/>
 </map>
-  <img src="uml_class_diagram_for_form_act_5.gif" alt='' usemap="#uml_class_diagram_for_form_act_5" ismap="ismap" class="graph-without-title" />
+  <img src="uml_class_diagram_for_form_act_4.gif" alt='' usemap="#uml_class_diagram_for_form_act_4" ismap="ismap" class="graph-without-title" />
 </center>
 </center>
 <hr />
@@ -118,7 +118,7 @@
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td><span class="summary-sig"><a href="form_actions.DrugAddiction-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>)</span><br />
-      Set the name of the intent</td>
+      Set the name of the intent The entities linked to this intent are:</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="form_actions-pysrc.html#DrugAddiction.__init__">source&nbsp;code</a></span>
             
@@ -313,7 +313,27 @@
     </td>
   </tr></table>
   
-  <p>Set the name of the intent</p>
+  <p>Set the name of the intent The entities linked to this intent are:</p>
+  <ul>
+    <li>
+      drugAddiction_period
+    </li>
+    <li>
+      drugAddiction_drug
+    </li>
+    <li>
+      drugAddiction_dosing
+    </li>
+    <li>
+      drugAddiction_duration
+    </li>
+    <li>
+      drugAddiction_time
+    </li>
+  </ul>
+  <p>This action will sum up these infos. If they're all set to None (no 
+  mandatory entity), just say that we talked about a drug addiction</p>
+  <p>Ask if the informations are correct.</p>
   <dl class="fields">
     <dt>Overrides:
         object.__init__
@@ -401,7 +421,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Tue Jul 31 15:58:08 2018
+    Generated by Epydoc 3.0.1 on Thu Aug  2 16:59:17 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"
