@@ -12112,3 +12112,731 @@
     - sum_up_slots
     - export
 
+## Generated Story -8172836788065217674
+* sleep
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_sleep
+    - slot{"requested_slot": "sleep_duration"}
+    - utter_ask_sleep_duration
+    - sum_up_slots
+    - export
+
+## Generated Story -8172836788065217674
+* sleep
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_sleep
+    - slot{"requested_slot": "sleep_duration"}
+    - utter_ask_sleep_duration
+    - sum_up_slots
+    - export
+
+## Generated Story 5658564845045987393
+* sleep
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_sleep
+    - slot{"requested_slot": "sleep_duration"}
+    - utter_ask_sleep_duration
+    - sum_up_slots
+* sleep{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"sleep_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_sleep
+    - slot{"global_score": 2}
+    - sum_up_slots
+
+## Generated Story 5658564845045987393
+* sleep
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_sleep
+    - slot{"requested_slot": "sleep_duration"}
+    - utter_ask_sleep_duration
+    - sum_up_slots
+* sleep{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"sleep_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_sleep
+    - slot{"global_score": 2}
+    - sum_up_slots
+
+## Generated Story 7230795657273085034
+* sleep{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"sleep_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_sleep
+    - slot{"global_score": 2}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_sleep
+    - slot{"sleep_duration": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"sleep": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 7230795657273085034
+* sleep{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"sleep_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_sleep
+    - slot{"global_score": 2}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_sleep
+    - slot{"sleep_duration": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"sleep": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story -768249442234575419
+* sleep{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"sleep_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_sleep
+    - slot{"global_score": 2}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - ask_what_sleep
+    - sum_up_slots
+* sleep{"sleep_duration": null}
+    - slot{"sleep_duration": null}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - sum_up_sleep
+    - slot{"requested_slot": "sleep_duration"}
+    - utter_ask_sleep_duration
+    - sum_up_slots
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+* sleep{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"sleep_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_sleep
+    - slot{"global_score": 4}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - reset_slots_sleep
+    - slot{"sleep_duration": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"sleep": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+    - export
+
+## Generated Story -768249442234575419
+* sleep{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"sleep_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_sleep
+    - slot{"global_score": 2}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - ask_what_sleep
+    - sum_up_slots
+* sleep{"sleep_duration": null}
+    - slot{"sleep_duration": null}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - sum_up_sleep
+    - slot{"requested_slot": "sleep_duration"}
+    - utter_ask_sleep_duration
+    - sum_up_slots
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+* sleep{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"sleep_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_sleep
+    - slot{"global_score": 4}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - reset_slots_sleep
+    - slot{"sleep_duration": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"sleep": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+    - export
+
+## Generated Story 2073065256164745419
+* sleep{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"sleep_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_sleep
+    - slot{"requested_slot": "sleep_quality"}
+    - utter_ask_sleep_quality
+    - sum_up_slots
+
+## Generated Story 2073065256164745419
+* sleep{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"sleep_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_sleep
+    - slot{"requested_slot": "sleep_quality"}
+    - utter_ask_sleep_quality
+    - sum_up_slots
+
+## Generated Story -213917455129583769
+* sleep{"duration": "1h", "sleep_quality": "heavy"}
+    - slot{"duration": "1h"}
+    - slot{"sleep_quality": "heavy"}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"sleep_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_sleep
+    - slot{"sleep_quality": "heavy"}
+    - slot{"global_score": 2}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - reset_slots_sleep
+    - slot{"sleep_duration": null}
+    - slot{"sleep_quality": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"sleep": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story -213917455129583769
+* sleep{"duration": "1h", "sleep_quality": "heavy"}
+    - slot{"duration": "1h"}
+    - slot{"sleep_quality": "heavy"}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"sleep_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_sleep
+    - slot{"sleep_quality": "heavy"}
+    - slot{"global_score": 2}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - reset_slots_sleep
+    - slot{"sleep_duration": null}
+    - slot{"sleep_quality": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"sleep": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 5839663256467473094
+* sleep{"duration": "1h", "sleep_quality": "heavy"}
+    - slot{"duration": "1h"}
+    - slot{"sleep_quality": "heavy"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"sleep_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_sleep
+    - slot{"sleep_quality": "heavy"}
+    - slot{"global_score": 2}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - ask_what_sleep
+    - sum_up_slots
+* sleep{"sleep_quality": null}
+    - slot{"sleep_quality": null}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_sleep
+    - slot{"requested_slot": "sleep_quality"}
+    - utter_ask_sleep_quality
+    - sum_up_slots
+* sleep{"sleep_quality": "heavy"}
+    - slot{"sleep_quality": "heavy"}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_sleep
+    - slot{"sleep_quality": "heavy"}
+    - slot{"global_score": 6}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_sleep
+    - slot{"sleep_duration": null}
+    - slot{"sleep_quality": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"sleep": true}
+    - slot{"global_score": 6}
+    - sum_up_slots
+    - export
+
+## Generated Story 5839663256467473094
+* sleep{"duration": "1h", "sleep_quality": "heavy"}
+    - slot{"duration": "1h"}
+    - slot{"sleep_quality": "heavy"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"sleep_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_sleep
+    - slot{"sleep_quality": "heavy"}
+    - slot{"global_score": 2}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - ask_what_sleep
+    - sum_up_slots
+* sleep{"sleep_quality": null}
+    - slot{"sleep_quality": null}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_sleep
+    - slot{"requested_slot": "sleep_quality"}
+    - utter_ask_sleep_quality
+    - sum_up_slots
+* sleep{"sleep_quality": "heavy"}
+    - slot{"sleep_quality": "heavy"}
+    - save_conv
+    - slot{"topic": "sleep"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_sleep
+    - slot{"sleep_quality": "heavy"}
+    - slot{"global_score": 6}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_sleep
+    - slot{"sleep_duration": null}
+    - slot{"sleep_quality": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"sleep": true}
+    - slot{"global_score": 6}
+    - sum_up_slots
+    - export
+
+## Generated Story 19798754407800825
+* eatingDisorders
+    - save_conv
+    - slot{"topic": "eatingDisorders"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_eatingDisorders
+    - slot{"requested_slot": "eatingDisorders_duration"}
+    - utter_ask_eatingDisorders_duration
+    - sum_up_slots
+* eatingDisorders{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "eatingDisorders"}
+    - slot{"eatingDisorders_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_eatingDisorders
+    - slot{"requested_slot": "eatingDisorders_time"}
+    - utter_ask_eatingDisorders_time
+    - sum_up_slots
+* eatingDisorders{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "eatingDisorders"}
+    - slot{"eatingDisorders_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_eatingDisorders
+    - slot{"eatingDisorders": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 19798754407800825
+* eatingDisorders
+    - save_conv
+    - slot{"topic": "eatingDisorders"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_eatingDisorders
+    - slot{"requested_slot": "eatingDisorders_duration"}
+    - utter_ask_eatingDisorders_duration
+    - sum_up_slots
+* eatingDisorders{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "eatingDisorders"}
+    - slot{"eatingDisorders_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_eatingDisorders
+    - slot{"requested_slot": "eatingDisorders_time"}
+    - utter_ask_eatingDisorders_time
+    - sum_up_slots
+* eatingDisorders{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "eatingDisorders"}
+    - slot{"eatingDisorders_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_eatingDisorders
+    - slot{"eatingDisorders": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 2696639901500677187
+* eatingDisorders{"duration": "1h", "time": "yesterday"}
+    - slot{"duration": "1h"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "eatingDisorders"}
+    - slot{"eatingDisorders_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"eatingDisorders_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_eatingDisorders
+    - slot{"global_score": 2}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - ask_what_eatingDisorders
+    - sum_up_slots
+* eatingDisorders{"eatingDisorders_duration": null}
+    - slot{"eatingDisorders_duration": null}
+    - save_conv
+    - slot{"topic": "eatingDisorders"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_eatingDisorders
+    - slot{"requested_slot": "eatingDisorders_duration"}
+    - utter_ask_eatingDisorders_duration
+    - sum_up_slots
+* eatingDisorders{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "eatingDisorders"}
+    - slot{"eatingDisorders_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_eatingDisorders
+    - slot{"global_score": 4}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_eatingDisorders
+    - slot{"eatingDisorders_duration": null}
+    - slot{"eatingDisorders_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"eatingDisorders": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+    - export
+
+## Generated Story 2696639901500677187
+* eatingDisorders{"duration": "1h", "time": "yesterday"}
+    - slot{"duration": "1h"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "eatingDisorders"}
+    - slot{"eatingDisorders_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"eatingDisorders_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_eatingDisorders
+    - slot{"global_score": 2}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - ask_what_eatingDisorders
+    - sum_up_slots
+* eatingDisorders{"eatingDisorders_duration": null}
+    - slot{"eatingDisorders_duration": null}
+    - save_conv
+    - slot{"topic": "eatingDisorders"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_eatingDisorders
+    - slot{"requested_slot": "eatingDisorders_duration"}
+    - utter_ask_eatingDisorders_duration
+    - sum_up_slots
+* eatingDisorders{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "eatingDisorders"}
+    - slot{"eatingDisorders_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_eatingDisorders
+    - slot{"global_score": 4}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_eatingDisorders
+    - slot{"eatingDisorders_duration": null}
+    - slot{"eatingDisorders_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"eatingDisorders": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+    - export
+

@@ -695,17 +695,17 @@
 		"ENG":"Is your treatment well taken, stopped or forgotten?",
 		"FRA":"Votre traitement est-il bien suivi, arrêté ou l'oubliez-vous ?"
 		},
-	"taken":
+	"taken_button":
 		{
 		"ENG":"Taken",
 		"FRA":"Pris"
 		},
-	"stopped":
+	"stopped_button":
 		{
 		"ENG":"Stopped",
 		"FRA":"Arrêté"
 		},
-	"forgotten":
+	"forgotten_button":
 		{
 		"ENG":"Forgotten",
 		"FRA":"Oublié"
@@ -715,17 +715,17 @@
 		"ENG":"Do you take the prescribed dose of your treatment, do you take more or less?",
 		"FRA":"Prenez-vous la dose prescrite de votre traitement, prenez-vous plus ou moins ?"
 		},
-	"welltaken":
+	"welltaken_button":
 		{
 		"ENG":"Non overdosed",
 		"FRA":"Non surdosé"
 		},
-	"overdose":
+	"overdose_button":
 		{
 		"ENG":"Overdosed",
 		"FRA":"Surdosé"
 		},
-	"underdose":
+	"underdose_button":
 		{
 		"ENG":"Underdosed",
 		"FRA":"Sous dosé"
@@ -909,7 +909,66 @@
 		{
 		"ENG":"To summarize, you talked about your alcoholism",
 		"FRA":"Pour résumer, vous avez parlé de votre alcoolisme"
+		},
+	"ask_sleep_duration":
+		{
+		"ENG":"Can you tell me how long you usually sleep?",
+		"FRA":"Pouvez-vous me dire combien de temps vous dormez en général ?"
+		},
+	"sleep_duration":
+		{
+		"ENG":"\n\tThe duration of your sleep is of {}",
+		"FRA":"\n\tLa durée de votre sommeil est de {}"
+		},
+	"light_button":
+		{
+		"ENG":"Light",
+		"FRA":"Léger"
+		},
+	"restless_button":
+		{
+		"ENG":"Restless",
+		"FRA":"Agité"
+		},
+	"heavy_button":
+		{
+		"ENG":"Heavy",
+		"FRA":"Lourd"
+		},
+	"ask_sleep_quality":
+		{
+		"ENG":"Can you qualify your sleep quality?",
+		"FRA":"Pouvez-vous qualifier votre qualité de sommeil ?"
+		},
+	"sleep_quality":
+		{
+		"ENG":"\n\tThe quality of your sleep seems {}",
+		"FRA":"\n\tLa qualité de votre sommeil semble {}"
+		},
+	"sleep_quality_button":
+		{
+		"ENG":"Quality of sleep",
+		"FRA":"Qualité du sommeil"
+		},
+	"ask_eatingDisorders_duration":
+		{
+		"ENG":"Can you tell me the duration of your eating disorders?",
+		"FRA":"Pouvez-vous m'indiquer la durée de vos troubles alimentaires ?"
+		},
+	"ask_eatingDisorders_time":
+		{
+		"ENG":"Can you tell me since when you have your eating disorders?",
+		"FRA":"Pouvez-vous me dire depuis quelle date vous avez vos troubles alimentaires ?"
+		},
+	"eatingDisorders_duration":
+		{
+		"ENG":"\n\tThe duration of your eating disorders is of {}",
+		"FRA":"\n\tLa durée de votre trouble alimentaire est de {}"
+		},
+	"eatingDisorders_time":
+		{
+		"ENG":"\n\tYour eating disorder began on {}",
+		"FRA":"\n\tVos troubles alimentaires ont commencé {}"
 		}
 	}
 }
-

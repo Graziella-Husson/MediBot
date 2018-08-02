@@ -270,3 +270,37 @@ class AskWhatInfoPatient(AskWhatAction):
                                "infoPatient_gender",
                                "infoPatient_heart_rate",
                                "infoPatient_blood_pressure"]
+
+
+class AskWhatSleep(AskWhatAction):
+    """Ask what's wrong with the infos for the intent sleep"""
+    def name(self):
+        """@return: the name of the action."""
+        return 'ask_what_sleep'
+
+    def __init__(self):
+        """Display a button for all infos the tracker
+        have for the intent 'sleep':
+            - sleep_duration
+            - sleep_quality
+        When clicked, the button will reset the slot linked to it."""
+        self.intent_name = "sleep"
+        self.simple_buttons = [["sleep_duration", "duration_button"],
+                               "sleep_quality"]
+
+
+class AskEatingDisordersSleep(AskWhatAction):
+    """Ask what's wrong with the infos for the intent eatingDisorders"""
+    def name(self):
+        """@return: the name of the action."""
+        return 'ask_what_eatingDisorders'
+
+    def __init__(self):
+        """Display a button for all infos the tracker
+        have for the intent 'eatingDisorders':
+            - eatingDisorders_duration
+            - eatingDisorders_time
+        When clicked, the button will reset the slot linked to it."""
+        self.intent_name = "eatingDisorders"
+        self.simple_buttons = [["eatingDisorders_duration", "duration_button"],
+                               ["eatingDisorders_time", "time_button"]]

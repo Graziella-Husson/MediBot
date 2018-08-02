@@ -544,12 +544,12 @@ class SumUpSLots(Action):
 `\tpathology = {}, pathology_symptom = {}, pathology_body_part = {}, pathology_time = {}, pathology_change = {}, pathology_period = {}, pathology_treatment_linked = {}, pathology_duration = {},`
 `\ttreatment = {}, treatment_medicinal = {}, treatment_being_taken = {}, treatment_drug = {}, treatment_dosing = {}, treatment_time = {}, treatment_prescripted = {}, treatment_ok = {}, treatment_overdosage = {}, treatment_period = {}, treatment_duration = {}`
 `\tinfoPatient = {}, infoPatient_addiction = {}, infoPatient_weight = {}, infoPatient_distance = {}, infoPatient_gender = {}, infoPatient_temperature = {}, infoPatient_heart_rate = {}, infoPatient_blood_pressure = {}, infoPatient_time= {},`
+`\tsleep = {}, sleep_duration = {}, sleep_quality = {}`
+`\teatingDisorders = {}, eatingDisorders_duration = {}, eatingDisorders_time = {}`
 `\tnegativeEmo = {},`
 `\tpositiveEmo = {},`
 `\tsocial = {},`
 `\trisk = {},`
-`\tsleep = {},`
-`\teatingDisorders = {},`
 `\tdrugAddiction = {},`
 `\tsmoking = {},`
 `\talcohol = {},`
@@ -560,12 +560,12 @@ class SumUpSLots(Action):
     tracker.get_slot("pathology"), tracker.get_slot("pathology_symptom"), tracker.get_slot("pathology_body_part"), tracker.get_slot("pathology_time"), tracker.get_slot("pathology_change"), tracker.get_slot("pathology_period"), tracker.get_slot("pathology_treatment_linked"), tracker.get_slot("pathology_duration"),
     tracker.get_slot("treatment"), tracker.get_slot("treatment_medicinal"), tracker.get_slot("treatment_being_taken"), tracker.get_slot("treatment_drug"), tracker.get_slot("treatment_dosing"), tracker.get_slot("treatment_time"), tracker.get_slot("treatment_prescripted"), tracker.get_slot("treatment_ok"), tracker.get_slot("treatment_overdosage"), tracker.get_slot("treatment_period"), tracker.get_slot("treatment_duration"),
     tracker.get_slot("infoPatient"), tracker.get_slot("infoPatient_addiction"), tracker.get_slot("infoPatient_weight"), tracker.get_slot("infoPatient_distance"), tracker.get_slot("infoPatient_gender"), tracker.get_slot("infoPatient_temperature"), tracker.get_slot("infoPatient_heart_rate"), tracker.get_slot("infoPatient_blood_pressure"), tracker.get_slot("infoPatient_time"),
+    tracker.get_slot("sleep"), tracker.get_slot("sleep_duration"), tracker.get_slot("sleep_quality"),
+    tracker.get_slot("eatingDisorders"), tracker.get_slot("eatingDisorders_duration"), tracker.get_slot("eatingDisorders_time"),
     tracker.get_slot("negativeEmo"),
     tracker.get_slot("positiveEmo"),
     tracker.get_slot("social"),
     tracker.get_slot("risk"),
-    tracker.get_slot("sleep"),
-    tracker.get_slot("eatingDisorders"),
     tracker.get_slot("drugAddiction"),
     tracker.get_slot("smoking"),
     tracker.get_slot("alcohol"),

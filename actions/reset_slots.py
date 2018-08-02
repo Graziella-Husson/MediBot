@@ -215,3 +215,37 @@ class ResetInfoPatientSlots(ResetSlotsAction):
                          "infoPatient_blood_pressure",
                          "infoPatient_time"
                          ]
+
+
+class ResetSleepSlots(ResetSlotsAction):
+    """Reset slots linked to sleep intent and save infos in DB"""
+    def name(self):
+        """@return: the name of the action."""
+        return 'reset_slots_sleep'
+
+    def __init__(self):
+        """Set all slots for intent 'sleep' to None:
+            - sleep_duration
+            - sleep_quality
+        Set slot sleep to True"""
+        self.intent_name = "sleep"
+        self.entities = ["sleep_duration",
+                         "sleep_quality"
+                         ]
+
+
+class ResetEatingDisordersSlots(ResetSlotsAction):
+    """Reset slots linked to eatingDisorders intent and save infos in DB"""
+    def name(self):
+        """@return: the name of the action."""
+        return 'reset_slots_eatingDisorders'
+
+    def __init__(self):
+        """Set all slots for intent 'eatingDisorders' to None:
+            - eatingDisorders_duration
+            - eatingDisorders_time
+        Set slot eatingDisorders to True"""
+        self.intent_name = "eatingDisorders"
+        self.entities = ["eatingDisorders_duration",
+                         "eatingDisorders_time"
+                         ]

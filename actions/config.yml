@@ -11,13 +11,15 @@ sessions:
     duration:
       minutes: '15'
     followed_intent: None
-    requested_intent: treatment,infoPatient,activity,pain,pathology,social,positiveEmo,negativeEmo
+    requested_intent: treatment,infoPatient,activity,pain,pathology,social,positiveEmo,negativeEmo,sleep,eatingDisorders
     requested_slot:
       treatment: treatment_medicinal,treatment_being_taken,treatment_drug,treatment_ok,treatment_dosing,treatment_time,treatment_overdosage,treatment_prescripted,treatment_period,treatment_duration
       infoPatient: infoPatient_weight,infoPatient_time,infoPatient_distance,infoPatient_temperature,infoPatient_gender,infoPatient_heart_rate,infoPatient_blood_pressure,infoPatient_addiction
       activity: activity_sport,activity_duration,activity_period,activity_distance,activity_hard,activity_time
       pain: pain_duration,pain_desc,pain_body_part,pain_period,pain_time,pain_change
       pathology: pathology_symptom,pathology_time,pathology_period,pathology_body_part,pathology_change,pathology_treatment_linked,pathology_duration
+      sleep: sleep_duration,sleep_quality
+      eatingDisorders: eatingDisorders_time,eatingDisorders_duration
 
   2:
     duration:

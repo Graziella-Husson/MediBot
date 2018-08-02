@@ -147,6 +147,14 @@ slots:
     type: bool
   alcohol:
     type: bool
+  sleep_duration:
+    type: text
+  sleep_quality:
+    type: text
+  eatingDisorders_duration:
+    type: text
+  eatingDisorders_time:
+    type: text
 
 intents:
  - activity
@@ -219,11 +227,15 @@ actions:
  - ask_what.AskWhatActivity
  - ask_what.AskWhatTreatment
  - ask_what.AskWhatInfoPatient
+ - ask_what.AskWhatSleep
+ - ask_what.AskEatingDisordersSleep
  - reset_slots.ResetPathologySlots
  - reset_slots.ResetTreatmentSlots
  - reset_slots.ResetInfoPatientSlots
  - reset_slots.ResetActivitySlots
  - reset_slots.ResetPainSlots
+ - reset_slots.ResetSleepSlots
+ - reset_slots.ResetEatingDisordersSlots
  - simple_actions.Fallback
  - simple_actions.AskActivityHard
  - simple_actions.AskActivitySport
@@ -278,4 +290,7 @@ actions:
  - simple_actions.AskDrugAddiction
  - simple_actions.AskSmoking
  - simple_actions.AskAlcohol
-
+ - simple_actions.AskSleepDuration
+ - simple_actions.AskSleepQuality
+ - simple_actions.AskEatingDisordersDuration
+ - simple_actions.AskEatingDisordersTime

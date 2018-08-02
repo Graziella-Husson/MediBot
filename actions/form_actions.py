@@ -568,8 +568,17 @@ class Risk(FormActionCalculusAndCore):
 class Sleep(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for sleep intent"""
     def __init__(self):
-        """Set the name of the intent"""
+        """Set the name of the intent
+        The entities linked to this intent are:
+            - sleep_duration
+            - sleep_quality
+        This action will sum up these infos.
+        If they're all set to None (no mandatory entity),
+        just say that we talked about a sleeping info\n
+        Ask if the informations are correct.\n"""
         self.intent_name = "sleep"
+        self.simples = ["sleep_duration",
+                        "sleep_quality"]
 
     def name(self):
         """@return: the name of the action."""
@@ -590,8 +599,17 @@ class Sleep(FormActionCalculusAndCore):
 class EatingDisorders(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for eating disorders intent"""
     def __init__(self):
-        """Set the name of the intent"""
+        """Set the name of the intent
+        The entities linked to this intent are:
+            - eatingDisorders_duration
+            - eatingDisorders_time
+        This action will sum up these infos.
+        If they're all set to None (no mandatory entity),
+        just say that we talked about an eating disorder\n
+        Ask if the informations are correct.\n"""
         self.intent_name = "eatingDisorders"
+        self.simples = ["eatingDisorders_duration",
+                        "eatingDisorders_time"]
 
     def name(self):
         """@return: the name of the action."""

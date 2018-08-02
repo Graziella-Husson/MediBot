@@ -712,7 +712,6 @@ class AskPathologyDuration(AskAction):
     """Say something to the user : ask the duration of the pathology"""
     def __init__(self):
         """Set the name of the entity to ask"""
-        print("pathology_duration")
         self.entity_name = "pathology_duration"
 
     def name(self):
@@ -775,6 +774,55 @@ class AskAlcohol(AskAction):
     def name(self):
         """@return: the name of the action."""
         return 'utter_ask_alcohol'
+
+
+class AskSleepDuration(AskAction):
+    """Say something to the user : ask the duration of the sleep"""
+    def __init__(self):
+        """Set the name of the entity to ask"""
+        self.entity_name = "sleep_duration"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_sleep_duration'
+
+
+class AskSleepQuality(AskButtonsAction):
+    """Say something to the user :
+    display buttons to tell the quality of the sleep"""
+    def __init__(self):
+        """Set the name of the entity to ask\n
+        Set the name of the intent\n
+        Set the list of available buttons to show to the user"""
+        self.entity_name = "sleep_quality"
+        self.intent_name = "sleep"
+        self.buttons = ["light", "restless", "heavy"]
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_sleep_quality'
+
+
+class AskEatingDisordersDuration(AskAction):
+    """Say something to the user : ask the duration of the eatingDisorders"""
+    def __init__(self):
+        """Set the name of the entity to ask"""
+        self.entity_name = "eatingDisorders_duration"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_eatingDisorders_duration'
+
+
+class AskEatingDisordersTime(AskAction):
+    """Say something to the user : ask the begin date of the eatingDisorders"""
+    def __init__(self):
+        """Set the name of the entity to ask"""
+        self.entity_name = "eatingDisorders_time"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_eatingDisorders_time'
 
 # class AskNameOfEntity(AskAction):
 #    """Say something to the user : ask"""
