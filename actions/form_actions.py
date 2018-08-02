@@ -630,8 +630,23 @@ class EatingDisorders(FormActionCalculusAndCore):
 class DrugAddiction(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for drug addiction intent"""
     def __init__(self):
-        """Set the name of the intent"""
+        """Set the name of the intent
+        The entities linked to this intent are:
+            - drugAddiction_period
+            - drugAddiction_drug
+            - drugAddiction_dosing
+            - drugAddiction_duration
+            - drugAddiction_time
+        This action will sum up these infos.
+        If they're all set to None (no mandatory entity),
+        just say that we talked about a drug addiction\n
+        Ask if the informations are correct.\n"""
         self.intent_name = "drugAddiction"
+        self.simples = ["drugAddiction_period",
+                        "drugAddiction_drug",
+                        "drugAddiction_dosing",
+                        "drugAddiction_duration",
+                        "drugAddiction_time"]
 
     def name(self):
         """@return: the name of the action."""
@@ -652,8 +667,21 @@ class DrugAddiction(FormActionCalculusAndCore):
 class Smoking(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for smoking intent"""
     def __init__(self):
-        """Set the name of the intent"""
+        """Set the name of the intent
+        The entities linked to this intent are:
+            - smoking_period
+            - smoking_dosing
+            - smoking_duration
+            - smoking_time
+        This action will sum up these infos.
+        If they're all set to None (no mandatory entity),
+        just say that we talked about a smoking thing\n
+        Ask if the informations are correct.\n"""
         self.intent_name = "smoking"
+        self.simples = ["smoking_period",
+                        "smoking_dosing",
+                        "smoking_duration",
+                        "smoking_time"]
 
     def name(self):
         """@return: the name of the action."""
@@ -674,7 +702,21 @@ class Smoking(FormActionCalculusAndCore):
 class Alcohol(FormActionCalculusAndCore):
     """FormActionCalculusAndCore for smoking intent"""
     def __init__(self):
-        """Set the name of the intent"""
+        """Set the name of the intent
+        The entities linked to this intent are:
+            - alcohol_period
+            - alcohol_dosing
+            - alcohol_duration
+            - alcohol_time
+        This action will sum up these infos.
+        If they're all set to None (no mandatory entity),
+        just say that we talked about a alcohol thing\n
+        Ask if the informations are correct.\n"""
+        self.intent_name = "alcohol"
+        self.simples = ["alcohol_period",
+                        "alcohol_dosing",
+                        "alcohol_duration",
+                        "alcohol_time"]
         self.intent_name = "alcohol"
 
     def name(self):

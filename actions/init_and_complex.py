@@ -546,13 +546,13 @@ class SumUpSLots(Action):
 `\tinfoPatient = {}, infoPatient_addiction = {}, infoPatient_weight = {}, infoPatient_distance = {}, infoPatient_gender = {}, infoPatient_temperature = {}, infoPatient_heart_rate = {}, infoPatient_blood_pressure = {}, infoPatient_time= {},`
 `\tsleep = {}, sleep_duration = {}, sleep_quality = {}`
 `\teatingDisorders = {}, eatingDisorders_duration = {}, eatingDisorders_time = {}`
+`\tdrugAddiction = {}, drugAddiction_period = {}, drugAddiction_drug = {}, drugAddiction_dosing = {}, drugAddiction_duration = {}, drugAddiction_time = {}, `
+`\tsmoking = {}, smoking_period = {}, smoking_dosing = {}, smoking_duration = {}, smoking_time = {},`
+`\talcohol = {}, alcohol_period = {}, alcohol_dosing = {}, alcohol_duration = {}, alcohol_time = {},`
 `\tnegativeEmo = {},`
 `\tpositiveEmo = {},`
 `\tsocial = {},`
 `\trisk = {},`
-`\tdrugAddiction = {},`
-`\tsmoking = {},`
-`\talcohol = {},`
 `\tdistance = {}, period = {}, duration = {}, time = {}, body_part = {}, temperature = {}, drug = {}, dosing = {}`""").format(
     tracker.get_slot("topic"), tracker.get_slot("requested_slot"),
     tracker.get_slot("activity"), tracker.get_slot("activity_sport"), tracker.get_slot("activity_level"), tracker.get_slot("activity_duration"), tracker.get_slot("activity_period"), tracker.get_slot("activity_hard"), tracker.get_slot("activity_time"), tracker.get_slot("activity_distance"),
@@ -562,13 +562,13 @@ class SumUpSLots(Action):
     tracker.get_slot("infoPatient"), tracker.get_slot("infoPatient_addiction"), tracker.get_slot("infoPatient_weight"), tracker.get_slot("infoPatient_distance"), tracker.get_slot("infoPatient_gender"), tracker.get_slot("infoPatient_temperature"), tracker.get_slot("infoPatient_heart_rate"), tracker.get_slot("infoPatient_blood_pressure"), tracker.get_slot("infoPatient_time"),
     tracker.get_slot("sleep"), tracker.get_slot("sleep_duration"), tracker.get_slot("sleep_quality"),
     tracker.get_slot("eatingDisorders"), tracker.get_slot("eatingDisorders_duration"), tracker.get_slot("eatingDisorders_time"),
+    tracker.get_slot("drugAddiction"), tracker.get_slot("drugAddiction_period"), tracker.get_slot("drugAddiction_drug"), tracker.get_slot("drugAddiction_dosing"), tracker.get_slot("drugAddiction_duration"), tracker.get_slot("drugAddiction_time"), 
+    tracker.get_slot("smoking"), tracker.get_slot("smoking_period"), tracker.get_slot("smoking_dosing"), tracker.get_slot("smoking_duration"), tracker.get_slot("smoking_time"),
+    tracker.get_slot("alcohol"), tracker.get_slot("alcohol_period"), tracker.get_slot("alcohol_dosing"), tracker.get_slot("alcohol_duration"), tracker.get_slot("alcohol_time"),
     tracker.get_slot("negativeEmo"),
     tracker.get_slot("positiveEmo"),
     tracker.get_slot("social"),
     tracker.get_slot("risk"),
-    tracker.get_slot("drugAddiction"),
-    tracker.get_slot("smoking"),
-    tracker.get_slot("alcohol"),
     tracker.get_slot("distance"), tracker.get_slot("period"), tracker.get_slot("duration"), tracker.get_slot("time"), tracker.get_slot("body_part"), tracker.get_slot("temperature"), tracker.get_slot("drug"), tracker.get_slot("dosing"))
             dispatcher.utter_message(response)
             conv.write("{ '"+str(date)+"' : [{'text': '"+response+"'}]},\n")

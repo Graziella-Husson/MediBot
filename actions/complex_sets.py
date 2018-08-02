@@ -16,7 +16,10 @@ from form_actions import (
     Pathology,
     Treatment,
     Sleep,
-    EatingDisorders
+    EatingDisorders,
+    DrugAddiction,
+    Smoking,
+    Alcohol
 )
 
 
@@ -50,7 +53,10 @@ def get_next_action(topic):
         'pathology': Pathology(),
         'treatment': Treatment(),
         'sleep': Sleep(),
-        'eatingDisorders': EatingDisorders()
+        'eatingDisorders': EatingDisorders(),
+        'drugAddiction': DrugAddiction(),
+        'smoking': Smoking(),
+        'alcohol': Alcohol()
         }.get(topic, Fallback())    # fallback is default if topic not found
 
 

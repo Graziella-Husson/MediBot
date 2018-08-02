@@ -249,3 +249,68 @@ class ResetEatingDisordersSlots(ResetSlotsAction):
         self.entities = ["eatingDisorders_duration",
                          "eatingDisorders_time"
                          ]
+
+
+class ResetDrugAddictionSlots(ResetSlotsAction):
+    """Reset slots linked to drugAddiction intent and save infos in DB"""
+    def name(self):
+        """@return: the name of the action."""
+        return 'reset_slots_drugAddiction'
+
+    def __init__(self):
+        """Set all slots for intent 'drugAddiction' to None:
+            - drugAddiction_period
+            - drugAddiction_drug
+            - drugAddiction_dosing
+            - drugAddiction_duration
+            - drugAddiction_time
+        Set slot drugAddiction to True"""
+        self.intent_name = "drugAddiction"
+        self.entities = ["drugAddiction_period",
+                         "drugAddiction_drug",
+                         "drugAddiction_dosing",
+                         "drugAddiction_duration",
+                         "drugAddiction_time"
+                         ]
+
+
+class ResetSmokingSlots(ResetSlotsAction):
+    """Reset slots linked to smoking intent and save infos in DB"""
+    def name(self):
+        """@return: the name of the action."""
+        return 'reset_slots_smoking'
+
+    def __init__(self):
+        """Set all slots for intent 'smoking' to None:
+            - smoking_period
+            - smoking_dosing
+            - smoking_duration
+            - smoking_time
+        Set slot smoking to True"""
+        self.intent_name = "smoking"
+        self.entities = ["smoking_period",
+                         "smoking_dosing",
+                         "smoking_duration",
+                         "smoking_time"
+                         ]
+
+
+class ResetAlcoholSlots(ResetSlotsAction):
+    """Reset slots linked to smoking intent and save infos in DB"""
+    def name(self):
+        """@return: the name of the action."""
+        return 'reset_slots_alcohol'
+
+    def __init__(self):
+        """Set all slots for intent 'alcohol' to None:
+            - alcohol_period
+            - alcohol_dosing
+            - alcohol_duration
+            - alcohol_time
+        Set slot smoking to True"""
+        self.intent_name = "alcohol"
+        self.entities = ["alcohol_period",
+                         "alcohol_dosing",
+                         "alcohol_duration",
+                         "alcohol_time"
+                         ]

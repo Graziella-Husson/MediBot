@@ -155,6 +155,32 @@ slots:
     type: text
   eatingDisorders_time:
     type: text
+  drugAddiction_period:
+    type: text
+  drugAddiction_drug:
+    type: text
+  drugAddiction_dosing:
+    type: text
+  drugAddiction_duration:
+    type: text
+  drugAddiction_time:
+    type: text
+  smoking_period:
+    type: text
+  smoking_dosing:
+    type: text
+  smoking_duration:
+    type: text
+  smoking_time:
+    type: text
+  alcohol_period:
+    type: text
+  alcohol_dosing:
+    type: text
+  alcohol_duration:
+    type: text
+  alcohol_time:
+    type: text
 
 intents:
  - activity
@@ -228,7 +254,10 @@ actions:
  - ask_what.AskWhatTreatment
  - ask_what.AskWhatInfoPatient
  - ask_what.AskWhatSleep
- - ask_what.AskEatingDisordersSleep
+ - ask_what.AskWhatEatingDisorders
+ - ask_what.AskWhatDrugAddiction
+ - ask_what.AskWhatSmoking
+ - ask_what.AskWhatAlcohol
  - reset_slots.ResetPathologySlots
  - reset_slots.ResetTreatmentSlots
  - reset_slots.ResetInfoPatientSlots
@@ -236,6 +265,9 @@ actions:
  - reset_slots.ResetPainSlots
  - reset_slots.ResetSleepSlots
  - reset_slots.ResetEatingDisordersSlots
+ - reset_slots.ResetDrugAddictionSlots
+ - reset_slots.ResetSmokingSlots
+ - reset_slots.ResetAlcoholSlots
  - simple_actions.Fallback
  - simple_actions.AskActivityHard
  - simple_actions.AskActivitySport
@@ -294,3 +326,16 @@ actions:
  - simple_actions.AskSleepQuality
  - simple_actions.AskEatingDisordersDuration
  - simple_actions.AskEatingDisordersTime
+ - simple_actions.AskDrugAddictionPeriod
+ - simple_actions.AskDrugAddictionDrug
+ - simple_actions.AskDrugAddictionDosing
+ - simple_actions.AskDrugAddictionDuration
+ - simple_actions.AskDrugAddictionTime
+ - simple_actions.AskSmokingPeriod
+ - simple_actions.AskSmokingDosing
+ - simple_actions.AskSmokingDuration
+ - simple_actions.AskSmokingTime
+ - simple_actions.AskAlcoholPeriod
+ - simple_actions.AskAlcoholDosing
+ - simple_actions.AskAlcoholDuration
+ - simple_actions.AskAlcoholTime

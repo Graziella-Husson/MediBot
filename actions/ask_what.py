@@ -289,7 +289,7 @@ class AskWhatSleep(AskWhatAction):
                                "sleep_quality"]
 
 
-class AskEatingDisordersSleep(AskWhatAction):
+class AskWhatEatingDisorders(AskWhatAction):
     """Ask what's wrong with the infos for the intent eatingDisorders"""
     def name(self):
         """@return: the name of the action."""
@@ -304,3 +304,68 @@ class AskEatingDisordersSleep(AskWhatAction):
         self.intent_name = "eatingDisorders"
         self.simple_buttons = [["eatingDisorders_duration", "duration_button"],
                                ["eatingDisorders_time", "time_button"]]
+
+
+class AskWhatDrugAddiction(AskWhatAction):
+    """Ask what's wrong with the infos for the intent drugAddiction"""
+    def name(self):
+        """@return: the name of the action."""
+        return 'ask_what_drugAddiction'
+
+    def __init__(self):
+        """Display a button for all infos the tracker
+        have for the intent 'drugAddiction':
+            - drugAddiction_period
+            - drugAddiction_drug
+            - drugAddiction_dosing
+            - drugAddiction_duration
+            - drugAddiction_time
+        When clicked, the button will reset the slot linked to it."""
+        self.intent_name = "drugAddiction"
+        self.simple_buttons = [["drugAddiction_duration", "duration_button"],
+                               ["drugAddiction_time", "time_button"],
+                               ["drugAddiction_period", "period_button"],
+                               "drugAddiction_drug",
+                               "drugAddiction_dosing"]
+
+
+class AskWhatSmoking(AskWhatAction):
+    """Ask what's wrong with the infos for the intent smoking"""
+    def name(self):
+        """@return: the name of the action."""
+        return 'ask_what_smoking'
+
+    def __init__(self):
+        """Display a button for all infos the tracker
+        have for the intent 'smoking':
+            - smoking_period
+            - smoking_dosing
+            - smoking_duration
+            - smoking_time
+        When clicked, the button will reset the slot linked to it."""
+        self.intent_name = "smoking"
+        self.simple_buttons = [["smoking_duration", "duration_button"],
+                               ["smoking_time", "time_button"],
+                               ["smoking_period", "period_button"],
+                               "smoking_dosing"]
+
+
+class AskWhatAlcohol(AskWhatAction):
+    """Ask what's wrong with the infos for the intent alcohol"""
+    def name(self):
+        """@return: the name of the action."""
+        return 'ask_what_alcohol'
+
+    def __init__(self):
+        """Display a button for all infos the tracker
+        have for the intent 'alcohol':
+            - alcohol_period
+            - alcohol_dosing
+            - alcohol_duration
+            - alcohol_time
+        When clicked, the button will reset the slot linked to it."""
+        self.intent_name = "alcohol"
+        self.simple_buttons = [["alcohol_duration", "duration_button"],
+                               ["alcohol_time", "time_button"],
+                               ["alcohol_period", "period_button"],
+                               "alcohol_dosing"]

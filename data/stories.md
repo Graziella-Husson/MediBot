@@ -12840,3 +12840,2565 @@
     - sum_up_slots
     - export
 
+## Generated Story 4276820766612867105
+* drugAddiction
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_period"}
+    - utter_ask_drugAddiction_period
+    - sum_up_slots
+* drugAddiction{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_time"}
+    - utter_ask_drugAddiction_time
+    - sum_up_slots
+* drugAddiction{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_dosing"}
+    - utter_ask_drugAddiction_dosing
+    - sum_up_slots
+* drugAddiction{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_duration"}
+    - utter_ask_drugAddiction_duration
+    - sum_up_slots
+* drugAddiction{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_drug"}
+    - utter_ask_drugAddiction_drug
+    - sum_up_slots
+* drugAddiction{"drug": "test"}
+    - slot{"drug": "test"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_drug": "test"}
+    - slot{"drug": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 427682076661286710
+* drugAddiction
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_period"}
+    - utter_ask_drugAddiction_period
+    - sum_up_slots
+
+## Generated Story 42768207666128671
+* drugAddiction{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_time"}
+    - utter_ask_drugAddiction_time
+    - sum_up_slots
+
+## Generated Story 42768207666128671
+* drugAddiction{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_dosing"}
+    - utter_ask_drugAddiction_dosing
+    - sum_up_slots
+
+## Generated Story 42768207666128671
+* drugAddiction{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_duration"}
+    - utter_ask_drugAddiction_duration
+    - sum_up_slots
+
+## Generated Story 42768207666128671
+* drugAddiction{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_drug"}
+    - utter_ask_drugAddiction_drug
+    - sum_up_slots
+
+## Generated Story 42768207666128671
+* drugAddiction{"drug": "test"}
+    - slot{"drug": "test"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_drug": "test"}
+    - slot{"drug": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 4276820766612867105
+* drugAddiction
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_period"}
+    - utter_ask_drugAddiction_period
+    - sum_up_slots
+* drugAddiction{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_time"}
+    - utter_ask_drugAddiction_time
+    - sum_up_slots
+
+## Generated Story 4276820766612867105
+* drugAddiction
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_period"}
+    - utter_ask_drugAddiction_period
+    - sum_up_slots
+* drugAddiction{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_time"}
+    - utter_ask_drugAddiction_time
+    - sum_up_slots
+* drugAddiction{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_dosing"}
+    - utter_ask_drugAddiction_dosing
+    - sum_up_slots
+
+## Generated Story 4276820766612867105
+* drugAddiction
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_period"}
+    - utter_ask_drugAddiction_period
+    - sum_up_slots
+* drugAddiction{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_time"}
+    - utter_ask_drugAddiction_time
+    - sum_up_slots
+* drugAddiction{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_dosing"}
+    - utter_ask_drugAddiction_dosing
+    - sum_up_slots
+* drugAddiction{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_duration"}
+    - utter_ask_drugAddiction_duration
+    - sum_up_slots
+
+## Generated Story 4276820766612867105
+* drugAddiction
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_period"}
+    - utter_ask_drugAddiction_period
+    - sum_up_slots
+* drugAddiction{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_time"}
+    - utter_ask_drugAddiction_time
+    - sum_up_slots
+* drugAddiction{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_dosing"}
+    - utter_ask_drugAddiction_dosing
+    - sum_up_slots
+* drugAddiction{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_duration"}
+    - utter_ask_drugAddiction_duration
+    - sum_up_slots
+* drugAddiction{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_drug"}
+    - utter_ask_drugAddiction_drug
+    - sum_up_slots
+
+## Generated Story 4276820766612867105
+* drugAddiction
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_period"}
+    - utter_ask_drugAddiction_period
+    - sum_up_slots
+* drugAddiction{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_time"}
+    - utter_ask_drugAddiction_time
+    - sum_up_slots
+* drugAddiction{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_dosing"}
+    - utter_ask_drugAddiction_dosing
+    - sum_up_slots
+* drugAddiction{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_duration"}
+    - utter_ask_drugAddiction_duration
+    - sum_up_slots
+* drugAddiction{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_drug"}
+    - utter_ask_drugAddiction_drug
+    - sum_up_slots
+* drugAddiction{"drug": "test"}
+    - slot{"drug": "test"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_drug": "test"}
+    - slot{"drug": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 427682076661286710
+* drugAddiction
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_period"}
+    - utter_ask_drugAddiction_period
+    - sum_up_slots
+
+## Generated Story 42768207666128671
+* drugAddiction{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_time"}
+    - utter_ask_drugAddiction_time
+    - sum_up_slots
+
+## Generated Story 42768207666128671
+* drugAddiction{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_dosing"}
+    - utter_ask_drugAddiction_dosing
+    - sum_up_slots
+
+## Generated Story 42768207666128671
+* drugAddiction{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_duration"}
+    - utter_ask_drugAddiction_duration
+    - sum_up_slots
+
+## Generated Story 42768207666128671
+* drugAddiction{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_drug"}
+    - utter_ask_drugAddiction_drug
+    - sum_up_slots
+
+## Generated Story 42768207666128671
+* drugAddiction{"drug": "test"}
+    - slot{"drug": "test"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_drug": "test"}
+    - slot{"drug": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 4276820766612867105
+* drugAddiction
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_period"}
+    - utter_ask_drugAddiction_period
+    - sum_up_slots
+* drugAddiction{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_time"}
+    - utter_ask_drugAddiction_time
+    - sum_up_slots
+
+## Generated Story 4276820766612867105
+* drugAddiction
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_period"}
+    - utter_ask_drugAddiction_period
+    - sum_up_slots
+* drugAddiction{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_time"}
+    - utter_ask_drugAddiction_time
+    - sum_up_slots
+* drugAddiction{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_dosing"}
+    - utter_ask_drugAddiction_dosing
+    - sum_up_slots
+
+## Generated Story 4276820766612867105
+* drugAddiction
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_period"}
+    - utter_ask_drugAddiction_period
+    - sum_up_slots
+* drugAddiction{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_time"}
+    - utter_ask_drugAddiction_time
+    - sum_up_slots
+* drugAddiction{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_dosing"}
+    - utter_ask_drugAddiction_dosing
+    - sum_up_slots
+* drugAddiction{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_duration"}
+    - utter_ask_drugAddiction_duration
+    - sum_up_slots
+
+## Generated Story 4276820766612867105
+* drugAddiction
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_period"}
+    - utter_ask_drugAddiction_period
+    - sum_up_slots
+* drugAddiction{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_time"}
+    - utter_ask_drugAddiction_time
+    - sum_up_slots
+* drugAddiction{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_dosing"}
+    - utter_ask_drugAddiction_dosing
+    - sum_up_slots
+* drugAddiction{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_duration"}
+    - utter_ask_drugAddiction_duration
+    - sum_up_slots
+* drugAddiction{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_drug"}
+    - utter_ask_drugAddiction_drug
+    - sum_up_slots
+
+## Generated Story 4670838181116332145
+* drugAddiction{"duration": "1h", "time": "yesterday", "period": "every day", "dosing": "dosing", "drug": "test"}
+    - slot{"dosing": "dosing"}
+    - slot{"drug": "test"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"drugAddiction_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"drugAddiction_period": "every day"}
+    - slot{"period": null}
+    - slot{"drugAddiction_drug": "test"}
+    - slot{"drug": null}
+    - slot{"drugAddiction_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"global_score": 2}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_drugAddiction
+    - slot{"drugAddiction_period": null}
+    - slot{"drugAddiction_drug": null}
+    - slot{"drugAddiction_dosing": null}
+    - slot{"drugAddiction_duration": null}
+    - slot{"drugAddiction_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"drugAddiction": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 4670838181116332145
+* drugAddiction{"duration": "1h", "time": "yesterday", "period": "every day", "dosing": "dosing", "drug": "test"}
+    - slot{"dosing": "dosing"}
+    - slot{"drug": "test"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"drugAddiction_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"drugAddiction_period": "every day"}
+    - slot{"period": null}
+    - slot{"drugAddiction_drug": "test"}
+    - slot{"drug": null}
+    - slot{"drugAddiction_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"global_score": 2}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_drugAddiction
+    - slot{"drugAddiction_period": null}
+    - slot{"drugAddiction_drug": null}
+    - slot{"drugAddiction_dosing": null}
+    - slot{"drugAddiction_duration": null}
+    - slot{"drugAddiction_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"drugAddiction": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story -6071987894894775193
+* drugAddiction{"dosing": "dosing", "duration": "1h", "time": "yesterday", "period": "every day", "drug": "test"}
+    - slot{"dosing": "dosing"}
+    - slot{"drug": "test"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"drugAddiction_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"drugAddiction_period": "every day"}
+    - slot{"period": null}
+    - slot{"drugAddiction_drug": "test"}
+    - slot{"drug": null}
+    - slot{"drugAddiction_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"global_score": 2}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - ask_what_drugAddiction
+    - sum_up_slots
+* drugAddiction{"drugAddiction_dosing": null}
+    - slot{"drugAddiction_dosing": null}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_dosing"}
+    - utter_ask_drugAddiction_dosing
+    - sum_up_slots
+* drugAddiction{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"global_score": 4}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - reset_slots_drugAddiction
+    - slot{"drugAddiction_period": null}
+    - slot{"drugAddiction_drug": null}
+    - slot{"drugAddiction_dosing": null}
+    - slot{"drugAddiction_duration": null}
+    - slot{"drugAddiction_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"drugAddiction": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+    - export
+
+## Generated Story -6071987894894775193
+* drugAddiction{"dosing": "dosing", "duration": "1h", "time": "yesterday", "period": "every day", "drug": "test"}
+    - slot{"dosing": "dosing"}
+    - slot{"drug": "test"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"drugAddiction_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"drugAddiction_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"drugAddiction_period": "every day"}
+    - slot{"period": null}
+    - slot{"drugAddiction_drug": "test"}
+    - slot{"drug": null}
+    - slot{"drugAddiction_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"global_score": 2}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - ask_what_drugAddiction
+    - sum_up_slots
+* drugAddiction{"drugAddiction_dosing": null}
+    - slot{"drugAddiction_dosing": null}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_drugAddiction
+    - slot{"requested_slot": "drugAddiction_dosing"}
+    - utter_ask_drugAddiction_dosing
+    - sum_up_slots
+* drugAddiction{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "drugAddiction"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"drugAddiction_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_drugAddiction
+    - slot{"global_score": 4}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - reset_slots_drugAddiction
+    - slot{"drugAddiction_period": null}
+    - slot{"drugAddiction_drug": null}
+    - slot{"drugAddiction_dosing": null}
+    - slot{"drugAddiction_duration": null}
+    - slot{"drugAddiction_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"drugAddiction": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+    - export
+
+## Generated Story -7808564631685305083
+* smoking
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_duration"}
+    - utter_ask_smoking_duration
+    - sum_up_slots
+* smoking{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_dosing"}
+    - utter_ask_smoking_dosing
+    - sum_up_slots
+* smoking{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"smoking_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_time"}
+    - utter_ask_smoking_time
+    - sum_up_slots
+* smoking{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_period"}
+    - utter_ask_smoking_period
+    - sum_up_slots
+* smoking{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"smoking_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story -7808564631685305083
+* smoking
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_duration"}
+    - utter_ask_smoking_duration
+    - sum_up_slots
+
+## Generated Story -7808564631685305083
+* smoking{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_dosing"}
+    - utter_ask_smoking_dosing
+    - sum_up_slots
+
+## Generated Story -7808564631685305083
+* smoking{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"smoking_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_time"}
+    - utter_ask_smoking_time
+    - sum_up_slots
+
+## Generated Story -7808564631685305083
+* smoking{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_period"}
+    - utter_ask_smoking_period
+    - sum_up_slots
+
+## Generated Story -7808564631685305083
+* smoking{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"smoking_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story -7808564631685305083
+* smoking
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_duration"}
+    - utter_ask_smoking_duration
+    - sum_up_slots
+* smoking{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_dosing"}
+    - utter_ask_smoking_dosing
+    - sum_up_slots
+
+## Generated Story -7808564631685305083
+* smoking
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_duration"}
+    - utter_ask_smoking_duration
+    - sum_up_slots
+* smoking{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_dosing"}
+    - utter_ask_smoking_dosing
+    - sum_up_slots
+* smoking{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"smoking_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_time"}
+    - utter_ask_smoking_time
+    - sum_up_slots
+
+## Generated Story -7808564631685305083
+* smoking
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_duration"}
+    - utter_ask_smoking_duration
+    - sum_up_slots
+* smoking{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_dosing"}
+    - utter_ask_smoking_dosing
+    - sum_up_slots
+* smoking{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"smoking_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_time"}
+    - utter_ask_smoking_time
+    - sum_up_slots
+* smoking{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_period"}
+    - utter_ask_smoking_period
+    - sum_up_slots
+
+## Generated Story -7808564631685305083
+* smoking
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_duration"}
+    - utter_ask_smoking_duration
+    - sum_up_slots
+* smoking{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_dosing"}
+    - utter_ask_smoking_dosing
+    - sum_up_slots
+* smoking{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"smoking_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_time"}
+    - utter_ask_smoking_time
+    - sum_up_slots
+* smoking{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_period"}
+    - utter_ask_smoking_period
+    - sum_up_slots
+* smoking{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"smoking_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story -7808564631685305083
+* smoking
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_duration"}
+    - utter_ask_smoking_duration
+    - sum_up_slots
+
+## Generated Story -7808564631685305083
+* smoking{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_dosing"}
+    - utter_ask_smoking_dosing
+    - sum_up_slots
+
+## Generated Story -7808564631685305083
+* smoking{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"smoking_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_time"}
+    - utter_ask_smoking_time
+    - sum_up_slots
+
+## Generated Story -7808564631685305083
+* smoking{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_period"}
+    - utter_ask_smoking_period
+    - sum_up_slots
+
+## Generated Story -7808564631685305083
+* smoking{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"smoking_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story -7808564631685305083
+* smoking
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_duration"}
+    - utter_ask_smoking_duration
+    - sum_up_slots
+* smoking{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_dosing"}
+    - utter_ask_smoking_dosing
+    - sum_up_slots
+
+## Generated Story -7808564631685305083
+* smoking
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_duration"}
+    - utter_ask_smoking_duration
+    - sum_up_slots
+* smoking{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_dosing"}
+    - utter_ask_smoking_dosing
+    - sum_up_slots
+* smoking{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"smoking_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_time"}
+    - utter_ask_smoking_time
+    - sum_up_slots
+
+## Generated Story -7808564631685305083
+* smoking
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_duration"}
+    - utter_ask_smoking_duration
+    - sum_up_slots
+* smoking{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_dosing"}
+    - utter_ask_smoking_dosing
+    - sum_up_slots
+* smoking{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"smoking_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_time"}
+    - utter_ask_smoking_time
+    - sum_up_slots
+* smoking{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_period"}
+    - utter_ask_smoking_period
+    - sum_up_slots
+
+## Generated Story 5946073235474079978
+* smoking{"time": "yesterday", "dosing": "dosing", "period": "every day", "duration": "1h"}
+    - slot{"dosing": "dosing"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"smoking_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"smoking_period": "every day"}
+    - slot{"period": null}
+    - slot{"smoking_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"global_score": 2}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - reset_slots_smoking
+    - slot{"smoking_period": null}
+    - slot{"smoking_dosing": null}
+    - slot{"smoking_duration": null}
+    - slot{"smoking_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"drugAddiction": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 5946073235474079978
+* smoking{"time": "yesterday", "dosing": "dosing", "period": "every day", "duration": "1h"}
+    - slot{"dosing": "dosing"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"smoking_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"smoking_period": "every day"}
+    - slot{"period": null}
+    - slot{"smoking_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"global_score": 2}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - reset_slots_smoking
+    - slot{"smoking_period": null}
+    - slot{"smoking_dosing": null}
+    - slot{"smoking_duration": null}
+    - slot{"smoking_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"drugAddiction": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story -4572147560870086920
+* smoking{"duration": "1h", "time": "yesterday", "period": "every day", "dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"smoking_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"smoking_period": "every day"}
+    - slot{"period": null}
+    - slot{"smoking_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"global_score": 2}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - ask_what_smoking
+    - sum_up_slots
+* smoking{"smoking_dosing": null}
+    - slot{"smoking_dosing": null}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_dosing"}
+    - utter_ask_smoking_dosing
+    - sum_up_slots
+* smoking{"smoking_dosing": "dosing"}
+    - slot{"smoking_dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"smoking_dosing": "dosing"}
+    - slot{"global_score": 4}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - reset_slots_smoking
+    - slot{"smoking_period": null}
+    - slot{"smoking_dosing": null}
+    - slot{"smoking_duration": null}
+    - slot{"smoking_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"smoking": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+    - export
+
+## Generated Story -4572147560870086920
+* smoking{"duration": "1h", "time": "yesterday", "period": "every day", "dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"smoking_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"smoking_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"smoking_period": "every day"}
+    - slot{"period": null}
+    - slot{"smoking_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"global_score": 2}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - ask_what_smoking
+    - sum_up_slots
+* smoking{"smoking_dosing": null}
+    - slot{"smoking_dosing": null}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_smoking
+    - slot{"requested_slot": "smoking_dosing"}
+    - utter_ask_smoking_dosing
+    - sum_up_slots
+* smoking{"smoking_dosing": "dosing"}
+    - slot{"smoking_dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "smoking"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_smoking
+    - slot{"smoking_dosing": "dosing"}
+    - slot{"global_score": 4}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - reset_slots_smoking
+    - slot{"smoking_period": null}
+    - slot{"smoking_dosing": null}
+    - slot{"smoking_duration": null}
+    - slot{"smoking_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"smoking": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+    - export
+
+## Generated Story 8852880601661018518
+* alcohol
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_time"}
+    - utter_ask_alcohol_time
+    - sum_up_slots
+* alcohol{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_period"}
+    - utter_ask_alcohol_period
+    - sum_up_slots
+* alcohol{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"alcohol_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_duration"}
+    - utter_ask_alcohol_duration
+    - sum_up_slots
+* alcohol{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_dosing"}
+    - utter_ask_alcohol_dosing
+    - sum_up_slots
+* alcohol{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"alcohol_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 8852880601661018518
+* alcohol
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_time"}
+    - utter_ask_alcohol_time
+    - sum_up_slots
+
+## Generated Story 8852880601661018518
+* alcohol{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_period"}
+    - utter_ask_alcohol_period
+    - sum_up_slots
+
+## Generated Story 8852880601661018518
+* alcohol{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"alcohol_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_duration"}
+    - utter_ask_alcohol_duration
+    - sum_up_slots
+
+## Generated Story 8852880601661018518
+* alcohol{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_dosing"}
+    - utter_ask_alcohol_dosing
+    - sum_up_slots
+
+## Generated Story 8852880601661018518
+* alcohol{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"alcohol_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 8852880601661018518
+* alcohol
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_time"}
+    - utter_ask_alcohol_time
+    - sum_up_slots
+* alcohol{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_period"}
+    - utter_ask_alcohol_period
+    - sum_up_slots
+
+## Generated Story 8852880601661018518
+* alcohol
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_time"}
+    - utter_ask_alcohol_time
+    - sum_up_slots
+* alcohol{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_period"}
+    - utter_ask_alcohol_period
+    - sum_up_slots
+* alcohol{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"alcohol_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_duration"}
+    - utter_ask_alcohol_duration
+    - sum_up_slots
+
+## Generated Story 8852880601661018518
+* alcohol
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_time"}
+    - utter_ask_alcohol_time
+    - sum_up_slots
+* alcohol{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_period"}
+    - utter_ask_alcohol_period
+    - sum_up_slots
+* alcohol{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"alcohol_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_duration"}
+    - utter_ask_alcohol_duration
+    - sum_up_slots
+* alcohol{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_dosing"}
+    - utter_ask_alcohol_dosing
+    - sum_up_slots
+
+## Generated Story 8852880601661018518
+* alcohol
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_time"}
+    - utter_ask_alcohol_time
+    - sum_up_slots
+* alcohol{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_period"}
+    - utter_ask_alcohol_period
+    - sum_up_slots
+* alcohol{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"alcohol_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_duration"}
+    - utter_ask_alcohol_duration
+    - sum_up_slots
+* alcohol{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_dosing"}
+    - utter_ask_alcohol_dosing
+    - sum_up_slots
+* alcohol{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"alcohol_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 8852880601661018518
+* alcohol
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_time"}
+    - utter_ask_alcohol_time
+    - sum_up_slots
+
+## Generated Story 8852880601661018518
+* alcohol{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_period"}
+    - utter_ask_alcohol_period
+    - sum_up_slots
+
+## Generated Story 8852880601661018518
+* alcohol{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"alcohol_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_duration"}
+    - utter_ask_alcohol_duration
+    - sum_up_slots
+
+## Generated Story 8852880601661018518
+* alcohol{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_dosing"}
+    - utter_ask_alcohol_dosing
+    - sum_up_slots
+
+## Generated Story 8852880601661018518
+* alcohol{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"alcohol_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 8852880601661018518
+* alcohol
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_time"}
+    - utter_ask_alcohol_time
+    - sum_up_slots
+* alcohol{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_period"}
+    - utter_ask_alcohol_period
+    - sum_up_slots
+
+## Generated Story 8852880601661018518
+* alcohol
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_time"}
+    - utter_ask_alcohol_time
+    - sum_up_slots
+* alcohol{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_period"}
+    - utter_ask_alcohol_period
+    - sum_up_slots
+* alcohol{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"alcohol_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_duration"}
+    - utter_ask_alcohol_duration
+    - sum_up_slots
+
+## Generated Story 8852880601661018518
+* alcohol
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_time"}
+    - utter_ask_alcohol_time
+    - sum_up_slots
+* alcohol{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_period"}
+    - utter_ask_alcohol_period
+    - sum_up_slots
+* alcohol{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"alcohol_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_duration"}
+    - utter_ask_alcohol_duration
+    - sum_up_slots
+* alcohol{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_dosing"}
+    - utter_ask_alcohol_dosing
+    - sum_up_slots
+
+## Generated Story 8898277948454823348
+* alcohol{"duration": "1h", "time": "yesterday", "dosing": "dosing", "period": "every day"}
+    - slot{"dosing": "dosing"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"alcohol_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"alcohol_period": "every day"}
+    - slot{"period": null}
+    - slot{"alcohol_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"global_score": 2}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - reset_slots_alcohol
+    - slot{"alcohol_period": null}
+    - slot{"alcohol_dosing": null}
+    - slot{"alcohol_duration": null}
+    - slot{"alcohol_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"alcohol": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story -6259058969566356055
+* alcohol{"dosing": "dosing", "duration": "1h", "period": "every day", "time": "yesterday"}
+    - slot{"dosing": "dosing"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"alcohol_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"alcohol_period": "every day"}
+    - slot{"period": null}
+    - slot{"alcohol_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"global_score": 2}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - ask_what_alcohol
+    - sum_up_slots
+* alcohol{"alcohol_dosing": null}
+    - slot{"alcohol_dosing": null}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_dosing"}
+    - utter_ask_alcohol_dosing
+    - sum_up_slots
+* alcohol{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"alcohol_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"global_score": 4}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_alcohol
+    - slot{"alcohol_period": null}
+    - slot{"alcohol_dosing": null}
+    - slot{"alcohol_duration": null}
+    - slot{"alcohol_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"alcohol": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+    - export
+
+## Generated Story 8898277948454823348
+* alcohol{"duration": "1h", "time": "yesterday", "dosing": "dosing", "period": "every day"}
+    - slot{"dosing": "dosing"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"alcohol_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"alcohol_period": "every day"}
+    - slot{"period": null}
+    - slot{"alcohol_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"global_score": 2}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - reset_slots_alcohol
+    - slot{"alcohol_period": null}
+    - slot{"alcohol_dosing": null}
+    - slot{"alcohol_duration": null}
+    - slot{"alcohol_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"alcohol": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story -6259058969566356055
+* alcohol{"dosing": "dosing", "duration": "1h", "period": "every day", "time": "yesterday"}
+    - slot{"dosing": "dosing"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"alcohol_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"alcohol_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"alcohol_period": "every day"}
+    - slot{"period": null}
+    - slot{"alcohol_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"global_score": 2}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - ask_what_alcohol
+    - sum_up_slots
+* alcohol{"alcohol_dosing": null}
+    - slot{"alcohol_dosing": null}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_alcohol
+    - slot{"requested_slot": "alcohol_dosing"}
+    - utter_ask_alcohol_dosing
+    - sum_up_slots
+* alcohol{"dosing": "dosing"}
+    - slot{"dosing": "dosing"}
+    - save_conv
+    - slot{"topic": "alcohol"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"alcohol_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_alcohol
+    - slot{"global_score": 4}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_alcohol
+    - slot{"alcohol_period": null}
+    - slot{"alcohol_dosing": null}
+    - slot{"alcohol_duration": null}
+    - slot{"alcohol_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"alcohol": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+    - export
+

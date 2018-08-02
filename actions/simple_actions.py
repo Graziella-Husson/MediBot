@@ -824,6 +824,150 @@ class AskEatingDisordersTime(AskAction):
         """@return: the name of the action."""
         return 'utter_ask_eatingDisorders_time'
 
+
+class AskDrugAddictionPeriod(AskAction):
+    """Say something to the user : ask the period of the drugAddiction"""
+    def __init__(self):
+        """Set the name of the entity to ask"""
+        self.entity_name = "drugAddiction_period"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_drugAddiction_period'
+
+
+class AskDrugAddictionDrug(AskAction):
+    """Say something to the user : ask the drug of the drugAddiction"""
+    def __init__(self):
+        """Set the name of the entity to ask"""
+        self.entity_name = "drugAddiction_drug"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_drugAddiction_drug'
+
+
+class AskDrugAddictionDosing(AskAction):
+    """Say something to the user : ask the dosing of the drugAddiction"""
+    def __init__(self):
+        """Set the name of the entity to ask"""
+        self.entity_name = "drugAddiction_dosing"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_drugAddiction_dosing'
+
+
+class AskDrugAddictionDuration(AskAction):
+    """Say something to the user : ask the duration of the drugAddiction"""
+    def __init__(self):
+        """Set the name of the entity to ask"""
+        self.entity_name = "drugAddiction_duration"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_drugAddiction_duration'
+
+
+class AskDrugAddictionTime(AskAction):
+    """Say something to the user : ask the begin date of the drugAddiction"""
+    def __init__(self):
+        """Set the name of the entity to ask"""
+        self.entity_name = "drugAddiction_time"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_drugAddiction_time'
+
+
+class AskSmokingPeriod(AskAction):
+    """Say something to the user : ask the period of the smoking"""
+    def __init__(self):
+        """Set the name of the entity to ask"""
+        self.entity_name = "smoking_period"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_smoking_period'
+
+
+class AskSmokingDosing(AskAction):
+    """Say something to the user : ask the dosing of the smoking"""
+    def __init__(self):
+        """Set the name of the entity to ask"""
+        self.entity_name = "smoking_dosing"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_smoking_dosing'
+
+
+class AskSmokingDuration(AskAction):
+    """Say something to the user : ask the duration of the smoking"""
+    def __init__(self):
+        """Set the name of the entity to ask"""
+        self.entity_name = "smoking_duration"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_smoking_duration'
+
+
+class AskSmokingTime(AskAction):
+    """Say something to the user : ask the begin date of the smoking"""
+    def __init__(self):
+        """Set the name of the entity to ask"""
+        self.entity_name = "smoking_time"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_smoking_time'
+
+
+class AskAlcoholPeriod(AskAction):
+    """Say something to the user : ask the period of the alcohol addiction"""
+    def __init__(self):
+        """Set the name of the entity to ask"""
+        self.entity_name = "alcohol_period"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_alcohol_period'
+
+
+class AskAlcoholDosing(AskAction):
+    """Say something to the user : ask the dosing of the alcohol addiction"""
+    def __init__(self):
+        """Set the name of the entity to ask"""
+        self.entity_name = "alcohol_dosing"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_alcohol_dosing'
+
+
+class AskAlcoholDuration(AskAction):
+    """Say something to the user : ask the duration of the alcohol addiction"""
+    def __init__(self):
+        """Set the name of the entity to ask"""
+        self.entity_name = "alcohol_duration"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_alcohol_duration'
+
+
+class AskAlcoholTime(AskAction):
+    """Say something to the user : ask the begin date of the alcohol
+    addiction"""
+    def __init__(self):
+        """Set the name of the entity to ask"""
+        self.entity_name = "alcohol_time"
+
+    def name(self):
+        """@return: the name of the action."""
+        return 'utter_ask_alcohol_time'
+
 # class AskNameOfEntity(AskAction):
 #    """Say something to the user : ask"""
 #    def __init__(self):

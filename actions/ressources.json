@@ -969,6 +969,156 @@
 		{
 		"ENG":"\n\tYour eating disorder began on {}",
 		"FRA":"\n\tVos troubles alimentaires ont commencé {}"
+		},
+	"ask_drugAddiction_period":
+		{
+		"ENG":"Can you tell me the recurrence to which you relieve your addiction?",
+		"FRA":"Pouvez-vous m'indiquer la récurrence à laquelle vous soulagez votre addiction ?"
+		},
+	"ask_drugAddiction_drug":
+		{
+		"ENG":"Can you tell me the name or the type of drug we are talking about?",
+		"FRA":"Pouvez-vous me dire le nom ou le type de drogue dont nous parlons ?"
+		},
+	"ask_drugAddiction_dosing":
+		{
+		"ENG":"Can you tell me the dose you are taking?",
+		"FRA":"Pouvez-vous me dire la dose que vous prenez ?"
+		},
+	"ask_drugAddiction_duration":
+		{
+		"ENG":"Can you tell me the duration of your addiction so far?",
+		"FRA":"Pouvez-vous me dire depuis quand vous avez cette addiction ?"
+		},
+	"ask_drugAddiction_time":
+		{
+		"ENG":"Can you tell me when this addiction started?",
+		"FRA":"Pouvez-vous m'indiquer la date à laquelle cette addiction a commencé ?"
+		},
+	"drugAddiction_period":
+		{
+		"ENG":"\n\tYou relieve your addiction with a recurrence of {}",
+		"FRA":"\n\tVous soulagez votre addiction avec une recurrence de {}"
+		},
+	"drugAddiction_drug":
+		{
+		"ENG":"\n\tThe name of the drug in question is {}",
+		"FRA":"\n\tLe nom de la drogue en question est {}"
+		},
+	"drugAddiction_dosing":
+		{
+		"ENG":"\n\tThe dose taken is of {}",
+		"FRA":"\n\tLe dose prise est de {}"
+		},
+	"drugAddiction_duration":
+		{
+		"ENG":"\n\tThe duration of this addiction is {}",
+		"FRA":"\n\tLa durée de cette addiction est de {}"
+		},
+	"drugAddiction_time":
+		{
+		"ENG":"\n\tThe date this addiction started {}",
+		"FRA":"\n\tLa date à laquelle cette addiction a commencé {}"
+		},
+	"drugAddiction_drug_button":
+		{
+		"ENG":"Drug",
+		"FRA":"Drogue"
+		},
+	"drugAddiction_dosing_button":
+		{
+		"ENG":"Quantity",
+		"FRA":"Quantité"
+		},
+	"ask_smoking_period":
+		{
+		"ENG":"Can you tell me the recurrence you smoke?",
+		"FRA":"Pouvez-vous me dire la récurrence à laquelle vous fumez ?"
+		},
+	"ask_smoking_time":
+		{
+		"ENG":"Can you tell me when you started smoking?",
+		"FRA":"Pouvez-vous me dire quand vous avez commencé à fumer ?"
+		},
+	"ask_smoking_duration":
+		{
+		"ENG":"Can you tell me how long have you been smoking?",
+		"FRA":"Pouvez-vous me dire depuis combien de temps vous fumez ?"
+		},
+	"ask_smoking_dosing":
+		{
+		"ENG":"Can you tell me the number of cigarettes or packs you consume?",
+		"FRA":"Pouvez-vous me dire le nombre de cigarette ou de paquets vous consommez ?"
+		},
+	"smoking_period":
+		{
+		"ENG":"\n\tThe recurrence of your smoking is of {}",
+		"FRA":"\n\tLa récurrence à laquelle vous fumez est de {}"
+		},
+	"smoking_time":
+		{
+		"ENG":"\n\tYou started smoking on {}",
+		"FRA":"\n\tVous avez commencé à fumer {}"
+		},
+	"smoking_duration":
+		{
+		"ENG":"\n\tYou have you been smoking during {}",
+		"FRA":"\n\tVous fumez depuis {}"
+		},
+	"smoking_dosing":
+		{
+		"ENG":"\n\tThe number of cigarettes or packs you consume is of {}",
+		"FRA":"\n\tLe nombre de cigarette ou de paquets que vous consommez est de {}"
+		},
+	"smoking_dosing_button":
+		{
+		"ENG":"Number of cigarettes or packs",
+		"FRA":"Nombre de paquets/cigarette"
+		},
+	"ask_alcohol_period":
+		{
+		"ENG":"Can you tell me the recurrence you drink?",
+		"FRA":"Pouvez-vous me dire la récurrence à laquelle vous buvez ?"
+		},
+	"ask_alcohol_time":
+		{
+		"ENG":"Can you tell me when you started drinking?",
+		"FRA":"Pouvez-vous me dire quand vous avez commencé à boire ?"
+		},
+	"ask_alcohol_duration":
+		{
+		"ENG":"Can you tell me how long have you been drinking?",
+		"FRA":"Pouvez-vous me dire depuis combien de temps vous buvez ?"
+		},
+	"ask_alcohol_dosing":
+		{
+		"ENG":"Can you tell me the number of glasses or bottles you drink?",
+		"FRA":"Pouvez-vous me dire le nombre de verres ou bouteilles vous consommez ?"
+		},
+	"alcohol_period":
+		{
+		"ENG":"\n\tThe recurrence of your drinking is of {}",
+		"FRA":"\n\tLa récurrence à laquelle vous buvez est de {}"
+		},
+	"alcohol_time":
+		{
+		"ENG":"\n\tYou started drinking on {}",
+		"FRA":"\n\tVous avez commencé à boire {}"
+		},
+	"alcohol_duration":
+		{
+		"ENG":"\n\tYou have you been drinking during {}",
+		"FRA":"\n\tVous buvez depuis {}"
+		},
+	"alcohol_dosing":
+		{
+		"ENG":"\n\tThe number of glasses or bottles you consume is of {}",
+		"FRA":"\n\tLe nombre de verres ou bouteilles que vous consommez est de {}"
+		},
+	"alcohol_dosing_button":
+		{
+		"ENG":"Number of glasses or bottles",
+		"FRA":"Nombre de verres ou bouteilles"
 		}
 	}
 }
