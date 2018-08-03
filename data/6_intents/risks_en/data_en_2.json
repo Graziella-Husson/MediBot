@@ -1,0 +1,2921 @@
+﻿{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [],
+    "common_examples": [
+      {
+        "text": "I don't know if I'm an alcoholic",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I drink too much and wake up with a hangover",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I quit drinking alcohol for many reasons",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I’m afraid I’ll never be able to manage my drinking",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I was fighting with my brother to give my bottle of whisky back",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 52,
+            "end": 58,
+            "value": "whisky",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I have drastically cut down on the number of days that I drink",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I don’t know if moderation is right for me",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I do not want to drink anymore",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I use sufficient amount of alcohol just before bed time",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I still drive to the store and buy beer and drink it",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 35,
+            "end": 39,
+            "value": "beer",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I'm new to sobriety",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I went to AA for a year",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 13,
+            "end": 23,
+            "value": "for a year",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I was also drinking during this time",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "i started drinking daily when i was about 12-13 year's old",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 19,
+            "end": 24,
+            "value": "daily",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I always drink heavily when coming down",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I have a full day sober now",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I have had enough I do not want to drink anymore",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "i've learned to enjoy good moods without relying on alcohol",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I do not know what is wrong with me and why I cannot stop drinking",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I'm drinking a beer right now",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 20,
+            "end": 29,
+            "value": "right now",
+            "entity": "time"
+          },
+          {
+            "start": 15,
+            "end": 19,
+            "value": "beer",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I’m strong enough to resist the urge to binge",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I drank to forget",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I've been trying to get sober for a few months now",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 30,
+            "end": 50,
+            "value": "for a few months now",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "Three weeks later I had drank everyday",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 30,
+            "end": 38,
+            "value": "everyday",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "Alcohol never made me happy",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I decided to go out for some drinks",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 29,
+            "end": 35,
+            "value": "drinks",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I love beer",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "beer",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I should eat foods rich with Fiber, Calcium & Vitamin D",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I’ve been at 159 pounds the last few weeks",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 13,
+            "end": 23,
+            "value": "159 pounds",
+            "entity": "weight"
+          }
+        ]
+      },
+      {
+        "text": "I eat meat or fish",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I’m 28 and about 20 – 30 pounds overweight",
+        "intent": "eating_disorders",
+        "entities": [
+          {
+            "start": 17,
+            "end": 31,
+            "value": "20 – 30 pounds",
+            "entity": "weight"
+          }
+        ]
+      },
+      {
+        "text": "I have to eat healthy to keep my cholesterol down",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "After lunch I have about 2 servings of fruit",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I have been eating Tortilla chips and Sugar cookies",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I struggle with weight issues as well",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I even restricted my banana intake",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "i am not fat nor too skinny",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I became Vegetarians at Easter",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I have lost 10-15 pounds",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 12,
+            "end": 24,
+            "value": "10-15 pounds",
+            "entity": "weight"
+          }
+        ]
+      },
+      {
+        "text": "my sole consolation for these past 3 years has been eating",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I'm vegetarian",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "Every morning I fill a large salad bowl with many different kinds of fruit",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "When I was 16, I stopped eating almost completely",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I think I've finally reached the point of the Anorexia loop",
+        "intent": "pathology",
+        "entities": [
+          {
+            "start": 46,
+            "end": 54,
+            "value": "Anorexia",
+            "entity": "symptoms"
+          }
+        ]
+      },
+      {
+        "text": "i do drink coffee",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I used to worry about getting enough protein",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "having no appetite was a good excuse not to eat",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I've put on some weight",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 12,
+            "end": 23,
+            "value": "some weight",
+            "entity": "weight"
+          }
+        ]
+      },
+      {
+        "text": "I've spent a lot of time eating vegetarian",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I was purging everyday because I ate calories",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I can eat some mild soups",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I've never purged either",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "i love to eat too much sweet",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "i managed to lose significant amount of fat on low carb diet",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I am NOT a normal drinker",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I'm on meds that increase my appetite",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I have been gaining some weight",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 20,
+            "end": 31,
+            "value": "some weight",
+            "entity": "weight"
+          }
+        ]
+      },
+      {
+        "text": "I eat lunch and dinner",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I give a light sprinkle of cinnamon over the fruit every morning",
+        "intent": "eating_disorders",
+        "entities": [
+          {
+            "start": 51,
+            "end": 64,
+            "value": "every morning",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I’m 34 years old and have spent over half my life being a slave to food",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I felt awful about my body and I only ate once or twice a week",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I am suspecting i may have a food intolerance",
+        "intent": "pathology",
+        "entities": [
+          {
+            "start": 29,
+            "end": 45,
+            "value": "food intolerance",
+            "entity": "symptoms"
+          }
+        ]
+      },
+      {
+        "text": "I'm a big health nut",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I dieted since I was 14",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I stress if I don't know what I'm eating",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I used to be an avid calorie counter",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I have had no appetite for some time",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I am trying to overcome my eating disorder",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I want change my diet first",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I was left with much more weight than I was comfortable with",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 16,
+            "end": 32,
+            "value": "much more weight",
+            "entity": "weight"
+          }
+        ]
+      },
+      {
+        "text": "Most of the times i prefer home cooked food",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I would start to panic and get anxious if I had to eat",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I also hate being so fat",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I just don't want to taste anything",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I ate only vegetables and fruits one day",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I struggled with no appetite for several months",
+        "intent": "eating_disorders",
+        "entities": [
+          {
+            "start": 29,
+            "end": 47,
+            "value": "for several months",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I feel like my life is being run by food",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I should be careful not to get too much protein",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "The only grain I have been eating is oats",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "For lunch, I eat either 1 peach or nectarine",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I hope the purging doesn't increase more",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I want to get lean and lose more fat",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I drank to forget",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I like eating fruit or vegetable in large quantities",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I've been struggling on and off with restricting my food for the last five months or so",
+        "intent": "eating_disorders",
+        "entities": [
+          {
+            "start": 57,
+            "end": 81,
+            "value": "for the last five months",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I also eat vegetables",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I drink a lot of water",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I was really cutting back on my meal plan",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I will never be free of these chains that food has on me",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I'm a healthy vegan",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I can't eat all the time",
+        "intent": "eating_disorders",
+        "entities": [
+          {
+            "start": 12,
+            "end": 24,
+            "value": "all the time",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I’ve lost 20 lbs over the past 4 weeks",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 10,
+            "end": 16,
+            "value": "20 lbs",
+            "entity": "weight"
+          }
+        ]
+      },
+      {
+        "text": "I lost a ton of weight as a vegetarian for 3 months",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 7,
+            "end": 22,
+            "value": "a ton of weight",
+            "entity": "weight"
+          },
+          {
+            "start": 39,
+            "end": 51,
+            "value": "for 3 months",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I still count calories and weigh all of my food",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I'm losing weight healthy",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I do eat a healthy balanced diet",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I still struggle with feeling absolutely disguisting with my body",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I'm still counting calories",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I feel pretty darn good after a few drinks",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 32,
+            "end": 42,
+            "value": "few drinks",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I'm 28 and was eating disorder from the age of 13",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I cut back on the coffee and extreme creamer",
+        "intent": "eating_disorders",
+        "entities": []
+      },
+      {
+        "text": "I quit regular cannabis use very easily",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 23,
+            "value": "cannabis",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I decided to taper down my use and to quit",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I was fighting with my brother to give my bottle of whisky back",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 52,
+            "end": 58,
+            "value": "whisky",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I was addicted more to THC than nicotine",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 23,
+            "end": 26,
+            "value": "THC",
+            "entity": "drug"
+          },
+          {
+            "start": 32,
+            "end": 40,
+            "value": "nicotine",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I tried coke at a club the other day",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "coke",
+            "entity": "drug"
+          },
+          {
+            "start": 23,
+            "end": 36,
+            "value": "the other day",
+            "entity": "time"
+          }
+        ]
+      },
+      {
+        "text": "When the coke is all done I search out Meth",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 9,
+            "end": 13,
+            "value": "coke",
+            "entity": "drug"
+          },
+          {
+            "start": 39,
+            "end": 43,
+            "value": "Meth",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I've now not smoked cannabis in over twenty years",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 28,
+            "value": "cannabis",
+            "entity": "drug"
+          },
+          {
+            "start": 29,
+            "end": 49,
+            "value": "in over twenty years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I would love to get some MDMA",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I end up hitting another hit about 10 mins later",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I've stopped the Ritalin but have one strip of suboxone left",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 17,
+            "end": 24,
+            "value": "Ritalin",
+            "entity": "drug"
+          },
+          {
+            "start": 47,
+            "end": 55,
+            "value": "suboxone",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "The cocaine madness had to personally damage me socially, professionally, and financially",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 4,
+            "end": 11,
+            "value": "cocaine",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I started abusing pain pills heavily and increased that addiction to catastrophic proportions",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 28,
+            "value": "pain pills",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I love beer",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "beer",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I took a small line of meth",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 23,
+            "end": 27,
+            "value": "meth",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I had a cocaine habit many years ago",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "cocaine",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I started suboxone 6 days ago and I'm having a lot of pain all over my body",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 10,
+            "end": 18,
+            "value": "suboxone",
+            "entity": "drug"
+          },
+          {
+            "start": 19,
+            "end": 29,
+            "value": "6 days ago",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I began using MDMA with friends",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I was a daily stoner until I was 25 years old",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I just wanna calm down with coke",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 28,
+            "end": 32,
+            "value": "coke",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "i've learned to enjoy good moods without relying on alcohol",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 52,
+            "end": 59,
+            "value": "alcohol",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I'm supposed to take 6 35mg tablets a day but I have taken 20 today",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 21,
+            "end": 35,
+            "value": "6 35mg tablets",
+            "entity": "dosing"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I can say weed is only physically addictive",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I was taking 4-80 mg Oxycontin a day and i have beat that addiction",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 13,
+            "end": 20,
+            "value": "4-80 mg",
+            "entity": "dosing"
+          },
+          {
+            "start": 21,
+            "end": 30,
+            "value": "Oxycontin",
+            "entity": "drug"
+          },
+          {
+            "start": 31,
+            "end": 36,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I do not want to drink anymore",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "i have been using coke and weed for a long period",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 22,
+            "value": "coke",
+            "entity": "drug"
+          },
+          {
+            "start": 27,
+            "end": 31,
+            "value": "weed",
+            "entity": "drug"
+          },
+          {
+            "start": 32,
+            "end": 49,
+            "value": "for a long period",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I want to get completely off the Adderall",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 33,
+            "end": 41,
+            "value": "Adderall",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I have been through the withdrawal of opiates",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 38,
+            "end": 45,
+            "value": "opiates",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I really want to get completely off the Adderall",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I don’t know if moderation is right for me",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I know that marijuana can cause physical dependence",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 12,
+            "end": 21,
+            "value": "marijuana",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I've been trying to get sober for a few months now",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 30,
+            "end": 50,
+            "value": "for a few months now",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I started coke just fine",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 10,
+            "end": 14,
+            "value": "coke",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I have just been on painpills for a year and am trying to get off",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 29,
+            "value": "painpills",
+            "entity": "drug"
+          },
+          {
+            "start": 30,
+            "end": 40,
+            "value": "for a year",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I find it somewhat fun to smoke crack",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 32,
+            "end": 37,
+            "value": "crack",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I was smoking it for over an year",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 14,
+            "end": 16,
+            "value": "it",
+            "entity": "drug"
+          },
+          {
+            "start": 17,
+            "end": 33,
+            "value": "for over an year",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I quit drinking alcohol for many reasons",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 16,
+            "end": 23,
+            "value": "alcohol",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I'm drinking a beer right now",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "beer",
+            "entity": "drug"
+          },
+          {
+            "start": 20,
+            "end": 29,
+            "value": "right now",
+            "entity": "time"
+          }
+        ]
+      },
+      {
+        "text": "My doc was helpful getting me off the norcos/opiates",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 38,
+            "end": 52,
+            "value": "norcos/opiates",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I've got myself addicted to Xanax, a drug that is very hard to get off of",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 28,
+            "end": 33,
+            "value": "Xanax",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I started sniffing coke as a teenager",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "coke",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I ended up back on the pain pills",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 23,
+            "end": 33,
+            "value": "pain pills",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I’m afraid I’ll never be able to manage my drinking",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "For me, cocaine was never even enjoyable",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "cocaine",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "When I drink I buy coke",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "coke",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I'm currently on the diet drug phendimetrazine once again",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 31,
+            "end": 46,
+            "value": "phendimetrazine",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I'm not a huge fan of meth",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 22,
+            "end": 26,
+            "value": "meth",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I have been addicted to pain pills for 8 years",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 24,
+            "end": 34,
+            "value": "pain pills",
+            "entity": "drug"
+          },
+          {
+            "start": 35,
+            "end": 46,
+            "value": "for 8 years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I have a full day sober now",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I started taking too much Adderall",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 26,
+            "end": 34,
+            "value": "Adderall",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "When I took the vicodin I felt like a different person",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 16,
+            "end": 23,
+            "value": "vicodin",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "Alcohol never made me happy",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "Alcohol",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I stopped, because I hate being addicted to Percoset",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 44,
+            "end": 52,
+            "value": "Percoset",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I fear getting addicted as there is my issue with Dinintel",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 50,
+            "end": 58,
+            "value": "Dinintel",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I hadn't done was to smoke crack until tonight",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "crack",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I use cannabis every day, and yet do not get high",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 6,
+            "end": 14,
+            "value": "cannabis",
+            "entity": "drug"
+          },
+          {
+            "start": 15,
+            "end": 24,
+            "value": "every day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "When I was younger (teens) I liked to do crystal meth on occasion",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 41,
+            "end": 53,
+            "value": "crystal meth",
+            "entity": "drug"
+          },
+          {
+            "start": 54,
+            "end": 65,
+            "value": "on occasion",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "The first 4, 5 times I smoked crack, I could take or leave it",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 30,
+            "end": 35,
+            "value": "crack",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I want to get off Norco 10-325 and Soma 350mg badly slow slow taper",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 30,
+            "value": "Norco 10-325",
+            "entity": "drug"
+          },
+          {
+            "start": 35,
+            "end": 45,
+            "value": "Soma 350mg",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I gave few breaks ever since but Im daily snorting",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I went through withdrawal from oxycodone",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 31,
+            "end": 40,
+            "value": "oxycodone",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I was clean for a while",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "it still feels as if I smoked my last joint yesterday",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 38,
+            "end": 43,
+            "value": "joint",
+            "entity": "drug"
+          },
+          {
+            "start": 44,
+            "end": 53,
+            "value": "yesterday",
+            "entity": "time"
+          }
+        ]
+      },
+      {
+        "text": "I was afraid of antidepressants",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 16,
+            "end": 31,
+            "value": "antidepressants",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I drink too much and wake up with a hangover",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I am addicted to cough syrup",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 17,
+            "end": 28,
+            "value": "cough syrup",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I had to get clean",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I'm new to sobriety",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I have smoked cannabis regularly in probably 5 years",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 14,
+            "end": 22,
+            "value": "cannabis",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I've not used or even desired to use cocaine for the better part of four years",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 37,
+            "end": 44,
+            "value": "cocaine",
+            "entity": "drug"
+          },
+          {
+            "start": 45,
+            "end": 78,
+            "value": "for the better part of four years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "Heroin didn't do much for me",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "Heroin",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I've only tried crack once",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "crack",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I use sufficient amount of alcohol just before bed time",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 27,
+            "end": 34,
+            "value": "alcohol",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "i have been addicted to pain med for a long time",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 24,
+            "end": 32,
+            "value": "pain med",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I would also look into going to some kind of outpatient chemical dependency",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "it is the longest period in my life being sober since my first joint when I was 19",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 63,
+            "end": 68,
+            "value": "joint",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I'm not sure which is worse, vicodin or methadone",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 29,
+            "end": 36,
+            "value": "vicodin",
+            "entity": "drug"
+          },
+          {
+            "start": 40,
+            "end": 49,
+            "value": "methadone",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I currently smoke cannabis maybe once or twice a month",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "cannabis",
+            "entity": "drug"
+          },
+          {
+            "start": 33,
+            "end": 54,
+            "value": "once or twice a month",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "i did coke pretty daily",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 6,
+            "end": 10,
+            "value": "coke",
+            "entity": "drug"
+          },
+          {
+            "start": 18,
+            "end": 23,
+            "value": "daily",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I'm on Subs and I'd consider myself FAR,FAR from \"CLEAN\"",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "Subs",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "As the cannabis leaves my system, I get more and more lethargic",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "cannabis",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I’ve been Cold Turkeying 2+ years now",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I was smoking weed as much as I can",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "weed",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I still drive to the store and buy beer and drink it",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 35,
+            "end": 39,
+            "value": "beer",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I just got off detox with Klonopin",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 26,
+            "end": 34,
+            "value": "Klonopin",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I bought Adderall on the street too and would take 30 mg every 3 hrs for up to 5 days",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "Adderall",
+            "entity": "drug"
+          },
+          {
+            "start": 51,
+            "end": 56,
+            "value": "30 mg",
+            "entity": "dosing"
+          },
+          {
+            "start": 57,
+            "end": 68,
+            "value": "every 3 hrs",
+            "entity": "period"
+          },
+          {
+            "start": 69,
+            "end": 85,
+            "value": "for up to 5 days",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I’m strong enough to resist the urge to binge",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I have a severe addiction to Xanax I have been on them for 18 years",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 29,
+            "end": 34,
+            "value": "Xanax",
+            "entity": "drug"
+          },
+          {
+            "start": 55,
+            "end": 67,
+            "value": "for 18 years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I have now been taking Vicodin daily for about 7 years",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I am 56 years old, and have been using cannabis for 40 years",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 39,
+            "end": 47,
+            "value": "cannabis",
+            "entity": "drug"
+          },
+          {
+            "start": 48,
+            "end": 60,
+            "value": "for 40 years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "Today I filled my morphine",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 26,
+            "value": "morphine",
+            "entity": "drug"
+          },
+          {
+            "start": 0,
+            "end": 5,
+            "value": "Today",
+            "entity": "time"
+          }
+        ]
+      },
+      {
+        "text": "I tried ecstasy for the first time tonight",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "ecstasy",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I have reduced my codeine intake from 8-9bottles to 2-4bottles in a day",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "codeine",
+            "entity": "drug"
+          },
+          {
+            "start": 38,
+            "end": 48,
+            "value": "8-9bottles",
+            "entity": "dosing"
+          },
+          {
+            "start": 52,
+            "end": 62,
+            "value": "2-4bottles",
+            "entity": "dosing"
+          },
+          {
+            "start": 63,
+            "end": 71,
+            "value": "in a day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I decided to go out for some drinks",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I first got on weed",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "weed",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "But I smoked daily on and off for 10 years",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 13,
+            "end": 18,
+            "value": "daily",
+            "entity": "period"
+          },
+          {
+            "start": 30,
+            "end": 42,
+            "value": "for 10 years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "my downfall is the first 2 to 3 weeks of attempted abstinence",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "i tried coke for the first time",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "coke",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "At one point in my life I was addicted to any and all pain medicine",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 54,
+            "end": 67,
+            "value": "pain medicine",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "although i have done LSD",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 21,
+            "end": 24,
+            "value": "LSD",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I went to AA for a year",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I have done Ecstacy about 3 or 4 times",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 12,
+            "end": 19,
+            "value": "Ecstacy",
+            "entity": "drug"
+          },
+          {
+            "start": 26,
+            "end": 38,
+            "value": "3 or 4 times",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "ive been getting 3 or 4 grams a week",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 17,
+            "end": 29,
+            "value": "3 or 4 grams",
+            "entity": "dosing"
+          },
+          {
+            "start": 30,
+            "end": 36,
+            "value": "a week",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I gradually became addicted because I would become very sleepy without them",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I started doing cocaine on a daily basis since 5 days",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 16,
+            "end": 23,
+            "value": "cocaine",
+            "entity": "drug"
+          },
+          {
+            "start": 29,
+            "end": 40,
+            "value": "daily basis",
+            "entity": "period"
+          },
+          {
+            "start": 41,
+            "end": 53,
+            "value": "since 5 days",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I got ulcers in my small intestines from taking too much Ibuprofen",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 57,
+            "end": 66,
+            "value": "Ibuprofen",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "Now after 2+ years sober I’m still scared",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I do not know what is wrong with me and why I cannot stop drinking",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I use to smoke $1000 a night",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 20,
+            "value": "$1000",
+            "entity": "dosing"
+          }
+        ]
+      },
+      {
+        "text": "I make bad decisions when taking cocaine",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 33,
+            "end": 40,
+            "value": "cocaine",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I have been smoking usually a gram to 1 1/2 grams daily for the past 10 years",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 28,
+            "end": 34,
+            "value": "a gram",
+            "entity": "dosing"
+          },
+          {
+            "start": 50,
+            "end": 55,
+            "value": "daily",
+            "entity": "period"
+          },
+          {
+            "start": 56,
+            "end": 77,
+            "value": "for the past 10 years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I had a hard time quitting weed",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 27,
+            "end": 31,
+            "value": "weed",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I can actually enjoy cannabis these days",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 21,
+            "end": 29,
+            "value": "cannabis",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "Im at Meth currently",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 6,
+            "end": 10,
+            "value": "Meth",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "i used to take 8-9 bottles of cough syrup containing codeine in a day",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 26,
+            "value": "8-9 bottles",
+            "entity": "dosing"
+          },
+          {
+            "start": 30,
+            "end": 41,
+            "value": "cough syrup",
+            "entity": "drug"
+          },
+          {
+            "start": 61,
+            "end": 69,
+            "value": "in a day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I just personally found cannabis the hardest drug to quit",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 24,
+            "end": 32,
+            "value": "cannabis",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I don't know if I'm an alcoholic",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "The VA started me on valium in 1968 and have been on it since then",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 21,
+            "end": 27,
+            "value": "valium",
+            "entity": "drug"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "value": "1968",
+            "entity": "time"
+          }
+        ]
+      },
+      {
+        "text": "I was also drinking during this time",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I'm running low on my valium and about to have to skip days",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 22,
+            "end": 28,
+            "value": "valium",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I smoke pot multiple times a day and use drugs recreationally",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 11,
+            "value": "pot",
+            "entity": "drug"
+          },
+          {
+            "start": 12,
+            "end": 32,
+            "value": "multiple times a day",
+            "entity": "dosing"
+          }
+        ]
+      },
+      {
+        "text": "I find that cannabis \"facilitates\" mild psychotic conditions",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 12,
+            "end": 20,
+            "value": "cannabis",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I was on this pill until the age of 18",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "pill",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "Every time I have tried cocaine here, it was wack",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 24,
+            "end": 31,
+            "value": "cocaine",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I've fallen into another period of prescription medication abuse",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I went through a rehab and that really helped to get clean",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "i struggled with meth",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 17,
+            "end": 21,
+            "value": "meth",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I've officially tried every drug",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 22,
+            "end": 32,
+            "value": "every drug",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "What I found out in these weed-free 2+ years is how difficult is to quit weed",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I had an on-and-off opiate/opioid habit from about 2010",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 33,
+            "value": "opiate/opioid",
+            "entity": "drug"
+          },
+          {
+            "start": 51,
+            "end": 55,
+            "value": "2010",
+            "entity": "time"
+          }
+        ]
+      },
+      {
+        "text": "i snorted cocaine on saturday from 9pm and had about 7 bumps through the whole night",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 21,
+            "end": 29,
+            "value": "saturday",
+            "entity": "period"
+          },
+          {
+            "start": 10,
+            "end": 17,
+            "value": "cocaine",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I bought a gram yesterday and have been taking bump",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "a gram",
+            "entity": "dosing"
+          },
+          {
+            "start": 16,
+            "end": 25,
+            "value": "yesterday",
+            "entity": "time"
+          }
+        ]
+      },
+      {
+        "text": "I self medicated with the random run in with Xanax",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 45,
+            "end": 50,
+            "value": "Xanax",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I would do 4-6 small-medium sized lines",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 11,
+            "end": 27,
+            "value": "4-6 small-medium",
+            "entity": "dosing"
+          }
+        ]
+      },
+      {
+        "text": "i started drinking daily when i was about 12-13 year's old",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 19,
+            "end": 24,
+            "value": "daily",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "Three weeks later I had drank everyday",
+        "intent": "alcohol",
+        "entities": [
+          {
+            "start": 30,
+            "end": 38,
+            "value": "everyday",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I abused fentanyl as well",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 9,
+            "end": 17,
+            "value": "fentanyl",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "So Today and yesterday I been on speed",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 33,
+            "end": 38,
+            "value": "speed",
+            "entity": "drug"
+          },
+          {
+            "start": 3,
+            "end": 8,
+            "value": "Today",
+            "entity": "time"
+          },
+          {
+            "start": 13,
+            "end": 22,
+            "value": "yesterday",
+            "entity": "time"
+          }
+        ]
+      },
+      {
+        "text": "I was taking 200mg capsules of MDMA",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 13,
+            "end": 27,
+            "value": "200mg capsules",
+            "entity": "dosing"
+          },
+          {
+            "start": 31,
+            "end": 35,
+            "value": "MDMA",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "When i quit i was taking 320mg's Oxycontin a day",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 25,
+            "end": 32,
+            "value": "320mg's",
+            "entity": "dosing"
+          },
+          {
+            "start": 33,
+            "end": 42,
+            "value": "Oxycontin",
+            "entity": "drug"
+          },
+          {
+            "start": 43,
+            "end": 48,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I smoke weed regulary",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 8,
+            "end": 12,
+            "value": "weed",
+            "entity": "drug"
+          },
+          {
+            "start": 13,
+            "end": 21,
+            "value": "regulary",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I'm entering day 3 of going cold turkey from a nasty addiction to dialaudid",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 66,
+            "end": 75,
+            "value": "dialaudid",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I have been taking Percoset/Norco for over three years",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 19,
+            "end": 33,
+            "value": "Percoset/Norco",
+            "entity": "drug"
+          },
+          {
+            "start": 34,
+            "end": 54,
+            "value": "for over three years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I am using kratom for opiate withdrawal",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "kratom",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I'm currently dealing with an pill addiction problem",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 30,
+            "end": 34,
+            "value": "pill",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I've developed a severe addiction to opioids",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 37,
+            "end": 44,
+            "value": "opioids",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I used cannabis to self medicate",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "cannabis",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I got about .3 of some crack yesterday",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 12,
+            "end": 14,
+            "value": ".3",
+            "entity": "dosing"
+          },
+          {
+            "start": 23,
+            "end": 28,
+            "value": "crack",
+            "entity": "drug"
+          },
+          {
+            "start": 29,
+            "end": 38,
+            "value": "yesterday",
+            "entity": "time"
+          }
+        ]
+      },
+      {
+        "text": "I popped 1 pill & about an hour later only felt a little",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 9,
+            "end": 15,
+            "value": "1 pill",
+            "entity": "dosing"
+          }
+        ]
+      },
+      {
+        "text": "I was high on meth before I tried it too",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "meth",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I tried any kind of pain medicine as long as I could feel that high",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 20,
+            "end": 33,
+            "value": "pain medicine",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I take between 6 and 12 headache pills a day and I know that its not good for my health",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 15,
+            "end": 38,
+            "value": "6 and 12 headache pills",
+            "entity": "dosing"
+          },
+          {
+            "start": 39,
+            "end": 44,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I have drastically cut down on the number of days that I drink",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I always drink heavily when coming down",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "It took me 15 years to quit",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I'm ready to stop ruining my life for pills",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 38,
+            "end": 43,
+            "value": "pills",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "i had a very bad problem with pills",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 30,
+            "end": 35,
+            "value": "pills",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I'm a recreational drug user",
+        "intent": "drug_addiction",
+        "entities": []
+      },
+      {
+        "text": "I have this weird fear of swallowing pills",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 37,
+            "end": 42,
+            "value": "pills",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "Ive been snorting since January",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 18,
+            "end": 31,
+            "value": "since January",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I have had enough I do not want to drink anymore",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "I can take a few lines or a few tokes",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 13,
+            "end": 22,
+            "value": "few lines",
+            "entity": "dosing"
+          }
+        ]
+      },
+      {
+        "text": "My go to poison of choice is cocaine",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 29,
+            "end": 36,
+            "value": "cocaine",
+            "entity": "drug"
+          }
+        ]
+      },
+      {
+        "text": "I drank to forget",
+        "intent": "alcohol",
+        "entities": []
+      },
+      {
+        "text": "i am popping 4 pills a day",
+        "intent": "drug_addiction",
+        "entities": [
+          {
+            "start": 13,
+            "end": 20,
+            "value": "4 pills",
+            "entity": "dosing"
+          },
+          {
+            "start": 21,
+            "end": 26,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I stopped using patches, e-cigs and gum",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I quit smoking a year ago",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 15,
+            "end": 25,
+            "value": "a year ago",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I have been nicotine free for 60 days",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 26,
+            "end": 37,
+            "value": "for 60 days",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "i started smoking cigarettes at 16",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I only smoke 3, 4 or 5 cigarettes a day",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 13,
+            "end": 33,
+            "value": "3, 4 or 5 cigarettes",
+            "entity": "dosing"
+          },
+          {
+            "start": 34,
+            "end": 39,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I was a heavy smoker in the past",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I smoke cigars",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I have tried specific detox teas",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I do not want to use any nicotin patches",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I still like to smoke",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Sometimes I smoke 5 cigarettes per day",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 18,
+            "end": 30,
+            "value": "5 cigarettes",
+            "entity": "dosing"
+          },
+          {
+            "start": 31,
+            "end": 38,
+            "value": "per day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I have never tried smoking cigarettes before",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I have been a smoker for around 6 months now",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 21,
+            "end": 44,
+            "value": "for around 6 months now",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I limit my smoking so much",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I have started smoking again",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I need some ways to cope with stress without smoking",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "i would spend a few months smoking",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 14,
+            "end": 26,
+            "value": "a few months",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I have tried to go cold turkey a couple times",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I have been a smoker for years",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I've gone close to 6 months at times without smoking",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I am having a hard time coping with stress without smoking",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I usually have between 5 to 10 cigarettes each day",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 23,
+            "end": 41,
+            "value": "5 to 10 cigarettes",
+            "entity": "dosing"
+          },
+          {
+            "start": 42,
+            "end": 50,
+            "value": "each day",
+            "entity": "period"
+          }
+        ]
+      }
+    ]
+  }
+}

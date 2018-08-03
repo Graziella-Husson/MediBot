@@ -133,7 +133,7 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
                 if main_slot_value is not None:
                     if level is None:
                         # get calculated level
-                        level = self.classifier(main_slot_value)
+                        level = self.classifier(main_slot_value, language)
                         to_return.append(SlotSet(self.intent_name+"_level",
                                                  level))
                     level = get_utterance(level, language)

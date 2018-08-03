@@ -15402,3 +15402,73 @@
     - sum_up_slots
     - export
 
+## Generated Story 2093746300401804552
+* pain
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - sum_up_pain
+    - slot{"requested_slot": "pain_body_part"}
+    - utter_ask_pain_body_part
+    - sum_up_slots
+* pain{"period": "every day", "pain_desc": "sharp", "duration": "1h", "pain_change": "continuous", "time": "yesterday", "body_part": "leg"}
+    - slot{"body_part": "leg"}
+    - slot{"duration": "1h"}
+    - slot{"pain_change": "continuous"}
+    - slot{"pain_desc": "sharp"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"pain_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"pain_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"pain_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pain
+    - slot{"pain_desc": "sharp"}
+    - slot{"pain_change": "continuous"}
+    - slot{"pain_level": "moderate"}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"temperature": null}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"time": null}
+    - reset_slots_pain
+    - slot{"pain_period": null}
+    - slot{"pain_desc": null}
+    - slot{"pain_body_part": null}
+    - slot{"pain_duration": null}
+    - slot{"pain_change": null}
+    - slot{"pain_time": null}
+    - slot{"pain_level": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"pain": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
