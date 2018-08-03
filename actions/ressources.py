@@ -5,6 +5,7 @@ Last update on Mon Jul 30 10:30:00 2018\n
 @author: U{@Graziella-Husson<https://github.com/Graziella-Husson>}
 """
 import json
+import csv
 from duckling.language import Language
 
 
@@ -37,3 +38,22 @@ def get_examples_classif(level_type, keys, language):
     for key in keys:
         examples_classif.append(ressources['examples_classif'][level_type][key][language])
     return examples_classif
+
+
+def get_drug_info(drug):
+    to_return = []
+    with open('/home/ex/Desktop/MediBot/actions/FDA_druglist_2018.csv', 'r') as csvfile:
+        spamreader = csv.reader(csvfile, delimiter=';')
+        for row in spamreader:
+            # [prod_id, prod_ndc, name, propriety_name, proprietu_name_suffix,
+            # non_propriety_name, dosage_form_name, route_name,
+            # start_marketing_date, end_marketing_date,
+            # marketing_category_name, app_number, labeler_name, subst_name,
+            # active_numerator_strength, active_ingred_unit, pharm_classes,
+            # deaschedule, ndc_exclude_flag, listing_record_certified] = row
+            if drug in row:
+                to_return.append(row)
+    return to_return
+
+            
+print(get_drug_info("LULICONAZOLE"))

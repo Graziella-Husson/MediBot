@@ -137,7 +137,7 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
                         to_return.append(SlotSet(self.intent_name+"_level",
                                                  level))
                     level = get_utterance(level, language)
-                    response += get_utterance(self.main_slot, language).format(main_slot_value, level)
+                    response += get_utterance(self.main_slot, language).format(main_slot_value, level.lower())
                 response = self.sum_up_setted_slots(response, tracker,
                                                     language)
                 response += get_utterance("right", language)

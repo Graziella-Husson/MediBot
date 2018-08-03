@@ -115,6 +115,7 @@ def save_none(corrected, text, file_name):
     file = open(file_name, 'a+')
     file.write(str(corrected)+"\n"+str(text)+"\n")
     file.close()
+    return 'moderate'
 # if __name__ == '__main__':
 #    text = TextBlob("sbrdeh")
 #    res = get_pain_level(text)

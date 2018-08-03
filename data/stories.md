@@ -15472,3 +15472,251 @@
     - sum_up_slots
     - export
 
+## Generated Story 8868516126305603528
+* pain{"pain_change": "continuous", "time": "yesterday", "duration": "1h", "body_part": "leg", "period": "every day", "pain_desc": "sharp"}
+    - slot{"body_part": "leg"}
+    - slot{"duration": "1h"}
+    - slot{"pain_change": "continuous"}
+    - slot{"pain_desc": "sharp"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "FRA"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"pain_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"pain_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"pain_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pain
+    - slot{"pain_desc": "sharp"}
+    - slot{"pain_change": "continuous"}
+    - slot{"pain_level": "moderate"}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - sum_up_slots
+* activity{"activity_sport": "gym", "distance": "1km", "time": "yesterday", "duration": "1h", "period": "every day", "activity_hard": true}
+    - slot{"activity_hard": true}
+    - slot{"activity_sport": "gym"}
+    - slot{"distance": "1km"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"activity_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"activity_distance": "1km"}
+    - slot{"distance": null}
+    - slot{"activity_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"activity_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_activity
+    - slot{"activity_hard": true}
+    - slot{"activity_sport": "gym"}
+    - slot{"activity_level": "moderate"}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - sum_up_slots
+    - export
+
+## Generated Story 8868516126305603528
+* pain{"pain_change": "continuous", "time": "yesterday", "duration": "1h", "body_part": "leg", "period": "every day", "pain_desc": "sharp"}
+    - slot{"body_part": "leg"}
+    - slot{"duration": "1h"}
+    - slot{"pain_change": "continuous"}
+    - slot{"pain_desc": "sharp"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "FRA"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"pain_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"pain_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"pain_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pain
+    - slot{"pain_desc": "sharp"}
+    - slot{"pain_change": "continuous"}
+    - slot{"pain_level": "moderate"}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - sum_up_slots
+* activity{"activity_sport": "gym", "distance": "1km", "time": "yesterday", "duration": "1h", "period": "every day", "activity_hard": true}
+    - slot{"activity_hard": true}
+    - slot{"activity_sport": "gym"}
+    - slot{"distance": "1km"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"activity_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"activity_distance": "1km"}
+    - slot{"distance": null}
+    - slot{"activity_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"activity_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_activity
+    - slot{"activity_hard": true}
+    - slot{"activity_sport": "gym"}
+    - slot{"activity_level": "moderate"}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - sum_up_slots
+    - export
+
+## Generated Story 2080757150818316008
+* activity{"distance": "1km", "period": "every day", "activity_sport": "gym", "duration": "1h", "activity_hard": true, "time": "yesterday"}
+    - slot{"activity_hard": true}
+    - slot{"activity_sport": "gym"}
+    - slot{"distance": "1km"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "FRA"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"activity_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"activity_distance": "1km"}
+    - slot{"distance": null}
+    - slot{"activity_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"activity_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_activity
+    - slot{"activity_sport": "gym"}
+    - slot{"activity_hard": true}
+    - slot{"activity_level": "moderate"}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - reset_slots_activity
+    - slot{"activity_hard": null}
+    - slot{"activity_duration": null}
+    - slot{"activity_level": null}
+    - slot{"activity_sport": null}
+    - slot{"activity_distance": null}
+    - slot{"activity_period": null}
+    - slot{"activity_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"activity": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 2080757150818316008
+* activity{"distance": "1km", "period": "every day", "activity_sport": "gym", "duration": "1h", "activity_hard": true, "time": "yesterday"}
+    - slot{"activity_hard": true}
+    - slot{"activity_sport": "gym"}
+    - slot{"distance": "1km"}
+    - slot{"duration": "1h"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "FRA"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "activity"}
+    - slot{"activity_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"activity_distance": "1km"}
+    - slot{"distance": null}
+    - slot{"activity_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"activity_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_activity
+    - slot{"activity_sport": "gym"}
+    - slot{"activity_hard": true}
+    - slot{"activity_level": "moderate"}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - reset_slots_activity
+    - slot{"activity_hard": null}
+    - slot{"activity_duration": null}
+    - slot{"activity_level": null}
+    - slot{"activity_sport": null}
+    - slot{"activity_distance": null}
+    - slot{"activity_period": null}
+    - slot{"activity_time": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"activity": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
