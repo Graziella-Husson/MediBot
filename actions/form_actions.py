@@ -9,7 +9,7 @@ from rasa_core.dispatcher import Button
 from rasa_core.actions.forms import FormAction
 from level_classifiers import get_pain_level, get_physical_activity_level
 from init_and_complex import get_obligatories
-from ressources import get_utterance
+from ressources import get_utterance, get_drug_info
 
 
 def get_response_simple(response, slot_name, tracker, language, other_value=None, utt_name=None):
@@ -32,7 +32,11 @@ def get_response_simple(response, slot_name, tracker, language, other_value=None
     slot_value = tracker.get_slot(slot_name)
     if slot_value is not None:
         if other_value is None or (other_value is not None and slot_value != other_value):
-            response += get_utterance(to_search_in_ressources, language).format(slot_value)
+            if 'drug' in slot_name:
+                [propriety_names, non_propriety_names, subst_names, pharm_classes] = get_drug_info(tracker.get_slot(slot_name), language)
+                response += get_utterance(to_search_in_ressources, language).format(propriety_names, non_propriety_names, subst_names, pharm_classes)
+            else:
+                response += get_utterance(to_search_in_ressources, language).format(slot_value)
     return response
 
 

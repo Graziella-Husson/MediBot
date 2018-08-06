@@ -15720,3 +15720,383 @@
     - sum_up_slots
     - export
 
+## Generated Story 3958353754257659632
+* treatment{"treatment_overdosage": "non overdosed", "time": "yesterday", "period": "every day", "drug": "luliconazole", "dosing": "dosing", "treatment_medicinal": true, "treatment_prescripted": true, "treatment_ok": false, "duration": "7 days", "treatment_being_taken": "taken"}
+    - slot{"dosing": "dosing"}
+    - slot{"drug": "luliconazole"}
+    - slot{"duration": "7 days"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - slot{"treatment_being_taken": "taken"}
+    - slot{"treatment_medicinal": true}
+    - slot{"treatment_ok": false}
+    - slot{"treatment_overdosage": "non overdosed"}
+    - slot{"treatment_prescripted": true}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"treatment_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"treatment_duration": "7 days"}
+    - slot{"duration": null}
+    - slot{"treatment_period": "every day"}
+    - slot{"period": null}
+    - slot{"treatment_drug": "luliconazole"}
+    - slot{"drug": null}
+    - slot{"treatment_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_treatment
+    - slot{"treatment_medicinal": true}
+    - slot{"treatment_being_taken": "taken"}
+    - slot{"treatment_ok": false}
+    - slot{"treatment_overdosage": "non overdosed"}
+    - slot{"treatment_prescripted": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - ask_what_treatment
+    - sum_up_slots
+* treatment{"treatment_drug": null}
+    - slot{"treatment_drug": null}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"requested_slot": "treatment_drug"}
+    - utter_ask_treatment_drug
+    - sum_up_slots
+* treatment{"drug": "test unknown drug"}
+    - slot{"drug": "test unknown drug"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"treatment_drug": "test unknown drug"}
+    - slot{"drug": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_treatment
+    - slot{"global_score": 4}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_treatment
+    - slot{"treatment_medicinal": null}
+    - slot{"treatment_being_taken": null}
+    - slot{"treatment_drug": null}
+    - slot{"treatment_dosing": null}
+    - slot{"treatment_time": null}
+    - slot{"treatment_prescripted": null}
+    - slot{"treatment_ok": null}
+    - slot{"treatment_overdosage": null}
+    - slot{"treatment_period": null}
+    - slot{"treatment_duration": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"treatment": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+    - export
+
+## Generated Story 3958353754257659632
+* treatment{"treatment_overdosage": "non overdosed", "time": "yesterday", "period": "every day", "drug": "luliconazole", "dosing": "dosing", "treatment_medicinal": true, "treatment_prescripted": true, "treatment_ok": false, "duration": "7 days", "treatment_being_taken": "taken"}
+    - slot{"dosing": "dosing"}
+    - slot{"drug": "luliconazole"}
+    - slot{"duration": "7 days"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - slot{"treatment_being_taken": "taken"}
+    - slot{"treatment_medicinal": true}
+    - slot{"treatment_ok": false}
+    - slot{"treatment_overdosage": "non overdosed"}
+    - slot{"treatment_prescripted": true}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"treatment_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"treatment_duration": "7 days"}
+    - slot{"duration": null}
+    - slot{"treatment_period": "every day"}
+    - slot{"period": null}
+    - slot{"treatment_drug": "luliconazole"}
+    - slot{"drug": null}
+    - slot{"treatment_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_treatment
+    - slot{"treatment_medicinal": true}
+    - slot{"treatment_being_taken": "taken"}
+    - slot{"treatment_ok": false}
+    - slot{"treatment_overdosage": "non overdosed"}
+    - slot{"treatment_prescripted": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+* disagree
+    - save_conv
+    - slot{"topic": "disagree"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - ask_what_treatment
+    - sum_up_slots
+* treatment{"treatment_drug": null}
+    - slot{"treatment_drug": null}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - sum_up_treatment
+    - slot{"requested_slot": "treatment_drug"}
+    - utter_ask_treatment_drug
+    - sum_up_slots
+* treatment{"drug": "test unknown drug"}
+    - slot{"drug": "test unknown drug"}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - slot{"treatment_drug": "test unknown drug"}
+    - slot{"drug": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_treatment
+    - slot{"global_score": 4}
+    - sum_up_slots
+* agree
+    - save_conv
+    - slot{"topic": "agree"}
+    - slot{"temperature": null}
+    - slot{"duration": null}
+    - slot{"distance": null}
+    - slot{"time": null}
+    - reset_slots_treatment
+    - slot{"treatment_medicinal": null}
+    - slot{"treatment_being_taken": null}
+    - slot{"treatment_drug": null}
+    - slot{"treatment_dosing": null}
+    - slot{"treatment_time": null}
+    - slot{"treatment_prescripted": null}
+    - slot{"treatment_ok": null}
+    - slot{"treatment_overdosage": null}
+    - slot{"treatment_period": null}
+    - slot{"treatment_duration": null}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - slot{"treatment": true}
+    - slot{"global_score": 4}
+    - sum_up_slots
+    - export
+
+## Generated Story 3874934536437776692
+* treatment{"dosing": "dosing", "period": "every day", "treatment_overdosage": "non overdosed", "drug": "luliconazole", "treatment_medicinal": true, "duration": "7 days", "time": "yesterday", "treatment_ok": false, "treatment_prescripted": true, "treatment_being_taken": "taken"}
+    - slot{"dosing": "dosing"}
+    - slot{"drug": "luliconazole"}
+    - slot{"duration": "7 days"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - slot{"treatment_being_taken": "taken"}
+    - slot{"treatment_medicinal": true}
+    - slot{"treatment_ok": false}
+    - slot{"treatment_overdosage": "non overdosed"}
+    - slot{"treatment_prescripted": true}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"treatment_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"treatment_duration": "7 days"}
+    - slot{"duration": null}
+    - slot{"treatment_period": "every day"}
+    - slot{"period": null}
+    - slot{"treatment_drug": "luliconazole"}
+    - slot{"drug": null}
+    - slot{"treatment_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_treatment
+    - slot{"treatment_medicinal": true}
+    - slot{"treatment_being_taken": "taken"}
+    - slot{"treatment_ok": false}
+    - slot{"treatment_overdosage": "non overdosed"}
+    - slot{"treatment_prescripted": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story 3874934536437776692
+* treatment{"dosing": "dosing", "period": "every day", "treatment_overdosage": "non overdosed", "drug": "luliconazole", "treatment_medicinal": true, "duration": "7 days", "time": "yesterday", "treatment_ok": false, "treatment_prescripted": true, "treatment_being_taken": "taken"}
+    - slot{"dosing": "dosing"}
+    - slot{"drug": "luliconazole"}
+    - slot{"duration": "7 days"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - slot{"treatment_being_taken": "taken"}
+    - slot{"treatment_medicinal": true}
+    - slot{"treatment_ok": false}
+    - slot{"treatment_overdosage": "non overdosed"}
+    - slot{"treatment_prescripted": true}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "treatment"}
+    - slot{"treatment_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"treatment_duration": "7 days"}
+    - slot{"duration": null}
+    - slot{"treatment_period": "every day"}
+    - slot{"period": null}
+    - slot{"treatment_drug": "luliconazole"}
+    - slot{"drug": null}
+    - slot{"treatment_dosing": "dosing"}
+    - slot{"dosing": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_treatment
+    - slot{"treatment_medicinal": true}
+    - slot{"treatment_being_taken": "taken"}
+    - slot{"treatment_ok": false}
+    - slot{"treatment_overdosage": "non overdosed"}
+    - slot{"treatment_prescripted": true}
+    - slot{"global_score": 2}
+    - sum_up_slots
+    - export
+
+## Generated Story -1756747523346797349
+* pain{"pain_desc": "sharp", "duration": "1h", "body_part": "leg", "period": "every day", "time": "yesterday", "pain_change": "continuous"}
+    - slot{"body_part": "leg"}
+    - slot{"duration": "1h"}
+    - slot{"pain_change": "continuous"}
+    - slot{"pain_desc": "sharp"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"pain_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"pain_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"pain_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pain
+    - slot{"pain_change": "continuous"}
+    - slot{"pain_desc": "sharp"}
+    - slot{"pain_level": "moderate"}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - sum_up_slots
+    - export
+
+## Generated Story -1756747523346797349
+* pain{"pain_desc": "sharp", "duration": "1h", "body_part": "leg", "period": "every day", "time": "yesterday", "pain_change": "continuous"}
+    - slot{"body_part": "leg"}
+    - slot{"duration": "1h"}
+    - slot{"pain_change": "continuous"}
+    - slot{"pain_desc": "sharp"}
+    - slot{"period": "every day"}
+    - slot{"time": "yesterday"}
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"pain_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"pain_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"pain_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pain
+    - slot{"pain_change": "continuous"}
+    - slot{"pain_desc": "sharp"}
+    - slot{"pain_level": "moderate"}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - sum_up_slots
+    - export
+

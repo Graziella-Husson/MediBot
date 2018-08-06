@@ -27,7 +27,7 @@ from ressources import get_utterance
 from ressources import get_language_duckling
 
 global CONFIG, FIRST, MANDATORIES, REMINDER_PATIENT, REMINDER_END_SESSION, REMINDER_PATIENT_LITTLE, LAST_SESSION, DUCKLING_WRAPPER, BEGIN_DATE, LANGUAGE_GLOBAL, FOLLOWED_INTENT, COMPLEX_ENTITIES
-CONFIG = yaml.load(open('config.yml'))
+CONFIG = yaml.load(open('./ressources/config.yml'))
 BEGIN_DATE = None
 FIRST = True
 MANDATORIES = dict()

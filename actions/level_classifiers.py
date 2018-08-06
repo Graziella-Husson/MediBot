@@ -5,7 +5,7 @@ Created on Tue Jun 26 10:22:40 2018\n
 """
 from nltk.classify import PositiveNaiveBayesClassifier
 from textblob import TextBlob
-from ressources import get_examples_classif 
+from ressources import get_examples_classif
 
 
 def classifier(positive_featuresets, unlabeled_featuresets, text):
@@ -53,70 +53,54 @@ def score(positive_words, text):
     return len([word for word in raw_words if word in positive_words])
 
 
-def get_physical_activity_level(text, language):
-    """@param text: the sport's name, corrected by C{TextBlob} to avoid mispelling
-    @return: the sport's level 'little','moderate', 'vigorous' or None.
+def get_level(text, language, level_to_find, possible_levels):
+    """@param text: the word, corrected by C{TextBlob} to avoid mispelling
+    @return: the level
     Call C{save_None} if None."""
     corrected = TextBlob(text).correct()
-    [vigorous, moderate, little] = get_examples_classif("physical_activity_level", ["vigorous", "moderate", "little"], language)
-    not_little = vigorous + moderate
-    not_vigorous = little + moderate
-    not_moderate = vigorous + little
-    prob_vig = (classifier(list(map(features, vigorous)), list(map(features, not_vigorous)), text).prob(True))
-    prob_lit = (classifier(list(map(features, little)), list(map(features, not_little)), text).prob(True))
-    prob_mod = (classifier(list(map(features, moderate)), list(map(features, not_moderate)), text).prob(True))
-    print(prob_vig, prob_lit, prob_mod)
-    best = max(prob_vig, prob_lit, prob_mod)
-    if best <= 0.5:
-        return save_none(corrected, text, 'save_classif_activity.txt')
-    if prob_lit == best:
-        return 'little'
-    elif prob_mod == best:
-        return 'moderate'
-    elif prob_vig == best:
-        return 'vigorous'
-    else:
-        return save_none(corrected, text, 'save_classif_activity.txt')
-
-
-def get_pain_level(text, language):
-    """@param text: the pain descritpion word, corrected by C{TextBlob}
-    to avoid mispelling
-    @return: the pain level 'mild', 'moderate', 'severe' or None.
-    Call C{save_None} if None."""
-    corrected = TextBlob(text).correct()
-    [mild, moderate, severe] = get_examples_classif("pain_level", ["mild", "moderate", "severe"], language)
+    [mild, moderate, severe] = get_examples_classif(level_to_find+"_level", possible_levels, language)
     not_mild = severe + moderate
     not_severe = mild + moderate
     not_moderate = severe + mild
     prob_sev = (classifier(list(map(features, severe)), list(map(features, not_severe)), corrected).prob(True))
     prob_mild = (classifier(list(map(features, mild)), list(map(features, not_mild)), corrected).prob(True))
     prob_mod = (classifier(list(map(features, moderate)), list(map(features, not_moderate)), corrected).prob(True))
-    print(prob_sev, prob_mild, prob_mod)
+#    print(prob_sev, prob_mild, prob_mod)
     best = max(prob_sev, prob_mild, prob_mod)
     if best <= 0.5:
-        return save_none(corrected, text, 'save_classif_pain.txt')
+        return save_none(corrected, text, level_to_find)
     if prob_mild == best:
-        return 'mild'
+        return possible_levels[0]
     elif prob_mod == best:
-        return 'moderate'
+        return possible_levels[1]
     elif prob_sev == best:
-        return 'severe'
+        return possible_levels[2]
     else:
-        return save_none(corrected, text, 'save_classif_pain.txt')
+        return save_none(corrected, text, 'pain')
+
+
+def get_physical_activity_level(text, language):
+    """@param text: the sport's name
+    @return: the sport's level 'little','moderate', 'vigorous' or None.
+    Call C{save_None} if None."""
+    return get_level(text, language, 'activity', ["vigorous", "moderate", "little"])
+
+
+def get_pain_level(text, language):
+    """@param text: the pain descritpion word
+    @return: the pain level 'mild', 'moderate', 'severe' or None.
+    Call C{save_None} if None."""
+    return get_level(text, language, 'pain', ["mild", "moderate", "severe"])
 
 
 def save_none(corrected, text, file_name):
     """@param corrected: corrected text
     @param text: text failed to be classified
     @param file_name: name of the file to save text
+    @return: 'moderate' by default
     Save text and corrected in a file named file_name to allow them to
     be classified manually later."""
-    file = open(file_name, 'a+')
+    file = open('./ressources/save_classif_'+file_name+'.txt', 'a+')
     file.write(str(corrected)+"\n"+str(text)+"\n")
     file.close()
     return 'moderate'
-# if __name__ == '__main__':
-#    text = TextBlob("sbrdeh")
-#    res = get_pain_level(text)
-#    print(res)

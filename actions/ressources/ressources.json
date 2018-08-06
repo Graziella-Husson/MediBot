@@ -272,8 +272,8 @@
 		},
 	"treatment_drug":
 		{
-		"ENG":"\n\tYou take: {}",
-		"FRA":"\n\tVous prenez : {}"
+		"ENG":"\n\tYou take a drug: \n\t\tPropriety name(s) = {},\n\t\tNon propriety name(s) = {},\n\t\tSubstance name(s) = {},\n\t\tPharm classes = {}",
+		"FRA":"\n\tVous prenez un médicament: \n\t\tNom(s) propriétaire = {},\n\t\tNom(s) non propriétaires = {},\n\t\tNom(s) substance = {},\n\t\tClasses pharm = {}"
 		},
 	"sum_up_treatment":
 		{
@@ -1002,8 +1002,8 @@
 		},
 	"drugAddiction_drug":
 		{
-		"ENG":"\n\tThe name of the drug in question is {}",
-		"FRA":"\n\tLe nom de la drogue en question est {}"
+		"ENG":"\n\tYou take a drug: \n\t\tPropriety name(s) = {},\n\t\tNon propriety name(s) = {},\n\t\tSubstance name(s) = {},\n\t\tPharm classes = {}",
+		"FRA":"\n\tVous prenez un médicament: \n\t\tNom(s) propriétaire = {},\n\t\tNom(s) non propriétaires = {},\n\t\tNom(s) substance = {},\n\t\tClasses pharm = {}"
 		},
 	"drugAddiction_dosing":
 		{
@@ -1119,6 +1119,11 @@
 		{
 		"ENG":"Number of glasses or bottles",
 		"FRA":"Nombre de verres ou bouteilles"
+		},
+	"default":
+		{
+		"ENG":" (default value)",
+		"FRA":" (valeur par défaut)"
 		}
 	},
 "examples_classif":
@@ -1141,7 +1146,7 @@
 			"FRA": ["mourant","dernier","moribond","anxieux","avide","piercing","lancinate","coupe","atroce","alarmant","laid","horrifiant","affreux","extraordinaire","terrible","formidable","effrayant","atroce","agonisant","tortureux","agonisant","déchirant","torturesome","écrasant","destructeur","poignarder","vicieux","knifelike","sauvage","barbare","inhumain","brutal","tombé","roughshod","mal","méchant","venimeux","malicieux","venimeux","condamnable","répréhensible","criminel","intense","aggravé","violent","épais","terrible","rage","sans relâche","véhément","extrême","écrasant","grand","exquis","principal","intensifié","méchant","mauvais","horrible","agonisant","affreux","lourdement","sévère","tir","lacérer","écrasant","destructeur","dévastateur","pressant","urgent","impératif","détresse","point","excruciation","agonie","névralgie","endoloris","endoloris","grandissant","douloureux","tourment","tourmentant","palpitant","agrippant","suffocent", "effrayant","terrifiant","punir","cruel","tuer","insupportable","presser","comprimer","squeeze","tordre","agoniser","torturer","dur","à peine"]
 			}
 		},
-	"physical_activity_level":
+	"activity_level":
 		{
 		"vigorous":
 			{

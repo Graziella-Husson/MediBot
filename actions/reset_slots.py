@@ -8,6 +8,7 @@ Created on Tue Jun 26 10:22:40 2018\n
 from rasa_core.actions.action import Action
 from rasa_core.events import SlotSet
 from ressources import get_utterance
+from insertfonction import insert_to_answer
 
 
 class ResetSlotsAction(Action):
@@ -33,7 +34,11 @@ class ResetSlotsAction(Action):
         language = tracker.get_slot("language")
         global_score = tracker.get_slot("global_score")
         dispatcher.utter_message(get_utterance("saved", language))
-        # TODO: save infos to DB, warning : save level in language of bot
+        for e in self.entities:
+            slot_value = tracker.get_slot(e)
+            if slot_value is not None:
+#                insert_to_answer(value, session, entity, patient, conversation)
+                insert_to_answer(slot_value, 1, e, 2, 1)
         if self.calculus:
             global_score = self.calculus_action(tracker)
         to_return = self.core_action()
