@@ -145,7 +145,29 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="level_classifiers-module.html#get_physical_activity_level" class="summary-sig-name">get_physical_activity_level</a>(<span class="summary-sig-arg">text</span>)</span><br />
+          <td><span class="summary-sig"><a href="level_classifiers-module.html#get_level" class="summary-sig-name">get_level</a>(<span class="summary-sig-arg">text</span>,
+        <span class="summary-sig-arg">language</span>,
+        <span class="summary-sig-arg">level_to_find</span>,
+        <span class="summary-sig-arg">possible_levels</span>)</span><br />
+      Returns:
+      the level Call <code>save_None</code> if None.</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="level_classifiers-pysrc.html#get_level">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="level_classifiers-module.html#get_physical_activity_level" class="summary-sig-name">get_physical_activity_level</a>(<span class="summary-sig-arg">text</span>,
+        <span class="summary-sig-arg">language</span>)</span><br />
       Returns:
       the sport's level 'little','moderate', 'vigorous' or None.</td>
           <td align="right" valign="top">
@@ -163,7 +185,8 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="level_classifiers-module.html#get_pain_level" class="summary-sig-name">get_pain_level</a>(<span class="summary-sig-arg">text</span>)</span><br />
+          <td><span class="summary-sig"><a href="level_classifiers-module.html#get_pain_level" class="summary-sig-name">get_pain_level</a>(<span class="summary-sig-arg">text</span>,
+        <span class="summary-sig-arg">language</span>)</span><br />
       Returns:
       the pain level 'mild', 'moderate', 'severe' or None.</td>
           <td align="right" valign="top">
@@ -183,7 +206,10 @@
         <tr>
           <td><span class="summary-sig"><a href="level_classifiers-module.html#save_none" class="summary-sig-name">save_none</a>(<span class="summary-sig-arg">corrected</span>,
         <span class="summary-sig-arg">text</span>,
-        <span class="summary-sig-arg">file_name</span>)</span></td>
+        <span class="summary-sig-arg">file_name</span>)</span><br />
+      Returns:
+      'moderate' by default Save text and corrected in a file named 
+      file_name to allow them to be classified manually later.</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="level_classifiers-pysrc.html#save_none">source&nbsp;code</a></span>
             
@@ -194,34 +220,10 @@
     </td>
   </tr>
 </table>
-<!-- ==================== VARIABLES ==================== -->
-<a name="section-Variables"></a>
-<table class="summary" border="1" cellpadding="3"
-       cellspacing="0" width="100%" bgcolor="white">
-<tr bgcolor="#70b0f0" class="table-header">
-  <td colspan="2" class="table-header">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-      <tr valign="top">
-        <td align="left"><span class="table-header">Variables</span></td>
-        <td align="right" valign="top"
-         ><span class="options">[<a href="#section-Variables"
-         class="privatelink" onclick="toggle_private();"
-         >hide private</a>]</span></td>
-      </tr>
-    </table>
-  </td>
-</tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="None">None</code>
-    </td>
-  </tr>
-</table>
 <p class="indent-wrapped-lines"><b>Imports:</b>
   <span title="nltk.classify.PositiveNaiveBayesClassifier">PositiveNaiveBayesClassifier</span>,
-  <span title="textblob.TextBlob">TextBlob</span>
+  <span title="textblob.TextBlob">TextBlob</span>,
+  <a href="ressources-module.html#get_examples_classif" title="ressources.get_examples_classif">get_examples_classif</a>
 </p><br />
 <!-- ==================== FUNCTION DETAILS ==================== -->
 <a name="section-FunctionDetails"></a>
@@ -276,9 +278,10 @@
           <p>If we have a training set with labeled examples for both 
           classes, we can use a standard Naive Bayes Classifier. However, 
           consider the case when we only have labeled examples for one of 
-          the classes, and other, unlabeled, examples. Then, assuming a 
-          prior distribution on the two labels, we can use the unlabeled 
-          set to estimate the frequencies of the various features.</p>
+          the classes, and other, unlabeled, examples.</p>
+          <p>Then, assuming a prior distribution on the two labels, we can 
+          use the unlabeled set to estimate the frequencies of the various 
+          features.</p>
           <p>Let the two possible labels be 1 and 0, and let's say we only 
           have examples labeled 1 and unlabeled examples. We are also given
           an estimate of P(1).</p>
@@ -343,6 +346,34 @@
   </dl>
 </td></tr></table>
 </div>
+<a name="get_level"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_level</span>(<span class="sig-arg">text</span>,
+        <span class="sig-arg">language</span>,
+        <span class="sig-arg">level_to_find</span>,
+        <span class="sig-arg">possible_levels</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="level_classifiers-pysrc.html#get_level">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>text</code></strong> - the word, corrected by <code>TextBlob</code> to avoid mispelling</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>the level Call <code>save_None</code> if None.</dd>
+  </dl>
+</td></tr></table>
+</div>
 <a name="get_physical_activity_level"></a>
 <div>
 <table class="details" border="1" cellpadding="3"
@@ -350,7 +381,8 @@
 <tr><td>
   <table width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_physical_activity_level</span>(<span class="sig-arg">text</span>)</span>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_physical_activity_level</span>(<span class="sig-arg">text</span>,
+        <span class="sig-arg">language</span>)</span>
   </h3>
   </td><td align="right" valign="top"
     ><span class="codelink"><a href="level_classifiers-pysrc.html#get_physical_activity_level">source&nbsp;code</a></span>&nbsp;
@@ -361,8 +393,7 @@
   <dl class="fields">
     <dt>Parameters:</dt>
     <dd><ul class="nomargin-top">
-        <li><strong class="pname"><code>text</code></strong> - the sport's name, corrected by <code>TextBlob</code> to avoid 
-          mispelling</li>
+        <li><strong class="pname"><code>text</code></strong> - the sport's name</li>
     </ul></dd>
     <dt>Returns:</dt>
         <dd>the sport's level 'little','moderate', 'vigorous' or None. Call 
@@ -377,7 +408,8 @@
 <tr><td>
   <table width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_pain_level</span>(<span class="sig-arg">text</span>)</span>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_pain_level</span>(<span class="sig-arg">text</span>,
+        <span class="sig-arg">language</span>)</span>
   </h3>
   </td><td align="right" valign="top"
     ><span class="codelink"><a href="level_classifiers-pysrc.html#get_pain_level">source&nbsp;code</a></span>&nbsp;
@@ -388,8 +420,7 @@
   <dl class="fields">
     <dt>Parameters:</dt>
     <dd><ul class="nomargin-top">
-        <li><strong class="pname"><code>text</code></strong> - the pain descritpion word, corrected by <code>TextBlob</code> to 
-          avoid mispelling</li>
+        <li><strong class="pname"><code>text</code></strong> - the pain descritpion word</li>
     </ul></dd>
     <dt>Returns:</dt>
         <dd>the pain level 'mild', 'moderate', 'severe' or None. Call 
@@ -419,9 +450,11 @@
     <dd><ul class="nomargin-top">
         <li><strong class="pname"><code>corrected</code></strong> - corrected text</li>
         <li><strong class="pname"><code>text</code></strong> - text failed to be classified</li>
-        <li><strong class="pname"><code>file_name</code></strong> - name of the file to save text Save text and corrected in a file 
-          named file_name to allow them to be classified manually later.</li>
+        <li><strong class="pname"><code>file_name</code></strong> - name of the file to save text</li>
     </ul></dd>
+    <dt>Returns:</dt>
+        <dd>'moderate' by default Save text and corrected in a file named 
+          file_name to allow them to be classified manually later.</dd>
   </dl>
 </td></tr></table>
 </div>
@@ -454,7 +487,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Thu Aug  2 16:59:16 2018
+    Generated by Epydoc 3.0.1 on Mon Aug  6 16:44:46 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

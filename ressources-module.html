@@ -108,9 +108,73 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a name="get_language_duckling"></a><span class="summary-sig-name">get_language_duckling</span>(<span class="summary-sig-arg">language</span>)</span></td>
+          <td><span class="summary-sig"><a href="ressources-module.html#get_language_duckling" class="summary-sig-name">get_language_duckling</a>(<span class="summary-sig-arg">language</span>)</span><br />
+      Returns:
+      the language to use with Duckling</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="ressources-pysrc.html#get_language_duckling">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ressources-module.html#get_examples_classif" class="summary-sig-name">get_examples_classif</a>(<span class="summary-sig-arg">level_type</span>,
+        <span class="summary-sig-arg">keys</span>,
+        <span class="summary-sig-arg">language</span>)</span><br />
+      Returns:
+      list of examples for each keys</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ressources-pysrc.html#get_examples_classif">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ressources-module.html#get_drug_info" class="summary-sig-name">get_drug_info</a>(<span class="summary-sig-arg">drug</span>,
+        <span class="summary-sig-arg">language</span>)</span><br />
+      Returns:
+      call <code>clean_info_drug</code> method with list of drug found in 
+      file [propriety_name, non_propriety_name, subst_name, pharm_classes]</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ressources-pysrc.html#get_drug_info">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ressources-module.html#clean_info_drug" class="summary-sig-name">clean_info_drug</a>(<span class="summary-sig-arg">list_infos</span>,
+        <span class="summary-sig-arg">drug</span>,
+        <span class="summary-sig-arg">language</span>)</span><br />
+      Returns:
+      [propriety_names, non_propriety_names, subst_names, pharm_classes] if
+      drug is not found in file, returns ['drug (default value)', 'drug 
+      (default value)', 'drug (default value)', 'drug (default value)']</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ressources-pysrc.html#clean_info_drug">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -121,6 +185,7 @@
 </table>
 <p class="indent-wrapped-lines"><b>Imports:</b>
   <span title="json">json</span>,
+  <span title="csv">csv</span>,
   <span title="duckling.language.Language">Language</span>
 </p><br />
 <!-- ==================== FUNCTION DETAILS ==================== -->
@@ -168,6 +233,119 @@
   </dl>
 </td></tr></table>
 </div>
+<a name="get_language_duckling"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_language_duckling</span>(<span class="sig-arg">language</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ressources-pysrc.html#get_language_duckling">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>language</code></strong> - language to use</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>the language to use with Duckling</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_examples_classif"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_examples_classif</span>(<span class="sig-arg">level_type</span>,
+        <span class="sig-arg">keys</span>,
+        <span class="sig-arg">language</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ressources-pysrc.html#get_examples_classif">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>level_type</code></strong> - ID of the type of leve e.g. pain_level.</li>
+        <li><strong class="pname"><code>keys</code></strong> - list of ids of the examples to search for in ressources.json file
+          e.g. ['vigorous', 'moderate', 'little']</li>
+        <li><strong class="pname"><code>language</code></strong> - language to use</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>list of examples for each keys</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_drug_info"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_drug_info</span>(<span class="sig-arg">drug</span>,
+        <span class="sig-arg">language</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ressources-pysrc.html#get_drug_info">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>drug</code></strong> - drug name or marketing name of the drug</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>call <code>clean_info_drug</code> method with list of drug found 
+          in file [propriety_name, non_propriety_name, subst_name, 
+          pharm_classes]</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="clean_info_drug"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">clean_info_drug</span>(<span class="sig-arg">list_infos</span>,
+        <span class="sig-arg">drug</span>,
+        <span class="sig-arg">language</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ressources-pysrc.html#clean_info_drug">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>list_infos</code></strong> - list of infos for several drugs with a name in common</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>[propriety_names, non_propriety_names, subst_names, 
+          pharm_classes] if drug is not found in file, returns ['drug 
+          (default value)', 'drug (default value)', 'drug (default value)',
+          'drug (default value)']</dd>
+  </dl>
+</td></tr></table>
+</div>
 <br />
 <!-- ==================== NAVIGATION BAR ==================== -->
 <table class="navbar" border="0" width="100%" cellpadding="0"
@@ -197,7 +375,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Thu Aug  2 16:59:16 2018
+    Generated by Epydoc 3.0.1 on Mon Aug  6 16:44:46 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"
