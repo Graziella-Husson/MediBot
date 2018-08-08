@@ -21,75 +21,112 @@ from rasa_core.events import (
     ConversationPaused
 )
 import yaml
+import json
 from simple_actions import Fallback
 from duckling import DucklingWrapper
 from ressources import get_utterance
 from ressources import get_language_duckling
-from insertfonction import insert_to_conversation
+import insertfonction as db
 
-global CONFIG, FIRST, MANDATORIES, REMINDER_PATIENT, REMINDER_END_SESSION, REMINDER_PATIENT_LITTLE, LAST_SESSION, DUCKLING_WRAPPER, BEGIN_DATE, LANGUAGE_GLOBAL, FOLLOWED_INTENT, COMPLEX_ENTITIES
+global CONFIG, MANDATORIES, REMINDER_PATIENT, REMINDER_END_SESSION, REMINDER_PATIENT_LITTLE, DUCKLING_WRAPPER, LANGUAGE_GLOBAL, COMPLEX_ENTITIES
 CONFIG = yaml.load(open('./ressources/config.yml'))
-BEGIN_DATE = None
-FIRST = True
 MANDATORIES = dict()
 REMINDER_PATIENT = timedelta(seconds=0)
 REMINDER_END_SESSION = timedelta(seconds=0)
 REMINDER_PATIENT_LITTLE = timedelta(seconds=0)
-DATE_END = timedelta(seconds=0)
-LAST_SESSION = False
 LANGUAGE_GLOBAL = str(CONFIG['language'])
 lang = get_language_duckling(LANGUAGE_GLOBAL)
 DUCKLING_WRAPPER = DucklingWrapper(language=lang)
-FOLLOWED_REMINDERS = []
-FOLLOW_INTENT_TRIGGER_DATE = timedelta(seconds=0)
-COMPLEX_ENTITIES = ["time", "body_part", "distance", "duration", "period", "temperature", "drug", "dosing"]
+COMPLEX_ENTITIES = ["time",
+                    "body_part",
+                    "distance",
+                    "duration",
+                    "period",
+                    "temperature",
+                    "drug",
+                    "dosing"]
+
+
+def set_begin_date_in_db(slack_id):
+    """Set the global variable BEGIN_DATE\n
+    If the BEGIN_DATE for this patient is not in the DB, set it to now"""
+    first = db.get_first(slack_id)
+    if first:
+        db.set_begin_date(slack_id, dt.now())
+        set_first_in_db(slack_id, False)
+
+
+def get_first_in_db(slack_id):
+    return db.get_first(slack_id)
+
+
+def get_begin_date_in_db(slack_id):
+    return db.get_begin_date(slack_id)
+
+
+def set_first_in_db(slack_id, new_value):
+    db.set_first(slack_id, new_value)
+
+
+def set_date_end_in_db(slack_id, new_value):
+    db.set_end_date(slack_id, new_value)
+
+
+def get_date_end_in_db(slack_id):
+    """Get date of the ending current session"""
+    return db.get_end_date(slack_id)
+
+
+def get_last_session_in_db(slack_id):
+    return db.get_last_session(slack_id)
+
+
+def set_last_session_in_db(slack_id, new_value):
+    db.set_last_session(slack_id, new_value)
+
+
+def set_follow_reminder_in_db(slack_id, new_value):
+    db.set_follow_reminder(slack_id, str(new_value))
+
+
+def get_follow_reminder_in_db(slack_id):
+    string = db.get_follow_reminder(slack_id)
+    liste = json.loads(string)
+    return liste
+
+
+def set_follow_intent_trigger_date_in_db(slack_id, new_value):
+    db.set_follow_insert_trigger_date(slack_id, new_value)
+
+
+def get_follow_intent_trigger_date_in_db(slack_id):
+    return db.get_follow_insert_trigger_date(slack_id)
+
 
 def get_complex_entities():
     """Get COMPLEX_ENTITIES list"""
     return COMPLEX_ENTITIES
 
-def get_followed_reminders():
-    """Get FOLLOWED_REMINDERS list"""
-    return FOLLOWED_REMINDERS
-
-def set_followed_reminders(to_set):
-    """Set FOLLOWED_REMINDERS list"""
-    global FOLLOWED_REMINDERS
-    FOLLOWED_REMINDERS = to_set
 
 def get_language():
     """Get language"""
     return LANGUAGE_GLOBAL
 
+
 def get_obligatories():
     """Get mandatories dictionnary"""
     return MANDATORIES
+
 
 def get_reminder_patient():
     """Get REMINDER_PATIENT time"""
     return REMINDER_PATIENT
 
-def get_date_end():
-    """Get date of the ending current session"""
-    return DATE_END
 
 def get_reminder_end_session():
     """Get REMINDER_END_SESSION time"""
     return REMINDER_END_SESSION
 
-def get_last_session():
-    """Get last session boolean"""
-    return LAST_SESSION
-
-def set_begin_date():
-    """Set the global variable BEGIN_DATE\n
-    If the BEGIN_DATE for this patient is in the DB, get it\n
-    If not, set it to now"""
-    global BEGIN_DATE
-    # TODO: get in DB if exists
-    # if not :
-    BEGIN_DATE = dt.now()
-    # TODO: save in DB
 
 def load_config(current_session, to_return):
     """Get all requested slots, requested intents, followed intent
@@ -135,9 +172,10 @@ def load_config(current_session, to_return):
     to_return.append(SlotSet("language", LANGUAGE_GLOBAL))
     return to_return
 
-def get_current_session():
+
+def get_current_session(slack_id):
     """@return current session number using BEGIN_DATE and current date"""
-    delta_time = dt.now() - BEGIN_DATE
+    delta_time = dt.now() - get_begin_date_in_db(slack_id)
     duration_done = timedelta(seconds=0)
     for i in CONFIG['sessions']:
         session = CONFIG['sessions'][i]
@@ -155,6 +193,7 @@ def get_current_session():
             if duration_done > delta_time:
                 return i
 
+
 def last_session(current_session):
     """@return True if it's the last session, False otherwise"""
     try:
@@ -165,11 +204,13 @@ def last_session(current_session):
         current_session = int(current_session)
         return True
 
+
 def get_duration_until(begin, end, time):
     """@param begin: number of begin session
     @param end: number of end session
     @param time: time(0 or duration already set)
-    @return time past between begin session and end session, add it to time paramter
+    @return time past between begin session and end session,
+    add it to time paramter
     @raise LastSessionException : if the number of session
     between begin and end includes a non existent session"""
     for i in range(begin, end):
@@ -190,7 +231,8 @@ def get_duration_until(begin, end, time):
             print("This is the last session!")
     return time
 
-def get_current_reminder_times(current_session, to_return):
+
+def get_current_reminder_times(current_session, to_return, slack_id):
     """@return: List of SlotSet
     Get all reminders times in config file:
         - reminder_patient
@@ -199,8 +241,10 @@ def get_current_reminder_times(current_session, to_return):
         - FOLLOW_INTENT_TRIGGER_DATE (time = date of
         Xst next session beginning, with X
         follow_in_current_session_plus config parameter)"""
-    global REMINDER_PATIENT, REMINDER_END_SESSION, REMINDER_PATIENT_LITTLE, DATE_END, FOLLOW_INTENT_TRIGGER_DATE
-    reminders = ['reminder_patient', 'reminder_end_session', 'reminder_patient_little']
+    global REMINDER_PATIENT, REMINDER_END_SESSION, REMINDER_PATIENT_LITTLE
+    reminders = ['reminder_patient',
+                 'reminder_end_session',
+                 'reminder_patient_little']
     duration_session = timedelta(seconds=0)
     session = CONFIG['sessions'][current_session]
     for i in session['duration'].keys():
@@ -213,7 +257,7 @@ def get_current_reminder_times(current_session, to_return):
             duration_session += timedelta(days=int(j))
         if i == 'hours':
             duration_session += timedelta(hours=int(j))
-    DATE_END = dt.now() + duration_session
+    set_date_end_in_db(slack_id, dt.now() + duration_session)
     for reminder in reminders:
         reminder_config = CONFIG[reminder]
         reminder1 = timedelta(seconds=0)
@@ -239,22 +283,25 @@ def get_current_reminder_times(current_session, to_return):
     time = get_duration_until(current_session,
                               follow_in_current_session_plus+current_session,
                               time)
-    FOLLOW_INTENT_TRIGGER_DATE = BEGIN_DATE+time
+    set_follow_intent_trigger_date_in_db(slack_id, get_begin_date_in_db(slack_id) + time)
     return to_return
+
 
 def duckling_set_slots(data, to_return):
     """@return: List of SlotSet
     @param data: all entities detected
-    Check all the complex entities detected with duckling to know what slot to set:
+    Check all the complex entities detected with duckling
+    to know what slot to set:
         - time
         - distance
         - duration
         - temperature
     If distance, duration or temperature have a unit, set them
-    For every times founded, check if it's the traduction of others entiity and, if not set time
+    For every times founded, check if it's the traduction of others
+    entity and, if not set time
     If time has a 'to' and 'from' date, check the duration and set it."""
     try:
-        to_set = {'time':[], 'distance':None, 'duration':None, 'temperature':None}
+        to_set = {'time': [], 'distance': None, 'duration': None, 'temperature': None}
         time = None
         for i in data:
             entity = i['entity']
@@ -321,6 +368,7 @@ def duckling_set_slots(data, to_return):
         pass
     return to_return
 
+
 def check(to_return, intent, entities, tracker, dispatcher, response, domain):
     """@return: List of SlotSet
     @param to_return: the list of SlotSet
@@ -328,7 +376,8 @@ def check(to_return, intent, entities, tracker, dispatcher, response, domain):
     @param entities: entities detected
     @param response: response of the user
     Check the response of the user :
-        - if the confidence of intent detection is under 50%, call C{Fallback} action
+        - if the confidence of intent detection is under 50%,
+        call C{Fallback} action
         - if one of specific word is detected:
             - emergency: send an alert
             - stopword: tell the bot that he made a mistake
@@ -357,7 +406,7 @@ def check(to_return, intent, entities, tracker, dispatcher, response, domain):
         elif response == stopword and not FIRST:
             for i in range(0, 2):
                 if not (tracker.latest_action_name is None or tracker.latest_action_name == 'init'):
-                    #print(tracker.latest_action_name)
+                    # print(tracker.latest_action_name)
                     to_return.append(UserUtteranceReverted())
                     if not (tracker.latest_action_name is None or tracker.latest_action_name == 'init'):
                         to_return.append(UserUtteranceReverted())
@@ -376,25 +425,26 @@ def check(to_return, intent, entities, tracker, dispatcher, response, domain):
             return to_return
         else:
             count_user_reminder = 0
-#                to_return.append(SlotSet("count_user_reminder", count_user_reminder))
-#                print("reminder user little scheduled at "+str(dt.now() + REMINDER_PATIENT_little))
-#                to_return.append(ReminderScheduled("user_reminder_little",
-#                                                   dt.now() + REMINDER_PATIENT_LITTLE,
-#                                                   kill_on_user_message=True))
-#                print("reminder user scheduled at "+str(dt.now() + REMINDER_PATIENT))
-#                to_return.append(ReminderScheduled("user_reminder",
-#                                                   dt.now() + REMINDER_PATIENT,
-#                                                   kill_on_user_message=True))
+            to_return.append(SlotSet("count_user_reminder", count_user_reminder))
+#            print("reminder user little scheduled at "+str(dt.now() + REMINDER_PATIENT_LITTLE))
+#            to_return.append(ReminderScheduled("user_reminder_little",
+#                                               dt.now() + REMINDER_PATIENT_LITTLE,
+#                                               kill_on_user_message=True))
+#            print("reminder user scheduled at "+str(dt.now() + REMINDER_PATIENT))
+#            to_return.append(ReminderScheduled("user_reminder",
+#                                               dt.now() + REMINDER_PATIENT,
+#                                               kill_on_user_message=True))
             return to_return
 
-def followed_intent_found(to_return, intent_name, current_session, followed_intent):
+
+def followed_intent_found(to_return, intent_name, current_session, followed_intent, slack_id):
     """@return: List of SlotSet
     @param to_return: the list of SlotSet
     @param intent_name: the name of the intent followed
     @param current_session: number of the current session
     Set mandatory for this session the intent and entities linked\n
-    Send a followed_intent_reminder reminder at the begining of the Xst next session """
-    global FOLLOWED_REMINDERS
+    Send a followed_intent_reminder reminder at the begining of the
+    Xst next session """
     found = False
     for i in MANDATORIES['requested_intent']:
         if intent_name in i.entity_name:
@@ -405,16 +455,19 @@ def followed_intent_found(to_return, intent_name, current_session, followed_inte
     for entity in MANDATORIES[intent_name]:
         entities += entity.entity_name+"."
     entities = entities[:-1]
-#        name = intent_name+"-"+entities+"*"+str(current_session)
-#        print("Reminder scheduled at "+str(FOLLOW_INTENT_TRIGGER_DATE)+" for following intent: "+intent_name)
-#        reminder = ReminderScheduled("followed_intent_reminder",
-#                                     FOLLOW_INTENT_TRIGGER_DATE, name,
-#                                     kill_on_user_message=False)
-#        #TODO : add reminder in DB using reminder.as_dict()
-#        FOLLOWED_REMINDERS.append(reminder)
-#        to_return.append(reminder)
+    name = intent_name+"-"+entities+"*"+str(current_session)
+    follow_intent_trigger_date = get_follow_intent_trigger_date_in_db(slack_id)
+    print("Reminder scheduled at "+str(follow_intent_trigger_date)+" for following intent: "+intent_name)
+    reminder = ReminderScheduled("followed_intent_reminder",
+                                 follow_intent_trigger_date, name,
+                                 kill_on_user_message=False)
+    followed_reminder = get_follow_reminder_in_db(slack_id)
+    followed_reminder.append(reminder)
+    set_follow_reminder_in_db(slack_id, followed_reminder)
+    to_return.append(reminder)
     followed_intent.remove(intent_name)
     to_return.append(SlotSet("followed_intent", followed_intent))
+
 
 def save(tracker, to_return):
     """@return: List of :
@@ -443,13 +496,14 @@ def save(tracker, to_return):
     intent_name = intent['name']
     followed = tracker.get_slot("followed_intent")
     if intent_name in followed:
-        followed_intent_found(to_return, intent_name, current_session, followed)
+        followed_intent_found(to_return, intent_name, current_session, followed, tracker.sender_id)
     to_return.append(SlotSet("topic", intent_name))
     entities = tracker.latest_message.entities
     #nlu_infos = tracker.latest_message.parse_data
     conv.write("{ '"+str(date)+"' : [{'intent':"+str(intent)+"}, {'entities':"+str(entities)+"}, {'text':'"+str(response)+"'}]},\n")
     conv.close()
     return [intent, entities, to_return, response]
+
 
 class InitBot(Action):
     """To init the bot"""
@@ -459,28 +513,28 @@ class InitBot(Action):
 
     def run(self, dispatcher, tracker, domain):
         """@return: List of SlotSet
-        If it's the first time we talk, call method C{set_begin_date}\n
+        If it's the first time we talk, call method C{set_begin_date_in_db}\n
         Get the current session\n
         Check if it's the last session\n
         Set the reminders times\n
         Do the complex config calling C{load_config}\n
         Set global score to 0"""
-        global FIRST, LAST_SESSION
         to_return = []
-        if FIRST:
-            FIRST = False
-            set_begin_date()
+        if get_first_in_db(tracker.sender_id):
+            set_begin_date_in_db(tracker.sender_id)
         else:
+            #TODO : reset all unfeaturized slots
             to_return.append(SlotSet("requested_slot", None))
             to_return.append(AllSlotsReset())
-        current_session = get_current_session()
+        current_session = get_current_session(tracker.sender_id)
         print("Current session is : "+str(current_session))
-        LAST_SESSION = last_session(current_session)
-        to_return = get_current_reminder_times(current_session, to_return)
+        set_last_session_in_db(tracker.sender_id, last_session(current_session))
+        to_return = get_current_reminder_times(current_session, to_return, tracker.sender_id)
         to_return = load_config(current_session, to_return)
         to_return.append(SlotSet("current_session", current_session))
         to_return.append(SlotSet("global_score", 0))
         return to_return
+
 
 class SaveConv(Action):
     """Use to save the conversation"""
@@ -496,7 +550,7 @@ class SaveConv(Action):
         Check if there's no noticeable word or low confidence\n"""
         language = tracker.get_slot("language")
         to_return = []
-        if FIRST:
+        if get_first_in_db(tracker.sender_id):
             to_return = InitBot().run(dispatcher, tracker, domain)
             for i in to_return:
                 tracker.update(i)
@@ -504,19 +558,21 @@ class SaveConv(Action):
             language = tracker.get_slot("language")
             print(language)
             to_return = []
-#            print("reminder change session scheduled at "+str(DATE_END))
+            date_end = get_date_end_in_db(tracker.sender_id)
+#            print("reminder change session scheduled at "+str(date_end))
 #            to_return.append(ReminderScheduled("change_session_reminder",
-#                                               DATE_END, kill_on_user_message=False))
-#            print("reminder before change session scheduled at "+str(DATE_END - REMINDER_END_SESSION))
+#                                               date_end, kill_on_user_message=False))
+#            print("reminder before change session scheduled at "+str(date_end - REMINDER_END_SESSION))
 #            to_return.append(ReminderScheduled("session_end_reminder",
-#                                               DATE_END - REMINDER_END_SESSION,
+#                                               date_end - REMINDER_END_SESSION,
 #                                               kill_on_user_message=False))
             dispatcher.utter_message(get_utterance("welcome", language, [nickname]))
         [intent, entities, to_return, response] = save(tracker, to_return)
-        insert_to_conversation(response, "PATIENT")
+        db.insert_to_conversation(response, "PATIENT")
         to_return = duckling_set_slots(entities, to_return)
         to_return = check(to_return, intent, entities, tracker, dispatcher, response, domain)
         return to_return
+
 
 class SumUpSLots(Action):
     """Sum up slots and save bot utterances"""

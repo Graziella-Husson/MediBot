@@ -16,17 +16,7 @@ from rasa_core.events import (
 from rasa_core.actions.forms import (
     EntityFormField
 )
-from init_and_complex import (
-    InitBot,
-    get_obligatories,
-    get_reminder_patient,
-    get_date_end,
-    get_reminder_end_session,
-    get_last_session,
-    get_language,
-    get_followed_reminders,
-    set_followed_reminders
-)
+import init_and_complex as init
 from ressources import get_utterance
 
 
@@ -69,7 +59,7 @@ class ChangeSessionReminder(Action):
         Call the C{init} method and send reminder
         C{ChangeSessionReminder} to change session.\n
         If it's the last session, pause the conversation."""
-        language = get_language()
+        language = init.get_language()
 #        print(language)
         global_score = tracker.get_slot("global_score")
         current_session = tracker.get_slot("current_session")
@@ -86,7 +76,7 @@ class ChangeSessionReminder(Action):
             conv = open(idy, 'a')
         conv.write("{}")
         conv.close()
-        obligatories = get_obligatories()
+        obligatories = init.get_obligatories()
         #TODO: send a notification instead
         unacomplished = []
         obligatory_intent = obligatories['requested_intent']
@@ -105,14 +95,14 @@ class ChangeSessionReminder(Action):
         if len(unacomplished) > 0:
             response = get_utterance("not_broached", language, [str(unacomplished)])
             dispatcher.utter_message(response)
-        last_session = get_last_session()
+        last_session = init.get_last_session_in_db(tracker.sender_id)
         if not last_session:
-            to_return = InitBot().run(dispatcher, tracker, domain)
+            to_return = init.InitBot().run(dispatcher, tracker, domain)
             for i in to_return:
                 tracker.update(i)
             to_return = []
-            date_end = get_date_end()
-            reminder_end_session = get_reminder_end_session()
+            date_end = init.get_date_end_in_db(tracker.sender_id)
+            reminder_end_session = init.get_reminder_end_session()
             response = get_utterance("change_session", language)
             dispatcher.utter_message(response)
             to_return.append(SlotSet("global_score", global_score))
@@ -142,10 +132,10 @@ class UserReminder(Action):
         if the patient did not respond.\n
         If the number of calls exceed the slot count_user_reminder_max,
         we have to raise an alert."""
-        language = get_language()
+        language = init.get_language()
         count_user_reminder = tracker.get_slot("count_user_reminder")
         count_user_reminder_max = tracker.get_slot("count_user_reminder_max")
-        reminder_patient = get_reminder_patient()
+        reminder_patient = init.get_reminder_patient()
         #TODO : Send a notif instead
         response = get_utterance("user_reminder", language)
         dispatcher.utter_message(response)
@@ -173,11 +163,11 @@ class SessionEndReminder(Action):
 
     def run(self, dispatcher, tracker, domain):
         """Display all broached requested_intents."""
-        language = get_language()
+        language = init.get_language()
         #TODO : Send a notif instead
         unacomplished = 0
         acomplished = []
-        obligatories = get_obligatories()
+        obligatories = init.get_obligatories()
         obligatory_intent = obligatories['requested_intent']
         for i in obligatory_intent:
             slot_name = i.slot_name
@@ -203,7 +193,7 @@ class UserReminderLittle(Action):
 
     def run(self, dispatcher, tracker, domain):
         """Call the patient after a little time"""
-        language = get_language()
+        language = init.get_language()
         #TODO : Send a notif instead
         response = get_utterance("user_reminder_little", language)
         dispatcher.utter_message(response)
@@ -222,8 +212,8 @@ class FollowedIntentReminder(Action):
         entity to make them requested for the intent\n
         Remove reminder in followed_reminders list (it has been triggered)"""
         now = dt.now()
-        obligatories = get_obligatories()
-        followed_reminders = get_followed_reminders()
+        obligatories = init.get_obligatories()
+        followed_reminders = init.get_follow_reminder_in_db(tracker.sender_id)
         reminder = get_reminder(followed_reminders, now)
         name = reminder.name
 #        print(name)
@@ -248,4 +238,4 @@ class FollowedIntentReminder(Action):
 #            for j in obligatories[i]:
 #                print("\t"+j.entity_name)
         followed_reminders.remove(reminder)
-        set_followed_reminders(followed_reminders)
+        init.set_follow_reminder_in_db(tracker.sender_id, followed_reminders)
