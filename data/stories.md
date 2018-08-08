@@ -16100,3 +16100,227 @@
     - sum_up_slots
     - export
 
+## Generated Story 3891074672521159300
+* hello
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "hello"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_hello
+    - sum_up_slots
+* bye
+    - save_conv
+    - slot{"topic": "bye"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_bye
+    - sum_up_slots
+* pain
+* pain{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_pain
+    - slot{"requested_slot": "pain_body_part"}
+    - utter_ask_pain_body_part
+    - sum_up_slots
+* pain{"body_part": "leg", "pain_desc": "sharp"}
+    - slot{"body_part": "leg"}
+    - slot{"pain_desc": "sharp"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"pain_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pain
+    - slot{"pain_desc": "sharp"}
+    - slot{"requested_slot": "pain_period"}
+    - utter_ask_pain_period
+    - sum_up_slots
+* pain{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"pain_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pain
+    - slot{"requested_slot": "pain_change"}
+    - utter_ask_pain_change
+    - sum_up_slots
+* pain{"pain_change": "continuous"}
+    - slot{"pain_change": "continuous"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_pain
+    - slot{"pain_change": "continuous"}
+    - slot{"requested_slot": "pain_duration"}
+    - utter_ask_pain_duration
+    - sum_up_slots
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pain
+    - slot{"requested_slot": "pain_time"}
+    - utter_ask_pain_time
+    - sum_up_slots
+* pain{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"pain_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pain
+    - slot{"pain_level": "moderate"}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - sum_up_slots
+    - export
+
+## Generated Story 3891074672521159300
+* hello
+    - slot{"stopword": "stop"}
+    - slot{"emergency": "help"}
+    - slot{"nickname": "Ailixir"}
+    - slot{"exitword": "gone"}
+    - slot{"count_user_reminder_max": 1}
+    - slot{"count_user_reminder": 0}
+    - slot{"followed_intent": []}
+    - slot{"language": "ENG"}
+    - slot{"current_session": 1}
+    - slot{"global_score": 0}
+    - save_conv
+    - slot{"topic": "hello"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_hello
+    - sum_up_slots
+* bye
+    - save_conv
+    - slot{"topic": "bye"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_bye
+    - sum_up_slots
+* pain
+* pain{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - sum_up_pain
+    - slot{"requested_slot": "pain_body_part"}
+    - utter_ask_pain_body_part
+    - sum_up_slots
+* pain{"body_part": "leg", "pain_desc": "sharp"}
+    - slot{"body_part": "leg"}
+    - slot{"pain_desc": "sharp"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"pain_body_part": "leg"}
+    - slot{"body_part": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pain
+    - slot{"pain_desc": "sharp"}
+    - slot{"requested_slot": "pain_period"}
+    - utter_ask_pain_period
+    - sum_up_slots
+* pain{"period": "every day"}
+    - slot{"period": "every day"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - slot{"pain_period": "every day"}
+    - slot{"period": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pain
+    - slot{"requested_slot": "pain_change"}
+    - utter_ask_pain_change
+    - sum_up_slots
+* pain{"pain_change": "continuous"}
+    - slot{"pain_change": "continuous"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"distance": null}
+    - slot{"duration": null}
+    - slot{"temperature": null}
+    - slot{"time": null}
+    - sum_up_pain
+    - slot{"pain_change": "continuous"}
+    - slot{"requested_slot": "pain_duration"}
+    - utter_ask_pain_duration
+    - sum_up_slots
+* pain{"duration": "1h"}
+    - slot{"duration": "1h"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"pain_duration": "1h"}
+    - slot{"duration": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pain
+    - slot{"requested_slot": "pain_time"}
+    - utter_ask_pain_time
+    - sum_up_slots
+* pain{"time": "yesterday"}
+    - slot{"time": "yesterday"}
+    - save_conv
+    - slot{"topic": "pain"}
+    - slot{"pain_time": "yesterday"}
+    - slot{"time": null}
+    - slot{"requested_slot": null}
+    - action_multiple_set_complex
+    - sum_up_pain
+    - slot{"pain_level": "moderate"}
+    - slot{"topic": null}
+    - slot{"requested_slot": null}
+    - sum_up_slots
+    - export
+

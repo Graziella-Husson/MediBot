@@ -34,9 +34,9 @@ def get_response_simple(response, slot_name, tracker, language, other_value=None
         if other_value is None or (other_value is not None and slot_value != other_value):
             if 'drug' in slot_name:
                 [propriety_names, non_propriety_names, subst_names, pharm_classes] = get_drug_info(tracker.get_slot(slot_name), language)
-                response += get_utterance(to_search_in_ressources, language).format(propriety_names, non_propriety_names, subst_names, pharm_classes)
+                response += get_utterance(to_search_in_ressources, language, [propriety_names, non_propriety_names, subst_names, pharm_classes])
             else:
-                response += get_utterance(to_search_in_ressources, language).format(slot_value)
+                response += get_utterance(to_search_in_ressources, language, [slot_value])
     return response
 
 
@@ -141,7 +141,7 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
                         to_return.append(SlotSet(self.intent_name+"_level",
                                                  level))
                     level = get_utterance(level, language)
-                    response += get_utterance(self.main_slot, language).format(main_slot_value, level.lower())
+                    response += get_utterance(self.main_slot, language, [main_slot_value, level.lower()])
                 response = self.sum_up_setted_slots(response, tracker,
                                                     language)
                 response += get_utterance("right", language)

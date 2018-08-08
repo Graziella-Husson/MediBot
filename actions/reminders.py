@@ -98,13 +98,12 @@ class ChangeSessionReminder(Action):
         #TODO: save global score in DB
 #        print(global_score)
         if global_score is not None and global_score != 0:
-            response = get_utterance("score", language).format(global_score)
+            response = get_utterance("score", language, [global_score])
             dispatcher.utter_message(response)
         global_score = 0
         #TODO: send a notif saying missing intents
         if len(unacomplished) > 0:
-            response = get_utterance("not_broached", language)
-            response += str(unacomplished)
+            response = get_utterance("not_broached", language, [str(unacomplished)])
             dispatcher.utter_message(response)
         last_session = get_last_session()
         if not last_session:
@@ -154,7 +153,7 @@ class UserReminder(Action):
         if count_user_reminder > count_user_reminder_max:
          #TODO : Send a notif instead
             response = get_utterance("count_user_reminder",
-                                     language).format(count_user_reminder)
+                                     language, [count_user_reminder])
             dispatcher.utter_message(response)
         to_return = []
         to_return.append(SlotSet("count_user_reminder", count_user_reminder))

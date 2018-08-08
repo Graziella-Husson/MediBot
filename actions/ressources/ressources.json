@@ -17,8 +17,8 @@
 		},
 	"welcome":
 		{
-		"ENG":"Nice to meet you! My name is",
-		"FRA":"Ravi de vous rencontrer ! Mon nom est"
+		"ENG":"Nice to meet you! My name is {}",
+		"FRA":"Ravi de vous rencontrer ! Mon nom est {}"
 		},
 	"score":
 		{

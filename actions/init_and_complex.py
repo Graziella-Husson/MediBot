@@ -511,9 +511,9 @@ class SaveConv(Action):
 #            to_return.append(ReminderScheduled("session_end_reminder",
 #                                               DATE_END - REMINDER_END_SESSION,
 #                                               kill_on_user_message=False))
-            dispatcher.utter_message(get_utterance("welcome", language)+" "+nickname)
+            dispatcher.utter_message(get_utterance("welcome", language, [nickname]))
         [intent, entities, to_return, response] = save(tracker, to_return)
-        insert_to_conversation(response,"PATIENT")
+        insert_to_conversation(response, "PATIENT")
         to_return = duckling_set_slots(entities, to_return)
         to_return = check(to_return, intent, entities, tracker, dispatcher, response, domain)
         return to_return
