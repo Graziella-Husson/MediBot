@@ -7,6 +7,7 @@ Last update on Mon Jul 30 10:30:00 2018\n
 import json
 import csv
 from duckling.language import Language
+from insertfonction import insert_to_conversation
 
 
 def get_utterance(key, language):
@@ -15,6 +16,7 @@ def get_utterance(key, language):
     @return: the utterance the bot have to say for a given key and language"""
     ressources = json.load(open('./ressources/ressources.json'))
     utterance = ressources['utterances'][key][language]
+    insert_to_conversation(utterance,"BOT")
     return utterance
 
 

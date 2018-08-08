@@ -25,6 +25,7 @@ from simple_actions import Fallback
 from duckling import DucklingWrapper
 from ressources import get_utterance
 from ressources import get_language_duckling
+from insertfonction import insert_to_conversation
 
 global CONFIG, FIRST, MANDATORIES, REMINDER_PATIENT, REMINDER_END_SESSION, REMINDER_PATIENT_LITTLE, LAST_SESSION, DUCKLING_WRAPPER, BEGIN_DATE, LANGUAGE_GLOBAL, FOLLOWED_INTENT, COMPLEX_ENTITIES
 CONFIG = yaml.load(open('./ressources/config.yml'))
@@ -512,6 +513,7 @@ class SaveConv(Action):
 #                                               kill_on_user_message=False))
             dispatcher.utter_message(get_utterance("welcome", language)+" "+nickname)
         [intent, entities, to_return, response] = save(tracker, to_return)
+        insert_to_conversation(response,"PATIENT")
         to_return = duckling_set_slots(entities, to_return)
         to_return = check(to_return, intent, entities, tracker, dispatcher, response, domain)
         return to_return

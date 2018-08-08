@@ -1,9 +1,9 @@
-{
+﻿{
   "rasa_nlu_data": {
     "regex_features": [],
     "entity_synonyms": [],
     "common_examples": [
-	{
+      {
         "text": "I’m drinking at least a bottle of wine a day in the week",
         "intent": "alcohol",
         "entities": [
@@ -17,7 +17,7 @@
             "start": 24,
             "end": 30,
             "value": "bottle",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 39,
@@ -35,7 +35,7 @@
             "start": 8,
             "end": 18,
             "value": "six ounces",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 22,
@@ -76,7 +76,7 @@
             "start": 11,
             "end": 20,
             "value": "four pack",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 21,
@@ -214,7 +214,7 @@
             "start": 32,
             "end": 41,
             "value": "four cans",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 67,
@@ -238,7 +238,7 @@
             "start": 8,
             "end": 18,
             "value": "six ounces",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 22,
@@ -299,7 +299,7 @@
             "start": 26,
             "end": 35,
             "value": "1L bottle",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 39,
@@ -334,7 +334,7 @@
             "start": 21,
             "end": 26,
             "value": "glass",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 30,
@@ -379,7 +379,7 @@
             "start": 30,
             "end": 41,
             "value": "16-20 units",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 45,
@@ -409,7 +409,7 @@
             "start": 28,
             "end": 43,
             "value": "1 and 2 bottles",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 47,
@@ -482,7 +482,7 @@
             "start": 19,
             "end": 30,
             "value": "half bottle",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           }
         ]
       },
@@ -514,7 +514,7 @@
             "start": 15,
             "end": 22,
             "value": "a fifth",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 26,
@@ -538,7 +538,7 @@
             "start": 18,
             "end": 26,
             "value": "3 nights",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 27,
@@ -630,7 +630,7 @@
             "start": 46,
             "end": 56,
             "value": "1.5 liters",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 60,
@@ -659,7 +659,7 @@
             "start": 23,
             "end": 29,
             "value": "1 pint",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           }
         ]
       },
@@ -687,43 +687,43 @@
             "start": 28,
             "end": 32,
             "value": "same",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           }
         ]
       },
       {
         "text": "I used to eat a lot and weigh 120",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I abuse laxatives massively about 30-40 a day",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "my eating habits aren't normal",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I see myself as morbidly obese",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I started having a hard time keeping my food down",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I feel fat and bloated",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I've binged for 6 days on junk food",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": [
           {
             "start": 12,
@@ -735,62 +735,62 @@
       },
       {
         "text": "my eating is someone I’ve accepted is going to be an issue my entire life",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "If I eat I feel ashamed and fat and I blame myself",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "everytime I eat, I feel anxious and nervous",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "just want to end this endless cycle of binging and laxative abuse",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I use to eat a lot and I mean a lot",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I used to be overweight when I was a teen",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I may have issues with food",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I have recently got too my lowest weight",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "When I was overweight, I didn't really eat any more than any of my friends did at the time",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I struggle to eat to gain weight",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I am really scared of eating",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I have had Bulimia on and off for a few year",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": [
           {
             "start": 30,
@@ -802,12 +802,12 @@
       },
       {
         "text": "I started making my self sick after meals",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "So about 2 to 3 weeks ago I’ve probably only eaten one meal a day",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": [
           {
             "start": 9,
@@ -819,102 +819,102 @@
       },
       {
         "text": "I'm restricting all day",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I eat as an emotional response to everything and anything",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I am diagnosed anorexic and am at my lowest weight ever",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "i feel I may have an eating disorder",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I was anorexic and bulimic during my 20 up to my 40",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I have uncontrollable vomiting",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "when I eat I have nausea",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I am fed up being overweight but can't stick to diets anymore",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I weigh myself 2-3 times a day and get depressed and won’t eat if I go up a pound",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I’m growing fatter and fatter",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "A while ago I went through a few months of disordered eating",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I suffered from anorexia when I was 13",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "The problem is, every time I eat, I throw up because of my thoughts",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I feel hungry, but any time I eat, I take one bite and I feel absolutely sick",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I've always struggled with my weight especially as a young teen",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I constantly binge eat",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I am scared of gaining weight",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I have noticed that in now over 8 months I have been experiencing a kind of food sickness",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I started to binge last year, in around September, when I started university",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "Been suffering from bulimia for some time, really struggling at the minute with my mental health",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
@@ -931,7 +931,7 @@
       },
       {
         "text": "I don't eat much because when I started drinking I was 135 pounds now I'm almost 300 pounds",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
@@ -948,13 +948,13 @@
       },
       {
         "text": "I am on 60 mg of meth",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 8,
             "end": 13,
             "value": "60 mg",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 17,
@@ -966,7 +966,7 @@
       },
       {
         "text": "The new doctor gave me a schedule to wean me off the tramadol",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 53,
@@ -978,13 +978,13 @@
       },
       {
         "text": "I took anywhere from 2 to 6 norco a day but 3 was my average",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 21,
             "end": 33,
             "value": "2 to 6 norco",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 34,
@@ -996,12 +996,12 @@
       },
       {
         "text": "i went to detox for 21 days",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "i am 19 and i have been snorting cocaine for the last 6 months",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 33,
@@ -1019,13 +1019,13 @@
       },
       {
         "text": "I had weaned down from 50 mg of methadone to 40mg in two months",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 23,
             "end": 28,
             "value": "50 mg",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 32,
@@ -1043,7 +1043,7 @@
       },
       {
         "text": "I am in the process of tapering from Suboxone long-term use",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 37,
@@ -1055,7 +1055,7 @@
       },
       {
         "text": "It’s been two days since I have been recreationally using tramadol 400mg",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 58,
@@ -1067,7 +1067,7 @@
             "start": 67,
             "end": 72,
             "value": "400mg",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 10,
@@ -1079,13 +1079,13 @@
       },
       {
         "text": "I have been taking 50 mgs of Valium daily for nearly the last 6 months",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 19,
             "end": 25,
             "value": "50 mgs",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 29,
@@ -1109,13 +1109,13 @@
       },
       {
         "text": "I am advanced maternal age(40) and taking 16 mgms of Suboxone films for opiate addiction",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 42,
             "end": 49,
             "value": "16 mgms",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 53,
@@ -1127,7 +1127,7 @@
       },
       {
         "text": "I’ve been snorting come for almost 2 weeks now",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 19,
@@ -1145,7 +1145,7 @@
       },
       {
         "text": "I've been on methadone at 150 mg a day and about 15 mg of xanax",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 13,
@@ -1157,7 +1157,7 @@
             "start": 26,
             "end": 32,
             "value": "150 mg",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 33,
@@ -1169,13 +1169,13 @@
       },
       {
         "text": "I use about 3 grams per month average",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 12,
             "end": 19,
             "value": "3 grams",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 20,
@@ -1187,12 +1187,12 @@
       },
       {
         "text": "Now I am totally clean",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "Snorted a large amount of Cocaine, 3 weeks ago, for the first (and last) time in my life",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 35,
@@ -1204,12 +1204,12 @@
       },
       {
         "text": "I'm trying to quit after years of snorting",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "Yesterday I stupidly changed the qty of my prescription for Darvon from 5 pills to 15 pills",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 60,
@@ -1221,13 +1221,13 @@
             "start": 72,
             "end": 79,
             "value": "5 pills",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           }
         ]
       },
       {
         "text": "I started to use coke in my early twenties at first on special occasions or parties",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 17,
@@ -1239,7 +1239,7 @@
       },
       {
         "text": "I have been back and forth with suboxone",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 32,
@@ -1251,7 +1251,7 @@
       },
       {
         "text": "I took one line of cocaine last night about 0.2 grams",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 27,
@@ -1263,13 +1263,13 @@
             "start": 44,
             "end": 53,
             "value": "0.2 grams",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           }
         ]
       },
       {
         "text": "Im 25 and tried mdma/X for the first time a few months ago",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 16,
@@ -1287,7 +1287,7 @@
       },
       {
         "text": "I went from pills to heroin",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 21,
@@ -1299,7 +1299,7 @@
       },
       {
         "text": "I have just started a 21 day detox from my methadone clinic",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 43,
@@ -1311,7 +1311,7 @@
       },
       {
         "text": "My 1 year (so far) , addiction to Sub, after Detox, started with 4 mg",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 34,
@@ -1323,13 +1323,13 @@
             "start": 65,
             "end": 69,
             "value": "4 mg",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           }
         ]
       },
       {
         "text": "I did the biggest mistake of my life - tried snorting cocaine on New years party",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 54,
@@ -1347,7 +1347,7 @@
       },
       {
         "text": "I have been off suboxone for 103 days, can't believe I was on it for 9 years",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 16,
@@ -1365,7 +1365,7 @@
       },
       {
         "text": "I have been casually taking coke for a while, but it’s become daily",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 62,
@@ -1383,7 +1383,7 @@
       },
       {
         "text": "I'm 50 years old, male and have been on methadone for the last 10 years",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 40,
@@ -1401,7 +1401,7 @@
       },
       {
         "text": "I am 30 and have been using drugs for about 10 years",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 34,
@@ -1419,13 +1419,13 @@
       },
       {
         "text": "I've been taking 10 mg hydrocodone for 2 years now",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 17,
             "end": 22,
             "value": "10 mg",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 23,
@@ -1443,7 +1443,7 @@
       },
       {
         "text": "I have abused prescription drugs since my high school days",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 14,
@@ -1455,13 +1455,13 @@
       },
       {
         "text": "I have been taking 30 mgs sometimes 60 mgs of percocet a day for the past 4 weeks",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 19,
             "end": 25,
             "value": "30 mgs",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 46,
@@ -1485,7 +1485,7 @@
       },
       {
         "text": "I was addicted to xanax about a year ago",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 18,
@@ -1503,7 +1503,7 @@
       },
       {
         "text": "I have been a user of opiates for approx. 4 years now",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 22,
@@ -1521,7 +1521,7 @@
       },
       {
         "text": "I had been drinking one 5-Hour Energy shot every day",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 20,
@@ -1539,17 +1539,17 @@
       },
       {
         "text": "my husband and myself have been snorting pills",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I am clean 35 days from Suboxone",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "i ve been taking coricidin for 9 years",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 17,
@@ -1567,7 +1567,7 @@
       },
       {
         "text": "I shot up meth",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 10,
@@ -1579,7 +1579,7 @@
       },
       {
         "text": "I have tried cocaine many times, but only in the last month",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 13,
@@ -1597,12 +1597,12 @@
       },
       {
         "text": "I've been giving myself straight dopamine for over a year and abruptly stopped",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I've been using cocaine on and off since the age of 17",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 16,
@@ -1614,7 +1614,7 @@
       },
       {
         "text": "For the past 4 days, I've taken a totally of 20 acetaminophen pills",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 0,
@@ -1632,13 +1632,13 @@
             "start": 45,
             "end": 47,
             "value": "20",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           }
         ]
       },
       {
         "text": "I am in the process of getting off of tramadol",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 38,
@@ -1650,7 +1650,7 @@
       },
       {
         "text": "I have been addicted to cocaine since one year",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 24,
@@ -1668,25 +1668,25 @@
       },
       {
         "text": "I have been taking between 90mg and 120mg of morphine sulfate a day for the last 6 years",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 27,
             "end": 31,
             "value": "90mg",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 36,
             "end": 41,
             "value": "120mg",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 45,
             "end": 61,
             "value": "morphine sulfate",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 68,
@@ -1704,7 +1704,7 @@
       },
       {
         "text": "First time I tried cocaine was 3 years ago",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 19,
@@ -1758,7 +1758,7 @@
             "start": 8,
             "end": 12,
             "value": "1 pk",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 13,
@@ -1776,7 +1776,7 @@
             "start": 14,
             "end": 24,
             "value": "12-15 cigs",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 26,
@@ -1800,7 +1800,7 @@
             "start": 60,
             "end": 70,
             "value": "five times",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 71,
@@ -1824,7 +1824,7 @@
             "start": 16,
             "end": 29,
             "value": "23 cigarettes",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           }
         ]
       },
@@ -1841,7 +1841,7 @@
             "start": 14,
             "end": 21,
             "value": "2 packs",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 22,
@@ -1859,7 +1859,7 @@
             "start": 37,
             "end": 44,
             "value": "5 ciggs",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 45,
@@ -1928,7 +1928,7 @@
             "start": 18,
             "end": 28,
             "value": "a lot more",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           }
         ]
       },
@@ -1952,7 +1952,7 @@
             "start": 43,
             "end": 49,
             "value": "1 Pack",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 50,
@@ -2078,7 +2078,7 @@
             "start": 21,
             "end": 27,
             "value": "a pack",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           },
           {
             "start": 28,
@@ -2102,7 +2102,7 @@
             "start": 55,
             "end": 60,
             "value": "a lot",
-            "entity": "treatment_dosing"
+            "entity": "dosing"
           }
         ]
       },
@@ -3236,7 +3236,7 @@
         "intent": "sleep",
         "entities": []
       },
-	{
+      {
         "text": "I don't know if I'm an alcoholic",
         "intent": "alcohol",
         "entities": []
@@ -3442,7 +3442,7 @@
       },
       {
         "text": "I should eat foods rich with Fiber, Calcium & Vitamin D",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
@@ -3453,60 +3453,60 @@
             "start": 13,
             "end": 23,
             "value": "159 pounds",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
       {
         "text": "I eat meat or fish",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I’m 28 and about 20 – 30 pounds overweight",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": [
           {
             "start": 17,
             "end": 31,
             "value": "20 – 30 pounds",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
       {
         "text": "I have to eat healthy to keep my cholesterol down",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "After lunch I have about 2 servings of fruit",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I have been eating Tortilla chips and Sugar cookies",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I struggle with weight issues as well",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I even restricted my banana intake",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "i am not fat nor too skinny",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I became Vegetarians at Easter",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
@@ -3517,28 +3517,28 @@
             "start": 12,
             "end": 24,
             "value": "10-15 pounds",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
       {
         "text": "my sole consolation for these past 3 years has been eating",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I'm vegetarian",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "Every morning I fill a large salad bowl with many different kinds of fruit",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "When I was 16, I stopped eating almost completely",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
@@ -3549,23 +3549,23 @@
             "start": 46,
             "end": 54,
             "value": "Anorexia",
-            "entity": "symptoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
       {
         "text": "i do drink coffee",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I used to worry about getting enough protein",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "having no appetite was a good excuse not to eat",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
@@ -3576,48 +3576,48 @@
             "start": 12,
             "end": 23,
             "value": "some weight",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
       {
         "text": "I've spent a lot of time eating vegetarian",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I was purging everyday because I ate calories",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I can eat some mild soups",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I've never purged either",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "i love to eat too much sweet",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "i managed to lose significant amount of fat on low carb diet",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I am NOT a normal drinker",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I'm on meds that increase my appetite",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
@@ -3628,18 +3628,18 @@
             "start": 20,
             "end": 31,
             "value": "some weight",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
       {
         "text": "I eat lunch and dinner",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I give a light sprinkle of cinnamon over the fruit every morning",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": [
           {
             "start": 51,
@@ -3651,12 +3651,12 @@
       },
       {
         "text": "I’m 34 years old and have spent over half my life being a slave to food",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I felt awful about my body and I only ate once or twice a week",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
@@ -3667,43 +3667,43 @@
             "start": 29,
             "end": 45,
             "value": "food intolerance",
-            "entity": "symptoms"
+            "entity": "pathology_symptom"
           }
         ]
       },
       {
         "text": "I'm a big health nut",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I dieted since I was 14",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I stress if I don't know what I'm eating",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I used to be an avid calorie counter",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I have had no appetite for some time",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I am trying to overcome my eating disorder",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I want change my diet first",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
@@ -3714,38 +3714,38 @@
             "start": 16,
             "end": 32,
             "value": "much more weight",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
       {
         "text": "Most of the times i prefer home cooked food",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I would start to panic and get anxious if I had to eat",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I also hate being so fat",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I just don't want to taste anything",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I ate only vegetables and fruits one day",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I struggled with no appetite for several months",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": [
           {
             "start": 29,
@@ -3757,32 +3757,32 @@
       },
       {
         "text": "I feel like my life is being run by food",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I should be careful not to get too much protein",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "The only grain I have been eating is oats",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "For lunch, I eat either 1 peach or nectarine",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I hope the purging doesn't increase more",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I want to get lean and lose more fat",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
@@ -3792,12 +3792,12 @@
       },
       {
         "text": "I like eating fruit or vegetable in large quantities",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I've been struggling on and off with restricting my food for the last five months or so",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": [
           {
             "start": 57,
@@ -3809,32 +3809,32 @@
       },
       {
         "text": "I also eat vegetables",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I drink a lot of water",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I was really cutting back on my meal plan",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I will never be free of these chains that food has on me",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I'm a healthy vegan",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I can't eat all the time",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": [
           {
             "start": 12,
@@ -3852,7 +3852,7 @@
             "start": 10,
             "end": 16,
             "value": "20 lbs",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           }
         ]
       },
@@ -3864,7 +3864,7 @@
             "start": 7,
             "end": 22,
             "value": "a ton of weight",
-            "entity": "weight"
+            "entity": "infoPatient_weight"
           },
           {
             "start": 39,
@@ -3876,27 +3876,27 @@
       },
       {
         "text": "I still count calories and weigh all of my food",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I'm losing weight healthy",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I do eat a healthy balanced diet",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I still struggle with feeling absolutely disguisting with my body",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I'm still counting calories",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
@@ -3913,17 +3913,17 @@
       },
       {
         "text": "I'm 28 and was eating disorder from the age of 13",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I cut back on the coffee and extreme creamer",
-        "intent": "eating_disorders",
+        "intent": "eatingDisorders",
         "entities": []
       },
       {
         "text": "I quit regular cannabis use very easily",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 15,
@@ -3935,12 +3935,12 @@
       },
       {
         "text": "I decided to taper down my use and to quit",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I was fighting with my brother to give my bottle of whisky back",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 52,
@@ -3952,7 +3952,7 @@
       },
       {
         "text": "I was addicted more to THC than nicotine",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 23,
@@ -3970,7 +3970,7 @@
       },
       {
         "text": "I tried coke at a club the other day",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 8,
@@ -3988,7 +3988,7 @@
       },
       {
         "text": "When the coke is all done I search out Meth",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 9,
@@ -4006,7 +4006,7 @@
       },
       {
         "text": "I've now not smoked cannabis in over twenty years",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 20,
@@ -4024,17 +4024,17 @@
       },
       {
         "text": "I would love to get some MDMA",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I end up hitting another hit about 10 mins later",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I've stopped the Ritalin but have one strip of suboxone left",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 17,
@@ -4052,7 +4052,7 @@
       },
       {
         "text": "The cocaine madness had to personally damage me socially, professionally, and financially",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 4,
@@ -4064,7 +4064,7 @@
       },
       {
         "text": "I started abusing pain pills heavily and increased that addiction to catastrophic proportions",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 18,
@@ -4088,7 +4088,7 @@
       },
       {
         "text": "I took a small line of meth",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 23,
@@ -4100,7 +4100,7 @@
       },
       {
         "text": "I had a cocaine habit many years ago",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 8,
@@ -4112,7 +4112,7 @@
       },
       {
         "text": "I started suboxone 6 days ago and I'm having a lot of pain all over my body",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 10,
@@ -4130,17 +4130,17 @@
       },
       {
         "text": "I began using MDMA with friends",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I was a daily stoner until I was 25 years old",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I just wanna calm down with coke",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 28,
@@ -4164,7 +4164,7 @@
       },
       {
         "text": "I'm supposed to take 6 35mg tablets a day but I have taken 20 today",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 21,
@@ -4182,12 +4182,12 @@
       },
       {
         "text": "I can say weed is only physically addictive",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I was taking 4-80 mg Oxycontin a day and i have beat that addiction",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 13,
@@ -4211,12 +4211,12 @@
       },
       {
         "text": "I do not want to drink anymore",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "i have been using coke and weed for a long period",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 18,
@@ -4240,7 +4240,7 @@
       },
       {
         "text": "I want to get completely off the Adderall",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 33,
@@ -4252,7 +4252,7 @@
       },
       {
         "text": "I have been through the withdrawal of opiates",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 38,
@@ -4264,17 +4264,17 @@
       },
       {
         "text": "I really want to get completely off the Adderall",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I don’t know if moderation is right for me",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I know that marijuana can cause physical dependence",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 12,
@@ -4286,7 +4286,7 @@
       },
       {
         "text": "I've been trying to get sober for a few months now",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 30,
@@ -4298,7 +4298,7 @@
       },
       {
         "text": "I started coke just fine",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 10,
@@ -4310,7 +4310,7 @@
       },
       {
         "text": "I have just been on painpills for a year and am trying to get off",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 20,
@@ -4328,7 +4328,7 @@
       },
       {
         "text": "I find it somewhat fun to smoke crack",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 32,
@@ -4340,7 +4340,7 @@
       },
       {
         "text": "I was smoking it for over an year",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 14,
@@ -4388,7 +4388,7 @@
       },
       {
         "text": "My doc was helpful getting me off the norcos/opiates",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 38,
@@ -4400,7 +4400,7 @@
       },
       {
         "text": "I've got myself addicted to Xanax, a drug that is very hard to get off of",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 28,
@@ -4412,7 +4412,7 @@
       },
       {
         "text": "I started sniffing coke as a teenager",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 19,
@@ -4424,7 +4424,7 @@
       },
       {
         "text": "I ended up back on the pain pills",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 23,
@@ -4441,7 +4441,7 @@
       },
       {
         "text": "For me, cocaine was never even enjoyable",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 8,
@@ -4453,7 +4453,7 @@
       },
       {
         "text": "When I drink I buy coke",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 19,
@@ -4465,7 +4465,7 @@
       },
       {
         "text": "I'm currently on the diet drug phendimetrazine once again",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 31,
@@ -4477,7 +4477,7 @@
       },
       {
         "text": "I'm not a huge fan of meth",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 22,
@@ -4489,7 +4489,7 @@
       },
       {
         "text": "I have been addicted to pain pills for 8 years",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 24,
@@ -4507,12 +4507,12 @@
       },
       {
         "text": "I have a full day sober now",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I started taking too much Adderall",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 26,
@@ -4524,7 +4524,7 @@
       },
       {
         "text": "When I took the vicodin I felt like a different person",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 16,
@@ -4548,7 +4548,7 @@
       },
       {
         "text": "I stopped, because I hate being addicted to Percoset",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 44,
@@ -4560,7 +4560,7 @@
       },
       {
         "text": "I fear getting addicted as there is my issue with Dinintel",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 50,
@@ -4572,7 +4572,7 @@
       },
       {
         "text": "I hadn't done was to smoke crack until tonight",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 27,
@@ -4584,7 +4584,7 @@
       },
       {
         "text": "I use cannabis every day, and yet do not get high",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 6,
@@ -4602,7 +4602,7 @@
       },
       {
         "text": "When I was younger (teens) I liked to do crystal meth on occasion",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 41,
@@ -4620,7 +4620,7 @@
       },
       {
         "text": "The first 4, 5 times I smoked crack, I could take or leave it",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 30,
@@ -4632,7 +4632,7 @@
       },
       {
         "text": "I want to get off Norco 10-325 and Soma 350mg badly slow slow taper",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 18,
@@ -4650,12 +4650,12 @@
       },
       {
         "text": "I gave few breaks ever since but Im daily snorting",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I went through withdrawal from oxycodone",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 31,
@@ -4667,12 +4667,12 @@
       },
       {
         "text": "I was clean for a while",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "it still feels as if I smoked my last joint yesterday",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 38,
@@ -4690,7 +4690,7 @@
       },
       {
         "text": "I was afraid of antidepressants",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 16,
@@ -4702,12 +4702,12 @@
       },
       {
         "text": "I drink too much and wake up with a hangover",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I am addicted to cough syrup",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 17,
@@ -4719,17 +4719,17 @@
       },
       {
         "text": "I had to get clean",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I'm new to sobriety",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I have smoked cannabis regularly in probably 5 years",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 14,
@@ -4741,7 +4741,7 @@
       },
       {
         "text": "I've not used or even desired to use cocaine for the better part of four years",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 37,
@@ -4759,7 +4759,7 @@
       },
       {
         "text": "Heroin didn't do much for me",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 0,
@@ -4771,7 +4771,7 @@
       },
       {
         "text": "I've only tried crack once",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 16,
@@ -4795,7 +4795,7 @@
       },
       {
         "text": "i have been addicted to pain med for a long time",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 24,
@@ -4807,12 +4807,12 @@
       },
       {
         "text": "I would also look into going to some kind of outpatient chemical dependency",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "it is the longest period in my life being sober since my first joint when I was 19",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 63,
@@ -4824,7 +4824,7 @@
       },
       {
         "text": "I'm not sure which is worse, vicodin or methadone",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 29,
@@ -4842,7 +4842,7 @@
       },
       {
         "text": "I currently smoke cannabis maybe once or twice a month",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 18,
@@ -4860,7 +4860,7 @@
       },
       {
         "text": "i did coke pretty daily",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 6,
@@ -4878,7 +4878,7 @@
       },
       {
         "text": "I'm on Subs and I'd consider myself FAR,FAR from \"CLEAN\"",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 7,
@@ -4890,7 +4890,7 @@
       },
       {
         "text": "As the cannabis leaves my system, I get more and more lethargic",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 7,
@@ -4902,12 +4902,12 @@
       },
       {
         "text": "I’ve been Cold Turkeying 2+ years now",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I was smoking weed as much as I can",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 14,
@@ -4931,7 +4931,7 @@
       },
       {
         "text": "I just got off detox with Klonopin",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 26,
@@ -4943,7 +4943,7 @@
       },
       {
         "text": "I bought Adderall on the street too and would take 30 mg every 3 hrs for up to 5 days",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 9,
@@ -4973,12 +4973,12 @@
       },
       {
         "text": "I’m strong enough to resist the urge to binge",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I have a severe addiction to Xanax I have been on them for 18 years",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 29,
@@ -4996,12 +4996,12 @@
       },
       {
         "text": "I have now been taking Vicodin daily for about 7 years",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I am 56 years old, and have been using cannabis for 40 years",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 39,
@@ -5019,7 +5019,7 @@
       },
       {
         "text": "Today I filled my morphine",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 18,
@@ -5037,7 +5037,7 @@
       },
       {
         "text": "I tried ecstasy for the first time tonight",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 8,
@@ -5049,7 +5049,7 @@
       },
       {
         "text": "I have reduced my codeine intake from 8-9bottles to 2-4bottles in a day",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 18,
@@ -5079,12 +5079,12 @@
       },
       {
         "text": "I decided to go out for some drinks",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I first got on weed",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 15,
@@ -5114,12 +5114,12 @@
       },
       {
         "text": "my downfall is the first 2 to 3 weeks of attempted abstinence",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "i tried coke for the first time",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 8,
@@ -5131,7 +5131,7 @@
       },
       {
         "text": "At one point in my life I was addicted to any and all pain medicine",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 54,
@@ -5143,7 +5143,7 @@
       },
       {
         "text": "although i have done LSD",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 21,
@@ -5155,12 +5155,12 @@
       },
       {
         "text": "I went to AA for a year",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I have done Ecstacy about 3 or 4 times",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 12,
@@ -5178,7 +5178,7 @@
       },
       {
         "text": "ive been getting 3 or 4 grams a week",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 17,
@@ -5196,12 +5196,12 @@
       },
       {
         "text": "I gradually became addicted because I would become very sleepy without them",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I started doing cocaine on a daily basis since 5 days",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 16,
@@ -5225,7 +5225,7 @@
       },
       {
         "text": "I got ulcers in my small intestines from taking too much Ibuprofen",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 57,
@@ -5237,7 +5237,7 @@
       },
       {
         "text": "Now after 2+ years sober I’m still scared",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
@@ -5247,7 +5247,7 @@
       },
       {
         "text": "I use to smoke $1000 a night",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 15,
@@ -5259,7 +5259,7 @@
       },
       {
         "text": "I make bad decisions when taking cocaine",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 33,
@@ -5271,7 +5271,7 @@
       },
       {
         "text": "I have been smoking usually a gram to 1 1/2 grams daily for the past 10 years",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 28,
@@ -5295,7 +5295,7 @@
       },
       {
         "text": "I had a hard time quitting weed",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 27,
@@ -5307,7 +5307,7 @@
       },
       {
         "text": "I can actually enjoy cannabis these days",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 21,
@@ -5319,7 +5319,7 @@
       },
       {
         "text": "Im at Meth currently",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 6,
@@ -5331,7 +5331,7 @@
       },
       {
         "text": "i used to take 8-9 bottles of cough syrup containing codeine in a day",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 15,
@@ -5355,7 +5355,7 @@
       },
       {
         "text": "I just personally found cannabis the hardest drug to quit",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 24,
@@ -5372,7 +5372,7 @@
       },
       {
         "text": "The VA started me on valium in 1968 and have been on it since then",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 21,
@@ -5395,7 +5395,7 @@
       },
       {
         "text": "I'm running low on my valium and about to have to skip days",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 22,
@@ -5407,7 +5407,7 @@
       },
       {
         "text": "I smoke pot multiple times a day and use drugs recreationally",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 8,
@@ -5425,7 +5425,7 @@
       },
       {
         "text": "I find that cannabis \"facilitates\" mild psychotic conditions",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 12,
@@ -5437,7 +5437,7 @@
       },
       {
         "text": "I was on this pill until the age of 18",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 14,
@@ -5449,7 +5449,7 @@
       },
       {
         "text": "Every time I have tried cocaine here, it was wack",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 24,
@@ -5461,17 +5461,17 @@
       },
       {
         "text": "I've fallen into another period of prescription medication abuse",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I went through a rehab and that really helped to get clean",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "i struggled with meth",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 17,
@@ -5483,7 +5483,7 @@
       },
       {
         "text": "I've officially tried every drug",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 22,
@@ -5495,12 +5495,12 @@
       },
       {
         "text": "What I found out in these weed-free 2+ years is how difficult is to quit weed",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I had an on-and-off opiate/opioid habit from about 2010",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 20,
@@ -5518,7 +5518,7 @@
       },
       {
         "text": "i snorted cocaine on saturday from 9pm and had about 7 bumps through the whole night",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 21,
@@ -5536,7 +5536,7 @@
       },
       {
         "text": "I bought a gram yesterday and have been taking bump",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 9,
@@ -5554,7 +5554,7 @@
       },
       {
         "text": "I self medicated with the random run in with Xanax",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 45,
@@ -5566,7 +5566,7 @@
       },
       {
         "text": "I would do 4-6 small-medium sized lines",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 11,
@@ -5602,7 +5602,7 @@
       },
       {
         "text": "I abused fentanyl as well",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 9,
@@ -5614,7 +5614,7 @@
       },
       {
         "text": "So Today and yesterday I been on speed",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 33,
@@ -5638,7 +5638,7 @@
       },
       {
         "text": "I was taking 200mg capsules of MDMA",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 13,
@@ -5656,7 +5656,7 @@
       },
       {
         "text": "When i quit i was taking 320mg's Oxycontin a day",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 25,
@@ -5680,7 +5680,7 @@
       },
       {
         "text": "I smoke weed regulary",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 8,
@@ -5698,7 +5698,7 @@
       },
       {
         "text": "I'm entering day 3 of going cold turkey from a nasty addiction to dialaudid",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 66,
@@ -5710,7 +5710,7 @@
       },
       {
         "text": "I have been taking Percoset/Norco for over three years",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 19,
@@ -5728,7 +5728,7 @@
       },
       {
         "text": "I am using kratom for opiate withdrawal",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 11,
@@ -5740,7 +5740,7 @@
       },
       {
         "text": "I'm currently dealing with an pill addiction problem",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 30,
@@ -5752,7 +5752,7 @@
       },
       {
         "text": "I've developed a severe addiction to opioids",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 37,
@@ -5764,7 +5764,7 @@
       },
       {
         "text": "I used cannabis to self medicate",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 7,
@@ -5776,7 +5776,7 @@
       },
       {
         "text": "I got about .3 of some crack yesterday",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 12,
@@ -5800,7 +5800,7 @@
       },
       {
         "text": "I popped 1 pill & about an hour later only felt a little",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 9,
@@ -5812,7 +5812,7 @@
       },
       {
         "text": "I was high on meth before I tried it too",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 14,
@@ -5824,7 +5824,7 @@
       },
       {
         "text": "I tried any kind of pain medicine as long as I could feel that high",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 20,
@@ -5836,7 +5836,7 @@
       },
       {
         "text": "I take between 6 and 12 headache pills a day and I know that its not good for my health",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 15,
@@ -5854,22 +5854,22 @@
       },
       {
         "text": "I have drastically cut down on the number of days that I drink",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I always drink heavily when coming down",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "It took me 15 years to quit",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I'm ready to stop ruining my life for pills",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 38,
@@ -5881,7 +5881,7 @@
       },
       {
         "text": "i had a very bad problem with pills",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 30,
@@ -5893,12 +5893,12 @@
       },
       {
         "text": "I'm a recreational drug user",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": []
       },
       {
         "text": "I have this weird fear of swallowing pills",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 37,
@@ -5910,7 +5910,7 @@
       },
       {
         "text": "Ive been snorting since January",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 18,
@@ -5927,7 +5927,7 @@
       },
       {
         "text": "I can take a few lines or a few tokes",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 13,
@@ -5939,7 +5939,7 @@
       },
       {
         "text": "My go to poison of choice is cocaine",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 29,
@@ -5956,7 +5956,7 @@
       },
       {
         "text": "i am popping 4 pills a day",
-        "intent": "drug_addiction",
+        "intent": "drugAddiction",
         "entities": [
           {
             "start": 13,
@@ -11580,7 +11580,7 @@
         ]
       },
       {
-        "text": "i have flu-like symptoms",
+        "text": "i have flu-like pathology_symptom",
         "intent": "pathology",
         "entities": [
           {
@@ -22621,16 +22621,16 @@
         "intent": "treatment",
         "entities": [
           {
-            "start": 17,
-            "end": 36,
-            "value": " Remicade infusions",
-            "entity": "drug"
-          },
-          {
             "start": 37,
             "end": 48,
             "value": "for 3 years",
             "entity": "duration"
+          },
+          {
+            "start": 18,
+            "end": 36,
+            "value": "Remicade infusions",
+            "entity": "drug"
           }
         ]
       },
@@ -22779,9 +22779,9 @@
             "entity": "drug"
           },
           {
-            "start": 33,
+            "start": 34,
             "end": 49,
-            "value": " end of December",
+            "value": "end of December",
             "entity": "time"
           }
         ]
@@ -22799,7 +22799,7 @@
         ]
       },
       {
-        "text": "started taking hydroxychloroquine about 2 weeks ago ",
+        "text": "started taking hydroxychloroquine about 2 weeks ago",
         "intent": "treatment",
         "entities": [
           {
@@ -22810,8 +22810,8 @@
           },
           {
             "start": 40,
-            "end": 52,
-            "value": "2 weeks ago ",
+            "end": 51,
+            "value": "2 weeks ago",
             "entity": "time"
           }
         ]
@@ -22898,7 +22898,7 @@
         "intent": "treatment",
         "entities": []
       },
-	{
+      {
         "text": "I smoke just 1 Cigarette a day , not more than that",
         "intent": "risk",
         "entities": []
@@ -23038,7 +23038,11 @@
         "intent": "risk",
         "entities": []
       },
-      {"text": "I was a 1 pk a day smoker", "intent": "risk", "entities": []},
+      {
+        "text": "I was a 1 pk a day smoker",
+        "intent": "risk",
+        "entities": []
+      },
       {
         "text": "One time I drank 1/3 of a 1L bottle of whiskey in 30 minutes",
         "intent": "risk",
@@ -23059,7 +23063,11 @@
         "intent": "risk",
         "entities": []
       },
-      {"text": "I shot up meth", "intent": "risk", "entities": []},
+      {
+        "text": "I shot up meth",
+        "intent": "risk",
+        "entities": []
+      },
       {
         "text": "I'm in end stage of alcohol addiction",
         "intent": "risk",
@@ -23155,7 +23163,11 @@
         "intent": "risk",
         "entities": []
       },
-      {"text": "I have a love of alcohol", "intent": "risk", "entities": []},
+      {
+        "text": "I have a love of alcohol",
+        "intent": "risk",
+        "entities": []
+      },
       {
         "text": "I have due to the alcohol I used to drink",
         "intent": "risk",
@@ -23186,8 +23198,16 @@
         "intent": "risk",
         "entities": []
       },
-      {"text": "I am on 60 mg. of meth", "intent": "risk", "entities": []},
-      {"text": "I went from pills to heroin", "intent": "risk", "entities": []},
+      {
+        "text": "I am on 60 mg. of meth",
+        "intent": "risk",
+        "entities": []
+      },
+      {
+        "text": "I went from pills to heroin",
+        "intent": "risk",
+        "entities": []
+      },
       {
         "text": "I pretty much drink between 1 and 2 bottles of white wine a night",
         "intent": "risk",
@@ -23223,7 +23243,11 @@
         "intent": "risk",
         "entities": []
       },
-      {"text": "I am a true drinker", "intent": "risk", "entities": []},
+      {
+        "text": "I am a true drinker",
+        "intent": "risk",
+        "entities": []
+      },
       {
         "text": "i drank less last night and same today",
         "intent": "risk",
@@ -23294,7 +23318,11 @@
         "intent": "risk",
         "entities": []
       },
-      {"text": "I'm a drunk", "intent": "risk", "entities": []},
+      {
+        "text": "I'm a drunk",
+        "intent": "risk",
+        "entities": []
+      },
       {
         "text": "I've been taking 10mg hydrocodone for 2 years now",
         "intent": "risk",
@@ -23310,7 +23338,11 @@
         "intent": "risk",
         "entities": []
       },
-      {"text": "Ive started smoke less", "intent": "risk", "entities": []},
+      {
+        "text": "Ive started smoke less",
+        "intent": "risk",
+        "entities": []
+      },
       {
         "text": "I drink six ounces of vodka average per day",
         "intent": "risk",
@@ -23466,7 +23498,11 @@
         "intent": "risk",
         "entities": []
       },
-      {"text": "I really do love smoking", "intent": "risk", "entities": []},
+      {
+        "text": "I really do love smoking",
+        "intent": "risk",
+        "entities": []
+      },
       {
         "text": "I quit smoking just over one month ago",
         "intent": "risk",
@@ -23502,7 +23538,11 @@
         "intent": "risk",
         "entities": []
       },
-      {"text": "I drink white wine", "intent": "risk", "entities": []},
+      {
+        "text": "I drink white wine",
+        "intent": "risk",
+        "entities": []
+      },
       {
         "text": "I had weaned down from 50mg of methadone to 40mg in two months",
         "intent": "risk",
@@ -23543,7 +23583,11 @@
         "intent": "risk",
         "entities": []
       },
-      {"text": "i went to detox for 21 days", "intent": "risk", "entities": []},
+      {
+        "text": "i went to detox for 21 days",
+        "intent": "risk",
+        "entities": []
+      },
       {
         "text": "I was addicted to xanax about a year ago",
         "intent": "risk",
@@ -23604,7 +23648,11 @@
         "intent": "risk",
         "entities": []
       },
-      {"text": "Now I am totally clean", "intent": "risk", "entities": []},
+      {
+        "text": "Now I am totally clean",
+        "intent": "risk",
+        "entities": []
+      },
       {
         "text": "I'm restricting all day",
         "intent": "Eating disorders",
@@ -23970,7 +24018,11 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I work nights", "intent": "sleep", "entities": []},
+      {
+        "text": "I work nights",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "I started waking up in the morning with completely numb hands",
         "intent": "sleep",
@@ -23991,7 +24043,11 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I wake up panicking", "intent": "sleep", "entities": []},
+      {
+        "text": "I wake up panicking",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "I was dreaming about when being disturbed in light sleep",
         "intent": "sleep",
@@ -24147,7 +24203,11 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I keep a sleep journal", "intent": "sleep", "entities": []},
+      {
+        "text": "I keep a sleep journal",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "I know sleep patterns can begin to change around this age",
         "intent": "sleep",
@@ -24193,8 +24253,16 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I’ll shut my eyes", "intent": "sleep", "entities": []},
-      {"text": "My own snore wakes me up", "intent": "sleep", "entities": []},
+      {
+        "text": "I’ll shut my eyes",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "My own snore wakes me up",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "So this routine is really not the best thing in the world for me",
         "intent": "sleep",
@@ -24220,7 +24288,11 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I don’t wake up too early", "intent": "sleep", "entities": []},
+      {
+        "text": "I don’t wake up too early",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "But sometimes if the sleep is bad, I feel even more tired",
         "intent": "sleep",
@@ -24451,7 +24523,11 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "my eyes sometimes paining", "intent": "sleep", "entities": []},
+      {
+        "text": "my eyes sometimes paining",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "my sleep pattern was permanently shot in my mid-20s",
         "intent": "sleep",
@@ -24587,7 +24663,11 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I'm a very light sleeper", "intent": "sleep", "entities": []},
+      {
+        "text": "I'm a very light sleeper",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "I was in bed at 9:30pm every night, then would read a bit with lights out by 10pm",
         "intent": "sleep",
@@ -24603,7 +24683,11 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I developed sleep anxiety", "intent": "sleep", "entities": []},
+      {
+        "text": "I developed sleep anxiety",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "I feel tired already after 11 a.m",
         "intent": "sleep",
@@ -24629,14 +24713,26 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I just cant go to sleep", "intent": "sleep", "entities": []},
-      {"text": "it felt like i slept worse", "intent": "sleep", "entities": []},
+      {
+        "text": "I just cant go to sleep",
+        "intent": "sleep",
+        "entities": []
+      },
+      {
+        "text": "it felt like i slept worse",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "then 5 hours later i go back to sleep for another 2 or so hours",
         "intent": "sleep",
         "entities": []
       },
-      {"text": "I'm still waking up early", "intent": "sleep", "entities": []},
+      {
+        "text": "I'm still waking up early",
+        "intent": "sleep",
+        "entities": []
+      },
       {
         "text": "when I'm not in work I've got 19 hours to try to stay awake",
         "intent": "sleep",
@@ -24737,7 +24833,11 @@
         "intent": "sleep",
         "entities": []
       },
-      {"text": "Im going to have a drink", "intent": "social", "entities": []}
+      {
+        "text": "Im going to have a drink",
+        "intent": "social",
+        "entities": []
+      }
     ]
   }
 }
