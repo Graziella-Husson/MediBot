@@ -13,6 +13,7 @@ from insertfonction import insert_to_conversation
 def get_utterance(key, language, list_infos=None):
     """@param key: id of the sentence to search for in ressources.json file
     @param language: language to use
+    @param list_infos: list of infos to insert in utterance
     @return: the utterance the bot have to say for a given key and language"""
     ressources = json.load(open('./ressources/ressources.json'))
     utterance = ressources['utterances'][key][language]
