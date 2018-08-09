@@ -138,18 +138,6 @@ Or with cross validation (f=10 folds):
 python3 -m rasa_nlu.evaluate -d data/data.json -c config/conf.yml --mode crossvalidation -f 10
 ```
 
-## Train bot :books:
-```
-python3 train_init.py
-```
-To train 'online' (interactive learning):
-
-```
-python3 train_online.py
-```
-
-Creates a file (stories.md by default). You have to add it into the stories.md file in the data folder
-
 ### Vizualize your stories :eyes:
 
 You can vizualize your stories by using graphviz. 
@@ -157,43 +145,4 @@ You can vizualize your stories by using graphviz.
 sudo apt-get install graphviz libgraphviz-dev graphviz-dev pkg-config
 sudo pip3 install git+https://github.com/pygraphviz/pygraphviz
 python3 vizualize.py
-```
-
-## Talk to bot :space_invader:
-
-```
-python3 run_dialogue.py
-```
-
-## Link your bot to a slack :electric_plug:
-To link your bot to your slack you will need some tokens. You will find them in your api.slack.com app dashboard. Be sure to add a user bot and import the app into your workspace and a channel.
-Add them in the file run_app.py then,
-
-```
-python3 run_app.py
-```
-
-Use ngrok to have the path to link into your api.slack.com app dashboard:
-
-```
-./ngrok http 5004
-```
-
-Then copy-paste the https URL in your api.slack.com app dashboard 'event-subscriptions' and add /webhook at the end.
-When its saved, you will be able to talk to your bot in slack!
-
-If your bot is using buttons, you will have to allow slack to use them. Go to the 'interactive component' part from dashboard on your api.slack.com app then add the https URL you took from ngrok and paste it in the request URL (allow interactive component first) and add /webhook at the end.
-When its saved, you will be able to talk to your bot in slack with buttons!
-
-## Improve the doc 
-In actions folder :
-
-```
-epydoc ask_what.py complex_sets.py form_actions.py init_and_complex.py level_classifiers.py reminders.py reset_slots.py ressources.py simple_actions.py rasa_core/actions/action.py rasa_core/actions/forms.py --config epydoc_config 
-```
-
-For a class and package diagramm:
-
-```
-pyreverse -o pdf  ask_what.py complex_sets.py form_actions.py init_and_complex.py level_classifiers.py reminders.py reset_slots.py ressources.py simple_actions.py rasa_core/actions/action.py rasa_core/actions/forms.py
 ```
