@@ -12,6 +12,8 @@
 
 # print(foo)
 #from appli.models import ENTITY, SESSION, CONVERSATION, PATIENT_DETAILS,ANSWER, PATIENT_BOT
+from datetime import datetime as dt
+from datetime import timedelta
 
 def insert_to_answer(value,session,entity,slack_id,conversation):
     print("insert_to_answer")
@@ -23,7 +25,7 @@ def insert_to_answer(value,session,entity,slack_id,conversation):
 #	answer = ANSWER(answer_value=value,answer_is_fallback=False,session_id=session_obj,entity_id=entity_obj,patient_id=patient_obj,conversation_id=conversation_obj)
 #	answer.save()
 
-def insert_to_conversation(data,speaker,slack_id):
+def insert_to_conversation(data,speaker):
     print("insert_to_conversation")
 #	patient_id=PATIENT_BOT.objects.get(patient_bot_slack_id=slack_id).value('patient_id')
 #	patient_obj=PATIENT_DETAILS.objects.get(id=patient_id)
@@ -35,7 +37,7 @@ def get_id_patient(slack_id):
 #	return PATIENT_BOT.objects.get(patient_bot_slack_id=slack_id).values('patient_id')
 
 def get_follow_insert_trigger_date(slack_id):
-    return "patient_bot_follow_intent_trigger_date"
+    return dt.now() + timedelta(seconds=10)
 #	return PATIENT_BOT.objects.get(patient_bot_slack_id=slack_id).values('patient_bot_follow_intent_trigger_date')
 
 def get_last_session(slack_id):
@@ -43,7 +45,7 @@ def get_last_session(slack_id):
 #	return PATIENT_BOT.objects.get(patient_bot_slack_id=slack_id).values('patient_bot_last_session')
 
 def get_end_date(slack_id):
-    return "patient_bot_end_date"
+    return dt.now() + timedelta(seconds=120)
 #	return PATIENT_BOT.objects.get(patient_bot_slack_id=slack_id).values('patient_bot_end_date')
 
 def get_first(slack_id):
@@ -51,7 +53,7 @@ def get_first(slack_id):
 #	return PATIENT_BOT.objects.get(patient_bot_slack_id=slack_id).values('patient_bot_first')
 
 def get_begin_date(slack_id):
-    return "patient_bot_begin_date"
+    return dt.now()
 #	return PATIENT_BOT.objects.get(patient_bot_slack_id=slack_id).values('patient_bot_begin_date')
 
 def set_follow_insert_trigger_date(slack_id,new_value):
@@ -89,3 +91,10 @@ def set_follow_reminder(slack_id,new_value):
 
 def get_follow_reminder(slack_id):
     return "[{\"a\":\"b\",\"c\":\"d\"}, {\"e\":\"f\"}]"
+
+def set_followed_triggered(slack_id, new_value):
+    print("set_followed_triggered", new_value)
+
+def get_followed_triggered(slack_id):
+    return "[pain,social]"
+    
