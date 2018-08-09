@@ -31,6 +31,7 @@ import insertfonction as db
 global CONFIG, MANDATORIES, REMINDER_PATIENT, REMINDER_END_SESSION, REMINDER_PATIENT_LITTLE, DUCKLING_WRAPPER, LANGUAGE_GLOBAL, COMPLEX_ENTITIES
 CONFIG = yaml.load(open('./ressources/config.yml'))
 MANDATORIES = dict()
+SESSION_ID = None
 REMINDER_PATIENT = timedelta(seconds=0)
 REMINDER_END_SESSION = timedelta(seconds=0)
 REMINDER_PATIENT_LITTLE = timedelta(seconds=0)
@@ -45,6 +46,15 @@ COMPLEX_ENTITIES = ["time",
                     "temperature",
                     "drug",
                     "dosing"]
+
+
+def get_session_id():
+    return SESSION_ID
+
+
+def set_session_id(value):
+    global SESSION_ID
+    SESSION_ID = value
 
 
 def set_begin_date_in_db(slack_id):
@@ -170,6 +180,7 @@ def load_config(current_session, to_return):
     exitword = str(CONFIG['exit'])
     LANGUAGE_GLOBAL = str(CONFIG['language'])
     count_user_reminder_max = CONFIG['count_user_reminder_max']
+    set_session_id(str(CONFIG['sessions'][current_session]['session_id']))
     to_return.append(SlotSet("stopword", stopword))
     to_return.append(SlotSet("emergency", emergency))
     to_return.append(SlotSet("nickname", nickname))
@@ -407,7 +418,7 @@ def check(to_return, intent, entities, tracker, dispatcher, response, domain):
         exitword = tracker.get_slot("exitword")
         if response == emergency:
             #TODO : send a notification instead
-            dispatcher.utter_message(get_utterance("emergency", language))
+            dispatcher.utter_message(get_utterance("emergency", language, tracker.sender_id))
             SumUpSLots().run(dispatcher, tracker, domain)
             action = ActionListen()
             tracker.trigger_follow_up_action(action)
@@ -421,7 +432,7 @@ def check(to_return, intent, entities, tracker, dispatcher, response, domain):
                         to_return.append(UserUtteranceReverted())
                     return to_return
         elif response == exitword:
-            dispatcher.utter_message(get_utterance("exit", language))
+            dispatcher.utter_message(get_utterance("exit", language, tracker.sender_id))
             SumUpSLots().run(dispatcher, tracker, domain)
             action = ActionListen()
             tracker.trigger_follow_up_action(action)
@@ -575,7 +586,7 @@ class SaveConv(Action):
 #            to_return.append(ReminderScheduled("session_end_reminder",
 #                                               date_end - REMINDER_END_SESSION,
 #                                               kill_on_user_message=False))
-            dispatcher.utter_message(get_utterance("welcome", language, [nickname]))
+            dispatcher.utter_message(get_utterance("welcome", language, tracker.sender_id, [nickname]))
         [intent, entities, to_return, response] = save(tracker, to_return)
 #        db.insert_to_conversation(response, "PATIENT", tracker.sender_id)
         db.insert_to_conversation(response, "PATIENT")

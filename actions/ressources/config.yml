@@ -1,3 +1,4 @@
+project_id: '1'
 language: 'ENG'
 follow_in_current_session_plus: 1
 reminder_end_session:
@@ -8,6 +9,7 @@ reminder_patient_little:
   minutes: '1'
 sessions:
   1:
+    session_id: '34'
     duration:
       minutes: '2'
     followed_intent: None
@@ -25,6 +27,7 @@ sessions:
       alcohol: alcohol_period,alcohol_dosing,alcohol_duration,alcohol_time
 
   2:
+    session_id: '35'
     duration:
       minutes: '2'
     followed_intent: None

@@ -15,7 +15,7 @@
 from datetime import datetime as dt
 from datetime import timedelta
 
-def insert_to_answer(value,session,entity,slack_id,conversation):
+def insert_to_answer(value,session,entity,slack_id):
     print("insert_to_answer")
 #	entity_obj=ENTITY.objects.get(entity_name=entity)
 #	session_obj=SESSION.objects.get(session_id=session)

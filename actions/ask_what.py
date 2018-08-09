@@ -27,7 +27,7 @@ def get_buttons_simple(buttons, slot_name, tracker, language, intent_name, other
         else:
             to_search_in_ressources = slot_name+"_button"
         if other_value is None or (other_value is not None and slot_value != other_value):
-            slot_button = get_utterance(to_search_in_ressources, language)
+            slot_button = get_utterance(to_search_in_ressources, language, tracker.sender_id)
             buttons.append(Button(title=slot_button,
                                   payload="/"+intent_name+"{\""+slot_name+"\":null}"))
     return buttons
@@ -49,7 +49,7 @@ def get_buttons_multiple(buttons, slot_names, tracker, language, intent_name, to
     if to_check_value is not None:
         for slot_name in slot_names:
             to_search_in_ressources = slot_name+"_button"
-            slot_button = get_utterance(to_search_in_ressources, language)
+            slot_button = get_utterance(to_search_in_ressources, language, tracker.sender_id)
             if slot_name != to_check:
                 buttons.append(Button(title=slot_button,
                                       payload="/"+intent_name+"{\""+intent_name+"_"+slot_name+"\":\"Incorrect\"}"))
@@ -75,7 +75,7 @@ def get_buttons_boolean(buttons, slot_name, tracker, language, intent_name, butt
             to_search_in_ressources = button_name
         else:
             to_search_in_ressources = slot_name+"_button"
-        slot_button = get_utterance(to_search_in_ressources, language)
+        slot_button = get_utterance(to_search_in_ressources, language, tracker.sender_id)
         if slot_value:
             buttons.append(Button(title=slot_button,
                                   payload="/"+intent_name+"{\""+slot_name+"\":false}"))
@@ -123,7 +123,7 @@ class AskWhatAction(Action):
         for button in self.multiple_buttons:
             buttons = get_buttons_multiple(buttons, button[0], tracker, language, self.intent_name, button[1])
         if len(buttons) > 0:
-            message = get_utterance("ask_what", language)
+            message = get_utterance("ask_what", language, tracker.sender_id)
             dispatcher.utter_button_message(message, buttons)
 
 

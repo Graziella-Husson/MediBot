@@ -10,7 +10,7 @@ from duckling.language import Language
 from insertfonction import insert_to_conversation
 
 
-def get_utterance(key, language, list_infos=None):
+def get_utterance(key, language, slack_id, list_infos=None):
     """@param key: id of the sentence to search for in ressources.json file
     @param language: language to use
     @param list_infos: list of infos to insert in utterance
@@ -19,7 +19,7 @@ def get_utterance(key, language, list_infos=None):
     utterance = ressources['utterances'][key][language]
     if list_infos is not None:
         utterance = utterance.format(*list_infos)
-    insert_to_conversation(utterance, "BOT")
+    insert_to_conversation(utterance, "BOT", slack_id)
     return utterance
 
 
@@ -45,7 +45,7 @@ def get_examples_classif(level_type, keys, language):
     return examples_classif
 
 
-def get_drug_info(drug, language):
+def get_drug_info(drug, language, slack_id):
     """@param drug: drug name or marketing name of the drug
     @return: call C{clean_info_drug} method with list of drug found in file
     [propriety_name, non_propriety_name, subst_name, pharm_classes]
@@ -63,10 +63,10 @@ def get_drug_info(drug, language):
             if drug in [x.lower() for x in row]:
                 infos = [row[3], row[5], row[13], row[16]]
                 to_return.append(infos)
-    return clean_info_drug(to_return, drug, language)
+    return clean_info_drug(to_return, drug, language, slack_id)
 
 
-def clean_info_drug(list_infos, drug, language):
+def clean_info_drug(list_infos, drug, language, slack_id):
     """@param list_infos: list of infos for several drugs with a name in common
     @return: [propriety_names, non_propriety_names, subst_names, pharm_classes]
     if drug is not found in file, returns ['drug (default value)',
@@ -89,7 +89,7 @@ def clean_info_drug(list_infos, drug, language):
     count = 0
     for inf in infos:
         if inf == "":
-            infos[count] = drug.title() + get_utterance("default", language)
+            infos[count] = drug.title() + get_utterance("default", language, slack_id)
         else:
             infos[count] = inf.title()[1:]
         count += 1

@@ -34,7 +34,7 @@ class AskAction(Action):
             to_search_in_ressources = "ask_"+self.entity_name
         else:
             to_search_in_ressources = self.entity_name
-        response = get_utterance(to_search_in_ressources, language)
+        response = get_utterance(to_search_in_ressources, language, tracker.sender_id)
         dispatcher.utter_message(response)
 
     def name(self):
@@ -60,9 +60,9 @@ class AskBooleanAction(Action):
         """Show two buttons (one for yes and one for no)\n
         If payload_no is set, a custom payload for 'No' will be used"""
         language = tracker.get_slot("language")
-        message = get_utterance("ask_"+self.entity_name, language)
-        yes_button = get_utterance("yes", language)
-        no_button = get_utterance("no", language)
+        message = get_utterance("ask_"+self.entity_name, language, tracker.sender_id)
+        yes_button = get_utterance("yes", language, tracker.sender_id)
+        no_button = get_utterance("no", language, tracker.sender_id)
         buttons = []
         buttons.append(Button(title=yes_button,
                               payload="/"+self.intent_name+"{\""+self.entity_name+"\":true}"))
@@ -95,10 +95,10 @@ class AskButtonsAction(Action):
         """For each button is self.buttons, make a
         button after the name button"""
         language = tracker.get_slot("language")
-        message = get_utterance("ask_"+self.entity_name, language)
+        message = get_utterance("ask_"+self.entity_name, language, tracker.sender_id)
         buttons_to_show = []
         for button in self.buttons:
-            name_button = get_utterance(button+"_button", language)
+            name_button = get_utterance(button+"_button", language, tracker.sender_id)
             buttons_to_show.append(Button(title=name_button,
                                           payload = "/" + self.intent_name + "{\"" + self.entity_name + "\":\"" + name_button.lower() + "\"}"))
         dispatcher.utter_button_message(message, buttons_to_show)

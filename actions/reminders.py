@@ -88,12 +88,12 @@ class ChangeSessionReminder(Action):
         #TODO: save global score in DB
 #        print(global_score)
         if global_score is not None and global_score != 0:
-            response = get_utterance("score", language, [global_score])
+            response = get_utterance("score", language, tracker.sender_id, [global_score])
             dispatcher.utter_message(response)
         global_score = 0
         #TODO: send a notif saying missing intents
         if len(unacomplished) > 0:
-            response = get_utterance("not_broached", language, [str(unacomplished)])
+            response = get_utterance("not_broached", language, tracker.sender_id, [str(unacomplished)])
             dispatcher.utter_message(response)
         last_session = init.get_last_session_in_db(tracker.sender_id)
         if not last_session:
@@ -103,7 +103,7 @@ class ChangeSessionReminder(Action):
             to_return = []
             date_end = init.get_date_end_in_db(tracker.sender_id)
             reminder_end_session = init.get_reminder_end_session()
-            response = get_utterance("change_session", language)
+            response = get_utterance("change_session", language, tracker.sender_id)
             dispatcher.utter_message(response)
             to_return.append(SlotSet("global_score", global_score))
 #            print("reminder change session scheduled at "+str(date_end))
@@ -115,7 +115,7 @@ class ChangeSessionReminder(Action):
                                                date_end - reminder_end_session,
                                                kill_on_user_message=False))
         else:
-            response = get_utterance("last_session", language)
+            response = get_utterance("last_session", language, tracker.sender_id)
             dispatcher.utter_message(response)
             return [AllSlotsReset(), ConversationPaused()]
         return to_return
@@ -137,13 +137,13 @@ class UserReminder(Action):
         count_user_reminder_max = tracker.get_slot("count_user_reminder_max")
         reminder_patient = init.get_reminder_patient()
         #TODO : Send a notif instead
-        response = get_utterance("user_reminder", language)
+        response = get_utterance("user_reminder", language, tracker.sender_id)
         dispatcher.utter_message(response)
         count_user_reminder += 1
         if count_user_reminder > count_user_reminder_max:
          #TODO : Send a notif instead
             response = get_utterance("count_user_reminder",
-                                     language, [count_user_reminder])
+                                     language, tracker.sender_id, [count_user_reminder])
             dispatcher.utter_message(response)
         to_return = []
         to_return.append(SlotSet("count_user_reminder", count_user_reminder))
@@ -177,11 +177,11 @@ class SessionEndReminder(Action):
             else:
                 unacomplished += 1
         if unacomplished != 0:
-            response = get_utterance("talk", language)
+            response = get_utterance("talk", language, tracker.sender_id)
             if len(acomplished) > 0:
-                response += get_utterance("so_far", language)
+                response += get_utterance("so_far", language, tracker.sender_id)
                 for i in acomplished:
-                    response += get_utterance(str(i), language)
+                    response += get_utterance(str(i), language, tracker.sender_id)
             dispatcher.utter_message(response)
 
 
@@ -195,7 +195,7 @@ class UserReminderLittle(Action):
         """Call the patient after a little time"""
         language = init.get_language()
         #TODO : Send a notif instead
-        response = get_utterance("user_reminder_little", language)
+        response = get_utterance("user_reminder_little", language, tracker.sender_id)
         dispatcher.utter_message(response)
 
 

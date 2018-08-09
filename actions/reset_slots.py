@@ -9,6 +9,7 @@ from rasa_core.actions.action import Action
 from rasa_core.events import SlotSet
 from ressources import get_utterance
 from insertfonction import insert_to_answer
+from init_and_complex import get_session_id
 
 
 class ResetSlotsAction(Action):
@@ -32,13 +33,15 @@ class ResetSlotsAction(Action):
     def run(self, dispatcher, tracker, domain):
         """Save infos and reset slots"""
         language = tracker.get_slot("language")
+        slack_id = tracker.sender_id
         global_score = tracker.get_slot("global_score")
-        dispatcher.utter_message(get_utterance("saved", language))
+        dispatcher.utter_message(get_utterance("saved", language, slack_id))
         for e in self.entities:
             slot_value = tracker.get_slot(e)
             if slot_value is not None:
-#                insert_to_answer(value, session, entity, patient, conversation)
-                insert_to_answer(slot_value, 1, e, 2, 1)
+                session_id = get_session_id()
+                insert_to_answer(slot_value, session_id, e, tracker.sender_id)
+#                insert_to_answer(value,session,entity,slack_id)
         if self.calculus:
             global_score = self.calculus_action(tracker)
         to_return = self.core_action()

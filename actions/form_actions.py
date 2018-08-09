@@ -33,10 +33,10 @@ def get_response_simple(response, slot_name, tracker, language, other_value=None
     if slot_value is not None:
         if other_value is None or (other_value is not None and slot_value != other_value):
             if 'drug' in slot_name:
-                [propriety_names, non_propriety_names, subst_names, pharm_classes] = get_drug_info(tracker.get_slot(slot_name), language)
-                response += get_utterance(to_search_in_ressources, language, [propriety_names, non_propriety_names, subst_names, pharm_classes])
+                [propriety_names, non_propriety_names, subst_names, pharm_classes] = get_drug_info(tracker.get_slot(slot_name), language, tracker.sender_id)
+                response += get_utterance(to_search_in_ressources, language, tracker.sender_id, [propriety_names, non_propriety_names, subst_names, pharm_classes])
             else:
-                response += get_utterance(to_search_in_ressources, language, [slot_value])
+                response += get_utterance(to_search_in_ressources, language, tracker.sender_id, [slot_value])
     return response
 
 
@@ -52,9 +52,9 @@ def get_response_boolean(response, slot_name, tracker, language):
     slot_value = tracker.get_slot(slot_name)
     if slot_value is not None:
         if slot_value:
-            response += get_utterance(slot_name+"_true", language)
+            response += get_utterance(slot_name+"_true", language, tracker.sender_id)
         else:
-            response += get_utterance(slot_name+"_false", language)
+            response += get_utterance(slot_name+"_false", language, tracker.sender_id)
     return response
 
 
@@ -133,21 +133,21 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
             obligatories = get_obligatories()
             try:
                 len(obligatories[self.intent_name])
-                response = get_utterance("sum_up", language)
+                response = get_utterance("sum_up", language, tracker.sender_id)
                 if main_slot_value is not None:
                     if level is None:
                         # get calculated level
                         level = self.classifier(main_slot_value, language)
                         to_return.append(SlotSet(self.intent_name+"_level",
                                                  level))
-                    level = get_utterance(level, language)
-                    response += get_utterance(self.main_slot, language, [main_slot_value, level.lower()])
+                    level = get_utterance(level, language, tracker.sender_id)
+                    response += get_utterance(self.main_slot, language, tracker.sender_id, [main_slot_value, level.lower()])
                 response = self.sum_up_setted_slots(response, tracker,
                                                     language)
-                response += get_utterance("right", language)
+                response += get_utterance("right", language, tracker.sender_id)
             except:
                 response = get_utterance(self.intent_name+"_no_entity",
-                                         language)
+                                         language, tracker.sender_id)
                 # TODO: add to database
             to_return.append(SlotSet("topic", None))
             to_return.append(SlotSet("requested_slot", None))
@@ -155,13 +155,13 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
         else:
             buttons = []
             for level in self.levels:
-                level_title = get_utterance(level, language)
+                level_title = get_utterance(level, language, tracker.sender_id)
                 buttons.append(Button(title=level_title,
                                       payload="/"+self.intent_name +
                                       "{\""+self.intent_name +
                                       "_level" + "\":\"" + level +
                                       "\"}"))
-            message = get_utterance("ask_level_"+self.intent_name, language)
+            message = get_utterance("ask_level_"+self.intent_name, language, tracker.sender_id)
             dispatcher.utter_button_message(message, buttons)
         return to_return
 
@@ -191,11 +191,11 @@ class FormActionCalculusAndCore(FormActionTriggerAction):
         try:
             obligatories = get_obligatories()
             len(obligatories[self.intent_name]) > 0
-            response = get_utterance("sum_up", language)
+            response = get_utterance("sum_up", language, tracker.sender_id)
             response = self.sum_up_setted_slots(response, tracker, language)
-            response += get_utterance("right", language)
+            response += get_utterance("right", language, tracker.sender_id)
         except:
-            response = get_utterance("sum_up_"+self.intent_name, language)
+            response = get_utterance("sum_up_"+self.intent_name, language, tracker.sender_id)
             to_return.append(SlotSet(self.intent_name, True))
         dispatcher.utter_message(response)
         to_return.append(SlotSet("global_score", global_score))
@@ -344,7 +344,7 @@ class CheckRequestedIntents(FormActionTriggerAction):
         @param dispatcher: used to tell the patient that he talked
         about all the intents he had to."""
         language = tracker.get_slot("language")
-        dispatcher.utter_message(get_utterance("requested_intent", language))
+        dispatcher.utter_message(get_utterance("requested_intent", language, tracker.sender_id))
 
 
 class NegativeEmo(FormActionCalculusAndCore):
