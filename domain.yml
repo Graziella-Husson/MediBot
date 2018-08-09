@@ -1,0 +1,341 @@
+slots:
+  activity_sport:
+    type: text
+  activity_level:
+    type: text
+  activity_duration:
+    type: text
+  pain_body_part:
+    type: text
+  pain_duration:
+    type: text 
+  pain_level:
+    type: text
+  pain_desc:
+    type: text
+  duration:
+    type: text
+  pain_change:
+    type: text
+  period:
+    type: text
+  activity_distance:
+    type: text
+  distance:
+    type: text
+  pain_period:
+    type: text
+  activity_period:
+    type: text
+  requested_slot:
+    type: unfeaturized
+  topic:
+    type: text
+  pain:
+    type: text
+  activity:
+    type: text
+  negativeEmo:
+    type: text
+  positiveEmo:
+    type: text
+  social:
+    type: text
+  activity_hard:
+    type: bool
+  nickname:
+    type: unfeaturized
+  current_session:
+    type: unfeaturized
+  session_id:
+    type: unfeaturized
+  count_user_reminder:
+    type: unfeaturized
+  count_user_reminder_max:
+    type: unfeaturized
+  emergency:
+    type: unfeaturized
+  exitword:
+    type: unfeaturized
+  stopword:
+    type: unfeaturized
+  followed_intent:
+    type: unfeaturized
+  time:
+    type: text
+  treatment_medicinal:
+    type: bool
+  pathology_symptom:
+    type: text
+  drug:
+    type: text
+  treatment_drug:
+    type: text
+  infoPatient_addiction:
+    type: text
+  infoPatient_weight:
+    type: text
+  infoPatient_distance:
+    type: text
+  infoPatient_gender:
+    type: text
+  infoPatient_temperature:
+    type: text
+  infoPatient_heart_rate:
+    type: text
+  infoPatient_blood_pressure:
+    type: text
+  infoPatient_time:
+    type: text
+  pain_time:
+    type: text
+  activity_time:
+    type: text
+  pathology:
+    type: text
+  incomprehension:
+    type: text
+  treatment:
+    type: text
+  infoPatient:
+    type: text
+  pathology_body_part:
+    type: text
+  body_part:
+    type: text
+  temperature:
+    type: text
+  language:
+    type: unfeaturized
+  pathology_time:
+    type: text
+  pathology_change:
+    type: bool
+  pathology_period:
+    type: text
+  pathology_treatment_linked:
+    type: bool
+  treatment_dosing:
+    type: text
+  dosing:
+    type: text
+  treatment_time:
+    type: text
+  treatment_being_taken:
+    type: text
+  treatment_prescripted:
+    type: bool
+  treatment_overdosage:
+    type: text
+  treatment_ok:
+    type: bool
+  treatment_period:
+    type: text
+  risk:
+    type: bool
+  treatment_duration:
+    type: text
+  pathology_duration:
+    type: text
+  sleep:
+    type: bool
+  eatingDisorders:
+    type: bool
+  drugAddiction:
+    type: bool
+  smoking:
+    type: bool
+  alcohol:
+    type: bool
+  sleep_duration:
+    type: text
+  sleep_quality:
+    type: text
+  eatingDisorders_duration:
+    type: text
+  eatingDisorders_time:
+    type: text
+  drugAddiction_period:
+    type: text
+  drugAddiction_drug:
+    type: text
+  drugAddiction_dosing:
+    type: text
+  drugAddiction_duration:
+    type: text
+  drugAddiction_time:
+    type: text
+  smoking_period:
+    type: text
+  smoking_dosing:
+    type: text
+  smoking_duration:
+    type: text
+  smoking_time:
+    type: text
+  alcohol_period:
+    type: text
+  alcohol_dosing:
+    type: text
+  alcohol_duration:
+    type: text
+  alcohol_time:
+    type: text
+
+intents:
+ - activity
+ - pain
+ - negativeEmo
+ - positiveEmo
+ - fallback
+ - social
+ - agree
+ - disagree
+ - hello
+ - bye
+ - pathology
+ - incomprehension
+ - treatment
+ - infoPatient
+ - risk
+ - sleep
+ - eatingDisorders
+ - drugAddiction
+ - smoking
+ - alcohol
+
+entities:
+ - activity_sport
+ - body_part
+ - duration
+ - pain_desc
+ - distance
+ - period
+ - pain_change
+ - time
+ - pathology_symptom
+ - drug
+ - infoPatient_addiction
+ - infoPatient_weight
+ - infoPatient_gender
+ - temperature
+ - infoPatient_heart_rate
+ - infoPatient_blood_pressure
+ - treatment_dosing
+
+actions:
+ - init_and_complex.SumUpSLots
+ - init_and_complex.InitBot
+ - init_and_complex.SaveConv
+ - reminders.UserReminder
+ - reminders.SessionEndReminder
+ - reminders.ChangeSessionReminder
+ - reminders.UserReminderLittle
+ - reminders.FollowedIntentReminder
+ - form_actions.Pain
+ - form_actions.Activity
+ - form_actions.NegativeEmo
+ - form_actions.PositiveEmo
+ - form_actions.Social
+ - form_actions.Pathology
+ - form_actions.Treatment
+ - form_actions.InfoPatient
+ - form_actions.CheckRequestedIntents
+ - form_actions.Risk
+ - form_actions.Sleep
+ - form_actions.EatingDisorders
+ - form_actions.DrugAddiction
+ - form_actions.Smoking
+ - form_actions.Alcohol
+ - complex_sets.SetMultiple
+ - ask_what.AskWhatPathology
+ - ask_what.AskWhatPain
+ - ask_what.AskWhatActivity
+ - ask_what.AskWhatTreatment
+ - ask_what.AskWhatInfoPatient
+ - ask_what.AskWhatSleep
+ - ask_what.AskWhatEatingDisorders
+ - ask_what.AskWhatDrugAddiction
+ - ask_what.AskWhatSmoking
+ - ask_what.AskWhatAlcohol
+ - reset_slots.ResetPathologySlots
+ - reset_slots.ResetTreatmentSlots
+ - reset_slots.ResetInfoPatientSlots
+ - reset_slots.ResetActivitySlots
+ - reset_slots.ResetPainSlots
+ - reset_slots.ResetSleepSlots
+ - reset_slots.ResetEatingDisordersSlots
+ - reset_slots.ResetDrugAddictionSlots
+ - reset_slots.ResetSmokingSlots
+ - reset_slots.ResetAlcoholSlots
+ - simple_actions.Fallback
+ - simple_actions.AskActivityHard
+ - simple_actions.AskActivitySport
+ - simple_actions.AskActivityDuration
+ - simple_actions.AskPainBodyPart
+ - simple_actions.AskPathologyBodyPart
+ - simple_actions.AskPainDuration
+ - simple_actions.AskPainChange
+ - simple_actions.AskPainPeriod
+ - simple_actions.AskActivityPeriod
+ - simple_actions.AskPain
+ - simple_actions.AskActivity
+ - simple_actions.AskSocial
+ - simple_actions.AskPositiveEmo
+ - simple_actions.AskNegativeEmo
+ - simple_actions.AskPainDesc
+ - simple_actions.Agree
+ - simple_actions.Disagree
+ - simple_actions.AskWhy
+ - simple_actions.Bye
+ - simple_actions.Hello
+ - simple_actions.AskPathologySymptom
+ - simple_actions.AskTreatmentMedicinal
+ - simple_actions.AskTreatmentDrug
+ - simple_actions.AskPainTime
+ - simple_actions.AskActivityTime
+ - simple_actions.AskActivityDistance
+ - simple_actions.AskInfoPatientWeight
+ - simple_actions.AskInfoPatientDistance
+ - simple_actions.AskInfoPatientHeartRate
+ - simple_actions.AskInfoPatientTemperature
+ - simple_actions.AskInfoPatientGender
+ - simple_actions.AskInfoPatientBloodPressure
+ - simple_actions.AskInfoPatientAddiction
+ - simple_actions.AskInfoPatientTime
+ - simple_actions.AskPathologyTime
+ - simple_actions.AskPathologyPeriod
+ - simple_actions.AskPathologyChange
+ - simple_actions.AskPathologyTreatmentLinked
+ - simple_actions.AskTreatmentDosing
+ - simple_actions.AskTreatmentTime
+ - simple_actions.AskTreatmentBeingTaken
+ - simple_actions.AskTreatmentOverdosage
+ - simple_actions.AskTreatmentPeriod
+ - simple_actions.AskTreatmentPrescripted
+ - simple_actions.AskTreatmentOk
+ - simple_actions.AskRisk
+ - simple_actions.AskTreatmentDuration
+ - simple_actions.AskPathologyDuration
+ - simple_actions.AskSleep
+ - simple_actions.AskEatingDisorders
+ - simple_actions.AskDrugAddiction
+ - simple_actions.AskSmoking
+ - simple_actions.AskAlcohol
+ - simple_actions.AskSleepDuration
+ - simple_actions.AskSleepQuality
+ - simple_actions.AskEatingDisordersDuration
+ - simple_actions.AskEatingDisordersTime
+ - simple_actions.AskDrugAddictionPeriod
+ - simple_actions.AskDrugAddictionDrug
+ - simple_actions.AskDrugAddictionDosing
+ - simple_actions.AskDrugAddictionDuration
+ - simple_actions.AskDrugAddictionTime
+ - simple_actions.AskSmokingPeriod
+ - simple_actions.AskSmokingDosing
+ - simple_actions.AskSmokingDuration
+ - simple_actions.AskSmokingTime
+ - simple_actions.AskAlcoholPeriod
+ - simple_actions.AskAlcoholDosing
+ - simple_actions.AskAlcoholDuration
+ - simple_actions.AskAlcoholTime
