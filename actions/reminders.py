@@ -4,7 +4,7 @@ A reminder is an action performed at a given time\n
 Created on Tue Jun 26 10:22:40 2018\n
 @author: U{@Graziella-Husson<https://github.com/Graziella-Husson>}
 """
-from datetime import datetime as dt, timedelta
+from datetime import datetime as dt, timedelta, timezone
 import os
 from rasa_core.actions.action import Action
 from rasa_core.events import (
@@ -147,9 +147,9 @@ class UserReminder(Action):
             dispatcher.utter_message(response)
         to_return = []
         to_return.append(SlotSet("count_user_reminder", count_user_reminder))
-#        print("reminder user scheduled at "+str(dt.now() + reminder_patient))
+#        print("reminder user scheduled at "+str(dt.now(timezone.utc) + reminder_patient))
         to_return.append(ReminderScheduled("user_reminder",
-                                           dt.now() +
+                                           dt.now(timezone.utc) +
                                            reminder_patient,
                                            kill_on_user_message=True))
         return to_return
@@ -211,7 +211,7 @@ class FollowedIntentReminder(Action):
         Make intent mandatory and add an EntityFormField for each
         entity to make them requested for the intent\n
         Remove reminder in followed_reminders list (it has been triggered)"""
-        now = dt.now()
+        now = dt.now(timezone.utc)
         obligatories = init.get_obligatories()
         followed_reminders = init.get_follow_reminder_in_db(tracker.sender_id)
         reminder = get_reminder(followed_reminders, now)

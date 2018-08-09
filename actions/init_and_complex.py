@@ -7,7 +7,7 @@ Last update on Mon Jul 30 10:30:00 2018\n
 """
 import os
 from datetime import datetime as dt
-from datetime import timedelta
+from datetime import timedelta, timezone
 import dateutil
 from rasa_core.actions.action import Action, ActionListen
 from rasa_core.actions.forms import (
@@ -62,7 +62,7 @@ def set_begin_date_in_db(slack_id):
     If the begin_date for this patient is not in the DB, set it to now"""
     first = db.get_first(slack_id)
     if first:
-        db.set_begin_date(slack_id, dt.now())
+        db.set_begin_date(slack_id, dt.now(timezone.utc))
         set_first_in_db(slack_id, False)
 
 
@@ -194,7 +194,7 @@ def load_config(current_session, to_return):
 
 def get_current_session(slack_id):
     """@return current session number using C{get_begin_date_in_db} and current date"""
-    delta_time = dt.now() - get_begin_date_in_db(slack_id)
+    delta_time = dt.now(timezone.utc) - get_begin_date_in_db(slack_id)
     duration_done = timedelta(seconds=0)
     for i in CONFIG['sessions']:
         session = CONFIG['sessions'][i]
@@ -276,7 +276,7 @@ def get_current_reminder_times(current_session, to_return, slack_id):
             duration_session += timedelta(days=int(j))
         if i == 'hours':
             duration_session += timedelta(hours=int(j))
-    set_date_end_in_db(slack_id, dt.now() + duration_session)
+    set_date_end_in_db(slack_id, dt.now(timezone.utc) + duration_session)
     for reminder in reminders:
         reminder_config = CONFIG[reminder]
         reminder1 = timedelta(seconds=0)
@@ -438,21 +438,21 @@ def check(to_return, intent, entities, tracker, dispatcher, response, domain):
             tracker.trigger_follow_up_action(action)
             count_user_reminder = 0
             to_return.append(SlotSet("count_user_reminder", count_user_reminder))
-#                print("reminder user scheduled at "+str(dt.now() + REMINDER_PATIENT))
+#                print("reminder user scheduled at "+str(dt.now(timezone.utc) + REMINDER_PATIENT))
 #                to_return.append(ReminderScheduled("user_reminder",
-#                                                   dt.now() + REMINDER_PATIENT,
+#                                                   dt.now(timezone.utc) + REMINDER_PATIENT,
 #                                                   kill_on_user_message=True))
             return to_return
         else:
             count_user_reminder = 0
 #            to_return.append(SlotSet("count_user_reminder", count_user_reminder))
-#            print("reminder user little scheduled at "+str(dt.now() + REMINDER_PATIENT_LITTLE))
+#            print("reminder user little scheduled at "+str(dt.now(timezone.utc) + REMINDER_PATIENT_LITTLE))
 #            to_return.append(ReminderScheduled("user_reminder_little",
-#                                               dt.now() + REMINDER_PATIENT_LITTLE,
+#                                               dt.now(timezone.utc) + REMINDER_PATIENT_LITTLE,
 #                                               kill_on_user_message=True))
-#            print("reminder user scheduled at "+str(dt.now() + REMINDER_PATIENT))
+#            print("reminder user scheduled at "+str(dt.now(timezone.utc) + REMINDER_PATIENT))
 #            to_return.append(ReminderScheduled("user_reminder",
-#                                               dt.now() + REMINDER_PATIENT,
+#                                               dt.now(timezone.utc) + REMINDER_PATIENT,
 #                                               kill_on_user_message=True))
             return to_return
 
@@ -510,7 +510,7 @@ def save(tracker, to_return):
         except:
             os.mkdir("saves/"+str(id_user)+"/")
         conv = open(idy, 'a')
-    date = dt.now()
+    date = dt.now(timezone.utc)
     response = tracker.latest_message.text
     intent = tracker.latest_message.intent
     intent_name = intent['name']
@@ -613,7 +613,7 @@ class SumUpSLots(Action):
             os.mkdir("saves")
             os.mkdir("saves/"+str(id_user)+"/")
             conv = open(idy, 'a')
-        date = dt.now()
+        date = dt.now(timezone.utc)
         response = tracker.latest_bot_utterance.text
         if response is not None:
             conv.write("{ '"+str(date)+"' : [{'text': '"+response+"'}]],\n")
