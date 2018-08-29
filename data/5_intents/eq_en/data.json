@@ -1,0 +1,3163 @@
+﻿{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "entity_synonyms": [],
+    "common_examples": [
+      {
+        "text": "My normal body temp seems to run about 97°",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 39,
+            "end": 42,
+            "value": "97°",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "i am a feminist",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 7,
+            "end": 15,
+            "value": "feminist",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "My heart rate is continuously below 40bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 36,
+            "end": 41,
+            "value": "40bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "i am a girl like you",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "girl",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "i have good blood pressure",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "My doctor increased the doses of my blood pressure pills",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "Usually when I am walking my heart rate increase to 70-120 bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 52,
+            "end": 62,
+            "value": "70-120 bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "my core body temperature is 98.6F",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 28,
+            "end": 33,
+            "value": "98.6F",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "my core temperature reaches 92°",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 28,
+            "end": 31,
+            "value": "92°",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "Every morning when I get out of bed my heart rate rapidly increases",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I'm a big girl and I go to school",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "My waking pulse used to be 44bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "44bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "my average normal body temperature is around 98.6 degrees Fahrenheit, or 37 degrees Celsius",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 45,
+            "end": 68,
+            "value": "98.6 degrees Fahrenheit",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "I am romantic girl and I would like to have such life",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "i have high blood pressure and im pregnant",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I am quite worried so I checked my resting heartrate sitting at my desk",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my heart is beating fast at rest",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I am a women but I never forget my duties as a woman",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "women",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "I'm a boy with light blond hair",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 6,
+            "end": 9,
+            "value": "boy",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "I'm concerned my body temperature is 95F",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 37,
+            "end": 40,
+            "value": "95F",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "I am the daughter of a veteran",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "My heart beat is usually from higher than 90° and ranging to 120 in resting state",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 30,
+            "end": 45,
+            "value": "higher than 90°",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "I am not a number, I am a free man",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my body temperature goes from hot to cold",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I am less concerned with knowing my heart rate constantly",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my temperature has been around 96F and even 95F",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 24,
+            "end": 34,
+            "value": "around 96F",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "my basal body temp. is 97.5F measured over a week",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 23,
+            "end": 28,
+            "value": "97.5F",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "my diastolic blood pressure is usually in the 70s, which is normal",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 46,
+            "end": 49,
+            "value": "70s",
+            "entity": "infoPatient_blood_pressure"
+          }
+        ]
+      },
+      {
+        "text": "I'm a woman of about 35 years old",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 6,
+            "end": 11,
+            "value": "woman",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "my systolic reading is high but my diastolic is normal",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my rectal temperature is normal",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "i am a boy",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "boy",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "The Dr decided to monitor me due to heart rate being high",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "i am a woman",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "woman",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "i am now a old lady",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 15,
+            "end": 19,
+            "value": "lady",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "my heart is beating at 120 bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 23,
+            "end": 30,
+            "value": "120 bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "I am a 51-year-old male with a history of substance use",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "male",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "i take blood pressure medication but my blood pressure is still high",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my heart is beating really fast for no reason",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "After all, I am a girl",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 18,
+            "end": 22,
+            "value": "girl",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "my systolic blood pressure is high",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "My hear rate is 90bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "90bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "My Temperature Is 98.6F but I Feel Feverisi",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "98.6F",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "my Body temperature decreases during the night-time sleep",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "My high blood pressure diagnosis came at a time in my life when I was very stressed",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "My hear rate is slow",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "a few other times my heart rate was in the 90's",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 43,
+            "end": 47,
+            "value": "90's",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "I have a resting heart rate at times going up to around 120",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 49,
+            "end": 59,
+            "value": "around 120",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "So why is my resting heart rate 90bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 32,
+            "end": 37,
+            "value": "90bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "my bp level was 77/44",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 16,
+            "end": 21,
+            "value": "77/44",
+            "entity": "infoPatient_blood_pressure"
+          }
+        ]
+      },
+      {
+        "text": "my body temperature is 97F",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 23,
+            "end": 26,
+            "value": "97F",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "My heart rate is at around 120bpm and 130bpm when it's high",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 27,
+            "end": 33,
+            "value": "120bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "feel like i have fever but my temperature is normal",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I don't take a break after a few hours, my body temperature starts going up",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I have measure my resting pulse rate with a blood pressure monitor",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my pulse is normal but my blood pressure is high",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "i am a girl with a mustache",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 7,
+            "end": 11,
+            "value": "girl",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "my blood pressure is 150 over 90",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 21,
+            "end": 32,
+            "value": "150 over 90",
+            "entity": "infoPatient_blood_pressure"
+          }
+        ]
+      },
+      {
+        "text": "my systolic pressure is still around 170",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 37,
+            "end": 40,
+            "value": "170",
+            "entity": "infoPatient_blood_pressure"
+          }
+        ]
+      },
+      {
+        "text": "my body temperatures had dropped to 96-97 F",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 36,
+            "end": 43,
+            "value": "96-97 F",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "I am a young man of Egypt",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 7,
+            "end": 16,
+            "value": "young man",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "my blood pressure suddenly shoot up",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my body heat is always high",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I did not arrive as a man",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "i am a man",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "man",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "my oral temperature is almost always about a degree lower than 98.6F",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 52,
+            "end": 68,
+            "value": "lower than 98.6F",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "my blood pressure goes up after eating",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I am a 22-year-old woman",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 19,
+            "end": 24,
+            "value": "woman",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "My temperature is normally around 97F degrees when I first awake",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 27,
+            "end": 37,
+            "value": "around 97F",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "I must train quite rigorously to get my pulse to stay at 140bpm and above",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 57,
+            "end": 63,
+            "value": "140bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "i stopped taking my high blood pressure medicine",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "If my pulse is fast, it always means I'm stressed out",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my temperature is usually low",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I am a 42 year old co-infected gay male residing in Montréal since 1986",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 35,
+            "end": 39,
+            "value": "male",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "I am Black male, young and bright",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 11,
+            "end": 15,
+            "value": "male",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "I took my heart rate twice and it averaged at about 101 BPM",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 52,
+            "end": 59,
+            "value": "101 BPM",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "My sister and I have always had low body temps ranging from 96-98F",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 60,
+            "end": 66,
+            "value": "96-98F",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "my blood pressure that is lower in the morning than at noon or evening",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my heart beats at 45 bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "45 bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "my resting heart rate was so high",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my diastolic is usually in the 80s",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 31,
+            "end": 34,
+            "value": "80s",
+            "entity": "infoPatient_blood_pressure"
+          }
+        ]
+      },
+      {
+        "text": "my body temp runs about a degree below \"normal\"",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "i am too masculine",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "My resting heart rate is between 90bpm and 120bpm, averaging 106bpm over the past week",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 33,
+            "end": 38,
+            "value": "90bpm",
+            "entity": "infoPatient_heart_rate"
+          },
+          {
+            "start": 43,
+            "end": 49,
+            "value": "120bpm",
+            "entity": "infoPatient_heart_rate"
+          },
+          {
+            "start": 61,
+            "end": 67,
+            "value": "106bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "My heart rate stays around 115-120 bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 27,
+            "end": 38,
+            "value": "115-120 bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "My heart rate went down to 36bpm recently, then crept back up to 52bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 27,
+            "end": 32,
+            "value": "36bpm",
+            "entity": "infoPatient_heart_rate"
+          },
+          {
+            "start": 65,
+            "end": 70,
+            "value": "52bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "I, personally, am a middle-class woman who is educated",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 33,
+            "end": 38,
+            "value": "woman",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "my hypertension is gone",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "i am a young lady",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 13,
+            "end": 17,
+            "value": "lady",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "my heart rate is 75bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 17,
+            "end": 22,
+            "value": "75bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "I have a resting heart rate of 32 bpm and am concerned this is too low",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 31,
+            "end": 37,
+            "value": "32 bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "my blood pressure goes up when i stand up",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my blood pressure wont go down",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my blood pressure is 130/80",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 21,
+            "end": 27,
+            "value": "130/80",
+            "entity": "infoPatient_blood_pressure"
+          }
+        ]
+      },
+      {
+        "text": "my gender is male",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 13,
+            "end": 17,
+            "value": "male",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "I take my temperature recreationally",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "When I wake up in the morning, I feel my temperature is high",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 56,
+            "end": 60,
+            "value": "high",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "my body temperature is always hot",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 23,
+            "end": 33,
+            "value": "always hot",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "my gender is female",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 13,
+            "end": 19,
+            "value": "female",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "I am an organized woman",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 18,
+            "end": 23,
+            "value": "woman",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "i am confused about my gender identity",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my body heat rises at night",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my heart is beating like a jungle drum",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my blood pressure goes up in the evening",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "My heart rate at the Doctors office range between 120-142bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 50,
+            "end": 60,
+            "value": "120-142bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "my Blood pressure tends to be higher during the day than at night",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my heart rate returned to around 90bpm to 100bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 33,
+            "end": 38,
+            "value": "90bpm",
+            "entity": "infoPatient_heart_rate"
+          },
+          {
+            "start": 42,
+            "end": 48,
+            "value": "100bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "for less than a year, I have become a faithless man",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I'm not exactly a young man",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 24,
+            "end": 27,
+            "value": "man",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "my body temperature changes rapidly",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "Usually I have a higher resting heart rate of 85-105 bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 46,
+            "end": 56,
+            "value": "85-105 bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "Personally I never paid much attention to my body temperature",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "My HR is above 120bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 15,
+            "end": 21,
+            "value": "120bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "my bp level is 160/100",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 15,
+            "end": 22,
+            "value": "160/100",
+            "entity": "infoPatient_blood_pressure"
+          }
+        ]
+      },
+      {
+        "text": "my blood pressure spikes no reason",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I am a businessman and I can understand growth",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I'm an 18-year-old woman",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 19,
+            "end": 24,
+            "value": "woman",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "I take my own heart rate every six months",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "i take my blood pressure all the time",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my body radiates heat",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "And being female, I might not be considered quite a person at all",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 10,
+            "end": 16,
+            "value": "female",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "I am an adult male, and have suffered from eczema for years",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 14,
+            "end": 18,
+            "value": "male",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "My doctor started me on a blood pressure medication last year",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I've got high blood pressure",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I am the type of woman who has always loved the great outdoors",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "for the past few weeks I have had a resting heart rate that falls between 106-120bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 74,
+            "end": 84,
+            "value": "106-120bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "my blood pressure is high today",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my blood pressure suddenly went up to 14/10",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 38,
+            "end": 43,
+            "value": "14/10",
+            "entity": "infoPatient_blood_pressure"
+          }
+        ]
+      },
+      {
+        "text": "I'm a young guy and I believe in man",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 12,
+            "end": 15,
+            "value": "guy",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "I have been monitoring my morning body temp lately and I have been in the 96-97F range (too low)",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 74,
+            "end": 80,
+            "value": "96-97F",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "My heart rate while walking is 120 bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 31,
+            "end": 38,
+            "value": "120 bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "Every night after sleeping my body Temp. rises like a fever",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "In the past three and a half weeks, I've manage to drop my blood pressure from a high of 160/100 to an average of 116/74",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 89,
+            "end": 96,
+            "value": "160/100",
+            "entity": "infoPatient_blood_pressure"
+          },
+          {
+            "start": 114,
+            "end": 120,
+            "value": "116/74",
+            "entity": "infoPatient_blood_pressure"
+          }
+        ]
+      },
+      {
+        "text": "my body temperature is always warm",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I am a man of compromise",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "man",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "recently my temperature has been plummeting to below 35.5°C",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 53,
+            "end": 59,
+            "value": "35.5°C",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "my body heat is always warm",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my High BP fell to normal and stable levels",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my blood pressure was suddenly very high",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "My heart beats faster than normal during exercise",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I am a very patient man",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my skin is hot but my temperature is normal",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "The rate my heart is pumping I have been sitting quietly is above 90bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 66,
+            "end": 71,
+            "value": "90bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "I consider myself as a very sociable and friendly girl",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 50,
+            "end": 54,
+            "value": "girl",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "I have consistently for the past 2 months every day have a body temperature of 96.2F-96.5F",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 79,
+            "end": 90,
+            "value": "96.2F-96.5F",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "i am a good girl",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "girl",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "I am a woman and I do not believe that my gender constitutes a risk",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "woman",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "I've been struggling with body temperature issues a lot lately and it seems to be increasing",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my heart rate is now between 80% and 90% percent of your maximum",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I am a man before being French",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "man",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "Today when I took it, it was 77/44 with a pulse of 45bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 29,
+            "end": 34,
+            "value": "77/44",
+            "entity": "infoPatient_blood_pressure"
+          },
+          {
+            "start": 51,
+            "end": 56,
+            "value": "45bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "my GP know I have high blood pressure",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I am a man, and nothing human is foreign to me",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "man",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "my blood pressure goes down when i drink alcohol",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I use my home Blood Pressure Monitor",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "My heart rate exceeds the normal resting rate",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my heart is beating fast",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I have been having a heart rate at 119bpm to 127bpm in the middle of the night",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 35,
+            "end": 51,
+            "value": "119bpm to 127bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "My systolic blood pressure is usually in the 150s to 160s, which is high",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 45,
+            "end": 57,
+            "value": "150s to 160s",
+            "entity": "infoPatient_blood_pressure"
+          }
+        ]
+      },
+      {
+        "text": "my heart rate is 68",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "My doctor told me to take my temperature twice a day",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my heart rate is 100bpm",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 17,
+            "end": 23,
+            "value": "100bpm",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "my body temperature when I woke up was 96 degrees",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 39,
+            "end": 49,
+            "value": "96 degrees",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "My body temp has been around 96-97°",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 29,
+            "end": 35,
+            "value": "96-97°",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "My resting heart rate is about 88°, 89° , 90°",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 31,
+            "end": 45,
+            "value": "88°, 89° , 90°",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "my blood pressure seems low",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "Yesterday my temp was 98-97.6F so normal for me",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 22,
+            "end": 30,
+            "value": "98-97.6F",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "my body temperature is high",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "My body temperature is 96F",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 23,
+            "end": 26,
+            "value": "96F",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "i feel cold but my temperature is normal",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 34,
+            "end": 40,
+            "value": "normal",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "I can feel my blood pressure in my head",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "My normal temperature is below 97.5 degrees and can be high 96 degrees",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 31,
+            "end": 43,
+            "value": "97.5 degrees",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "i have high blood pressure but feel fine",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I am 16 years old male",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 18,
+            "end": 22,
+            "value": "male",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "my blood pressure has remained normal, averaging 105/65",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 49,
+            "end": 55,
+            "value": "105/65",
+            "entity": "infoPatient_blood_pressure"
+          }
+        ]
+      },
+      {
+        "text": "How do I know if my blood pressure is healthy?",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my blood pressure goes up when i go to the doctor",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my temperature is up and down",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I feel miserable when my temperature hits 98.6F",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 42,
+            "end": 47,
+            "value": "98.6F",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "I've noticed an increase in my heart rate findings on the watch",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my BP was ideal, but today in the evening it was pretty high",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I counted my heart rate at ~120 beats per minute",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 27,
+            "end": 48,
+            "value": "~120 beats per minute",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "my high blood pressure went away",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I was a young man at the time",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "Just took my temperature and it was 95.7°",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 36,
+            "end": 41,
+            "value": "95.7°",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "my blood pressure goes down during exercise",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I am a big boy",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 11,
+            "end": 14,
+            "value": "boy",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "I am a 42-year-old man going out every single day to gather garbage",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "my body heats up after eating",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I have been feeling this way for the last 2 days but my body temp is just 36.5 C",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 74,
+            "end": 80,
+            "value": "36.5 C",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "Today I got my blood test result and the doctor said it was good",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "In fact my BP was 150/95mm Hg, well above the current \"risk\"",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 18,
+            "end": 29,
+            "value": "150/95mm Hg",
+            "entity": "infoPatient_blood_pressure"
+          }
+        ]
+      },
+      {
+        "text": "my your body temperature slips below 95 degrees",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 37,
+            "end": 47,
+            "value": "95 degrees",
+            "entity": "temperature"
+          }
+        ]
+      },
+      {
+        "text": "my heart rate exceeds maximum",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "Now that I am an old man, it is children who inspire me",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 21,
+            "end": 24,
+            "value": "man",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "I was just a boy",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 13,
+            "end": 16,
+            "value": "boy",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "I would like to figure out why my systolic blood pressure is high",
+        "intent": "infoPatient",
+        "entities": []
+      },
+      {
+        "text": "I am a cute girl, serious, hardworking and quiet",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 12,
+            "end": 16,
+            "value": "girl",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "I am a 31 year old male suffering from sever Sudden Onset Arthritis",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 19,
+            "end": 23,
+            "value": "male",
+            "entity": "infoPatient_gender"
+          }
+        ]
+      },
+      {
+        "text": "My heart rate in beats per minute is 100",
+        "intent": "infoPatient",
+        "entities": [
+          {
+            "start": 37,
+            "end": 40,
+            "value": "100",
+            "entity": "infoPatient_heart_rate"
+          }
+        ]
+      },
+      {
+        "text": "I have shortness of breath to the point that i literally need a deep breathe every couple breathes but its never satisfying.",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I quit 8 years ago and had to stop the cafein as well because of palps or PVCs",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 7,
+            "end": 18,
+            "value": "8 years ago",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I was smoking from the high school",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I'm 30 been smoking since i was 17 everyday 30 cig a day have had massive addiction problems in past",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 44,
+            "end": 50,
+            "value": "30 cig",
+            "entity": "dosing"
+          },
+          {
+            "start": 51,
+            "end": 56,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I started smoking when I was 18",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 18,
+            "end": 31,
+            "value": "when I was 18",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I smoked for about 8 years and gave up in 2004 using an NHS support group",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 13,
+            "end": 26,
+            "value": "about 8 years",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "How long have you been smoking",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I'm 58 and when I was a kid everyone smoked",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I did do an asthma test at 14 when I smoked 5 smokes a day and they said I had mild asthma",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 44,
+            "end": 52,
+            "value": "5 smokes",
+            "entity": "dosing"
+          },
+          {
+            "start": 53,
+            "end": 58,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I tried many different methods and only switching to vaping helped me",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I don’t do drugs or smoke weed",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Smoking about a pack, sometimes more a day",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 8,
+            "end": 20,
+            "value": "about a pack",
+            "entity": "dosing"
+          },
+          {
+            "start": 37,
+            "end": 42,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I was a smoker for 25 years since I gave up I have had no appetite a really bad sore throat and a mouth ulcer",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 15,
+            "end": 27,
+            "value": "for 25 years",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "After quitting smoking 3 years ago I stupidly started again a month ago",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 60,
+            "end": 71,
+            "value": "a month ago",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I’m on day 4 of not smoking",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "50 year smoker just smoked last cigarette",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "50 year",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I have smoked for 7 years now",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 18,
+            "end": 25,
+            "value": "7 years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "Im 18 years old and have been smoking hookah for about two years",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 49,
+            "end": 64,
+            "value": "about two years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I am 22 years old and a week ago i decided to quit cold turkey",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I have been taking champix for 4 days now and the results are great so far",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Keeping busy is a great way to stay smokefree on your quit day",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I started smoking a couple of times a day",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 18,
+            "end": 35,
+            "value": "a couple of times",
+            "entity": "dosing"
+          },
+          {
+            "start": 36,
+            "end": 41,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "How has your no smoke journey been doing",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Now I smoke about a pack a day",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "a pack",
+            "entity": "dosing"
+          },
+          {
+            "start": 25,
+            "end": 30,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I smoked my last cigarette Christmas Day 10 past 9 in 2009",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I have been smoking for 4months and My age is 23 old",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 20,
+            "end": 31,
+            "value": "for 4months",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "When I stopped, I switched to the \"E\" cigarettes, but have recently switched to the vapes",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I started at 8 years old and smoked for 54 years",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 36,
+            "end": 48,
+            "value": "for 54 years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I’ve smoked for 38 years",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 12,
+            "end": 24,
+            "value": "for 38 years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I'm scared I have some type of oral cancer from smoking",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "My husband and his friend started smoking cigar nearly 7-8 months ago",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 55,
+            "end": 69,
+            "value": "7-8 months ago",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I stopped smoking after 50 years of smoking",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 24,
+            "end": 43,
+            "value": "50 years of smoking",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I've been smoking for a few years and it effect me a little",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 18,
+            "end": 33,
+            "value": "for a few years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I gave up smoking 5 weeks ago and I'm using the vape cigs",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 18,
+            "end": 29,
+            "value": "5 weeks ago",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I used to be a long-time heavy smoker until about 5 months ago, when I decided to quit cold turkey",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 44,
+            "end": 62,
+            "value": "about 5 months ago",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I'm 24 and smoked since I was 12",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 18,
+            "end": 32,
+            "value": "since I was 12",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I’ve smoked for 38years I’m ashamed to say",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 12,
+            "end": 23,
+            "value": "for 38years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "3rd time quitting using champix",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I'm 22 and have been smoking since I was about 16",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 29,
+            "end": 49,
+            "value": "since I was about 16",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "can the lungs heal themselfs when you quit smoking?",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I have been using vapour cig to stop smoking",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "My dad has been a smoker for 60 years and decided to just give up",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 25,
+            "end": 37,
+            "value": "for 60 years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "Have been a pretty heavy smoker for the past 4 years",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 32,
+            "end": 52,
+            "value": "for the past 4 years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I was a heavy smoker for 4,5 years",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 21,
+            "end": 34,
+            "value": "for 4,5 years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I like the occasional cigarette but I reckon I can give it up",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I am 36-45, female and have been a smoker (12-16/day) for 26yrs",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 54,
+            "end": 63,
+            "value": "for 26yrs",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I feel like I've got every side effect from taking Champix you could possible have",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I quit smoking 6 weeks ago and since I quit all I've had is severe anxiety and panic attacks",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I am 21 and smoked since i was 13, smoked weed and i mean a lot",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 19,
+            "end": 33,
+            "value": "since i was 13",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I stopped smoking 4 years ago and ended up on an E-Cig",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I've been exposed to second-hand smoke for about 3-4 hours in total",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I have recently quit after massive smoking for 20 years",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 43,
+            "end": 55,
+            "value": "for 20 years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "When i started everyone smoked everywhere",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "But sometimes a feel anxious and depressed that I want to smoke a real cigarette at once",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "I've been smoking for over 40 years, I desperately want to give up smoking",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 18,
+            "end": 35,
+            "value": "for over 40 years",
+            "entity": "duration"
+          }
+        ]
+      },
+      {
+        "text": "I am just quit smoking and affraid about its side effects",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "4 weeks on im still buying cigarettes and back up to 20 cig a day",
+        "intent": "smoking",
+        "entities": [
+          {
+            "start": 53,
+            "end": 59,
+            "value": "20 cig",
+            "entity": "dosing"
+          },
+          {
+            "start": 60,
+            "end": 65,
+            "value": "a day",
+            "entity": "period"
+          }
+        ]
+      },
+      {
+        "text": "I need your help to quit smoking",
+        "intent": "smoking",
+        "entities": []
+      },
+      {
+        "text": "Would you roll that by me again, please?",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I'm not clear on whether or not you do what is known",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "it is still relatively unclear",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "What you're saying doesn't make sense",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I am not quite sure what you are talking about",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I just do not get them anymore",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "Could you restate the last question for me?",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I'm sorry, but I caught only the tail end of your question",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "At this stage in the discussion, certain details still have to be clarified",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I'm sorry, I missed your question",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I also fail to understand",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "However, there is something, that I do not understand",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "If I could rephrase your question a little bit",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "It is beyond me as well why",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "This question should be clarified",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I apologize, but I don't know the particular point that you're referring to",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "It is not clear from your query if this is the case",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I wasn't clear on your first question",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I cannot see, either",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I really am not sure if I understand your question",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "Can you please briefly repeat the question you have just put?",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I am not sure that I understand the rationale",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "your question is not clear",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "please repeat the information back in your own words",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I don't understand how that process has gone on",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "could you repeat the ultimate question",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "Perhaps you could rephrase your question",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I don't understand what you just said",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I do not understand",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "Can you say that again?",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "First of all, I am not sure what this question means",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I cannot understand why",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "Sorry, I lost the second part of your question",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "That is madness",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I did not understand what you said earlier",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I'm not quite sure what that means",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I do not understand anything anymore",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I cannot quite understand it",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I'm not too sure what you refer to",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I don't actually understand what you mean",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "nothing was clear to me",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "Excuse me, but what point are you referring to exactly?",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "does not understand what makes you say that",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "Pardon me, but I don't think I heard you correctly",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "pardon me for interrupting",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I didn't get your first name",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "it is obscure",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "It is beyond me",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "the issue must be redefined and clarified",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I'm not sure exactly what you mean",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "If you could reiterate, I would appreciate it",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I did not catch the very last question",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I can't understand anything",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "Unless I have missed something",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "Mr. Speaker, I am sorry but I did not hear the second question",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "It would be useful to be more specific",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I didn't get the full question",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "Could you rephrase the question?",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I am not exactly sure whether I fully understand",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I understand little",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I can't understand this stuff",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "Would you mind repeating it?",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "it is not obvious",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I am not sure I follow the details of the question",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "It does not make any sense",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I hesitate to ask you to repeat the question",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I don't understand something",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "It absolutely makes no sense",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I therefore believe that the issue must be clarified",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I ask your pardon",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "You're talking like some kind of crazy",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I was a little uncertain",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "i don't understand",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I am not quite sure exactly",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I'm not sure I understand what you're trying to tell me",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I must admit that I may not have completely grasped the subtlety of this comment",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I am not absolutely sure if I understand",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I'm sorry, could you just repeat that?",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "Could you please repeat what you said?",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "So that is completely unclear to me",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I'm a little confused about it",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I do not get it",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I don't think I totally understand what you're asking me",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "Could you confirm this for me?",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I cannot clearly understand what you did",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "There is something I do not understand",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "That is totally wrong-headed",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "It could be that I wasn't clear either",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "This is misleading",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I am not quite sure what the point was",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I beg your pardon",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I am confused",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "our discussion may be a little confused",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I did not really understand it straight up",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I'm not sure I understand your question",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I do not know what you are talking about",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I do not know what you mean",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I cannot understand what you are driving at",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "If you could just confirm",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "Don't know anything about that",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "It just doesn't add up",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I just want to get things right",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "the purpose is not obvious to me",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I don't think I understand what you really mean",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "Could you expand on that a little bit, please?",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I misunderstood you; I apologize",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "I did not catch you",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "This issue must in fact be clarified",
+        "intent": "incomprehension",
+        "entities": []
+      },
+      {
+        "text": "She was over the moon with her new bicycle",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "She's a very positive person and never lets anything get her down.",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "i am confident in the future",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "I feel terrific today!",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "When he asked her to marry him she was ecstatic",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "i know my friend loves me",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "I was overjoyed at the birth of my son.",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "I'm excited by the new opportunities that the internet brings",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "i am on cloud nine",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "I was completely relaxed after I came back from holiday",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "i feel delighted about my condition",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "people see me as courageous and energetic",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "i feel great",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "i'm so fortunate nowadays",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "I feel lucky today!",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "I'm delighted that I got the job. It's just what I always wanted.",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "i am certain that all will turn out right",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "I felt wonderful after such a relaxing weekend",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "I feel great today!",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "i will always be thankful for life",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "i'm excited to see you",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "i am satisfied with my life",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "i am inspired by my work",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "i am flying high",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "i feel wonderful",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "I felt ecstatic when I passed my exam.",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "I'm confident that we can find a solution to this problem.",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "I was happy when my friend  came to stay.",
+        "intent": "positiveEmo",
+        "entities": []
+      },
+      {
+        "text": "I was unhappy to hear my doctor's assessment",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "I was cross with him for not helping me, as he said he would",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "She was angry with her boss for criticising her work.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "I was furious with him for breaking my favourite vase",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "I was offended by what she said.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "I'm very annoyed with him. He hasn't returned any of my calls.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "I feel down at the moment, I think I should talk to a counsellor.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "I was very angry with him for not helping me, as he said he would.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "What's the matter with him? He's so down in the dumps these days.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "They were appalled to hear that they would lose their jobs.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "After he failed his English exam, he was depressed for a week.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "I felt a little apprehensive before my interview.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "He betrayed my trust when he repeated my secret to everyone.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "His behaviour irritated me.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "i'm rather pessimistic about my health",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "She was disappointed by her son's poor results at school.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "I felt so embarrassed that I went bright red",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "I was so annoyed when I failed my test.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "I'm very envious of her happiness - I wish I was happy too.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "i doubt about my future",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "That news made me weepy.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "I was so depressed when my pet died.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "Her words made me feel really unhappy.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "I’m feeling a little low at the moment.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+      {
+        "text": "The letter she wrote made me furious.",
+        "intent": "negativeEmo",
+        "entities": []
+      },
+{"text":"Approved","intent":"agree","entities":[]},{"text":"Go on","intent":"agree","entities":[]},{"text":"ok","intent":"agree","entities":[]},{"text":"yes","intent":"agree","entities":[]},{"text":"I agree with that","intent":"agree","entities":[]},{"text":"seems ok to me","intent":"agree","entities":[]},{"text":"Right","intent":"agree","entities":[]},{"text":"Yeah ok","intent":"agree","entities":[]},{"text":"That's right","intent":"agree","entities":[]},{"text":"Yes it is","intent":"agree","entities":[]},{"text":"agree","intent":"agree","entities":[]},{"text":"that seems ok","intent":"agree","entities":[]},{"text":"Yes","intent":"agree","entities":[]},{"text":"kay","intent":"agree","entities":[]},{"text":"Yes I do","intent":"agree","entities":[]},{"text":"Not approved","intent":"disagree","entities":[]},{"text":"no","intent":"disagree","entities":[]},{"text":"Not ok","intent":"disagree","entities":[]},{"text":"I disagree with that","intent":"disagree","entities":[]},{"text":"Don't go on","intent":"disagree","entities":[]},{"text":"no kay","intent":"disagree","entities":[]},{"text":"that seems not ok","intent":"disagree","entities":[]},{"text":"Not right","intent":"disagree","entities":[]},{"text":"disagree","intent":"disagree","entities":[]},{"text":"No it is not","intent":"disagree","entities":[]},{"text":"No I don't","intent":"disagree","entities":[]},{"text":"That's no right","intent":"disagree","entities":[]},{"text":"No","intent":"disagree","entities":[]},{"text":"seems not ok to me","intent":"disagree","entities":[]},{"text":"bye","intent":"bye","entities":[]},{"text":"byebye","intent":"bye","entities":[]},{"text":"bye bye","intent":"bye","entities":[]},{"text":"I did go","intent":"bye","entities":[]},{"text":"I disconnect","intent":"bye","entities":[]},{"text":"I will disconnect now","intent":"bye","entities":[]},{"text":"see you tomorrow","intent":"bye","entities":[]},{"text":"Bye","intent":"bye","entities":[]},{"text":"Go","intent":"bye","entities":[]},{"text":"Goodnight","intent":"bye","entities":[]},{"text":"later","intent":"bye","entities":[]},{"text":"i'm gone","intent":"bye","entities":[]},{"text":"i'll go","intent":"bye","entities":[]},{"text":"see you","intent":"bye","entities":[]},{"text":"Night","intent":"bye","entities":[]},{"text":"hi","intent":"hello","entities":[]},{"text":"hello","intent":"hello","entities":[]},{"text":"Good day","intent":"hello","entities":[]},{"text":"Goodafternoon","intent":"hello","entities":[]},{"text":"Good morning","intent":"hello","entities":[]},{"text":"Hey","intent":"hello","entities":[]},{"text":"hihi","intent":"hello","entities":[]},{"text":"Hay","intent":"hello","entities":[]},{"text":"Morning","intent":"hello","entities":[]},{"text":"hi hi","intent":"hello","entities":[]},{"text":"Hello!","intent":"hello","entities":[]},{"text":"Nice to see you","intent":"hello","entities":[]},{"text":"I'm here","intent":"hello","entities":[]},{"text":"I show up","intent":"hello","entities":[]},{"text":"Yo","intent":"hello","entities":[]},{"text":"I saw my mother","intent":"social","entities":[]},{"text":"I talk to every body","intent":"social","entities":[]},{"text":"I see my family","intent":"social","entities":[]},{"text":"I saw my sister today","intent":"social","entities":[]},{"text":"I saw my mother today","intent":"social","entities":[]},{"text":"I saw my brother today","intent":"social","entities":[]},{"text":"I saw my father","intent":"social","entities":[]},{"text":"I go drink something with family","intent":"social","entities":[]},{"text":"I did see some poeple","intent":"social","entities":[]},{"text":"I saw my father today","intent":"social","entities":[]},{"text":"I saw friends","intent":"social","entities":[]},{"text":"I go out","intent":"social","entities":[]},{"text":"I saw my sister","intent":"social","entities":[]},{"text":"I visited some friends","intent":"social","entities":[]},{"text":"I saw my brother","intent":"social","entities":[]},{"text":"I want a smoothie","intent":"fallback","entities":[]},{"text":"scrunieu","intent":"fallback","entities":[]},{"text":"My name is","intent":"fallback","entities":[]},{"text":"fork","intent":"fallback","entities":[]},{"text":"I eat too much","intent":"eatingDisorders","entities":[]},{"text":"I can't eat anything","intent":"eatingDisorders","entities":[]},{"text":"I'm in trouble eating something","intent":"eatingDisorders","entities":[]},{"text":"I eat every thing","intent":"eatingDisorders","entities":[]},{"text":"I'm in trouble eating","intent":"eatingDisorders","entities":[]}
+    ]
+  }
+}
