@@ -68,7 +68,7 @@ if __name__ == "__main__":
 \t\t\t-s SOURCE_LANGUAGE -t TARGET_LANGUAGE
 \t\t\t-k AUTH_KEY
 
-example: traduction.py /home/ex/Desktop/MediBot/data/5_intents/risks/data.json\ FR EN df4385c2-33de-e423-4134-ca1f7b3ea8b7
+example: traduction.py -f /home/ex/Desktop/MediBot/data/5_intents/risks/data.json -o ./data.json -s FR -t EN -k df4385c2-33de-e423-4134-ca1f7b3ea8b7
 
 translate a RASA json file to another language
 
