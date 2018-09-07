@@ -59,20 +59,22 @@
 <!-- ==================== CLASS DESCRIPTION ==================== -->
 <h1 class="epydoc">Class AskSmoking</h1><p class="nomargin-top"><span class="codelink"><a href="simple_actions-pysrc.html#AskSmoking">source&nbsp;code</a></span></p>
 <center>
-<center>  <map id="uml_class_diagram_for_simple_a_54" name="uml_class_diagram_for_simple_a_54">
-<area shape="rect" id="node1_8" href="simple_actions.AskSmoking-class.html#__init__" title="Set the name of the entity to ask" alt="" coords="87,267,167,287"/>
-<area shape="rect" id="node1_9" href="simple_actions.AskSmoking-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="87,287,167,307"/>
-<area shape="rect" id="node1" href="simple_actions.AskSmoking-class.html" title="Say something to the user : ask the user to talk about his smoking" alt="" coords="75,235,179,313"/>
-<area shape="rect" id="node2_10" href="simple_actions.AskAction-class.html#SIMPLE" title="simple_actions.AskAction.SIMPLE" alt="" coords="17,127,236,147"/>
-<area shape="rect" id="node2_11" href="simple_actions.AskAction-class.html#entity_name" title="simple_actions.AskAction.entity_name" alt="" coords="17,147,236,167"/>
-<area shape="rect" id="node2_12" href="simple_actions.AskAction-class.html#check" title="Used to check if all proprieties has been set" alt="" coords="17,170,236,190"/>
-<area shape="rect" id="node2_13" href="simple_actions.AskAction-class.html#run" title="Print something for the user" alt="" coords="17,190,236,210"/>
-<area shape="rect" id="node2" href="simple_actions.AskAction-class.html" title="Used to say something to the user" alt="" coords="5,103,248,216"/>
-<area shape="rect" id="node3_14" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="35,38,219,58"/>
-<area shape="rect" id="node3_15" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="35,58,219,78"/>
+<center>  <map id="uml_class_diagram_for_simple_a_62" name="uml_class_diagram_for_simple_a_62">
+<area shape="rect" id="node1_10" href="simple_actions.AskSmoking-class.html#__init__" title="Set the name of the entity to ask" alt="" coords="87,307,167,327"/>
+<area shape="rect" id="node1_11" href="simple_actions.AskSmoking-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="87,327,167,347"/>
+<area shape="rect" id="node1" href="simple_actions.AskSmoking-class.html" title="Say something to the user : ask the user to talk about his smoking" alt="" coords="75,275,179,353"/>
+<area shape="rect" id="node2_12" href="simple_actions.AskButtonsAction-class.html#entity_name" title="simple_actions.AskButtonsAction.entity_name" alt="" coords="17,127,236,147"/>
+<area shape="rect" id="node2_13" href="simple_actions.AskButtonsAction-class.html#intent_name" title="simple_actions.AskButtonsAction.intent_name" alt="" coords="17,147,236,167"/>
+<area shape="rect" id="node2_14" href="simple_actions.AskButtonsAction-class.html#buttons" title="simple_actions.AskButtonsAction.buttons" alt="" coords="17,167,236,187"/>
+<area shape="rect" id="node2_15" href="simple_actions.AskButtonsAction-class.html#payload_no" title="simple_actions.AskButtonsAction.payload_no" alt="" coords="17,187,236,207"/>
+<area shape="rect" id="node2_16" href="simple_actions.AskButtonsAction-class.html#check" title="Used to check if all proprieties has been set" alt="" coords="17,210,236,230"/>
+<area shape="rect" id="node2_17" href="simple_actions.AskButtonsAction-class.html#run" title="For each button is self.buttons, make a button after the name button" alt="" coords="17,230,236,250"/>
+<area shape="rect" id="node2" href="simple_actions.AskButtonsAction-class.html" title="Used to say something to the user using predefined buttons" alt="" coords="5,103,248,256"/>
+<area shape="rect" id="node3_18" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="35,38,219,58"/>
+<area shape="rect" id="node3_19" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="35,58,219,78"/>
 <area shape="rect" id="node3" href="rasa_core.actions.action.Action-class.html" title="Next action to be taken in response to a dialogue state." alt="" coords="23,5,231,84"/>
 </map>
-  <img src="uml_class_diagram_for_simple_a_54.gif" alt='' usemap="#uml_class_diagram_for_simple_a_54" ismap="ismap" class="graph-without-title" />
+  <img src="uml_class_diagram_for_simple_a_62.gif" alt='' usemap="#uml_class_diagram_for_simple_a_62" ismap="ismap" class="graph-without-title" />
 </center>
 </center>
 <hr />
@@ -132,9 +134,9 @@
   </tr>
   <tr>
     <td colspan="2" class="summary">
-    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="simple_actions.AskAction-class.html">AskAction</a></code></b>:
-      <code><a href="simple_actions.AskAction-class.html#check">check</a></code>,
-      <code><a href="simple_actions.AskAction-class.html#run">run</a></code>
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="simple_actions.AskButtonsAction-class.html">AskButtonsAction</a></code></b>:
+      <code><a href="simple_actions.AskButtonsAction-class.html#check">check</a></code>,
+      <code><a href="simple_actions.AskButtonsAction-class.html#run">run</a></code>
       </p>
     <p class="indent-wrapped-lines"><b>Inherited from <code><a href="rasa_core.actions.action.Action-class.html">rasa_core.actions.action.Action</a></code></b>:
       <code><a href="rasa_core.actions.action.Action-class.html#__str__">__str__</a></code>,
@@ -175,9 +177,11 @@
 </tr>
   <tr>
     <td colspan="2" class="summary">
-    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="simple_actions.AskAction-class.html">AskAction</a></code></b>:
-      <code><a href="simple_actions.AskAction-class.html#SIMPLE">SIMPLE</a></code>,
-      <code><a href="simple_actions.AskAction-class.html#entity_name">entity_name</a></code>
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="simple_actions.AskButtonsAction-class.html">AskButtonsAction</a></code></b>:
+      <code><a href="simple_actions.AskButtonsAction-class.html#buttons">buttons</a></code>,
+      <code><a href="simple_actions.AskButtonsAction-class.html#entity_name">entity_name</a></code>,
+      <code><a href="simple_actions.AskButtonsAction-class.html#intent_name">intent_name</a></code>,
+      <code><a href="simple_actions.AskButtonsAction-class.html#payload_no">payload_no</a></code>
       </p>
     </td>
   </tr>
@@ -301,7 +305,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Wed Aug  8 13:59:02 2018
+    Generated by Epydoc 3.0.1 on Fri Sep  7 16:51:42 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

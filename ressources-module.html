@@ -57,8 +57,8 @@
 </table>
 <!-- ==================== MODULE DESCRIPTION ==================== -->
 <h1 class="epydoc">Module ressources</h1><p class="nomargin-top"><span class="codelink"><a href="ressources-pysrc.html">source&nbsp;code</a></span></p>
-<p>This module is used to regroup functions related to ressources Created
-  on Tue Jun 26 10:22:40 2018</p>
+<p>This module is used to regroup functions related to ressources</p>
+  <p>Created on Tue Jun 26 10:22:40 2018</p>
   <p>Last update on Mon Jul 30 10:30:00 2018</p>
 
 <hr />
@@ -91,29 +91,12 @@
         <tr>
           <td><span class="summary-sig"><a href="ressources-module.html#get_utterance" class="summary-sig-name">get_utterance</a>(<span class="summary-sig-arg">key</span>,
         <span class="summary-sig-arg">language</span>,
+        <span class="summary-sig-arg">slack_id</span>,
         <span class="summary-sig-arg">list_infos</span>=<span class="summary-sig-default">None</span>)</span><br />
       Returns:
       the utterance the bot have to say for a given key and language</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="ressources-pysrc.html#get_utterance">source&nbsp;code</a></span>
-            
-          </td>
-        </tr>
-      </table>
-      
-    </td>
-  </tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr>
-          <td><span class="summary-sig"><a href="ressources-module.html#get_language_duckling" class="summary-sig-name">get_language_duckling</a>(<span class="summary-sig-arg">language</span>)</span><br />
-      Returns:
-      the language to use with Duckling</td>
-          <td align="right" valign="top">
-            <span class="codelink"><a href="ressources-pysrc.html#get_language_duckling">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -148,7 +131,8 @@
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
           <td><span class="summary-sig"><a href="ressources-module.html#get_drug_info" class="summary-sig-name">get_drug_info</a>(<span class="summary-sig-arg">drug</span>,
-        <span class="summary-sig-arg">language</span>)</span><br />
+        <span class="summary-sig-arg">language</span>,
+        <span class="summary-sig-arg">slack_id</span>)</span><br />
       Returns:
       call <code>clean_info_drug</code> method with list of drug found in 
       file [propriety_name, non_propriety_name, subst_name, pharm_classes]</td>
@@ -169,7 +153,8 @@
         <tr>
           <td><span class="summary-sig"><a href="ressources-module.html#clean_info_drug" class="summary-sig-name">clean_info_drug</a>(<span class="summary-sig-arg">list_infos</span>,
         <span class="summary-sig-arg">drug</span>,
-        <span class="summary-sig-arg">language</span>)</span><br />
+        <span class="summary-sig-arg">language</span>,
+        <span class="summary-sig-arg">slack_id</span>)</span><br />
       Returns:
       [propriety_names, non_propriety_names, subst_names, pharm_classes] if
       drug is not found in file, returns ['drug (default value)', 'drug 
@@ -183,12 +168,163 @@
       
     </td>
   </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ressources-module.html#get_number_level" class="summary-sig-name">get_number_level</a>(<span class="summary-sig-arg">text</span>)</span><br />
+      Returns:
+      number of corresponding level</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ressources-pysrc.html#get_number_level">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_complex_entities"></a><span class="summary-sig-name">get_complex_entities</span>()</span><br />
+      Get all complex entities</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ressources-pysrc.html#get_complex_entities">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ressources-module.html#get_info_in_config" class="summary-sig-name">get_info_in_config</a>(<span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">project_id</span>)</span><br />
+      Returns:
+      infos in config[name]</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ressources-pysrc.html#get_info_in_config">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ressources-module.html#get_info_in_session_config" class="summary-sig-name">get_info_in_session_config</a>(<span class="summary-sig-arg">session</span>,
+        <span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">project_id</span>)</span><br />
+      Returns:
+      infos in config['sessions'][session][name]</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ressources-pysrc.html#get_info_in_session_config">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ressources-module.html#get_session_id_from_config" class="summary-sig-name">get_session_id_from_config</a>(<span class="summary-sig-arg">session_number</span>,
+        <span class="summary-sig-arg">project_id</span>)</span><br />
+      Returns:
+      session id</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ressources-pysrc.html#get_session_id_from_config">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ressources-module.html#get_session_from_config" class="summary-sig-name">get_session_from_config</a>(<span class="summary-sig-arg">session_id</span>,
+        <span class="summary-sig-arg">project_id</span>)</span><br />
+      Returns:
+      config['sessions'][session_id]</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ressources-pysrc.html#get_session_from_config">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ressources-module.html#get_reminder_in_config" class="summary-sig-name">get_reminder_in_config</a>(<span class="summary-sig-arg">reminder_name</span>,
+        <span class="summary-sig-arg">project_id</span>)</span><br />
+      Returns:
+      duration of reminder</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ressources-pysrc.html#get_reminder_in_config">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="ressources-module.html#get_mandatories" class="summary-sig-name">get_mandatories</a>(<span class="summary-sig-arg">project_id</span>,
+        <span class="summary-sig-arg">current_session</span>)</span></td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="ressources-pysrc.html#get_mandatories">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
 </table>
 <p class="indent-wrapped-lines"><b>Imports:</b>
   <span title="json">json</span>,
   <span title="csv">csv</span>,
-  <span title="duckling.language.Language">Language</span>,
-  <span title="insertfonction.insert_to_conversation">insert_to_conversation</span>
+  <a href="insertfonction-module.html#insert_to_conversation" title="insertfonction.insert_to_conversation">insert_to_conversation</a>,
+  <span title="datetime.datetime">dt</span>,
+  <span title="datetime.timedelta">timedelta</span>,
+  <span title="yaml">yaml</span>,
+  <span title="rasa_core.actions.forms.EntityFormField">EntityFormField</span>
 </p><br />
 <!-- ==================== FUNCTION DETAILS ==================== -->
 <a name="section-FunctionDetails"></a>
@@ -217,6 +353,7 @@
   <tr valign="top"><td>
   <h3 class="epydoc"><span class="sig"><span class="sig-name">get_utterance</span>(<span class="sig-arg">key</span>,
         <span class="sig-arg">language</span>,
+        <span class="sig-arg">slack_id</span>,
         <span class="sig-arg">list_infos</span>=<span class="sig-default">None</span>)</span>
   </h3>
   </td><td align="right" valign="top"
@@ -230,35 +367,12 @@
     <dd><ul class="nomargin-top">
         <li><strong class="pname"><code>key</code></strong> - id of the sentence to search for in ressources.json file</li>
         <li><strong class="pname"><code>language</code></strong> - language to use</li>
+        <li><strong class="pname"><code>slack_id</code></strong> - id of the tracker</li>
         <li><strong class="pname"><code>list_infos</code></strong> - list of infos to insert in utterance</li>
     </ul></dd>
     <dt>Returns:</dt>
-        <dd>the utterance the bot have to say for a given key and language</dd>
-  </dl>
-</td></tr></table>
-</div>
-<a name="get_language_duckling"></a>
-<div>
-<table class="details" border="1" cellpadding="3"
-       cellspacing="0" width="100%" bgcolor="white">
-<tr><td>
-  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-  <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_language_duckling</span>(<span class="sig-arg">language</span>)</span>
-  </h3>
-  </td><td align="right" valign="top"
-    ><span class="codelink"><a href="ressources-pysrc.html#get_language_duckling">source&nbsp;code</a></span>&nbsp;
-    </td>
-  </tr></table>
-  
-  
-  <dl class="fields">
-    <dt>Parameters:</dt>
-    <dd><ul class="nomargin-top">
-        <li><strong class="pname"><code>language</code></strong> - language to use</li>
-    </ul></dd>
-    <dt>Returns:</dt>
-        <dd>the language to use with Duckling</dd>
+        <dd>the utterance the bot have to say for a given key and language
+          <p>Save in db, in CONVERSATION table, the sentence of the bot</p></dd>
   </dl>
 </td></tr></table>
 </div>
@@ -282,7 +396,7 @@
   <dl class="fields">
     <dt>Parameters:</dt>
     <dd><ul class="nomargin-top">
-        <li><strong class="pname"><code>level_type</code></strong> - ID of the type of leve e.g. pain_level.</li>
+        <li><strong class="pname"><code>level_type</code></strong> - ID of the type of level e.g. pain_level.</li>
         <li><strong class="pname"><code>keys</code></strong> - list of ids of the examples to search for in ressources.json file
           e.g. ['vigorous', 'moderate', 'little']</li>
         <li><strong class="pname"><code>language</code></strong> - language to use</li>
@@ -300,7 +414,8 @@
   <table width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr valign="top"><td>
   <h3 class="epydoc"><span class="sig"><span class="sig-name">get_drug_info</span>(<span class="sig-arg">drug</span>,
-        <span class="sig-arg">language</span>)</span>
+        <span class="sig-arg">language</span>,
+        <span class="sig-arg">slack_id</span>)</span>
   </h3>
   </td><td align="right" valign="top"
     ><span class="codelink"><a href="ressources-pysrc.html#get_drug_info">source&nbsp;code</a></span>&nbsp;
@@ -312,6 +427,8 @@
     <dt>Parameters:</dt>
     <dd><ul class="nomargin-top">
         <li><strong class="pname"><code>drug</code></strong> - drug name or marketing name of the drug</li>
+        <li><strong class="pname"><code>language</code></strong> - language to use</li>
+        <li><strong class="pname"><code>slack_id</code></strong> - id of the tracker</li>
     </ul></dd>
     <dt>Returns:</dt>
         <dd>call <code>clean_info_drug</code> method with list of drug found 
@@ -329,7 +446,8 @@
   <tr valign="top"><td>
   <h3 class="epydoc"><span class="sig"><span class="sig-name">clean_info_drug</span>(<span class="sig-arg">list_infos</span>,
         <span class="sig-arg">drug</span>,
-        <span class="sig-arg">language</span>)</span>
+        <span class="sig-arg">language</span>,
+        <span class="sig-arg">slack_id</span>)</span>
   </h3>
   </td><td align="right" valign="top"
     ><span class="codelink"><a href="ressources-pysrc.html#clean_info_drug">source&nbsp;code</a></span>&nbsp;
@@ -341,12 +459,202 @@
     <dt>Parameters:</dt>
     <dd><ul class="nomargin-top">
         <li><strong class="pname"><code>list_infos</code></strong> - list of infos for several drugs with a name in common</li>
+        <li><strong class="pname"><code>drug</code></strong> - drug to check</li>
+        <li><strong class="pname"><code>language</code></strong> - language to use</li>
+        <li><strong class="pname"><code>slack_id</code></strong> - ID of the tracker</li>
     </ul></dd>
     <dt>Returns:</dt>
         <dd>[propriety_names, non_propriety_names, subst_names, 
           pharm_classes] if drug is not found in file, returns ['drug 
           (default value)', 'drug (default value)', 'drug (default value)',
           'drug (default value)']</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_number_level"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_number_level</span>(<span class="sig-arg">text</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ressources-pysrc.html#get_number_level">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>text</code></strong> - text (level)</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>number of corresponding level</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_info_in_config"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_info_in_config</span>(<span class="sig-arg">name</span>,
+        <span class="sig-arg">project_id</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ressources-pysrc.html#get_info_in_config">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> - name of key to search in config file</li>
+        <li><strong class="pname"><code>project_id</code></strong> - ID of the project linked to patient, used to find config file.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>infos in config[name]</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_info_in_session_config"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_info_in_session_config</span>(<span class="sig-arg">session</span>,
+        <span class="sig-arg">name</span>,
+        <span class="sig-arg">project_id</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ressources-pysrc.html#get_info_in_session_config">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>session</code></strong> - number of session</li>
+        <li><strong class="pname"><code>name</code></strong> - name of key to search in config file, in sessions</li>
+        <li><strong class="pname"><code>project_id</code></strong> - ID of the project linked to patient, used to find config file.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>infos in config['sessions'][session][name]</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_session_id_from_config"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_session_id_from_config</span>(<span class="sig-arg">session_number</span>,
+        <span class="sig-arg">project_id</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ressources-pysrc.html#get_session_id_from_config">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>session_number</code></strong> - number of session</li>
+        <li><strong class="pname"><code>project_id</code></strong> - ID of the project linked to patient, used to find config file.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>session id</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_session_from_config"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_session_from_config</span>(<span class="sig-arg">session_id</span>,
+        <span class="sig-arg">project_id</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ressources-pysrc.html#get_session_from_config">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>session_id</code></strong> - ID of session</li>
+        <li><strong class="pname"><code>project_id</code></strong> - ID of the project linked to patient, used to find config file.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>config['sessions'][session_id]</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_reminder_in_config"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_reminder_in_config</span>(<span class="sig-arg">reminder_name</span>,
+        <span class="sig-arg">project_id</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ressources-pysrc.html#get_reminder_in_config">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>reminder_name</code></strong> - name of the reminder to find in config file</li>
+        <li><strong class="pname"><code>project_id</code></strong> - ID of the project linked to patient, used to find config file.</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>duration of reminder</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_mandatories"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_mandatories</span>(<span class="sig-arg">project_id</span>,
+        <span class="sig-arg">current_session</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="ressources-pysrc.html#get_mandatories">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>project_id</code></strong> - ID of the project linked to patient, used to find config file.</li>
+        <li><strong class="pname"><code>current_session</code></strong> - current session</li>
+    </ul></dd>
   </dl>
 </td></tr></table>
 </div>
@@ -379,7 +687,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Wed Aug  8 13:58:55 2018
+    Generated by Epydoc 3.0.1 on Fri Sep  7 16:51:34 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

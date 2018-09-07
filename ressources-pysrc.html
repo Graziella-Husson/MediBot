@@ -57,103 +57,494 @@
 </table>
 <h1 class="epydoc">Source Code for <a href="ressources-module.html">Module ressources</a></h1>
 <pre class="py-src">
-<a name="L1"></a><tt class="py-lineno"> 1</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
-<a name="L2"></a><tt class="py-lineno"> 2</tt>  <tt class="py-line"><tt class="py-docstring">This module is used to regroup functions related to ressources</tt> </tt>
-<a name="L3"></a><tt class="py-lineno"> 3</tt>  <tt class="py-line"><tt class="py-docstring">Created on Tue Jun 26 10:22:40 2018\n</tt> </tt>
-<a name="L4"></a><tt class="py-lineno"> 4</tt>  <tt class="py-line"><tt class="py-docstring">Last update on Mon Jul 30 10:30:00 2018\n</tt> </tt>
-<a name="L5"></a><tt class="py-lineno"> 5</tt>  <tt class="py-line"><tt class="py-docstring">@author: U{@Graziella-Husson&lt;https://github.com/Graziella-Husson&gt;}</tt> </tt>
-<a name="L6"></a><tt class="py-lineno"> 6</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
-<a name="L7"></a><tt class="py-lineno"> 7</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">json</tt> </tt>
-<a name="L8"></a><tt class="py-lineno"> 8</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">csv</tt> </tt>
-<a name="L9"></a><tt class="py-lineno"> 9</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">duckling</tt><tt class="py-op">.</tt><tt class="py-name">language</tt> <tt class="py-keyword">import</tt> <tt class="py-name">Language</tt> </tt>
-<a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">insertfonction</tt> <tt class="py-keyword">import</tt> <tt class="py-name">insert_to_conversation</tt> </tt>
-<a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"> </tt>
-<a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"> </tt>
-<a name="get_utterance"></a><div id="get_utterance-def"><a name="L13"></a><tt class="py-lineno">13</tt> <a class="py-toggle" href="#" id="get_utterance-toggle" onclick="return toggle('get_utterance');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#get_utterance">get_utterance</a><tt class="py-op">(</tt><tt class="py-param">key</tt><tt class="py-op">,</tt> <tt class="py-param">language</tt><tt class="py-op">,</tt> <tt class="py-param">list_infos</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="get_utterance-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="get_utterance-expanded"><a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line">    <tt class="py-docstring">"""@param key: id of the sentence to search for in ressources.json file</tt> </tt>
-<a name="L15"></a><tt class="py-lineno">15</tt>  <tt class="py-line"><tt class="py-docstring">    @param language: language to use</tt> </tt>
-<a name="L16"></a><tt class="py-lineno">16</tt>  <tt class="py-line"><tt class="py-docstring">    @param list_infos: list of infos to insert in utterance</tt> </tt>
-<a name="L17"></a><tt class="py-lineno">17</tt>  <tt class="py-line"><tt class="py-docstring">    @return: the utterance the bot have to say for a given key and language"""</tt> </tt>
-<a name="L18"></a><tt class="py-lineno">18</tt>  <tt class="py-line">    <tt id="link-0" class="py-name" targets="Module ressources=ressources-module.html"><a title="ressources" class="py-name" href="#" onclick="return doclink('link-0', 'ressources', 'link-0');">ressources</a></tt> <tt class="py-op">=</tt> <tt class="py-name">json</tt><tt class="py-op">.</tt><tt class="py-name">load</tt><tt class="py-op">(</tt><tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-string">'./ressources/ressources.json'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
-<a name="L19"></a><tt class="py-lineno">19</tt>  <tt class="py-line">    <tt class="py-name">utterance</tt> <tt class="py-op">=</tt> <tt id="link-1" class="py-name"><a title="ressources" class="py-name" href="#" onclick="return doclink('link-1', 'ressources', 'link-0');">ressources</a></tt><tt class="py-op">[</tt><tt class="py-string">'utterances'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">key</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">language</tt><tt class="py-op">]</tt> </tt>
-<a name="L20"></a><tt class="py-lineno">20</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">list_infos</tt> <tt class="py-keyword">is</tt> <tt class="py-keyword">not</tt> <tt class="py-name">None</tt><tt class="py-op">:</tt> </tt>
-<a name="L21"></a><tt class="py-lineno">21</tt>  <tt class="py-line">        <tt class="py-name">utterance</tt> <tt class="py-op">=</tt> <tt class="py-name">utterance</tt><tt class="py-op">.</tt><tt class="py-name">format</tt><tt class="py-op">(</tt><tt class="py-op">*</tt><tt class="py-name">list_infos</tt><tt class="py-op">)</tt> </tt>
-<a name="L22"></a><tt class="py-lineno">22</tt>  <tt class="py-line">    <tt class="py-name">insert_to_conversation</tt><tt class="py-op">(</tt><tt class="py-name">utterance</tt><tt class="py-op">,</tt> <tt class="py-string">"BOT"</tt><tt class="py-op">)</tt> </tt>
-<a name="L23"></a><tt class="py-lineno">23</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">utterance</tt> </tt>
-</div><a name="L24"></a><tt class="py-lineno">24</tt>  <tt class="py-line"> </tt>
-<a name="L25"></a><tt class="py-lineno">25</tt>  <tt class="py-line"> </tt>
-<a name="get_language_duckling"></a><div id="get_language_duckling-def"><a name="L26"></a><tt class="py-lineno">26</tt> <a class="py-toggle" href="#" id="get_language_duckling-toggle" onclick="return toggle('get_language_duckling');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#get_language_duckling">get_language_duckling</a><tt class="py-op">(</tt><tt class="py-param">language</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="get_language_duckling-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="get_language_duckling-expanded"><a name="L27"></a><tt class="py-lineno">27</tt>  <tt class="py-line">    <tt class="py-docstring">"""@param language: language to use</tt> </tt>
-<a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line"><tt class="py-docstring">    @return: the language to use with Duckling"""</tt> </tt>
-<a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-op">{</tt> </tt>
-<a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line">        <tt class="py-string">'FRA'</tt><tt class="py-op">:</tt> <tt class="py-name">Language</tt><tt class="py-op">.</tt><tt class="py-name">FRENCH</tt><tt class="py-op">,</tt> </tt>
-<a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line">        <tt class="py-string">'ENG'</tt><tt class="py-op">:</tt> <tt class="py-name">Language</tt><tt class="py-op">.</tt><tt class="py-name">ENGLISH</tt> </tt>
-<a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line">        <tt class="py-op">}</tt><tt class="py-op">.</tt><tt class="py-name">get</tt><tt class="py-op">(</tt><tt class="py-name">language</tt><tt class="py-op">,</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt> </tt>
-</div><a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line"> </tt>
-<a name="L34"></a><tt class="py-lineno">34</tt>  <tt class="py-line"> </tt>
-<a name="get_examples_classif"></a><div id="get_examples_classif-def"><a name="L35"></a><tt class="py-lineno">35</tt> <a class="py-toggle" href="#" id="get_examples_classif-toggle" onclick="return toggle('get_examples_classif');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#get_examples_classif">get_examples_classif</a><tt class="py-op">(</tt><tt class="py-param">level_type</tt><tt class="py-op">,</tt> <tt class="py-param">keys</tt><tt class="py-op">,</tt> <tt class="py-param">language</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="get_examples_classif-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="get_examples_classif-expanded"><a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line">    <tt class="py-docstring">"""@param level_type: ID of the type of leve e.g. pain_level.</tt> </tt>
-<a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line"><tt class="py-docstring">    @param keys: list of ids of the examples to search for in ressources.json</tt> </tt>
-<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line"><tt class="py-docstring">    file e.g. ['vigorous', 'moderate', 'little']</tt> </tt>
-<a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line"><tt class="py-docstring">    @param language: language to use</tt> </tt>
-<a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line"><tt class="py-docstring">    @return: list of examples for each keys"""</tt> </tt>
-<a name="L41"></a><tt class="py-lineno">41</tt>  <tt class="py-line">    <tt id="link-2" class="py-name"><a title="ressources" class="py-name" href="#" onclick="return doclink('link-2', 'ressources', 'link-0');">ressources</a></tt> <tt class="py-op">=</tt> <tt class="py-name">json</tt><tt class="py-op">.</tt><tt class="py-name">load</tt><tt class="py-op">(</tt><tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-string">'./ressources/ressources.json'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
-<a name="L42"></a><tt class="py-lineno">42</tt>  <tt class="py-line">    <tt class="py-name">examples_classif</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
-<a name="L43"></a><tt class="py-lineno">43</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">key</tt> <tt class="py-keyword">in</tt> <tt class="py-name">keys</tt><tt class="py-op">:</tt> </tt>
-<a name="L44"></a><tt class="py-lineno">44</tt>  <tt class="py-line">        <tt class="py-name">examples_classif</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt id="link-3" class="py-name"><a title="ressources" class="py-name" href="#" onclick="return doclink('link-3', 'ressources', 'link-0');">ressources</a></tt><tt class="py-op">[</tt><tt class="py-string">'examples_classif'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">level_type</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">key</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">language</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
-<a name="L45"></a><tt class="py-lineno">45</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">examples_classif</tt> </tt>
-</div><a name="L46"></a><tt class="py-lineno">46</tt>  <tt class="py-line"> </tt>
-<a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line"> </tt>
-<a name="get_drug_info"></a><div id="get_drug_info-def"><a name="L48"></a><tt class="py-lineno">48</tt> <a class="py-toggle" href="#" id="get_drug_info-toggle" onclick="return toggle('get_drug_info');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#get_drug_info">get_drug_info</a><tt class="py-op">(</tt><tt class="py-param">drug</tt><tt class="py-op">,</tt> <tt class="py-param">language</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="get_drug_info-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="get_drug_info-expanded"><a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line">    <tt class="py-docstring">"""@param drug: drug name or marketing name of the drug</tt> </tt>
-<a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line"><tt class="py-docstring">    @return: call C{clean_info_drug} method with list of drug found in file</tt> </tt>
-<a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line"><tt class="py-docstring">    [propriety_name, non_propriety_name, subst_name, pharm_classes]</tt> </tt>
-<a name="L52"></a><tt class="py-lineno">52</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
-<a name="L53"></a><tt class="py-lineno">53</tt>  <tt class="py-line">    <tt class="py-name">to_return</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
-<a name="L54"></a><tt class="py-lineno">54</tt>  <tt class="py-line">    <tt class="py-keyword">with</tt> <tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-string">'./ressources/FDA_druglist_2018.csv'</tt><tt class="py-op">,</tt> <tt class="py-string">'r'</tt><tt class="py-op">)</tt> <tt class="py-keyword">as</tt> <tt class="py-name">csvfile</tt><tt class="py-op">:</tt> </tt>
-<a name="L55"></a><tt class="py-lineno">55</tt>  <tt class="py-line">        <tt class="py-name">spamreader</tt> <tt class="py-op">=</tt> <tt class="py-name">csv</tt><tt class="py-op">.</tt><tt class="py-name">reader</tt><tt class="py-op">(</tt><tt class="py-name">csvfile</tt><tt class="py-op">,</tt> <tt class="py-name">delimiter</tt><tt class="py-op">=</tt><tt class="py-string">';'</tt><tt class="py-op">)</tt> </tt>
-<a name="L56"></a><tt class="py-lineno">56</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">row</tt> <tt class="py-keyword">in</tt> <tt class="py-name">spamreader</tt><tt class="py-op">:</tt> </tt>
-<a name="L57"></a><tt class="py-lineno">57</tt>  <tt class="py-line">            <tt class="py-comment"># [prod_id, prod_ndc, type, propriety_name, propriety_name_suffix,</tt> </tt>
-<a name="L58"></a><tt class="py-lineno">58</tt>  <tt class="py-line">            <tt class="py-comment"># non_propriety_name, dosage_form_name, route_name,</tt> </tt>
-<a name="L59"></a><tt class="py-lineno">59</tt>  <tt class="py-line">            <tt class="py-comment"># start_marketing_date, end_marketing_date,</tt> </tt>
-<a name="L60"></a><tt class="py-lineno">60</tt>  <tt class="py-line">            <tt class="py-comment"># marketing_category_name, app_number, labeler_name, subst_name,</tt> </tt>
-<a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line">            <tt class="py-comment"># active_numerator_strength, active_ingred_unit, pharm_classes,</tt> </tt>
-<a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line">            <tt class="py-comment"># deaschedule, ndc_exclude_flag, listing_record_certified] = row</tt> </tt>
-<a name="L63"></a><tt class="py-lineno">63</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">drug</tt> <tt class="py-keyword">in</tt> <tt class="py-op">[</tt><tt class="py-name">x</tt><tt class="py-op">.</tt><tt class="py-name">lower</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> <tt class="py-keyword">for</tt> <tt class="py-name">x</tt> <tt class="py-keyword">in</tt> <tt class="py-name">row</tt><tt class="py-op">]</tt><tt class="py-op">:</tt> </tt>
-<a name="L64"></a><tt class="py-lineno">64</tt>  <tt class="py-line">                <tt class="py-name">infos</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">row</tt><tt class="py-op">[</tt><tt class="py-number">3</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-name">row</tt><tt class="py-op">[</tt><tt class="py-number">5</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-name">row</tt><tt class="py-op">[</tt><tt class="py-number">13</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-name">row</tt><tt class="py-op">[</tt><tt class="py-number">16</tt><tt class="py-op">]</tt><tt class="py-op">]</tt> </tt>
-<a name="L65"></a><tt class="py-lineno">65</tt>  <tt class="py-line">                <tt class="py-name">to_return</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">infos</tt><tt class="py-op">)</tt> </tt>
-<a name="L66"></a><tt class="py-lineno">66</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt id="link-4" class="py-name" targets="Function ressources.clean_info_drug()=ressources-module.html#clean_info_drug"><a title="ressources.clean_info_drug" class="py-name" href="#" onclick="return doclink('link-4', 'clean_info_drug', 'link-4');">clean_info_drug</a></tt><tt class="py-op">(</tt><tt class="py-name">to_return</tt><tt class="py-op">,</tt> <tt class="py-name">drug</tt><tt class="py-op">,</tt> <tt class="py-name">language</tt><tt class="py-op">)</tt> </tt>
-</div><a name="L67"></a><tt class="py-lineno">67</tt>  <tt class="py-line"> </tt>
-<a name="L68"></a><tt class="py-lineno">68</tt>  <tt class="py-line"> </tt>
-<a name="clean_info_drug"></a><div id="clean_info_drug-def"><a name="L69"></a><tt class="py-lineno">69</tt> <a class="py-toggle" href="#" id="clean_info_drug-toggle" onclick="return toggle('clean_info_drug');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#clean_info_drug">clean_info_drug</a><tt class="py-op">(</tt><tt class="py-param">list_infos</tt><tt class="py-op">,</tt> <tt class="py-param">drug</tt><tt class="py-op">,</tt> <tt class="py-param">language</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
-</div><div id="clean_info_drug-collapsed" style="display:none;" pad="++" indent="++++"></div><div id="clean_info_drug-expanded"><a name="L70"></a><tt class="py-lineno">70</tt>  <tt class="py-line">    <tt class="py-docstring">"""@param list_infos: list of infos for several drugs with a name in common</tt> </tt>
-<a name="L71"></a><tt class="py-lineno">71</tt>  <tt class="py-line"><tt class="py-docstring">    @return: [propriety_names, non_propriety_names, subst_names, pharm_classes]</tt> </tt>
-<a name="L72"></a><tt class="py-lineno">72</tt>  <tt class="py-line"><tt class="py-docstring">    if drug is not found in file, returns ['drug (default value)',</tt> </tt>
-<a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line"><tt class="py-docstring">    'drug (default value)', 'drug (default value)', 'drug (default value)']</tt> </tt>
-<a name="L74"></a><tt class="py-lineno">74</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
-<a name="L75"></a><tt class="py-lineno">75</tt>  <tt class="py-line">    <tt class="py-name">propriety_names</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
-<a name="L76"></a><tt class="py-lineno">76</tt>  <tt class="py-line">    <tt class="py-name">non_propriety_names</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
-<a name="L77"></a><tt class="py-lineno">77</tt>  <tt class="py-line">    <tt class="py-name">subst_names</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
-<a name="L78"></a><tt class="py-lineno">78</tt>  <tt class="py-line">    <tt class="py-name">pharm_classes</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
-<a name="L79"></a><tt class="py-lineno">79</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">info</tt> <tt class="py-keyword">in</tt> <tt class="py-name">list_infos</tt><tt class="py-op">:</tt> </tt>
-<a name="L80"></a><tt class="py-lineno">80</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt class="py-name">propriety_names</tt><tt class="py-op">:</tt> </tt>
-<a name="L81"></a><tt class="py-lineno">81</tt>  <tt class="py-line">            <tt class="py-name">propriety_names</tt> <tt class="py-op">+=</tt> <tt class="py-string">"/"</tt> <tt class="py-op">+</tt> <tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt> </tt>
-<a name="L82"></a><tt class="py-lineno">82</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt class="py-name">non_propriety_names</tt><tt class="py-op">:</tt> </tt>
-<a name="L83"></a><tt class="py-lineno">83</tt>  <tt class="py-line">            <tt class="py-name">non_propriety_names</tt> <tt class="py-op">+=</tt> <tt class="py-string">"/"</tt> <tt class="py-op">+</tt> <tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt> </tt>
-<a name="L84"></a><tt class="py-lineno">84</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-number">2</tt><tt class="py-op">]</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt class="py-name">subst_names</tt><tt class="py-op">:</tt> </tt>
-<a name="L85"></a><tt class="py-lineno">85</tt>  <tt class="py-line">            <tt class="py-name">subst_names</tt> <tt class="py-op">+=</tt> <tt class="py-string">"/"</tt> <tt class="py-op">+</tt> <tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-number">2</tt><tt class="py-op">]</tt> </tt>
-<a name="L86"></a><tt class="py-lineno">86</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-number">3</tt><tt class="py-op">]</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt class="py-name">pharm_classes</tt><tt class="py-op">:</tt> </tt>
-<a name="L87"></a><tt class="py-lineno">87</tt>  <tt class="py-line">            <tt class="py-name">pharm_classes</tt> <tt class="py-op">+=</tt> <tt class="py-string">"/"</tt> <tt class="py-op">+</tt> <tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-number">3</tt><tt class="py-op">]</tt> </tt>
-<a name="L88"></a><tt class="py-lineno">88</tt>  <tt class="py-line">    <tt class="py-name">infos</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">propriety_names</tt><tt class="py-op">,</tt> <tt class="py-name">non_propriety_names</tt><tt class="py-op">,</tt> <tt class="py-name">subst_names</tt><tt class="py-op">,</tt> <tt class="py-name">pharm_classes</tt><tt class="py-op">]</tt> </tt>
-<a name="L89"></a><tt class="py-lineno">89</tt>  <tt class="py-line">    <tt class="py-name">count</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
-<a name="L90"></a><tt class="py-lineno">90</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">inf</tt> <tt class="py-keyword">in</tt> <tt class="py-name">infos</tt><tt class="py-op">:</tt> </tt>
-<a name="L91"></a><tt class="py-lineno">91</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">inf</tt> <tt class="py-op">==</tt> <tt class="py-string">""</tt><tt class="py-op">:</tt> </tt>
-<a name="L92"></a><tt class="py-lineno">92</tt>  <tt class="py-line">            <tt class="py-name">infos</tt><tt class="py-op">[</tt><tt class="py-name">count</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">drug</tt><tt class="py-op">.</tt><tt class="py-name">title</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt id="link-5" class="py-name" targets="Function ressources.get_utterance()=ressources-module.html#get_utterance"><a title="ressources.get_utterance" class="py-name" href="#" onclick="return doclink('link-5', 'get_utterance', 'link-5');">get_utterance</a></tt><tt class="py-op">(</tt><tt class="py-string">"default"</tt><tt class="py-op">,</tt> <tt class="py-name">language</tt><tt class="py-op">)</tt> </tt>
-<a name="L93"></a><tt class="py-lineno">93</tt>  <tt class="py-line">        <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
-<a name="L94"></a><tt class="py-lineno">94</tt>  <tt class="py-line">            <tt class="py-name">infos</tt><tt class="py-op">[</tt><tt class="py-name">count</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">inf</tt><tt class="py-op">.</tt><tt class="py-name">title</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">:</tt><tt class="py-op">]</tt> </tt>
-<a name="L95"></a><tt class="py-lineno">95</tt>  <tt class="py-line">        <tt class="py-name">count</tt> <tt class="py-op">+=</tt> <tt class="py-number">1</tt> </tt>
-<a name="L96"></a><tt class="py-lineno">96</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">infos</tt> </tt>
-</div><a name="L97"></a><tt class="py-lineno">97</tt>  <tt class="py-line"> </tt><script type="text/javascript">
+<a name="L1"></a><tt class="py-lineno">  1</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L2"></a><tt class="py-lineno">  2</tt>  <tt class="py-line"><tt class="py-docstring">This module is used to regroup functions related to ressources\n</tt> </tt>
+<a name="L3"></a><tt class="py-lineno">  3</tt>  <tt class="py-line"><tt class="py-docstring">Created on Tue Jun 26 10:22:40 2018\n</tt> </tt>
+<a name="L4"></a><tt class="py-lineno">  4</tt>  <tt class="py-line"><tt class="py-docstring">Last update on Mon Jul 30 10:30:00 2018\n</tt> </tt>
+<a name="L5"></a><tt class="py-lineno">  5</tt>  <tt class="py-line"><tt class="py-docstring">@author: U{@Graziella-Husson&lt;https://github.com/Graziella-Husson&gt;}</tt> </tt>
+<a name="L6"></a><tt class="py-lineno">  6</tt>  <tt class="py-line"><tt class="py-docstring">"""</tt> </tt>
+<a name="L7"></a><tt class="py-lineno">  7</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">json</tt> </tt>
+<a name="L8"></a><tt class="py-lineno">  8</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">csv</tt> </tt>
+<a name="L9"></a><tt class="py-lineno">  9</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt id="link-0" class="py-name" targets="Module insertfonction=insertfonction-module.html"><a title="insertfonction" class="py-name" href="#" onclick="return doclink('link-0', 'insertfonction', 'link-0');">insertfonction</a></tt> <tt class="py-keyword">import</tt> <tt id="link-1" class="py-name" targets="Function insertfonction.insert_to_conversation()=insertfonction-module.html#insert_to_conversation"><a title="insertfonction.insert_to_conversation" class="py-name" href="#" onclick="return doclink('link-1', 'insert_to_conversation', 'link-1');">insert_to_conversation</a></tt> </tt>
+<a name="L10"></a><tt class="py-lineno"> 10</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">datetime</tt> <tt class="py-keyword">import</tt> <tt class="py-name">datetime</tt> <tt class="py-keyword">as</tt> <tt class="py-name">dt</tt> </tt>
+<a name="L11"></a><tt class="py-lineno"> 11</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">datetime</tt> <tt class="py-keyword">import</tt> <tt class="py-name">timedelta</tt> </tt>
+<a name="L12"></a><tt class="py-lineno"> 12</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">yaml</tt> </tt>
+<a name="L13"></a><tt class="py-lineno"> 13</tt>  <tt class="py-line"><tt class="py-keyword">from</tt> <tt class="py-name">rasa_core</tt><tt class="py-op">.</tt><tt class="py-name">actions</tt><tt class="py-op">.</tt><tt id="link-2" class="py-name" targets="Module rasa_core.actions.forms=rasa_core.actions.forms-module.html"><a title="rasa_core.actions.forms" class="py-name" href="#" onclick="return doclink('link-2', 'forms', 'link-2');">forms</a></tt> <tt class="py-keyword">import</tt> <tt class="py-name">EntityFormField</tt> </tt>
+<a name="L14"></a><tt class="py-lineno"> 14</tt>  <tt class="py-line"> </tt>
+<a name="L15"></a><tt class="py-lineno"> 15</tt>  <tt class="py-line"> </tt>
+<a name="get_utterance"></a><div id="get_utterance-def"><a name="L16"></a><tt class="py-lineno"> 16</tt> <a class="py-toggle" href="#" id="get_utterance-toggle" onclick="return toggle('get_utterance');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#get_utterance">get_utterance</a><tt class="py-op">(</tt><tt class="py-param">key</tt><tt class="py-op">,</tt> <tt class="py-param">language</tt><tt class="py-op">,</tt> <tt class="py-param">slack_id</tt><tt class="py-op">,</tt> <tt class="py-param">list_infos</tt><tt class="py-op">=</tt><tt class="py-name">None</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="get_utterance-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="get_utterance-expanded"><a name="L17"></a><tt class="py-lineno"> 17</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L18"></a><tt class="py-lineno"> 18</tt>  <tt class="py-line"><tt class="py-docstring">    @param key: id of the sentence to search for in ressources.json file</tt> </tt>
+<a name="L19"></a><tt class="py-lineno"> 19</tt>  <tt class="py-line"><tt class="py-docstring">    @param language: language to use</tt> </tt>
+<a name="L20"></a><tt class="py-lineno"> 20</tt>  <tt class="py-line"><tt class="py-docstring">    @param slack_id: id of the tracker</tt> </tt>
+<a name="L21"></a><tt class="py-lineno"> 21</tt>  <tt class="py-line"><tt class="py-docstring">    @param list_infos: list of infos to insert in utterance</tt> </tt>
+<a name="L22"></a><tt class="py-lineno"> 22</tt>  <tt class="py-line"><tt class="py-docstring">    @return: the utterance the bot have to say for a given key and language</tt> </tt>
+<a name="L23"></a><tt class="py-lineno"> 23</tt>  <tt class="py-line"><tt class="py-docstring"></tt> </tt>
+<a name="L24"></a><tt class="py-lineno"> 24</tt>  <tt class="py-line"><tt class="py-docstring">    Save in db, in CONVERSATION table, the sentence of the bot"""</tt> </tt>
+<a name="L25"></a><tt class="py-lineno"> 25</tt>  <tt class="py-line">    <tt class="py-keyword">print</tt><tt class="py-op">(</tt><tt class="py-string">"key="</tt><tt class="py-op">+</tt><tt class="py-name">key</tt><tt class="py-op">)</tt> </tt>
+<a name="L26"></a><tt class="py-lineno"> 26</tt>  <tt class="py-line">    <tt class="py-keyword">print</tt><tt class="py-op">(</tt><tt class="py-string">"slack_id="</tt><tt class="py-op">+</tt><tt class="py-name">slack_id</tt><tt class="py-op">)</tt> </tt>
+<a name="L27"></a><tt class="py-lineno"> 27</tt>  <tt class="py-line">    <tt id="link-3" class="py-name" targets="Module ressources=ressources-module.html"><a title="ressources" class="py-name" href="#" onclick="return doclink('link-3', 'ressources', 'link-3');">ressources</a></tt> <tt class="py-op">=</tt> <tt class="py-name">json</tt><tt class="py-op">.</tt><tt class="py-name">load</tt><tt class="py-op">(</tt><tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-string">'./ressources/ressources.json'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L28"></a><tt class="py-lineno"> 28</tt>  <tt class="py-line">    <tt class="py-name">utterance</tt> <tt class="py-op">=</tt> <tt id="link-4" class="py-name"><a title="ressources" class="py-name" href="#" onclick="return doclink('link-4', 'ressources', 'link-3');">ressources</a></tt><tt class="py-op">[</tt><tt class="py-string">'utterances'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">key</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">language</tt><tt class="py-op">]</tt> </tt>
+<a name="L29"></a><tt class="py-lineno"> 29</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">list_infos</tt> <tt class="py-keyword">is</tt> <tt class="py-keyword">not</tt> <tt class="py-name">None</tt> <tt class="py-keyword">and</tt> <tt class="py-name">key</tt> <tt class="py-op">!=</tt> <tt class="py-string">'not_broached'</tt><tt class="py-op">:</tt> </tt>
+<a name="L30"></a><tt class="py-lineno"> 30</tt>  <tt class="py-line">        <tt class="py-name">utterance</tt> <tt class="py-op">=</tt> <tt class="py-name">utterance</tt><tt class="py-op">.</tt><tt class="py-name">format</tt><tt class="py-op">(</tt><tt class="py-op">*</tt><tt class="py-name">list_infos</tt><tt class="py-op">)</tt> </tt>
+<a name="L31"></a><tt class="py-lineno"> 31</tt>  <tt class="py-line">    <tt class="py-keyword">elif</tt> <tt class="py-name">list_infos</tt> <tt class="py-keyword">is</tt> <tt class="py-keyword">not</tt> <tt class="py-name">None</tt><tt class="py-op">:</tt> </tt>
+<a name="L32"></a><tt class="py-lineno"> 32</tt>  <tt class="py-line">        <tt class="py-name">utterance</tt> <tt class="py-op">+=</tt> <tt class="py-string">" "</tt> <tt class="py-op">+</tt> <tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">list_infos</tt><tt class="py-op">)</tt> </tt>
+<a name="L33"></a><tt class="py-lineno"> 33</tt>  <tt class="py-line">    <tt id="link-5" class="py-name"><a title="insertfonction.insert_to_conversation" class="py-name" href="#" onclick="return doclink('link-5', 'insert_to_conversation', 'link-1');">insert_to_conversation</a></tt><tt class="py-op">(</tt><tt class="py-name">utterance</tt><tt class="py-op">,</tt> <tt class="py-string">"BOT"</tt><tt class="py-op">,</tt> <tt class="py-name">slack_id</tt><tt class="py-op">)</tt> </tt>
+<a name="L34"></a><tt class="py-lineno"> 34</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">utterance</tt> </tt>
+</div><a name="L35"></a><tt class="py-lineno"> 35</tt>  <tt class="py-line"> </tt>
+<a name="L36"></a><tt class="py-lineno"> 36</tt>  <tt class="py-line"> </tt>
+<a name="get_examples_classif"></a><div id="get_examples_classif-def"><a name="L37"></a><tt class="py-lineno"> 37</tt> <a class="py-toggle" href="#" id="get_examples_classif-toggle" onclick="return toggle('get_examples_classif');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#get_examples_classif">get_examples_classif</a><tt class="py-op">(</tt><tt class="py-param">level_type</tt><tt class="py-op">,</tt> <tt class="py-param">keys</tt><tt class="py-op">,</tt> <tt class="py-param">language</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="get_examples_classif-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="get_examples_classif-expanded"><a name="L38"></a><tt class="py-lineno"> 38</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L39"></a><tt class="py-lineno"> 39</tt>  <tt class="py-line"><tt class="py-docstring">    @param level_type: ID of the type of level e.g. pain_level.</tt> </tt>
+<a name="L40"></a><tt class="py-lineno"> 40</tt>  <tt class="py-line"><tt class="py-docstring">    @param keys: list of ids of the examples to search for in ressources.json</tt> </tt>
+<a name="L41"></a><tt class="py-lineno"> 41</tt>  <tt class="py-line"><tt class="py-docstring">    file e.g. ['vigorous', 'moderate', 'little']</tt> </tt>
+<a name="L42"></a><tt class="py-lineno"> 42</tt>  <tt class="py-line"><tt class="py-docstring">    @param language: language to use</tt> </tt>
+<a name="L43"></a><tt class="py-lineno"> 43</tt>  <tt class="py-line"><tt class="py-docstring">    @return: list of examples for each keys"""</tt> </tt>
+<a name="L44"></a><tt class="py-lineno"> 44</tt>  <tt class="py-line">    <tt id="link-6" class="py-name"><a title="ressources" class="py-name" href="#" onclick="return doclink('link-6', 'ressources', 'link-3');">ressources</a></tt> <tt class="py-op">=</tt> <tt class="py-name">json</tt><tt class="py-op">.</tt><tt class="py-name">load</tt><tt class="py-op">(</tt><tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-string">'./ressources/ressources.json'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L45"></a><tt class="py-lineno"> 45</tt>  <tt class="py-line">    <tt class="py-name">examples_classif</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L46"></a><tt class="py-lineno"> 46</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">key</tt> <tt class="py-keyword">in</tt> <tt class="py-name">keys</tt><tt class="py-op">:</tt> </tt>
+<a name="L47"></a><tt class="py-lineno"> 47</tt>  <tt class="py-line">        <tt class="py-name">examples_classif</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt id="link-7" class="py-name"><a title="ressources" class="py-name" href="#" onclick="return doclink('link-7', 'ressources', 'link-3');">ressources</a></tt><tt class="py-op">[</tt><tt class="py-string">'examples_classif'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">level_type</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">key</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">language</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> </tt>
+<a name="L48"></a><tt class="py-lineno"> 48</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">examples_classif</tt> </tt>
+</div><a name="L49"></a><tt class="py-lineno"> 49</tt>  <tt class="py-line"> </tt>
+<a name="L50"></a><tt class="py-lineno"> 50</tt>  <tt class="py-line"> </tt>
+<a name="get_drug_info"></a><div id="get_drug_info-def"><a name="L51"></a><tt class="py-lineno"> 51</tt> <a class="py-toggle" href="#" id="get_drug_info-toggle" onclick="return toggle('get_drug_info');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#get_drug_info">get_drug_info</a><tt class="py-op">(</tt><tt class="py-param">drug</tt><tt class="py-op">,</tt> <tt class="py-param">language</tt><tt class="py-op">,</tt> <tt class="py-param">slack_id</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="get_drug_info-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="get_drug_info-expanded"><a name="L52"></a><tt class="py-lineno"> 52</tt>  <tt class="py-line">    <tt class="py-docstring">"""@param drug: drug name or marketing name of the drug</tt> </tt>
+<a name="L53"></a><tt class="py-lineno"> 53</tt>  <tt class="py-line"><tt class="py-docstring">    @param language: language to use</tt> </tt>
+<a name="L54"></a><tt class="py-lineno"> 54</tt>  <tt class="py-line"><tt class="py-docstring">    @param slack_id: id of the tracker</tt> </tt>
+<a name="L55"></a><tt class="py-lineno"> 55</tt>  <tt class="py-line"><tt class="py-docstring">    @return: call C{clean_info_drug} method with list of drug found in file</tt> </tt>
+<a name="L56"></a><tt class="py-lineno"> 56</tt>  <tt class="py-line"><tt class="py-docstring">    [propriety_name, non_propriety_name, subst_name, pharm_classes]</tt> </tt>
+<a name="L57"></a><tt class="py-lineno"> 57</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L58"></a><tt class="py-lineno"> 58</tt>  <tt class="py-line">    <tt class="py-name">to_return</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L59"></a><tt class="py-lineno"> 59</tt>  <tt class="py-line">    <tt class="py-keyword">with</tt> <tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-string">'./ressources/FDA_druglist_2018.csv'</tt><tt class="py-op">,</tt> <tt class="py-string">'r'</tt><tt class="py-op">)</tt> <tt class="py-keyword">as</tt> <tt class="py-name">csvfile</tt><tt class="py-op">:</tt> </tt>
+<a name="L60"></a><tt class="py-lineno"> 60</tt>  <tt class="py-line">        <tt class="py-name">spamreader</tt> <tt class="py-op">=</tt> <tt class="py-name">csv</tt><tt class="py-op">.</tt><tt class="py-name">reader</tt><tt class="py-op">(</tt><tt class="py-name">csvfile</tt><tt class="py-op">,</tt> <tt class="py-name">delimiter</tt><tt class="py-op">=</tt><tt class="py-string">';'</tt><tt class="py-op">)</tt> </tt>
+<a name="L61"></a><tt class="py-lineno"> 61</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">row</tt> <tt class="py-keyword">in</tt> <tt class="py-name">spamreader</tt><tt class="py-op">:</tt> </tt>
+<a name="L62"></a><tt class="py-lineno"> 62</tt>  <tt class="py-line">            <tt class="py-comment"># [prod_id, prod_ndc, type, propriety_name, propriety_name_suffix,</tt> </tt>
+<a name="L63"></a><tt class="py-lineno"> 63</tt>  <tt class="py-line">            <tt class="py-comment"># non_propriety_name, dosage_form_name, route_name,</tt> </tt>
+<a name="L64"></a><tt class="py-lineno"> 64</tt>  <tt class="py-line">            <tt class="py-comment"># start_marketing_date, end_marketing_date,</tt> </tt>
+<a name="L65"></a><tt class="py-lineno"> 65</tt>  <tt class="py-line">            <tt class="py-comment"># marketing_category_name, app_number, labeler_name, subst_name,</tt> </tt>
+<a name="L66"></a><tt class="py-lineno"> 66</tt>  <tt class="py-line">            <tt class="py-comment"># active_numerator_strength, active_ingred_unit, pharm_classes,</tt> </tt>
+<a name="L67"></a><tt class="py-lineno"> 67</tt>  <tt class="py-line">            <tt class="py-comment"># deaschedule, ndc_exclude_flag, listing_record_certified] = row</tt> </tt>
+<a name="L68"></a><tt class="py-lineno"> 68</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">drug</tt> <tt class="py-keyword">in</tt> <tt class="py-op">[</tt><tt class="py-name">x</tt><tt class="py-op">.</tt><tt class="py-name">lower</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> <tt class="py-keyword">for</tt> <tt class="py-name">x</tt> <tt class="py-keyword">in</tt> <tt class="py-name">row</tt><tt class="py-op">]</tt><tt class="py-op">:</tt> </tt>
+<a name="L69"></a><tt class="py-lineno"> 69</tt>  <tt class="py-line">                <tt class="py-name">infos</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">row</tt><tt class="py-op">[</tt><tt class="py-number">3</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-name">row</tt><tt class="py-op">[</tt><tt class="py-number">5</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-name">row</tt><tt class="py-op">[</tt><tt class="py-number">13</tt><tt class="py-op">]</tt><tt class="py-op">,</tt> <tt class="py-name">row</tt><tt class="py-op">[</tt><tt class="py-number">16</tt><tt class="py-op">]</tt><tt class="py-op">]</tt> </tt>
+<a name="L70"></a><tt class="py-lineno"> 70</tt>  <tt class="py-line">                <tt class="py-name">to_return</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">infos</tt><tt class="py-op">)</tt> </tt>
+<a name="L71"></a><tt class="py-lineno"> 71</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt id="link-8" class="py-name" targets="Function ressources.clean_info_drug()=ressources-module.html#clean_info_drug"><a title="ressources.clean_info_drug" class="py-name" href="#" onclick="return doclink('link-8', 'clean_info_drug', 'link-8');">clean_info_drug</a></tt><tt class="py-op">(</tt><tt class="py-name">to_return</tt><tt class="py-op">,</tt> <tt class="py-name">drug</tt><tt class="py-op">,</tt> <tt class="py-name">language</tt><tt class="py-op">,</tt> <tt class="py-name">slack_id</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L72"></a><tt class="py-lineno"> 72</tt>  <tt class="py-line"> </tt>
+<a name="L73"></a><tt class="py-lineno"> 73</tt>  <tt class="py-line"> </tt>
+<a name="clean_info_drug"></a><div id="clean_info_drug-def"><a name="L74"></a><tt class="py-lineno"> 74</tt> <a class="py-toggle" href="#" id="clean_info_drug-toggle" onclick="return toggle('clean_info_drug');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#clean_info_drug">clean_info_drug</a><tt class="py-op">(</tt><tt class="py-param">list_infos</tt><tt class="py-op">,</tt> <tt class="py-param">drug</tt><tt class="py-op">,</tt> <tt class="py-param">language</tt><tt class="py-op">,</tt> <tt class="py-param">slack_id</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="clean_info_drug-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="clean_info_drug-expanded"><a name="L75"></a><tt class="py-lineno"> 75</tt>  <tt class="py-line">    <tt class="py-docstring">"""@param list_infos: list of infos for several drugs with a name in common</tt> </tt>
+<a name="L76"></a><tt class="py-lineno"> 76</tt>  <tt class="py-line"><tt class="py-docstring">    @param drug: drug to check</tt> </tt>
+<a name="L77"></a><tt class="py-lineno"> 77</tt>  <tt class="py-line"><tt class="py-docstring">    @param language: language to use</tt> </tt>
+<a name="L78"></a><tt class="py-lineno"> 78</tt>  <tt class="py-line"><tt class="py-docstring">    @param slack_id: ID of the tracker</tt> </tt>
+<a name="L79"></a><tt class="py-lineno"> 79</tt>  <tt class="py-line"><tt class="py-docstring">    @return: [propriety_names, non_propriety_names, subst_names, pharm_classes]</tt> </tt>
+<a name="L80"></a><tt class="py-lineno"> 80</tt>  <tt class="py-line"><tt class="py-docstring">    if drug is not found in file, returns ['drug (default value)',</tt> </tt>
+<a name="L81"></a><tt class="py-lineno"> 81</tt>  <tt class="py-line"><tt class="py-docstring">    'drug (default value)', 'drug (default value)', 'drug (default value)']</tt> </tt>
+<a name="L82"></a><tt class="py-lineno"> 82</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L83"></a><tt class="py-lineno"> 83</tt>  <tt class="py-line">    <tt class="py-name">propriety_names</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
+<a name="L84"></a><tt class="py-lineno"> 84</tt>  <tt class="py-line">    <tt class="py-name">non_propriety_names</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
+<a name="L85"></a><tt class="py-lineno"> 85</tt>  <tt class="py-line">    <tt class="py-name">subst_names</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
+<a name="L86"></a><tt class="py-lineno"> 86</tt>  <tt class="py-line">    <tt class="py-name">pharm_classes</tt> <tt class="py-op">=</tt> <tt class="py-string">""</tt> </tt>
+<a name="L87"></a><tt class="py-lineno"> 87</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">info</tt> <tt class="py-keyword">in</tt> <tt class="py-name">list_infos</tt><tt class="py-op">:</tt> </tt>
+<a name="L88"></a><tt class="py-lineno"> 88</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt class="py-name">propriety_names</tt><tt class="py-op">:</tt> </tt>
+<a name="L89"></a><tt class="py-lineno"> 89</tt>  <tt class="py-line">            <tt class="py-name">propriety_names</tt> <tt class="py-op">+=</tt> <tt class="py-string">"/"</tt> <tt class="py-op">+</tt> <tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt> </tt>
+<a name="L90"></a><tt class="py-lineno"> 90</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt class="py-name">non_propriety_names</tt><tt class="py-op">:</tt> </tt>
+<a name="L91"></a><tt class="py-lineno"> 91</tt>  <tt class="py-line">            <tt class="py-name">non_propriety_names</tt> <tt class="py-op">+=</tt> <tt class="py-string">"/"</tt> <tt class="py-op">+</tt> <tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">]</tt> </tt>
+<a name="L92"></a><tt class="py-lineno"> 92</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-number">2</tt><tt class="py-op">]</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt class="py-name">subst_names</tt><tt class="py-op">:</tt> </tt>
+<a name="L93"></a><tt class="py-lineno"> 93</tt>  <tt class="py-line">            <tt class="py-name">subst_names</tt> <tt class="py-op">+=</tt> <tt class="py-string">"/"</tt> <tt class="py-op">+</tt> <tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-number">2</tt><tt class="py-op">]</tt> </tt>
+<a name="L94"></a><tt class="py-lineno"> 94</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-number">3</tt><tt class="py-op">]</tt> <tt class="py-keyword">not</tt> <tt class="py-keyword">in</tt> <tt class="py-name">pharm_classes</tt><tt class="py-op">:</tt> </tt>
+<a name="L95"></a><tt class="py-lineno"> 95</tt>  <tt class="py-line">            <tt class="py-name">pharm_classes</tt> <tt class="py-op">+=</tt> <tt class="py-string">"/"</tt> <tt class="py-op">+</tt> <tt class="py-name">info</tt><tt class="py-op">[</tt><tt class="py-number">3</tt><tt class="py-op">]</tt> </tt>
+<a name="L96"></a><tt class="py-lineno"> 96</tt>  <tt class="py-line">    <tt class="py-name">infos</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-name">propriety_names</tt><tt class="py-op">,</tt> <tt class="py-name">non_propriety_names</tt><tt class="py-op">,</tt> <tt class="py-name">subst_names</tt><tt class="py-op">,</tt> <tt class="py-name">pharm_classes</tt><tt class="py-op">]</tt> </tt>
+<a name="L97"></a><tt class="py-lineno"> 97</tt>  <tt class="py-line">    <tt class="py-name">count</tt> <tt class="py-op">=</tt> <tt class="py-number">0</tt> </tt>
+<a name="L98"></a><tt class="py-lineno"> 98</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">inf</tt> <tt class="py-keyword">in</tt> <tt class="py-name">infos</tt><tt class="py-op">:</tt> </tt>
+<a name="L99"></a><tt class="py-lineno"> 99</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">inf</tt> <tt class="py-op">==</tt> <tt class="py-string">""</tt><tt class="py-op">:</tt> </tt>
+<a name="L100"></a><tt class="py-lineno">100</tt>  <tt class="py-line">            <tt class="py-name">infos</tt><tt class="py-op">[</tt><tt class="py-name">count</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">drug</tt><tt class="py-op">.</tt><tt class="py-name">title</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt id="link-9" class="py-name" targets="Function ressources.get_utterance()=ressources-module.html#get_utterance"><a title="ressources.get_utterance" class="py-name" href="#" onclick="return doclink('link-9', 'get_utterance', 'link-9');">get_utterance</a></tt><tt class="py-op">(</tt><tt class="py-string">"default"</tt><tt class="py-op">,</tt> </tt>
+<a name="L101"></a><tt class="py-lineno">101</tt>  <tt class="py-line">                                                        <tt class="py-name">language</tt><tt class="py-op">,</tt> <tt class="py-name">slack_id</tt><tt class="py-op">)</tt> </tt>
+<a name="L102"></a><tt class="py-lineno">102</tt>  <tt class="py-line">        <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
+<a name="L103"></a><tt class="py-lineno">103</tt>  <tt class="py-line">            <tt class="py-name">infos</tt><tt class="py-op">[</tt><tt class="py-name">count</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-name">inf</tt><tt class="py-op">.</tt><tt class="py-name">title</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">[</tt><tt class="py-number">1</tt><tt class="py-op">:</tt><tt class="py-op">]</tt> </tt>
+<a name="L104"></a><tt class="py-lineno">104</tt>  <tt class="py-line">        <tt class="py-name">count</tt> <tt class="py-op">+=</tt> <tt class="py-number">1</tt> </tt>
+<a name="L105"></a><tt class="py-lineno">105</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">infos</tt> </tt>
+</div><a name="L106"></a><tt class="py-lineno">106</tt>  <tt class="py-line"> </tt>
+<a name="L107"></a><tt class="py-lineno">107</tt>  <tt class="py-line"> </tt>
+<a name="get_number_level"></a><div id="get_number_level-def"><a name="L108"></a><tt class="py-lineno">108</tt> <a class="py-toggle" href="#" id="get_number_level-toggle" onclick="return toggle('get_number_level');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#get_number_level">get_number_level</a><tt class="py-op">(</tt><tt class="py-param">text</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="get_number_level-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="get_number_level-expanded"><a name="L109"></a><tt class="py-lineno">109</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L110"></a><tt class="py-lineno">110</tt>  <tt class="py-line"><tt class="py-docstring">    @param text: text (level)</tt> </tt>
+<a name="L111"></a><tt class="py-lineno">111</tt>  <tt class="py-line"><tt class="py-docstring">    @return: number of corresponding level</tt> </tt>
+<a name="L112"></a><tt class="py-lineno">112</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L113"></a><tt class="py-lineno">113</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-op">{</tt> </tt>
+<a name="L114"></a><tt class="py-lineno">114</tt>  <tt class="py-line">        <tt class="py-string">'mild'</tt><tt class="py-op">:</tt> <tt class="py-number">1</tt><tt class="py-op">,</tt> </tt>
+<a name="L115"></a><tt class="py-lineno">115</tt>  <tt class="py-line">        <tt class="py-string">'little'</tt><tt class="py-op">:</tt> <tt class="py-number">1</tt><tt class="py-op">,</tt> </tt>
+<a name="L116"></a><tt class="py-lineno">116</tt>  <tt class="py-line">        <tt class="py-string">'moderate'</tt><tt class="py-op">:</tt> <tt class="py-number">2</tt><tt class="py-op">,</tt> </tt>
+<a name="L117"></a><tt class="py-lineno">117</tt>  <tt class="py-line">        <tt class="py-string">'vigorous'</tt><tt class="py-op">:</tt> <tt class="py-number">3</tt><tt class="py-op">,</tt> </tt>
+<a name="L118"></a><tt class="py-lineno">118</tt>  <tt class="py-line">        <tt class="py-string">'severe'</tt><tt class="py-op">:</tt> <tt class="py-number">3</tt> </tt>
+<a name="L119"></a><tt class="py-lineno">119</tt>  <tt class="py-line">        <tt class="py-op">}</tt><tt class="py-op">.</tt><tt class="py-name">get</tt><tt class="py-op">(</tt><tt class="py-name">text</tt><tt class="py-op">,</tt> <tt class="py-number">0</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L120"></a><tt class="py-lineno">120</tt>  <tt class="py-line"> </tt>
+<a name="L121"></a><tt class="py-lineno">121</tt>  <tt class="py-line"> </tt>
+<a name="get_complex_entities"></a><div id="get_complex_entities-def"><a name="L122"></a><tt class="py-lineno">122</tt> <a class="py-toggle" href="#" id="get_complex_entities-toggle" onclick="return toggle('get_complex_entities');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#get_complex_entities">get_complex_entities</a><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="get_complex_entities-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="get_complex_entities-expanded"><a name="L123"></a><tt class="py-lineno">123</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L124"></a><tt class="py-lineno">124</tt>  <tt class="py-line"><tt class="py-docstring">    Get all complex entities</tt> </tt>
+<a name="L125"></a><tt class="py-lineno">125</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L126"></a><tt class="py-lineno">126</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-op">[</tt><tt class="py-string">"time"</tt><tt class="py-op">,</tt> <tt class="py-string">"body_part"</tt><tt class="py-op">,</tt> <tt class="py-string">"distance"</tt><tt class="py-op">,</tt> <tt class="py-string">"duration"</tt><tt class="py-op">,</tt> <tt class="py-string">"period"</tt><tt class="py-op">,</tt> <tt class="py-string">"drug"</tt><tt class="py-op">,</tt> </tt>
+<a name="L127"></a><tt class="py-lineno">127</tt>  <tt class="py-line">            <tt class="py-string">"temperature"</tt><tt class="py-op">,</tt> <tt class="py-string">"dosing"</tt><tt class="py-op">]</tt> </tt>
+</div><a name="L128"></a><tt class="py-lineno">128</tt>  <tt class="py-line"> </tt>
+<a name="L129"></a><tt class="py-lineno">129</tt>  <tt class="py-line"> </tt>
+<a name="get_info_in_config"></a><div id="get_info_in_config-def"><a name="L130"></a><tt class="py-lineno">130</tt> <a class="py-toggle" href="#" id="get_info_in_config-toggle" onclick="return toggle('get_info_in_config');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#get_info_in_config">get_info_in_config</a><tt class="py-op">(</tt><tt class="py-param">name</tt><tt class="py-op">,</tt> <tt class="py-param">project_id</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="get_info_in_config-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="get_info_in_config-expanded"><a name="L131"></a><tt class="py-lineno">131</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L132"></a><tt class="py-lineno">132</tt>  <tt class="py-line"><tt class="py-docstring">    @param name: name of key to search in config file</tt> </tt>
+<a name="L133"></a><tt class="py-lineno">133</tt>  <tt class="py-line"><tt class="py-docstring">    @param project_id: ID of the project linked to patient, used to find config</tt> </tt>
+<a name="L134"></a><tt class="py-lineno">134</tt>  <tt class="py-line"><tt class="py-docstring">    file.</tt> </tt>
+<a name="L135"></a><tt class="py-lineno">135</tt>  <tt class="py-line"><tt class="py-docstring">    @return: infos in config[name]</tt> </tt>
+<a name="L136"></a><tt class="py-lineno">136</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L137"></a><tt class="py-lineno">137</tt>  <tt class="py-line">    <tt class="py-name">config</tt> <tt class="py-op">=</tt> <tt class="py-name">yaml</tt><tt class="py-op">.</tt><tt class="py-name">safe_load</tt><tt class="py-op">(</tt><tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-string">'./configs/config_'</tt><tt class="py-op">+</tt><tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">project_id</tt><tt class="py-op">)</tt><tt class="py-op">+</tt><tt class="py-string">'.yml'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L138"></a><tt class="py-lineno">138</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">config</tt><tt class="py-op">[</tt><tt id="link-10" class="py-name" targets="Method ask_what.AskWhatAction.name()=ask_what.AskWhatAction-class.html#name,Method ask_what.AskWhatActivity.name()=ask_what.AskWhatActivity-class.html#name,Method ask_what.AskWhatAlcohol.name()=ask_what.AskWhatAlcohol-class.html#name,Method ask_what.AskWhatBaseline.name()=ask_what.AskWhatBaseline-class.html#name,Method ask_what.AskWhatDrugAddiction.name()=ask_what.AskWhatDrugAddiction-class.html#name,Method ask_what.AskWhatEatingDisorders.name()=ask_what.AskWhatEatingDisorders-class.html#name,Method ask_what.AskWhatInfoPatient.name()=ask_what.AskWhatInfoPatient-class.html#name,Method ask_what.AskWhatPain.name()=ask_what.AskWhatPain-class.html#name,Method ask_what.AskWhatPathology.name()=ask_what.AskWhatPathology-class.html#name,Method ask_what.AskWhatSleep.name()=ask_what.AskWhatSleep-class.html#name,Method ask_what.AskWhatSmoking.name()=ask_what.AskWhatSmoking-class.html#name,Method ask_what.AskWhatTreatment.name()=ask_what.AskWhatTreatment-class.html#name,Method complex_sets.SetMultiple.name()=complex_sets.SetMultiple-class.html#name,Method form_actions.Activity.name()=form_actions.Activity-class.html#name,Method form_actions.Alcohol.name()=form_actions.Alcohol-class.html#name,Method form_actions.Baseline.name()=form_actions.Baseline-class.html#name,Method form_actions.CheckRequestedIntents.name()=form_actions.CheckRequestedIntents-class.html#name,Method form_actions.DrugAddiction.name()=form_actions.DrugAddiction-class.html#name,Method form_actions.EatingDisorders.name()=form_actions.EatingDisorders-class.html#name,Method form_actions.FormActionCalculusAndCore.name()=form_actions.FormActionCalculusAndCore-class.html#name,Method form_actions.FormActionTriggerAction.name()=form_actions.FormActionTriggerAction-class.html#name,Method form_actions.InfoPatient.name()=form_actions.InfoPatient-class.html#name,Method form_actions.NegativeEmo.name()=form_actions.NegativeEmo-class.html#name,Method form_actions.Pain.name()=form_actions.Pain-class.html#name,Method form_actions.Pathology.name()=form_actions.Pathology-class.html#name,Method form_actions.PositiveEmo.name()=form_actions.PositiveEmo-class.html#name,Method form_actions.Risk.name()=form_actions.Risk-class.html#name,Method form_actions.Sleep.name()=form_actions.Sleep-class.html#name,Method form_actions.Smoking.name()=form_actions.Smoking-class.html#name,Method form_actions.Social.name()=form_actions.Social-class.html#name,Method form_actions.Treatment.name()=form_actions.Treatment-class.html#name,Method init_and_complex.InitBot.name()=init_and_complex.InitBot-class.html#name,Method init_and_complex.SaveConv.name()=init_and_complex.SaveConv-class.html#name,Method init_and_complex.SumUpSLots.name()=init_and_complex.SumUpSLots-class.html#name,Method rasa_core.actions.action.Action.name()=rasa_core.actions.action.Action-class.html#name,Method reminders.ChangeSessionReminder.name()=reminders.ChangeSessionReminder-class.html#name,Method reminders.FollowedIntentReminder.name()=reminders.FollowedIntentReminder-class.html#name,Method reminders.SessionEndReminder.name()=reminders.SessionEndReminder-class.html#name,Method reminders.UserReminder.name()=reminders.UserReminder-class.html#name,Method reminders.UserReminderLittle.name()=reminders.UserReminderLittle-class.html#name,Method reset_slots.ResetActivitySlots.name()=reset_slots.ResetActivitySlots-class.html#name,Method reset_slots.ResetAlcoholSlots.name()=reset_slots.ResetAlcoholSlots-class.html#name,Method reset_slots.ResetBaselineSlots.name()=reset_slots.ResetBaselineSlots-class.html#name,Method reset_slots.ResetDrugAddictionSlots.name()=reset_slots.ResetDrugAddictionSlots-class.html#name,Method reset_slots.ResetEatingDisordersSlots.name()=reset_slots.ResetEatingDisordersSlots-class.html#name,Method reset_slots.ResetInfoPatientSlots.name()=reset_slots.ResetInfoPatientSlots-class.html#name,Method reset_slots.ResetPainSlots.name()=reset_slots.ResetPainSlots-class.html#name,Method reset_slots.ResetPathologySlots.name()=reset_slots.ResetPathologySlots-class.html#name,Method reset_slots.ResetSleepSlots.name()=reset_slots.ResetSleepSlots-class.html#name,Method reset_slots.ResetSlotsAction.name()=reset_slots.ResetSlotsAction-class.html#name,Method reset_slots.ResetSmokingSlots.name()=reset_slots.ResetSmokingSlots-class.html#name,Method reset_slots.ResetTreatmentSlots.name()=reset_slots.ResetTreatmentSlots-class.html#name,Method simple_actions.Agree.name()=simple_actions.Agree-class.html#name,Method simple_actions.AskAction.name()=simple_actions.AskAction-class.html#name,Method simple_actions.AskActivity.name()=simple_actions.AskActivity-class.html#name,Method simple_actions.AskActivityDistance.name()=simple_actions.AskActivityDistance-class.html#name,Method simple_actions.AskActivityDuration.name()=simple_actions.AskActivityDuration-class.html#name,Method simple_actions.AskActivityHard.name()=simple_actions.AskActivityHard-class.html#name,Method simple_actions.AskActivityPeriod.name()=simple_actions.AskActivityPeriod-class.html#name,Method simple_actions.AskActivitySport.name()=simple_actions.AskActivitySport-class.html#name,Method simple_actions.AskActivityTime.name()=simple_actions.AskActivityTime-class.html#name,Method simple_actions.AskAlcohol.name()=simple_actions.AskAlcohol-class.html#name,Method simple_actions.AskAlcoholDosing.name()=simple_actions.AskAlcoholDosing-class.html#name,Method simple_actions.AskAlcoholDuration.name()=simple_actions.AskAlcoholDuration-class.html#name,Method simple_actions.AskAlcoholPeriod.name()=simple_actions.AskAlcoholPeriod-class.html#name,Method simple_actions.AskAlcoholTime.name()=simple_actions.AskAlcoholTime-class.html#name,Method simple_actions.AskBaselineActivity.name()=simple_actions.AskBaselineActivity-class.html#name,Method simple_actions.AskBaselineAnxiety.name()=simple_actions.AskBaselineAnxiety-class.html#name,Method simple_actions.AskBaselineHealth.name()=simple_actions.AskBaselineHealth-class.html#name,Method simple_actions.AskBaselineMobility.name()=simple_actions.AskBaselineMobility-class.html#name,Method simple_actions.AskBaselinePain.name()=simple_actions.AskBaselinePain-class.html#name,Method simple_actions.AskBaselineSelfcare.name()=simple_actions.AskBaselineSelfcare-class.html#name,Method simple_actions.AskBooleanAction.name()=simple_actions.AskBooleanAction-class.html#name,Method simple_actions.AskButtonsAction.name()=simple_actions.AskButtonsAction-class.html#name,Method simple_actions.AskDrugAddiction.name()=simple_actions.AskDrugAddiction-class.html#name,Method simple_actions.AskDrugAddictionDosing.name()=simple_actions.AskDrugAddictionDosing-class.html#name,Method simple_actions.AskDrugAddictionDrug.name()=simple_actions.AskDrugAddictionDrug-class.html#name,Method simple_actions.AskDrugAddictionDuration.name()=simple_actions.AskDrugAddictionDuration-class.html#name,Method simple_actions.AskDrugAddictionPeriod.name()=simple_actions.AskDrugAddictionPeriod-class.html#name,Method simple_actions.AskDrugAddictionTime.name()=simple_actions.AskDrugAddictionTime-class.html#name,Method simple_actions.AskEatingDisorders.name()=simple_actions.AskEatingDisorders-class.html#name,Method simple_actions.AskEatingDisordersDuration.name()=simple_actions.AskEatingDisordersDuration-class.html#name,Method simple_actions.AskEatingDisordersTime.name()=simple_actions.AskEatingDisordersTime-class.html#name,Method simple_actions.AskInfoPatient.name()=simple_actions.AskInfoPatient-class.html#name,Method simple_actions.AskInfoPatientAddiction.name()=simple_actions.AskInfoPatientAddiction-class.html#name,Method simple_actions.AskInfoPatientBloodPressure.name()=simple_actions.AskInfoPatientBloodPressure-class.html#name,Method simple_actions.AskInfoPatientDistance.name()=simple_actions.AskInfoPatientDistance-class.html#name,Method simple_actions.AskInfoPatientGender.name()=simple_actions.AskInfoPatientGender-class.html#name,Method simple_actions.AskInfoPatientHeartRate.name()=simple_actions.AskInfoPatientHeartRate-class.html#name,Method simple_actions.AskInfoPatientTemperature.name()=simple_actions.AskInfoPatientTemperature-class.html#name,Method simple_actions.AskInfoPatientTime.name()=simple_actions.AskInfoPatientTime-class.html#name,Method simple_actions.AskInfoPatientWeight.name()=simple_actions.AskInfoPatientWeight-class.html#name,Method simple_actions.AskNegativeEmo.name()=simple_actions.AskNegativeEmo-class.html#name,Method simple_actions.AskPain.name()=simple_actions.AskPain-class.html#name,Method simple_actions.AskPainBodyPart.name()=simple_actions.AskPainBodyPart-class.html#name,Method simple_actions.AskPainChange.name()=simple_actions.AskPainChange-class.html#name,Method simple_actions.AskPainDesc.name()=simple_actions.AskPainDesc-class.html#name,Method simple_actions.AskPainDuration.name()=simple_actions.AskPainDuration-class.html#name,Method simple_actions.AskPainPeriod.name()=simple_actions.AskPainPeriod-class.html#name,Method simple_actions.AskPainTime.name()=simple_actions.AskPainTime-class.html#name,Method simple_actions.AskPathology.name()=simple_actions.AskPathology-class.html#name,Method simple_actions.AskPathologyBodyPart.name()=simple_actions.AskPathologyBodyPart-class.html#name,Method simple_actions.AskPathologyChange.name()=simple_actions.AskPathologyChange-class.html#name,Method simple_actions.AskPathologyDuration.name()=simple_actions.AskPathologyDuration-class.html#name,Method simple_actions.AskPathologyPeriod.name()=simple_actions.AskPathologyPeriod-class.html#name,Method simple_actions.AskPathologySymptom.name()=simple_actions.AskPathologySymptom-class.html#name,Method simple_actions.AskPathologyTime.name()=simple_actions.AskPathologyTime-class.html#name,Method simple_actions.AskPathologyTreatmentLinked.name()=simple_actions.AskPathologyTreatmentLinked-class.html#name,Method simple_actions.AskPositiveEmo.name()=simple_actions.AskPositiveEmo-class.html#name,Method simple_actions.AskRisk.name()=simple_actions.AskRisk-class.html#name,Method simple_actions.AskSleep.name()=simple_actions.AskSleep-class.html#name,Method simple_actions.AskSleepDuration.name()=simple_actions.AskSleepDuration-class.html#name,Method simple_actions.AskSleepQuality.name()=simple_actions.AskSleepQuality-class.html#name,Method simple_actions.AskSmoking.name()=simple_actions.AskSmoking-class.html#name,Method simple_actions.AskSmokingDosing.name()=simple_actions.AskSmokingDosing-class.html#name,Method simple_actions.AskSmokingDuration.name()=simple_actions.AskSmokingDuration-class.html#name,Method simple_actions.AskSmokingPeriod.name()=simple_actions.AskSmokingPeriod-class.html#name,Method simple_actions.AskSmokingTime.name()=simple_actions.AskSmokingTime-class.html#name,Method simple_actions.AskSocial.name()=simple_actions.AskSocial-class.html#name,Method simple_actions.AskTreatment.name()=simple_actions.AskTreatment-class.html#name,Method simple_actions.AskTreatmentBeingTaken.name()=simple_actions.AskTreatmentBeingTaken-class.html#name,Method simple_actions.AskTreatmentDosing.name()=simple_actions.AskTreatmentDosing-class.html#name,Method simple_actions.AskTreatmentDrug.name()=simple_actions.AskTreatmentDrug-class.html#name,Method simple_actions.AskTreatmentDuration.name()=simple_actions.AskTreatmentDuration-class.html#name,Method simple_actions.AskTreatmentMedicinal.name()=simple_actions.AskTreatmentMedicinal-class.html#name,Method simple_actions.AskTreatmentOk.name()=simple_actions.AskTreatmentOk-class.html#name,Method simple_actions.AskTreatmentOverdosage.name()=simple_actions.AskTreatmentOverdosage-class.html#name,Method simple_actions.AskTreatmentPeriod.name()=simple_actions.AskTreatmentPeriod-class.html#name,Method simple_actions.AskTreatmentPrescripted.name()=simple_actions.AskTreatmentPrescripted-class.html#name,Method simple_actions.AskTreatmentTime.name()=simple_actions.AskTreatmentTime-class.html#name,Method simple_actions.AskWhy.name()=simple_actions.AskWhy-class.html#name,Method simple_actions.Bye.name()=simple_actions.Bye-class.html#name,Method simple_actions.Disagree.name()=simple_actions.Disagree-class.html#name,Method simple_actions.Fallback.name()=simple_actions.Fallback-class.html#name,Method simple_actions.Hello.name()=simple_actions.Hello-class.html#name"><a title="ask_what.AskWhatAction.name
+ask_what.AskWhatActivity.name
+ask_what.AskWhatAlcohol.name
+ask_what.AskWhatBaseline.name
+ask_what.AskWhatDrugAddiction.name
+ask_what.AskWhatEatingDisorders.name
+ask_what.AskWhatInfoPatient.name
+ask_what.AskWhatPain.name
+ask_what.AskWhatPathology.name
+ask_what.AskWhatSleep.name
+ask_what.AskWhatSmoking.name
+ask_what.AskWhatTreatment.name
+complex_sets.SetMultiple.name
+form_actions.Activity.name
+form_actions.Alcohol.name
+form_actions.Baseline.name
+form_actions.CheckRequestedIntents.name
+form_actions.DrugAddiction.name
+form_actions.EatingDisorders.name
+form_actions.FormActionCalculusAndCore.name
+form_actions.FormActionTriggerAction.name
+form_actions.InfoPatient.name
+form_actions.NegativeEmo.name
+form_actions.Pain.name
+form_actions.Pathology.name
+form_actions.PositiveEmo.name
+form_actions.Risk.name
+form_actions.Sleep.name
+form_actions.Smoking.name
+form_actions.Social.name
+form_actions.Treatment.name
+init_and_complex.InitBot.name
+init_and_complex.SaveConv.name
+init_and_complex.SumUpSLots.name
+rasa_core.actions.action.Action.name
+reminders.ChangeSessionReminder.name
+reminders.FollowedIntentReminder.name
+reminders.SessionEndReminder.name
+reminders.UserReminder.name
+reminders.UserReminderLittle.name
+reset_slots.ResetActivitySlots.name
+reset_slots.ResetAlcoholSlots.name
+reset_slots.ResetBaselineSlots.name
+reset_slots.ResetDrugAddictionSlots.name
+reset_slots.ResetEatingDisordersSlots.name
+reset_slots.ResetInfoPatientSlots.name
+reset_slots.ResetPainSlots.name
+reset_slots.ResetPathologySlots.name
+reset_slots.ResetSleepSlots.name
+reset_slots.ResetSlotsAction.name
+reset_slots.ResetSmokingSlots.name
+reset_slots.ResetTreatmentSlots.name
+simple_actions.Agree.name
+simple_actions.AskAction.name
+simple_actions.AskActivity.name
+simple_actions.AskActivityDistance.name
+simple_actions.AskActivityDuration.name
+simple_actions.AskActivityHard.name
+simple_actions.AskActivityPeriod.name
+simple_actions.AskActivitySport.name
+simple_actions.AskActivityTime.name
+simple_actions.AskAlcohol.name
+simple_actions.AskAlcoholDosing.name
+simple_actions.AskAlcoholDuration.name
+simple_actions.AskAlcoholPeriod.name
+simple_actions.AskAlcoholTime.name
+simple_actions.AskBaselineActivity.name
+simple_actions.AskBaselineAnxiety.name
+simple_actions.AskBaselineHealth.name
+simple_actions.AskBaselineMobility.name
+simple_actions.AskBaselinePain.name
+simple_actions.AskBaselineSelfcare.name
+simple_actions.AskBooleanAction.name
+simple_actions.AskButtonsAction.name
+simple_actions.AskDrugAddiction.name
+simple_actions.AskDrugAddictionDosing.name
+simple_actions.AskDrugAddictionDrug.name
+simple_actions.AskDrugAddictionDuration.name
+simple_actions.AskDrugAddictionPeriod.name
+simple_actions.AskDrugAddictionTime.name
+simple_actions.AskEatingDisorders.name
+simple_actions.AskEatingDisordersDuration.name
+simple_actions.AskEatingDisordersTime.name
+simple_actions.AskInfoPatient.name
+simple_actions.AskInfoPatientAddiction.name
+simple_actions.AskInfoPatientBloodPressure.name
+simple_actions.AskInfoPatientDistance.name
+simple_actions.AskInfoPatientGender.name
+simple_actions.AskInfoPatientHeartRate.name
+simple_actions.AskInfoPatientTemperature.name
+simple_actions.AskInfoPatientTime.name
+simple_actions.AskInfoPatientWeight.name
+simple_actions.AskNegativeEmo.name
+simple_actions.AskPain.name
+simple_actions.AskPainBodyPart.name
+simple_actions.AskPainChange.name
+simple_actions.AskPainDesc.name
+simple_actions.AskPainDuration.name
+simple_actions.AskPainPeriod.name
+simple_actions.AskPainTime.name
+simple_actions.AskPathology.name
+simple_actions.AskPathologyBodyPart.name
+simple_actions.AskPathologyChange.name
+simple_actions.AskPathologyDuration.name
+simple_actions.AskPathologyPeriod.name
+simple_actions.AskPathologySymptom.name
+simple_actions.AskPathologyTime.name
+simple_actions.AskPathologyTreatmentLinked.name
+simple_actions.AskPositiveEmo.name
+simple_actions.AskRisk.name
+simple_actions.AskSleep.name
+simple_actions.AskSleepDuration.name
+simple_actions.AskSleepQuality.name
+simple_actions.AskSmoking.name
+simple_actions.AskSmokingDosing.name
+simple_actions.AskSmokingDuration.name
+simple_actions.AskSmokingPeriod.name
+simple_actions.AskSmokingTime.name
+simple_actions.AskSocial.name
+simple_actions.AskTreatment.name
+simple_actions.AskTreatmentBeingTaken.name
+simple_actions.AskTreatmentDosing.name
+simple_actions.AskTreatmentDrug.name
+simple_actions.AskTreatmentDuration.name
+simple_actions.AskTreatmentMedicinal.name
+simple_actions.AskTreatmentOk.name
+simple_actions.AskTreatmentOverdosage.name
+simple_actions.AskTreatmentPeriod.name
+simple_actions.AskTreatmentPrescripted.name
+simple_actions.AskTreatmentTime.name
+simple_actions.AskWhy.name
+simple_actions.Bye.name
+simple_actions.Disagree.name
+simple_actions.Fallback.name
+simple_actions.Hello.name" class="py-name" href="#" onclick="return doclink('link-10', 'name', 'link-10');">name</a></tt><tt class="py-op">]</tt> </tt>
+</div><a name="L139"></a><tt class="py-lineno">139</tt>  <tt class="py-line"> </tt>
+<a name="L140"></a><tt class="py-lineno">140</tt>  <tt class="py-line"> </tt>
+<a name="get_info_in_session_config"></a><div id="get_info_in_session_config-def"><a name="L141"></a><tt class="py-lineno">141</tt> <a class="py-toggle" href="#" id="get_info_in_session_config-toggle" onclick="return toggle('get_info_in_session_config');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#get_info_in_session_config">get_info_in_session_config</a><tt class="py-op">(</tt><tt class="py-param">session</tt><tt class="py-op">,</tt> <tt class="py-param">name</tt><tt class="py-op">,</tt> <tt class="py-param">project_id</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="get_info_in_session_config-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="get_info_in_session_config-expanded"><a name="L142"></a><tt class="py-lineno">142</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L143"></a><tt class="py-lineno">143</tt>  <tt class="py-line"><tt class="py-docstring">    @param session: number of session</tt> </tt>
+<a name="L144"></a><tt class="py-lineno">144</tt>  <tt class="py-line"><tt class="py-docstring">    @param name: name of key to search in config file, in sessions</tt> </tt>
+<a name="L145"></a><tt class="py-lineno">145</tt>  <tt class="py-line"><tt class="py-docstring">    @param project_id: ID of the project linked to patient, used to find config</tt> </tt>
+<a name="L146"></a><tt class="py-lineno">146</tt>  <tt class="py-line"><tt class="py-docstring">    file.</tt> </tt>
+<a name="L147"></a><tt class="py-lineno">147</tt>  <tt class="py-line"><tt class="py-docstring">    @return: infos in config['sessions'][session][name]</tt> </tt>
+<a name="L148"></a><tt class="py-lineno">148</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L149"></a><tt class="py-lineno">149</tt>  <tt class="py-line">    <tt class="py-name">config</tt> <tt class="py-op">=</tt> <tt class="py-name">yaml</tt><tt class="py-op">.</tt><tt class="py-name">safe_load</tt><tt class="py-op">(</tt><tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-string">'./configs/config_'</tt><tt class="py-op">+</tt><tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">project_id</tt><tt class="py-op">)</tt><tt class="py-op">+</tt><tt class="py-string">'.yml'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L150"></a><tt class="py-lineno">150</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">config</tt><tt class="py-op">[</tt><tt class="py-string">'sessions'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">int</tt><tt class="py-op">(</tt><tt class="py-name">session</tt><tt class="py-op">)</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt id="link-11" class="py-name"><a title="ask_what.AskWhatAction.name
+ask_what.AskWhatActivity.name
+ask_what.AskWhatAlcohol.name
+ask_what.AskWhatBaseline.name
+ask_what.AskWhatDrugAddiction.name
+ask_what.AskWhatEatingDisorders.name
+ask_what.AskWhatInfoPatient.name
+ask_what.AskWhatPain.name
+ask_what.AskWhatPathology.name
+ask_what.AskWhatSleep.name
+ask_what.AskWhatSmoking.name
+ask_what.AskWhatTreatment.name
+complex_sets.SetMultiple.name
+form_actions.Activity.name
+form_actions.Alcohol.name
+form_actions.Baseline.name
+form_actions.CheckRequestedIntents.name
+form_actions.DrugAddiction.name
+form_actions.EatingDisorders.name
+form_actions.FormActionCalculusAndCore.name
+form_actions.FormActionTriggerAction.name
+form_actions.InfoPatient.name
+form_actions.NegativeEmo.name
+form_actions.Pain.name
+form_actions.Pathology.name
+form_actions.PositiveEmo.name
+form_actions.Risk.name
+form_actions.Sleep.name
+form_actions.Smoking.name
+form_actions.Social.name
+form_actions.Treatment.name
+init_and_complex.InitBot.name
+init_and_complex.SaveConv.name
+init_and_complex.SumUpSLots.name
+rasa_core.actions.action.Action.name
+reminders.ChangeSessionReminder.name
+reminders.FollowedIntentReminder.name
+reminders.SessionEndReminder.name
+reminders.UserReminder.name
+reminders.UserReminderLittle.name
+reset_slots.ResetActivitySlots.name
+reset_slots.ResetAlcoholSlots.name
+reset_slots.ResetBaselineSlots.name
+reset_slots.ResetDrugAddictionSlots.name
+reset_slots.ResetEatingDisordersSlots.name
+reset_slots.ResetInfoPatientSlots.name
+reset_slots.ResetPainSlots.name
+reset_slots.ResetPathologySlots.name
+reset_slots.ResetSleepSlots.name
+reset_slots.ResetSlotsAction.name
+reset_slots.ResetSmokingSlots.name
+reset_slots.ResetTreatmentSlots.name
+simple_actions.Agree.name
+simple_actions.AskAction.name
+simple_actions.AskActivity.name
+simple_actions.AskActivityDistance.name
+simple_actions.AskActivityDuration.name
+simple_actions.AskActivityHard.name
+simple_actions.AskActivityPeriod.name
+simple_actions.AskActivitySport.name
+simple_actions.AskActivityTime.name
+simple_actions.AskAlcohol.name
+simple_actions.AskAlcoholDosing.name
+simple_actions.AskAlcoholDuration.name
+simple_actions.AskAlcoholPeriod.name
+simple_actions.AskAlcoholTime.name
+simple_actions.AskBaselineActivity.name
+simple_actions.AskBaselineAnxiety.name
+simple_actions.AskBaselineHealth.name
+simple_actions.AskBaselineMobility.name
+simple_actions.AskBaselinePain.name
+simple_actions.AskBaselineSelfcare.name
+simple_actions.AskBooleanAction.name
+simple_actions.AskButtonsAction.name
+simple_actions.AskDrugAddiction.name
+simple_actions.AskDrugAddictionDosing.name
+simple_actions.AskDrugAddictionDrug.name
+simple_actions.AskDrugAddictionDuration.name
+simple_actions.AskDrugAddictionPeriod.name
+simple_actions.AskDrugAddictionTime.name
+simple_actions.AskEatingDisorders.name
+simple_actions.AskEatingDisordersDuration.name
+simple_actions.AskEatingDisordersTime.name
+simple_actions.AskInfoPatient.name
+simple_actions.AskInfoPatientAddiction.name
+simple_actions.AskInfoPatientBloodPressure.name
+simple_actions.AskInfoPatientDistance.name
+simple_actions.AskInfoPatientGender.name
+simple_actions.AskInfoPatientHeartRate.name
+simple_actions.AskInfoPatientTemperature.name
+simple_actions.AskInfoPatientTime.name
+simple_actions.AskInfoPatientWeight.name
+simple_actions.AskNegativeEmo.name
+simple_actions.AskPain.name
+simple_actions.AskPainBodyPart.name
+simple_actions.AskPainChange.name
+simple_actions.AskPainDesc.name
+simple_actions.AskPainDuration.name
+simple_actions.AskPainPeriod.name
+simple_actions.AskPainTime.name
+simple_actions.AskPathology.name
+simple_actions.AskPathologyBodyPart.name
+simple_actions.AskPathologyChange.name
+simple_actions.AskPathologyDuration.name
+simple_actions.AskPathologyPeriod.name
+simple_actions.AskPathologySymptom.name
+simple_actions.AskPathologyTime.name
+simple_actions.AskPathologyTreatmentLinked.name
+simple_actions.AskPositiveEmo.name
+simple_actions.AskRisk.name
+simple_actions.AskSleep.name
+simple_actions.AskSleepDuration.name
+simple_actions.AskSleepQuality.name
+simple_actions.AskSmoking.name
+simple_actions.AskSmokingDosing.name
+simple_actions.AskSmokingDuration.name
+simple_actions.AskSmokingPeriod.name
+simple_actions.AskSmokingTime.name
+simple_actions.AskSocial.name
+simple_actions.AskTreatment.name
+simple_actions.AskTreatmentBeingTaken.name
+simple_actions.AskTreatmentDosing.name
+simple_actions.AskTreatmentDrug.name
+simple_actions.AskTreatmentDuration.name
+simple_actions.AskTreatmentMedicinal.name
+simple_actions.AskTreatmentOk.name
+simple_actions.AskTreatmentOverdosage.name
+simple_actions.AskTreatmentPeriod.name
+simple_actions.AskTreatmentPrescripted.name
+simple_actions.AskTreatmentTime.name
+simple_actions.AskWhy.name
+simple_actions.Bye.name
+simple_actions.Disagree.name
+simple_actions.Fallback.name
+simple_actions.Hello.name" class="py-name" href="#" onclick="return doclink('link-11', 'name', 'link-10');">name</a></tt><tt class="py-op">]</tt> </tt>
+</div><a name="L151"></a><tt class="py-lineno">151</tt>  <tt class="py-line"> </tt>
+<a name="L152"></a><tt class="py-lineno">152</tt>  <tt class="py-line"> </tt>
+<a name="get_session_id_from_config"></a><div id="get_session_id_from_config-def"><a name="L153"></a><tt class="py-lineno">153</tt> <a class="py-toggle" href="#" id="get_session_id_from_config-toggle" onclick="return toggle('get_session_id_from_config');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#get_session_id_from_config">get_session_id_from_config</a><tt class="py-op">(</tt><tt class="py-param">session_number</tt><tt class="py-op">,</tt> <tt class="py-param">project_id</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="get_session_id_from_config-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="get_session_id_from_config-expanded"><a name="L154"></a><tt class="py-lineno">154</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L155"></a><tt class="py-lineno">155</tt>  <tt class="py-line"><tt class="py-docstring">    @param session_number: number of session</tt> </tt>
+<a name="L156"></a><tt class="py-lineno">156</tt>  <tt class="py-line"><tt class="py-docstring">    @param project_id: ID of the project linked to patient, used to find config</tt> </tt>
+<a name="L157"></a><tt class="py-lineno">157</tt>  <tt class="py-line"><tt class="py-docstring">    file.</tt> </tt>
+<a name="L158"></a><tt class="py-lineno">158</tt>  <tt class="py-line"><tt class="py-docstring">    @return: session id</tt> </tt>
+<a name="L159"></a><tt class="py-lineno">159</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L160"></a><tt class="py-lineno">160</tt>  <tt class="py-line">    <tt class="py-name">config</tt> <tt class="py-op">=</tt> <tt class="py-name">yaml</tt><tt class="py-op">.</tt><tt class="py-name">safe_load</tt><tt class="py-op">(</tt><tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-string">'./configs/config_'</tt><tt class="py-op">+</tt><tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">project_id</tt><tt class="py-op">)</tt><tt class="py-op">+</tt><tt class="py-string">'.yml'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L161"></a><tt class="py-lineno">161</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">config</tt><tt class="py-op">[</tt><tt class="py-string">'sessions'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">int</tt><tt class="py-op">(</tt><tt class="py-name">session_number</tt><tt class="py-op">)</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-string">'session_id'</tt><tt class="py-op">]</tt> </tt>
+</div><a name="L162"></a><tt class="py-lineno">162</tt>  <tt class="py-line"> </tt>
+<a name="L163"></a><tt class="py-lineno">163</tt>  <tt class="py-line"> </tt>
+<a name="get_session_from_config"></a><div id="get_session_from_config-def"><a name="L164"></a><tt class="py-lineno">164</tt> <a class="py-toggle" href="#" id="get_session_from_config-toggle" onclick="return toggle('get_session_from_config');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#get_session_from_config">get_session_from_config</a><tt class="py-op">(</tt><tt class="py-param">session_id</tt><tt class="py-op">,</tt> <tt class="py-param">project_id</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="get_session_from_config-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="get_session_from_config-expanded"><a name="L165"></a><tt class="py-lineno">165</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L166"></a><tt class="py-lineno">166</tt>  <tt class="py-line"><tt class="py-docstring">    @param session_id: ID of session</tt> </tt>
+<a name="L167"></a><tt class="py-lineno">167</tt>  <tt class="py-line"><tt class="py-docstring">    @param project_id: ID of the project linked to patient, used to find config</tt> </tt>
+<a name="L168"></a><tt class="py-lineno">168</tt>  <tt class="py-line"><tt class="py-docstring">    file.</tt> </tt>
+<a name="L169"></a><tt class="py-lineno">169</tt>  <tt class="py-line"><tt class="py-docstring">    @return: config['sessions'][session_id]</tt> </tt>
+<a name="L170"></a><tt class="py-lineno">170</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L171"></a><tt class="py-lineno">171</tt>  <tt class="py-line">    <tt class="py-name">config</tt> <tt class="py-op">=</tt> <tt class="py-name">yaml</tt><tt class="py-op">.</tt><tt class="py-name">safe_load</tt><tt class="py-op">(</tt><tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-string">'./configs/config_'</tt><tt class="py-op">+</tt><tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">project_id</tt><tt class="py-op">)</tt><tt class="py-op">+</tt><tt class="py-string">'.yml'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L172"></a><tt class="py-lineno">172</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">config</tt><tt class="py-op">[</tt><tt class="py-string">'sessions'</tt><tt class="py-op">]</tt><tt class="py-op">:</tt> </tt>
+<a name="L173"></a><tt class="py-lineno">173</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">int</tt><tt class="py-op">(</tt><tt class="py-name">config</tt><tt class="py-op">[</tt><tt class="py-string">'sessions'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-string">'session_id'</tt><tt class="py-op">]</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt class="py-name">int</tt><tt class="py-op">(</tt><tt class="py-name">session_id</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L174"></a><tt class="py-lineno">174</tt>  <tt class="py-line">            <tt class="py-keyword">return</tt> <tt class="py-name">int</tt><tt class="py-op">(</tt><tt class="py-name">i</tt><tt class="py-op">)</tt> </tt>
+</div><a name="L175"></a><tt class="py-lineno">175</tt>  <tt class="py-line"> </tt>
+<a name="L176"></a><tt class="py-lineno">176</tt>  <tt class="py-line"> </tt>
+<a name="get_reminder_in_config"></a><div id="get_reminder_in_config-def"><a name="L177"></a><tt class="py-lineno">177</tt> <a class="py-toggle" href="#" id="get_reminder_in_config-toggle" onclick="return toggle('get_reminder_in_config');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#get_reminder_in_config">get_reminder_in_config</a><tt class="py-op">(</tt><tt class="py-param">reminder_name</tt><tt class="py-op">,</tt> <tt class="py-param">project_id</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="get_reminder_in_config-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="get_reminder_in_config-expanded"><a name="L178"></a><tt class="py-lineno">178</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L179"></a><tt class="py-lineno">179</tt>  <tt class="py-line"><tt class="py-docstring">    @param reminder_name: name of the reminder to find in config file</tt> </tt>
+<a name="L180"></a><tt class="py-lineno">180</tt>  <tt class="py-line"><tt class="py-docstring">    @param project_id: ID of the project linked to patient, used to find config</tt> </tt>
+<a name="L181"></a><tt class="py-lineno">181</tt>  <tt class="py-line"><tt class="py-docstring">    file.</tt> </tt>
+<a name="L182"></a><tt class="py-lineno">182</tt>  <tt class="py-line"><tt class="py-docstring">    @return: duration of reminder</tt> </tt>
+<a name="L183"></a><tt class="py-lineno">183</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L184"></a><tt class="py-lineno">184</tt>  <tt class="py-line">    <tt class="py-name">config</tt> <tt class="py-op">=</tt> <tt class="py-name">yaml</tt><tt class="py-op">.</tt><tt class="py-name">safe_load</tt><tt class="py-op">(</tt><tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-string">'./configs/config_'</tt><tt class="py-op">+</tt><tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">project_id</tt><tt class="py-op">)</tt><tt class="py-op">+</tt><tt class="py-string">'.yml'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L185"></a><tt class="py-lineno">185</tt>  <tt class="py-line">    <tt class="py-name">reminder_config</tt> <tt class="py-op">=</tt> <tt class="py-name">config</tt><tt class="py-op">[</tt><tt class="py-name">reminder_name</tt><tt class="py-op">]</tt> </tt>
+<a name="L186"></a><tt class="py-lineno">186</tt>  <tt class="py-line">    <tt class="py-name">reminder</tt> <tt class="py-op">=</tt> <tt class="py-name">timedelta</tt><tt class="py-op">(</tt><tt class="py-name">seconds</tt><tt class="py-op">=</tt><tt class="py-number">0</tt><tt class="py-op">)</tt> </tt>
+<a name="L187"></a><tt class="py-lineno">187</tt>  <tt class="py-line">    <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">reminder_config</tt><tt class="py-op">.</tt><tt class="py-name">keys</tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L188"></a><tt class="py-lineno">188</tt>  <tt class="py-line">        <tt class="py-name">j</tt> <tt class="py-op">=</tt> <tt class="py-name">reminder_config</tt><tt class="py-op">[</tt><tt class="py-name">i</tt><tt class="py-op">]</tt> </tt>
+<a name="L189"></a><tt class="py-lineno">189</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">i</tt> <tt class="py-op">==</tt> <tt class="py-string">'minutes'</tt><tt class="py-op">:</tt> </tt>
+<a name="L190"></a><tt class="py-lineno">190</tt>  <tt class="py-line">            <tt class="py-name">reminder</tt> <tt class="py-op">+=</tt> <tt class="py-name">timedelta</tt><tt class="py-op">(</tt><tt class="py-name">minutes</tt><tt class="py-op">=</tt><tt class="py-name">int</tt><tt class="py-op">(</tt><tt class="py-name">j</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L191"></a><tt class="py-lineno">191</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">i</tt> <tt class="py-op">==</tt> <tt class="py-string">'weeks'</tt><tt class="py-op">:</tt> </tt>
+<a name="L192"></a><tt class="py-lineno">192</tt>  <tt class="py-line">            <tt class="py-name">reminder</tt> <tt class="py-op">+=</tt> <tt class="py-name">timedelta</tt><tt class="py-op">(</tt><tt class="py-name">weeks</tt><tt class="py-op">=</tt><tt class="py-name">int</tt><tt class="py-op">(</tt><tt class="py-name">j</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L193"></a><tt class="py-lineno">193</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">i</tt> <tt class="py-op">==</tt> <tt class="py-string">'days'</tt><tt class="py-op">:</tt> </tt>
+<a name="L194"></a><tt class="py-lineno">194</tt>  <tt class="py-line">            <tt class="py-name">reminder</tt> <tt class="py-op">+=</tt> <tt class="py-name">timedelta</tt><tt class="py-op">(</tt><tt class="py-name">days</tt><tt class="py-op">=</tt><tt class="py-name">int</tt><tt class="py-op">(</tt><tt class="py-name">j</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L195"></a><tt class="py-lineno">195</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">i</tt> <tt class="py-op">==</tt> <tt class="py-string">'hours'</tt><tt class="py-op">:</tt> </tt>
+<a name="L196"></a><tt class="py-lineno">196</tt>  <tt class="py-line">            <tt class="py-name">reminder</tt> <tt class="py-op">+=</tt> <tt class="py-name">timedelta</tt><tt class="py-op">(</tt><tt class="py-name">hours</tt><tt class="py-op">=</tt><tt class="py-name">int</tt><tt class="py-op">(</tt><tt class="py-name">j</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L197"></a><tt class="py-lineno">197</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">reminder</tt> </tt>
+</div><a name="L198"></a><tt class="py-lineno">198</tt>  <tt class="py-line"> </tt>
+<a name="L199"></a><tt class="py-lineno">199</tt>  <tt class="py-line"> </tt>
+<a name="get_mandatories"></a><div id="get_mandatories-def"><a name="L200"></a><tt class="py-lineno">200</tt> <a class="py-toggle" href="#" id="get_mandatories-toggle" onclick="return toggle('get_mandatories');">-</a><tt class="py-line"><tt class="py-keyword">def</tt> <a class="py-def-name" href="ressources-module.html#get_mandatories">get_mandatories</a><tt class="py-op">(</tt><tt class="py-param">project_id</tt><tt class="py-op">,</tt> <tt class="py-param">current_session</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+</div><div id="get_mandatories-collapsed" style="display:none;" pad="+++" indent="++++"></div><div id="get_mandatories-expanded"><a name="L201"></a><tt class="py-lineno">201</tt>  <tt class="py-line">    <tt class="py-docstring">"""</tt> </tt>
+<a name="L202"></a><tt class="py-lineno">202</tt>  <tt class="py-line"><tt class="py-docstring">    @param project_id: ID of the project linked to patient, used to find config</tt> </tt>
+<a name="L203"></a><tt class="py-lineno">203</tt>  <tt class="py-line"><tt class="py-docstring">    file.</tt> </tt>
+<a name="L204"></a><tt class="py-lineno">204</tt>  <tt class="py-line"><tt class="py-docstring">    @param current_session: current session</tt> </tt>
+<a name="L205"></a><tt class="py-lineno">205</tt>  <tt class="py-line"><tt class="py-docstring">    """</tt> </tt>
+<a name="L206"></a><tt class="py-lineno">206</tt>  <tt class="py-line">    <tt class="py-name">config</tt> <tt class="py-op">=</tt> <tt class="py-name">yaml</tt><tt class="py-op">.</tt><tt class="py-name">safe_load</tt><tt class="py-op">(</tt><tt class="py-name">open</tt><tt class="py-op">(</tt><tt class="py-string">'./configs/config_'</tt><tt class="py-op">+</tt><tt class="py-name">str</tt><tt class="py-op">(</tt><tt class="py-name">project_id</tt><tt class="py-op">)</tt><tt class="py-op">+</tt><tt class="py-string">'.yml'</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L207"></a><tt class="py-lineno">207</tt>  <tt class="py-line">    <tt class="py-name">mandatories</tt> <tt class="py-op">=</tt> <tt class="py-name">dict</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
+<a name="L208"></a><tt class="py-lineno">208</tt>  <tt class="py-line">    <tt class="py-name">ressource</tt> <tt class="py-op">=</tt> <tt class="py-name">config</tt><tt class="py-op">[</tt><tt class="py-string">'sessions'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">int</tt><tt class="py-op">(</tt><tt class="py-name">current_session</tt><tt class="py-op">)</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-string">'requested_slot'</tt><tt class="py-op">]</tt> </tt>
+<a name="L209"></a><tt class="py-lineno">209</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">ressource</tt> <tt class="py-op">!=</tt> <tt class="py-string">"None"</tt><tt class="py-op">:</tt> </tt>
+<a name="L210"></a><tt class="py-lineno">210</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">j</tt> <tt class="py-keyword">in</tt> <tt class="py-name">ressource</tt><tt class="py-op">:</tt> </tt>
+<a name="L211"></a><tt class="py-lineno">211</tt>  <tt class="py-line">            <tt class="py-name">mandatories</tt><tt class="py-op">[</tt><tt class="py-name">j</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L212"></a><tt class="py-lineno">212</tt>  <tt class="py-line">            <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">ressource</tt><tt class="py-op">[</tt><tt class="py-name">j</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">split</tt><tt class="py-op">(</tt><tt class="py-string">','</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L213"></a><tt class="py-lineno">213</tt>  <tt class="py-line">                <tt class="py-name">mandatories</tt><tt class="py-op">[</tt><tt class="py-name">j</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">EntityFormField</tt><tt class="py-op">(</tt><tt class="py-name">i</tt><tt class="py-op">,</tt> <tt class="py-name">i</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L214"></a><tt class="py-lineno">214</tt>  <tt class="py-line">    <tt class="py-name">ressource</tt> <tt class="py-op">=</tt> <tt class="py-name">config</tt><tt class="py-op">[</tt><tt class="py-string">'sessions'</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-name">current_session</tt><tt class="py-op">]</tt><tt class="py-op">[</tt><tt class="py-string">'requested_intent'</tt><tt class="py-op">]</tt> </tt>
+<a name="L215"></a><tt class="py-lineno">215</tt>  <tt class="py-line">    <tt class="py-keyword">if</tt> <tt class="py-name">ressource</tt> <tt class="py-op">!=</tt> <tt class="py-string">"None"</tt><tt class="py-op">:</tt> </tt>
+<a name="L216"></a><tt class="py-lineno">216</tt>  <tt class="py-line">        <tt class="py-name">mandatories</tt><tt class="py-op">[</tt><tt class="py-string">'requested_intent'</tt><tt class="py-op">]</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
+<a name="L217"></a><tt class="py-lineno">217</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">i</tt> <tt class="py-keyword">in</tt> <tt class="py-name">ressource</tt><tt class="py-op">.</tt><tt class="py-name">split</tt><tt class="py-op">(</tt><tt class="py-string">','</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
+<a name="L218"></a><tt class="py-lineno">218</tt>  <tt class="py-line">            <tt class="py-name">mandatories</tt><tt class="py-op">[</tt><tt class="py-string">'requested_intent'</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">append</tt><tt class="py-op">(</tt><tt class="py-name">EntityFormField</tt><tt class="py-op">(</tt><tt class="py-name">i</tt><tt class="py-op">,</tt> <tt class="py-name">i</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
+<a name="L219"></a><tt class="py-lineno">219</tt>  <tt class="py-line">    <tt class="py-keyword">return</tt> <tt class="py-name">mandatories</tt> </tt>
+</div><a name="L220"></a><tt class="py-lineno">220</tt>  <tt class="py-line"> </tt><script type="text/javascript">
 <!--
 expandto(location.href);
 // -->
@@ -188,7 +579,7 @@ expandto(location.href);
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Wed Aug  8 13:59:04 2018
+    Generated by Epydoc 3.0.1 on Fri Sep  7 16:51:44 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

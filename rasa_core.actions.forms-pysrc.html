@@ -71,7 +71,8 @@
 <a name="L10"></a><tt class="py-lineno">10</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">logging</tt> </tt>
 <a name="L11"></a><tt class="py-lineno">11</tt>  <tt class="py-line"><tt class="py-keyword">import</tt> <tt class="py-name">random</tt> </tt>
 <a name="L12"></a><tt class="py-lineno">12</tt>  <tt class="py-line"> </tt>
-<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line"><tt id="link-2" class="py-name" targets="Variable rasa_core.actions.action.logger=rasa_core.actions.action-module.html#logger,Variable rasa_core.actions.forms.logger=rasa_core.actions.forms-module.html#logger"><a title="rasa_core.actions.action.logger
+<a name="L13"></a><tt class="py-lineno">13</tt>  <tt class="py-line"><tt id="link-2" class="py-name" targets="Variable form_actions.logger=form_actions-module.html#logger,Variable rasa_core.actions.action.logger=rasa_core.actions.action-module.html#logger,Variable rasa_core.actions.forms.logger=rasa_core.actions.forms-module.html#logger"><a title="form_actions.logger
+rasa_core.actions.action.logger
 rasa_core.actions.forms.logger" class="py-name" href="#" onclick="return doclink('link-2', 'logger', 'link-2');">logger</a></tt> <tt class="py-op">=</tt> <tt class="py-name">logging</tt><tt class="py-op">.</tt><tt class="py-name">getLogger</tt><tt class="py-op">(</tt><tt class="py-name">__name__</tt><tt class="py-op">)</tt> </tt>
 <a name="FormAction"></a><div id="FormAction-def"><a name="L14"></a><tt class="py-lineno">14</tt>  <tt class="py-line"> </tt>
 <a name="L15"></a><tt class="py-lineno">15</tt> <a class="py-toggle" href="#" id="FormAction-toggle" onclick="return toggle('FormAction');">-</a><tt class="py-line"><tt class="py-keyword">class</tt> <a class="py-def-name" href="rasa_core.actions.forms.FormAction-class.html">FormAction</a><tt class="py-op">(</tt><tt class="py-base-class">Action</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
@@ -92,21 +93,7 @@ rasa_core.actions.forms.FormAction.RANDOMIZE" class="py-name" href="#" onclick="
 </div><div id="FormAction.get_other_slots-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="FormAction.get_other_slots-expanded"><a name="L28"></a><tt class="py-lineno">28</tt>  <tt class="py-line">        <tt class="py-name">requested_slot</tt> <tt class="py-op">=</tt> <tt class="py-name">tracker</tt><tt class="py-op">.</tt><tt class="py-name">get_slot</tt><tt class="py-op">(</tt><tt class="py-string">"requested_slot"</tt><tt class="py-op">)</tt> </tt>
 <a name="L29"></a><tt class="py-lineno">29</tt>  <tt class="py-line"> </tt>
 <a name="L30"></a><tt class="py-lineno">30</tt>  <tt class="py-line">        <tt class="py-name">requested_entity</tt> <tt class="py-op">=</tt> <tt class="py-name">None</tt> </tt>
-<a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">f</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-4" class="py-name" targets="Static Method form_actions.Activity.required_fields()=form_actions.Activity-class.html#required_fields,Static Method form_actions.Alcohol.required_fields()=form_actions.Alcohol-class.html#required_fields,Static Method form_actions.CheckRequestedIntents.required_fields()=form_actions.CheckRequestedIntents-class.html#required_fields,Static Method form_actions.DrugAddiction.required_fields()=form_actions.DrugAddiction-class.html#required_fields,Static Method form_actions.EatingDisorders.required_fields()=form_actions.EatingDisorders-class.html#required_fields,Static Method form_actions.InfoPatient.required_fields()=form_actions.InfoPatient-class.html#required_fields,Static Method form_actions.NegativeEmo.required_fields()=form_actions.NegativeEmo-class.html#required_fields,Static Method form_actions.Pain.required_fields()=form_actions.Pain-class.html#required_fields,Static Method form_actions.Pathology.required_fields()=form_actions.Pathology-class.html#required_fields,Static Method form_actions.PositiveEmo.required_fields()=form_actions.PositiveEmo-class.html#required_fields,Static Method form_actions.Risk.required_fields()=form_actions.Risk-class.html#required_fields,Static Method form_actions.Sleep.required_fields()=form_actions.Sleep-class.html#required_fields,Static Method form_actions.Smoking.required_fields()=form_actions.Smoking-class.html#required_fields,Static Method form_actions.Social.required_fields()=form_actions.Social-class.html#required_fields,Static Method form_actions.Treatment.required_fields()=form_actions.Treatment-class.html#required_fields,Static Method rasa_core.actions.forms.FormAction.required_fields()=rasa_core.actions.forms.FormAction-class.html#required_fields"><a title="form_actions.Activity.required_fields
-form_actions.Alcohol.required_fields
-form_actions.CheckRequestedIntents.required_fields
-form_actions.DrugAddiction.required_fields
-form_actions.EatingDisorders.required_fields
-form_actions.InfoPatient.required_fields
-form_actions.NegativeEmo.required_fields
-form_actions.Pain.required_fields
-form_actions.Pathology.required_fields
-form_actions.PositiveEmo.required_fields
-form_actions.Risk.required_fields
-form_actions.Sleep.required_fields
-form_actions.Smoking.required_fields
-form_actions.Social.required_fields
-form_actions.Treatment.required_fields
+<a name="L31"></a><tt class="py-lineno">31</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">f</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-4" class="py-name" targets="Method form_actions.FormActionTriggerAction.required_fields()=form_actions.FormActionTriggerAction-class.html#required_fields,Static Method rasa_core.actions.forms.FormAction.required_fields()=rasa_core.actions.forms.FormAction-class.html#required_fields"><a title="form_actions.FormActionTriggerAction.required_fields
 rasa_core.actions.forms.FormAction.required_fields" class="py-name" href="#" onclick="return doclink('link-4', 'required_fields', 'link-4');">required_fields</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
 <a name="L32"></a><tt class="py-lineno">32</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">f</tt><tt class="py-op">.</tt><tt class="py-name">slot_name</tt> <tt class="py-op">==</tt> <tt class="py-name">requested_slot</tt><tt class="py-op">:</tt> </tt>
 <a name="L33"></a><tt class="py-lineno">33</tt>  <tt class="py-line">                <tt class="py-name">requested_entity</tt> <tt class="py-op">=</tt> <tt class="py-name">getattr</tt><tt class="py-op">(</tt><tt class="py-name">f</tt><tt class="py-op">,</tt> <tt class="py-string">'entity_name'</tt><tt class="py-op">,</tt> <tt class="py-name">None</tt><tt class="py-op">)</tt> </tt>
@@ -114,21 +101,7 @@ rasa_core.actions.forms.FormAction.required_fields" class="py-name" href="#" onc
 <a name="L35"></a><tt class="py-lineno">35</tt>  <tt class="py-line">        <tt class="py-name">slot_events</tt> <tt class="py-op">=</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
 <a name="L36"></a><tt class="py-lineno">36</tt>  <tt class="py-line">        <tt class="py-name">extracted_entities</tt> <tt class="py-op">=</tt> <tt class="py-op">{</tt><tt class="py-name">requested_entity</tt><tt class="py-op">}</tt> </tt>
 <a name="L37"></a><tt class="py-lineno">37</tt>  <tt class="py-line"> </tt>
-<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">f</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-5" class="py-name"><a title="form_actions.Activity.required_fields
-form_actions.Alcohol.required_fields
-form_actions.CheckRequestedIntents.required_fields
-form_actions.DrugAddiction.required_fields
-form_actions.EatingDisorders.required_fields
-form_actions.InfoPatient.required_fields
-form_actions.NegativeEmo.required_fields
-form_actions.Pain.required_fields
-form_actions.Pathology.required_fields
-form_actions.PositiveEmo.required_fields
-form_actions.Risk.required_fields
-form_actions.Sleep.required_fields
-form_actions.Smoking.required_fields
-form_actions.Social.required_fields
-form_actions.Treatment.required_fields
+<a name="L38"></a><tt class="py-lineno">38</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">f</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-5" class="py-name"><a title="form_actions.FormActionTriggerAction.required_fields
 rasa_core.actions.forms.FormAction.required_fields" class="py-name" href="#" onclick="return doclink('link-5', 'required_fields', 'link-4');">required_fields</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
 <a name="L39"></a><tt class="py-lineno">39</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">isinstance</tt><tt class="py-op">(</tt><tt class="py-name">f</tt><tt class="py-op">,</tt> <tt class="py-name">EntityFormField</tt><tt class="py-op">)</tt> <tt class="py-keyword">and</tt> \ </tt>
 <a name="L40"></a><tt class="py-lineno">40</tt>  <tt class="py-line">                <tt class="py-keyword">not</tt> <tt class="py-name">f</tt><tt class="py-op">.</tt><tt class="py-name">slot_name</tt> <tt class="py-op">==</tt> <tt class="py-name">requested_slot</tt> <tt class="py-keyword">and</tt> \ </tt>
@@ -144,21 +117,7 @@ simple_actions.AskButtonsAction.entity_name" class="py-name" href="#" onclick="r
 <a name="FormAction.get_requested_slot"></a><div id="FormAction.get_requested_slot-def"><a name="L46"></a><tt class="py-lineno">46</tt> <a class="py-toggle" href="#" id="FormAction.get_requested_slot-toggle" onclick="return toggle('FormAction.get_requested_slot');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="rasa_core.actions.forms.FormAction-class.html#get_requested_slot">get_requested_slot</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">tracker</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
 </div><div id="FormAction.get_requested_slot-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="FormAction.get_requested_slot-expanded"><a name="L47"></a><tt class="py-lineno">47</tt>  <tt class="py-line">        <tt class="py-name">requested_slot</tt> <tt class="py-op">=</tt> <tt class="py-name">tracker</tt><tt class="py-op">.</tt><tt class="py-name">get_slot</tt><tt class="py-op">(</tt><tt class="py-string">"requested_slot"</tt><tt class="py-op">)</tt> </tt>
 <a name="L48"></a><tt class="py-lineno">48</tt>  <tt class="py-line"> </tt>
-<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line">        <tt class="py-name">required</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-8" class="py-name"><a title="form_actions.Activity.required_fields
-form_actions.Alcohol.required_fields
-form_actions.CheckRequestedIntents.required_fields
-form_actions.DrugAddiction.required_fields
-form_actions.EatingDisorders.required_fields
-form_actions.InfoPatient.required_fields
-form_actions.NegativeEmo.required_fields
-form_actions.Pain.required_fields
-form_actions.Pathology.required_fields
-form_actions.PositiveEmo.required_fields
-form_actions.Risk.required_fields
-form_actions.Sleep.required_fields
-form_actions.Smoking.required_fields
-form_actions.Social.required_fields
-form_actions.Treatment.required_fields
+<a name="L49"></a><tt class="py-lineno">49</tt>  <tt class="py-line">        <tt class="py-name">required</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-8" class="py-name"><a title="form_actions.FormActionTriggerAction.required_fields
 rasa_core.actions.forms.FormAction.required_fields" class="py-name" href="#" onclick="return doclink('link-8', 'required_fields', 'link-4');">required_fields</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
 <a name="L50"></a><tt class="py-lineno">50</tt>  <tt class="py-line"> </tt>
 <a name="L51"></a><tt class="py-lineno">51</tt>  <tt class="py-line">        <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-9" class="py-name"><a title="form_actions.FormActionTriggerAction.RANDOMIZE
@@ -173,34 +132,23 @@ rasa_core.actions.forms.FormAction.RANDOMIZE" class="py-name" href="#" onclick="
 <a name="L58"></a><tt class="py-lineno">58</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">len</tt><tt class="py-op">(</tt><tt class="py-name">fields</tt><tt class="py-op">)</tt> <tt class="py-op">==</tt> <tt class="py-number">1</tt><tt class="py-op">:</tt> </tt>
 <a name="L59"></a><tt class="py-lineno">59</tt>  <tt class="py-line">                <tt class="py-keyword">return</tt> <tt class="py-name">fields</tt><tt class="py-op">[</tt><tt class="py-number">0</tt><tt class="py-op">]</tt><tt class="py-op">.</tt><tt class="py-name">extract</tt><tt class="py-op">(</tt><tt class="py-name">tracker</tt><tt class="py-op">)</tt> </tt>
 <a name="L60"></a><tt class="py-lineno">60</tt>  <tt class="py-line">            <tt class="py-keyword">else</tt><tt class="py-op">:</tt> </tt>
-<a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line">                <tt id="link-10" class="py-name"><a title="rasa_core.actions.action.logger
+<a name="L61"></a><tt class="py-lineno">61</tt>  <tt class="py-line">                <tt id="link-10" class="py-name"><a title="form_actions.logger
+rasa_core.actions.action.logger
 rasa_core.actions.forms.logger" class="py-name" href="#" onclick="return doclink('link-10', 'logger', 'link-2');">logger</a></tt><tt class="py-op">.</tt><tt class="py-name">debug</tt><tt class="py-op">(</tt><tt class="py-string">"unable to extract value "</tt> </tt>
 <a name="L62"></a><tt class="py-lineno">62</tt>  <tt class="py-line">                             <tt class="py-string">"for requested slot: {}"</tt><tt class="py-op">.</tt><tt class="py-name">format</tt><tt class="py-op">(</tt><tt class="py-name">requested_slot</tt><tt class="py-op">)</tt><tt class="py-op">)</tt> </tt>
 <a name="L63"></a><tt class="py-lineno">63</tt>  <tt class="py-line">                <tt class="py-keyword">return</tt> <tt class="py-op">[</tt><tt class="py-op">]</tt> </tt>
 </div><a name="L64"></a><tt class="py-lineno">64</tt>  <tt class="py-line"> </tt>
 <a name="FormAction.run"></a><div id="FormAction.run-def"><a name="L65"></a><tt class="py-lineno">65</tt> <a class="py-toggle" href="#" id="FormAction.run-toggle" onclick="return toggle('FormAction.run');">-</a><tt class="py-line">    <tt class="py-keyword">def</tt> <a class="py-def-name" href="rasa_core.actions.forms.FormAction-class.html#run">run</a><tt class="py-op">(</tt><tt class="py-param">self</tt><tt class="py-op">,</tt> <tt class="py-param">dispatcher</tt><tt class="py-op">,</tt> <tt class="py-param">tracker</tt><tt class="py-op">,</tt> <tt class="py-param">domain</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
 </div><div id="FormAction.run-collapsed" style="display:none;" pad="++" indent="++++++++"></div><div id="FormAction.run-expanded"><a name="L66"></a><tt class="py-lineno">66</tt>  <tt class="py-line"> </tt>
-<a name="L67"></a><tt class="py-lineno">67</tt>  <tt class="py-line">        <tt class="py-name">events</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-11" class="py-name" targets="Method rasa_core.actions.forms.FormAction.get_requested_slot()=rasa_core.actions.forms.FormAction-class.html#get_requested_slot"><a title="rasa_core.actions.forms.FormAction.get_requested_slot" class="py-name" href="#" onclick="return doclink('link-11', 'get_requested_slot', 'link-11');">get_requested_slot</a></tt><tt class="py-op">(</tt><tt class="py-name">tracker</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-12" class="py-name" targets="Method rasa_core.actions.forms.FormAction.get_other_slots()=rasa_core.actions.forms.FormAction-class.html#get_other_slots"><a title="rasa_core.actions.forms.FormAction.get_other_slots" class="py-name" href="#" onclick="return doclink('link-12', 'get_other_slots', 'link-12');">get_other_slots</a></tt><tt class="py-op">(</tt><tt class="py-name">tracker</tt><tt class="py-op">)</tt> </tt>
+<a name="L67"></a><tt class="py-lineno">67</tt>  <tt class="py-line">        <tt class="py-name">events</tt> <tt class="py-op">=</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-11" class="py-name" targets="Method form_actions.FormActionTriggerAction.get_requested_slot()=form_actions.FormActionTriggerAction-class.html#get_requested_slot,Method rasa_core.actions.forms.FormAction.get_requested_slot()=rasa_core.actions.forms.FormAction-class.html#get_requested_slot"><a title="form_actions.FormActionTriggerAction.get_requested_slot
+rasa_core.actions.forms.FormAction.get_requested_slot" class="py-name" href="#" onclick="return doclink('link-11', 'get_requested_slot', 'link-11');">get_requested_slot</a></tt><tt class="py-op">(</tt><tt class="py-name">tracker</tt><tt class="py-op">)</tt> <tt class="py-op">+</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-12" class="py-name" targets="Method form_actions.FormActionTriggerAction.get_other_slots()=form_actions.FormActionTriggerAction-class.html#get_other_slots,Method rasa_core.actions.forms.FormAction.get_other_slots()=rasa_core.actions.forms.FormAction-class.html#get_other_slots"><a title="form_actions.FormActionTriggerAction.get_other_slots
+rasa_core.actions.forms.FormAction.get_other_slots" class="py-name" href="#" onclick="return doclink('link-12', 'get_other_slots', 'link-12');">get_other_slots</a></tt><tt class="py-op">(</tt><tt class="py-name">tracker</tt><tt class="py-op">)</tt> </tt>
 <a name="L68"></a><tt class="py-lineno">68</tt>  <tt class="py-line"> </tt>
 <a name="L69"></a><tt class="py-lineno">69</tt>  <tt class="py-line">        <tt class="py-name">temp_tracker</tt> <tt class="py-op">=</tt> <tt class="py-name">tracker</tt><tt class="py-op">.</tt><tt class="py-name">copy</tt><tt class="py-op">(</tt><tt class="py-op">)</tt> </tt>
 <a name="L70"></a><tt class="py-lineno">70</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">e</tt> <tt class="py-keyword">in</tt> <tt class="py-name">events</tt><tt class="py-op">:</tt> </tt>
 <a name="L71"></a><tt class="py-lineno">71</tt>  <tt class="py-line">            <tt class="py-name">temp_tracker</tt><tt class="py-op">.</tt><tt class="py-name">update</tt><tt class="py-op">(</tt><tt class="py-name">e</tt><tt class="py-op">)</tt> </tt>
 <a name="L72"></a><tt class="py-lineno">72</tt>  <tt class="py-line"> </tt>
-<a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">field</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="form_actions.Activity.required_fields
-form_actions.Alcohol.required_fields
-form_actions.CheckRequestedIntents.required_fields
-form_actions.DrugAddiction.required_fields
-form_actions.EatingDisorders.required_fields
-form_actions.InfoPatient.required_fields
-form_actions.NegativeEmo.required_fields
-form_actions.Pain.required_fields
-form_actions.Pathology.required_fields
-form_actions.PositiveEmo.required_fields
-form_actions.Risk.required_fields
-form_actions.Sleep.required_fields
-form_actions.Smoking.required_fields
-form_actions.Social.required_fields
-form_actions.Treatment.required_fields
+<a name="L73"></a><tt class="py-lineno">73</tt>  <tt class="py-line">        <tt class="py-keyword">for</tt> <tt class="py-name">field</tt> <tt class="py-keyword">in</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-13" class="py-name"><a title="form_actions.FormActionTriggerAction.required_fields
 rasa_core.actions.forms.FormAction.required_fields" class="py-name" href="#" onclick="return doclink('link-13', 'required_fields', 'link-4');">required_fields</a></tt><tt class="py-op">(</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
 <a name="L74"></a><tt class="py-lineno">74</tt>  <tt class="py-line">            <tt class="py-keyword">if</tt> <tt class="py-name">self</tt><tt class="py-op">.</tt><tt id="link-14" class="py-name" targets="Method rasa_core.actions.forms.FormAction.should_request_slot()=rasa_core.actions.forms.FormAction-class.html#should_request_slot"><a title="rasa_core.actions.forms.FormAction.should_request_slot" class="py-name" href="#" onclick="return doclink('link-14', 'should_request_slot', 'link-14');">should_request_slot</a></tt><tt class="py-op">(</tt><tt class="py-name">temp_tracker</tt><tt class="py-op">,</tt> <tt class="py-name">field</tt><tt class="py-op">.</tt><tt class="py-name">slot_name</tt><tt class="py-op">)</tt><tt class="py-op">:</tt> </tt>
 <a name="L75"></a><tt class="py-lineno">75</tt>  <tt class="py-line">                <tt class="py-name">dispatcher</tt><tt class="py-op">.</tt><tt class="py-name">utter_template</tt><tt class="py-op">(</tt> </tt>
@@ -253,7 +201,7 @@ expandto(location.href);
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Wed Aug  8 13:59:04 2018
+    Generated by Epydoc 3.0.1 on Fri Sep  7 16:51:44 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

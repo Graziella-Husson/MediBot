@@ -59,21 +59,22 @@
 <!-- ==================== CLASS DESCRIPTION ==================== -->
 <h1 class="epydoc">Class AskTreatmentBeingTaken</h1><p class="nomargin-top"><span class="codelink"><a href="simple_actions-pysrc.html#AskTreatmentBeingTaken">source&nbsp;code</a></span></p>
 <center>
-<center>  <map id="uml_class_diagram_for_simple_a_60" name="uml_class_diagram_for_simple_a_60">
-<area shape="rect" id="node1_9" href="simple_actions.AskTreatmentBeingTaken-class.html#__init__" title="Set the name of the entity to ask" alt="" coords="51,287,203,307"/>
-<area shape="rect" id="node1_10" href="simple_actions.AskTreatmentBeingTaken-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="51,307,203,327"/>
-<area shape="rect" id="node1" href="simple_actions.AskTreatmentBeingTaken-class.html" title="Say something to the user : display buttons to tell if the treatment is being well taken or forgotten or stopped When the &quot;stopped&quot; button is clicked, we have to set :" alt="" coords="39,255,215,333"/>
-<area shape="rect" id="node2_11" href="simple_actions.AskButtonsAction-class.html#entity_name" title="simple_actions.AskButtonsAction.entity_name" alt="" coords="17,127,236,147"/>
-<area shape="rect" id="node2_12" href="simple_actions.AskButtonsAction-class.html#intent_name" title="simple_actions.AskButtonsAction.intent_name" alt="" coords="17,147,236,167"/>
-<area shape="rect" id="node2_13" href="simple_actions.AskButtonsAction-class.html#buttons" title="simple_actions.AskButtonsAction.buttons" alt="" coords="17,167,236,187"/>
-<area shape="rect" id="node2_14" href="simple_actions.AskButtonsAction-class.html#check" title="Used to check if all proprieties has been set" alt="" coords="17,189,236,209"/>
-<area shape="rect" id="node2_15" href="simple_actions.AskButtonsAction-class.html#run" title="For each button is self.buttons, make a button after the name button" alt="" coords="17,209,236,229"/>
-<area shape="rect" id="node2" href="simple_actions.AskButtonsAction-class.html" title="Used to say something to the user using predefined buttons" alt="" coords="5,103,248,236"/>
-<area shape="rect" id="node3_16" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="35,38,219,58"/>
-<area shape="rect" id="node3_17" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="35,58,219,78"/>
+<center>  <map id="uml_class_diagram_for_simple_a_69" name="uml_class_diagram_for_simple_a_69">
+<area shape="rect" id="node1_10" href="simple_actions.AskTreatmentBeingTaken-class.html#__init__" title="Set the name of the entity to ask" alt="" coords="51,307,203,327"/>
+<area shape="rect" id="node1_11" href="simple_actions.AskTreatmentBeingTaken-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="51,327,203,347"/>
+<area shape="rect" id="node1" href="simple_actions.AskTreatmentBeingTaken-class.html" title="Say something to the user : display buttons to tell if the treatment is being well taken or forgotten or stopped When the &quot;stopped&quot; button is clicked, we have to set :" alt="" coords="39,275,215,353"/>
+<area shape="rect" id="node2_12" href="simple_actions.AskButtonsAction-class.html#entity_name" title="simple_actions.AskButtonsAction.entity_name" alt="" coords="17,127,236,147"/>
+<area shape="rect" id="node2_13" href="simple_actions.AskButtonsAction-class.html#intent_name" title="simple_actions.AskButtonsAction.intent_name" alt="" coords="17,147,236,167"/>
+<area shape="rect" id="node2_14" href="simple_actions.AskButtonsAction-class.html#buttons" title="simple_actions.AskButtonsAction.buttons" alt="" coords="17,167,236,187"/>
+<area shape="rect" id="node2_15" href="simple_actions.AskButtonsAction-class.html#payload_no" title="simple_actions.AskButtonsAction.payload_no" alt="" coords="17,187,236,207"/>
+<area shape="rect" id="node2_16" href="simple_actions.AskButtonsAction-class.html#check" title="Used to check if all proprieties has been set" alt="" coords="17,210,236,230"/>
+<area shape="rect" id="node2_17" href="simple_actions.AskButtonsAction-class.html#run" title="For each button is self.buttons, make a button after the name button" alt="" coords="17,230,236,250"/>
+<area shape="rect" id="node2" href="simple_actions.AskButtonsAction-class.html" title="Used to say something to the user using predefined buttons" alt="" coords="5,103,248,256"/>
+<area shape="rect" id="node3_18" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="35,38,219,58"/>
+<area shape="rect" id="node3_19" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="35,58,219,78"/>
 <area shape="rect" id="node3" href="rasa_core.actions.action.Action-class.html" title="Next action to be taken in response to a dialogue state." alt="" coords="23,5,231,84"/>
 </map>
-  <img src="uml_class_diagram_for_simple_a_60.gif" alt='' usemap="#uml_class_diagram_for_simple_a_60" ismap="ismap" class="graph-without-title" />
+  <img src="uml_class_diagram_for_simple_a_69.gif" alt='' usemap="#uml_class_diagram_for_simple_a_69" ismap="ismap" class="graph-without-title" />
 </center>
 </center>
 <hr />
@@ -188,7 +189,8 @@
     <p class="indent-wrapped-lines"><b>Inherited from <code><a href="simple_actions.AskButtonsAction-class.html">AskButtonsAction</a></code></b>:
       <code><a href="simple_actions.AskButtonsAction-class.html#buttons">buttons</a></code>,
       <code><a href="simple_actions.AskButtonsAction-class.html#entity_name">entity_name</a></code>,
-      <code><a href="simple_actions.AskButtonsAction-class.html#intent_name">intent_name</a></code>
+      <code><a href="simple_actions.AskButtonsAction-class.html#intent_name">intent_name</a></code>,
+      <code><a href="simple_actions.AskButtonsAction-class.html#payload_no">payload_no</a></code>
       </p>
     </td>
   </tr>
@@ -314,7 +316,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Wed Aug  8 13:59:03 2018
+    Generated by Epydoc 3.0.1 on Fri Sep  7 16:51:43 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"
