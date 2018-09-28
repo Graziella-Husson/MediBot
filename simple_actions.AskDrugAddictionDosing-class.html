@@ -59,20 +59,21 @@
 <!-- ==================== CLASS DESCRIPTION ==================== -->
 <h1 class="epydoc">Class AskDrugAddictionDosing</h1><p class="nomargin-top"><span class="codelink"><a href="simple_actions-pysrc.html#AskDrugAddictionDosing">source&nbsp;code</a></span></p>
 <center>
-<center>  <map id="uml_class_diagram_for_simple_a_24" name="uml_class_diagram_for_simple_a_24">
-<area shape="rect" id="node1_8" href="simple_actions.AskDrugAddictionDosing-class.html#__init__" title="Set the name of the entity to ask" alt="" coords="53,267,200,287"/>
-<area shape="rect" id="node1_9" href="simple_actions.AskDrugAddictionDosing-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="53,287,200,307"/>
-<area shape="rect" id="node1" href="simple_actions.AskDrugAddictionDosing-class.html" title="Say something to the user : ask the dosing of the drugAddiction" alt="" coords="41,235,212,313"/>
-<area shape="rect" id="node2_10" href="simple_actions.AskAction-class.html#SIMPLE" title="simple_actions.AskAction.SIMPLE" alt="" coords="17,127,236,147"/>
-<area shape="rect" id="node2_11" href="simple_actions.AskAction-class.html#entity_name" title="simple_actions.AskAction.entity_name" alt="" coords="17,147,236,167"/>
-<area shape="rect" id="node2_12" href="simple_actions.AskAction-class.html#check" title="Used to check if all proprieties has been set" alt="" coords="17,170,236,190"/>
-<area shape="rect" id="node2_13" href="simple_actions.AskAction-class.html#run" title="Print something for the user" alt="" coords="17,190,236,210"/>
-<area shape="rect" id="node2" href="simple_actions.AskAction-class.html" title="Used to say something to the user" alt="" coords="5,103,248,216"/>
-<area shape="rect" id="node3_14" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="35,38,219,58"/>
-<area shape="rect" id="node3_15" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="35,58,219,78"/>
-<area shape="rect" id="node3" href="rasa_core.actions.action.Action-class.html" title="Next action to be taken in response to a dialogue state." alt="" coords="23,5,231,84"/>
+<center>  <map id="uml_class_diagram_for_simple_a_25" name="uml_class_diagram_for_simple_a_25">
+<area shape="rect" id="node1_9" href="simple_actions.AskDrugAddictionDosing-class.html#__init__" title="Set the name of the entity to ask" alt="" coords="53,287,200,307"/>
+<area shape="rect" id="node1_10" href="simple_actions.AskDrugAddictionDosing-class.html#name" title="Returns: &#160;the name of the action : utter_ask_drugAddiction_dosing" alt="" coords="53,307,200,327"/>
+<area shape="rect" id="node1" href="simple_actions.AskDrugAddictionDosing-class.html" title="Say something to the user : ask the dosing of the drugAddiction" alt="" coords="41,255,212,333"/>
+<area shape="rect" id="node2_11" href="simple_actions.AskAction-class.html#SIMPLE" title="If self.SIMPLE is set, use its value for search utterance in ressources" alt="" coords="17,127,236,147"/>
+<area shape="rect" id="node2_12" href="simple_actions.AskAction-class.html#entity_name" title="Name of entity to ask about" alt="" coords="17,147,236,167"/>
+<area shape="rect" id="node2_13" href="simple_actions.AskAction-class.html#NO" title="if self.NO is set, show a button to set the entity to &#39;none&#39;" alt="" coords="17,167,236,187"/>
+<area shape="rect" id="node2_14" href="simple_actions.AskAction-class.html#check" title="Used to check if all proprieties has been set" alt="" coords="17,189,236,209"/>
+<area shape="rect" id="node2_15" href="simple_actions.AskAction-class.html#run" title="Print something for the user" alt="" coords="17,209,236,229"/>
+<area shape="rect" id="node2" href="simple_actions.AskAction-class.html" title="Used to say something to the user" alt="" coords="5,103,248,236"/>
+<area shape="rect" id="node3_16" href="javascript:void(0);" title="Indicator if this action resets the topic when run." alt="" coords="35,38,219,58"/>
+<area shape="rect" id="node3_17" href="javascript:void(0);" title="str(x)" alt="" coords="35,58,219,78"/>
+<area shape="rect" id="node3" href="javascript:void(0);" title="Next action to be taken in response to a dialogue state." alt="" coords="23,5,231,84"/>
 </map>
-  <img src="uml_class_diagram_for_simple_a_24.gif" alt='' usemap="#uml_class_diagram_for_simple_a_24" ismap="ismap" class="graph-without-title" />
+  <img src="uml_class_diagram_for_simple_a_25.gif" alt='' usemap="#uml_class_diagram_for_simple_a_25" ismap="ismap" class="graph-without-title" />
 </center>
 </center>
 <hr />
@@ -120,7 +121,7 @@
         <tr>
           <td><span class="summary-sig"><a href="simple_actions.AskDrugAddictionDosing-class.html#name" class="summary-sig-name">name</a>(<span class="summary-sig-arg">self</span>)</span><br />
       Returns:
-      the name of the action.</td>
+      the name of the action : utter_ask_drugAddiction_dosing</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="simple_actions-pysrc.html#AskDrugAddictionDosing.name">source&nbsp;code</a></span>
             
@@ -136,9 +137,9 @@
       <code><a href="simple_actions.AskAction-class.html#check">check</a></code>,
       <code><a href="simple_actions.AskAction-class.html#run">run</a></code>
       </p>
-    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="rasa_core.actions.action.Action-class.html">rasa_core.actions.action.Action</a></code></b>:
-      <code><a href="rasa_core.actions.action.Action-class.html#__str__">__str__</a></code>,
-      <code><a href="rasa_core.actions.action.Action-class.html#resets_topic">resets_topic</a></code>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>rasa_core.actions.action.Action</code></b>:
+      <code>__str__</code>,
+      <code>resets_topic</code>
       </p>
     <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
       <code>__delattr__</code>,
@@ -176,6 +177,7 @@
   <tr>
     <td colspan="2" class="summary">
     <p class="indent-wrapped-lines"><b>Inherited from <code><a href="simple_actions.AskAction-class.html">AskAction</a></code></b>:
+      <code><a href="simple_actions.AskAction-class.html#NO">NO</a></code>,
       <code><a href="simple_actions.AskAction-class.html#SIMPLE">SIMPLE</a></code>,
       <code><a href="simple_actions.AskAction-class.html#entity_name">entity_name</a></code>
       </p>
@@ -265,9 +267,9 @@
   <p>Unique identifier of this simple action.</p>
   <dl class="fields">
     <dt>Returns:</dt>
-        <dd>the name of the action.</dd>
+        <dd>the name of the action : utter_ask_drugAddiction_dosing</dd>
     <dt>Overrides:
-        <a href="rasa_core.actions.action.Action-class.html#name">rasa_core.actions.action.Action.name</a>
+        rasa_core.actions.action.Action.name
     </dt>
   </dl>
 </td></tr></table>
@@ -301,7 +303,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Fri Sep  7 16:51:40 2018
+    Generated by Epydoc 3.0.1 on Fri Sep 28 10:22:58 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

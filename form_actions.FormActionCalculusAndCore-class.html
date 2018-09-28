@@ -60,47 +60,36 @@
 <h1 class="epydoc">Class FormActionCalculusAndCore</h1><p class="nomargin-top"><span class="codelink"><a href="form_actions-pysrc.html#FormActionCalculusAndCore">source&nbsp;code</a></span></p>
 <center>
 <center>  <map id="uml_class_diagram_for_form_act_7" name="uml_class_diagram_for_form_act_7">
-<area shape="rect" id="node1_20" href="form_actions.FormActionCalculusAndCore-class.html#calculus" title="form_actions.FormActionCalculusAndCore.calculus" alt="" coords="17,357,345,377"/>
-<area shape="rect" id="node1_21" href="form_actions.FormActionCalculusAndCore-class.html#intent_name" title="form_actions.FormActionCalculusAndCore.intent_name" alt="" coords="17,377,345,397"/>
-<area shape="rect" id="node1_22" href="form_actions.FormActionCalculusAndCore-class.html#main_slot" title="form_actions.FormActionCalculusAndCore.main_slot" alt="" coords="17,397,345,417"/>
-<area shape="rect" id="node1_23" href="form_actions.FormActionCalculusAndCore-class.html#levels" title="form_actions.FormActionCalculusAndCore.levels" alt="" coords="17,417,345,437"/>
-<area shape="rect" id="node1_24" href="form_actions.FormActionCalculusAndCore-class.html#simples" title="form_actions.FormActionCalculusAndCore.simples" alt="" coords="17,437,345,457"/>
-<area shape="rect" id="node1_25" href="form_actions.FormActionCalculusAndCore-class.html#booleans" title="form_actions.FormActionCalculusAndCore.booleans" alt="" coords="17,457,345,477"/>
+<area shape="rect" id="node1_20" href="form_actions.FormActionCalculusAndCore-class.html#calculus" title="When calculus is True, this type of action is used when the intent is &#160;containing a level calculated:" alt="" coords="17,357,345,377"/>
+<area shape="rect" id="node1_21" href="form_actions.FormActionCalculusAndCore-class.html#intent_name" title="Name of the intent" alt="" coords="17,377,345,397"/>
+<area shape="rect" id="node1_22" href="form_actions.FormActionCalculusAndCore-class.html#main_slot" title="Main slot used to calculate level" alt="" coords="17,397,345,417"/>
+<area shape="rect" id="node1_23" href="form_actions.FormActionCalculusAndCore-class.html#levels" title="List of possible levels" alt="" coords="17,417,345,437"/>
+<area shape="rect" id="node1_24" href="form_actions.FormActionCalculusAndCore-class.html#simples" title="List of simple slots" alt="" coords="17,437,345,457"/>
+<area shape="rect" id="node1_25" href="form_actions.FormActionCalculusAndCore-class.html#booleans" title="List of boolean slots" alt="" coords="17,457,345,477"/>
 <area shape="rect" id="node1_26" href="form_actions.FormActionCalculusAndCore-class.html#check" title="Used to check if all proprieties has been set" alt="" coords="17,479,345,499"/>
-<area shape="rect" id="node1_27" href="form_actions.FormActionCalculusAndCore-class.html#calculus_action" title="form_actions.FormActionCalculusAndCore.calculus_action" alt="" coords="17,499,345,519"/>
+<area shape="rect" id="node1_27" href="form_actions.FormActionCalculusAndCore-class.html#calculus_action" title="Returns: &#160;a list of events This action will sum up infos about the intent." alt="" coords="17,499,345,519"/>
 <area shape="rect" id="node1_28" href="form_actions.FormActionCalculusAndCore-class.html#submit" title="When calculus is True, call the calculus_action method" alt="" coords="17,519,345,539"/>
 <area shape="rect" id="node1_29" href="form_actions.FormActionCalculusAndCore-class.html#core_action" title="form_actions.FormActionCalculusAndCore.core_action" alt="" coords="17,539,345,559"/>
 <area shape="rect" id="node1_30" href="form_actions.FormActionCalculusAndCore-class.html#sum_up_setted_slots" title="Used to sum up setted slots and not ones setted at None" alt="" coords="17,559,345,579"/>
 <area shape="rect" id="node1_31" href="form_actions.FormActionCalculusAndCore-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="17,579,345,599"/>
 <area shape="rect" id="node1" href="form_actions.FormActionCalculusAndCore-class.html" title="A custom class heritating from FormActionTriggerAction." alt="" coords="5,332,357,605"/>
-<area shape="rect" id="node2_32" href="form_actions.FormActionTriggerAction-class.html#RANDOMIZE" title="form_actions.FormActionTriggerAction.RANDOMIZE" alt="" coords="72,204,291,224"/>
-<area shape="rect" id="node2_33" href="form_actions.FormActionTriggerAction-class.html#required_fields" title="Returns: &#160;if the dict obligatories from the init class contains a list a the &#160;requested slot for the intent, returns it." alt="" coords="72,227,291,247"/>
+<area shape="rect" id="node2_32" href="form_actions.FormActionTriggerAction-class.html#RANDOMIZE" title="RANDOMIZE is used to randomize the next question about a mandatory slot" alt="" coords="72,204,291,224"/>
+<area shape="rect" id="node2_33" href="form_actions.FormActionTriggerAction-class.html#required_fields" title="Returns: &#160;check the requested slots for the intent from config file AND in DB &#160;(followed intent triggered) If none, returns an empty list." alt="" coords="72,227,291,247"/>
 <area shape="rect" id="node2_34" href="form_actions.FormActionTriggerAction-class.html#get_other_slots" title="Method from RASA." alt="" coords="72,247,291,267"/>
 <area shape="rect" id="node2_35" href="form_actions.FormActionTriggerAction-class.html#get_requested_slot" title="Method from RASA." alt="" coords="72,267,291,287"/>
-<area shape="rect" id="node2_36" href="form_actions.FormActionTriggerAction-class.html#run" title="Trigger a custom action to ask the requested_slot." alt="" coords="72,287,291,307"/>
-<area shape="rect" id="node2" href="form_actions.FormActionTriggerAction-class.html" title="A custom class heritating from FormAction." alt="" coords="60,180,303,313"/>
-<area shape="rect" id="node3_37" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="89,38,273,58"/>
-<area shape="rect" id="node3_38" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="89,58,273,78"/>
-<area shape="rect" id="node3" href="rasa_core.actions.action.Action-class.html" title="Next action to be taken in response to a dialogue state." alt="" coords="77,5,285,84"/>
-<area shape="rect" id="node4_39" href="rasa_core.actions.forms.FormAction-class.html#should_request_slot" title="rasa_core.actions.forms.FormAction.should_request_slot" alt="" coords="48,135,315,155"/>
-<area shape="rect" id="node4" href="rasa_core.actions.forms.FormAction-class.html" title="rasa_core.actions.forms.FormAction" alt="" coords="36,103,327,161"/>
+<area shape="rect" id="node2_36" href="form_actions.FormActionTriggerAction-class.html#run" title="Use the right action is simple_actions module to ask the requested_slot." alt="" coords="72,287,291,307"/>
+<area shape="rect" id="node2" href="form_actions.FormActionTriggerAction-class.html" title="A custom class heritating from FormAction (RASA class)." alt="" coords="60,180,303,313"/>
+<area shape="rect" id="node3_37" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.should_request_slot" alt="" coords="48,135,315,155"/>
+<area shape="rect" id="node3" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction" alt="" coords="36,103,327,161"/>
+<area shape="rect" id="node4_38" href="javascript:void(0);" title="Indicator if this action resets the topic when run." alt="" coords="89,38,273,58"/>
+<area shape="rect" id="node4_39" href="javascript:void(0);" title="str(x)" alt="" coords="89,58,273,78"/>
+<area shape="rect" id="node4" href="javascript:void(0);" title="Next action to be taken in response to a dialogue state." alt="" coords="77,5,285,84"/>
 </map>
   <img src="uml_class_diagram_for_form_act_7.gif" alt='' usemap="#uml_class_diagram_for_form_act_7" ismap="ismap" class="graph-without-title" />
 </center>
 </center>
 <hr />
-<p>A custom class heritating from FormActionTriggerAction. When calculus 
-  is True, this type of action is used when the intent is containing a 
-  level calculated:</p>
-  <ul>
-    <li>
-      pain (mild, moderate, severe)
-    </li>
-    <li>
-      activity (little, moderate, vigorous)
-    </li>
-  </ul>
-  <p>Otherwise, this action will just show the informations collected</p>
+<p>A custom class heritating from FormActionTriggerAction.</p>
 
 <!-- ==================== INSTANCE METHODS ==================== -->
 <a name="section-InstanceMethods"></a>
@@ -145,7 +134,9 @@
           <td><span class="summary-sig"><a href="form_actions.FormActionCalculusAndCore-class.html#calculus_action" class="summary-sig-name">calculus_action</a>(<span class="summary-sig-arg">self</span>,
         <span class="summary-sig-arg">tracker</span>,
         <span class="summary-sig-arg">dispatcher</span>,
-        <span class="summary-sig-arg">domain</span>)</span></td>
+        <span class="summary-sig-arg">domain</span>)</span><br />
+      Returns:
+      a list of events This action will sum up infos about the intent.</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="form_actions-pysrc.html#FormActionCalculusAndCore.calculus_action">source&nbsp;code</a></span>
             
@@ -240,12 +231,12 @@
       <code><a href="form_actions.FormActionTriggerAction-class.html#required_fields">required_fields</a></code>,
       <code><a href="form_actions.FormActionTriggerAction-class.html#run">run</a></code>
       </p>
-    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="rasa_core.actions.forms.FormAction-class.html">rasa_core.actions.forms.FormAction</a></code></b>:
-      <code><a href="rasa_core.actions.forms.FormAction-class.html#should_request_slot">should_request_slot</a></code>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>rasa_core.actions.forms.FormAction</code></b>:
+      <code>should_request_slot</code>
       </p>
-    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="rasa_core.actions.action.Action-class.html">rasa_core.actions.action.Action</a></code></b>:
-      <code><a href="rasa_core.actions.action.Action-class.html#__str__">__str__</a></code>,
-      <code><a href="rasa_core.actions.action.Action-class.html#resets_topic">resets_topic</a></code>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>rasa_core.actions.action.Action</code></b>:
+      <code>__str__</code>,
+      <code>resets_topic</code>
       </p>
     <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
       <code>__delattr__</code>,
@@ -285,42 +276,49 @@
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="calculus"></a><span class="summary-name">calculus</span> = <code title="False">False</code>
+        <a href="form_actions.FormActionCalculusAndCore-class.html#calculus" class="summary-name">calculus</a> = <code title="False">False</code><br />
+      When calculus is True, this type of action is used when the intent is
+      containing a level calculated:
     </td>
   </tr>
 <tr>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="intent_name"></a><span class="summary-name">intent_name</span> = <code title="&quot;&quot;">&quot;&quot;</code>
+        <a name="intent_name"></a><span class="summary-name">intent_name</span> = <code title="&quot;&quot;">&quot;&quot;</code><br />
+      Name of the intent
     </td>
   </tr>
 <tr>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="main_slot"></a><span class="summary-name">main_slot</span> = <code title="&quot;&quot;">&quot;&quot;</code>
+        <a name="main_slot"></a><span class="summary-name">main_slot</span> = <code title="&quot;&quot;">&quot;&quot;</code><br />
+      Main slot used to calculate level
     </td>
   </tr>
 <tr>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="levels"></a><span class="summary-name">levels</span> = <code title="[]">[]</code>
+        <a name="levels"></a><span class="summary-name">levels</span> = <code title="[]">[]</code><br />
+      List of possible levels
     </td>
   </tr>
 <tr>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="simples"></a><span class="summary-name">simples</span> = <code title="[]">[]</code>
+        <a name="simples"></a><span class="summary-name">simples</span> = <code title="[]">[]</code><br />
+      List of simple slots
     </td>
   </tr>
 <tr>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="booleans"></a><span class="summary-name">booleans</span> = <code title="[]">[]</code>
+        <a name="booleans"></a><span class="summary-name">booleans</span> = <code title="[]">[]</code><br />
+      List of boolean slots
     </td>
   </tr>
   <tr>
@@ -396,14 +394,16 @@
     <dt>Parameters:</dt>
     <dd><ul class="nomargin-top">
         <li><strong class="pname"><code>tracker</code></strong> - used to get the language of the bot and get and set global score</li>
-        <li><strong class="pname"><code>dispatcher</code></strong> - used to tell the patient that he talked about the intent This 
-          action will sum up infos about the intent. If they're all set to 
-          None (no mandatory entity), just say that we talked about intent
+        <li><strong class="pname"><code>dispatcher</code></strong> - used to tell the patient that he talked about the intent</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>a list of events This action will sum up infos about the intent. 
+          If they're all set to None (no mandatory entity), just say that 
+          we talked about intent
           <p>Ask if the informations are correct.</p>
           <p>If the level is 'Incorrect', that mean the user said that it 
           was incorrect before. If so, display buttons to allow user to 
-          tell the level himself</p></li>
-    </ul></dd>
+          tell the level himself</p></dd>
   </dl>
 </td></tr></table>
 </div>
@@ -427,9 +427,10 @@
   <p>When calculus is True, call the <code>calculus_action</code> 
   method</p>
   <p>Otherwise, call the <code>core_action</code> method</p>
+  <p>@todo : Force the next action to be sum_up_slots (not working yet)</p>
   <dl class="fields">
     <dt>Overrides:
-        <a href="rasa_core.actions.forms.FormAction-class.html#submit">rasa_core.actions.forms.FormAction.submit</a>
+        rasa_core.actions.forms.FormAction.submit
     </dt>
   </dl>
 </td></tr></table>
@@ -458,8 +459,9 @@
         <li><strong class="pname"><code>tracker</code></strong> - used to get the language of the bot</li>
         <li><strong class="pname"><code>dispatcher</code></strong> - used to tell the patient that he talked about the intent This 
           action will sum up infos about the intent. If they're all set to 
-          None (no mandatory entity), just say that we talked about intent
-          <p>Ask if the informations are correct.</p></li>
+          None (no mandatory entity), just say that we talked about intent 
+          and save it to DB
+          <p>Ask if the informations are correct otherwise.</p></li>
     </ul></dd>
   </dl>
 </td></tr></table>
@@ -483,8 +485,55 @@
     <dt>Returns:</dt>
         <dd>the name of the action.</dd>
     <dt>Overrides:
-        <a href="rasa_core.actions.action.Action-class.html#name">rasa_core.actions.action.Action.name</a>
+        rasa_core.actions.action.Action.name
     </dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== CLASS VARIABLE DETAILS ==================== -->
+<a name="section-ClassVariableDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td colspan="2" class="table-header">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr valign="top">
+        <td align="left"><span class="table-header">Class Variable Details</span></td>
+        <td align="right" valign="top"
+         ><span class="options">[<a href="#section-ClassVariableDetails"
+         class="privatelink" onclick="toggle_private();"
+         >hide private</a>]</span></td>
+      </tr>
+    </table>
+  </td>
+</tr>
+</table>
+<a name="calculus"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">calculus</h3>
+  <p>When calculus is True, this type of action is used when the intent is 
+  containing a level calculated:</p>
+  <ul>
+    <li>
+      pain (mild, moderate, severe)
+    </li>
+    <li>
+      activity (little, moderate, vigorous)
+    </li>
+  </ul>
+  <p>Otherwise, this action will just show the informations collected</p>
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+False
+</pre></td></tr></table>
+</dd>
   </dl>
 </td></tr></table>
 </div>
@@ -517,7 +566,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Fri Sep  7 16:51:36 2018
+    Generated by Epydoc 3.0.1 on Fri Sep 28 10:22:53 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

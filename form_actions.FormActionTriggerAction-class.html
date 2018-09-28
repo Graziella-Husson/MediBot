@@ -60,29 +60,30 @@
 <h1 class="epydoc">Class FormActionTriggerAction</h1><p class="nomargin-top"><span class="codelink"><a href="form_actions-pysrc.html#FormActionTriggerAction">source&nbsp;code</a></span></p>
 <center>
 <center>  <map id="uml_class_diagram_for_form_act_8" name="uml_class_diagram_for_form_act_8">
-<area shape="rect" id="node1_11" href="form_actions.FormActionTriggerAction-class.html#RANDOMIZE" title="form_actions.FormActionTriggerAction.RANDOMIZE" alt="" coords="41,224,260,244"/>
-<area shape="rect" id="node1_12" href="form_actions.FormActionTriggerAction-class.html#intent_name" title="form_actions.FormActionTriggerAction.intent_name" alt="" coords="41,244,260,264"/>
+<area shape="rect" id="node1_11" href="form_actions.FormActionTriggerAction-class.html#RANDOMIZE" title="RANDOMIZE is used to randomize the next question about a mandatory slot" alt="" coords="41,224,260,244"/>
+<area shape="rect" id="node1_12" href="form_actions.FormActionTriggerAction-class.html#intent_name" title="Name of the intent" alt="" coords="41,244,260,264"/>
 <area shape="rect" id="node1_13" href="form_actions.FormActionTriggerAction-class.html#name" title="Unique identifier of this simple action." alt="" coords="41,267,260,287"/>
-<area shape="rect" id="node1_14" href="form_actions.FormActionTriggerAction-class.html#required_fields" title="Returns: &#160;if the dict obligatories from the init class contains a list a the &#160;requested slot for the intent, returns it." alt="" coords="41,287,260,307"/>
+<area shape="rect" id="node1_14" href="form_actions.FormActionTriggerAction-class.html#required_fields" title="Returns: &#160;check the requested slots for the intent from config file AND in DB &#160;(followed intent triggered) If none, returns an empty list." alt="" coords="41,287,260,307"/>
 <area shape="rect" id="node1_15" href="form_actions.FormActionTriggerAction-class.html#get_other_slots" title="Method from RASA." alt="" coords="41,307,260,327"/>
 <area shape="rect" id="node1_16" href="form_actions.FormActionTriggerAction-class.html#get_requested_slot" title="Method from RASA." alt="" coords="41,327,260,347"/>
-<area shape="rect" id="node1_17" href="form_actions.FormActionTriggerAction-class.html#run" title="Trigger a custom action to ask the requested_slot." alt="" coords="41,347,260,367"/>
-<area shape="rect" id="node1" href="form_actions.FormActionTriggerAction-class.html" title="A custom class heritating from FormAction." alt="" coords="29,200,272,373"/>
-<area shape="rect" id="node2_18" href="rasa_core.actions.forms.FormAction-class.html#should_request_slot" title="rasa_core.actions.forms.FormAction.should_request_slot" alt="" coords="17,135,284,155"/>
-<area shape="rect" id="node2_19" href="rasa_core.actions.forms.FormAction-class.html#submit" title="rasa_core.actions.forms.FormAction.submit" alt="" coords="17,155,284,175"/>
-<area shape="rect" id="node2" href="rasa_core.actions.forms.FormAction-class.html" title="rasa_core.actions.forms.FormAction" alt="" coords="5,103,296,181"/>
-<area shape="rect" id="node3_20" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="59,38,243,58"/>
-<area shape="rect" id="node3_21" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="59,58,243,78"/>
-<area shape="rect" id="node3" href="rasa_core.actions.action.Action-class.html" title="Next action to be taken in response to a dialogue state." alt="" coords="47,5,255,84"/>
+<area shape="rect" id="node1_17" href="form_actions.FormActionTriggerAction-class.html#run" title="Use the right action is simple_actions module to ask the requested_slot." alt="" coords="41,347,260,367"/>
+<area shape="rect" id="node1" href="form_actions.FormActionTriggerAction-class.html" title="A custom class heritating from FormAction (RASA class)." alt="" coords="29,200,272,373"/>
+<area shape="rect" id="node2_18" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.should_request_slot" alt="" coords="17,135,284,155"/>
+<area shape="rect" id="node2_19" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.submit" alt="" coords="17,155,284,175"/>
+<area shape="rect" id="node2" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction" alt="" coords="5,103,296,181"/>
+<area shape="rect" id="node3_20" href="javascript:void(0);" title="Indicator if this action resets the topic when run." alt="" coords="59,38,243,58"/>
+<area shape="rect" id="node3_21" href="javascript:void(0);" title="str(x)" alt="" coords="59,58,243,78"/>
+<area shape="rect" id="node3" href="javascript:void(0);" title="Next action to be taken in response to a dialogue state." alt="" coords="47,5,255,84"/>
 </map>
   <img src="uml_class_diagram_for_form_act_8.gif" alt='' usemap="#uml_class_diagram_for_form_act_8" ismap="ismap" class="graph-without-title" />
 </center>
 </center>
 <hr />
-<p>A custom class heritating from FormAction. The main difference is in 
-  what we use to ask requested_slots. In RASA we use the domain templates. 
-  Here, we use a custom action named utter_ask_{entity_name}. Furthermore, 
-  we have to use tracker in method required_fileds</p>
+<p>A custom class heritating from FormAction (RASA class). The main 
+  difference is in what we use to ask requested_slots. In RASA we use the 
+  domain templates. Here, we use a custom action named 
+  utter_ask_{entity_name}. Furthermore, we have to use tracker in method 
+  required_fileds</p>
 
 <!-- ==================== INSTANCE METHODS ==================== -->
 <a name="section-InstanceMethods"></a>
@@ -127,9 +128,8 @@
           <td><span class="summary-sig"><a href="form_actions.FormActionTriggerAction-class.html#required_fields" class="summary-sig-name">required_fields</a>(<span class="summary-sig-arg">self</span>,
         <span class="summary-sig-arg">tracker</span>)</span><br />
       Returns:
-      if the dict <code>obligatories</code> from the <code>init</code> 
-      class contains a list a the requested slot for the intent, returns 
-      it.</td>
+      check the requested slots for the intent from config file AND in DB 
+      (followed intent triggered) If none, returns an empty list.</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="form_actions-pysrc.html#FormActionTriggerAction.required_fields">source&nbsp;code</a></span>
             
@@ -185,7 +185,8 @@
         <span class="summary-sig-arg">dispatcher</span>,
         <span class="summary-sig-arg">tracker</span>,
         <span class="summary-sig-arg">domain</span>)</span><br />
-      Trigger a custom action to ask the requested_slot.</td>
+      Use the right action is simple_actions module to ask the 
+      requested_slot.</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="form_actions-pysrc.html#FormActionTriggerAction.run">source&nbsp;code</a></span>
             
@@ -197,13 +198,13 @@
   </tr>
   <tr>
     <td colspan="2" class="summary">
-    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="rasa_core.actions.forms.FormAction-class.html">rasa_core.actions.forms.FormAction</a></code></b>:
-      <code><a href="rasa_core.actions.forms.FormAction-class.html#should_request_slot">should_request_slot</a></code>,
-      <code><a href="rasa_core.actions.forms.FormAction-class.html#submit">submit</a></code>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>rasa_core.actions.forms.FormAction</code></b>:
+      <code>should_request_slot</code>,
+      <code>submit</code>
       </p>
-    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="rasa_core.actions.action.Action-class.html">rasa_core.actions.action.Action</a></code></b>:
-      <code><a href="rasa_core.actions.action.Action-class.html#__str__">__str__</a></code>,
-      <code><a href="rasa_core.actions.action.Action-class.html#resets_topic">resets_topic</a></code>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>rasa_core.actions.action.Action</code></b>:
+      <code>__str__</code>,
+      <code>resets_topic</code>
       </p>
     <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
       <code>__delattr__</code>,
@@ -243,14 +244,17 @@
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="RANDOMIZE"></a><span class="summary-name">RANDOMIZE</span> = <code title="True">True</code>
+        <a name="RANDOMIZE"></a><span class="summary-name">RANDOMIZE</span> = <code title="True">True</code><br />
+      RANDOMIZE is used to randomize the next question about a mandatory 
+      slot
     </td>
   </tr>
 <tr>
     <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
-        <a name="intent_name"></a><span class="summary-name">intent_name</span> = <code title="&quot;&quot;">&quot;&quot;</code>
+        <a name="intent_name"></a><span class="summary-name">intent_name</span> = <code title="&quot;&quot;">&quot;&quot;</code><br />
+      Name of the intent
     </td>
   </tr>
 </table>
@@ -314,7 +318,7 @@
   <p>Unique identifier of this simple action.</p>
   <dl class="fields">
     <dt>Overrides:
-        <a href="rasa_core.actions.action.Action-class.html#name">rasa_core.actions.action.Action.name</a>
+        rasa_core.actions.action.Action.name
         <dd><em class="note">(inherited documentation)</em></dd>
     </dt>
   </dl>
@@ -338,11 +342,10 @@
   
   <dl class="fields">
     <dt>Returns:</dt>
-        <dd>if the dict <code>obligatories</code> from the <code>init</code> 
-          class contains a list a the requested slot for the intent, 
-          returns it. If not, returns an empty list.</dd>
+        <dd>check the requested slots for the intent from config file AND in 
+          DB (followed intent triggered) If none, returns an empty list.</dd>
     <dt>Overrides:
-        <a href="rasa_core.actions.forms.FormAction-class.html#required_fields">rasa_core.actions.forms.FormAction.required_fields</a>
+        rasa_core.actions.forms.FormAction.required_fields
     </dt>
   </dl>
 </td></tr></table>
@@ -366,7 +369,7 @@
   self.required_fields(tracker)</p>
   <dl class="fields">
     <dt>Overrides:
-        <a href="rasa_core.actions.forms.FormAction-class.html#get_other_slots">rasa_core.actions.forms.FormAction.get_other_slots</a>
+        rasa_core.actions.forms.FormAction.get_other_slots
     </dt>
   </dl>
 </td></tr></table>
@@ -390,7 +393,7 @@
   self.required_fields(tracker)</p>
   <dl class="fields">
     <dt>Overrides:
-        <a href="rasa_core.actions.forms.FormAction-class.html#get_requested_slot">rasa_core.actions.forms.FormAction.get_requested_slot</a>
+        rasa_core.actions.forms.FormAction.get_requested_slot
     </dt>
   </dl>
 </td></tr></table>
@@ -412,10 +415,11 @@
     </td>
   </tr></table>
   
-  <p>Trigger a custom action to ask the requested_slot.</p>
+  <p>Use the right action is simple_actions module to ask the 
+  requested_slot.</p>
   <dl class="fields">
     <dt>Overrides:
-        <a href="rasa_core.actions.action.Action-class.html#run">rasa_core.actions.action.Action.run</a>
+        rasa_core.actions.action.Action.run
     </dt>
   </dl>
 </td></tr></table>
@@ -449,7 +453,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Fri Sep  7 16:51:36 2018
+    Generated by Epydoc 3.0.1 on Fri Sep 28 10:22:53 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

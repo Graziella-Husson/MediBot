@@ -62,7 +62,7 @@
   <p>This module contains global constant corresponding to different 
   languages</p>
   <p>Created on Tue Jun 26 10:22:40 2018</p>
-  <p>Last update on Mon Jul 30 10:30:00 2018</p>
+  <p>Last update on Fri Sep 28 09:29:02 2018</p>
 
 <hr />
 <div class="fields">      <p><strong>Author:</strong>
@@ -448,25 +448,6 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="init_and_complex-module.html#get_action_from_intent_name" class="summary-sig-name">get_action_from_intent_name</a>(<span class="summary-sig-arg">name</span>)</span><br />
-      Returns:
-      The Python's class corresponding to the action asking the user to 
-      talk about it.</td>
-          <td align="right" valign="top">
-            <span class="codelink"><a href="init_and_complex-pysrc.html#get_action_from_intent_name">source&nbsp;code</a></span>
-            
-          </td>
-        </tr>
-      </table>
-      
-    </td>
-  </tr>
-<tr>
-    <td width="15%" align="right" valign="top" class="summary">
-      <span class="summary-type">&nbsp;</span>
-    </td><td class="summary">
-      <table width="100%" cellpadding="0" cellspacing="0" border="0">
-        <tr>
           <td><span class="summary-sig"><a href="init_and_complex-module.html#load_config" class="summary-sig-name">load_config</a>(<span class="summary-sig-arg">current_session</span>,
         <span class="summary-sig-arg">to_return</span>,
         <span class="summary-sig-arg">project_id</span>)</span><br />
@@ -634,9 +615,30 @@
         <span class="summary-sig-arg">sender_id</span>,
         <span class="summary-sig-arg">to_return</span>)</span><br />
       Returns:
-      list of events to return at the end of action</td>
+      list of events to return at the end of action Loads seen intent in 
+      the session session_id from DB</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="init_and_complex-pysrc.html#load_seen_intents">source&nbsp;code</a></span>
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="init_and_complex-module.html#load_reminders" class="summary-sig-name">load_reminders</a>(<span class="summary-sig-arg">sender_id</span>,
+        <span class="summary-sig-arg">to_return</span>)</span><br />
+      Returns:
+      list of events to return at the end of action Loads reminders 
+      follow_reminder from DB</td>
+          <td align="right" valign="top">
+            <span class="codelink"><a href="init_and_complex-pysrc.html#load_reminders">source&nbsp;code</a></span>
             
           </td>
         </tr>
@@ -678,13 +680,12 @@
   </tr>
 </table>
 <p class="indent-wrapped-lines"><b>Imports:</b>
-  <span title="os">os</span>,
   <span title="datetime.datetime">dt</span>,
   <span title="datetime.timedelta">timedelta</span>,
   <span title="datetime.timezone">timezone</span>,
   <span title="dateutil">dateutil</span>,
   <span title="duckling.language.Language">Language</span>,
-  <a href="rasa_core.actions.action.Action-class.html" title="rasa_core.actions.action.Action">Action</a>,
+  <span title="rasa_core.actions.action.Action">Action</span>,
   <span title="rasa_core.actions.action.ActionListen">ActionListen</span>,
   <span title="rasa_core.actions.forms.EntityFormField">EntityFormField</span>,
   <span title="rasa_core.events.SlotSet">SlotSet</span>,
@@ -692,24 +693,11 @@
   <span title="rasa_core.events.UserUtteranceReverted">UserUtteranceReverted</span>,
   <span title="rasa_core.events.ReminderScheduled">ReminderScheduled</span>,
   <span title="rasa_core.events.ConversationPaused">ConversationPaused</span>,
+  <a href="simple_actions.Bye-class.html" title="simple_actions.Bye">Bye</a>,
   <span title="yaml">yaml</span>,
   <span title="json">json</span>,
-  <a href="simple_actions.Fallback-class.html" title="simple_actions.Fallback">Fallback</a>,
-  <a href="simple_actions.AskBaselineMobility-class.html" title="simple_actions.AskBaselineMobility">AskBaselineMobility</a>,
-  <a href="simple_actions.AskActivity-class.html" title="simple_actions.AskActivity">AskActivity</a>,
-  <a href="simple_actions.AskPain-class.html" title="simple_actions.AskPain">AskPain</a>,
-  <a href="simple_actions.AskInfoPatient-class.html" title="simple_actions.AskInfoPatient">AskInfoPatient</a>,
-  <a href="simple_actions.AskPathology-class.html" title="simple_actions.AskPathology">AskPathology</a>,
-  <a href="simple_actions.AskTreatment-class.html" title="simple_actions.AskTreatment">AskTreatment</a>,
-  <a href="simple_actions.AskSleep-class.html" title="simple_actions.AskSleep">AskSleep</a>,
-  <a href="simple_actions.AskEatingDisorders-class.html" title="simple_actions.AskEatingDisorders">AskEatingDisorders</a>,
-  <a href="simple_actions.AskDrugAddiction-class.html" title="simple_actions.AskDrugAddiction">AskDrugAddiction</a>,
-  <a href="simple_actions.AskSmoking-class.html" title="simple_actions.AskSmoking">AskSmoking</a>,
-  <a href="simple_actions.AskAlcohol-class.html" title="simple_actions.AskAlcohol">AskAlcohol</a>,
-  <a href="simple_actions.AskSocial-class.html" title="simple_actions.AskSocial">AskSocial</a>,
-  <a href="simple_actions.AskNegativeEmo-class.html" title="simple_actions.AskNegativeEmo">AskNegativeEmo</a>,
-  <a href="simple_actions.AskPositiveEmo-class.html" title="simple_actions.AskPositiveEmo">AskPositiveEmo</a>,
   <span title="duckling.DucklingWrapper">DucklingWrapper</span>,
+  <a href="form_actions.CheckRequestedIntents-class.html" title="form_actions.CheckRequestedIntents">CheckRequestedIntents</a>,
   <a href="ressources-module.html#get_utterance" title="ressources.get_utterance">get_utterance</a>,
   <a href="ressources-module.html#get_reminder_in_config" title="ressources.get_reminder_in_config">get_reminder_in_config</a>,
   <a href="ressources-module.html#get_info_in_session_config" title="ressources.get_info_in_session_config">get_info_in_session_config</a>,
@@ -1196,32 +1184,6 @@
   </dl>
 </td></tr></table>
 </div>
-<a name="get_action_from_intent_name"></a>
-<div>
-<table class="details" border="1" cellpadding="3"
-       cellspacing="0" width="100%" bgcolor="white">
-<tr><td>
-  <table width="100%" cellpadding="0" cellspacing="0" border="0">
-  <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_action_from_intent_name</span>(<span class="sig-arg">name</span>)</span>
-  </h3>
-  </td><td align="right" valign="top"
-    ><span class="codelink"><a href="init_and_complex-pysrc.html#get_action_from_intent_name">source&nbsp;code</a></span>&nbsp;
-    </td>
-  </tr></table>
-  
-  
-  <dl class="fields">
-    <dt>Parameters:</dt>
-    <dd><ul class="nomargin-top">
-        <li><strong class="pname"><code>name</code></strong> - name of the intent</li>
-    </ul></dd>
-    <dt>Returns:</dt>
-        <dd>The Python's class corresponding to the action asking the user to
-          talk about it.</dd>
-  </dl>
-</td></tr></table>
-</div>
 <a name="load_config"></a>
 <div>
 <table class="details" border="1" cellpadding="3"
@@ -1326,13 +1288,12 @@
         <li><strong class="pname"><code>session_conf</code></strong> - session's infos from config file @return time past between begin 
           session and end session, add it to time paramter</li>
     </ul></dd>
-    <dt>Raises:</dt>
-    <dd><ul class="nomargin-top">
-        <li><code><strong class='fraise'>LastSessionException</strong></code> - if the number of session between begin and end includes a non 
-        existent session</li>
-    </ul></dd>
   </dl>
-</td></tr></table>
+<div class="fields">      <p><strong>To Do (LastSessionException):</strong>
+        if the number of session between begin and end includes a non existent 
+    session
+      </p>
+</div></td></tr></table>
 </div>
 <a name="get_current_reminder_times"></a>
 <div>
@@ -1413,7 +1374,7 @@
           <p>If distance, duration or temperature have a unit, set them For
           every times founded, check if it's the traduction of others 
           entity and, if not set time If time has a 'to' and 'from' date, 
-          check the duration and set it.</p></dd>
+          check the duration and set it (this part is commented).</p></dd>
   </dl>
 </td></tr></table>
 </div>
@@ -1454,14 +1415,10 @@
           <p>Check the response of the user :</p>
           <ul>
             <li>
-              if the confidence of intent detection is under 50%, call 
-              <code>Fallback</code> action
-            </li>
-            <li>
               if one of specific word is detected:
               <ul>
                 <li>
-                  emergency: send an alert
+                  emergency: @todo send an alert
                 </li>
                 <li>
                   stopword: tell the bot that he made a mistake
@@ -1475,7 +1432,12 @@
               if none of the above is detected :
               <ul>
                 <li>
-                  Send user_reminder_little and user_reminder
+                  if the intent is not 'bye' and requested_slot is none:
+                  <ul>
+                    <li>
+                      Send user_reminder_little and user_reminder
+                    </li>
+                  </ul>
                 </li>
               </ul>
             </li>
@@ -1586,7 +1548,35 @@
         <li><strong class="pname"><code>sender_id</code></strong> - ID of tracker</li>
     </ul></dd>
     <dt>Returns:</dt>
-        <dd>list of events to return at the end of action</dd>
+        <dd>list of events to return at the end of action Loads seen intent 
+          in the session session_id from DB</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="load_reminders"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">load_reminders</span>(<span class="sig-arg">sender_id</span>,
+        <span class="sig-arg">to_return</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="init_and_complex-pysrc.html#load_reminders">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sender_id</code></strong> - ID of the tracker</li>
+    </ul></dd>
+    <dt>Returns:</dt>
+        <dd>list of events to return at the end of action Loads reminders 
+          follow_reminder from DB</dd>
   </dl>
 </td></tr></table>
 </div>
@@ -1619,7 +1609,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Fri Sep  7 16:51:34 2018
+    Generated by Epydoc 3.0.1 on Fri Sep 28 10:22:51 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

@@ -61,21 +61,21 @@
 <center>
 <center>  <map id="uml_class_diagram_for_form_act_4" name="uml_class_diagram_for_form_act_4">
 <area shape="rect" id="node1_12" href="form_actions.CheckRequestedIntents-class.html#__init__" title="Set the name of the intent" alt="" coords="31,384,271,404"/>
-<area shape="rect" id="node1_13" href="form_actions.CheckRequestedIntents-class.html#name" title="Returns: &#160;the name of the action." alt="" coords="31,404,271,424"/>
+<area shape="rect" id="node1_13" href="form_actions.CheckRequestedIntents-class.html#name" title="Returns: &#160;the name of the action : action_check_intents" alt="" coords="31,404,271,424"/>
 <area shape="rect" id="node1_14" href="form_actions.CheckRequestedIntents-class.html#submit" title="form_actions.CheckRequestedIntents.submit" alt="" coords="31,424,271,444"/>
 <area shape="rect" id="node1" href="form_actions.CheckRequestedIntents-class.html" title="FormActionCalculusAndCore for check requested intent" alt="" coords="19,352,283,451"/>
-<area shape="rect" id="node2_15" href="form_actions.FormActionTriggerAction-class.html#RANDOMIZE" title="form_actions.FormActionTriggerAction.RANDOMIZE" alt="" coords="41,205,260,225"/>
-<area shape="rect" id="node2_16" href="form_actions.FormActionTriggerAction-class.html#intent_name" title="form_actions.FormActionTriggerAction.intent_name" alt="" coords="41,225,260,245"/>
-<area shape="rect" id="node2_17" href="form_actions.FormActionTriggerAction-class.html#required_fields" title="Returns: &#160;if the dict obligatories from the init class contains a list a the &#160;requested slot for the intent, returns it." alt="" coords="41,247,260,267"/>
+<area shape="rect" id="node2_15" href="form_actions.FormActionTriggerAction-class.html#RANDOMIZE" title="RANDOMIZE is used to randomize the next question about a mandatory slot" alt="" coords="41,205,260,225"/>
+<area shape="rect" id="node2_16" href="form_actions.FormActionTriggerAction-class.html#intent_name" title="Name of the intent" alt="" coords="41,225,260,245"/>
+<area shape="rect" id="node2_17" href="form_actions.FormActionTriggerAction-class.html#required_fields" title="Returns: &#160;check the requested slots for the intent from config file AND in DB &#160;(followed intent triggered) If none, returns an empty list." alt="" coords="41,247,260,267"/>
 <area shape="rect" id="node2_18" href="form_actions.FormActionTriggerAction-class.html#get_other_slots" title="Method from RASA." alt="" coords="41,267,260,287"/>
 <area shape="rect" id="node2_19" href="form_actions.FormActionTriggerAction-class.html#get_requested_slot" title="Method from RASA." alt="" coords="41,287,260,307"/>
-<area shape="rect" id="node2_20" href="form_actions.FormActionTriggerAction-class.html#run" title="Trigger a custom action to ask the requested_slot." alt="" coords="41,307,260,327"/>
-<area shape="rect" id="node2" href="form_actions.FormActionTriggerAction-class.html" title="A custom class heritating from FormAction." alt="" coords="29,180,272,333"/>
-<area shape="rect" id="node3_21" href="rasa_core.actions.action.Action-class.html#resets_topic" title="Indicator if this action resets the topic when run." alt="" coords="59,38,243,58"/>
-<area shape="rect" id="node3_22" href="rasa_core.actions.action.Action-class.html#__str__" title="str(x)" alt="" coords="59,58,243,78"/>
-<area shape="rect" id="node3" href="rasa_core.actions.action.Action-class.html" title="Next action to be taken in response to a dialogue state." alt="" coords="47,5,255,84"/>
-<area shape="rect" id="node4_23" href="rasa_core.actions.forms.FormAction-class.html#should_request_slot" title="rasa_core.actions.forms.FormAction.should_request_slot" alt="" coords="17,135,284,155"/>
-<area shape="rect" id="node4" href="rasa_core.actions.forms.FormAction-class.html" title="rasa_core.actions.forms.FormAction" alt="" coords="5,103,296,161"/>
+<area shape="rect" id="node2_20" href="form_actions.FormActionTriggerAction-class.html#run" title="Use the right action is simple_actions module to ask the requested_slot." alt="" coords="41,307,260,327"/>
+<area shape="rect" id="node2" href="form_actions.FormActionTriggerAction-class.html" title="A custom class heritating from FormAction (RASA class)." alt="" coords="29,180,272,333"/>
+<area shape="rect" id="node3_21" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction.should_request_slot" alt="" coords="17,135,284,155"/>
+<area shape="rect" id="node3" href="javascript:void(0);" title="rasa_core.actions.forms.FormAction" alt="" coords="5,103,296,161"/>
+<area shape="rect" id="node4_22" href="javascript:void(0);" title="Indicator if this action resets the topic when run." alt="" coords="59,38,243,58"/>
+<area shape="rect" id="node4_23" href="javascript:void(0);" title="str(x)" alt="" coords="59,58,243,78"/>
+<area shape="rect" id="node4" href="javascript:void(0);" title="Next action to be taken in response to a dialogue state." alt="" coords="47,5,255,84"/>
 </map>
   <img src="uml_class_diagram_for_form_act_4.gif" alt='' usemap="#uml_class_diagram_for_form_act_4" ismap="ismap" class="graph-without-title" />
 </center>
@@ -125,7 +125,7 @@
         <tr>
           <td><span class="summary-sig"><a href="form_actions.CheckRequestedIntents-class.html#name" class="summary-sig-name">name</a>(<span class="summary-sig-arg">self</span>)</span><br />
       Returns:
-      the name of the action.</td>
+      the name of the action : action_check_intents</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="form_actions-pysrc.html#CheckRequestedIntents.name">source&nbsp;code</a></span>
             
@@ -162,12 +162,12 @@
       <code><a href="form_actions.FormActionTriggerAction-class.html#required_fields">required_fields</a></code>,
       <code><a href="form_actions.FormActionTriggerAction-class.html#run">run</a></code>
       </p>
-    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="rasa_core.actions.forms.FormAction-class.html">rasa_core.actions.forms.FormAction</a></code></b>:
-      <code><a href="rasa_core.actions.forms.FormAction-class.html#should_request_slot">should_request_slot</a></code>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>rasa_core.actions.forms.FormAction</code></b>:
+      <code>should_request_slot</code>
       </p>
-    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="rasa_core.actions.action.Action-class.html">rasa_core.actions.action.Action</a></code></b>:
-      <code><a href="rasa_core.actions.action.Action-class.html#__str__">__str__</a></code>,
-      <code><a href="rasa_core.actions.action.Action-class.html#resets_topic">resets_topic</a></code>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>rasa_core.actions.action.Action</code></b>:
+      <code>__str__</code>,
+      <code>resets_topic</code>
       </p>
     <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
       <code>__delattr__</code>,
@@ -294,9 +294,9 @@
   <p>Unique identifier of this simple action.</p>
   <dl class="fields">
     <dt>Returns:</dt>
-        <dd>the name of the action.</dd>
+        <dd>the name of the action : action_check_intents</dd>
     <dt>Overrides:
-        <a href="rasa_core.actions.action.Action-class.html#name">rasa_core.actions.action.Action.name</a>
+        rasa_core.actions.action.Action.name
     </dt>
   </dl>
 </td></tr></table>
@@ -327,7 +327,7 @@
           had to.</li>
     </ul></dd>
     <dt>Overrides:
-        <a href="rasa_core.actions.forms.FormAction-class.html#submit">rasa_core.actions.forms.FormAction.submit</a>
+        rasa_core.actions.forms.FormAction.submit
     </dt>
   </dl>
 </td></tr></table>
@@ -361,7 +361,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Fri Sep  7 16:51:36 2018
+    Generated by Epydoc 3.0.1 on Fri Sep 28 10:22:53 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"
